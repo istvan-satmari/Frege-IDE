@@ -1,0 +1,1322 @@
+Module:
+	- module learnyou.chapter05.AFewMoreRecursiveFunctions where
+	- modulename nie je urceny zatial
+
+Import:
+	- import frege.prelude.Math ()
+	- chyba skoro vsetko
+	
+Definition:
+	- repeat' x = x : repeat' x
+	- lostNumbers = [ 4, 8, 15, 16, 23, 42 ]
+	- na dlho, chyba vsetko
+	
+Main:
+	- ani nie je jasne, jak to volat... monada? co to je? treba overit, ze tato monada ma specialne postavenie v ramci programu
+	println $ surface $ Circle (Point 10 20) 10
+	println $ (\x -> Just (x + 1)) 1
+	let newFocus = (myDisk, []) -: fsTo "pics" -: fsTo "skull_man(scary).bmp"
+	contents <- readFile "todo.txt"
+	sequence $ map println [ 1, 2, 3, 4, 5 ]
+	println $ packed . quicksort . unpacked $
+		"the quick brown fox jumps over the lazy dog"
+	
+	
+- kam mozno vsade strcit guardov? je to expression? jak na to?
+	- guards
+		- presunul som teda do expression, ale na to urcite treba semanticku analyzu, lebo toto sa nesmie vyskytovat tam, kde ma byt expression, ale len v tych 2 specialnych pripadoch...
+	
+		- TODO: bude treba oprava cez toto:
+			fundef ::= binex ('=' expr|('|' gquals ('->'|'=') expr)+) ('where' '{' letdefs? '}')*
+			- cize BinaryExpression (alebo lubovolny) a za nim moze a nemusi ist guards
+			- na konci je where
+	
+	
+		- oficialne:
+			guard ::= '|' gquals ('->'|'=') expr
+			gqual ::= expr ('<-' expr)?
+			- cize stale ide o expression
+			- analogia list comprehension:
+				(a, b) <- xs
+				atd.
+			- v oficialnej gramatike sa neda najst, co presne je "guard", t.j. kde sa vyskytuje...
+	
+	
+		   | weight / height ^ 2 <= 30.0 = "You're fat! Lose some weight, fatty!"  
+			- cize ide o expression nalavo
+			- napravo je tiez expression
+			- specialny expression "otherwise"
+		
+		
+		replicate n x
+			| n <= 0    = []
+			| otherwise = x : replicate' (n - 1) x
+		- zvlastne je, ze nemozu byt nested, ale mozu sa vyksytnut napr. pod case-om:
+			- (update: nie je to az tak zvlastne, pretoze toto sa premieta na pattern matching v podstate...)
+
+		strcmp s1 s2 = 
+	case (s1, s2) of
+		([], []) -> True
+		(s1:ss1, s2:ss2)
+			| toUpper s1 == toUpper s2 -> strcmp ss1 ss2
+			| otherwise -> False
+		_ -> False  
+		
+		- tu ale pripomienka: specialna vlastnost case-u
+			
+		
+	- case
+		- na pravej strane: FBB (building block, proste nieco, co vracia hodnotu, ale je vyssie, nez expression)
+		- case "expression" (potvrdene)
+		- je to expression (potvrdene)
+	
+		routine =
+			case landLeft 1 (0, 0) of
+				Nothing    -> Nothing
+				Just pole1 ->
+					case landRight 4 pole1 of
+						Nothing    -> Nothing
+						Just pole2 -> landLeft 1 pole3
+			
+			
+		-- Guards (specialna sucast "case"?)
+		strcmp s1 s2 = 
+			case (s1, s2) of
+				([], []) -> True
+				(s1:ss1, s2:ss2)
+					| toUpper s1 == toUpper s2 -> strcmp ss1 ss2
+					| otherwise -> False
+				_ -> False  
+	
+	
+	- where
+
+		describeList xs = "The list is " ++ what xs
+			where what []  = "empty."
+				  what [x] = "a singleton list."
+				  what xs  = "a longer list."
+	
+	
+		fundef ::= binex ('=' expr|('|' gquals ('->'|'=') expr)+) ('where' '{' letdefs? '}')*
+		- vzdy su na konci definicie funkcie
+		
+		letdefs ::= (annotation|fundef) (';' (annotation|fundef))* ';'?
+		
+	
+	- if then else
+		binex ::= (binex (SOMEOP|'-'))* '-'? topex
+		topex ::= 
+				'if' expr ';'? 'then' expr ';'? 'else' expr |
+				'let' '{' letdefs '}' 'in' expr |
+				
+				'case' expr 'of' '{' calts '}'|
+				
+				'\' (('!'|'?')* primary)+ lambdabody|
+				=> lambda je expression
+				
+				(('!'|'?')* primary)+
+				
+				
+				
+		=> 'if' expr ';' 'then' expr ';' 'else' expr
+	
+	
+	- let
+		'let' '{' letdefs '}' 'in' expr |
+		- je expression
+
+	
+
+Moduly
+----------------------------
+1 modul: definovany v prave 1 subore
+Prostrednictvom importov vsak mozno vybudovat 1 modul z viacerych suborov
+Meno modulu zacina velkym pismenom, striktne
+
+Exportovanie modulu:
+
+-- Export len vymenovanych poloziek
+module MyModule (MyType, MyClass, myFunc1) where
+
+-- Export naimportovanych poloziek
+module MyBigModule (module Data.Set, module Data.Char) where
+	import Data.Set
+	import Data.Char
+
+-- Reexport seba (hodi sa, ked chceme exportovat este nejaky z naimportovanych modulov)
+module AnotherBigModule (module Data.Set, module AnotherBigModule) where
+	import Data.Set
+	import Data.Char
+	
+	
+
+Importy	
+----------------------------
+-- Import vsetkeho
+import frege.data.List
+
+-- Import len vymenovanych poloziek
+import learnyou.chapter14.TakingAWalk ( Tree, Direction, freeTree )
+
+-- Import operatoru (tiez je vlastne iba funkciou)
+import frege.data.List ( **, delete, !! )
+
+-- Import triedy
+import Text.Read (Read)
+
+-- Import triedy, avsak nie jej funkcii
+import Text.Read (Read())
+
+-- Import triedy s konkretnymi funkciami
+import Text.Read (Read(readsPrec, readList))
+
+-- Import "data" typu "Lexeme" so vsetkymi jeho konstruktormi
+import Text.Read (Lexeme(...))
+
+-- Import vsetkeho okrem "isControl" a "isMark"
+import Data.Char hiding (isControl, isMark)
+
+-- Odkazovanie sa cez HM (hodi sa, pokial modul importoval funkcie s rovnakymi nazvami, ako uz pouzivame my => vyuzivanie cez prefix)
+import learnyou.chapter07.geometry.Sphere as Sph ()
+f = Sph.volume 2
+
+-- Priklady
+import frege.prelude.Math ()
+import frege.data.Traversable ( sequenceA )
+import frege.data.HashMap as HM ()
+import frege.Prelude hiding ( map, filter )
+
+-- Priklad:
+import learnyou.chapter07.geometry.Sphere ()
+...
+println $ Sphere.volume 2
+
+-- Priklad:
+import learnyou.chapter07.geometry.Sphere AS Sph ()
+...
+println $ Sph.volume 2
+
+-- Priklad:
+import Data.List as M ( nub )
+numUniques = length . M.nub
+
+-- Upozornime, ze instancie sa vzdy importuju, ci sa nam to paci alebo nie
+
+
+
+Komentare
+----------------------------
+--
+
+{- 
+	viacriadkovy komentar je vnoreny {- nested -} 
+-}
+
+
+
+Indentacia
+----------------------------
+- Pouzivame indentaciu, nie braces { }
+
+- bud na rovnakom riadku, alebo takto:	
+	square x =
+	 x * x		-- aspon 1 char od mena definovanej funkcie	
+
+- pokial sa ale vyskytne "where" clause, tak potom takto:
+	square x =
+	  x2		-- aspon 1 char od "where"
+	 where x2 = -- aspon 1 char od mena definovanej funkcie
+	  x*x		-- aspon 1 char od "where"
+	  
+- let
+	square x = 
+	 let x2 =		-- aspon 1 char od mena definovanej funkcie
+		   x*x 		-- musi byt vo "vlastnom stlpci" od "let", cize asi tesne pred "="
+	 in x2			-- zarovnane na "let"
+	 
+- type signature:
+	convertUpper :: (Char -> Char) 
+	 -> String -> String	-- aspon 1 char od "convertUpper"
+		 
+- if-then-else:
+	convertOnly test change str = 
+		map (\c -> if test c 
+				    then change c 
+					else c) str
+		 
+		 
+
+Types
+----------------------------
+-- Mozno nebude treba riesit vobec
+
+-- Je len synonymum pre iny typ, napr.:
+type Data = String
+type Breadcrumbs = [Direction]
+type Breadcrumbs a = [Crumb a]
+
+-- Zadefinovanie pre tuple
+type FSZipper = (FSItem, [FSCrumb])
+
+-- Dalsie priklady
+type ListZipper a = ([a], [a])
+
+-- Viacprvkovy
+-- Upozornime, ze vzdy musia byt aspon 2 prvky
+second :: (a, b, c) -> b  
+
+-- Toto by tym padom malo fungovat asi standardne
+addVectors a b = (fst a + fst b, snd a + snd b)
+
+-- Existuje aj konstruktor a tu plati tautologia
+("exp1", "exp2", "exp3") == (,,) "exp1" "exp2" "exp3"
+
+
+
+Tuples
+----------------------------
+zip :: [a] -> [b] -> [(a, b)]
+zip (x : xs) (y : ys) = (x, y) : zip xs ys
+
+
+
+Deklaracia funkcie
+----------------------------
+zip :: [a] -> [b] -> [(a, b)]
+calcBmis :: (Real a) => [(a, a)]
+groupOf :: Int -> [a] -> [[a]]
+powerset :: [a] -> [[a]]
+
+-- Pre operatory (vzdy su vstupom 2 hodnoty)
+(-:) :: a -> (a -> b) -> b
+
+-- Zhlukovo (neviem ale, ci nefunguje nahodou iba pri triedach a ci vobec vo Frege funguje)
+(<), (<=), (>=), (>)  :: a -> a -> Bool
+
+-- Num, Eq su triedy
+replicate :: (Num i) => i -> a -> [a]
+elem :: (Eq a, Num i) => a -> [i] -> Bool
+sayMe :: (Integral a) => a -> String
+
+-- Da sa aj bez zatvoriek, ale nebudem to riesit:
+doubleSmallNumber :: Num a => a -> a
+
+-- Dalsie priklady
+findKey :: (Eq k) => k -> [(k,v)] -> Maybe v
+
+-- Funkcia ako argument
+map :: (a -> b) -> [a] -> [b]
+
+-- Dtto, ale tu vnutorna vracia tuple
+applyLog :: (Monoid m) => (a, m) -> (a -> (b, m)) -> (b, m)
+
+-- Len vystupny typ
+numLongChains :: Int
+
+-- Vystupna hodnota je vzdy "posledna sipecka"
+-- Pre navratenie viacero hodnot je nutne pouzit bud zoznam alebo tuple
+
+
+
+
+Vlastne operatory
+----------------------------
+infixl 7 `-:`
+(-:) :: a -> (a -> b) -> b
+x -: f = f x
+-- t.j. aplikovanie funkcie "f" na "x"
+
+-- Urcovanie priorit (fixity), tu: "plus1" je prioritnejsi, nez "mult1"
+infixl 8 ‘plus1‘		
+infixl 7 ‘mult1‘
+> 2 ‘plus1‘ 3 ‘mult1‘ 5
+25
+
+-- Operator je aj slovo
+a `myop` b = a + b
+f n = n `div` 2
+
+-- Operator mozno pouzit ako funkciu ked sa uzatvorkuje
+succ a = (+) 1 a
+
+-- Tu je dalsi priklad s uzatvorkovanim operatora
+listOfFuns = map (*) [0..]
+
+-- infixr
+infixr 7 `%`
+(%) :: Int -> Int -> Rational
+x % y = reduce $ Rational x y
+
+-- Definovanie pre komplexnejsi typ
+data Rational = Rational Int Int
+(Rational x1 y1) +. (Rational x2 y2) = (x1 * y2 + x2 * y1) % (y1 * y2)
+
+-- Currying operatorov
+myresult = filter (== 3) [ 1, 2, 3, 4, 5 ]
+mylist = map (^ 2) [1..]
+
+-- Currying cez sekciovanie
+add10 = (10 +)
+onLeft str = (++ str)
+onRight str = (str ++)
+
+
+
+Definicia funkcie
+-------------------------------------------------------------------
+
+Pradne riadky
+----------------------------
+-- Medzi patternami mozu byt prazdne riadky, ale nemoze byt ina funkcia, t.j. toto neprejde
+mDouble 0 = 1
+mSum x = x + 1
+mDouble x = x * 2
+
+-- Ale toto ano
+mDouble 0 = 1
+	
+mDouble x = x * 2
+mSum x = x + 1
+
+-- Deklaracia je zase uplne nezavisla a moze byt uplne kdekolvek
+-- Je vsak mozne ju striktne pozadovat v tom editore navrchu, lebo to podporuje prehladnost kodu
+mDouble x = x * 2
+mSum x = x + 1
+mDouble :: Int -> Int
+
+
+Zhodne patterny
+----------------------------
+-- Patterny nesmu byt uplne zhodne, t.j. toto neprejde, kedze v obidvoch pripadoch ide o "vsetko je lubovolna premenna"
+-- Neviem ale, ci ma zmysel kontrolovat, lebo na to treba semanticku analyzu
+f a b c = 1
+f i j k = 2
+
+
+Guards
+----------------------------
+replicate n x
+    | n <= 0    = []
+    | otherwise = x : replicate' (n - 1) x
+	
+-- Mozno pouzit aj jedineho a potom dalsi pripad vyriesit pomocou pattern-matchingu
+take n _
+    | n <= 0   = []
+take _ []     = []
+take n (x : xs) = x : take (n - 1) xs
+
+-- Mozno "guardovat" aj booleanovou funkciou
+myFilter p (x : xs)
+    | p x       = x : myFilter p xs
+    | otherwise = myFilter p xs
+
+
+
+Case
+----------------------------
+-- Podobne, ako pattern-matching
+head xs = case xs of
+    [] -> error "No head for empty lists!"
+    (x : _) -> x
+
+readMaybe st =
+    case st.double of
+        Right x -> Just x
+        Left  _ -> Nothing
+
+-- Mozne je aj vetvenie
+routine =
+    case landLeft 1 (0, 0) of
+        Nothing    -> Nothing
+        Just pole1 ->
+            case landRight 4 pole1 of
+                Nothing    -> Nothing
+                Just pole2 -> landLeft 1 pole3
+				
+-- Guards (specialna sucast "case"?)
+strcmp s1 s2 = 
+	case (s1, s2) of
+		([], []) -> True
+		(s1:ss1, s2:ss2)
+			| toUpper s1 == toUpper s2 -> strcmp ss1 ss2
+			| otherwise -> False
+		_ -> False  
+				
+-- Specialne to este funguje pri pouziti zavinacu
+anyChoice2 ch =
+	case ch of
+		Nothing -> "No choice!"
+		Just score@(First "gold") -> "First with gold!"
+		Just score@(First _) -> "First with something else."
+		
+-- Realny "case" je trochu zlozitejsi (aj ked nie ovela), ale pre potreby diplomky by mali stacit sucasne priklady
+-- Mozno si vystacime s guardami, tak mozno nebude treba implementovat
+	
+	
+Where
+----------------------------	
+-- Urcime, ze dana docasna premenna je vlastne "nieco", v tomto pripade je premmnou "what", co predstavuje funkciu prijimajucu 1 premennu
+describeList xs = "The list is " ++ what xs
+    where what []  = "empty."
+          what [x] = "a singleton list."
+          what xs  = "a longer list."
+
+-- Mozno aj v kombinacii s "guards", potom ale treba indentovat
+maximum1 (x : xs)
+    | x > maxTail = x
+    | otherwise = maxTail
+    where maxTail = maximum1 xs
+
+-- Mozno urcit aj ako tuple
+bmiTell weight height
+    | bmi <= skinny = "You're underweight, you emo, you!"
+    | bmi <= normal = "You're supposedly normal. Pffft, I bet you're ugly!"
+    | bmi <= fat    = "You're fat! Lose some weight, fatty!"
+    | otherwise     = "You're a whale, congratulations!"
+    where (skinny, normal, fat) = (18.5, 25.0, 30.0)
+		  
+
+If-then-else
+----------------------------
+yesnoIf x yesResult noResult =
+    if x > 100
+        then yesResult
+        else noResult
+		
+respondPalindromes = unlines . map tellPalindrome . lines
+    where tellPalindrome xs = if isPalindrome xs then "palindrome" else "not a palindrome"
+          isPalindrome xs = xs == (packed . reverse . unpacked) xs
+
+
+Definicia cez viacero riadkov:
+----------------------------
+-- Vsimni si v tomto pripade uzatvorkovanie pre datovy typ "Rectangle Point Point"
+surface (Rectangle (Point x1 y1) (Point x2 y2)) = 
+    (abs $ x2 - x1) * (abs $ y2 - y1)
+	
+lengthCompare1 x y =
+    (length x `compare` length y) `mappend`
+    (x `compare` y)
+
+	
+Vyuzitie operatorov:
+----------------------------
+sum a b = a + b
+newFocus = goLeft -: goRight -: modify (\_ -> 'P')
+setNub xs = each $ fromList xs
+equals x y = (x == y) && !(x != y)
+foo = Just 3 >>= (\x -> Just "!" >>= (\y -> Just (show x ++ y)))
+
+-- Retazenie funkcii cez bodku
+fn = ceil . negate . tan . cos . max 50
+
+
+Currying
+----------------------------
+multThree x y z = x * y * z
+multTwoWithNine = multThree 9
+multWithEighteen = multTwoWithNine 2
+
+-- Mozno taktiez ohranicit zatvorkami
+mymax = (max 4) 5
+	
+-- Pre operator (len priklad, kludne je mozne pouzit aj "1 + a")
+succ a = (+) 1 a
+
+
+Zavinac
+----------------------------
+-- Tento bude treba tiez implementovat
+capital (zoznam@(x : xs)) =
+    "The first letter of " ++ (packed zoznam) ++ " is " ++ (ctos x)
+
+	
+Priklady
+----------------------------
+applyMaybe :: Maybe a -> (a -> b) -> Maybe b
+applyMaybe Nothing  _ = Nothing
+applyMaybe (Just x) f = Just (f x)
+
+
+Komplexnejsie priklady
+----------------------------
+flip :: (a -> b -> c) -> b -> a -> c
+flip f y x = f x y
+
+-- Toto vrati zoznam: 3:3:1
+applyTwice f x = f (f x)
+applyTwice (3 :) [1]
+
+-- Vracia tuple (prvy je bool, druhy string)
+isBigGang x = (x > 9, "Compared gang size to 9.")
+
+
+Lazy patterns
+----------------------------
+-- Trieda "Def", ktora vracia defaultnu hodnotu; chceme rozsirit na "Maybe" triedu
+instance Def a => Def (Maybe a) where
+ defValue (Just x) = Just (defValue x)
+ defValue Nothing = Nothing
+ 
+-- Ten "Nothing" vsak nie je idealny a tak pouzijeme "lazy pattern"
+-- Tvarime sa, ze vzdy namatchujeme "Just x" (aj ked to nie je pravda)
+instance Def a => Def (Maybe a) where
+ defValue ~(Just x) = Just (defValue x)
+			
+-- Co teda, ked niekto zavola "defValue" na "Nothing"? Musi volat tymto sposobom, inak runtime fail
+defMB = defValue (Nothing :: Maybe Bool)
+
+
+
+Zoznamy
+-------------------------------------------------------------------
+-- Definicia
+lostNumbers = [ 4, 8, 15, 16, 23, 42 ]
+
+-- Zoznamy v zozname:
+b = [ [ 5, 4, 5, 4, 4 ], [ 1, 2, 3 ], [ 3, 5, 4, 3 ], [], [ 2 ], [ 2, 2 ] ]
+
+-- Definicia cez viacero riadkov
+b = [ [ 1, 2, 3, 4 ]
+    , [ 5, 3, 3, 3 ]
+    , [ 1, 2, 2, 3, 4 ]
+    , [ 1, 2, 3 ]
+    ]	
+	
+-- Samozrejme je mozny aj zoznam inych prvkov, nez Int-ov:
+[Point 50 10, Point 5 90, Point 2 25]
+
+-- Operatory
+reverse (x : xs) = reverse xs ++ [x]
+repeat x = x : repeat x
+1 : [ 2, 3, 4, 5 ]
+
+-- Ako fukncia:
+head (x : _) = x
+second (x : y : _) = y
+
+-- Toto len ako zoznam zoznamov
+[1, 2] : [[ 3, 4, 5 ]]
+
+-- Zoznam troch prvkov
+1 : 2 : 3 : []
+
+-- Spristupnenie prvku na i-tej pozicii, v tomto pripade na 6-tom mieste
+-- Mimochodom, "charAt" a "toList" su z "import frege.data.List"
+(toList "Steve Buscemi") !! 6
+"Steve Buscemi".charAt 6
+
+-- String ako implicitny zoznam charov
+printhello = "hello" ++ " " ++ "world"
+
+-- Definicia cez vlastnosti (list comprehension)
+[ [ x, y, z ] | x <- [ 1, 2 ], y <- [ 3, 4 ], z <- [ 5, 6 ] ]
+
+-- Tu je `elem` tzv. guard, t.j. testuje, ci sa character "c" nachadza v zozname ['A'..'Z']
+[ c | c <- str, c `elem` ['A'..'Z'] ]
+
+-- "odd" je funkcia, ktora vracia Bool, cize je to guard, vysledkom je zoznam ["BOOM!", "BOOM!", "BOOM!", "BOOM!", "BOOM!", "BANG!", "BANG!", "BANG!", "BANG!", "BANG!"]
+[ if x < 10 then "BOOM!" else "BANG!" | x <- [1..20], odd x ]
+
+-- Takto mozno zistit dlzku zoznamu (zo zoznamu xs "hadzeme do prazdna")
+length xs = sum [ 1 | _ <- xs ]
+
+-- Vrati zoznam dlzky 9
+[ x * y | x <- [ 2, 5, 10 ], y <- [ 8, 10, 11 ] ]
+
+-- Mozno aj takto injektovat prvky
+[ a + b | (a, b) <- xs ]
+
+-- Mozno vyuzit aj "=" namiesto "<-"
+[ bmi | (w, h) <- xs, bmi = w / h ^ 2, bmi >= 25.0 ]
+
+-- Dalsie priklady:
+[ x * 2 | x <- [ 1 .. 10 ], x * 2 >= 12 ]
+[ [ x | x <- xs, even x ] | xs <- xxs ]
+
+-- Range (prvky z lubovolne "Enum" triedy su povolene)
+[1..100]
+[ 'a' .. 'z' ]
+[ 'K' .. 'Z' ]
+[ 3, 6 .. 20 ]
+[20, 19 .. 1]
+[100..]
+
+-- Prazdny zoznam
+[110..100]
+
+-- Pozor na zaporne cisla a medzery
+[-110..-100] 	-– syntax error
+[-110.. -100] 	-- ok
+
+-- Vseobecne "range"
+["expression1".."expression2"]
+["expression0", "expression1".."expression2"]
+
+-- Vseobecne "list comprehension"
+["expression" | "expression", "let declaration", pattern <- "expression"]
+	- expression: ako boolean guard
+	- <-: generator prvkov
+		- pattern je typu t
+		- expression musi byt typu [t]
+
+-- List comprehension s "let"
+comb = [(a, z) | a <- [1..3], b <- [1..3], c <- [1..3], let z = min a b, z < c]
+		
+		
+
+Data
+-------------------------------------------------------------------
+-- Tu nalavo je nazov "data", napravo je konstruktor (nevadi, ze maju rovnake mena)
+data Point = Point Float Float
+
+-- Takto, kde "a" je polymorfny typ, t.j. napr. "CJust 1 true" vyhovuje
+data CMaybe a = CNothing | CJust Int a
+
+-- Definicia na viacero riadkov
+data Shape =
+      Circle    Point Float		-- Predstavuje stred kruznice a polomer
+    | Rectangle Point Point		-- Predstavuje lavy horny a pravy dolny bod
+
+-- Vo funkcii:
+surface :: Shape -> Float	
+surface (Circle _ r) = Math.pi * r ^ 2
+surface (Rectangle (Point x1 y1) (Point x2 y2)) = 
+    (abs $ x2 - x1) * (abs $ y2 - y1)
+
+create :: Float -> Shape
+create r = Circle (Point 0 0) r
+
+-- "data" v "data" (v tomto pripade "Tree a" je nieco ako "Maybe a", t.j. nejde o konstruktor)
+data Crumb a =
+      LeftCrumb  a (Tree a)
+    | RightCrumb a (Tree a)
+	
+-- Rekurzia	([FSItem] ako zoznam lubovolneho poctu danych FSItem)
+data FSItem =
+      File Name Data
+    | Folder Name [FSItem]
+	
+-- Toto inak funguje ("b" a "c" su nevyuzite), ale pozor, "a" "b" "c" musia mat kazda unikatny nazov
+data Opx a b c = Sumx a | Zerox
+
+-- Samozrejme, typovu premennu mozno pouzit aj viackrat
+data SuperMaybe a = Just a a | Nothing
+	
+-- Pouzitie s deklaraciou funkcie (t.j. "a" pri SuperMaybe musi byt String)
+-- Mimochodom, je nutne uviest, co maju byt vsetky typove premenne
+maybeOperation :: (SuperMaybe String) -> String
+	
+-- Priklad zapisu:
+myDisk :: FSItem
+myDisk = 
+    Folder "root"
+        [ File "goat_yelling_like_man.wmv" "baaaaaa"
+        , File "pope_time.avi" "god bless"
+        , Folder "pics"
+            [ File "ape_throwing_up.jpg" "bleargh"
+            , File "watermelon_smash.gif" "smash!!"
+            , File "skull_man(scary).bmp" "Yikes!"
+            ]
+        , File "dijon_poupon.doc" "best mustard"
+        , Folder "programs"
+            [ File "fartwizard.exe" "10gotofart"
+            , File "owl_bandit.dmg" "mov eax, h00t"
+            , File "not_a_virus.exe" "really not a virus"
+            , Folder "source code"
+                [ File "best_hs_prog.hs" "main = print (fix error)"
+                , File "random.hs" "main = print 4"
+                ]
+            ]
+        ]	
+
+-- "data" s where
+data SizedBufferedReader = mutable native java.io.BufferedReader where
+    getLines :: SizedBufferedReader -> IO [String]
+    getLines br = go [] where
+        go acc = do
+			-- some stuff
+            return (reverse acc)
+			
+-- Funguje inak aj toto, ale nebudem riesit, lebo sa to neodporuca a na taketo veci mame instancie
+data (Num a) => SomeNumber a = Two a a | Three a a a	
+
+
+
+Record syntax pre "data"
+-------------------------------------------------------------------
+-- Asi nebudem podporovat (iba ak na konci, ak zvysi cas)
+-- Subpolozky su "accessors", ktore zacinaju malym pismenom
+data Person = Person
+    { firstName :: String
+    , lastName :: String
+    , age :: Int
+    }
+mikeD = Person { firstName = "Michael", lastName = "Diamond", age = 43 }
+
+-- Record syntax so zoznamom
+data CharList = CharList { getCharList :: [Char] }
+
+-- Dalsi priklad Record syntaxe
+-- Tu inak pozor, lebo mame nekonzistenciu a moze byt chybne pri definovani funkcie
+data Prob a = Prob { getProb :: [(a, Rational)] } | Nothing
+
+-- Record syntax s pouzitim vo funkcii (company je String, model je String, year je "a")
+data Car a b c = Car { company :: a, model :: b, year :: c }
+tellCar :: Car String String a -> String
+tellCar (Car {company = c, model = m, year = y}) = "This " ++ c ++ " " ++ m ++ " was made in " ++ show y
+
+-- Da sa aj takto (vyhoda predosleho je, ze mozno uviest iba tie polozky, ktore nas zaujimaju)
+tellCar (Car c m y) = "This " ++ c ++ " " ++ m ++ " was made in " ++ show y
+
+-- Pouzitie vo funkcii, inak
+data Color = C { red, green, blue :: Int }
+noGreen col = col { green = 0 }
+
+-- V kombinacii s argument capture (zavinac)
+makeGrey col@(C { red = r }) = col { green = r, blue = r }
+
+
+
+Class a Instance
+-------------------------------------------------------------------
+-- Trieda datovych typov, na ktore mozno pouzit "yesno" funkciu
+class YesNo a where
+    yesno :: a -> Bool
+	
+-- Definovanie pre konkretny datovy typ
+instance YesNo Int where
+    yesno 0 = false
+    yesno _ = true
+	
+instance YesNo [a] where
+    yesno [] = false
+    yesno _  = true
+
+-- "id"	ako identita je zaujimave, ale asi ju nebudem implementovat:
+instance YesNo Bool where
+    yesno = id
+	
+-- Instance pre "data"
+instance YesNo (Maybe a) where
+    yesno (Just _) = true
+    yesno Nothing  = false
+	
+-- Pokial mame record syntax data, tak potom je to trochu inak:
+instance Functor (Barry a b) where
+    fmap f (Barry { yabba = x, dabba = y }) = Barry { yabba = f x, dabba = y }
+	
+-- Moznost pouzitia triedy:
+yesnoIf :: (YesNo y) => y -> a -> a -> a
+yesnoIf yesnoVal yesResult noResult =
+    if yesno yesnoVal
+        then yesResult
+        else noResult
+		
+-- Priklad Instance pre Show
+instance Show Rational where
+    show (Rational x y) = show x ++ " % " ++ show y
+	
+class Functor f where
+    fmap :: (a -> b) -> f a -> f b
+
+-- "as"
+instance Functor (HM.HashMap k) where
+    fmap = HM.mapValues
+	
+-- Aj tu sa da, podobne, ako pri funkciach, udat triedu, ktoru musi splnat (tu "m" musi byt typu Eq)
+instance (Eq m) => Eq (Maybe m) where
+    Just x  == Just y  = x == y
+    Nothing == Nothing = true
+    _       == _       = false
+
+-- Eq priklad (mozno vseobecne zadefinovat dane funkcie)
+class Eq a where
+    (==) :: a -> a -> Bool
+    (/=) :: a -> a -> Bool  
+    x == y = not (x /= y)  
+    x /= y = not (x == y)	
+		
+-- Zlukova deklaracia
+class (Eq a) => Ord a where
+  (<), (<=), (>=), (>)  :: a -> a -> Bool
+  x >= y				= (not (x <= y)) || (x == y)
+  x < y               	= (x <= y) && (x /= y)
+  x > y               	= not (x <= y)
+
+-- Toto neviem ci je vo Frege a nie iba v Haskelli, kazdopadne opatrne
+-- Tu v deklaracii mozno pouzit "f a" a neviem presne, preco
+class Functor f where
+	fmap :: (a -> b) -> f a -> f b
+			
+-- Instanciu mozno definovat analogickym sposobom ku currying
+-- Tu specialne napr. pre "fmap (*2) [1..3]" to bude fungovat, pretoze standardny "map" prevedie funkciu na prvky zoznamu
+instance Functor [] where  
+	fmap = map
+  
+
+  
+Lambda
+-------------------------------------------------------------------	
+-- Princip zapisu:
+newFocus2 = newFocus -: goUp -: modify (\_ -> 'X')
+
+-- t.j. najprv deklarujeme argumenty, potom funkciu a nakoniec ju uplatnime (tu n = [0..], line = todoItems)
+numberedItems = zipWith (\n \line -> show n ++ " - " ++ line) [0..] todoItems
+
+-- ide to aj takto, t.j. prva vrati funkciu, co tiez vracia funkciu, ... atd.
+addThree = \x -> \y -> \z -> x + y + z
+
+-- priklad vyuzitiapre binarnu funkciu "f"
+flip f = \x \y -> f y x
+
+-- dalsi priklad, kde vraciame boolean cez anonymnu funkciu
+filter (\xs -> length xs > 15) [1..10]
+
+-- evidentne je mozne zadat aj toto (overit, ci to je vo Frege)
+\x -> x+x :: Int
+
+-- dalsi priklad:
+convertOnly test change str = 
+	map (\c -> if test c then change c else c) str
+
+
+Let
+-------------------------------------------------------------------	
+- Gramaticky:
+let "declarations" in "expression"
+
+- priklad: (where vs. let)
+		- where:
+			f x
+				| cond1 x   = a
+				| cond2 x   = g a
+				| otherwise = f (h x a)
+				where
+					a = w x
+		- let:
+			f x
+				= let a = w x in 		-- cize co znamena "a" sa uz urci tu
+					case () of			-- a v ramci jakeho scopeu, akoby; () asi akoby povodny vyraz...?
+					  _ | cond1 x   -> a
+						| cond2 x   -> g a
+						| otherwise -> f (h x a)
+		- ekvivalentne:
+			f x
+				= let a = w x in 
+					if cond1 x then a
+					else if cond2 x then g a
+					else f (h x a)
+
+ 
+-- sluzi aj na dekonstrukciu!!! vid priklad:
+firstThree str =
+ let (a:b:c:_) = str		-- toto nie je definovanie novej funkcie; len zamenenie za "premennu"
+ in "Initial three characters are: " ++ show a ++ ", " ++ show b ++ ", and " ++ show c
+ 
+
+fsTo name (Folder folderName items, bs) =
+    let (ls, rs) = break (nameIs name) items
+    in  case rs of
+        []        -> error "no such file or folder."
+        item : rs'-> (item, FSCrumb folderName ls rs' : bs)
+		
+encode :: Int -> String -> String
+encode shift msg =
+    let ords = map ord $ unpacked msg
+        shifted = map (+ shift) ords
+    in  packed $ map chr shifted
+
+search needle haystack =
+    let nlen = length needle
+    in fold (\acc \x -> if take nlen x == needle then True else acc)
+             false (tails haystack)
+			 
+shortLinesOnly :: String -> String
+shortLinesOnly input =
+    let allLines = lines input
+        shortLines = filter (\line -> length line < 10) allLines
+        result = unlines shortLines
+    in  result
+
+roadStep (pathA, pathB) (Section a b c) =
+    let priceA = sum $ map snd pathA
+        priceB = sum $ map snd pathB
+        forwardPriceToA = priceA + a
+        clossPriceToA   = priceB + b + c
+        forwardPriceToB = priceB + b
+        clossPriceToB   = priceA + a + c
+        newPathToA =
+            if forwardPriceToA <= clossPriceToA
+                then (A, a) : pathA
+                else (C, c) : (B, b) : pathB
+        newPathToB =
+            if forwardPriceToB <= clossPriceToB
+                then (B, b) : pathB
+                else (C, c) : (A, a) : pathA
+    in  (newPathToA, newPathToB)
+
+cylinder r h =
+    let sideArea = 2 * pi * r * h
+        topArea = pi * r ^ 2
+    in  sideArea + 2 * topArea
+
+println $ 4 * (let a = 9 in a + 1) + 2
+[let square x = x * x in (square 5, square 3, square 2)]
+( let a = 100; b = 200; c = 300 in a * b * c, let foo = "Hey "; bar = "there!" in  foo ++ bar)
+(let (a, b, c) = (1, 2, 3) in a + b + c) * 100
+
+quicksort (x : xs) =
+    let smallerSorted = quicksort [a | a <- xs, a <= x]
+        biggerSorted = quicksort [a | a <- xs, a > x]
+    in  smallerSorted ++ [x] ++ biggerSorted
+
+threeCoins gen =
+    let (firstCoin, newGen)   = random gen
+        (secondCoin, newGen') = random newGen
+        (thirdCoin, newGen'') = random newGen'
+    in  (firstCoin, secondCoin, thirdCoin)
+
+
+	
+Monady	
+-------------------------------------------------------------------
+-- Monady nemusiabyt definovane iba v casti <actions>, ale aj prostred <definitions>
+-- Su spustene ale az v ramci "main _ do"
+
+-- pouzij "println" na vysledok funkcie "surface" aplikovanej na "Circle ..."
+println $ surface $ Circle (Point 10 20) 10	
+
+-- Podobne, ale tu chyba "$" pri aplikovani argumentov
+println $ map (Circle (Point 10 20)) [ 4, 5, 6, 6 ]
+
+-- Definovanie IO monady v ramci <definitions> casti
+example1 :: IO ()
+example1 = do
+    a <- (++) <$> getLine <*> getLine
+    putStrLn $ "The two lines concatenated turn out to be: " ++ a
+
+-- "main _ do" priklad
+main (command : args) = do
+	let mAction = lookup command dispatch
+
+-- vseobecnejsi priklad	
+foo :: Maybe String
+foo = do
+    x <- Just 3
+    y <- Just "!"
+    return (show x ++ y)
+	
+routine1 :: Maybe Pole
+routine1 = do
+    start  <- return (0, 0)
+    first  <- landLeft 2 start
+    second <- landRight 2 first
+    landLeft 1 second
+	
+-- Dalsi priklad IO monady	
+showUsage :: IO ()
+showUsage = stderr.println "usege: todo (add | view | remove) FILE [task]"	
+	
+-- Priradenie hodnoty do premennej:
+let newFocus = 37	
+	
+-- Dalsie priklady
+println $ pure (+ 3) <*> Just 10
+println $ pure (+) <*> Just 3 <*> Just 5
+println $ (++) <$> [ "ha", "heh", "hmm" ] <*> [ "?", "!", "." ]
+println $ map ($ 3) [ (4 +), (10 *), (^ 2), sqrt ]
+tempName <- File.createTempFile "temp" "" >>= (\f -> f.getName)
+println $ return "WoM" >>= (\x -> [ x, x, x ])
+
+-- Viacriadkovy
+println $
+	return (0, 0) >>= (\x ->
+	landRight 2 x >>= (\y ->
+	landLeft  2 y >>= (\z ->
+	landRight 2 z)))
+	
+-- "Bodkova" notacia
+wopwop = do
+    (x : xs) <- Just "".toList
+    return x
+
+-- if
+lineCount2 (fileName : _) = do
+    fileExists <- file.exists
+    if fileExists
+        then do
+            println $ showLineCount contents
+        else do
+            println $ "The file doesn't exist!"
+
+-- Exception
+lineCount3 (fileName : _) = do
+    try (\fn -> readFile fn >>= println . showLineCount) fileName
+        `catch` (\(fne :: FileNotFoundException) -> println "The file doesn't exist!")
+        `catch` (\(ioe :: IOException)           -> throwIO ioe)
+
+-- Tento zvlastny zapis
+println $ (tofu (["HELLO"]) :: Frank String [])		
+			
+	
+Misc
+----------------------------
+-- Toto implementovat iba ak na konci, ak zvysi cas
+derive Show Point
+derive Show (Crumb a)
+derive Show (a, b, c, d)
+derive Eq Person
+derive (Show (b a)) => Show (Frank a b)
+data Suit = Club | Diamond | Heart | Spade deriving (Eq, Show)
+-- supported are: Eq, Read, Show, Ord, Enum, Ix, Bounded.
+
+- lety vysvetlit
+- monady vysvetlit
+
+- tomuto tiez nerozumiem (co do operatorov):
+isSubsetOf xs ys = and $ map (`elem` (each ys)) $ each xs
+foo = Just 3 >>= (\x -> Just "!" >>= (\y -> Just (show x ++ y)))
+showLineCount contents = "The file has " ++ (show . length . lines $ contents) ++ " lines!"
+
+- data s where?
+data SizedBufferedReader = mutable native java.io.BufferedReader where
+    native new :: Reader -> Int -> IO BufferedReader
+    getLines :: SizedBufferedReader -> IO [String]
+    getLines br = go [] where
+        go acc = do
+            xms <- br.readLine
+            case xms of
+                Just s -> go (s : acc)
+                _      -> br.close >> return (reverse acc)
+				
+				
+import Data.List as M ( nub )
+numUniques = length . M.nub
+
+
+-- Private??? Davat to vobec?
+private reduce :: Rational -> Rational
+private reduce (Rational x y) = Rational (x `div` g) (y `div` g)
+    where g = gcd x y
+	
+infixl 7 `-:`
+(-:) :: a -> (a -> b) -> b
+x -: f = f x
+
+
+-- $ ako operator?
+infixr 7 `%`
+(%) :: Int -> Int -> Rational
+x % y = reduce $ Rational x y
+
+-- >>= tento operator
+m >>= f  = flatten (fmap f m)
+
+-- instance na monadu
+instance Monad Prob where
+    return x = Prob [(x, 1 % 1)]
+    m >>= f  = flatten (fmap f m)
+	
+	
+- char vs. string
+charName 'c' = "Cecil"	
+
+
+- dalsia monada
+askForNumber :: StdGen -> IO ()
+askForNumber gen = do
+    let (randNumber, newGen) = randomR (1, 10) gen :: (Int, StdGen)
+    print "Which number in the range from 1 to 10 am I thinking of? "
+    numberString <- getLine
+    when (not $ null numberString) $ do
+        let number = atoi numberString
+        if randNumber == number
+            then println "You are correct!"
+            else println $ "Sorry, it was " ++ show randNumber
+        askForNumber newGen
+		
+- dalsie podivnosti:
+println $ fst (random (mkStdGen 100) :: (Int, StdGen))
+println $ take 5 (randoms (mkStdGen 11) :: [Int])
+
+addStuff = do
+    a <- (* 2)
+    b <- (+ 10)
+    return (a + b)
+
+let (x, newGen) = random gen
+	
+	
+- println	
+println $ 5 * -3
+println $ succ 8
+println $ false || true
+
+
+- dalsie what-the-fucks:
+joinedMaybes :: Maybe Int
+joinedMaybes = do
+    m <- Just (Just 8)
+    m
+
+keepSmall :: Int -> MyWriter [String] Bool
+keepSmall x
+    | x < 4 = do
+        tell ["Keeping " ++ show x]
+        return true
+		
+println $ (minBound :: Bool)
+println $ (maxBound :: (Bool, Int, Char))
+
+- list monad
+sevensOnly = do
+    x <- [1 .. 50]
+    guard ('7' `elem` (toList . show) x)
+    return x
+	
+
+println $ (guard (5 > 2) :: [()])
+println ((return 3 :: MyWriter String Int).runWriter :: (Int, String))
+
+- vo frege nie je "newtype" keyword
+
+- wtf is this?
+lockerLookup :: Int -> LockerMap -> (String | Code)
+
+
+- wtf is that?
+data MyWriter w a = MyWriter { runWriter :: (a, w) }
+
+logNumber :: Int -> MyWriter [String] Int
+logNumber x = MyWriter (x, ["Got number: " ++ show x])
+
+tell :: w -> MyWriter w ()
+tell v = MyWriter ((), v)
+
+
+class Functor f where
+    fmap :: (a -> b) -> f a -> f b
+
+-- mozno takto volat:
+defMB = defValue (Nothing :: Maybe Bool)
+
+-- Unita
+()
+-- reprezentuje "no useful information"
+
+
+	
+Poznamky k monadam
+----------------------------	
+right1 fileName = do
+ exists <- doesFileExist fileName
+ if exists
+  then return 1			-- musi byt return, lebo sme uprostred IO monady
+  else return 0
+
+	
+	
+
+Standardne triedy
+----------------------------
+Num 		-- superclass to Int, Integer, Float, Double	(i.e. this is a type-class, while Integer, Int, ... are simply types)
+Integral 	-- superclass to Int, Integer
+Floating 	-- superclass to Float, Double
+RealFloat
+
+-- Tymito sa mozno nebudem zaoberat...
+Eq
+Ord
+Show
+
+-- Priklad vo funkcii
+f :: (Num a) => a -> a
+
+
+
+Standardne typy
+----------------------------
+Char  
+Bool  	-- True / False
+String
+Integer	-- BigInteger v podstate
+Float
+Double
+Int		-- 32-64 bits
+
+
+
+Implementacne detaily
+----------------------------
+- "expression" sa vyhodnocuje na "value"
+- "expression" ma svoj staticky "type"
+- "variable", "constructor", "type variable", "type constructor", "type class"
+- "variable" a "type variable" smu zacinat len malym pismenom, alebo podtrzitkom, ostatne z vymenovanych velkym pismenom
+
+- Upzornime, ze pri pouzivani mien mozu byt bodky, napr. pouzitie funkcie: 
+map.f 30
+
+- Operatory nesmu pouzivat rezervovane symboly
+..  :  ::  =  \  |  <-  ->  @  ˜  =>
+
+- Operatory mozno skladat z tychto symbolov
+#  $  %  &  *  +  .  /  <  =  >  ?  @  \  ^  |  -  ~
+
+- Pripadne mozu byt operatory ciste slova (bez symbolov)
+
+- Literaly
+- Asi budem implementovat iba zakladne, t.j. iba "decimal" variant z integerovskych, ale je dobre o tychto vediet:
+	- integer:
+		- 0098400984065406840680465430210301
+			- decimal
+			- moze zacinat nulou
+		- 0o00710320007020101 
+			- octal
+		- 0x000AFEE0D9AA1DD003300211110 
+			- hexadecimal
+			
+	- float:
+		- 009840098406540684068046.5430210301E+10 
+		- 1046.1E00010
+		- 1046.1E-10
+		- 1046E0
+			- iba decimal
+			
+	- char:
+		- 'a'
+		- ' '
+			- medzera
+		- '\n' 
+			- escape
+		- '\&'
+		- '\DEL', '\CAN', '\ACK', ...
+		- '\0x8A9E4001' 
+			- escape
+			- hexadecimal
+		- '\0032101' 
+			- escape
+			- decimal
+		- '\0o1770' 
+			- escape
+			- octal
+
+	- string: 
+		- "hello, \n, world"
+		- 	"hello,\
+			viacriadkovy\
+			string\
+			takto"
+			
+- Rezervovane slova
+case, class, data, default, deriving, do,
+else, foreign, if, import, in, infix, infixl,
+infixr, instance, let, module, newtype, of,
+then, type, where, 
+_ (pokial je osamote)
+
+Where vs. Let:
+- The only difference is when guards are being used
+- The scope of the where clause extends over all guards
+- The scope of a let expression is only the current function clause (and guard)
+- Urcite ich ale chceme mat vo finalnej diplomke oboje
