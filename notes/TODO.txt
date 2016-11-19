@@ -125,198 +125,261 @@ Main:
 		'let' '{' letdefs '}' 'in' expr |
 		- je expression
 
+----------------------------------------------------------------------------------------------
+Odtialto postupne skrtat a utvarat [koncept + editor]
+Co nie je skrtnute, je v stave TODO
 	
 
-Moduly
-----------------------------
-1 modul: definovany v prave 1 subore
-Prostrednictvom importov vsak mozno vybudovat 1 modul z viacerych suborov
-Meno modulu zacina velkym pismenom, striktne
+- meno modulu zacina velkym pismenom, striktne	
+- meno modulu oddelene bodkami
+- v module parts musia byt nejake konkretne casti programu (references)
+	- module MyModule (MyType, MyClass, myFunc1) where
+	- Export naimportovanych poloziek:
+		module MyBigModule (module Data.Set, module Data.Char) where
+			import Data.Set
+			import Data.Char
+	- Reexport seba (hodi sa, ked chceme exportovat este nejaky z naimportovanych modulov)
+		module AnotherBigModule (module Data.Set, module AnotherBigModule) where
+			import Data.Set
+			import Data.Char
+	- bacha na export a import operatoru (tiez je vlastne iba funkciou)
+	=> vyriesi sa cez specialny koncept, ktory referencuje nejaku cast v programe
+	
+- meno importu rovnako, ako modulu
+	- import frege.data.List
 
-Exportovanie modulu:
+- import, jednotlive casti rovnako, ako v module
+	- import learnyou.chapter14.TakingAWalk ( Tree, Direction, freeTree )
+	- import frege.data.List ( **, delete, !! )
+	- Import triedy
+		import Text.Read (Read)
+	- Import triedy, avsak nie jej funkcii
+		import Text.Read (Read())
+	- Import triedy s konkretnymi funkciami
+		import Text.Read (Read(readsPrec, readList))
+	- Import "data" typu "Lexeme" so vsetkymi jeho konstruktormi
+		import Text.Read (Lexeme(...))
+	- import frege.prelude.Math ()
+	- import frege.data.Traversable ( sequenceA )
 
--- Export len vymenovanych poloziek
-module MyModule (MyType, MyClass, myFunc1) where
+- import "hiding", musi byt skryvatelny... jak na to?
+	import Data.Char hiding (isControl, isMark)
+	import frege.Prelude hiding ( map, filter )
 
--- Export naimportovanych poloziek
-module MyBigModule (module Data.Set, module Data.Char) where
-	import Data.Set
-	import Data.Char
+- import "as", jednak skryvatelny, jednak musi byt referencovatelny
+	import learnyou.chapter07.geometry.Sphere as ph ()
+	f = Sph.volume 2
+	import frege.data.HashMap as HM ()
+	import Data.List as M ( nub )
+	numUniques = length . M.nub
+	
+- ten import "as" ma velmi neprijemne dosledky, vid:
+	import learnyou.chapter07.geometry.Sphere ()
+	...
+	println $ Sphere.volume 2
+	
+	import learnyou.chapter07.geometry.Sphere AS Sph ()
+	...
+	println $ Sph.volume 2
+	- t.j. ovplyvnuje "intellisense"
+	=> cely import musi byt referencovatelny {name}
+	=> specialne ked sa pouzije "import as", tak musi byt referencovatelne "meno as"
+	- Upozornime, ze instancie sa vzdy importuju, ci sa nam to paci alebo nie
 
--- Reexport seba (hodi sa, ked chceme exportovat este nejaky z naimportovanych modulov)
-module AnotherBigModule (module Data.Set, module AnotherBigModule) where
-	import Data.Set
-	import Data.Char
+- Riadkovy komentar treba overit, ze property typu string vyhovuje
+
+- Blokovy komentar treba overit
+
+
+- Tuples nemaju urcene typy deti
+	- v urcitom kontexte moze byt lubovolne pismeno (identifier)
+	- inak musi nieco konkretne referencovat
+	zip :: [a] -> [b] -> [(a, b)]
+	zip (x : xs) (y : ys) = (x, y) : zip xs ys
+	
+
+- Deklaracia funkcie, treba overit, ze meno zacina malym pismenom
+	- pozor, meno moze byt aj operator!
+		-- Pre operatory treba v ramci ...analyzy... overit, ze vzdy su vstupom 2 hodnoty
+		(-:) :: a -> (a -> b) -> b
+
+- Deklaracia funkcie, treba umoznit zalamovanie (+ korektnu indentaciu)
+
+- Deklaracia funkcie, treba udat, jakeho su typu Arguments a ReturnType
+	zip :: [a] -> [b] -> [(a, b)]
+	groupOf :: Int -> [a] -> [[a]]
+	powerset :: [a] -> [[a]]
+	- tu asi bude treba zriadit TypeName koncept?
+	
+	// zrejme pre definiciu, nie deklaraciu...
+	"methodspec '::' sigexs|fundef"
+	methodspec ::= fitem ((rawnativename|SOMEOP|'!'|'?') ('{' tauSC? '}')?|'{' tauSC? '}')?
+	fitem ::= annoitem|'!'|'?'|'-'|SOMEOP														// meno funkcie?
+	
+	sigexs ::= sigex ('|' sigex)*
+	sigex ::= (forall|rho) (THROWS tauSC)?
+	
+	fundef ::= binex ('=' expr|('|' gquals ('->'|'=') expr)+) ('where' '{' letdefs? '}')*
+	
+	// Deklaracia?
+	rho ::= (simpletype+ '=>')? rhofun
+	expr ::= binex ('::' (forall|rho))?		// z lubovolnej expression sa da volat?
+	
+	simpletype ::= tyvar|tyname|		'(' tau (',' tauSC|'|' tauSB)? ')'		|'[' tau ']'
+		// tasSC su tau-y oddelene ciarkami, cize asi napr. (Int a, Char b, Real c) => ...
+	
+	tau ::= (simpletype+ '->')* (simpletype+|forall)
+	rhofun ::= simpletype+ ('->' simpletype+)*	// deklaracia funkcie
 	
 	
+	
+	-- pozor, toto sa vyskytuje skoro vsade
+	expr ::= binex ('::' (forall|rho))?
+	annotation ::= annoitems '::' (forall|rho)
+	confld ::= DOCUMENTATION* fldids '::' (forall|rho)
+	tyvar ::= VARID|'(' VARID '::' kind ')'
+	
+	
+	-- Nemam sajnu, jak je to s udanim typu triedy...
+	-- Tak este raz, kde vsade mozno urcit triedu? Typ premennej? t.j. (Eq a) => ?
+	
+		-- Toto su vsetky mozne vyskyty:
+		classdef ::= 'class' ccontext ('=>' CONID tyvar)? wheredef
+		- definicia triedy, to nas tu nezaujima
+		
+		insthead ::= icontext ('=>' tyname simpletype)?
+		- definicia instancie
+		
+		rho ::= (simpletype+ '=>')? rhofun
+		- simpletype ::= tyvar | tyname | '(' tau (',' tauSC)? ')'
+		- cize: (myvar1, Myvar2, myvar3) => rhofun	
+			rhofun ::= simpletype+ ('->' simpletype+)*
+			- asi nieco take? myvar1 -> myvar2 -> myvar3
+		- (Myvar1, Myvar2, Myvar3) => myvar1 -> myvar2 -> myvar3
+		
+		- rho, sucast tychto:
+			expr ::= binex ('::' (forall|rho))?
+			- vyraz? to by znamenalo: "vyraz" :: (Eq a) => ...
+			- preco??
+			=> nebudem to riesit, aj tak sa to vyskytuje len na 3ch miestach:
+				- trieda, instancia, deklaracia funkcie
+				- cize to dame spredu
+			
+			annotation ::= annoitems '::' (forall|rho)
+			- anotacia, neriesim
+			
+			confld ::= DOCUMENTATION* fldids '::' (forall|rho)
+			- asi tiez nieco podobne...?
+			
+			sigex ::= (forall|rho) (THROWS tauSC)?
+			sigma ::= forall|rho
+			
+			typedef ::= 'type' CONID tyvar* '=' (forall|rho)
+			- definicia typu
+			
+			forall ::= FORALL VARID+ ('.'|SOMEOP) rho
+			- forall neriesim
+	
+	- ClassType je teda nadefinovany takto:
+		rho ::= (simpletype+ '=>')? rhofun
+			- simpletype ::= tyvar | tyname | '(' tau (',' tauSC)? ')'
+			- cize: (myvar1, Myvar2, myvar3) => rhofun	
+				rhofun ::= simpletype+ ('->' simpletype+)*
+				- asi nieco take? myvar1 -> myvar2 -> myvar3
+			- (Myvar1, Myvar2, Myvar3) => myvar1 -> myvar2 -> myvar3
+			- tau ::= (simpletype+ '->')* (simpletype+|forall)
+			- pocitajme iba s tymto variantom:
+			rho ::= simpletype '=>'
+			simpletype ::= '(' tau (',' tau)* ')'
+			tau ::= tyname
 
-Importy	
-----------------------------
--- Import vsetkeho
-import frege.data.List
+			
+- Typove premenne, vsetko okolo toho
 
--- Import len vymenovanych poloziek
-import learnyou.chapter14.TakingAWalk ( Tree, Direction, freeTree )
+	calcBmis :: (Real a) => [(a, a)]
+	replicate :: (Num i) => i -> a -> [a]
+	elem :: (Eq a, Num i) => a -> [i] -> Bool
+	sayMe :: (Integral a) => a -> String
+	findKey :: (Eq k) => k -> [(k,v)] -> Maybe v
 
--- Import operatoru (tiez je vlastne iba funkciou)
-import frege.data.List ( **, delete, !! )
+	-- Funkcia ako argument
+		map :: (a -> b) -> [a] -> [b]
 
--- Import triedy
-import Text.Read (Read)
+		-- Dtto, ale tu vnutorna vracia tuple
+		applyLog :: (Monoid m) => (a, m) -> (a -> (b, m)) -> (b, m)
 
--- Import triedy, avsak nie jej funkcii
-import Text.Read (Read())
+	
+	-- Adepti na deklaraciu funkcie:
+	localdef ::= annotation|'pure'? 'native' methodspec '::' sigexs|fundef
+	nativedef ::= 'pure'? 'native' methodspec '::' sigexs
+	
+	sigexs ::= sigex ('|' sigex)*
+	sigex ::= (forall|rho) (THROWS tauSC)?
 
--- Import triedy s konkretnymi funkciami
-import Text.Read (Read(readsPrec, readList))
-
--- Import "data" typu "Lexeme" so vsetkymi jeho konstruktormi
-import Text.Read (Lexeme(...))
-
--- Import vsetkeho okrem "isControl" a "isMark"
-import Data.Char hiding (isControl, isMark)
-
--- Odkazovanie sa cez HM (hodi sa, pokial modul importoval funkcie s rovnakymi nazvami, ako uz pouzivame my => vyuzivanie cez prefix)
-import learnyou.chapter07.geometry.Sphere as Sph ()
-f = Sph.volume 2
-
--- Priklady
-import frege.prelude.Math ()
-import frege.data.Traversable ( sequenceA )
-import frege.data.HashMap as HM ()
-import frege.Prelude hiding ( map, filter )
-
--- Priklad:
-import learnyou.chapter07.geometry.Sphere ()
-...
-println $ Sphere.volume 2
-
--- Priklad:
-import learnyou.chapter07.geometry.Sphere AS Sph ()
-...
-println $ Sph.volume 2
-
--- Priklad:
-import Data.List as M ( nub )
-numUniques = length . M.nub
-
--- Upozornime, ze instancie sa vzdy importuju, ci sa nam to paci alebo nie
-
-
-
-Komentare
-----------------------------
---
-
-{- 
-	viacriadkovy komentar je vnoreny {- nested -} 
--}
-
-
-
-Indentacia
-----------------------------
-- Pouzivame indentaciu, nie braces { }
-
-- bud na rovnakom riadku, alebo takto:	
-	square x =
-	 x * x		-- aspon 1 char od mena definovanej funkcie	
-
-- pokial sa ale vyskytne "where" clause, tak potom takto:
-	square x =
-	  x2		-- aspon 1 char od "where"
-	 where x2 = -- aspon 1 char od mena definovanej funkcie
-	  x*x		-- aspon 1 char od "where"
-	  
-- let
-	square x = 
-	 let x2 =		-- aspon 1 char od mena definovanej funkcie
-		   x*x 		-- musi byt vo "vlastnom stlpci" od "let", cize asi tesne pred "="
-	 in x2			-- zarovnane na "let"
-	 
-- type signature:
-	convertUpper :: (Char -> Char) 
-	 -> String -> String	-- aspon 1 char od "convertUpper"
-		 
-- if-then-else:
-	convertOnly test change str = 
-		map (\c -> if test c 
-				    then change c 
-					else c) str
-		 
-		 
-
-Types
-----------------------------
--- Mozno nebude treba riesit vobec
-
--- Je len synonymum pre iny typ, napr.:
-type Data = String
-type Breadcrumbs = [Direction]
-type Breadcrumbs a = [Crumb a]
-
--- Zadefinovanie pre tuple
-type FSZipper = (FSItem, [FSCrumb])
-
--- Dalsie priklady
-type ListZipper a = ([a], [a])
-
--- Viacprvkovy
--- Upozornime, ze vzdy musia byt aspon 2 prvky
-second :: (a, b, c) -> b  
-
--- Toto by tym padom malo fungovat asi standardne
-addVectors a b = (fst a + fst b, snd a + snd b)
-
--- Existuje aj konstruktor a tu plati tautologia
-("exp1", "exp2", "exp3") == (,,) "exp1" "exp2" "exp3"
-
-
-
-Tuples
-----------------------------
-zip :: [a] -> [b] -> [(a, b)]
-zip (x : xs) (y : ys) = (x, y) : zip xs ys
-
-
-
-Deklaracia funkcie
-----------------------------
-zip :: [a] -> [b] -> [(a, b)]
-calcBmis :: (Real a) => [(a, a)]
-groupOf :: Int -> [a] -> [[a]]
-powerset :: [a] -> [[a]]
-
--- Pre operatory (vzdy su vstupom 2 hodnoty)
-(-:) :: a -> (a -> b) -> b
-
--- Zhlukovo (neviem ale, ci nefunguje nahodou iba pri triedach a ci vobec vo Frege funguje)
-(<), (<=), (>=), (>)  :: a -> a -> Bool
-
--- Num, Eq su triedy
-replicate :: (Num i) => i -> a -> [a]
-elem :: (Eq a, Num i) => a -> [i] -> Bool
-sayMe :: (Integral a) => a -> String
-
--- Da sa aj bez zatvoriek, ale nebudem to riesit:
-doubleSmallNumber :: Num a => a -> a
-
--- Dalsie priklady
-findKey :: (Eq k) => k -> [(k,v)] -> Maybe v
-
--- Funkcia ako argument
-map :: (a -> b) -> [a] -> [b]
-
--- Dtto, ale tu vnutorna vracia tuple
-applyLog :: (Monoid m) => (a, m) -> (a -> (b, m)) -> (b, m)
-
--- Len vystupny typ
-numLongChains :: Int
-
--- Vystupna hodnota je vzdy "posledna sipecka"
--- Pre navratenie viacero hodnot je nutne pouzit bud zoznam alebo tuple
-
-
+	rho ::= (simpletype+ '=>')? rhofun
+	- opat zjednodusime, nechame len:
+	
+	rhofun ::= simpletype+ ('->' simpletype+)*
+	simpletype ::= tyvar|tyname|'(' tau (',' tauSC|'|' tauSB)? ')'|'[' tau ']'
+	
+	- tyvar je typova premenna, napr. "a"
+	- tyname je meno typu, napr. Int, Char, ...
+		- v tomto pripade sa tyname bude musiet overit, ze ide o typovy konstruktor
+		- napr. Eq nesplna (je trieda)
+	- tau, tauSC
+		- pre funkcie ako argumenty
+		tauSC ::= tau (',' tau)*
+		tau ::= (simpletype+ '->')* (simpletype+|forall)
+		
+	- zjednodusime:
+	-----------------
+	rhofun ::= simpletype+ ('->' simpletype+)*
+		- bacha na simpletype+, vid nizsie tyname priklad s "Maybe Int", "Maybe a", ...
+		- vyriesene cez pomocny koncept "simpletypes"
+	
+	simpletype ::= tyvar | tyname | '(' tau (',' tau)* ')' | '[' tau ']'
+		- (tau, tau, tau) atd. => pre funkcie a pravdepodobne aj tuples
+	
+	tau ::= (simpletype+ '->')* simpletype+
+		- dtto "+"
+		
+	tyvar ::= VARID | '(' VARID '::' kind ')'
+		- zaoberame sa len variantom "VARID"
+		- napr. v pripade a -> b -> b (a, b su v tomto pripade tyvar)
+		
+	tyname ::= qconid | '[' ']' | '(' (','+|'->')? ')'
+		- jednotlive varianty:
+		qconid
+			- riesime len konstruktory, a ci ide realne o ne... hm, overenie cez referenciu?
+			- tyka sa teda tychto pripadov:
+			- Int, Char, Bool, ...
+			- data Maybe x ..., cize Maybe
+				f :: (Eq a) => a -> Maybe Int
+				f a = if (a == a) then Just 1 else Nothing
+				f :: (Eq a) => a -> Maybe a
+			
+		- pravdepodobne nepodstatne; ani frege repl to jaksi neprepusta...?
+		'[' ']' 
+		'(' ')'
+		'(' '->' ')'
+		'(' ','+ ')'
+	
+	qconid ::= (CONID '.' (CONID '.')?)? CONID
+	CONID ::= UppercaseLetter (Letter|Digit|'_'|"'")*
+		- treba test na to, ze max 2 bodkami oddelene
+	
+	
+- Jak referencovat qconid? (Int, Char, Bool, ..., Maybe, ...) Ide o TypeVariable koncept.
+	- v tejto chvili vyriesene len cez {Name}	
+	
+	
+- Koncept TypeVariable: overit, ze meno vyhovuje 
+	- tyvar ::= VARID|'(' VARID '::' kind ')'
+	
+	
+	
+	
+	
 
 
 Vlastne operatory
@@ -977,6 +1040,42 @@ threeCoins gen =
         (thirdCoin, newGen'') = random newGen'
     in  (firstCoin, secondCoin, thirdCoin)
 
+	
+	
+Indentacia
+----------------------------
+- Pouzivame indentaciu, nie braces { }
+
+- bud na rovnakom riadku, alebo takto:	
+	square x =
+	 x * x		-- aspon 1 char od mena definovanej funkcie	
+
+- pokial sa ale vyskytne "where" clause, tak potom takto:
+	square x =
+	  x2		-- aspon 1 char od "where"
+	 where x2 = -- aspon 1 char od mena definovanej funkcie
+	  x*x		-- aspon 1 char od "where"
+	  
+- let
+	square x = 
+	 let x2 =		-- aspon 1 char od mena definovanej funkcie
+		   x*x 		-- musi byt vo "vlastnom stlpci" od "let", cize asi tesne pred "="
+	 in x2			-- zarovnane na "let"
+	 
+- type signature:
+	convertUpper :: (Char -> Char) 
+	 -> String -> String	-- aspon 1 char od "convertUpper"
+		 
+- if-then-else:
+	convertOnly test change str = 
+		map (\c -> if test c 
+				    then change c 
+					else c) str
+		 
+		 
+		 
+----------------------------	
+	
 
 	
 Monady	
@@ -1320,3 +1419,45 @@ Where vs. Let:
 - The scope of the where clause extends over all guards
 - The scope of a let expression is only the current function clause (and guard)
 - Urcite ich ale chceme mat vo finalnej diplomke oboje
+
+
+
+
+
+
+
+Types
+----------------------------
+-- Mozno nebude treba riesit vobec
+
+-- Je len synonymum pre iny typ, napr.:
+type Data = String
+type Breadcrumbs = [Direction]
+type Breadcrumbs a = [Crumb a]
+
+-- Zadefinovanie pre tuple
+type FSZipper = (FSItem, [FSCrumb])
+
+-- Dalsie priklady
+type ListZipper a = ([a], [a])
+
+-- Viacprvkovy
+-- Upozornime, ze vzdy musia byt aspon 2 prvky
+second :: (a, b, c) -> b  
+
+-- Toto by tym padom malo fungovat asi standardne
+addVectors a b = (fst a + fst b, snd a + snd b)
+
+-- Existuje aj konstruktor a tu plati tautologia
+("exp1", "exp2", "exp3") == (,,) "exp1" "exp2" "exp3"
+
+
+
+Vynechane
+----------------------------
+-- Zhlukove deklarovanie funkcie:
+	- mozno plati aj tak iba pri instanciach...
+	(<), (<=), (>=), (>)  :: a -> a -> Bool
+	
+-- Da sa aj bez zatvoriek:
+	doubleSmallNumber :: Num a => a -> a
