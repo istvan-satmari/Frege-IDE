@@ -824,42 +824,31 @@ Co nie je skrtnute, je v stave TODO
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
+	wheredef ::= ('where' '{' localdefs? '}')?	
+	fundef ::= binex ('=' expr|('|' gquals ('->'|'=') expr)+) ('where' '{' letdefs? '}')*
+		- nie je zvykom pisat viacero where, tak necham iba 0..1 namiesto 0..n
 	
-	
-Where (pozriet sa aj vyssie, co som oznacil nespravne za monady)
-----------------------------	
--- Urcime, ze dana docasna premenna je vlastne "nieco", v tomto pripade je premmnou "what", co predstavuje funkciu prijimajucu 1 premennu
-describeList xs = "The list is " ++ what xs
-    where what []  = "empty."
-          what [x] = "a singleton list."
-          what xs  = "a longer list."
+	- pridane "where" child do obidvoch fundef: FDAssignment a FDGuards
 
--- Mozno aj v kombinacii s "guards", potom ale treba indentovat
-maximum1 (x : xs)
-    | x > maxTail = x
-    | otherwise = maxTail
-    where maxTail = maximum1 xs
-
--- Mozno urcit aj ako tuple
-bmiTell weight height
-    | bmi <= skinny = "You're underweight, you emo, you!"
-    | bmi <= normal = "You're supposedly normal. Pffft, I bet you're ugly!"
-    | bmi <= fat    = "You're fat! Lose some weight, fatty!"
-    | otherwise     = "You're a whale, congratulations!"
-    where (skinny, normal, fat) = (18.5, 25.0, 30.0)
+- pozor, toto musi byt mozne spravit::
+	where (skinny, normal, fat) = (18.5, 25.0, 30.0)
+		
+	-- Mozno urcit aj ako tuple
+	bmiTell weight height
+		| bmi <= skinny = "You're underweight, you emo, you!"
+		| bmi <= normal = "You're supposedly normal. Pffft, I bet you're ugly!"
+		| bmi <= fat    = "You're fat! Lose some weight, fatty!"
+		| otherwise     = "You're a whale, congratulations!"
+		where (skinny, normal, fat) = (18.5, 25.0, 30.0)
 		  
 
 
+		  
+		  
 
 
+		  
+		  
 
 	
 Vyuzitie operatorov:
@@ -1009,6 +998,7 @@ TODO: vsetko okolo tohto.
 		
 		
 
+		
 Data
 -------------------------------------------------------------------
 -- Tu nalavo je nazov "data", napravo je konstruktor (nevadi, ze maju rovnake mena)

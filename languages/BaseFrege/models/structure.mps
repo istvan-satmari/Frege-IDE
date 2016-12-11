@@ -351,6 +351,13 @@
     <property role="3GE5qa" value="Definitions.FBB" />
     <property role="TrG5h" value="Where" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5E$XTHV46gc" role="1TKVEi">
+      <property role="IQ2ns" value="6531617606750725132" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="LetDefs" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="vUxQDjKXz1" resolve="FunctionDefinition" />
+    </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKXAk">
     <property role="EcuMT" value="574920793184786836" />
@@ -628,6 +635,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="vUxQDjKXzn" resolve="Expression" />
     </node>
+    <node concept="1TJgyj" id="5E$XTHV3XUK" role="1TKVEi">
+      <property role="IQ2ns" value="6531617606750690992" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="Where" />
+      <ref role="20lvS9" node="vUxQDjKXAj" resolve="Where" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5ZITH0PGXNF">
     <property role="EcuMT" value="6912716259988856043" />
@@ -647,6 +660,12 @@
       <property role="20kJfa" value="Guards" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="vUxQDjKX$A" resolve="Guard" />
+    </node>
+    <node concept="1TJgyj" id="5E$XTHV44xJ" role="1TKVEi">
+      <property role="IQ2ns" value="6531617606750718063" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="Where" />
+      <ref role="20lvS9" node="vUxQDjKXAj" resolve="Where" />
     </node>
   </node>
   <node concept="1TIwiD" id="5ZITH0PGXRH">
