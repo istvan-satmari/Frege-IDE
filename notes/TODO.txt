@@ -292,9 +292,16 @@ Co nie je skrtnute, je v stave TODO
 			rho ::= simpletype '=>'
 			simpletype ::= '(' tau (',' tau)* ')'
 			tau ::= tyname
-
 			
-- Typove premenne, vsetko okolo toho
+			... alebo este lepsie, len toto:
+			rho ::= '(' tyname (',' tyname)* ')'
+	
+
+- Rho by mal prijimat iba triedy, t.j. Eq, Ord, ...
+	- referencovat?
+
+
+	- Typove premenne, vsetko okolo toho
 
 	calcBmis :: (Real a) => [(a, a)]
 	replicate :: (Num i) => i -> a -> [a]
@@ -376,147 +383,463 @@ Co nie je skrtnute, je v stave TODO
 - Koncept TypeVariable: overit, ze meno vyhovuje 
 	- tyvar ::= VARID|'(' VARID '::' kind ')'
 	
-	
-	
-	
-	
+
+- infixl 7 `-:`
+	- cislo je v nejakom povolenom rozsahu: toto bude treba okontrolovat neskor v constraints a pod.
+	- operator je nejaky string a ten tiez bude treba okontrolovat
+
+	infix ::= fixity operators
+	fixity ::= (INFIX|INFIXL|INFIXR) INTCONST
+	operators ::= (SOMEOP|VARID|'-')+
 
 
-Vlastne operatory
-----------------------------
-infixl 7 `-:`
-(-:) :: a -> (a -> b) -> b
-x -: f = f x
--- t.j. aplikovanie funkcie "f" na "x"
-
--- Urcovanie priorit (fixity), tu: "plus1" je prioritnejsi, nez "mult1"
-infixl 8 ‘plus1‘		
-infixl 7 ‘mult1‘
-> 2 ‘plus1‘ 3 ‘mult1‘ 5
-25
-
--- Operator je aj slovo
-a `myop` b = a + b
-f n = n `div` 2
-
--- Operator mozno pouzit ako funkciu ked sa uzatvorkuje
-succ a = (+) 1 a
-
--- Tu je dalsi priklad s uzatvorkovanim operatora
-listOfFuns = map (*) [0..]
-
--- infixr
-infixr 7 `%`
-(%) :: Int -> Int -> Rational
-x % y = reduce $ Rational x y
-
--- Definovanie pre komplexnejsi typ
-data Rational = Rational Int Int
-(Rational x1 y1) +. (Rational x2 y2) = (x1 * y2 + x2 * y1) % (y1 * y2)
-
--- Currying operatorov
-myresult = filter (== 3) [ 1, 2, 3, 4, 5 ]
-mylist = map (^ 2) [1..]
-
--- Currying cez sekciovanie
-add10 = (10 +)
-onLeft str = (++ str)
-onRight str = (str ++)
-
-
-
-Definicia funkcie
--------------------------------------------------------------------
-
-Pradne riadky
-----------------------------
 -- Medzi patternami mozu byt prazdne riadky, ale nemoze byt ina funkcia, t.j. toto neprejde
-mDouble 0 = 1
-mSum x = x + 1
-mDouble x = x * 2
+	- viacere mozne pristupy; mozno aj cez semanticku analyzu; zatial to vynechavam, lebo by to skor zneprehladnilo
 
--- Ale toto ano
-mDouble 0 = 1
+	mDouble 0 = 1
+	mSum x = x + 1
+	mDouble x = x * 2
+
+	-- Ale toto ano
+	mDouble 0 = 1
 	
-mDouble x = x * 2
-mSum x = x + 1
+	mDouble x = x * 2
+	mSum x = x + 1
 
--- Deklaracia je zase uplne nezavisla a moze byt uplne kdekolvek
--- Je vsak mozne ju striktne pozadovat v tom editore navrchu, lebo to podporuje prehladnost kodu
-mDouble x = x * 2
-mSum x = x + 1
-mDouble :: Int -> Int
+	-- Deklaracia je zase uplne nezavisla a moze byt uplne kdekolvek
+	-- Je vsak mozne ju striktne pozadovat v tom editore navrchu, lebo to podporuje prehladnost kodu
+	mDouble x = x * 2
+	mSum x = x + 1
+	mDouble :: Int -> Int
 
 
-Zhodne patterny
-----------------------------
 -- Patterny nesmu byt uplne zhodne, t.j. toto neprejde, kedze v obidvoch pripadoch ide o "vsetko je lubovolna premenna"
--- Neviem ale, ci ma zmysel kontrolovat, lebo na to treba semanticku analyzu
-f a b c = 1
-f i j k = 2
-
-
-Guards
-----------------------------
-replicate n x
-    | n <= 0    = []
-    | otherwise = x : replicate' (n - 1) x
+	-- Neviem ale, ci ma zmysel kontrolovat, lebo na to treba semanticku analyzu
+		- rozhodne treba, v strome sa toto neda zachytit, cize na neskor
+	f a b c = 1
+	f i j k = 2
 	
--- Mozno pouzit aj jedineho a potom dalsi pripad vyriesit pomocou pattern-matchingu
-take n _
-    | n <= 0   = []
-take _ []     = []
-take n (x : xs) = x : take (n - 1) xs
+	
+	
+	
+	Definicia funkcie
+	-----------------
 
--- Mozno "guardovat" aj booleanovou funkciou
-myFilter p (x : xs)
-    | p x       = x : myFilter p xs
-    | otherwise = myFilter p xs
+	fundef ::= binex ('=' expr|('|' gquals ('->'|'=') expr)+) ('where' '{' letdefs? '}')*
 
-
-
-Case
-----------------------------
--- Podobne, ako pattern-matching
-head xs = case xs of
-    [] -> error "No head for empty lists!"
-    (x : _) -> x
-
-readMaybe st =
-    case st.double of
-        Right x -> Just x
-        Left  _ -> Nothing
-
--- Mozne je aj vetvenie
-routine =
-    case landLeft 1 (0, 0) of
-        Nothing    -> Nothing
-        Just pole1 ->
-            case landRight 4 pole1 of
-                Nothing    -> Nothing
-                Just pole2 -> landLeft 1 pole3
-				
--- Guards (specialna sucast "case"?)
-strcmp s1 s2 = 
-	case (s1, s2) of
-		([], []) -> True
-		(s1:ss1, s2:ss2)
-			| toUpper s1 == toUpper s2 -> strcmp ss1 ss2
-			| otherwise -> False
-		_ -> False  
-				
--- Specialne to este funguje pri pouziti zavinacu
-anyChoice2 ch =
-	case ch of
-		Nothing -> "No choice!"
-		Just score@(First "gold") -> "First with gold!"
-		Just score@(First _) -> "First with something else."
+	rozvoj:	
+	fundef ::= binex '=' expr 							('where' '{' letdefs? '}')*
+	fundef ::= binex ('|' gquals ('->'|'=') expr)+		('where' '{' letdefs? '}')*
+	- zatial bez where, lebo to vedie na monady
+	- binex teda reprezentuje zaciatok funkcie, napr. "replicate n x" (? asi, nejak to uplne nesedi podla gramatiky...)
+		=> pomenovane "FDHead"
 		
--- Realny "case" je trochu zlozitejsi (aj ked nie ovela), ale pre potreby diplomky by mali stacit sucasne priklady
--- Mozno si vystacime s guardami, tak mozno nebude treba implementovat
+- zatial nie je jasne, z coho ma "FDHead" pozostavat
+	- function name
+	- premenne (=> jaky koncept?)
+
+	
+	gquals, pokial pouzijeme guardov (FDGuards)
+	= expression, pokial klasicka definicia (FDAssignment)
+	
+	-- pre guards variant:
+	fundef ::= binex 
+				'|' gquals ('->'|'=') expr
+				'|' gquals ('->'|'=') expr
+				'|' gquals ('->'|'=') expr
+				...
+				
+	Guards
+	----------------------------
+	replicate n x
+		| n <= 0    = []
+		| otherwise = x : replicate' (n - 1) x
+		
+	-- Mozno pouzit aj jedineho a potom dalsi pripad vyriesit pomocou pattern-matchingu
+	take n _
+		| n <= 0   = []
+	take _ []     = []
+	take n (x : xs) = x : take (n - 1) xs
+
+	-- Mozno "guardovat" aj booleanovou funkciou
+	myFilter p (x : xs)
+		| p x       = x : myFilter p xs
+		| otherwise = myFilter p xs
+		
+
+		
+	=> budem pouzivat variant s '=' a nie sipeckou '->'
+	
+	gqual ::= expr ('<-' expr)?
+	gquals ::= gqual (',' gqual)* ','?
+		=> na to sa tiez vykaslem a budem pouzivat len "expr" za "gquals"
+		
+		
+- 'otherwise' je nutne okontrolovat cez semanticku analyzu (asi)
+	- v ramci gramatiky nikde nie je nadefinovane ako keyword
 	
 	
-Where
+	
+	expr ::= binex ('::' (forall|rho))?
+	- vid:
+	\x -> x+x :: Int
+	defMB = defValue (Nothing :: Maybe Bool)
+	
+	
+	=> binex nebude binary expression, ale "ExpressionPart"
+	Expression = ExpressionPart '::' ClassName
+		- Rho ako koncept sa nedalo pouzit, lebo je trochu specifickejsie po obmene
+	
+	
+	binex ::= (binex (SOMEOP|'-'))* '-'? topex
+		=> "topex ,.-! topex - topex !!.|| topex"
+		- cize binex sme urcili, ze je "ExpressionPart" => ok, premenovanie spat na "BinaryExpression"
+		=> BinaryExpression op BinaryExpression op BinaryExpression ... BinaryExpression op TopExpression
+
+- koncept 'operator' bude treba vytvorit
+	- momentalne ako nedefinovane dieta v 'BinexPart'
+	- mal by splnat: 
+		(SOMEOP|'-'))* '-'?
+	- mysliet na to, ze operator moze byt aj slovo...
+		
+			
+	topex ::= 
+		'if' expr 'then' expr 'else' expr
+		'let' letdefs 'in' expr
+		'case' expr 'of' calts
+		'\' (('!'|'?')* primary)+ lambdabody	// lambda
+		(('!'|'?')* primary)+
+
+
+
+	Case
+	----------------------------
+	-- Podobne, ako pattern-matching
+	head xs = case xs of
+		[] -> error "No head for empty lists!"
+		(x : _) -> x
+
+	readMaybe st =
+		case st.double of
+			Right x -> Just x
+			Left  _ -> Nothing
+
+	-- Mozne je aj vetvenie
+	routine =
+		case landLeft 1 (0, 0) of
+			Nothing    -> Nothing
+			Just pole1 ->
+				case landRight 4 pole1 of
+					Nothing    -> Nothing
+					Just pole2 -> landLeft 1 pole3
+					
+	-- Specialne to este funguje pri pouziti zavinacu
+	anyChoice2 ch =
+		case ch of
+			Nothing -> "No choice!"
+			Just score@(First "gold") -> "First with gold!"
+			Just score@(First _) -> "First with something else."
+			
+	
+	
+	Formalne:
+	'case' expr 'of' calts
+	calts ::= calt (';' calt)*
+		- namiesto strednika pouzijeme indentaciu
+	
+	calt ::= 
+		expr ('|' gquals ('->'|'=') expr)+ 	 ('where' '{' letdefs? '}')*
+		expr ('->'|'=') expr				 ('where' '{' letdefs? '}')*
+		- opat aj tu vynechavam 'where'
+	
+	calt ::= 
+		expr ('|' gquals ('->'|'=') expr)+		// podla fundef, vid vyssie, prip. nizsie zopakovane
+		expr '->' expr
+		expr '=' expr							// tento variant asi nebudeme pouzivat
+		
+		
+	-- Guards (specialna sucast "case"?)
+	strcmp s1 s2 = 
+		case (s1, s2) of
+			([], []) -> True
+			(s1:ss1, s2:ss2)
+				| toUpper s1 == toUpper s2 -> strcmp ss1 ss2
+				| otherwise -> False
+			_ -> False 
+	
+	-- Guards pri definicii funkcie
+	fundef ::= binex 
+			'|' gquals ('->'|'=') expr
+			'|' gquals ('->'|'=') expr
+			'|' gquals ('->'|'=') expr
+	
+	
+- V ramci case '_' ako expression ma specialne postavenie
+	- napr. "_ -> False"
+	- opat semanticka analyza?
+
+- pozor, case musi podporovat aj toto: case () of ...:
+	f x = let a = w x in
+		case () of						-- tyka sa "f x"
+		  _ | cond1 x   -> a
+			| cond2 x   -> g a
+			| otherwise -> f (h x a)
+	
+- if-then-else: umoznit aj definiciu cez viacere riadky
+	yesnoIf x yesResult noResult =
+		if x > 100
+			then yesResult
+			else noResult
+	
+
+ 
+
+	'let' letdefs 'in' expr
+
+	letdefs ::= ((annotation|fundef) ';')+
+		- bez anotacii, cize iba:
+	
+	letdefs ::= (fundef ';')+
+		=> treba poupravit fundef
+
+		
+	f x = let a = w x in if cond1 x then a else g a
+	
+	firstThree str = 
+		let (a:b:c:_) = str
+		in show a ++ ", " ++ show b ++ ", " ++ show c
+ 
+	-- viacere letdefs:
+    let ords = map ord $ unpacked msg
+        shifted = map (+ shift) ords
+    in  packed $ map chr shifted
+	
+- s 'let' spojena analyza, ze "'let' letdefs 'in' expr" expr moze pouzivat konstrukty z letdefs
+
+	
+- prerobene fundef kvoli let => bude treba davat pozor, ci to dava zmysel neskor (meno funkcie + premenne ...)
+	
+	fundef ::= 
+		binex ('|' gquals ('->'|'=') expr)+
+		binex '=' expr
+			 - cize ziaden FunctionDefinitionHead, rovno binex...
+	=> nejaka kontrola, ze dava zmysel...?
+			 
+			 
+- problem, pokial let v zoznamomch... potom jak oddelovat v editore?
+	=> nemoze byt vertikalna kolekcia "letdefs", ako doteraz
+	- asi bude treba vytvorit niekolko editorov pre ten isty koncept...
+		(let a = 100; b = 200; c = 300 in a * b * c, let foo = "Hey "; bar = "there!" in  foo ++ bar)
+		(let (a, b, c) = (1, 2, 3) in a + b + c) * 100
+
+		
+	
+	
+	Lambda vyrazy
+		
+	lambda ::= '\' (('!'|'?')* primary)+ lambdabody
+	lambdabody ::= lambda | '->' expr
+		- lambdabody je zrejmy
+		
+	=> uprava:
+	lambda ::= ('\' (('!'|'?')* primary)+)+ 	'->' expr
+	=> zjednodusime:
+	lambda ::= ('\' (primary)+)+ 
+	
+	
+	...
+	toto je inak tiez topex, tak to vyriesme prv: 
+	topex ::=  
+		...
+		(('!'|'?')* primary)+
+	
+	
+	primary ::= 		
+		term	 																('.' (VARID|SOMEOP|'!'|'?'|'{' (VARID ('?'|'='|'<-')|getfields) '}' | '[' expr ']') )*
+		('do' '{' dodefs|qualifiers '{' (VARID ('?'|'='|'<-')|getfields)) '}' 	('.' (VARID|SOMEOP|'!'|'?'|'{' (VARID ('?'|'='|'<-')|getfields) '}' | '[' expr ']') )*
+		- druhy variant s 'do' zatial neriesim; to su monady
+
+	topex ::= (('!'|'?')* primary)+
+	primary ::= 
+		term ('.' (VARID|SOMEOP|'!'|'?'|'{' (VARID ('?'|'='|'<-')|getfields) '}' | '[' expr ']') )*	
+		
+		=> znazornenie:
+		term
+			'.' '[' expr ']' 
+			'.' VARID
+			'.' SOMEOP
+			'.' '!'
+			'.' '?'
+			'.' '{' VARID '?' '}'
+			'.' '{' VARID '=' '}'
+			'.' '{' VARID '<-' '}'
+			'.' '{' getfields '}'
+	
+	getfields ::= getfield (',' getfield)* ','?	
+	getfield ::= VARID (('<-'|'=') expr)?
+	
+	- celkovo vyzera zvlastne; asi zjednodusime len na term, t.j. "topex ::= term"
+	
+	BTW, take tiez nieco existuje: expr :: !Int (striktny typ...?)
+	
+
+- Termy urcite preverit a opravit (zrejme bude viacero chyb)
+
+
+	term ::= 
+		literal						// Vlastny koncept!
+- Tieto tri su problematicke, lebo budu musiet referencovat uz nejaky existujuci koncept (preto som aj vytvoril specialny koncept pre ne; zatial ale nic nereferencuje)
+	- (tie nie su uplne spravne urobene; lendocasne placeholder properties)
+		qconid
+		qvarid
+		'_'
+		
+		qconid '{' fields? '}'		// (record syntax, vynechane)
+		
+		'(' ')'						// (vynechane)
+		'(' ','+ ')'				// (vynechane)
+		'(' '!' ')'					// (vynechane) sahnutie na konkretny prvok listu; 
+		'(' '?' ')'					// (vynechane)
+		'(' '-' ')'					// (vynechane)
+		'(' SOMEOP ')'				// (vynechane)
+		'(' SOMEOP expr ')'			// (vynechane)
+		'(' binex SOMEOP ')'		// (vynechane)
+		'(' binex '-' ')'			// (vynechane)
+		'(' expr ')'				// uzatvorkovany expression, ok
+		'(' expr ';' exprSS ')'		// (vynechane)
+		 
+- Na tuple bude treba specialnu kontrolu, ze su aspon 2		
+		'(' expr ',' exprSC ')'		// tuple (aspon 2)
+		
+		
+		'[' ']'						// prazdny zoznam
+		'[' expr '|' lcquals ']'
+		'[' exprSC '..' expr ']'
+		'[' exprSC '..' ']'
+		'[' exprSC ']'
+		
+	// Pre record syntax; zatial nepouzivame
+	fields ::= field (',' field)* ','?	
+	field ::= VARID ('=' expr)?
+	
+	exprSC ::= expr (',' expr)* ','?
+	exprSS ::= expr (';' expr)* ';'?
+	
+
+	
+- Zoznamy	
+		'[' ']'						// prazdny zoznam (mozne cez ListEnumeration)
+		'[' expr '|' lcquals ']'	// ListComprehension
+		'[' exprSC '..' expr ']'	// ListRange
+		'[' exprSC '..' ']'			// ListRange (identicky koncept)
+		'[' exprSC ']'				// ListEnumeration
+	
+		
+		- List Comprehension:
+		lcquals ::= lcqual (',' lcqual)* ','?
+		lcqual ::= 
+			gqual					// nebol pouzity existujuci koncept, ale vytvoreny novy
+			expr '=' expr
+- kvoli problemom s indentaciou a braces {} som nastavil len 1 "letdef" z "letdefs"			
+			'let' '{' letdefs '}'	
+			
+				// 'let' '{' letdefs '}' 'in') expr
+				// ten sa neda pouzit priamo
+			
+				
+		guard ::= '|' gquals ('->'|'=') expr
+		gqual ::= expr ('<-' expr)?
+		
+	
+	Pripomienka: expr nemame, ale toto:
+	expr ::= binex ('::' (forall|rho))?
+	je 
+		
+		
+			
+		
+- Tu je `elem` tzv. guard, t.j. testuje, ci sa character "c" nachadza v zozname ['A'..'Z']
+	- kvoli tomuto bol specialne vytvoreny novy potom LCQualifier: LCQGuard (len 1 expression) -- mysliet na to pri typesystem
+		[ c | c <- str, c `elem` ['A'..'Z'] ]
+
+-- Pozor na zaporne cisla a medzery
+		[-110..-100] 	-– syntax error
+		[-110.. -100] 	-- ok
+
+-- Znovu pre TypeSystem:
+		["expression" | "expression", "let declaration", pattern <- "expression"]
+			- expression: ako boolean guard
+			- <-: generator prvkov
+				- pattern je typu t
+				- expression musi byt typu [t]
+				
+-- Definicia cez viacero riadkov (treba potom niekedy...)
+		b = [ [ 1, 2, 3, 4 ]
+			, [ 5, 3, 3, 3 ]
+			, [ 1, 2, 2, 3, 4 ]
+			, [ 1, 2, 3 ]
+			]	
+		
+		
+
+
+
+- Dokoncit lambdy	
+		
+		
+	
+	Lambda vyrazy
+		
+	lambda ::= '\' (('!'|'?')* primary)+ lambdabody
+	lambdabody ::= lambda | '->' expr
+		- lambdabody je zrejmy
+		
+	=> uprava:
+	lambda ::= ('\' (('!'|'?')* primary)+)+ 	'->' expr
+	=> zjednodusime:
+	lambda ::= ('\' (primary)+)+ 
+	
+	
+	...
+	toto je inak tiez topex, tak to vyriesme prv: 
+	topex ::=  
+		...
+		(('!'|'?')* primary)+
+	
+	
+	primary ::= 		
+		term	 																('.' (VARID|SOMEOP|'!'|'?'|'{' (VARID ('?'|'='|'<-')|getfields) '}' | '[' expr ']') )*
+		('do' '{' dodefs|qualifiers '{' (VARID ('?'|'='|'<-')|getfields)) '}' 	('.' (VARID|SOMEOP|'!'|'?'|'{' (VARID ('?'|'='|'<-')|getfields) '}' | '[' expr ']') )*
+		- druhy variant s 'do' zatial neriesim; to su monady
+
+	topex ::= (('!'|'?')* primary)+
+	primary ::= 
+		term ('.' (VARID|SOMEOP|'!'|'?'|'{' (VARID ('?'|'='|'<-')|getfields) '}' | '[' expr ']') )*	
+
+		
+		
+	newFocus2 = newFocus -: goUp -: modify (\_ -> 'X')
+	addThree = \x -> \y -> \z -> x + y + z			-- na pravej strane od '->' je teda vyraz, co opat moze byt lambda
+	flip f = \x \y -> f y x							-- takto pre viacere argumenty
+	filter (\xs -> length xs > 15) [1..10]			-- aplikacia funkcie
+	numberedItems = zipWith (\n \line -> show n ++ " - " ++ line) [0..] todoItems
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+Where (pozriet sa aj vyssie, co som oznacil nespravne za monady)
 ----------------------------	
 -- Urcime, ze dana docasna premenna je vlastne "nieco", v tomto pripade je premmnou "what", co predstavuje funkciu prijimajucu 1 premennu
 describeList xs = "The list is " ++ what xs
@@ -539,16 +862,6 @@ bmiTell weight height
     where (skinny, normal, fat) = (18.5, 25.0, 30.0)
 		  
 
-If-then-else
-----------------------------
-yesnoIf x yesResult noResult =
-    if x > 100
-        then yesResult
-        else noResult
-		
-respondPalindromes = unlines . map tellPalindrome . lines
-    where tellPalindrome xs = if isPalindrome xs then "palindrome" else "not a palindrome"
-          isPalindrome xs = xs == (packed . reverse . unpacked) xs
 
 
 Definicia cez viacero riadkov:
@@ -631,100 +944,81 @@ defMB = defValue (Nothing :: Maybe Bool)
 
 
 
-Zoznamy
--------------------------------------------------------------------
--- Definicia
-lostNumbers = [ 4, 8, 15, 16, 23, 42 ]
+		
+		
+		
+		
+Zoznamy: operatory
+----------------------------			
+		-- Toto len ako zoznam zoznamov
+		[1, 2] : [[ 3, 4, 5 ]]
 
--- Zoznamy v zozname:
-b = [ [ 5, 4, 5, 4, 4 ], [ 1, 2, 3 ], [ 3, 5, 4, 3 ], [], [ 2 ], [ 2, 2 ] ]
+		-- Zoznam troch prvkov
+		1 : 2 : 3 : []
 
--- Definicia cez viacero riadkov
-b = [ [ 1, 2, 3, 4 ]
-    , [ 5, 3, 3, 3 ]
-    , [ 1, 2, 2, 3, 4 ]
-    , [ 1, 2, 3 ]
-    ]	
-	
--- Samozrejme je mozny aj zoznam inych prvkov, nez Int-ov:
-[Point 50 10, Point 5 90, Point 2 25]
+		-- Spristupnenie prvku na i-tej pozicii, v tomto pripade na 6-tom mieste
+		-- Mimochodom, "charAt" a "toList" su z "import frege.data.List"
+		(toList "Steve Buscemi") !! 6
+		"Steve Buscemi".charAt 6
 
--- Operatory
-reverse (x : xs) = reverse xs ++ [x]
-repeat x = x : repeat x
-1 : [ 2, 3, 4, 5 ]
+		-- String ako implicitny zoznam charov
+		printhello = "hello" ++ " " ++ "world"
+		
+		-- Operatory
+		reverse (x : xs) = reverse xs ++ [x]
+		repeat x = x : repeat x
+		1 : [ 2, 3, 4, 5 ]
 
--- Ako fukncia:
-head (x : _) = x
-second (x : y : _) = y
+		-- Ako fukncia:
+		head (x : _) = x
+		second (x : y : _) = y
 
--- Toto len ako zoznam zoznamov
-[1, 2] : [[ 3, 4, 5 ]]
+		
+		
+		
+		
+		
+		
+		
+		
+TODO: vsetko okolo tohto.
+	- momentalne s tymi operatormi pri deklaracii funkcie nepocitam; treba s tym nieco urobit. (zistit, ci to, ze ide o operator, sa zistuje az pri semantickej analyze, alebo uz pri syntaktickej?)
 
--- Zoznam troch prvkov
-1 : 2 : 3 : []
+	(-:) :: a -> (a -> b) -> b
+	x -: f = f x
+	-- t.j. aplikovanie funkcie "f" na "x"
 
--- Spristupnenie prvku na i-tej pozicii, v tomto pripade na 6-tom mieste
--- Mimochodom, "charAt" a "toList" su z "import frege.data.List"
-(toList "Steve Buscemi") !! 6
-"Steve Buscemi".charAt 6
+	-- Operator je aj slovo
+	a `myop` b = a + b
+	f n = n `div` 2
 
--- String ako implicitny zoznam charov
-printhello = "hello" ++ " " ++ "world"
+	-- Operator mozno pouzit ako funkciu ked sa uzatvorkuje
+	succ a = (+) 1 a
 
--- Definicia cez vlastnosti (list comprehension)
-[ [ x, y, z ] | x <- [ 1, 2 ], y <- [ 3, 4 ], z <- [ 5, 6 ] ]
+	-- Tu je dalsi priklad s uzatvorkovanim operatora
+	listOfFuns = map (*) [0..]
 
--- Tu je `elem` tzv. guard, t.j. testuje, ci sa character "c" nachadza v zozname ['A'..'Z']
-[ c | c <- str, c `elem` ['A'..'Z'] ]
+	-- infixr
+	infixr 7 `%`
+	(%) :: Int -> Int -> Rational
+	x % y = reduce $ Rational x y
 
--- "odd" je funkcia, ktora vracia Bool, cize je to guard, vysledkom je zoznam ["BOOM!", "BOOM!", "BOOM!", "BOOM!", "BOOM!", "BANG!", "BANG!", "BANG!", "BANG!", "BANG!"]
-[ if x < 10 then "BOOM!" else "BANG!" | x <- [1..20], odd x ]
+	-- Definovanie pre komplexnejsi typ
+	data Rational = Rational Int Int
+	(Rational x1 y1) +. (Rational x2 y2) = (x1 * y2 + x2 * y1) % (y1 * y2)
 
--- Takto mozno zistit dlzku zoznamu (zo zoznamu xs "hadzeme do prazdna")
-length xs = sum [ 1 | _ <- xs ]
+	-- Currying operatorov
+	myresult = filter (== 3) [ 1, 2, 3, 4, 5 ]
+	mylist = map (^ 2) [1..]
 
--- Vrati zoznam dlzky 9
-[ x * y | x <- [ 2, 5, 10 ], y <- [ 8, 10, 11 ] ]
-
--- Mozno aj takto injektovat prvky
-[ a + b | (a, b) <- xs ]
-
--- Mozno vyuzit aj "=" namiesto "<-"
-[ bmi | (w, h) <- xs, bmi = w / h ^ 2, bmi >= 25.0 ]
-
--- Dalsie priklady:
-[ x * 2 | x <- [ 1 .. 10 ], x * 2 >= 12 ]
-[ [ x | x <- xs, even x ] | xs <- xxs ]
-
--- Range (prvky z lubovolne "Enum" triedy su povolene)
-[1..100]
-[ 'a' .. 'z' ]
-[ 'K' .. 'Z' ]
-[ 3, 6 .. 20 ]
-[20, 19 .. 1]
-[100..]
-
--- Prazdny zoznam
-[110..100]
-
--- Pozor na zaporne cisla a medzery
-[-110..-100] 	-– syntax error
-[-110.. -100] 	-- ok
-
--- Vseobecne "range"
-["expression1".."expression2"]
-["expression0", "expression1".."expression2"]
-
--- Vseobecne "list comprehension"
-["expression" | "expression", "let declaration", pattern <- "expression"]
-	- expression: ako boolean guard
-	- <-: generator prvkov
-		- pattern je typu t
-		- expression musi byt typu [t]
-
--- List comprehension s "let"
-comb = [(a, z) | a <- [1..3], b <- [1..3], c <- [1..3], let z = min a b, z < c]
+	-- Currying cez sekciovanie
+	add10 = (10 +)
+	onLeft str = (++ str)
+	onRight str = (str ++)		
+		
+		
+		
+		
 		
 		
 
@@ -918,129 +1212,6 @@ instance Functor [] where
 	fmap = map
   
 
-  
-Lambda
--------------------------------------------------------------------	
--- Princip zapisu:
-newFocus2 = newFocus -: goUp -: modify (\_ -> 'X')
-
--- t.j. najprv deklarujeme argumenty, potom funkciu a nakoniec ju uplatnime (tu n = [0..], line = todoItems)
-numberedItems = zipWith (\n \line -> show n ++ " - " ++ line) [0..] todoItems
-
--- ide to aj takto, t.j. prva vrati funkciu, co tiez vracia funkciu, ... atd.
-addThree = \x -> \y -> \z -> x + y + z
-
--- priklad vyuzitiapre binarnu funkciu "f"
-flip f = \x \y -> f y x
-
--- dalsi priklad, kde vraciame boolean cez anonymnu funkciu
-filter (\xs -> length xs > 15) [1..10]
-
--- evidentne je mozne zadat aj toto (overit, ci to je vo Frege)
-\x -> x+x :: Int
-
--- dalsi priklad:
-convertOnly test change str = 
-	map (\c -> if test c then change c else c) str
-
-
-Let
--------------------------------------------------------------------	
-- Gramaticky:
-let "declarations" in "expression"
-
-- priklad: (where vs. let)
-		- where:
-			f x
-				| cond1 x   = a
-				| cond2 x   = g a
-				| otherwise = f (h x a)
-				where
-					a = w x
-		- let:
-			f x
-				= let a = w x in 		-- cize co znamena "a" sa uz urci tu
-					case () of			-- a v ramci jakeho scopeu, akoby; () asi akoby povodny vyraz...?
-					  _ | cond1 x   -> a
-						| cond2 x   -> g a
-						| otherwise -> f (h x a)
-		- ekvivalentne:
-			f x
-				= let a = w x in 
-					if cond1 x then a
-					else if cond2 x then g a
-					else f (h x a)
-
- 
--- sluzi aj na dekonstrukciu!!! vid priklad:
-firstThree str =
- let (a:b:c:_) = str		-- toto nie je definovanie novej funkcie; len zamenenie za "premennu"
- in "Initial three characters are: " ++ show a ++ ", " ++ show b ++ ", and " ++ show c
- 
-
-fsTo name (Folder folderName items, bs) =
-    let (ls, rs) = break (nameIs name) items
-    in  case rs of
-        []        -> error "no such file or folder."
-        item : rs'-> (item, FSCrumb folderName ls rs' : bs)
-		
-encode :: Int -> String -> String
-encode shift msg =
-    let ords = map ord $ unpacked msg
-        shifted = map (+ shift) ords
-    in  packed $ map chr shifted
-
-search needle haystack =
-    let nlen = length needle
-    in fold (\acc \x -> if take nlen x == needle then True else acc)
-             false (tails haystack)
-			 
-shortLinesOnly :: String -> String
-shortLinesOnly input =
-    let allLines = lines input
-        shortLines = filter (\line -> length line < 10) allLines
-        result = unlines shortLines
-    in  result
-
-roadStep (pathA, pathB) (Section a b c) =
-    let priceA = sum $ map snd pathA
-        priceB = sum $ map snd pathB
-        forwardPriceToA = priceA + a
-        clossPriceToA   = priceB + b + c
-        forwardPriceToB = priceB + b
-        clossPriceToB   = priceA + a + c
-        newPathToA =
-            if forwardPriceToA <= clossPriceToA
-                then (A, a) : pathA
-                else (C, c) : (B, b) : pathB
-        newPathToB =
-            if forwardPriceToB <= clossPriceToB
-                then (B, b) : pathB
-                else (C, c) : (A, a) : pathA
-    in  (newPathToA, newPathToB)
-
-cylinder r h =
-    let sideArea = 2 * pi * r * h
-        topArea = pi * r ^ 2
-    in  sideArea + 2 * topArea
-
-println $ 4 * (let a = 9 in a + 1) + 2
-[let square x = x * x in (square 5, square 3, square 2)]
-( let a = 100; b = 200; c = 300 in a * b * c, let foo = "Hey "; bar = "there!" in  foo ++ bar)
-(let (a, b, c) = (1, 2, 3) in a + b + c) * 100
-
-quicksort (x : xs) =
-    let smallerSorted = quicksort [a | a <- xs, a <= x]
-        biggerSorted = quicksort [a | a <- xs, a > x]
-    in  smallerSorted ++ [x] ++ biggerSorted
-
-threeCoins gen =
-    let (firstCoin, newGen)   = random gen
-        (secondCoin, newGen') = random newGen
-        (thirdCoin, newGen'') = random newGen'
-    in  (firstCoin, secondCoin, thirdCoin)
-
-	
 	
 Indentacia
 ----------------------------
