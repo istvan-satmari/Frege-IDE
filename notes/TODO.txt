@@ -430,7 +430,7 @@ Co nie je skrtnute, je v stave TODO
 	rozvoj:	
 	fundef ::= binex '=' expr 							('where' '{' letdefs? '}')*
 	fundef ::= binex ('|' gquals ('->'|'=') expr)+		('where' '{' letdefs? '}')*
-	- zatial bez where, lebo to vedie na monady
+	- where neskor
 	- binex teda reprezentuje zaciatok funkcie, napr. "replicate n x" (? asi, nejak to uplne nesedi podla gramatiky...)
 		=> pomenovane "FDHead"
 		
@@ -784,47 +784,42 @@ Co nie je skrtnute, je v stave TODO
 
 
 
-- Dokoncit lambdy	
 		
-		
-	
-	Lambda vyrazy
 		
 	lambda ::= '\' (('!'|'?')* primary)+ lambdabody
-	lambdabody ::= lambda | '->' expr
-		- lambdabody je zrejmy
-		
-	=> uprava:
-	lambda ::= ('\' (('!'|'?')* primary)+)+ 	'->' expr
-	=> zjednodusime:
-	lambda ::= ('\' (primary)+)+ 
-	
-	
-	...
-	toto je inak tiez topex, tak to vyriesme prv: 
-	topex ::=  
-		...
-		(('!'|'?')* primary)+
-	
 	
 	primary ::= 		
 		term	 																('.' (VARID|SOMEOP|'!'|'?'|'{' (VARID ('?'|'='|'<-')|getfields) '}' | '[' expr ']') )*
 		('do' '{' dodefs|qualifiers '{' (VARID ('?'|'='|'<-')|getfields)) '}' 	('.' (VARID|SOMEOP|'!'|'?'|'{' (VARID ('?'|'='|'<-')|getfields) '}' | '[' expr ']') )*
 		- druhy variant s 'do' zatial neriesim; to su monady
-
-	topex ::= (('!'|'?')* primary)+
-	primary ::= 
-		term ('.' (VARID|SOMEOP|'!'|'?'|'{' (VARID ('?'|'='|'<-')|getfields) '}' | '[' expr ']') )*	
-
-		
-		
+		- napravo od termu?? zatial tiez neriesim (to je asi spristupnenie cez "namespace"...?)
+		- pozor, tu teda nejde tak jednoducho pouzit koncept, ktory referencuje ine! (pokial by v ramci termu boli nahradene qvarid a qconid)
+		=> primary nebudeme mat; pouzijeme len term (ak zmena, tak primary musi byt aj v topex-e)
+	
+	lambdabody ::= lambda | '->' expr
+		- zaujimave je to, ze vedie aj na seba, t.j. oba moznosti su mozne:
+		\x -> \y -> x*y
+		\x \y -> x*y
+	
+	Priklady:
 	newFocus2 = newFocus -: goUp -: modify (\_ -> 'X')
 	addThree = \x -> \y -> \z -> x + y + z			-- na pravej strane od '->' je teda vyraz, co opat moze byt lambda
 	flip f = \x \y -> f y x							-- takto pre viacere argumenty
 	filter (\xs -> length xs > 15) [1..10]			-- aplikacia funkcie
 	numberedItems = zipWith (\n \line -> show n ++ " - " ++ line) [0..] todoItems
-
+	
+	=>vyriesene nateraz tak, ze "\primary" sa cely opakuje (t.j. s lomitkom)
+	- teda prepis "lambdabody ::= lambda" neriesim; zahrniem ho tymto trikom.
 		
+	
+- Definicia cez viacero riadkov (celkovo riadkovanie -- vsade.)
+	-- Vsimni si v tomto pripade uzatvorkovanie pre datovy typ "Rectangle Point Point"
+	surface (Rectangle (Point x1 y1) (Point x2 y2)) = 
+		(abs $ x2 - x1) * (abs $ y2 - y1)
+		
+	lengthCompare1 x y =
+		(length x `compare` length y) `mappend`
+		(x `compare` y)	
 		
 		
 		
@@ -864,15 +859,7 @@ bmiTell weight height
 
 
 
-Definicia cez viacero riadkov:
-----------------------------
--- Vsimni si v tomto pripade uzatvorkovanie pre datovy typ "Rectangle Point Point"
-surface (Rectangle (Point x1 y1) (Point x2 y2)) = 
-    (abs $ x2 - x1) * (abs $ y2 - y1)
-	
-lengthCompare1 x y =
-    (length x `compare` length y) `mappend`
-    (x `compare` y)
+
 
 	
 Vyuzitie operatorov:
@@ -950,28 +937,28 @@ defMB = defValue (Nothing :: Maybe Bool)
 		
 Zoznamy: operatory
 ----------------------------			
-		-- Toto len ako zoznam zoznamov
-		[1, 2] : [[ 3, 4, 5 ]]
+-- Toto len ako zoznam zoznamov
+[1, 2] : [[ 3, 4, 5 ]]
 
-		-- Zoznam troch prvkov
-		1 : 2 : 3 : []
+-- Zoznam troch prvkov
+1 : 2 : 3 : []
 
-		-- Spristupnenie prvku na i-tej pozicii, v tomto pripade na 6-tom mieste
-		-- Mimochodom, "charAt" a "toList" su z "import frege.data.List"
-		(toList "Steve Buscemi") !! 6
-		"Steve Buscemi".charAt 6
+-- Spristupnenie prvku na i-tej pozicii, v tomto pripade na 6-tom mieste
+-- Mimochodom, "charAt" a "toList" su z "import frege.data.List"
+(toList "Steve Buscemi") !! 6
+"Steve Buscemi".charAt 6
 
-		-- String ako implicitny zoznam charov
-		printhello = "hello" ++ " " ++ "world"
-		
-		-- Operatory
-		reverse (x : xs) = reverse xs ++ [x]
-		repeat x = x : repeat x
-		1 : [ 2, 3, 4, 5 ]
+-- String ako implicitny zoznam charov
+printhello = "hello" ++ " " ++ "world"
 
-		-- Ako fukncia:
-		head (x : _) = x
-		second (x : y : _) = y
+-- Operatory
+reverse (x : xs) = reverse xs ++ [x]
+repeat x = x : repeat x
+1 : [ 2, 3, 4, 5 ]
+
+-- Ako fukncia:
+head (x : _) = x
+second (x : y : _) = y
 
 		
 		
