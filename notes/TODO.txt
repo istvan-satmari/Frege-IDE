@@ -674,6 +674,12 @@ Co nie je skrtnute, je v stave TODO
 			'.' '{' VARID '=' '}'
 			'.' '{' VARID '<-' '}'
 			'.' '{' getfields '}'
+			
+			
+	f _xxx = _xxx * _xxx
+		
+		
+		
 	
 	getfields ::= getfield (',' getfield)* ','?	
 	getfield ::= VARID (('<-'|'=') expr)?
@@ -781,9 +787,6 @@ Co nie je skrtnute, je v stave TODO
 			]	
 		
 		
-
-
-
 		
 		
 	lambda ::= '\' (('!'|'?')* primary)+ lambdabody
@@ -843,64 +846,88 @@ Co nie je skrtnute, je v stave TODO
 		  
 
 
-		  
-		  
-
 
 		  
-		  
+
+	- pozor, meno moze byt aj operator!
+	-- Pre operatory treba v ramci ...analyzy... overit, ze vzdy su vstupom 2 hodnoty
+	(-:) :: a -> (a -> b) -> b
+		
+	
+	
+	Operatory
+	----------------------
+	- infixl 7 `-:`
+
+	infix ::= fixity operators
+		- "operator" je teda novy koncept (zjednodusenie; bdeme predpokladat len 1 v ramci fixity)
+	
+	fixity ::= (INFIX|INFIXL|INFIXR) INTCONST
+	
+	operators ::= (SOMEOP|VARID|'-')+
+	
+	Predpokladam, ze SOMEOP vyzera podobne, ako op z Haskell grammar reference:  
+	- "operator"
+		- "variable operator"
+			- takyto tvar: (operatory su kvoli infix syntaxi)
+			- Namespace1.:.:!:^:?
+				- tu pokial symbol, tak musi zacinat dvojbodkou (???)
+			- Namespace1.`identifierSMalymZacPismenom`
+		- "constructor operator"
+			- takyto tvar: (operatory su kvoli infix syntaxi)
+			- Namespace1.!:^:?
+				- tu pokial symbol, tak by nemal zacinat dvojbodkou
+			- Namespace1.`IdentifierSVelkymZacPismenom`
+	
+	- plati, ze operator je funkcia:
+		x `op` y = x + y
+		- plati, ze sa da pouzit takto:
+		f z = (`op`) x y
+		f z = x `op` y
+		- zapisanie do zatvoriek ho konvertuje na identifikator funkcie, a teda ma zmysel (viacmenej) nasledujuce:
+		map (`op`) [1 .. 10]
+	- nasledujuce je tautologia:
+		e1 op e2 = (op) e1 e2
+		-e = negate (e)
+		
+- V ramci konceptu operator bude nutne "rucne" okontrolovat, ci je to text, alebo ake znaky pouziva
+	- t.j. pokial text, tak je nutne toto: x `op` y = x + y
+	- inak klasicky operaotr: x :-: y = (x - y) + (y - x)
+	- gramatika:
+		operators ::= (SOMEOP|VARID|'-')+
+	- priklady:
+		-:  +  $  ++  >>=  ==  !=  .
+		
+		
+- V ramci BinexPart by mal byt operator ako referencny koncept na nejaky nadefinovany...?
+	- ale nie je to nutne, nakolko fixity nemusel nutne predchadzat definicii operatoru
+	
+	
+- Operatory do zatvoriek, co s tym?
+	- priklad:
+	succ a = (+) 1 a
+	
+
+- Dalsie veci na vyriesenie:
+	-- Mozno ohranicit zatvorkami (kde, kedy...?)
+	mymax = (max 4) 5
 
 	
-Vyuzitie operatorov:
-----------------------------
-sum a b = a + b
-newFocus = goLeft -: goRight -: modify (\_ -> 'P')
-setNub xs = each $ fromList xs
-equals x y = (x == y) && !(x != y)
-foo = Just 3 >>= (\x -> Just "!" >>= (\y -> Just (show x ++ y)))
-
--- Retazenie funkcii cez bodku
-fn = ceil . negate . tan . cos . max 50
-
-
-Currying
-----------------------------
-multThree x y z = x * y * z
-multTwoWithNine = multThree 9
-multWithEighteen = multTwoWithNine 2
-
--- Mozno taktiez ohranicit zatvorkami
-mymax = (max 4) 5
+- ctrl + space na vyriesenie:
+	flip f y x = f x y
+	- t.j. x, y musi byt k dispozicii
+	- na druhej strane je mozne vytvorit aj uplne nove premenne, napr.
+	addThree = \x -> \y -> \z -> x + y + z
 	
--- Pre operator (len priklad, kludne je mozne pouzit aj "1 + a")
-succ a = (+) 1 a
-
-
-Zavinac
-----------------------------
--- Tento bude treba tiez implementovat
-capital (zoznam@(x : xs)) =
-    "The first letter of " ++ (packed zoznam) ++ " is " ++ (ctos x)
-
 	
-Priklady
-----------------------------
-applyMaybe :: Maybe a -> (a -> b) -> Maybe b
-applyMaybe Nothing  _ = Nothing
-applyMaybe (Just x) f = Just (f x)
 
 
-Komplexnejsie priklady
-----------------------------
-flip :: (a -> b -> c) -> b -> a -> c
-flip f y x = f x y
+- co s tymto...?
+	applyTwice (3 :) [1]
 
--- Toto vrati zoznam: 3:3:1
-applyTwice f x = f (f x)
-applyTwice (3 :) [1]
 
--- Vracia tuple (prvy je bool, druhy string)
-isBigGang x = (x > 9, "Compared gang size to 9.")
+
+
 
 
 Lazy patterns
@@ -1609,3 +1636,14 @@ Vynechane
 	
 -- Da sa aj bez zatvoriek:
 	doubleSmallNumber :: Num a => a -> a
+	
+
+
+Na neskor
+----------------------------	
+	
+Zavinac
+----------------------------
+-- Tento bude treba tiez implementovat
+capital (zoznam@(x : xs)) =
+    "The first letter of " ++ (packed zoznam) ++ " is " ++ (ctos x)

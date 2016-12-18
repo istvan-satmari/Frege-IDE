@@ -272,7 +272,7 @@
     <ref role="1XX52x" to="sc0n:vUxQDjKXz2" resolve="Fixity" />
     <node concept="3EZMnI" id="vUxQDjKXzd" role="2wV5jI">
       <node concept="1iCGBv" id="5ZITH0PGMRg" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5ZITH0PGMRe" resolve="infix" />
+        <ref role="1NtTu8" to="sc0n:5ZITH0PGMRe" resolve="Infix" />
         <node concept="1sVBvm" id="5ZITH0PGMRi" role="1sWHZn">
           <node concept="3F0A7n" id="5ZITH0PGMRt" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -281,13 +281,13 @@
         </node>
       </node>
       <node concept="3F0A7n" id="5ZITH0PGMQB" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5ZITH0PGMQi" resolve="priority" />
+        <ref role="1NtTu8" to="sc0n:5ZITH0PGMQi" resolve="Priority" />
       </node>
       <node concept="3F0ifn" id="5ZITH0PGMQT" role="3EZMnx">
         <property role="3F0ifm" value="`" />
       </node>
-      <node concept="3F0A7n" id="5ZITH0PGMQJ" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5ZITH0PGMQ$" resolve="operator" />
+      <node concept="3F1sOY" id="6SrRM0IrBki" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:6SrRM0IryVh" resolve="Operator" />
       </node>
       <node concept="3F0ifn" id="5ZITH0PGMR5" role="3EZMnx">
         <property role="3F0ifm" value="`" />
@@ -418,11 +418,17 @@
     <property role="3GE5qa" value="Definitions.Expressions.Terms" />
     <ref role="1XX52x" to="sc0n:vUxQDjKX$3" resolve="Tuple" />
     <node concept="3EZMnI" id="5E$XTHV3TpE" role="2wV5jI">
+      <node concept="3F0ifn" id="6SrRM0IrBlc" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
       <node concept="2iRfu4" id="5E$XTHV3TpF" role="2iSdaV" />
       <node concept="3F2HdR" id="5E$XTHV3TpI" role="3EZMnx">
         <property role="2czwfO" value=", " />
         <ref role="1NtTu8" to="sc0n:7riFpCdplUG" resolve="Parts" />
         <node concept="2iRfu4" id="5E$XTHV3TpJ" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="6SrRM0IrBlm" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
       </node>
     </node>
   </node>
@@ -971,6 +977,37 @@
         <node concept="2iRkQZ" id="5E$XTHV46gC" role="2iSdaV" />
       </node>
       <node concept="2iRfu4" id="5E$XTHV46gr" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4nqjXk6i7vi">
+    <property role="3GE5qa" value="Definitions" />
+    <ref role="1XX52x" to="sc0n:4nqjXk6i7v7" resolve="FunctionDefGroup" />
+    <node concept="3EZMnI" id="4nqjXk6i7vk" role="2wV5jI">
+      <node concept="2iRkQZ" id="4nqjXk6i7vn" role="2iSdaV" />
+      <node concept="3F2HdR" id="4nqjXk6i7vu" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:4nqjXk6i7v8" resolve="Patterns" />
+        <node concept="2iRkQZ" id="4nqjXk6i7vv" role="2czzBx" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6SrRM0IryWl">
+    <property role="3GE5qa" value="Definitions.Expressions.Terms" />
+    <ref role="1XX52x" to="sc0n:6SrRM0IryWa" resolve="Operator" />
+    <node concept="3F0A7n" id="6SrRM0IryWn" role="2wV5jI">
+      <ref role="1NtTu8" to="sc0n:6SrRM0IryWb" resolve="OperatorValue" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6SrRM0IrBkP">
+    <property role="3GE5qa" value="Definitions.Expressions.EBB" />
+    <ref role="1XX52x" to="sc0n:5ZITH0PGXRH" resolve="BinexPart" />
+    <node concept="3EZMnI" id="6SrRM0IrBkR" role="2wV5jI">
+      <node concept="3F1sOY" id="6SrRM0IrBkY" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:5ZITH0PGXRJ" resolve="Operand" />
+      </node>
+      <node concept="3F1sOY" id="6SrRM0IrBl4" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:5ZITH0PGXRL" resolve="Operator" />
+      </node>
+      <node concept="2iRfu4" id="6SrRM0IrBkU" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -154,11 +154,11 @@
   </node>
   <node concept="1TIwiD" id="vUxQDjKXz1">
     <property role="EcuMT" value="574920793184786625" />
-    <property role="3GE5qa" value="Definitions" />
+    <property role="3GE5qa" value="Definitions.FBB.FunctionDefinition" />
     <property role="TrG5h" value="FunctionDefinition" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="vUxQDjKXz2">
     <property role="EcuMT" value="574920793184786626" />
@@ -168,19 +168,21 @@
     <node concept="1TJgyj" id="5ZITH0PGMRe" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988811214" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="infix" />
+      <property role="20kJfa" value="Infix" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5ZITH0PGMRd" resolve="InfixAbstract" />
     </node>
+    <node concept="1TJgyj" id="6SrRM0IryVh" role="1TKVEi">
+      <property role="IQ2ns" value="7934180497854181073" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="Operator" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6SrRM0IryWa" resolve="Operator" />
+    </node>
     <node concept="1TJgyi" id="5ZITH0PGMQi" role="1TKVEl">
       <property role="IQ2nx" value="6912716259988811154" />
-      <property role="TrG5h" value="priority" />
+      <property role="TrG5h" value="Priority" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="5ZITH0PGMQ$" role="1TKVEl">
-      <property role="IQ2nx" value="6912716259988811172" />
-      <property role="TrG5h" value="operator" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKXzn">
@@ -685,6 +687,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="Operator" />
       <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6SrRM0IryWa" resolve="Operator" />
     </node>
   </node>
   <node concept="1TIwiD" id="5ZITH0PGXRI">
@@ -917,6 +920,30 @@
       <property role="20kJfa" value="Condition" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="vUxQDjKXzn" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4nqjXk6i7v7">
+    <property role="EcuMT" value="5033423309891991495" />
+    <property role="3GE5qa" value="Definitions" />
+    <property role="TrG5h" value="FunctionDefGroup" />
+    <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
+    <node concept="1TJgyj" id="4nqjXk6i7v8" role="1TKVEi">
+      <property role="IQ2ns" value="5033423309891991496" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="Patterns" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="vUxQDjKXz1" resolve="FunctionDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6SrRM0IryWa">
+    <property role="EcuMT" value="7934180497854181130" />
+    <property role="3GE5qa" value="Definitions.Expressions.Terms" />
+    <property role="TrG5h" value="Operator" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6SrRM0IryWb" role="1TKVEl">
+      <property role="IQ2nx" value="7934180497854181131" />
+      <property role="TrG5h" value="OperatorValue" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
