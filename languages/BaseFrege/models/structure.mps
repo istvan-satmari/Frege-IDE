@@ -1158,5 +1158,32 @@
       <ref role="20lvS9" node="7riFpCdpuBO" resolve="TypeVariable" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2xkYx_u2yeb">
+    <property role="EcuMT" value="2906222646419661707" />
+    <property role="3GE5qa" value="Definitions" />
+    <property role="TrG5h" value="Type" />
+    <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
+    <node concept="1TJgyj" id="2xkYx_u2yec" role="1TKVEi">
+      <property role="IQ2ns" value="2906222646419661708" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="Name" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5E$XTHV3XN2" resolve="ValTermConid" />
+    </node>
+    <node concept="1TJgyj" id="2xkYx_u2yee" role="1TKVEi">
+      <property role="IQ2ns" value="2906222646419661710" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="TypeVariables" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7riFpCdpuBO" resolve="TypeVariable" />
+    </node>
+    <node concept="1TJgyj" id="2xkYx_u2yeh" role="1TKVEi">
+      <property role="IQ2ns" value="2906222646419661713" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="SynonymedType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7riFpCdpuBL" resolve="Simpletype" />
+    </node>
+  </node>
 </model>
 

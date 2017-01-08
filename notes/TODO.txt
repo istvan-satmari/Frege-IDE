@@ -198,6 +198,17 @@ Co nie je skrtnute, je v stave TODO
 	zip (x : xs) (y : ys) = (x, y) : zip xs ys
 	
 
+- BTW, neviem, ci na tom zalezi, ale toto treba okontrolovat:
+	-- Viacprvkovy
+	-- Upozornime, ze vzdy musia byt aspon 2 prvky
+	second :: (a, b, c) -> b  
+
+	-- Toto by tym padom malo fungovat asi standardne
+	addVectors a b = (fst a + fst b, snd a + snd b)
+
+	-- Existuje aj konstruktor a tu plati tautologia
+	("exp1", "exp2", "exp3") == (,,) "exp1" "exp2" "exp3"		
+	
 - Deklaracia funkcie, treba overit, ze meno zacina malym pismenom
 	- pozor, meno moze byt aj operator!
 		-- Pre operatory treba v ramci ...analyzy... overit, ze vzdy su vstupom 2 hodnoty
@@ -1193,74 +1204,42 @@ Co nie je skrtnute, je v stave TODO
 	- v ramci Frege-IDE bol "rho" nespravne nadefinovany ako "(ClassName1 a1, ClassName2 a2) =>", t.j. ako "Context"
 	
 	
+	
+	Pripomienka, resp. spisanie veci, ktore spisane neboli:
+	-----------------
 	rho ::= (simpletype+ '=>')? rhofun
-	
 	rhofun ::= simpletype+ ('->' simpletype+)*
-	
+	tau ::= (simpletype+ '->')* (simpletype+|forall)
 	simpletype ::= tyvar | tyname | '(' tau (',' tauSC | '|' tauSB)? ')' | '[' tau ']'
 	
+	SimpleTypes:
+		- SimpleType oddelene medzerami (minimalne 1)
+	
+	SimpleType:
+		- abstraktny koncept
+		- z neho dedia:
+		tyvar: TypeVariable (iba property name)
+		tyname: TypeName (iba property name)
+		'[' tau ']': TypeList
+		'(' tau (',' tauSC | '|' tauSB)?: TypeTuple (obsahuje len Tau-y oddelene ciarkami)
+	
+	Tau:
+		- vo Frege-IDE predstavuje typ funkcie
+		- cize ide o simpletypes (viacere simpletype) oddelene sipkami
+		- vzdy aspon jeden "simpletypes", co predstavuje return z funkcie
+		- v podstate nahradza rhofun
+	
+	- pokial ide len o vytvorenie typu funkcie, nutim tymto sposobom prejst cez toto: '(' tau ')'
+	=> kvoli tomu, ze typ funkcie musi byt uzatvorkovany tak, ci tak
+	"(Int -> Int)" vs. "Int -> Int"
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-
--- Je len synonymum pre iny typ, napr.:
-type Data = String
-type Breadcrumbs = [Direction]
-type Breadcrumbs a = [Crumb a]
-
--- Zadefinovanie pre tuple
-type FSZipper = (FSItem, [FSCrumb])
-
--- Dalsie priklady
-type ListZipper a = ([a], [a])
-
--- Viacprvkovy
--- Upozornime, ze vzdy musia byt aspon 2 prvky
-second :: (a, b, c) -> b  
-
--- Toto by tym padom malo fungovat asi standardne
-addVectors a b = (fst a + fst b, snd a + snd b)
-
--- Existuje aj konstruktor a tu plati tautologia
-("exp1", "exp2", "exp3") == (,,) "exp1" "exp2" "exp3"	
-
-	
-	
-	
+	typedef ::= 'type' CONID tyvar* '=' rho
+	=> namiesto rho bol urceny "simpletype", co je bezpecnejsie (vid vyssie typ funkcie)
 	
 	
 
-	
-
-  
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
+----------------------------------------------------------------------------------------------
 
 
 	
