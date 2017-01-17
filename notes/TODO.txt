@@ -1240,7 +1240,172 @@ Co nie je skrtnute, je v stave TODO
 	
 
 ----------------------------------------------------------------------------------------------
+Koncepty imlementovane teraz:
 
+
+Skeleton
+	- Module (1)
+		- zatial nedokonceny
+		
+	- Import (*)
+		- zatial nedokonceny
+		
+	- Definition (*) (abstraktny)
+		: Comment (abstraktny)
+			: LineComment (len string, napr. "-- jeden riadok")
+			: BlockComment ("{- \n line1 \n line2 \n -}")
+				- BlockCommentLine (*) (len string)
+		
+		: Class
+			- ValTermConid (nazov triedy)
+			- TypeVariable (typova premenna triedy, napr. Class Eq a)
+			- ClassContext (napr. Class (Eq a) => Ord a)
+				- ClassContextPart (*) (jednotlive casti, t.j. "(Eq a, Ord b) => ...")
+					- ValTermConid (napr. "Eq")
+					- TypeVariable (napr. "a")
+			- WhereDef (*) (abstraktny) (jednotlive funkcie, ktoru typ danej triedy musi definovat)
+				: WhereDefFunDecl (1 deklaracia funkcie)
+					- FunctionDeclaration
+				: WhereDefFunDef (1 definicia funkcie)
+					- FunctionDefinition
+				
+		: Instance
+			- TypeName (typove meno instancie, napr. instance YesNo Int where ..., YesNo je predosly nazov triedy a utvarame instanciu pre Int)
+			- SimpleType (v priklade "Int", t.j. z coho instancujeme, napr. [a] v ramci "instance YesNo [a] where")
+			- InstanceContext (napr. "instance (Eq m) => Eq (Maybe m) where")
+				- InstanceContextPart (*) (napr. "Eq a", podcast celeho kontextu)
+					- ValTermConid (napr. "Eq")
+					- TypeVariable (napr. "a")
+			- WhereDef (*) (jednotlive casti, napr. Just a == Just b  =  a == b)
+				
+				
+		: Data	
+			- ValTermConid (nazov pre Data)
+			- TypeVariable (*) (typova premenna pre Data, napr. Data Maybe a)
+			- Dalt (*) (jednotlive casti, napr. Just x | Nothing | ...)
+				- ValTermConid ("Just")
+				- SimpleType (*) ("Just x y [z] (MyType w)")
+			
+		: Type
+			- ValTermConid (napr. "type MyList = [Int]", tak MyList je nazov)
+			- TypeVariable (typova premenna, napr. "type ListZipper a = ([a], [a])", tak "a")
+			- SimpleType (ten vyraz napravo)
+			
+		: Fixity (pre urcenie asociativity operatoru)
+			- InfixAbstract (abstraktny)
+				: Infix
+					- zatial nedokonceny
+				: Infixl
+					- zatial nedokonceny
+				: Infixr
+					- zatial nedokonceny
+			- Operator (jednoduchy string urcujuci dany operator)
+			
+		: FunctionDeclaration
+			- hlavicka nie je dokoncena (nazov funkcie a pod.)
+			- RhoContext (napr. "f :: (Eq a) => a -> (a -> [a]) -> ([a] -> a)", tak "Eq a")
+				- ContextPart (*) (napr. "(Eq a, Ord a) =>")
+					- ValTermConid ("Eq")
+					- TypeVariable ("a")
+			- SimpleTypes (*) (vseobecne "simpletype"-y oddelene medzerami, napr. "ApplyFunction 1 2 3")
+				- SimpleType (*) (abstraktny)
+					: TypeVariable (typova premenna, napr. "a", jednoduchy string)
+					: TypeName (typove meno, napr. "Int", "Maybe", jednoduchy string)
+					: TypeList (napr. "[Int]", "[(a, b)]", "[a -> b]", toto nedava zmysel: "[Char, Int, Int]" pretoze takto nie je mozne urcit typ zoznamu, preto obsahuje len jeden "Tau")
+						- Tau (1) (ide o typ funkcie, napr. "a -> [a]", aj rekurzivne, t.j. "a -> (a -> [a])")
+							- SimpleTypes (*) (argumenty funkcie)
+							- SimpleTypes (1) (pre return type funkcie)
+					: TypeTuple (napr. "(Int, Char, a, [a->b])", skratka tuple)
+						- Tau (*) (su oddelene ciarkami)
+			- SimpleTypes (1) (nutne jeden ukoncovaci typ, t.j. return)
+			
+		: FunctionDefGroup
+			- FunctionDefinition (*) (abstraktny) (jednotlive riadky pre pattern-matching; 1 funkcia sa sklada z viaceryh patternov)
+				: FDAssignment (pattern typu "f a b = a + b")
+					- BinaryExpression (1) (hlavicka funkcie, napr. "f a b")
+					- Expression (1) (vyraz, napr. "a + b :: Int")
+						- BinaryExpression (1) (de facto bezny vyraz; nazov len kvoli lavej rekurzii)						
+							- BinexPart (0..1) (lava cast vyrazu)
+								- BinaryExpression (lava rekurzia)
+								- Operator
+							- TopExpression (1) (abstraktny) (prava cast vyrazu)
+								: IfThenElse
+									- Expression (podmienka)
+									- Expression (then vetva)
+									- Expression (else vetva)
+								: Term (abstraktny)	(termy, t.j. napr. konstanty, literaly, ...)
+									: Tuple (n-tica, napr. "(7, 4)")
+										- Expression (*) (jednotlive dielce tupl-u)
+									: Brackets (jeden uzatvorkovany vyraz)
+										- Expression (1)
+									: List (abstraktny) (predstavuje rozlicne sposoby zapisu zoznamov)
+										: ListEnumeration (vypisane polozky v zozname, napr. "[1, 2, a+b, 7*i]")
+											- Expression (*)
+										: ListRange (vyraz dany rozsahom, napr. "[1, 2, .., 7*i]")
+											- Expression (*) (prvych par poloziek, napr. "[1, 2, 3, ..]", alebo "[1, ..]")
+											- Expression (0..1) (koniec, moze a nemusi byt urceny, napr. "[1, 2, .., 7]" alebo "[1, 2, ..]")
+										: ListComprehension (zoznam dany cez patterny, napr. "[x | x<-[1..9]]")
+											- Expression (vyraz pred zvyslitkom)
+											- LCQualifier (*) (abstraktny) (jednotlive kvalifikatory, t.j. veci za zvyslitkom)
+												: LCQGuard (guard, co dava podmienku pre aktualny prvok cez nejaky expression, napr. "[x | x<-[1..9], x > 5]", tak "x > 5" je guard)
+													- Expression (samotna podmienka)
+												: LCQArrowAssignment (priradenie, napr. "[x | x<-[1..9]]")
+													- Expression (lava cast vyrazu, kam sa priradzuje - nejde totiz iba o 1 premennu, moze ist aj o napr. "(x, y)<-[(1,5), (1,7)]")
+													- Expression (prava cast vyrazu, t.j. co sa priradzuje)
+												: LCQExpr (analogicke LCQArrowAssignment, ale cez rovnitko, napr. "[x | x = 1]")
+													- Expression (lava cast vyrazu)
+													- Expression (prava cast vyrazu)
+												: LCQLet (let vyraz)
+													- FunctionDefinition
+										: Literal (abstraktny) (predstavuje konkretnu hodnotu, literal)
+											: BoolValue
+											: IntegerValue
+											: DoubleValue
+											: CharValue
+											: StringValue
+								: Case (napr. "case x of \n 7 -> true \n 1 -> false")
+									- Expression (vyraz, na zaklade ktoreho sa rozhoduje, napr. "case 7+x of")
+									- CasePart (*) (abstraktny) (jednotlive cases)
+										: CPExprToExpr (klasicky case, napr. "1 -> true")
+											- Expression (vyraz, oproti ktoremu sa matchuje, t.j. pred sipeckou "->")
+											- Expression (vyraz, ktory sa dosadzuje, pokial bol matchovany tento case, t.j. vyraz za sipeckou "->")
+										: CPExprToGuards (pre matchovanie s guardmi)
+											- Expression (vyraz, oproti ktoremu sa matchuje)
+											- Guard (*) (pripomienka: "| podmienka = vyraz")
+								: Lambda (napr. "\x \y -> x+y")
+									- Term (*) (jednotlive "argumenty", napr. "\x \y \z")
+									- Expression (vyraz, ktory sa ma vratit, napr. "x+y")
+								: Let (napr. "let \n x = 7*x \n y = y+1 \n in x+y", t.j. najprv su definicie funkcii, potom vyraz, ktory ich vyuzije)
+									- FunctionDefinition (*) (jednotlive definicie subfunkcii)
+									- Expression (vyraz na vratenie)
+						- ContextPart (1) (kontext, tu je chyba!!)
+					- Where (0..1) (napr. "f a = b where b = 7")
+						- FunctionDefinition (*) (jednotlive casti oddelene riadkami, napr. "b = 7" v danom priklade)
+				: FDGuards (pattern typu "f a b \n | a == 0  = 0 | otherwise  = 1")
+					- BinaryExpression (1) (hlavicka funkcie, napr. "f a b")
+					- Guard (*) (tvaru "| podmienka = vyraz")
+						- Expression (1) (podmienka tesne za zvyslitkom)
+						- Expression (0..1) (vyraz co do vysledku, t.j. co sa ma vratit, pokial podmienka plati)
+					- Where (0..1)
+					
+	- Main (1)
+		- zatial nedokonceny
+
+
+
+VAZNE:
+	- Expression > ContextPart je nespravne!
+	
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------
 
 	
 Indentacia
@@ -1666,3 +1831,66 @@ instance Def a => Def (Maybe a) where
 			
 -- Co teda, ked niekto zavola "defValue" na "Nothing"? Musi volat tymto sposobom, inak runtime fail
 defMB = defValue (Nothing :: Maybe Bool)
+
+
+
+Dodatky:
+-----------------------------------
+
+- operatory -- doriesit function application
+	- unarne operatory? not / minus ...?
+		- binex nepodporuje...?
+		=> radsej 2 koncepty
+			BinexPart + pre unarny operator
+			
+
+	-- a `op` b (pozor, ked ide aj o beznu funkciu prijimajucu 2 argumenty -- zatial to ide, lebo operator je koncept so string parametrom)
+	
+	- (Haskell sa asi fakt spolieha na semanticku analyzu)
+		=> bude treba napisat do diplomky (text) -- vdaka tomu je aj komplikovana kontextova napoveda
+		- slo by takto:
+			- zacne uzivatel pisat "f" a MPS sa pozrie na zoznam instancii konceptov a okontroluje, ktory asi bude pasovat
+	
+	
+	- ctrl + space
+		- nejde jednoducho cez referencne koncepty, pretoze uz len tu je problem:
+			\x -> x*7
+			lambda ::= '\' (('!'|'?')* primary)+ lambdabody
+			primary ::= term ...
+			=> term nemoze byt jednoducho referencny koncept na qconid, qvarid
+			
+			class myclass ...
+			
+			f :: (myclass m) => m -> Int -> Int -> a -> m
+			-- povedzme, ze to nejak pojde
+			f 0 = 1
+			f 5 = 2
+			f _xxxx = _xxxx 
+			
+			- functiondefinition zgroupovat do 1 konceptu (musia byt pod sebou + jednoduchsie referencovanie pri functionApplication)
+			
+	
+	- Jak hned hodit literal pri pouzivani editoru? Pri normalnej editacii musi prejst cely podstrom! 
+		- Expression -> Binex -> Topex -> Term -> Literal -> IntValue
+		
+		wrapper substitucia by slo pouzit
+			- inspiracia z BaseLanguage (ale komplikovany)
+			- languagePatterns
+			
+		<< ... >>
+		A B C - rozhodnut sa podla poslendneho a podla neho sa vytvori nadradeny B obsahujuci C, analogicky A obsahujuci B...
+		
+		"function" => vytvori nejaky strom konceptov
+			- regexp: func.*
+		
+		- obzvlast, ked nejaky koncept iba agreguje nejaky iny ("children")
+	
+	- Pripadne by muselo byt prilis vela akcii, aby sa to dialo automaticky
+	
+		- vezmime ako priklad list comprehension
+		[ x*2 | x ]				// Teraz x ako LCQGuard, lebo len 1 epression, preto tento vybraty koncept
+		zmena na:
+		[ x*2 | x <- [1..2]]	// Pohotova zmena na LCQArrowAssignment
+		
+		
+		
