@@ -1,0 +1,648 @@
+Analyza gramatiky
+-------------------------------------------------------------------------
+
+
+
+Aktualna gramatika vo Frege-IDE
+-------------------------------------------------------------------------
+Skeleton
+	- Module (1)
+		- zatial nedokonceny
+
+	- Import (*)
+		- zatial nedokonceny
+
+	- Definition (*) (abstraktny)
+		: Comment (abstraktny)
+			: LineComment (len string, napr. "-- jeden riadok")
+			: BlockComment ("{- \n line1 \n line2 \n -}")
+				- BlockCommentLine (*) (len string)
+
+		: Class
+			- ValTermConid (nazov triedy)
+			- TypeVariable (typova premenna triedy, napr. Class Eq a)
+			- ClassContext (napr. Class (Eq a) => Ord a)
+				- ClassContextPart (*) (jednotlive casti, t.j. "(Eq a, Ord b) => ...")
+					- ValTermConid (napr. "Eq")
+					- TypeVariable (napr. "a")
+			- WhereDef (*) (abstraktny) (jednotlive funkcie, ktoru typ danej triedy musi definovat)
+				: WhereDefFunDecl (1 deklaracia funkcie)
+					- FunctionDeclaration
+				: WhereDefFunDef (1 definicia funkcie)
+					- FunctionDefinition
+
+		: Instance
+			- TypeName (typove meno instancie, napr. instance YesNo Int where ..., YesNo je predosly nazov triedy a utvarame instanciu pre Int)
+			- SimpleType (v priklade "Int", t.j. z coho instancujeme, napr. [a] v ramci "instance YesNo [a] where")
+			- InstanceContext (napr. "instance (Eq m) => Eq (Maybe m) where")
+				- InstanceContextPart (*) (napr. "Eq a", podcast celeho kontextu)
+					- ValTermConid (napr. "Eq")
+					- TypeVariable (napr. "a")
+			- WhereDef (*) (jednotlive casti, napr. Just a == Just b  =  a == b)
+
+
+		: Data
+			- ValTermConid (nazov pre Data)
+			- TypeVariable (*) (typova premenna pre Data, napr. Data Maybe a)
+			- Dalt (*) (jednotlive casti, napr. Just x | Nothing | ...)
+				- ValTermConid ("Just")
+				- SimpleType (*) ("Just x y [z] (MyType w)")
+
+		: Type
+			- ValTermConid (napr. "type MyList = [Int]", tak MyList je nazov)
+			- TypeVariable (typova premenna, napr. "type ListZipper a = ([a], [a])", tak "a")
+			- SimpleType (ten vyraz napravo)
+
+		: Fixity (pre urcenie asociativity operatoru)
+			- InfixAbstract (abstraktny)
+				: Infix
+					- zatial nedokonceny
+				: Infixl
+					- zatial nedokonceny
+				: Infixr
+					- zatial nedokonceny
+			- Operator (jednoduchy string urcujuci dany operator)
+
+		: FunctionDeclaration
+			- hlavicka nie je dokoncena (nazov funkcie a pod.)
+			- RhoContext (napr. "f :: (Eq a) => a -> (a -> [a]) -> ([a] -> a)", tak "Eq a")
+				- ContextPart (*) (napr. "(Eq a, Ord a) =>")
+					- ValTermConid ("Eq")
+					- TypeVariable ("a")
+			- SimpleTypes (*) (vseobecne "simpletype"-y oddelene medzerami, napr. "ApplyFunction 1 2 3")
+				- SimpleType (*) (abstraktny)
+					: TypeVariable (typova premenna, napr. "a", jednoduchy string)
+					: TypeName (typove meno, napr. "Int", "Maybe", jednoduchy string)
+					: TypeList (napr. "[Int]", "[(a, b)]", "[a -> b]", toto nedava zmysel: "[Char, Int, Int]" pretoze takto nie je mozne urcit typ zoznamu, preto obsahuje len jeden "Tau")
+						- Tau (1) (ide o typ funkcie, napr. "a -> [a]", aj rekurzivne, t.j. "a -> (a -> [a])")
+							- SimpleTypes (*) (argumenty funkcie)
+							- SimpleTypes (1) (pre return type funkcie)
+					: TypeTuple (napr. "(Int, Char, a, [a->b])", skratka tuple)
+						- Tau (*) (su oddelene ciarkami)
+			- SimpleTypes (1) (nutne jeden ukoncovaci typ, t.j. return)
+
+		: FunctionDefGroup
+			- FunctionDefinition (*) (abstraktny) (jednotlive riadky pre pattern-matching; 1 funkcia sa sklada z viaceryh patternov)
+				: FDAssignment (pattern typu "f a b = a + b")
+					- BinaryExpression (1) (hlavicka funkcie, napr. "f a b")
+					- Expression (1) (vyraz, napr. "a + b :: Int")
+						- BinaryExpression (1) (de facto bezny vyraz; nazov len kvoli lavej rekurzii)
+							- BinexPart (0..1) (lava cast vyrazu)
+								- BinaryExpression (lava rekurzia)
+								- Operator
+							- TopExpression (1) (abstraktny) (prava cast vyrazu)
+								: IfThenElse
+									- Expression (podmienka)
+									- Expression (then vetva)
+									- Expression (else vetva)
+								: Term (abstraktny)	(termy, t.j. napr. konstanty, literaly, ...)
+									: Tuple (n-tica, napr. "(7, 4)")
+										- Expression (*) (jednotlive dielce tupl-u)
+									: Brackets (jeden uzatvorkovany vyraz)
+										- Expression (1)
+									: List (abstraktny) (predstavuje rozlicne sposoby zapisu zoznamov)
+										: ListEnumeration (vypisane polozky v zozname, napr. "[1, 2, a+b, 7*i]")
+											- Expression (*)
+										: ListRange (vyraz dany rozsahom, napr. "[1, 2, .., 7*i]")
+											- Expression (*) (prvych par poloziek, napr. "[1, 2, 3, ..]", alebo "[1, ..]")
+											- Expression (0..1) (koniec, moze a nemusi byt urceny, napr. "[1, 2, .., 7]" alebo "[1, 2, ..]")
+										: ListComprehension (zoznam dany cez patterny, napr. "[x | x<-[1..9]]")
+											- Expression (vyraz pred zvyslitkom)
+											- LCQualifier (*) (abstraktny) (jednotlive kvalifikatory, t.j. veci za zvyslitkom)
+												: LCQGuard (guard, co dava podmienku pre aktualny prvok cez nejaky expression, napr. "[x | x<-[1..9], x > 5]", tak "x > 5" je guard)
+													- Expression (samotna podmienka)
+												: LCQArrowAssignment (priradenie, napr. "[x | x<-[1..9]]")
+													- Expression (lava cast vyrazu, kam sa priradzuje - nejde totiz iba o 1 premennu, moze ist aj o napr. "(x, y)<-[(1,5), (1,7)]")
+													- Expression (prava cast vyrazu, t.j. co sa priradzuje)
+												: LCQExpr (analogicke LCQArrowAssignment, ale cez rovnitko, napr. "[x | x = 1]")
+													- Expression (lava cast vyrazu)
+													- Expression (prava cast vyrazu)
+												: LCQLet (let vyraz)
+													- FunctionDefinition
+										: Literal (abstraktny) (predstavuje konkretnu hodnotu, literal)
+											: BoolValue
+											: IntegerValue
+											: DoubleValue
+											: CharValue
+											: StringValue
+								: Case (napr. "case x of \n 7 -> true \n 1 -> false")
+									- Expression (vyraz, na zaklade ktoreho sa rozhoduje, napr. "case 7+x of")
+									- CasePart (*) (abstraktny) (jednotlive cases)
+										: CPExprToExpr (klasicky case, napr. "1 -> true")
+											- Expression (vyraz, oproti ktoremu sa matchuje, t.j. pred sipeckou "->")
+											- Expression (vyraz, ktory sa dosadzuje, pokial bol matchovany tento case, t.j. vyraz za sipeckou "->")
+										: CPExprToGuards (pre matchovanie s guardmi)
+											- Expression (vyraz, oproti ktoremu sa matchuje)
+											- Guard (*) (pripomienka: "| podmienka = vyraz")
+								: Lambda (napr. "\x \y -> x+y")
+									- Term (*) (jednotlive "argumenty", napr. "\x \y \z")
+									- Expression (vyraz, ktory sa ma vratit, napr. "x+y")
+								: Let (napr. "let \n x = 7*x \n y = y+1 \n in x+y", t.j. najprv su definicie funkcii, potom vyraz, ktory ich vyuzije)
+									- FunctionDefinition (*) (jednotlive definicie subfunkcii)
+									- Expression (vyraz na vratenie)
+						- ContextPart (1) (kontext, tu je chyba!!)
+					- Where (0..1) (napr. "f a = b where b = 7")
+						- FunctionDefinition (*) (jednotlive casti oddelene riadkami, napr. "b = 7" v danom priklade)
+				: FDGuards (pattern typu "f a b \n | a == 0  = 0 | otherwise  = 1")
+					- BinaryExpression (1) (hlavicka funkcie, napr. "f a b")
+					- Guard (*) (tvaru "| podmienka = vyraz")
+						- Expression (1) (podmienka tesne za zvyslitkom)
+						- Expression (0..1) (vyraz co do vysledku, t.j. co sa ma vratit, pokial podmienka plati)
+					- Where (0..1)
+
+	- Main (1)
+		- zatial nedokonceny
+
+
+ValTermConid (len string property, predstavuje akykolvek nazov, co ma zacinat velkym pismenom, napr. "Just", "Maybe", ...)
+ValTermVarid (len string property, predstavuje akykolvek nazov, co ma zacinat malym pismenom)
+ValTermUnderscore
+
+
+VAZNE:
+	- Expression > ContextPart je nespravne!
+
+
+
+	
+Realna gramatika Frege, z ktorej sa vychadza
+-------------------------------------------------------------------------
+- spisane koncepty a pod nim zjednodusene (niekedy viacero iteracii; posledny je vzdy ten, z ktoreho vychadza sucasna Frege gramatika)
+
+module ::= DOCUMENTATION* (moduleclause (';' definitions|'where' '{' definitions '}')|'{' definitions '}')
+module ::= 	moduleclause ';' definitions
+			moduleclause 'where' definitions
+			
+moduleclause ::= PROTECTED? 'module' modulename1 (VARID+ '(' qvarids ')')*
+moduleclause ::= 'module' ((varidkw|CONID) '.')* CONID (VARID+ '(' qvarids ')')*
+varidkw ::= VARID|'data'|'type'|'native'|'pure'|'module'|'import'
+qvarids ::= qvarop (',' qvarop)*
+qvarop ::= (CONID '.' (CONID '.')?)? (VARID|'!'|'?')|SOMEOP
+moduleclause ::= 'module' ModuleExports CONID (VARID+ '(' qvarids ')')*
+!!! nedokoncene
+					
+(custom rule)
+!!! nedokoncene
+ModuleExports ::= varidkw QCONID
+varidkw ::= VARID|'data'|'type'|'native'|'pure'|'module'|'import'
+
+definitions ::= (DOCUMENTATION|topdefinition|visibledefinition) (';' (DOCUMENTATION|topdefinition|visibledefinition))* ';'?
+definitions ::= ((topdefinition|visibledefinition) ';')+
+- DOCUMENTATION je akoby sucast definicie (komentar prakticky dedi od statement-u)
+- v podstate bez ";", tie su doplnene lexikalnym analyzatorom
+
+visibledefinition ::= (PRIVATE|PROTECTED|PUBLIC) publicdefinition|ABSTRACT datainit wheredef
+visibledefinition ::= 	publicdefinition
+						datainit wheredef
+						
+publicdefinition ::= typedef|(datainit|'instance' insthead) wheredef|classdef|DERIVE insthead|localdef
+publicdefinition ::= 	typedef
+						'instance' insthead wheredef
+						classdef
+						localdef
+- deriving bol vynechany
+- datainit prameni z visibledefinition
+
+typedef ::= 'type' CONID tyvar* '=' (forall|rho)
+- forall je vynechany; ide o pokrocilu oblast jazyka
+typedef ::= 'type' CONID tyvar* '=' rho
+- (ide o definiciu "type")
+
+tyvar ::= VARID|'(' VARID '::' kind ')'
+tyvar ::= VARID
+- druhy variant bol vynechany, aj ked diskutabilne; mozno by sa hodil
+!!! neujasnene
+
+- nasledujuce zahrna definiciu typu:
+rho ::= (simpletype+ '=>')? rhofun
+rhofun ::= simpletype+ ('->' simpletype+)*
+simpletypes ::= simpletype+
+simpletype ::= tyvar|tyname|'(' tau (',' tauSC|'|' tauSB)? ')'|'[' tau ']'
+tyname ::= qconid|'[' ']'|'(' (','+|'->')? ')'
+tau ::= (simpletype+ '->')* (simpletype+|forall)
+tauSC ::= tau (',' tau)*
+tauSB ::= tau ('|' tau)*
+- forall bol vynechany
+simpletypes ::= simpletype+
+rho ::= (simpletype+ '=>')? simpletype+ ('->' simpletype+)*		-- evidentne zahrna deklaraciu funkcie; prvotne je udanie tried (napr. "(Eq a, Ord b) => ..."), zvysok su tzv. "simpletype"
+simpletype ::= 	'(' tau ')' 									-- simpletype je bud nieco uzatvorkovane...
+				'(' tau (',' tau)* ')' 							-- ...alebo tuple
+				'(' tau '|' ('|' tau)* ')' 						-- toto bolo vynechane, lebo toto nepoznam (ani sa v beznych prikladoch nevyskytuje)
+				'[' tau ']'										-- ...alebo list (zoznam)
+				tyvar 											-- ...alebo typova premenna, napr. "f :: a -> b", "a" aj "b" su typove premenne
+				tyname											
+tyname ::= 	qconid												-- typove meno; bolo vyrazne zredukovane (chap: vynechane), lebo jednotlive polozky su nepriamo zahrnute v ramci "simpletype"
+			'[' ']' 
+			'('  ')'
+			'(' ','+ ')'										-- toto je specialne, ale bolo vynechane
+			'(' '->' ')'										-- dtto
+tau ::= (simpletype+ '->')* simpletype+							-- tau predstavuje typ funkcie, napr. "map :: (a -> b) -> [a] -> [b]", tak "(a -> b)" je "typ funkcie"
+- po zjednoduseni:
+simpletypes ::= simpletype+
+rho ::= (simpletype+ '=>')? simpletype+ ('->' simpletype+)*
+simpletype ::=  '(' tau (',' tau)* ')'
+				'[' tau ']'
+				tyvar
+				tyname
+tyname ::= 	qconid
+tau ::= (simpletype+ '->')* simpletype+
+
+ccontext ::= qconid tyvar|'(' scontexts ')'
+scontexts ::= qconid tyvar (',' qconid tyvar)* ','?
+- ide o kontext, napr. "(Eq a, Ord b) =>" (bez "=>"); zjednodusene takto:
+ccontext ::= qconid tyvar (',' qconid tyvar)*
+- chapme "Eq" (qconid) "a" (tyvar)
+
+classdef ::= 'class' ccontext ('=>' CONID tyvar)? wheredef
+- definicia triedy
+- mozno zjednodusit ten kontext zhruba takto:
+classdef ::= 'class' (ccontext '=>')? CONID tyvar wheredef
+- zaroven umoznit pouzivat len CONID, aby nedoslo k problemom
+
+wheredef ::= ('where' '{' localdefs? '}')?
+wheredef ::= ('where' localdefs )?
+- where je vzdy nepovinny (ci uz pri definicii triedy, alebo instancie, ...)
+
+localdefs ::= dplocaldef (';' dplocaldef)* ';'?
+localdefs ::= dplocaldef (';' dplocaldef)*
+- lokalne definicie niecim oddelene (nie nutne strednikom!! indentaciu lexer meni na strednik, pozor na to!)
+
+dplocaldef ::= DOCUMENTATION* (DOCUMENTATION|plocaldef)
+dplocaldef ::= plocaldef
+plocaldef ::= (PRIVATE|PROTECTED|PUBLIC)? localdef
+plocaldef ::= localdef
+dplocaldef ::= localdef
+localdef ::= annotation|'pure'? 'native' methodspec '::' sigexs|fundef
+localdef ::= 	annotation
+				'native' methodspec '::' sigexs		-- vynechane
+				fundef
+
+!!! chyba a asi by to malo byt takto (deklaracia funkcie)
+annotation ::= annoitems '::' (forall|rho)
+annotation ::= annoitems '::' rho
+annoitems ::= annoitem (',' annoitem)*
+annoitem ::= VARID|'(' (SOMEOP|'!'|'?'|'-') ')'
+annoitem ::=	VARID
+				'(' SOMEOP ')'
+				'(' '-' ')'
+				'(' '?' ')'
+				'(' '!' ')'
+
+- nasledujuce sa podoba na deklaraciu funkcie, ale pride mi pomerne zlozita a nikde som na to v prikladoch nenarazil ("throws"), cize ju nepouzivam takto a je vynechana
+'native' methodspec '::' sigexs
+methodspec ::= fitem ((rawnativename|SOMEOP|'!'|'?') ('{' tauSC? '}')?|'{' tauSC? '}')?
+fitem ::= annoitem|'!'|'?'|'-'|SOMEOP
+sigexs ::= sigex ('|' sigex)*
+sigex ::= (forall|rho) (THROWS tauSC)?
+
+- nasledujuce zahrna definiciu instancie:
+'instance' insthead wheredef
+insthead ::= icontext ('=>' tyname simpletype)?
+- kontext pre instanciu:
+icontext ::= qconid simpletype | '(' sicontexts ')'
+sicontexts ::= qconid simpletype (',' qconid simpletype)* ','?
+sicontexts ::= qconid simpletype (',' qconid simpletype)*
+- a teda staci asi takto:
+icontext ::= '(' qconid simpletype (',' qconid simpletype)* ')'
+- napr. "instance YesNo [a] where", preto "simpletype"
+!!! myslim, ze som na tie zatvorky zabudol? skontrolovat...
+!!! tu je simpletype, nie tyvar, pozor! skontrolovat
+- da sa previest (aj ked nie uplne stopercentne spravne):
+insthead ::= (icontext '=>')? tyname simpletype
+
+- nasledujuce pre definiciu "data ...":
+datainit wheredef
+datainit ::= 'data' CONID tyvar* '=' (nativepur nativespec|dalts)|'newtype' CONID tyvar* '=' dalt
+- "newtype" vynechany
+nativepur ::= ('pure'|'mutable')? 'native'
+- a teda "nativepur" vynechany
+datainit ::= 'data' CONID tyvar* '=' (nativespec|dalts)
+- nativespec vynechany kvoli vynechanej podpore record syntaxe
+datainit ::= 'data' CONID tyvar* '=' dalts
+- v tejto chvili: "data Maybe a b c = ..."
+dalts ::= dalt ('|' dalt)*
+- jednotlive casti pre "data", napr. "Just x | Nothing"
+dalt ::= visdalt DOCUMENTATION?|DOCUMENTATION visdalt
+dalt ::= visdalt
+visdalt ::= (PUBLIC|PRIVATE|PROTECTED)? strictdalt
+visdalt ::= strictdalt
+strictdalt ::= ('!'|'?')? simpledalt
+simpledalt ::= CONID ('{' conflds '}'|simpletype+)?
+- conflds vynechany tiez kvoli vynechanej podpore record syntaxe
+dalt ::= ('!'|'?')? CONID (simpletype+)?
+!!! neujasnene, co s tymi operatormi na zaciatku (!, ?), zatial vynechane
+dalt ::= CONID simpletype*
+- zrejme, napr. "data Tree a = Leaf | Node (Tree a) (Tree a)", cize "simpletype" musi byt
+
+topdefinition ::= import|fixity operators|'native' 'module' typeclause interfaces 'where' '{' jtokens? '}'|publicdefinition
+topdefinition ::= 	import
+					fixity operators
+					'native' 'module' typeclause interfaces 'where' '{' jtokens? '}'
+					publicdefinition
+- publicdefinition sa opakuje, "native module typeclause interfaces" je mi neznamy, cize som vynechal
+
+operators ::= (SOMEOP|VARID|'-')+
+- SOMEOP je definovany ako postupnost znakov, z ktorych moze pozostavat nejaky operator; urcene lexerom (Haskell je dost volny, skoro cokolvek sa da urcit ako operator, napr. >>=>> a pod.)
+
+- fixity:
+fixity operators
+fixity ::= ('infix'|'infixl'|'infixr') INTCONST
+
+
+!!! neujasnene
+import ::= 'import' modulename1 (VARID? CONID)? importliste
+modulename1 ::= ((varidkw|CONID) '.')* CONID
+varidkw ::= VARID|'data'|'type'|'native'|'pure'|'module'|'import'
+- skratka, meno modulu, staci asi CONID / VARID:
+modulename1 ::= CONID | VARID
+import ::= 'import' (CONID | VARID) importliste
+importliste ::= ((VARID '(' importspecs|'(' importspecs?) ')'|PUBLIC importliste)?
+importliste ::= 	VARID '(' importspecs ')'
+					'(' importspecs? ')'
+importspecs ::= importspec (',' importspec)* ','?
+importspecs ::= importspec (',' importspec)*
+importspec ::= PUBLIC* importitem (VARID|CONID|SOMEOP)?
+importspec ::= importitem (VARID|CONID|SOMEOP)?
+importitem ::= qvarid|CONID '(' memspecs? ')'|qconid|SOMEOP|'!'|'?'
+importitem ::= 	qvarid
+				qconid
+				CONID '(' memspecs? ')'
+				SOMEOP
+				'!'
+				'?'
+memspecs ::= memspec (',' memspec)* ','?
+memspecs ::= memspec (',' memspec)*
+memspec ::= PUBLIC* (VARID|CONID|SOMEOP) (VARID|CONID|SOMEOP)?
+memspec ::= (VARID|CONID|SOMEOP) (VARID|CONID|SOMEOP)?
+- skratenie:
+import ::= 'import' (CONID | VARID) importliste
+
+importliste ::= 	VARID '(' importspec (',' importspec)* ')'
+					'(' (importspec (',' importspec)*)? ')'
+					
+importspec ::= importitem (VARID|CONID|SOMEOP)?
+importitem ::= 	qvarid
+				qconid
+				CONID '(' (memspec (',' memspec)*)? ')'
+				SOMEOP
+				'!'
+				'?'
+memspec ::= (VARID|CONID|SOMEOP) (VARID|CONID|SOMEOP)?
+!!! nedokoncene; treba porovnat oproti prikladom
+
+- definicia funkcie:
+fundef ::= binex ('=' expr|('|' gquals ('->'|'=') expr)+) ('where' '{' letdefs? '}')*
+- mozno prerozdelit:
+fundef ::= binex '=' expr wherepart
+fundef ::= binex ('|' gquals ('->'|'=') expr)+ wherepart
+
+- where cast pre definicie funkcii:
+wherepart ::= ('where' letdefs?)*
+- staci takto (vacsinou sa vyskytuje iba 1 where, a letdefs je viacero):
+wherepart ::= 'where' letdefs?
+letdefs ::= (annotation|fundef) (';' (annotation|fundef))* ';'?
+letdefs ::= (annotation|fundef) (';' (annotation|fundef))*
+- t.j. bud tam je definicia funkcie, alebo deklaracia funkcie
+!!! opravit letdefs, pravdepodobne
+
+- definicia funkcie s guard-ami:
+fundef ::= binex ('|' gquals ('->'|'=') expr)+ wherepart
+- definujme:
+guards ::= ('|' gquals ('->'|'=') expr)+
+- t.j. na kazdy riadok jeden guard z tvarov:
+- "| x > 0  ->  true"
+- "| x > 0  =   true"
+- expr je expression, ten je zrejmy
+gquals ::= gqual (',' gqual)* ','?
+gquals ::= gqual (',' gqual)*
+gqual ::= expr ('<-' expr)?
+gqual ::= expr
+- guardy oddelene ciarkami
+- guard je expression; cast s  "'<-' expr" vynechana, kedze netypicke
+!!! guardov som asi nespravil spravne
+
+- vyraz, expr
+expr ::= binex ('::' (forall|rho))?
+expr ::= binex ('::' rho)?
+- vyraz s nutenmy urcenim typu
+binex ::= (binex (SOMEOP|'-'))* '-'? topex
+- lava rekurzia, pred "topex" (vzdy aspon 1), musi byt oddelene nejakym operatorom; pred topex mozno umiestnit unarny minus
+!!! skontrolovat
+
+- topex:
+topex ::= ('if' expr ';'? 'then' expr ';'? 'else'|'let' '{' letdefs '}' 'in') expr|'case' expr 'of' '{' calts '}'|'\' (('!'|'?')* primary)+ lambdabody|(('!'|'?')* primary)+
+topex ::= 	'if' expr ';'? 'then' expr ';'? 'else' expr
+			'let' '{' letdefs '}' 'in' expr
+			'case' expr 'of' '{' calts '}'
+			'\' (('!'|'?')* primary)+ lambdabody
+			(('!'|'?')* primary)+
+- upravy:
+topex ::= 	'if' expr 'then' expr 'else' expr
+			'let' letdefs 'in' expr
+			'case' expr 'of' calts
+			lambda
+			(('!'|'?')* primary)+
+
+- case:
+calts ::= calt (';' calt)* ';'?
+calts ::= calt (';' calt)* -- chapme ";" ako "\n", t.j. oddelovanie riadkami (";" doplnil lexer)
+calt ::= expr (('->'|'=') expr|('|' gquals ('->'|'=') expr)+) wherepart
+calt ::= 	expr ('->'|'=') expr wherepart						-- "case x of \n 0 -> true \n 1 -> false"
+			expr guards wherepart								-- "case x of \n x > 0 | 1 = true | 2 = false"
+!!! kontrola
+
+- lambda:
+lambda ::= '\' (('!'|'?')* primary)+ lambdabody
+lambdabody ::= lambda | '->' expr
+- t.j. "\x \y \z -> x+y+z" alebo variant "\x y z -> x+y+z"
+- zjednodusenie:
+lambda ::= '\' primary+ lambdabody
+
+- primary:
+primary ::= (term|('do' '{' dodefs|qualifiers '{' (VARID ('?'|'='|'<-')|getfields)) '}') ('.' (VARID|SOMEOP|'!'|'?'|'{' (VARID ('?'|'='|'<-')|getfields) '}'|'[' expr ']'))*
+primary ::= primaryfirst additionals
+primaryfirst ::=	term
+					'do' '{' dodefs '}'							-- monady neriesime
+					qualifiers '{' getfields '}'				-- qualifiers tiez zatial neriesim
+					qualifiers '{' VARID ('?'|'='|'<-') '}'		-- dtto				
+additionals ::= ('.' (VARID|SOMEOP|'!'|'?'|'{' (VARID ('?'|'='|'<-')|getfields) '}'|'[' expr ']'))*
+additionals ::= additionals_variant*
+additionals_variant ::= '.' (VARID|SOMEOP|'!'|'?'|'{' (VARID ('?'|'='|'<-')|getfields) '}'|'[' expr ']')
+additionals_variant ::= 	'.' VARID
+							'.' SOMEOP
+							'.' '!'
+							'.' '?'
+							'.' '[' expr ']'
+							'.' '{' VARID ('?'|'='|'<-') '}'
+							'.' '{' getfields '}'
+!!! neujasnene, pravdepodobne additionals sa vynechavaju (je to "dot" notacia, t.j. access niecoho z externej kniznice?)
+
+!!! pozor, qualifiers sa neriesia (ide o importovanie externych modulov, napr. pouzijem "Map.HashFunction", aspon myslim)
+qualifiers ::= CONID '.' (CONID '.')?
+getfield ::= VARID (('<-'|'=') expr)?
+
+- term:
+term ::= qvarid|literal|'_'|qconid ('{' fields? '}')?|'(' ((','+|'!'|'?'|'-')?|SOMEOP expr?|binex (SOMEOP|'-')|expr (',' exprSC|';' exprSS)?) ')'|'[' ((expr '|' lcquals)?|exprSC ('..' expr?)?) ']'
+term ::= 	qvarid									-- CONID
+			'_'
+			literal
+			qconid ('{' fields? '}')?				-- record syntax pre data vynechana
+			'(' ')'
+			-- nasledujuce vynechane
+				'(' ','+ ')'							
+				'(' '?' ')'
+				'(' '!' ')'
+				'(' '-' ')'
+			-- nasledujuce len v tvare "'(' SOMEOP ')'" (ako funkcia operatoru)
+				'(' SOMEOP expr? ')'
+			-- nasledujuce vynechane
+				'(' binex SOMEOP ')'
+				'(' binex '-' ')'
+			'(' expr (',' expr)* ')'				-- tuple
+			-- nasledujuce vynechane
+				'(' expr (';' expr)* ')'
+			-- zoznamy
+			'[' ']'
+			'[' expr (',' expr)* ']'
+			'[' expr (',' expr)* '..' ']'
+			'[' expr (',' expr)* '..' expr ']'
+			listcomprehension
+- celkovo tak:
+term ::= 	CONID
+			'_'
+			literal
+			'(' ')'
+			'(' SOMEOP ')'
+			'(' expr (',' expr)* ')'
+			'[' ']'
+			'[' expr (',' expr)* ']'
+			'[' expr (',' expr)* '..' ']'
+			'[' expr (',' expr)* '..' expr ']'
+			listcomprehension
+!!! kontrola termov
+			
+- literal:
+literal ::= 'true' | 'false' | CHRCONST | STRCONST | INTCONST | BIGINTCONST | LONGCONST | FLOATCONST | DOUBLECONST | REGEXP
+!!! kontrola literalov
+			
+- list comprehension:
+listcomprehension ::= '[' expr '|' lcquals ']'
+lcquals ::= lcqual (',' lcqual)* ','?
+lcquals ::= lcqual (',' lcqual)*
+lcqual ::= gqual|expr '=' expr|'let' '{' letdefs '}'
+lcqual ::= 	expr
+			expr '=' expr
+			'let' letdefs
+
+			
+
+Pattern-y pre gramatiku
+-------------------------------------------------------------------------
+- je nutne pouzit reference pokial sa ma zobrazit napoveda pre "ctrl + space"
+	- kludne je mozne pouzit specialny koncept, ktory nieco referencuje (t.j. jedinou jeho ulohou je referencovat existujuci koncept)
+
+- can be child:
+	- v priklade s bodkovou notaciou, co bolo rozsirenie Javy
+	- mali sme koncepty, ktore boli extension konceptu Expression, specialne potomkami abstraktneho konceptu "AddressReference"
+	- na nich sme chceli povolit cez bodkovu notaciu len 2 specialne vyhradene koncepty, ktore dedili od konceptu, ktory mal nasledujuci constraint:
+	(can be child)
+	(childConcept, node, link, parentNode, operationContext)->boolean {
+	  // DotExpression uz existujuci koncept v Jave
+	  parentNode as DotExpression.operand.isInstanceOf(AddressReference);
+	}
+	
+- assignment
+	- pre "x = 7", ide o AssignmentExpression
+	- ma 2 children: Expression a Expression (lavy a pravy)
+	- napr. pre "a[i] = 7" inak ani nejde; teda sa to kontroluje inde (typesystem)
+	
+- referencing v baseLanguage
+	- vsetko zacina z abstraktneho konceptu "Statement"
+	=> napr. toto "MyClass a = new MyClass();" uzivatel zacne pisat tym, ze zacne od "MyClass"
+	=> koncept ClassReference (dedi od Statement) a referencuje nejaky ClassConcept (a takto funguje "ctrl + space")
+	- na "MyClass" vsak vyhodi error, pretoze taky statement nie je v poriadku
+	- a potom zrejme cez transformacie (actions) je mozne sa dopracovat k statement-u, ktory uz je v poriadku
+	
+- method call
+	- v baseLanguage je koncept "LocalMethodCall"
+	- dedi od Expression
+	- referencuje "MethodDeclaration" 
+
+- akcia
+	- "ExpressionStatement" dedi od Statement a obsahuje jediny Expression
+	- je akcia "expressionStatement", ktora substituuje "Statement" na "ExpressionStatement"
+	{ 
+		// Vytvori "ExpressionStatement" z aktualneho node-u
+		node<ExpressionStatement> result = nodeToWrap.model.new initialized node(ExpressionStatement ,); 
+		result.expression.set(nodeToWrap); 
+		return result; 
+	}
+	- neboli zadane ziadne podmienky (conditions), cize detaily, ako ma fungovat, uz neviem
+
+- converters
+	- boli 3 koncepty a jednoduche prevody medzi kazdymi 2-mi
+	=> netreba 3*2 converterov pisat, staci pre kazdy jeden, ktory si vytiahne data z predoslych; vid priklad:
+	
+	node factories Converters
+
+	node concept: SimplifiedFormDescription
+	   description : <none>
+	   set-up : (newNode, sampleNode, enclosingNode, model)->void {
+	  ifInstanceOf (sampleNode is StringDescription original) {
+		newNode.detail = original.value;
+	  }
+	  ifInstanceOf (sampleNode is FormDescription original) {
+		newNode.detail = original.detail;
+		newNode.firstTimeApplicant = original.firstTimeApplicant;
+		newNode.requestor = original.requestor;
+	  }
+	}
+
+	node concept: FormDescription
+	   description : <none>
+	   set-up : (newNode, sampleNode, enclosingNode, model)->void {
+	  ifInstanceOf (sampleNode is StringDescription original) {
+		newNode.detail = original.value;
+	  }
+	  ifInstanceOf (sampleNode is SimplifiedFormDescription original) {
+		newNode.detail = original.detail;
+		newNode.firstTimeApplicant = original.firstTimeApplicant;
+		newNode.requestor = original.requestor;
+	  }
+	}
+
+	node concept: StringDescription
+	   description : <none>
+	   set-up : (newNode, sampleNode, enclosingNode, model)->void {
+	  ifInstanceOf (sampleNode is SimplifiedFormDescription original) {
+		newNode.value = original.detail;
+	  }
+	  ifInstanceOf (sampleNode is FormDescription original) {
+		newNode.value = original.detail;
+	  }
+	}
+
+- triky v konceptoch
+	- if () { ... } else if () { ... } else { ... }
+		- "else if" je specialny koncept (pre jednoduchsie nakonfigurovanie editoru)
+	- binary expression je nakonfigurovany podobne, ako mam ja vo Frege
+		- left + right operand typu expression
+		- medzi nimi operator (podla aliasu v zdedenom koncepte)
+			- ale je viacero verzii, napr.:
+				- equalsExpression (a == b)
+				- divExpression (a / b)
+				- ...
+				=> nie lubovolny operator (na druhej strane Java ani nema lubovolne operatory)
+	
+
+-------------------------------------------------------------------------
+Co treba pouzivat:
+
+- referencing v baseLanguage
+	- vsetko zacina z abstraktneho konceptu "Statement"
+	=> napr. toto "MyClass a = new MyClass();" uzivatel zacne pisat tym, ze zacne od "MyClass"
+	=> koncept ClassReference (dedi od Statement) a referencuje nejaky ClassConcept (a takto funguje "ctrl + space")
+	- na "MyClass" vsak vyhodi error, pretoze taky statement nie je v poriadku
+	- a potom zrejme cez transformacie (actions) je mozne sa dopracovat k statement-u, ktory uz je v poriadku
+	
+- Expression -> EpressionStatement automaticka konverzia (tam, kde treba iba Statement)

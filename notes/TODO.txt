@@ -1391,7 +1391,10 @@ Skeleton
 	- Main (1)
 		- zatial nedokonceny
 
-
+ValTermConid (len string property, predstavuje akykolvek nazov, co ma zacinat velkym pismenom, napr. "Just", "Maybe", ...)
+ValTermVarid (len string property, predstavuje akykolvek nazov, co ma zacinat malym pismenom)
+ValTermUnderscore	
+	
 
 VAZNE:
 	- Expression > ContextPart je nespravne!
