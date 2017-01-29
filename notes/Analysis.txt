@@ -1,0 +1,986 @@
+MODULE
+----------------------------------------------
+- gramatika:
+module ::= 	moduleclause 'where' definitions
+
+
+- priklad:
+module learnyou.chapter05.AFewMoreRecursiveFunctions where
+
+import frege.prelude.Math ()
+
+repeat' x = x : repeat' x
+lostNumbers = [ 4, 8, 15, 16, 23, 42 ]
+
+main _ = do	
+	println $ packed . quicksort . unpacked $
+	
+
+- prevedenie:
+	- koncept skeleton s presne definovanymi castami (pre jasnu a prehladnu strukturu kodu)
+	- MODULECLAUSE IMPORTS DEFINITIONS MAIN
+				
+
+				
+MODULECLAUSE
+----------------------------------------------
+- gramatika:
+moduleclause ::= 'module' ((varidkw|CONID) '.')* CONID (VARID+ '(' qvarids ')')*
+varidkw ::= VARID|'data'|'type'|'native'|'pure'|'module'|'import'
+qvarids ::= qvarop (',' qvarop)*
+qvarop ::= (CONID '.' (CONID '.')?)? (VARID|'!'|'?')|SOMEOP
+...
+nedava velmi zmysel podla prikladov?
+
+
+- priklady:
+module MyModule (MyType, MyClass, myFunc1) where
+
+module MyBigModule (module Data.Set, module Data.Char) where
+	import Data.Set
+	import Data.Char
+
+module AnotherBigModule (module Data.Set, module AnotherBigModule) where
+	import Data.Set
+	import Data.Char
+
+	
+- prevedenie:
+	- 'module' VlastneMenoModulu OptionalZatvorky where
+	- OptionalZatvorky s jednotlivymi castami oddelenymi ciarkami
+	- 2 moznosti z abstraktneho: "module QCONID", alebo "QCONID"
+	- QCONID su CONID oddelene bodkami
+	- pokial ma koncept obsahovat QCONID, potom musi byt cez akciu transformacie preveditelny
+	- tu by sa hodila napoveda, napr. "module Data.Set", cize treba referencny koncept
+		- referencuje bud to, co sa uz naimportovalo
+		- alebo referencuje sam seba ("AnotherBigModule")
+	
+
+	
+IMPORTS
+----------------------------------------------
+- gramatika:
+import ::= 'import' modulename1 (VARID? CONID)? importliste
+modulename1 ::= ((varidkw|CONID) '.')* CONID
+varidkw ::= VARID|'data'|'type'|'native'|'pure'|'module'|'import'
+...
+priklady opat trochu nezodpovedaju...?
+...
+importliste ::= 	VARID '(' importspecs ')'
+					'(' importspecs? ')'
+importspecs ::= importspec (',' importspec)*
+importspec ::= importitem (VARID|CONID|SOMEOP)?
+importitem ::= 	qvarid
+				qconid
+				CONID '(' memspecs? ')'		-- napr. "Read(readsPrec, readList)"
+				SOMEOP
+				'!'
+				'?'
+memspecs ::= memspec (',' memspec)*
+memspec ::= VARID | CONID | SOMEOP
+
+
+- priklady:
+import frege.data.List
+
+import learnyou.chapter14.TakingAWalk ( Tree, Direction, freeTree, **, !! )
+
+import Text.Read (Read())
+
+import Text.Read (Read(readsPrec, readList))
+
+import Text.Read (Lexeme(...))
+
+import Data.Char hiding (isControl, isMark)
+
+import learnyou.chapter07.geometry.Sphere as Sph ()
+
+
+- prevedenie:
+	- import Cesta OptionalHiding OptionalAs OptionalZatvorky
+	- Cesta pozostava z postupnosti: "CONID / VARID" (to ani nie je qconid / qvarid)
+		- ziadne referencie tu netreba
+	- OptionalZatvorky: zatvorka zacina prazdna, obsahuje 0..n casti
+	- cast je (neda sa referencovat kvoli neznamemu zdroju...):
+		- "Read()", "Read(readsPrec, readList)", "Lexeme(...)"
+		=> Bud "CONID(...)", "CONID(polozka, polozka, polozka)", "CONID", "VARID", "SOMEOP"
+			- polozka tiez tak (VARID, CONID, SOMEOP)
+	- OptionalAs: as CONID
+
+
+
+DEFINITIONS
+----------------------------------------------
+definitions ::= (topdefinition | visibledefinition)+	
+topdefinition ::= 	import
+					fixity operators
+visibledefinition ::= 	'instance' insthead wheredef
+						classdef
+						datainit wheredef
+						typedef
+						annotation
+						fundef
+
+						
+- prevedenie:
+	- IMPORTS je samostatna sucast, cize "import" z gramatiky ignorujem
+	- DEFINITIONS je abstraktne, od neho dedia:
+		- FIXITY
+		- CLASS
+		- INSTANCE
+		- DATA
+		- TYPE
+		- ANNOTATION
+		- FUNCTIONDEFINITION
+	- COMMENTS 
+		- je vlastne DOCUMENTATION podla formalnej gramatiky a moze byt na viacerych specialnych miestach
+		- kazdopadne by malo stacit, pokial umoznime umiestnenie v ramci definitions
+		
+
+		
+COMMENTS
+----------------------------------------------
+- prevedenie:
+	-- STRING
+	{- 
+		STRING
+		STRING
+		...
+	-}
+
+
+
+INDENTACIA
+----------------------------------------------
+- TODO
+- priprava prikladov:
+-- Mozno aj v kombinacii s "guards", potom ale treba indentovat
+maximum1 (x : xs)
+    | x > maxTail = x
+    | otherwise = maxTail
+    where maxTail = maximum1 xs
+
+yesnoIf x yesResult noResult =
+    if x > 100
+        then yesResult
+        else noResult
+		
+-- Vsimni si v tomto pripade uzatvorkovanie pre datovy typ "Rectangle Point Point"
+surface (Rectangle (Point x1 y1) (Point x2 y2)) = 
+    (abs $ x2 - x1) * (abs $ y2 - y1)
+	
+lengthCompare1 x y =
+    (length x `compare` length y) `mappend`
+    (x `compare` y)
+		
+-- Definicia cez viacero riadkov
+b = [ [ 1, 2, 3, 4 ]
+    , [ 5, 3, 3, 3 ]
+    , [ 1, 2, 2, 3, 4 ]
+    , [ 1, 2, 3 ]
+    ]	
+
+-- Definicia na viacero riadkov
+data Shape =
+      Circle    Point Float		-- Predstavuje stred kruznice a polomer
+    | Rectangle Point Point		-- Predstavuje lavy horny a pravy dolny bod	
+	
+- where:
+	f x
+		| cond1 x   = a
+		| cond2 x   = g a
+		| otherwise = f (h x a)
+		where
+			a = w x
+- let:
+	f x
+		= let a = w x in 		-- cize co znamena "a" sa uz urci tu
+			case () of			-- a v ramci jakeho scopeu, akoby; () asi akoby povodny vyraz...?
+			  _ | cond1 x   -> a
+				| cond2 x   -> g a
+				| otherwise -> f (h x a)
+- ekvivalentne:
+	f x
+		= let a = w x in 
+			if cond1 x then a
+			else if cond2 x then g a
+			else f (h x a)
+
+	
+	
+
+TYPOVANIE ???
+----------------------------------------------
+- gramatika:
+rho ::= (simpletype+ '=>')? simpletype+ ('->' simpletype+)*
+simpletype ::=  '(' tau (',' tau)* ')'
+				'[' tau ']'
+				tyvar
+				tyname
+tyname ::= qconid
+tyvar ::= VARID
+tau ::= (simpletype+ '->')* simpletype+
+
+
+- priklady:
+[a] -> [b] -> [(a, b)]
+(Real a) => [(a, a)]
+(Eq a, Num i) => a -> [i] -> Bool
+(Integral a) => a -> String
+Int -> [a] -> [[a]]
+a -> (a -> b) -> b
+(Eq k) => k -> Maybe v
+(Monoid m) => (a, m) -> (a -> (b, m)) -> (b, m)
+
+
+- prevedenie:
+	- v ramci tohto kontextu sa hodi este referencny koncept pre uz definovany "tyvar"
+		- napr. "a -> b -> a" (posledne "a" by malo ponuktnut v ramci napovedy)
+	- podozrive je "rho ::= (simpletype+ '=>')?", toto mozno inak? (Eq a, Ord b, Integral b)
+	- simpletype+ (s pluskom) kvoli tymto: napr. "Maybe a"
+	- qconid: 
+		- mal by referencovat uz nejaku existujucu triedu (napr. Eq, Num)
+		- na druhej strane je nutne umoznit aj vlastnu (co ak bola importovana? potom nemame schemu)
+	=> tyname moznosti:
+		- qconid (kvoli importovanym polozkam)
+		- referencia na existujucu triedu + vyzadovat 1 tyvar (Eq a)
+		- referencia na existujuce data (Maybe a)
+			- potom by sa hodilo automaticky prihodit niekolko tyvar premennych (alebo ich aspon vyzadovat - podla definicie data)
+		- pozor este na typy (Bool, Integral, Num)
+	- tu treba vela akcii:
+		- simpletype musi byt rychlo preveditelny na tyvar (po zadani lubovolneho stringu? pozor ale na to, ked chceme nieco referencovat)
+		- analogicky simpletype musi byt rychlo preveditelny na tyname
+		- tau rychlo preveditelny na simpletype (pokial iba jeden?)
+	- upozornime, ze mame niekolko standardnych typov:
+		- Char Bool String Integer (BigInteger v podstate) Float Double Int (32-64 bitovy)
+		- spadaju pod "tyname"; mozno asi vytvorit vlastne koncepty pre kazdeho z nich (su to standardne typy; ostatne sa daju vytvorit len pomocou Data)...?
+	- taktiez upozornime, ze mame niekolko standardnych tried:
+		- Num (superclass to Int, Integer, Float, Double)
+		- Integral (superclass to Int, Integer)
+		- Floating (superclass to Float, Double)
+		- RealFloat
+		- Potom dalsie "exotickejsie": 
+			- Eq Ord Show
+		- Uvedme priklad: 
+			f :: (Num a) => a -> a -> Bool
+			- pri anotacii funkcie Num je trieda, ostatne su typy (trieda ani inde nemoze stat)
+			- toto asi treba overit po formalnej stranke 
+
+			
+			
+TYPE ???
+----------------------------------------------
+- gramatika:
+typedef ::= 'type' CONID tyvar* '=' rho
+
+
+- priklady:
+type Breadcrumbs = [String]
+
+type Breadcrumbs a = [Crumb a]
+
+type ListZipper a = ([a], [a])
+
+
+- prevedenie:
+	- v ramci rho by sa hodilo nejak injektovat tie tyvars, ktore boli deklarovane uz za CONID
+	- zaroven by asi mali mat navzajom odlisne meno, ale to cez typesystem / constraint
+	
+	
+
+FIXITY
+----------------------------------------------
+- gramatika:
+fixity operators
+fixity ::= ('infix'|'infixl'|'infixr') INTCONST	
+operators ::= (SOMEOP | VARID | '-')+
+
+
+- priklady:
+infixl 7 `-:`
+
+infixl 8 ‘myplus‘
+
+
+- prevedenie:
+	- 3 varianty podla zacinajuceho slova
+	- nezabudnut na znaky "`", ktore z nejakeho dovodu nie su v gramatike popisane
+	- operatory - v podstate lubovolne poskladanie specialnych symbolov, s pravidlami:
+		- nesmu pouzivat rezervovane symboly:
+		..  :  ::  =  \  |  <-  ->  @  ˜  =>
+		- mozno skladat z tychto symbolov:
+		#  $  %  &  *  +  .  /  <  =  >  ?  @  \  ^  |  -  ~
+
+
+
+ANNOTATION
+----------------------------------------------
+- gramatika:
+annotation ::= annoitems '::' rho
+annoitems ::= annoitem (',' annoitem)*
+annoitem ::=	VARID
+				'(' SOMEOP ')'
+				'(' '-' ')'
+				'(' '?' ')'
+				'(' '!' ')'
+								
+				
+- priklady:
+zip :: [a] -> [b] -> [(a, b)]
+
+(-:) :: a -> (a -> b) -> b
+
+(<), (<=), (>=), (>)  :: a -> a -> Bool
+
+elem :: (Eq a, Num i) => a -> [i] -> Bool
+
+map :: (a -> b) -> [a] -> [b]
+
+
+- prevedenie:
+	- vychadza z typovania
+	- pozor na to, ze mozno definovat viacere naraz a ze mozno anotovat aj operatory
+	- nazvy anotovanych poloziek (vid fundef pre dalsie detaily)
+	
+	
+	
+FUNCTIONDEFINITION ??
+----------------------------------------------
+- gramatika:
+fundef ::= 	binex '=' expr wherepart
+			binex ('|' gquals '=' expr)+ wherepart
+
+gquals ::= gqual (',' gqual)*
+gqual ::= expr
+- guardy oddelene ciarkami
+
+
+- priklady:
+f x = 2 * x
+
+f 0 = 1
+
+replicate n x
+    | n <= 0    = []
+    | otherwise = x : replicate' (n - 1) x
+	
+(a, b, c) = (1, 2, 3)
+
+(x:y:z:_) = [1,2,3,4,5,6]
+
+a `myop` b = a + b
+
+surface (Rectangle (Point x1 y1) (Point x2 y2)) = (abs $ x2 - x1) * (abs $ y2 - y1)
+
+
+- prevedenie:
+	- dava vacsi zmysel zlucit viacere patterny tej istej funkcie do jednej skupiny (inak problem pri kompilacii)
+	- mozno ako optional hodit anotaciu? (deklaraciu funkcie)
+	- cez typesystem okontrolovat zhodnost patternov:
+		f a b c = 1
+		f i j k = 2
+	- zatial som sa nestretol s viacerymi podmienkami v ramci jedneho guardu, treba preverit (vid gquals)
+	- pozor na slovo "otherwise" pri guard-och, malo by ho vediet napovedat (t.j. urobit samostatny koncept)
+	- pozor na binex na zaciatku, ktory urcuje pattern, podla ktoreho sa matchuje
+		- toto prejde:	
+			f [] = 0
+			f [1, 2, 3] = 0
+			f [x, y] = x+y
+			f (x : xs) = 1
+			g (1, [2, 3]) = 1
+			g (x, _) = x
+		- toto neprejde:
+			f (x+1) = 0
+			f [1..10] = 0
+			f [x | x <- [1..10]] = 0
+		- mozno by sa hodilo vlastnu gramatiku specialne pre tuto cast?
+	- obdobne zostava otazkou, jak vyriesit patternovanie pre guardov?
+		- tiez nie je povoleny akykolvek vyraz
+		- tyka sa aj case
+	- chce to tu akciu (alebo alias?), ked sa zacne pisat |, a naopak pri = klasicky pattern matching
+	- tazko povedat, ci posledne 2 priklady su tiez definiciami funkcii, ale prejdu a funguju (po zavolani napr. "a" dostaneme skutocne "1", dtto pre "x")
+		- zaroven plati, ze pokial by sa vyskytol este riadok napr. "a = 7", tak uz hlasi chybu "redefinition", cize asi skutocne ide o fundef
+	- este pre to, co moze byt na zaciatku - pozor na definovanie operatorov:
+		x -: f = f x
+		- cisto teoreticky moze referencovat uz anotovany operator, ale asi netreba (anotovany nebude vzdy)
+	- mimochodom, nazvy funkcii nesmu byt jednym z rezervovanych slov:
+		- case, class, data, default, deriving, do, else, foreign, if, import, in, infix, infixl, infixr, instance, let, module, newtype, of, then, type, where, _ (pokial je osamote)
+		- tyka sa aj annotation
+		
+		
+
+WHEREPART ??
+----------------------------------------------
+- gramatika:
+wherepart ::= 'where' letdefs?
+letdefs ::= (annotation|fundef) ('\n' (annotation|fundef))*
+- t.j. bud su tam definicie funkcii, alebo aj deklaracie funkcii
+
+
+- priklady:
+describeList xs = "The list is " ++ what xs ++ y
+    where what []  = "empty"
+          what [x] = "a singleton list"
+          what xs  = "a longer list"
+		  y        = "another string"
+		  
+		  
+f = giveme 100
+     where giveme x = if isbig x then x else 0
+           isbig x = x > 0
+
+		  
+bmiTell weight height
+    | bmi <= skinny = "You're underweight, you emo, you!"
+    where (skinny, normal, fat) = (18.5, 25.0, 30.0)
+
+	
+- prevedenie:
+	- problematicke je len to tuple, pretoze vsade inde je mozne to chapat ako definiciu funkcie
+		- z pohladu gramatiky je tam skutocne "binex", ale treba nejak oprasit vlastnym konceptom
+	- co sa tyka druheho prikladu, toto je problem vseobecne - definicie funkcii mozu byt prehodene
+		- nevadi to, my proste mame referencny koncept a ci ho uzivatel pouzije, je na nom
+	
+
+	
+WHEREDEF
+----------------------------------------------
+- gramatika:
+wheredef ::= ('where' localdefs )?
+localdefs ::= localdef ('\n' localdef)*
+localdef ::= 	annotation
+				fundef
+
+
+- priklady:
+class YesNo a where
+    yesno :: a -> Bool
+	
+instance YesNo Int where
+    yesno 0 = false
+    yesno _ = true
+	
+...
+
+
+- prevedenie:
+	- v ramci localdef moze byt bud anotacia (deklaracia funkcie) alebo definicia funkcie
+
+
+	
+EXPRESSION ??
+----------------------------------------------
+- gramatika:
+expr ::= binex ('::' rho)?
+binex ::= (binex (SOMEOP|'-'))* '-'? topex
+
+
+- priklady:
+f n = n `div` 2
+
+
+- prevedenie:
+	- EXPRESSION je bud:
+		- prave 1 TOPEXPRESSION (moze mat unarne minus pred sebou)
+			- treba davat pozor na unarnu negaciu (! operator) a dalsie unarne operatory => precesat gramatiku este raz na toto
+		- alebo BINARYEXPRESSION
+			- ma lavu a pravu cast (obe su EXPRESSION)
+			- medzi nimi je operator: (SOMEOP | '-')
+		- vo vacsine jazykov jepresny pocet rozdeleni BINARYEXPRESSION, napr. *, +, /, ... (kazda vlastny koncept)
+			- v Haskelli su operatory artbitrarne, cize by sa hodilo cez akciu pri pisani akehokolvek symbolu automaticky vytvorit BINARYEXPRESSION a dosadit za operator napisany text
+	- sice dany priklad by mal prechadzat cez TOPEXPRESSION a nie cez EXPRESSION, pretoze `div` nespada pod SOMEOP, aj tak to tu spravime takto
+		- je to logickejsie, kedze de facto ide o operator
+		- cize semanticka analyza na to, ci skutocne ide o binarnu funkciu, sa musi odohrat tu
+
+
+
+TOPEXPRESSION ??
+----------------------------------------------	
+- gramatika:
+topex ::= 	'if' expr 'then' expr 'else' expr
+			'let' letdefs 'in' expr
+			'case' expr 'of' calts
+			lambda
+			(('!'|'?')* term)+
+
+- priklady:
+f 1 2 3
+
+(+) 1 a
+
+(,,) (x > 0) (x % 2 == 0) (x % 3 == 0)
+
+map (*) [0..]
+
+(\x -> \y -> \z -> x + y + z) a b c
+
+multThree x y z = x * y * z
+multTwoWithNine = multThree 9
+
+-- aplikacia funkcie s dvomi argumentami; druhy argument je term - uzatvorkovany vyraz, pricom v ramci vyrazu ide opat o aplikaciu funkcie s jednym argumentom (tu uz literalom - cislo "3")
+filter ((==) 3) [ 1, 2, 3, 4, 5 ]
+
+-- pozor, tu uz to neplati, (++ str) tvori vyraz, ale "++" nie je aplikacia funkcie, ale operator
+onLeft str = (++ str)
+
+-- bez zatvoriek nefunguje, ale su povolene vsetky nasledujuce varianty; cize z gramatickeho hladiska nespada pod BINARYEXPRESSION, ale "specialny variant termu"?
+onRight str = (str ++)
+onRight str = (++ str)
+onRighta str = (++ str ++ "a")
+
+createCircle r = Circle (Point 0 0) r
+
+
+- prevedenie:
+	- pozor na "(('!'|'?')* term)+", mozno iba "term+"?
+	- bude treba akcie substituovania termov
+		- napr. pri napisani "7" => automaticky literal
+	- priklady su podstatne pre uvedomenie, preco "term+":
+		- mame volanie funkcie, za nim argumenty, cize argumenty su termy
+		- lenze volanie funkcie je tiez term (QVARID)
+		- v pripade aplikovania lambdy funkcie sa dostaneme cez: 
+			- term varianty '(' expr (',' expr)* ')', t.j. uzatvorkovany expression
+			- za expression pouzijeme lambdu
+			- napravo su termy ako argumenty
+		=> tu by mozno bolo rozumne obmedzit moznosti na "term+" (a tym padom jednoduchsia referencovatelnost):
+			- aplikacia funkcie (pozor na to, ze operator je tiez funkcia)
+				- pozor na specialny operator (,,,,,,) ako konstruktor pre tuple!
+			- konstruktor (napr. "Just 7")
+				- mal by sa vyzadovat striktny pocet parametrov / argumentov
+			- typove synonyma
+			... pripadne dalsie ...
+			+ specialny pripad currying operatoru, vid priklad so stringom (++ zlava/sprava)
+				- uzatvorkovany operator bud sprava alebo zlava, na druhej strane vyraz - expression
+				- vychadza z '(' SOMEOP ')' ... treba doriesit
+		=> tu by sa hodila kontrola (semanticka analyza), ci je typ volanej funkcie korektny a ci je pocet argumentov tiez korektny
+			- pozor s poctom argumentov, nakolko currying je bezna vec (vid stvrty priklad)
+
+
+
+TERM ??
+----------------------------------------------
+- gramatika:
+term ::= 	QCONID
+			QVARID
+			'_'
+			literal
+			
+			'(' ')'
+			'(' SOMEOP ')'
+			'(' expr (',' expr)* ')'
+			
+			'[' ']'
+			'[' expr (',' expr)* ']'
+			'[' expr (',' expr)* '..' ']'
+			'[' expr (',' expr)* '..' expr ']'
+			listcomprehension
+			
+			
+- priklady:
+	- zatvorky / tuples:
+		(toList "Steve Buscemi")
+	
+	- zoznamy:
+		[ 4, 8, 15, 16, 23, 42 ]
+		
+		[ [ 5, 4, 5, 4, 4 ], [ 1, 2, 3 ], [ 3, 5, 4, 3 ], [], [ 2 ], [ 2, 2 ] ]
+	
+		[ 'K' .. 'Z' ]
+		
+	- rozlicne:
+		- ide vlastne o BINARYEXPRESSION, medzi nimi operator :, potom nalavo a napravo su termy
+		1 : [ 2, 3, 4, 5 ]	
+	
+	
+- prevedenie:
+	- SOMEOP by malo byt referencovatelne
+		- nemusi ale nutne, porovnaj napr. importovanie veci z externych kniznic
+	- pozor na QCONID, pravdepodobne ide o pouzitie konstruktoru, ale chybaju v gramatike argumenty
+		- napr. "Just 7", ale z gramatiky to tak nevyplyva => treba upravit, prip. najst v gramatike
+	- QCONID aj QVARID by mali byt referencovatelne
+		- opat, nemusia...
+		- toto bude asi tazke zabezpecit, lebo to bude chciet referencovat len v ramci urciteho scope, napr.:
+			f x = 2 * x		-- x je referencovatelne
+			f y = 2 * y		-- tu je referencovatelne len y
+		- musia byt referencovatelne aj uz definovane ine funkcie
+		- a potom mame zopar standardnych funkcii, napr.:
+			- fst a, snd a (tuples)
+	- term "_" sa nemoze vyskytovat hocikde
+	- pozor na zaporne cisla a medzery
+		[-110..-100] 	-– syntax error
+		[-110.. -100] 	-- ok
+
+
+
+LIST COMPREHENSION ??
+----------------------------------------------		
+- gramatika:
+listcomprehension ::= '[' expr '|' lcquals ']'
+lcquals ::= lcqual (',' lcqual)*
+lcqual ::= 	expr
+			expr '<-' expr
+			'let' letdefs
+			
+
+- priklady:
+	[ [ x, y, z] | x <- [ 1, 2 ], y <- [ 3, 4 ], z <- [ 5, 6 ] ]
+	
+	[ a + b | (a, b) <- xs ]
+	
+	[ c | c <- str, c `elem` ['A'..'Z'] ]
+	
+	[(a, z) | a <- [1..3], b <- [1..3], let z = min a b]
+	
+	
+- prevedenie:
+	- akcie transformacie pre prechody medzi jednotlivymi definiciami zoznamov
+	- pozor na referencovatelnost
+		[x | x<-[1..10]]
+		- tu si vytvarame novu premennu x, ktoru potom chceme vediet referencovat
+	- treba testovat, ze pokial je "expr" sam, tak musi byt typu Bool
+	- "expr '<-' expr" tiez nemoze byt lubovolny (nalavo ma byt tzv. pattern)
+	
+	
+
+LITERAL
+----------------------------------------------	
+- gramatika:
+literal ::= 'true' 
+			'false'
+			CHARCONST 
+			STRINGCONST 
+			INTCONST
+			BIGINTCONST
+			DOUBLECONST 
+			REGEXP
+			
+			
+- priklady:
+	- CHARCONST (char)
+	'a', ' ', '\n', '\&', '\DEL', '\CAN', '\ACK', '\0032101', '\0o1770', '\0x8A9E4001'
+	
+	- STRINGCONST (string)
+	"hello, \n, world"
+	"viacriadkovy\
+	string\
+	takto"
+
+	- INTCONST (integer)
+	0098400984065406840680465430210301 (moze zacinat nulou)
+	0o00710320007020101 (octal)
+	0x000AFEE0D9AA1DD003300211110 (hexadecimal)
+	
+	- DOUBLECONST (float)
+	 009840098406540684068046.5430210301E+10 (iba decimalny zapis)
+	 1046.1E-10
+	 
+			
+	
+- prevedenie:
+	- akcie na substituovatelnost, typicky expression -> literal
+		- napr. po zacati pisania "7", "mystring", ... => substituovat za prislusny literal
+	- niektore zrejme vynecham (REGEXP, INTCONST / BIGINTCONST - staci len INTCONST)
+		- a zrejme aj niektore zapisy (napr. octalovy, hexadecimalny zapis a pod.)
+		
+		
+
+CASE
+----------------------------------------------
+- gramatika:
+topex ::= 	'case' expr 'of' calts
+			... dalsie moznosti pre topex ...
+
+calts ::= calt ('\n' calt)* 
+calt ::= 	expr '->' expr wherepart
+			expr ('|' gquals '=' expr)+ wherepart
+
+			
+- priklady:
+head xs = case xs of
+    [] -> error "No head for empty lists!"
+    (x : _) -> x
+
+routine = case landLeft 1 (0, 0) of
+        Nothing    -> Nothing
+        Just pole1 -> case landRight 4 pole1 of
+			Nothing    -> Nothing
+			Just pole2 -> landLeft 1 pole3
+				
+strcmp s1 s2 = 
+	case (s1, s2) of
+		([], []) -> True
+		(s1:ss1, s2:ss2)
+			| toUpper s1 == toUpper s2 -> strcmp ss1 ss2
+			| otherwise -> False
+		_ -> False 
+				
+f x = let a = w x in case () of 
+			_ | cond1 x   -> a
+			  | cond2 x   -> g a
+			  | otherwise -> f (h x a)
+			  
+
+- prevedenie:
+	- pozor na to, ze nemoze byt cokolvek na lavej strane (pattern, oproti ktoremu sa matchuje; vid guards)
+	- unita "()" reprezentuje "no useful information"
+	
+
+	
+IF-THEN-ELSE
+----------------------------------------------
+- gramatika:
+topex ::= 	'if' expr 'then' expr 'else' expr
+			... dalsie moznosti pre topex ...
+	
+
+- priklady:	
+yesnoIf x yesResult noResult = if x > 100 then yesResult else noResult
+		
+
+
+LAMBDA
+----------------------------------------------
+- gramatika:
+lambda ::= '\' term+ lambdabody
+lambdabody ::= lambda | '->' expr
+
+
+- priklady:
+addThree = \x -> \y -> \z -> x + y + z
+
+sumThree a b c = (\x -> \y -> \z -> x + y + z) a b c
+
+flip f = \x \y -> f y x
+	
+
+- prevedenie:
+	- v ramci gramatiky je "term+", ale pravdepodobne sa staci obmedzit iba na "\x \y -> ...", a toto nepodporovat: "\x y -> ..."
+	- term-y v "'\' term+" nic nereferencuju, lambdabody ale uz musi vediet referencovat termy udane nalavo v "'\' term+"
+
+
+
+LET
+----------------------------------------------	
+- gramatika:
+letdefinition ::= 'let' letdefs 'in' expr
+letdefs ::= (annotation|fundef) ('\n' (annotation|fundef))*
+
+
+- priklady:
+shortLinesOnly input =
+    let allLines = lines input
+        shortLines = filter (\line -> length line < 10) allLines
+        result = unlines shortLines
+    in  result
+	
+mylist = [let square x = x * x in (square 5, square 3, square 2)]
+	
+cylinder r h = let sideArea = 2 * pi * r * h 
+				   topArea = pi * r ^ 2
+			   in  sideArea + 2 * topArea
+
+f x = let a = x - 1 in case () of 
+		_ | x > 0     -> a
+		  | x == 0    -> g a
+		  | otherwise -> h a
+				
+firstThree str = let (a:b:c:_) = str
+				 in "Initial three characters are: " ++ show a ++ ", " ++ show b ++ ", " ++ show c
+
+f = (let (a, b, c) = (1, 2, 3) in a + b + c) * 100
+
+
+- prevedenie:
+	- kedze pri definicii funkcie funguje aj toto: "(a, b, c) = (1, 2, 3)", tak to musi fungovat aj tu
+	- okrem toho treba davat pozor na referencovanie, t.j. raz definovana funkcia musi byt refrencovatelna neskor (obzvlast v "in" casti)
+	- pozor na scope / referencovanie, oproti where:
+		- pokial su pouziti guard-i, "the scope of the where clause extends over all guards; the scope of a let expression is only the current function clause (and guard)"
+
+
+
+DATA ??
+----------------------------------------------
+- gramatika:
+datainit ::= 'data' CONID tyvar* '=' dalts wheredef
+dalts ::= dalt ('|' dalt)*
+dalt ::= CONID simpletype*
+
+
+- priklady:
+data Point = Point Float Float
+
+data Cool a = Something Float Float | Hooray a a
+
+data Shape = Line Point Point | Rectangle Point Point
+
+data FSItem = File Name Data | Folder Name [FSItem]
+
+data Opx a b c = Sumx a | Zerox
+
+
+- prevedenie:
+	- wheredef mozno netreba
+	- referencovanie musi byt kontextualne, ale spada pod "simpletype"
+		- referencovat mozno uz existujuce ine data
+		- pripadne data deklarovane nalavo od konstruktorov
+		- pripade tyvar deklarovany nalavo od konstruktorov
+		- pripadne typ (Float, Int, ...)
+	- semantickou analyzou:
+		- "data Opx a b c", potom "a", "b", "c" musia byt rozneho nazvu
+		- pokial sa budem nudit, tak mozno urcit, ze "b" a "c" su redundantne v tomto: "data Opx a b c = Sumx a | Zerox"
+		
+		
+
+CLASS
+----------------------------------------------
+- gramatika:
+classdef ::= 'class' (ccontext '=>')? CONID tyvar wheredef
+ccontext ::= qconid tyvar (',' qconid tyvar)*
+
+
+- priklady:
+class YesNo a where
+    yesno :: a -> Bool
+	
+class Eq a where
+    (/=) :: a -> a -> Bool
+    x /= y = not (x == y)	
+	
+class (Eq a) => Ord a where
+  (<), (<=), (>=), (>)  :: a -> a -> Bool
+  x > y               	= not (x <= y)
+
+class Functor f where
+	fmap :: (a -> b) -> f a -> f b
+	
+instance Functor [] where
+	fmap = map
+	
+
+- prevedenie:
+	- az na bizarnost s prikladom "Functor" by nemalo byt komplikovane (opat ide o referencovatelnost z vnutra "wheredef", cize treba nejako injektovat?)
+	- pozor na zhlukovu anotaciu (deklaraciu funkcie)
+	- v ramci "ccontext" treba vediet referencovat uz existujuce triedy
+		- prip. nemusia, pokial su naimportovane...?
+	
+	
+	
+INSTANCE
+----------------------------------------------	
+- gramatika:
+instancedef ::= 'instance' insthead wheredef
+insthead ::= (icontext '=>')? qconid simpletype
+icontext ::= '(' qconid simpletype (',' qconid simpletype)* ')'
+
+	
+- priklady:
+instance YesNo Int where
+    yesno 0 = false
+    yesno _ = true
+	
+instance YesNo [a] where
+    yesno [] = false
+    yesno _  = true
+
+instance YesNo Bool where
+    yesno = id
+	
+instance (Eq m) => Eq (Maybe m) where
+    Just x  == Just y  = x == y
+    Nothing == Nothing = true
+
+instance Functor (HM.HashMap k) where
+    fmap = HM.mapValues	
+	
+
+- prevedenie:
+	- "id" mozno nebudem podporovat...? (treti priklad)
+	- v ramci "qconid", ked sa zapisuje vlastne meno instancie, treba referencovat uz existujucu triedu
+		- opat, co ak naimportovana...?
+
+
+
+Semanticka analyza ??
+----------------------------------------------
+- "expression" sa vyhodnocuje na "value"
+- "expression" ma svoj staticky "type" (dedukuje sa, prip. moze urcit programator cez "::" operator)
+- "variable", "constructor", "type variable", "type constructor", "type class"
+- "variable" a "type variable" smu zacinat len malym pismenom, alebo podtrzitkom, ostatne z vymenovanych velkym pismenom
+
+- Pouzitie len na typ, ktory bol naozaj instanciovany:
+	yesnoif :: (YesNo y) => y -> Bool
+	f :: Int -> Bool
+	f i = yesnoif i
+	- tu mozno odhalit, ze "f" je nespravne definovana, nakolko "f" prijima Int a hadze ho funkcii "yesnoif", ktora ale prijima iba instancie triedy "YesNo"
+	
+- Vstavane operatory, funkcie, ...
+	("exp1", "exp2", "exp3") je to iste ako (,,) "exp1" "exp2" "exp3"
+	- je nutne tym zachytit, ci je spravny pocet argumentov, ci dana funkcia skutocne prijima argumenty daneho typu a pod.
+
+
+
+Vynechane:
+----------------------------------------------
+
+Zavinac
+--------------
+capital (zoznam@(x : xs)) =
+    "The first letter of " ++ (packed zoznam) ++ " is " ++ (ctos x)
+	
+anyChoice2 ch =
+	case ch of
+		Nothing -> "No choice!"
+		Just score@(First "gold") -> "First with gold!"
+		Just score@(First _) -> "First with something else."
+
+		
+Lazy patterns
+--------------
+-- Trieda "Def", ktora vracia defaultnu hodnotu; chceme rozsirit na "Maybe" triedu
+instance Def a => Def (Maybe a) where
+ defValue (Just x) = Just (defValue x)
+ defValue Nothing = Nothing
+ 
+-- Ten "Nothing" vsak nie je idealny a tak pouzijeme "lazy pattern"
+-- Tvarime sa, ze vzdy namatchujeme "Just x" (aj ked to nie je pravda)
+instance Def a => Def (Maybe a) where
+ defValue ~(Just x) = Just (defValue x)
+			
+-- Co teda, ked niekto zavola "defValue" na "Nothing"? Musi volat tymto sposobom, inak runtime fail
+defMB = defValue (Nothing :: Maybe Bool)
+
+
+Record syntax
+--------------
+data Person = Person { firstName :: String, lastName :: String, age :: Int }
+mikeD = Person { firstName = "Michael", lastName = "Diamond", age = 43 }
+
+
+Monady
+--------------
+example1 :: IO ()
+example1 = do
+    a <- (++) <$> getLine <*> getLine
+    putStrLn $ "The two lines concatenated turn out to be: " ++ a
+	
+	
+	
+Deriving a pod.
+--------------
+derive Show Point
+
+
+Private, Public ...
+--------------
+private reduce :: Rational -> Rational
+
+
+Vstavane operatory a funkcie
+--------------
+- niektore budu, ale iba niektore
+- este nie je ujasnene
+
+
+Newtype
+--------------
+- vo frege nie je "newtype" keyword, cize ani nebude podporovany

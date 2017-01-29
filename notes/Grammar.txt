@@ -180,7 +180,7 @@ qvarids ::= qvarop (',' qvarop)*
 qvarop ::= (CONID '.' (CONID '.')?)? (VARID|'!'|'?')|SOMEOP
 moduleclause ::= 'module' ModuleExports CONID (VARID+ '(' qvarids ')')*
 !!! nedokoncene
-					
+
 (custom rule)
 !!! nedokoncene
 ModuleExports ::= varidkw QCONID
