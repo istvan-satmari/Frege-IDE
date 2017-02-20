@@ -181,13 +181,16 @@ COMMENTS
 		STRING
 		...
 	-}
-	
-	
+	- [TODO] skontrolovat korektnu indentaciu v pripade vnorenych blokovych komentarov
+	- [TODO] blokovy komentar moze byt nested, ale asi by som v ramci 1 riadku dal tuto kontrolu:
+		- nemoze stat {- osamote (musi byt v tom istom riadku aj takto ukonceny)
+		
+		
 
 TYPOVANIE ???
 ----------------------------------------------
 - gramatika:
-rho ::= (simpletype+ '=>')? simpletype+ ('->' simpletype+)*
+rho ::= (simpletype+ '=>')? tau
 simpletype ::=  '(' tau (',' tau)* ')'
 				'[' tau ']'
 				tyvar
@@ -209,6 +212,11 @@ a -> (a -> b) -> b
 
 
 - prevedenie:
+	- [TODO] tyname (~ TypeName) - ma byt typu qconid
+	- [TODO] kontext v zmysle "(simpletype+ '=>')?" by mal byt upraveny na nieco rozumnejsie
+		- problematicke, lebo je najprv nutne previes na TypeTuple a odtial sa da dostat k takym konstruktom, ako napr. "(Eq a, Num i) =>"
+		- trebars iba "TypeName TypeVariable" oddelene ciarkami
+		- zatial v podobe '(' simpletype+ (',' simpletype+)* ')'
 	- v ramci tohto kontextu sa hodi este referencny koncept pre uz definovany "tyvar"
 		- napr. "a -> b -> a" (posledne "a" by malo ponuktnut v ramci napovedy)
 	- podozrive je "rho ::= (simpletype+ '=>')?", toto mozno inak? (Eq a, Ord b, Integral b)
