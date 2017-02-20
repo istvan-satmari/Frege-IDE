@@ -56,28 +56,28 @@
     <node concept="1TJgyj" id="vUxQDjKXx_" role="1TKVEi">
       <property role="IQ2ns" value="574920793184786533" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="Module" />
+      <property role="20kJfa" value="module" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="vUxQDjKXwK" resolve="Module" />
     </node>
     <node concept="1TJgyj" id="vUxQDjKXys" role="1TKVEi">
       <property role="IQ2ns" value="574920793184786588" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="Imports" />
+      <property role="20kJfa" value="imports" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="vUxQDjKXxR" resolve="Import" />
     </node>
     <node concept="1TJgyj" id="vUxQDjKXyy" role="1TKVEi">
       <property role="IQ2ns" value="574920793184786594" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="Definitions" />
+      <property role="20kJfa" value="definitions" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="vUxQDjKXyv" resolve="Definition" />
     </node>
     <node concept="1TJgyj" id="vUxQDjKXyB" role="1TKVEi">
       <property role="IQ2ns" value="574920793184786599" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="Main" />
+      <property role="20kJfa" value="main" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="vUxQDjKXyA" resolve="Main" />
     </node>
@@ -85,12 +85,15 @@
   <node concept="1TIwiD" id="vUxQDjKXwK">
     <property role="EcuMT" value="574920793184786480" />
     <property role="TrG5h" value="Module" />
+    <property role="3GE5qa" value="Module" />
+    <property role="34LRSv" value="module" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7riFpCdoSWz" role="1TKVEi">
       <property role="IQ2ns" value="8562096718745931555" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="Parts" />
+      <property role="20kJfa" value="parts" />
       <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3Xsm2yzy6z5" resolve="ModulePart" />
     </node>
     <node concept="PrWs8" id="7riFpCdoSWs" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -99,15 +102,27 @@
   <node concept="1TIwiD" id="vUxQDjKXxR">
     <property role="EcuMT" value="574920793184786551" />
     <property role="TrG5h" value="Import" />
+    <property role="3GE5qa" value="Import" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3Xsm2yzyaGV" role="1TKVEi">
+      <property role="IQ2ns" value="4565621053812419387" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="resource" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5E$XTHV3XN2" resolve="ValTermConid" />
+    </node>
     <node concept="1TJgyj" id="7riFpCdphfa" role="1TKVEi">
       <property role="IQ2ns" value="8562096718746031050" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="Parts" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20kJfa" value="as" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="3Xsm2yzyaGY" resolve="ImportAs" />
     </node>
-    <node concept="PrWs8" id="7riFpCdphf3" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="1TJgyj" id="3Xsm2yzyaHs" role="1TKVEi">
+      <property role="IQ2ns" value="4565621053812419420" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <ref role="20lvS9" node="3Xsm2yzyh4H" resolve="ImportList" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKXyv">
@@ -1203,6 +1218,180 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7riFpCdpuBL" resolve="Simpletype" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzy6z5">
+    <property role="EcuMT" value="4565621053812402373" />
+    <property role="3GE5qa" value="Module" />
+    <property role="TrG5h" value="ModulePart" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzy6z6">
+    <property role="EcuMT" value="4565621053812402374" />
+    <property role="3GE5qa" value="Module" />
+    <property role="TrG5h" value="ModulePartModule" />
+    <property role="34LRSv" value="module" />
+    <ref role="1TJDcQ" node="3Xsm2yzy6z5" resolve="ModulePart" />
+    <node concept="1TJgyj" id="3Xsm2yzyaGJ" role="1TKVEi">
+      <property role="IQ2ns" value="4565621053812419375" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5E$XTHV3XN2" resolve="ValTermConid" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzyaGe">
+    <property role="EcuMT" value="4565621053812419342" />
+    <property role="3GE5qa" value="Module" />
+    <property role="TrG5h" value="ModulePartSimple" />
+    <ref role="1TJDcQ" node="3Xsm2yzy6z5" resolve="ModulePart" />
+    <node concept="1TJgyj" id="3Xsm2yzyaGE" role="1TKVEi">
+      <property role="IQ2ns" value="4565621053812419370" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5E$XTHV3XN2" resolve="ValTermConid" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzyaGY">
+    <property role="EcuMT" value="4565621053812419390" />
+    <property role="3GE5qa" value="Import" />
+    <property role="TrG5h" value="ImportAs" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3Xsm2yzyaGZ" role="1TKVEi">
+      <property role="IQ2ns" value="4565621053812419391" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5E$XTHV3XN2" resolve="ValTermConid" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzyh4H">
+    <property role="EcuMT" value="4565621053812445485" />
+    <property role="3GE5qa" value="Import" />
+    <property role="TrG5h" value="ImportList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3Xsm2yzyh5d" role="1TKVEi">
+      <property role="IQ2ns" value="4565621053812445517" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="hiding" />
+      <ref role="20lvS9" node="3Xsm2yzyh4Z" resolve="ImportHiding" />
+    </node>
+    <node concept="1TJgyj" id="3Xsm2yzyiKz" role="1TKVEi">
+      <property role="IQ2ns" value="4565621053812452387" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="items" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3Xsm2yzyiKA" resolve="ImportItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzyh4Z">
+    <property role="EcuMT" value="4565621053812445503" />
+    <property role="3GE5qa" value="Import" />
+    <property role="TrG5h" value="ImportHiding" />
+    <property role="34LRSv" value="hiding" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzyiKA">
+    <property role="EcuMT" value="4565621053812452390" />
+    <property role="3GE5qa" value="Import.Items" />
+    <property role="TrG5h" value="ImportItem" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzyiVF">
+    <property role="EcuMT" value="4565621053812453099" />
+    <property role="3GE5qa" value="Import.Items" />
+    <property role="TrG5h" value="ImportItemQconid" />
+    <ref role="1TJDcQ" node="3Xsm2yzyiKA" resolve="ImportItem" />
+    <node concept="1TJgyj" id="3Xsm2yzyiVG" role="1TKVEi">
+      <property role="IQ2ns" value="4565621053812453100" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5E$XTHV3XN2" resolve="ValTermConid" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzyiVV">
+    <property role="EcuMT" value="4565621053812453115" />
+    <property role="3GE5qa" value="Import.Items" />
+    <property role="TrG5h" value="ImportItemQvarid" />
+    <ref role="1TJDcQ" node="3Xsm2yzyiKA" resolve="ImportItem" />
+    <node concept="1TJgyj" id="3Xsm2yzyiVW" role="1TKVEi">
+      <property role="IQ2ns" value="4565621053812453116" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5E$XTHV3XMZ" resolve="ValTermVarid" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzyiWb">
+    <property role="EcuMT" value="4565621053812453131" />
+    <property role="3GE5qa" value="Import.Items.Class" />
+    <property role="TrG5h" value="ImportItemClass" />
+    <ref role="1TJDcQ" node="3Xsm2yzyiKA" resolve="ImportItem" />
+    <node concept="1TJgyj" id="3Xsm2yzyiWc" role="1TKVEi">
+      <property role="IQ2ns" value="4565621053812453132" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="class" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5E$XTHV3XN2" resolve="ValTermConid" />
+    </node>
+    <node concept="1TJgyj" id="3Xsm2yzyiWe" role="1TKVEi">
+      <property role="IQ2ns" value="4565621053812453134" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3Xsm2yzyiXe" resolve="IICMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzyiX0">
+    <property role="EcuMT" value="4565621053812453184" />
+    <property role="3GE5qa" value="Import.Items" />
+    <property role="TrG5h" value="ImportItemOperator" />
+    <ref role="1TJDcQ" node="3Xsm2yzyiKA" resolve="ImportItem" />
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzyiXe">
+    <property role="EcuMT" value="4565621053812453198" />
+    <property role="3GE5qa" value="Import.Items.Class" />
+    <property role="TrG5h" value="IICMember" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzyiXv">
+    <property role="EcuMT" value="4565621053812453215" />
+    <property role="3GE5qa" value="Import.Items.Class" />
+    <property role="TrG5h" value="IICMVarid" />
+    <ref role="1TJDcQ" node="3Xsm2yzyiXe" resolve="IICMember" />
+    <node concept="1TJgyj" id="3Xsm2yzyiXw" role="1TKVEi">
+      <property role="IQ2ns" value="4565621053812453216" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5E$XTHV3XMZ" resolve="ValTermVarid" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzyiXJ">
+    <property role="EcuMT" value="4565621053812453231" />
+    <property role="3GE5qa" value="Import.Items.Class" />
+    <property role="TrG5h" value="IICMConid" />
+    <ref role="1TJDcQ" node="3Xsm2yzyiXe" resolve="IICMember" />
+    <node concept="1TJgyj" id="3Xsm2yzyiXK" role="1TKVEi">
+      <property role="IQ2ns" value="4565621053812453232" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5E$XTHV3XN2" resolve="ValTermConid" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Xsm2yzyiXZ">
+    <property role="EcuMT" value="4565621053812453247" />
+    <property role="3GE5qa" value="Import.Items.Class" />
+    <property role="TrG5h" value="IICMOperator" />
+    <ref role="1TJDcQ" node="3Xsm2yzyiXe" resolve="IICMember" />
   </node>
 </model>
 

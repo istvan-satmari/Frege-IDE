@@ -1,4 +1,4 @@
-MODULE
+MODULE (~ Skeleton)
 ----------------------------------------------
 - gramatika:
 module ::= 	moduleclause 'where' definitions
@@ -22,7 +22,7 @@ main _ = do
 				
 
 				
-MODULECLAUSE
+MODULECLAUSE (~ Module)
 ----------------------------------------------
 - gramatika:
 moduleclause ::= 'module' ((varidkw|CONID) '.')* CONID (VARID+ '(' qvarids ')')*
@@ -34,6 +34,8 @@ nedava velmi zmysel podla prikladov?
 
 
 - priklady:
+module Simple where
+
 module MyModule (MyType, MyClass, myFunc1) where
 
 module MyBigModule (module Data.Set, module Data.Char) where
@@ -46,18 +48,21 @@ module AnotherBigModule (module Data.Set, module AnotherBigModule) where
 
 	
 - prevedenie:
-	- 'module' VlastneMenoModulu OptionalZatvorky where
-	- OptionalZatvorky s jednotlivymi castami oddelenymi ciarkami
+	- 'module' VlastneMenoModulu parts where
+		- [TODO] VlastneMenoModulu moze byt kvalifikovane meno; na konci musi byt CONID
+	- parts s jednotlivymi castami oddelenymi ciarkami
+		- pokial prazdne, zatvorky nezobrazujeme
 	- 2 moznosti z abstraktneho: "module QCONID", alebo "QCONID"
-	- QCONID su CONID oddelene bodkami
-	- pokial ma koncept obsahovat QCONID, potom musi byt cez akciu transformacie preveditelny
-	- tu by sa hodila napoveda, napr. "module Data.Set", cize treba referencny koncept
+		- [TODO] musi byt kvalifikovane meno (v oboch pripadoch)
+		- QCONID su CONID oddelene bodkami
+	- [TODO] pokial ma koncept obsahovat QCONID, potom musi byt cez akciu transformacie preveditelny
+	- [TODO] tu by sa hodila napoveda, napr. "module Data.Set", cize treba referencny koncept
 		- referencuje bud to, co sa uz naimportovalo
 		- alebo referencuje sam seba ("AnotherBigModule")
 	
 
 	
-IMPORTS
+IMPORTS (~ Import)
 ----------------------------------------------
 - gramatika:
 import ::= 'import' modulename1 (VARID? CONID)? importliste
@@ -94,20 +99,49 @@ import Text.Read (Lexeme(...))
 import Data.Char hiding (isControl, isMark)
 
 import learnyou.chapter07.geometry.Sphere as Sph ()
+	
 
+- rozdiely gramatika vs. priklady:
+	import qconid (varid? conid)? varid? '(' spec (VARID|CONID|SOMEOP)?, ... ')'
+	spec	::= 	qvarid
+					qconid
+					CONID '(' (VARID | CONID | SOMEOP),  ... ')'
+					SOMEOP
+					'!'
+					'?'	
+		
+	import qconid (as CONID)? hiding? '(' ((VARID|CONID|SOMEOP) ',')* ')'
+	=> alespon nejaka podobnost (zhruba to teda sedi):
+	(varid? conid)? 	~ (as? CONID)?
+	varid 				~ hiding?	
+	
+	- cast s "spec (VARID|CONID|SOMEOP)?", tak tu zatvorku asi vynecham
 
+	
 - prevedenie:
-	- import Cesta OptionalHiding OptionalAs OptionalZatvorky
+	- import Cesta (as CONID)? hiding? OptionalZatvorky
 	- Cesta pozostava z postupnosti: "CONID / VARID" (to ani nie je qconid / qvarid)
 		- ziadne referencie tu netreba
-	- OptionalZatvorky: zatvorka zacina prazdna, obsahuje 0..n casti
-	- cast je (neda sa referencovat kvoli neznamemu zdroju...):
-		- "Read()", "Read(readsPrec, readList)", "Lexeme(...)"
-		=> Bud "CONID(...)", "CONID(polozka, polozka, polozka)", "CONID", "VARID", "SOMEOP"
-			- polozka tiez tak (VARID, CONID, SOMEOP)
-	- OptionalAs: as CONID
-
-
+		- [TODO] je to skratka qconid, pravdepodobne
+	- Pozor, aj podla gramatiky je to tak, ze pokial je "hiding" pritomne, tak musi byt pritomne aj '(' specs ')'
+		[TODO] specialne, pokial je pritomne "hiding", tak ta zatvorka importitem-ov musi byt neprazdna, podla gramatiky:
+		importliste ::= VARID '(' importspecs ')' | '(' importspecs? ')' -- VARID predstavuje "hiding"	
+		- treba vyriesit cez typesystem
+	- [TODO] importitem
+		- treba doriesit (vsetky) podla upravenej gramatiky nizsie (t.j. chyba qvarid a qconid, operatory, ...)
+			qvarid
+			qconid -- zahrna aj CONID bez zatvoriek
+			CONID '(' memspecs? ')'
+			SOMEOP
+			'!'
+			'?'
+			
+			memspec ::= VARID | CONID | SOMEOP
+			- specialne pre IICMember / memspec, napoveda podla obsahu triedy
+			- [TODO] Nejasne, ci pridat: Lexeme(...), t.j. 3 bodky (to asi nie je operator); treba specialny koncept
+	- [TODO] Mala by existovat kontextova napoveda k jednotlivym polozkam (treba vyriesit spolu s importom)
+	
+	
 
 DEFINITIONS
 ----------------------------------------------
@@ -147,65 +181,6 @@ COMMENTS
 		STRING
 		...
 	-}
-
-
-
-INDENTACIA
-----------------------------------------------
-- TODO
-- priprava prikladov:
--- Mozno aj v kombinacii s "guards", potom ale treba indentovat
-maximum1 (x : xs)
-    | x > maxTail = x
-    | otherwise = maxTail
-    where maxTail = maximum1 xs
-
-yesnoIf x yesResult noResult =
-    if x > 100
-        then yesResult
-        else noResult
-		
--- Vsimni si v tomto pripade uzatvorkovanie pre datovy typ "Rectangle Point Point"
-surface (Rectangle (Point x1 y1) (Point x2 y2)) = 
-    (abs $ x2 - x1) * (abs $ y2 - y1)
-	
-lengthCompare1 x y =
-    (length x `compare` length y) `mappend`
-    (x `compare` y)
-		
--- Definicia cez viacero riadkov
-b = [ [ 1, 2, 3, 4 ]
-    , [ 5, 3, 3, 3 ]
-    , [ 1, 2, 2, 3, 4 ]
-    , [ 1, 2, 3 ]
-    ]	
-
--- Definicia na viacero riadkov
-data Shape =
-      Circle    Point Float		-- Predstavuje stred kruznice a polomer
-    | Rectangle Point Point		-- Predstavuje lavy horny a pravy dolny bod	
-	
-- where:
-	f x
-		| cond1 x   = a
-		| cond2 x   = g a
-		| otherwise = f (h x a)
-		where
-			a = w x
-- let:
-	f x
-		= let a = w x in 		-- cize co znamena "a" sa uz urci tu
-			case () of			-- a v ramci jakeho scopeu, akoby; () asi akoby povodny vyraz...?
-			  _ | cond1 x   -> a
-				| cond2 x   -> g a
-				| otherwise -> f (h x a)
-- ekvivalentne:
-	f x
-		= let a = w x in 
-			if cond1 x then a
-			else if cond2 x then g a
-			else f (h x a)
-
 	
 	
 
@@ -285,6 +260,8 @@ type ListZipper a = ([a], [a])
 - prevedenie:
 	- v ramci rho by sa hodilo nejak injektovat tie tyvars, ktore boli deklarovane uz za CONID
 	- zaroven by asi mali mat navzajom odlisne meno, ale to cez typesystem / constraint
+	- dalej treba ako prikla: "CONID" musi byt obaleny specialnym konceptom "TYPEDEFNAME", ktory sa bude dat referencovat
+		- nemozeme referencovat vsetky CONID-y...
 	
 	
 
@@ -900,6 +877,64 @@ instance Functor (HM.HashMap k) where
 
 
 
+INDENTACIA ???
+----------------------------------------------
+- TODO
+- priprava prikladov:
+-- Mozno aj v kombinacii s "guards", potom ale treba indentovat
+maximum1 (x : xs)
+    | x > maxTail = x
+    | otherwise = maxTail
+    where maxTail = maximum1 xs
+
+yesnoIf x yesResult noResult =
+    if x > 100
+        then yesResult
+        else noResult
+		
+-- Vsimni si v tomto pripade uzatvorkovanie pre datovy typ "Rectangle Point Point"
+surface (Rectangle (Point x1 y1) (Point x2 y2)) = 
+    (abs $ x2 - x1) * (abs $ y2 - y1)
+	
+lengthCompare1 x y =
+    (length x `compare` length y) `mappend`
+    (x `compare` y)
+		
+-- Definicia cez viacero riadkov
+b = [ [ 1, 2, 3, 4 ]
+    , [ 5, 3, 3, 3 ]
+    , [ 1, 2, 2, 3, 4 ]
+    , [ 1, 2, 3 ]
+    ]	
+
+-- Definicia na viacero riadkov
+data Shape =
+      Circle    Point Float		-- Predstavuje stred kruznice a polomer
+    | Rectangle Point Point		-- Predstavuje lavy horny a pravy dolny bod	
+	
+- where:
+	f x
+		| cond1 x   = a
+		| cond2 x   = g a
+		| otherwise = f (h x a)
+		where
+			a = w x
+- let:
+	f x
+		= let a = w x in 		-- cize co znamena "a" sa uz urci tu
+			case () of			-- a v ramci jakeho scopeu, akoby; () asi akoby povodny vyraz...?
+			  _ | cond1 x   -> a
+				| cond2 x   -> g a
+				| otherwise -> f (h x a)
+- ekvivalentne:
+	f x
+		= let a = w x in 
+			if cond1 x then a
+			else if cond2 x then g a
+			else f (h x a)
+
+			
+			
 Semanticka analyza ??
 ----------------------------------------------
 - "expression" sa vyhodnocuje na "value"
