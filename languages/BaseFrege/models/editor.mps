@@ -225,7 +225,7 @@
     <ref role="1XX52x" to="sc0n:vUxQDjKXz2" resolve="Fixity" />
     <node concept="3EZMnI" id="vUxQDjKXzd" role="2wV5jI">
       <node concept="1iCGBv" id="5ZITH0PGMRg" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5ZITH0PGMRe" resolve="Infix" />
+        <ref role="1NtTu8" to="sc0n:5ZITH0PGMRe" resolve="infix" />
         <node concept="1sVBvm" id="5ZITH0PGMRi" role="1sWHZn">
           <node concept="3F0A7n" id="5ZITH0PGMRt" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -240,7 +240,7 @@
         <property role="3F0ifm" value="`" />
       </node>
       <node concept="3F1sOY" id="6SrRM0IrBki" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:6SrRM0IryVh" resolve="Operator" />
+        <ref role="1NtTu8" to="sc0n:3Xsm2yzykTc" resolve="operator" />
       </node>
       <node concept="3F0ifn" id="5ZITH0PGMR5" role="3EZMnx">
         <property role="3F0ifm" value="`" />
@@ -259,7 +259,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="vUxQDjKX$J">
-    <property role="3GE5qa" value="Definitions.FBB" />
+    <property role="3GE5qa" value="Definitions.FunDef.Parts" />
     <ref role="1XX52x" to="sc0n:vUxQDjKX$A" resolve="Guard" />
     <node concept="3EZMnI" id="vUxQDjKX$L" role="2wV5jI">
       <node concept="3F0ifn" id="vUxQDjKXAc" role="3EZMnx">
@@ -378,47 +378,19 @@
   <node concept="24kQdi" id="7riFpCdplVF">
     <property role="3GE5qa" value="Definitions" />
     <ref role="1XX52x" to="sc0n:vUxQDjKXz0" resolve="Annotation" />
-    <node concept="3EZMnI" id="7riFpCdplVH" role="2wV5jI">
-      <node concept="3F0A7n" id="7riFpCdplVO" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    <node concept="3EZMnI" id="3Xsm2yzykTz" role="2wV5jI">
+      <node concept="3F2HdR" id="3Xsm2yzykTE" role="3EZMnx">
+        <property role="2czwfO" value=", " />
+        <ref role="1NtTu8" to="sc0n:6SrRM0IrBls" resolve="items" />
+        <node concept="2iRfu4" id="3Xsm2yzykTG" role="2czzBx" />
       </node>
-      <node concept="3F0ifn" id="7riFpCdplVU" role="3EZMnx">
+      <node concept="3F0ifn" id="3Xsm2yzykUD" role="3EZMnx">
         <property role="3F0ifm" value="::" />
       </node>
-      <node concept="3F1sOY" id="7riFpCdpuhK" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:7riFpCdpp_X" resolve="ClassType" />
+      <node concept="3F1sOY" id="3Xsm2yzykUN" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:3Xsm2yzykTf" resolve="type" />
       </node>
-      <node concept="3F2HdR" id="7riFpCdplW2" role="3EZMnx">
-        <property role="2czwfO" value="-&gt;" />
-        <ref role="1NtTu8" to="sc0n:7riFpCdplVq" resolve="Arguments" />
-        <node concept="2iRfu4" id="7riFpCdplW4" role="2czzBx" />
-      </node>
-      <node concept="3F0ifn" id="7riFpCdplWf" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
-        <node concept="pkWqt" id="7riFpCdplW_" role="pqm2j">
-          <node concept="3clFbS" id="7riFpCdplWA" role="2VODD2">
-            <node concept="3clFbF" id="7riFpCdpm3J" role="3cqZAp">
-              <node concept="3fqX7Q" id="7riFpCdppgY" role="3clFbG">
-                <node concept="2OqwBi" id="7riFpCdpph0" role="3fr31v">
-                  <node concept="2OqwBi" id="7riFpCdpph1" role="2Oq$k0">
-                    <node concept="pncrf" id="7riFpCdpph2" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="7riFpCdpph3" role="2OqNvi">
-                      <ref role="3TtcxE" to="sc0n:7riFpCdplVq" resolve="Arguments" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="7riFpCdpph4" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~List.isEmpty():boolean" resolve="isEmpty" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3F1sOY" id="7riFpCdplWt" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:7riFpCdplVw" resolve="ReturnType" />
-      </node>
-      <node concept="2iRfu4" id="7riFpCdplVK" role="2iSdaV" />
+      <node concept="2iRfu4" id="3Xsm2yzykTA" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="7riFpCdpuBZ">
@@ -505,7 +477,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5ZITH0PGR22">
-    <property role="3GE5qa" value="Definitions.FBB" />
+    <property role="3GE5qa" value="Definitions.FunDef.Parts" />
     <ref role="1XX52x" to="sc0n:vUxQDjKXzn" resolve="Expression" />
     <node concept="3EZMnI" id="5ZITH0PGR24" role="2wV5jI">
       <node concept="3F1sOY" id="5ZITH0PGR2m" role="3EZMnx">
@@ -551,19 +523,19 @@
     </node>
   </node>
   <node concept="24kQdi" id="5ZITH0PGXNW">
-    <property role="3GE5qa" value="Definitions.FBB.FunctionDefinition" />
-    <ref role="1XX52x" to="sc0n:5ZITH0PGXNF" resolve="FDGuards" />
+    <property role="3GE5qa" value="Definitions.FunDef" />
+    <ref role="1XX52x" to="sc0n:5ZITH0PGXNF" resolve="FDPGuards" />
     <node concept="3EZMnI" id="5ZITH0PGXNY" role="2wV5jI">
       <node concept="3F1sOY" id="5ZITH0PGXQn" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5ZITH0PGXOJ" resolve="Head" />
+        <ref role="1NtTu8" to="sc0n:5ZITH0PGXOJ" resolve="pattern" />
       </node>
       <node concept="3EZMnI" id="5ZITH0PGXQN" role="3EZMnx">
         <node concept="3F2HdR" id="5ZITH0PGXQV" role="3EZMnx">
-          <ref role="1NtTu8" to="sc0n:5ZITH0PGXOL" resolve="Guards" />
+          <ref role="1NtTu8" to="sc0n:5ZITH0PGXOL" resolve="guards" />
           <node concept="2iRkQZ" id="5ZITH0PGXQX" role="2czzBx" />
         </node>
         <node concept="3F1sOY" id="5E$XTHV44y5" role="3EZMnx">
-          <ref role="1NtTu8" to="sc0n:5E$XTHV44xJ" resolve="Where" />
+          <ref role="1NtTu8" to="sc0n:5E$XTHV44xJ" resolve="where" />
           <node concept="pkWqt" id="5E$XTHV44ya" role="pqm2j">
             <node concept="3clFbS" id="5E$XTHV44yb" role="2VODD2">
               <node concept="3clFbF" id="5E$XTHV44Dk" role="3cqZAp">
@@ -571,7 +543,7 @@
                   <node concept="2OqwBi" id="5E$XTHV44R3" role="2Oq$k0">
                     <node concept="pncrf" id="5E$XTHV44Dj" role="2Oq$k0" />
                     <node concept="3TrEf2" id="5E$XTHV45e2" role="2OqNvi">
-                      <ref role="3Tt5mk" to="sc0n:5E$XTHV44xJ" resolve="Where" />
+                      <ref role="3Tt5mk" to="sc0n:5E$XTHV44xJ" resolve="where" />
                     </node>
                   </node>
                   <node concept="3x8VRR" id="5E$XTHV45XM" role="2OqNvi" />
@@ -586,20 +558,20 @@
     </node>
   </node>
   <node concept="24kQdi" id="5ZITH0PGXOi">
-    <property role="3GE5qa" value="Definitions.FBB.FunctionDefinition" />
-    <ref role="1XX52x" to="sc0n:5ZITH0PGXNE" resolve="FDAssignment" />
+    <property role="3GE5qa" value="Definitions.FunDef" />
+    <ref role="1XX52x" to="sc0n:5ZITH0PGXNE" resolve="FDPAssignment" />
     <node concept="3EZMnI" id="5ZITH0PGXOk" role="2wV5jI">
       <node concept="3F1sOY" id="5ZITH0PGXOr" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5ZITH0PGXO5" resolve="Head" />
+        <ref role="1NtTu8" to="sc0n:5ZITH0PGXO5" resolve="pattern" />
       </node>
       <node concept="3F0ifn" id="5ZITH0PGXOx" role="3EZMnx">
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="5ZITH0PGXOD" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5ZITH0PGXO7" resolve="Expression" />
+        <ref role="1NtTu8" to="sc0n:5ZITH0PGXO7" resolve="equalsTo" />
       </node>
       <node concept="3F1sOY" id="5E$XTHV3XUT" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5E$XTHV3XUK" resolve="Where" />
+        <ref role="1NtTu8" to="sc0n:5E$XTHV3XUK" resolve="where" />
         <node concept="pkWqt" id="5E$XTHV3XUZ" role="pqm2j">
           <node concept="3clFbS" id="5E$XTHV3XV0" role="2VODD2">
             <node concept="3clFbF" id="5E$XTHV42mT" role="3cqZAp">
@@ -607,7 +579,7 @@
                 <node concept="2OqwBi" id="5E$XTHV42Vx" role="2Oq$k0">
                   <node concept="pncrf" id="5E$XTHV42mS" role="2Oq$k0" />
                   <node concept="3TrEf2" id="5E$XTHV43iz" role="2OqNvi">
-                    <ref role="3Tt5mk" to="sc0n:5E$XTHV3XUK" resolve="Where" />
+                    <ref role="3Tt5mk" to="sc0n:5E$XTHV3XUK" resolve="where" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="5E$XTHV447U" role="2OqNvi" />
@@ -898,8 +870,8 @@
     <node concept="3EYTF0" id="5E$XTHV3XUJ" role="2wV5jI" />
   </node>
   <node concept="24kQdi" id="5E$XTHV46gm">
-    <property role="3GE5qa" value="Definitions.FBB" />
-    <ref role="1XX52x" to="sc0n:vUxQDjKXAj" resolve="Where" />
+    <property role="3GE5qa" value="Definitions.FunDef.Parts" />
+    <ref role="1XX52x" to="sc0n:vUxQDjKXAj" resolve="WherePart" />
     <node concept="3EZMnI" id="5E$XTHV46go" role="2wV5jI">
       <node concept="3F0ifn" id="5E$XTHV46gv" role="3EZMnx">
         <property role="3F0ifm" value="where" />
@@ -1161,11 +1133,11 @@
         <property role="3F0ifm" value="type" />
       </node>
       <node concept="3F1sOY" id="2xkYx_u2yeG" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:2xkYx_u2yec" resolve="Name" />
+        <ref role="1NtTu8" to="sc0n:2xkYx_u2yec" resolve="name" />
       </node>
       <node concept="3F2HdR" id="2xkYx_u2yeO" role="3EZMnx">
         <property role="2czwfO" value=" " />
-        <ref role="1NtTu8" to="sc0n:2xkYx_u2yee" resolve="TypeVariables" />
+        <ref role="1NtTu8" to="sc0n:2xkYx_u2yee" resolve="typeVariables" />
         <node concept="2iRfu4" id="2xkYx_u2yeQ" role="2czzBx" />
         <node concept="pkWqt" id="2xkYx_u2yeV" role="pqm2j">
           <node concept="3clFbS" id="2xkYx_u2yeW" role="2VODD2">
@@ -1174,7 +1146,7 @@
                 <node concept="2OqwBi" id="2xkYx_u2_ei" role="2Oq$k0">
                   <node concept="pncrf" id="2xkYx_u2_1i" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="2xkYx_u2_zG" role="2OqNvi">
-                    <ref role="3TtcxE" to="sc0n:2xkYx_u2yee" resolve="TypeVariables" />
+                    <ref role="3TtcxE" to="sc0n:2xkYx_u2yee" resolve="typeVariables" />
                   </node>
                 </node>
                 <node concept="3GX2aA" id="2xkYx_u2Ee8" role="2OqNvi" />
@@ -1187,7 +1159,7 @@
         <property role="3F0ifm" value="=" />
       </node>
       <node concept="3F1sOY" id="2xkYx_u2F7K" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:2xkYx_u2yeh" resolve="SynonymedType" />
+        <ref role="1NtTu8" to="sc0n:2xkYx_u2yeh" resolve="equalTo" />
       </node>
       <node concept="2iRfu4" id="2xkYx_u2yey" role="2iSdaV" />
     </node>
@@ -1458,6 +1430,146 @@
         <property role="3F0ifm" value="=&gt;" />
       </node>
       <node concept="2iRfu4" id="3Xsm2yzyj3H" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Xsm2yzykV5">
+    <property role="3GE5qa" value="Definitions.Annotation" />
+    <ref role="1XX52x" to="sc0n:3Xsm2yzykUU" resolve="AIVarid" />
+    <node concept="3F1sOY" id="3Xsm2yzykV7" role="2wV5jI">
+      <ref role="1NtTu8" to="sc0n:3Xsm2yzykUV" resolve="value" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Xsm2yzyl6N">
+    <property role="3GE5qa" value="Definitions.FunDef.Patterns" />
+    <ref role="1XX52x" to="sc0n:3Xsm2yzyl6k" resolve="PatternFunction" />
+    <node concept="3EZMnI" id="3Xsm2yzyl6P" role="2wV5jI">
+      <node concept="3F1sOY" id="3Xsm2yzyl6W" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:3Xsm2yzyl6l" resolve="name" />
+      </node>
+      <node concept="3F2HdR" id="3Xsm2yzyl72" role="3EZMnx">
+        <property role="2czwfO" value=" " />
+        <ref role="1NtTu8" to="sc0n:3Xsm2yzyl6n" resolve="arguments" />
+        <node concept="2iRfu4" id="3Xsm2yzyl74" role="2czzBx" />
+      </node>
+      <node concept="2iRfu4" id="3Xsm2yzyl6S" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Xsm2yzyl7q">
+    <property role="3GE5qa" value="Definitions.FunDef.Patterns" />
+    <ref role="1XX52x" to="sc0n:3Xsm2yzyl78" resolve="PatternOperator" />
+    <node concept="3EZMnI" id="3Xsm2yzyl7s" role="2wV5jI">
+      <node concept="3F1sOY" id="3Xsm2yzyl7z" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:3Xsm2yzyl7b" resolve="argumentLeft" />
+      </node>
+      <node concept="3F1sOY" id="3Xsm2yzyl7D" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:3Xsm2yzyl79" resolve="operator" />
+      </node>
+      <node concept="3F1sOY" id="3Xsm2yzyl7L" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:3Xsm2yzyl7e" resolve="argumentRight" />
+      </node>
+      <node concept="2iRfu4" id="3Xsm2yzyl7v" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Xsm2yzyl84">
+    <property role="3GE5qa" value="Definitions.FunDef.Patterns.Expression.Variables" />
+    <ref role="1XX52x" to="sc0n:3Xsm2yzyl7V" resolve="PVarWildcard" />
+    <node concept="3F0ifn" id="3Xsm2yzyl86" role="2wV5jI">
+      <property role="3F0ifm" value="_" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Xsm2yzyl8k">
+    <property role="3GE5qa" value="Definitions.FunDef.Patterns.Expression.Variables" />
+    <ref role="1XX52x" to="sc0n:3Xsm2yzyl89" resolve="PVarName" />
+    <node concept="3F1sOY" id="3Xsm2yzyl8m" role="2wV5jI">
+      <ref role="1NtTu8" to="sc0n:3Xsm2yzyl8a" resolve="name" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Xsm2yzyl8A">
+    <property role="3GE5qa" value="Definitions.FunDef.Patterns.Expression" />
+    <ref role="1XX52x" to="sc0n:3Xsm2yzyl7S" resolve="PConstructor" />
+    <node concept="3EZMnI" id="3Xsm2yzyl8C" role="2wV5jI">
+      <node concept="3F0ifn" id="3Xsm2yzyl90" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F1sOY" id="3Xsm2yzyl8J" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:3Xsm2yzyl8p" resolve="name" />
+      </node>
+      <node concept="3F2HdR" id="3Xsm2yzyl8P" role="3EZMnx">
+        <property role="2czwfO" value=" " />
+        <ref role="1NtTu8" to="sc0n:3Xsm2yzyl8r" resolve="arguments" />
+        <node concept="2iRfu4" id="3Xsm2yzyl8R" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="3Xsm2yzyl9c" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="2iRfu4" id="3Xsm2yzyl8F" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Xsm2yzyl9x">
+    <property role="3GE5qa" value="Definitions.FunDef.Patterns.Expression.Lists" />
+    <ref role="1XX52x" to="sc0n:3Xsm2yzyl9j" resolve="PListDot" />
+    <node concept="3EZMnI" id="3Xsm2yzyl9z" role="2wV5jI">
+      <node concept="3F0ifn" id="3Xsm2yzyl9E" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F2HdR" id="3Xsm2yzyl9S" role="3EZMnx">
+        <property role="2czwfO" value=":" />
+        <ref role="1NtTu8" to="sc0n:3Xsm2yzyl9k" resolve="heads" />
+        <node concept="2iRfu4" id="3Xsm2yzyl9U" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="3Xsm2yzylaj" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="3Xsm2yzyla5" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:3Xsm2yzyl9m" resolve="tail" />
+      </node>
+      <node concept="3F0ifn" id="3Xsm2yzyl9K" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="2iRfu4" id="3Xsm2yzyl9A" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Xsm2yzylaA">
+    <property role="3GE5qa" value="Definitions.FunDef.Patterns.Expression.Lists" />
+    <ref role="1XX52x" to="sc0n:3Xsm2yzylar" resolve="PListVar" />
+    <node concept="3F1sOY" id="3Xsm2yzylaC" role="2wV5jI">
+      <ref role="1NtTu8" to="sc0n:3Xsm2yzylas" resolve="variable" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Xsm2yzylaQ">
+    <property role="3GE5qa" value="Definitions.FunDef.Patterns.Expression.Lists" />
+    <ref role="1XX52x" to="sc0n:3Xsm2yzylaF" resolve="PListBrackets" />
+    <node concept="3EZMnI" id="3Xsm2yzylaS" role="2wV5jI">
+      <node concept="3F0ifn" id="3Xsm2yzylaZ" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F2HdR" id="3Xsm2yzylbd" role="3EZMnx">
+        <property role="2czwfO" value=", " />
+        <ref role="1NtTu8" to="sc0n:3Xsm2yzylaG" resolve="items" />
+        <node concept="2iRfu4" id="3Xsm2yzylbf" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="3Xsm2yzylb5" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="2iRfu4" id="3Xsm2yzylaV" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Xsm2yzylbw">
+    <property role="3GE5qa" value="Definitions.FunDef.Patterns.Expression" />
+    <ref role="1XX52x" to="sc0n:3Xsm2yzyl7Q" resolve="PTuple" />
+    <node concept="3EZMnI" id="3Xsm2yzylby" role="2wV5jI">
+      <node concept="3F0ifn" id="3Xsm2yzylbD" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F2HdR" id="3Xsm2yzylbR" role="3EZMnx">
+        <property role="2czwfO" value=", " />
+        <ref role="1NtTu8" to="sc0n:3Xsm2yzylbm" resolve="items" />
+        <node concept="2iRfu4" id="3Xsm2yzylbT" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="3Xsm2yzylbJ" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="2iRfu4" id="3Xsm2yzylb_" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -187,7 +187,7 @@ COMMENTS
 		
 		
 
-TYPOVANIE ???
+TYPOVANIE (~ Definitions/Types/*)
 ----------------------------------------------
 - gramatika:
 rho ::= (simpletype+ '=>')? tau
@@ -217,41 +217,39 @@ a -> (a -> b) -> b
 		- problematicke, lebo je najprv nutne previes na TypeTuple a odtial sa da dostat k takym konstruktom, ako napr. "(Eq a, Num i) =>"
 		- trebars iba "TypeName TypeVariable" oddelene ciarkami
 		- zatial v podobe '(' simpletype+ (',' simpletype+)* ')'
-	- v ramci tohto kontextu sa hodi este referencny koncept pre uz definovany "tyvar"
+	- [TODO] v ramci tohto kontextu sa hodi este referencny koncept pre uz definovany "tyvar"
 		- napr. "a -> b -> a" (posledne "a" by malo ponuktnut v ramci napovedy)
-	- podozrive je "rho ::= (simpletype+ '=>')?", toto mozno inak? (Eq a, Ord b, Integral b)
-	- simpletype+ (s pluskom) kvoli tymto: napr. "Maybe a"
-	- qconid: 
-		- mal by referencovat uz nejaku existujucu triedu (napr. Eq, Num)
-		- na druhej strane je nutne umoznit aj vlastnu (co ak bola importovana? potom nemame schemu)
-	=> tyname moznosti:
+	- pozn. simpletype+ (s pluskom) kvoli tymto: napr. "Maybe a"
+	- pozn. tyname: qconid - mal by referencovat uz nejaku existujucu triedu (napr. Eq, Num)
+		- na druhej strane je nutne umoznit aj vlastnu (import)
+	- pozn. tyname:
 		- qconid (kvoli importovanym polozkam)
-		- referencia na existujucu triedu + vyzadovat 1 tyvar (Eq a)
-		- referencia na existujuce data (Maybe a)
+		- [TODO] referencia na existujucu triedu + vyzadovat 1 tyvar (Eq a)
+		- [TODO] referencia na existujuce data (Maybe a)
 			- potom by sa hodilo automaticky prihodit niekolko tyvar premennych (alebo ich aspon vyzadovat - podla definicie data)
-		- pozor este na typy (Bool, Integral, Num)
-	- tu treba vela akcii:
+		- [TODO] pozor este na typy (Bool, Integral, Num) a standardne triey (Eq, Shor, Ord)
+	- [TODO] tu treba vela akcii:
 		- simpletype musi byt rychlo preveditelny na tyvar (po zadani lubovolneho stringu? pozor ale na to, ked chceme nieco referencovat)
 		- analogicky simpletype musi byt rychlo preveditelny na tyname
 		- tau rychlo preveditelny na simpletype (pokial iba jeden?)
-	- upozornime, ze mame niekolko standardnych typov:
+	- pozn. upozornime, ze mame niekolko standardnych typov:
 		- Char Bool String Integer (BigInteger v podstate) Float Double Int (32-64 bitovy)
 		- spadaju pod "tyname"; mozno asi vytvorit vlastne koncepty pre kazdeho z nich (su to standardne typy; ostatne sa daju vytvorit len pomocou Data)...?
-	- taktiez upozornime, ze mame niekolko standardnych tried:
+	- pozn. taktiez upozornime, ze mame niekolko standardnych tried:
 		- Num (superclass to Int, Integer, Float, Double)
 		- Integral (superclass to Int, Integer)
 		- Floating (superclass to Float, Double)
 		- RealFloat
 		- Potom dalsie "exotickejsie": 
 			- Eq Ord Show
-		- Uvedme priklad: 
+		- Uvedme priklad:
 			f :: (Num a) => a -> a -> Bool
 			- pri anotacii funkcie Num je trieda, ostatne su typy (trieda ani inde nemoze stat)
-			- toto asi treba overit po formalnej stranke 
+			- toto asi treba overit po formalnej stranke
 
 			
 			
-TYPE ???
+TYPE (~ Type)
 ----------------------------------------------
 - gramatika:
 typedef ::= 'type' CONID tyvar* '=' rho
@@ -266,18 +264,21 @@ type ListZipper a = ([a], [a])
 
 
 - prevedenie:
-	- v ramci rho by sa hodilo nejak injektovat tie tyvars, ktore boli deklarovane uz za CONID
-	- zaroven by asi mali mat navzajom odlisne meno, ale to cez typesystem / constraint
-	- dalej treba ako prikla: "CONID" musi byt obaleny specialnym konceptom "TYPEDEFNAME", ktory sa bude dat referencovat
+	- [TODO] v ramci rho by sa hodilo nejak injektovat tie tyvars, ktore boli deklarovane uz za CONID
+		- ako kontextovu napovedu, napr.:
+		type Breadcrumbs a = [Crumb <<tu by malo vediet ponuknut "a">>]	
+	- [TODO] zaroven by asi mali mat navzajom odlisne meno, ale to cez typesystem / constraint
+	- [TODO] zaroven treba potom odinadial vediet referencovat tento "type"
+		- ako priklad: "CONID" musi byt obaleny specialnym konceptom "TYPEDEFNAME", ktory sa bude dat referencovat
 		- nemozeme referencovat vsetky CONID-y...
 	
 	
 
-FIXITY
+FIXITY (~ Fixity)
 ----------------------------------------------
 - gramatika:
 fixity operators
-fixity ::= ('infix'|'infixl'|'infixr') INTCONST	
+fixity ::= ('infix'|'infixl'|'infixr') INTCONST
 operators ::= (SOMEOP | VARID | '-')+
 
 
@@ -289,8 +290,10 @@ infixl 8 ‘myplus‘
 
 - prevedenie:
 	- 3 varianty podla zacinajuceho slova
-	- nezabudnut na znaky "`", ktore z nejakeho dovodu nie su v gramatike popisane
-	- operatory - v podstate lubovolne poskladanie specialnych symbolov, s pravidlami:
+		- [TODO] jak sa napise "infix", vytvori sa "fixity" koncept, ale bude treba vediet rychlo prevadzat medzi infix / infixl / infixr (cez akcie, asi)
+	- [TODO] nezabudnut na znaky "`", ktore z nejakeho dovodu nie su v gramatike popisane
+	- [TODO] operatory - v podstate lubovolne poskladanie specialnych symbolov, s pravidlami:
+		- pozn. tu by sa operator nemal referencovat, tu sa zadava vlastny operator
 		- nesmu pouzivat rezervovane symboly:
 		..  :  ::  =  \  |  <-  ->  @  ˜  =>
 		- mozno skladat z tychto symbolov:
@@ -298,7 +301,7 @@ infixl 8 ‘myplus‘
 
 
 
-ANNOTATION
+ANNOTATION (~ Annotation)
 ----------------------------------------------
 - gramatika:
 annotation ::= annoitems '::' rho
@@ -326,10 +329,13 @@ map :: (a -> b) -> [a] -> [b]
 	- vychadza z typovania
 	- pozor na to, ze mozno definovat viacere naraz a ze mozno anotovat aj operatory
 	- nazvy anotovanych poloziek (vid fundef pre dalsie detaily)
+	- [TODO] jednotlive anotovane polozky treba nejak zlepsit...
+		- momentalne chyba !, ?, - (neviem, ci vobec budem pridavat?)
+		- operator je nedokonceny
 	
 	
 	
-FUNCTIONDEFINITION ??
+FUNCTIONDEFINITION (~ FunctionDefinition)
 ----------------------------------------------
 - gramatika:
 fundef ::= 	binex '=' expr wherepart
@@ -355,42 +361,124 @@ replicate n x
 
 a `myop` b = a + b
 
+x -: f = f x
+
 surface (Rectangle (Point x1 y1) (Point x2 y2)) = (abs $ x2 - x1) * (abs $ y2 - y1)
 
 
 - prevedenie:
 	- dava vacsi zmysel zlucit viacere patterny tej istej funkcie do jednej skupiny (inak problem pri kompilacii)
-	- mozno ako optional hodit anotaciu? (deklaraciu funkcie)
-	- cez typesystem okontrolovat zhodnost patternov:
+		- [TODO] skupina definicii ale musi nieco zdielat, v tomto pripade asi "binex"
+			=> zmena v jednom patterne spravi zmenu v ostatnych
+		- [Q] mozno ako optional hodit anotaciu? (deklaraciu funkcie)
+	- [TODO] cez typesystem okontrolovat zhodnost patternov, t.j. nesmie nastat toto:
 		f a b c = 1
 		f i j k = 2
-	- zatial som sa nestretol s viacerymi podmienkami v ramci jedneho guardu, treba preverit (vid gquals)
-	- pozor na slovo "otherwise" pri guard-och, malo by ho vediet napovedat (t.j. urobit samostatny koncept)
-	- pozor na binex na zaciatku, ktory urcuje pattern, podla ktoreho sa matchuje
-		- toto prejde:	
+	- [Q] zatial som sa nestretol s viacerymi podmienkami v ramci jedneho guardu, treba preverit (vid "gquals ::= gqual (',' gqual)*"; t.j. guardy oddelene ciarkami)
+	- [TODO] pozor na slovo "otherwise" pri guard-och, malo by ho vediet napovedat (t.j. urobit samostatny koncept)
+	- patternovanie:
+		- zdroje nasledujucich informacii:
+			- https://www.haskell.org/tutorial/patterns.html
+			- https://en.wikibooks.org/wiki/Haskell/Pattern_matching
+		- v gramatike je pattern urceny len cez "binex", ale uz pri kompilacii niektore veci vyhodia chybu, napr.:
+			f (x+1) = 0
+			f [1..10] = 0
+			f [x | x <- [1..10]] = 0
+			f x x = 3*x
+		- podla oficialnej dokumentacie, plati nasledujuce:
+			- nesting of patterns is permitted (to arbitrary depth)
+			- formal parameters (variables) are also patterns that never fail to match a value
+			=> tie iste premenne sa preto nemozu vyskytovat viackrat, nez raz, v danom patterne (wildcard "_" moze)
+		- tieto priklady zase prejdu:
+			f ([],  'b',  (1,   2.0),   "hi",   True) = False
 			f [] = 0
 			f [1, 2, 3] = 0
 			f [x, y] = x+y
 			f (x : xs) = 1
 			g (1, [2, 3]) = 1
 			g (x, _) = x
-		- toto neprejde:
-			f (x+1) = 0
-			f [1..10] = 0
-			f [x | x <- [1..10]] = 0
-		- mozno by sa hodilo vlastnu gramatiku specialne pre tuto cast?
-	- obdobne zostava otazkou, jak vyriesit patternovanie pre guardov?
-		- tiez nie je povoleny akykolvek vyraz
-		- tyka sa aj case
-	- chce to tu akciu (alebo alias?), ked sa zacne pisat |, a naopak pri = klasicky pattern matching
-	- tazko povedat, ci posledne 2 priklady su tiez definiciami funkcii, ale prejdu a funguju (po zavolani napr. "a" dostaneme skutocne "1", dtto pre "x")
-		- zaroven plati, ze pokial by sa vyskytol este riadok napr. "a = 7", tak uz hlasi chybu "redefinition", cize asi skutocne ide o fundef
-	- este pre to, co moze byt na zaciatku - pozor na definovanie operatorov:
-		x -: f = f x
-		- cisto teoreticky moze referencovat uz anotovany operator, ale asi netreba (anotovany nebude vzdy)
-	- mimochodom, nazvy funkcii nesmu byt jednym z rezervovanych slov:
-		- case, class, data, default, deriving, do, else, foreign, if, import, in, infix, infixl, infixr, instance, let, module, newtype, of, then, type, where, _ (pokial je osamote)
-		- tyka sa aj annotation
+			f x y = 2*x
+			a `myop` b = a + b
+			surface (Rectangle (Point x1 y1) (Point x2 y2)) = (abs $ x2 - x1) * (abs $ y2 - y1)
+			(a, b, c) = (1, 2, 3)
+			(x:y:z:_) = [1,2,3,4,5,6]
+			(a, b, c):[d] = [(1, 2, 3), (4, 5, 6)]
+			ff (a, b) (c, d) = 0
+			[1, gg] = [1, 7]
+		- ale toto nie:
+			(f x, g y, h z) = (2*x, 3*y, 4*z)
+			(f1, f2) (f3, f4) = (1, 2) (3, 4)
+			(f1, f2) (f3, f4) = (1, 2, 3, 4)
+			[7] = [10]
+			[7] = [7]
+			f 1:2:3:[] = 0			-- chybaju zatvorky, cize "f (1:2:3:[]) = 0" by uz preslo
+			f (1:(2, 3):4:[]) = 0	-- nie je mozne mixovanie v ramci daneho zoznamu, inymi slovami ani toto neprejde: "f = [1, (2,3), 3]"; mozno skontrolovat jedine cez typesystem (jednotlive prvky mozu byt dost komplikovane)
+			f (1:2:3) = 0			-- zoznam musi byt zakonceny objektom typu "zoznam"
+			f (1:[2]:[3]) = 0		-- nie je mozne mat prvky rozlicneho typu; a:b:c:d - az "d" je typu "zoznam", "b", "c" su stale bezne prvky; ale! "(a:b):c", tak jak "b" tak "c" su zoznamy! zatvorky robia velky rozdiel!
+		- toto prejde, ale vyhodi runtime exception pri pokuse pouzit:
+			(f1, f2, f3) = (1+f1, 1+f2, 1+f3)
+			[1, f] = [2, 3]
+		- dalsie pravidla:
+			- funkcie v pattern matchingu nie su povolene, okrem konstruktorov z "data"
+			- zoznamy su vynimkou kvoli tomu, ze plati akoby toto: data [a] = [] | a : [a] (cize sa tiez chova ako "data")
+				=> prazdny zoznam [] - je konstruktor
+				=> : funkcia - je konstruktor
+				=> f (_:_:_:xs) = xs, tak trivialne musi prejst
+				=> [x, y, z] je len syntactic sugar pre x:y:z:[], cize stale povolene
+			- analogicky plati pre tuples: f (x, y, z) = x + y + z
+		- pravidla pre zoznamy:
+			f1 ((1:[2]):[[3]]) = 0	-- prijima [[1,2],[3]]
+			f2 (1:(2:[3])) = 0		-- prijima [1,2,3]
+			f3 ((1:2):[3]) = 0		-- neprejde
+			=> pokial je (x1:x2:...:xn) uzatvorkovane, uz to musi byt zoznam
+			=> potom vyhovuju tieto: 
+				x:(y:ys) 		-- prepend, pripad f2
+				(x:xs):[ys] 	-- append, ys musi byt zoznam, pripad f1
+			- cize ked sa na vrchu objavi ':', mali by sa vytvorit zatvorky
+		- celkovo mozno uvazit zhruba toto:
+			- evidentne funnkcia ako nieco s argumentami moze byt definovana len standardne, t.j. meno musi byt na zaciatku a potom argumenty, inak definicia typu (a,b,c) = (1,2,3) je skor definicia unarnych funkcii
+			- predpokladam nieco takehoto druhu:
+				fundef ::= name args? | arg | arg OPERATOR arg
+				args = (arg ' ')* arg
+				arg ::= pExpression
+				pExpression ::= pTuple | pList | pConstructor | pLiteral | pVariable
+				pVariable ::= _ | varid
+				pLiteral ::= IntValue | CharValue | StringValue | BoolValue | ...
+				pConstructor ::= '(' CONID args ')'
+				pList ::= '(' listColonItems ':' pList ')' | '[' pExpressions? ']' | pVariable
+				listColonItems ::= (pExpression ':')* pExpression
+				pExpressions ::= (pExpression ',')* pExpression
+				pTuple ::= '(' pExpressions ')'
+				- nie uplne dotiahnute veci:
+				[TODO] nejasny nazov funkcie; zatial nastaveny na VARID
+				[TODO] neujasnene, co to je operator (vid PatternOperator)
+				[TODO] literaly zatial vobec nie su (treba zneuzit koncept z expression nejako)
+				[TODO] ani pConstructor nie je jasny zatial
+				[TODO] bude treba akcie na prevadzanie z jedneho konceptu rychlo na druhy
+			- vsetky priklady, co maju prejst, prejdu, ale prejdu, zial, aj tieto:
+				- tieto sa tazko deteguju; vyhadzuju az run-time error:
+					(f1, f2, f3) = (1+f1, 1+f2, 1+f3)
+					[1, f] = [2, 3]
+				- toto treba overit cez typesystem:
+					[TODO]	f x x = 3*x				-- rovnake argumenty nalavo
+					[TODO]	[7] = [10]				-- nalavo nie je ziadna pramenna
+					[TODO]	f (1:(2, 3):4:[]) = 0	-- nie je mozne mixovanie v ramci daneho zoznamu; cize cez typesystem
+							blargh2 (1:[2]:[3]) = 0	-- opat ide len o mixovanie rozlicnych prvkov
+					[TODO?] - jedine cez typesystem prinutit, aby "pVariable" nebolo meno existujucej funkcie:
+							k = 1
+							h :: Int -> Bool
+							h k = True
+							h _ = False
+					[TODO] - pozor na redefinition; napr.:
+					(a:b:c:_) = [1,2,3,4,5,6,7]
+					a = 10			
+		- [TODO] nazvy funkcii nesmu byt jednym z rezervovanych slov:
+			- case, class, data, default, deriving, do, else, foreign, if, import, in, infix, infixl, infixr, instance, let, module, newtype, of, then, type, where, _ (pokial je osamote)
+			- tyka sa aj annotation
+		- [Q] referencovat name?
+			- t.j. pokial uz funkcia bola anotovana, tak mozno referencovat
+			- mozno referencovat operatory definovane v ramci fixity
+		- [TODO] nezabudnut este na indentaciu a nutnost vediet vytvarat prazdne riadky
 		
 		
 
@@ -976,6 +1064,10 @@ anyChoice2 ch =
 		Just score@(First "gold") -> "First with gold!"
 		Just score@(First _) -> "First with something else."
 
+- poznamky:
+f s@(x:xs) = x:s
+Technically speaking, as-patterns always result in a successful match, although the sub-pattern (in this case x:xs) could, of course, fail.
+		
 		
 Lazy patterns
 --------------
