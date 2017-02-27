@@ -454,7 +454,7 @@ surface (Rectangle (Point x1 y1) (Point x2 y2)) = (abs $ x2 - x1) * (abs $ y2 - 
 				[TODO] neujasnene, co to je operator (vid PatternOperator)
 				[TODO] literaly zatial vobec nie su (treba zneuzit koncept z expression nejako)
 				[TODO] ani pConstructor nie je jasny zatial
-				[TODO] bude treba akcie na prevadzanie z jedneho konceptu rychlo na druhy
+				[TODO] bude treba akcie na prevadzanie z jedneho konceptu rychlo na druhy; o referencovani nehovoriac, s tym tam bude celkom dost prace
 			- vsetky priklady, co maju prejst, prejdu, ale prejdu, zial, aj tieto:
 				- tieto sa tazko deteguju; vyhadzuju az run-time error:
 					(f1, f2, f3) = (1+f1, 1+f2, 1+f3)
@@ -482,7 +482,7 @@ surface (Rectangle (Point x1 y1) (Point x2 y2)) = (abs $ x2 - x1) * (abs $ y2 - 
 		
 		
 
-WHEREPART ??
+WHEREPART (~ WherePart)
 ----------------------------------------------
 - gramatika:
 wherepart ::= 'where' letdefs?
@@ -509,10 +509,9 @@ bmiTell weight height
 
 	
 - prevedenie:
-	- problematicke je len to tuple, pretoze vsade inde je mozne to chapat ako definiciu funkcie
-		- z pohladu gramatiky je tam skutocne "binex", ale treba nejak oprasit vlastnym konceptom
-	- co sa tyka druheho prikladu, toto je problem vseobecne - definicie funkcii mozu byt prehodene
-		- nevadi to, my proste mame referencny koncept a ci ho uzivatel pouzije, je na nom
+	- [TODO] editor je urcite zatial nakonfigurovany nespravne
+	- [TODO] koncepty musia byt rychlo preveditelne (t.j. annotation <-> FDAnnotation, atd.)
+	- [TODO] tu musi byt kontextova napoveda; musi byt akoby zuzena na sucasny scope
 	
 
 	
@@ -538,10 +537,14 @@ instance YesNo Int where
 
 - prevedenie:
 	- v ramci localdef moze byt bud anotacia (deklaracia funkcie) alebo definicia funkcie
-
+	- identicke WherePart, avsak byva v spojeni s class / instance; bude to teda takto: 
+		- v ramci class / instance bude prvy riadok prisposobeny danej definicii + slovo "where" na konci
+		- zvysok bude podla WherePart casti
+	- [TODO] aj tu treba spravne poriesit referencovanie
 
 	
-EXPRESSION ??
+	
+EXPRESSION (~ Expression)
 ----------------------------------------------
 - gramatika:
 expr ::= binex ('::' rho)?
@@ -559,15 +562,25 @@ f n = n `div` 2
 		- alebo BINARYEXPRESSION
 			- ma lavu a pravu cast (obe su EXPRESSION)
 			- medzi nimi je operator: (SOMEOP | '-')
-		- vo vacsine jazykov jepresny pocet rozdeleni BINARYEXPRESSION, napr. *, +, /, ... (kazda vlastny koncept)
-			- v Haskelli su operatory artbitrarne, cize by sa hodilo cez akciu pri pisani akehokolvek symbolu automaticky vytvorit BINARYEXPRESSION a dosadit za operator napisany text
+		- vo vacsine jazykov je presny pocet rozdeleni BINARYEXPRESSION, napr. *, +, /, ... (kazda vlastny koncept)
+			- v Haskelli su operatory arbitrarne, cize by sa hodilo cez akciu pri pisani akehokolvek symbolu automaticky vytvorit BINARYEXPRESSION a dosadit za operator napisany text
 	- sice dany priklad by mal prechadzat cez TOPEXPRESSION a nie cez EXPRESSION, pretoze `div` nespada pod SOMEOP, aj tak to tu spravime takto
 		- je to logickejsie, kedze de facto ide o operator
 		- cize semanticka analyza na to, ci skutocne ide o binarnu funkciu, sa musi odohrat tu
+	=> rozhodnutie urobit takto - vlastna gramatika:
+		expr ::= exprPart ('::' rho)?
+		exprPart ::= topex | binex | unopexpr
+		binex ::= exprPart SOMEOP exprPart
+		unopexpr ::= '(' SOMEOP exprPart ')'	
+	- [TODO] operator ako koncept nie je zatial definovany
+	- [TODO] vymysliet plynule prepinanie a volbu medzi jednotlivymi druhmi expression; pravdepodobne cez viacere akcie substitucii
+	- [TODO] zistit, jak je to presne s unarnymi operatormi; skutocne mozu byt lubovolne? nie je to nahodou iba minus '-'?
+	- [TODO] v zavislosti od predchadzajuceho bodu test, ci pouzity operator je skutocne binarny alebo unarny (typesystem)
+	- [TODO] operator by teroeticky mohlo napovedat z dostupnych
+			
 
 
-
-TOPEXPRESSION ??
+TOPEXPRESSION (~ TopExpression)
 ----------------------------------------------	
 - gramatika:
 topex ::= 	'if' expr 'then' expr 'else' expr
@@ -799,7 +812,7 @@ f x = let a = w x in case () of
 	
 
 	
-IF-THEN-ELSE
+IF-THEN-ELSE (~ IfThenElse)
 ----------------------------------------------
 - gramatika:
 topex ::= 	'if' expr 'then' expr 'else' expr
@@ -832,7 +845,7 @@ flip f = \x \y -> f y x
 
 
 
-LET
+LET (~ Let)
 ----------------------------------------------	
 - gramatika:
 letdefinition ::= 'let' letdefs 'in' expr
@@ -864,10 +877,10 @@ f = (let (a, b, c) = (1, 2, 3) in a + b + c) * 100
 
 
 - prevedenie:
-	- kedze pri definicii funkcie funguje aj toto: "(a, b, c) = (1, 2, 3)", tak to musi fungovat aj tu
-	- okrem toho treba davat pozor na referencovanie, t.j. raz definovana funkcia musi byt refrencovatelna neskor (obzvlast v "in" casti)
-	- pozor na scope / referencovanie, oproti where:
-		- pokial su pouziti guard-i, "the scope of the where clause extends over all guards; the scope of a let expression is only the current function clause (and guard)"
+	- [TODO] editor je urcite zle zatial
+	- [TODO] treba davat pozor na referencovanie, t.j. raz definovana funkcia musi byt refrencovatelna neskor (obzvlast v "in" casti)
+		- pozor na scope / referencovanie, oproti where:
+			- pokial su pouziti guard-i, "the scope of the where clause extends over all guards; the scope of a let expression is only the current function clause (and guard)"
 
 
 
