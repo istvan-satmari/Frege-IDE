@@ -1,3 +1,23 @@
+- napisat e-mail (na dalsi tyzden) P. Parizkovi a V. Pechovi -- ze by som sa stretol (zasiel do firmy, zhruba v aprili)
+	- idealne ten e-mail skor
+	- skor len ukazat, ze co je
+- 3.4. - asi idealne, keby sme sa rovno v JetBrains stretli, prip. v skole (s p. Parizkom)
+
+
+
+
+
+
+
+
+
+
+
+TODO - vazne: v mnohych miestach zle pouzity "Pattern" koncept; niekde, napr. pri guardoch, nemoze byt aj "functionName arg arg ... arg"; treba nastavit na "PatternArgument"
+
+
+
+
 MODULE (~ Skeleton)
 ----------------------------------------------
 - gramatika:
@@ -438,7 +458,7 @@ surface (Rectangle (Point x1 y1) (Point x2 y2)) = (abs $ x2 - x1) * (abs $ y2 - 
 		- celkovo mozno uvazit zhruba toto:
 			- evidentne funnkcia ako nieco s argumentami moze byt definovana len standardne, t.j. meno musi byt na zaciatku a potom argumenty, inak definicia typu (a,b,c) = (1,2,3) je skor definicia unarnych funkcii
 			- predpokladam nieco takehoto druhu:
-				fundef ::= name args? | arg | arg OPERATOR arg
+				fundefhead ::= name args? | arg | arg OPERATOR arg
 				args = (arg ' ')* arg
 				arg ::= pExpression
 				pExpression ::= pTuple | pList | pConstructor | pLiteral | pVariable
@@ -472,14 +492,22 @@ surface (Rectangle (Point x1 y1) (Point x2 y2)) = (abs $ x2 - x1) * (abs $ y2 - 
 					[TODO] - pozor na redefinition; napr.:
 					(a:b:c:_) = [1,2,3,4,5,6,7]
 					a = 10			
-		- [TODO] nazvy funkcii nesmu byt jednym z rezervovanych slov:
-			- case, class, data, default, deriving, do, else, foreign, if, import, in, infix, infixl, infixr, instance, let, module, newtype, of, then, type, where, _ (pokial je osamote)
-			- tyka sa aj annotation
-		- [Q] referencovat name?
-			- t.j. pokial uz funkcia bola anotovana, tak mozno referencovat
-			- mozno referencovat operatory definovane v ramci fixity
-		- [TODO] nezabudnut este na indentaciu a nutnost vediet vytvarat prazdne riadky
-		
+	- [TODO] nazvy funkcii nesmu byt jednym z rezervovanych slov:
+		- case, class, data, default, deriving, do, else, foreign, if, import, in, infix, infixl, infixr, instance, let, module, newtype, of, then, type, where, _ (pokial je osamote)
+		- tyka sa aj annotation
+	- [Q] referencovat name?
+		- t.j. pokial uz funkcia bola anotovana, tak mozno referencovat
+		- mozno referencovat operatory definovane v ramci fixity
+	- [TODO] nezabudnut este na indentaciu a nutnost vediet vytvarat prazdne riadky
+	- guard-i podla specifikacie su:
+		- [TODO] bud boolean expresions, cize treba okontrolovat cez typesystem
+		- [Q] alebo mozu byt aj klasickym patternom, v tom pripade mozno pouzivat nasledujucu syntax:	
+			strangeOperation :: [Int] -> Ordering
+			strangeOperation xs | 7  <- sum xs, n <- length xs, n >= 5, n <= 20 = EQ
+								| 1  <- sum xs, 18 <- length xs, r <- nub xs `compare` [1,2,3], r /= EQ = r
+								| otherwise = [3,1,2] `compare` xs
+
+	
 		
 
 WHEREPART (~ WherePart)
@@ -618,32 +646,95 @@ createCircle r = Circle (Point 0 0) r
 
 
 - prevedenie:
-	- pozor na "(('!'|'?')* term)+", mozno iba "term+"?
-	- bude treba akcie substituovania termov
-		- napr. pri napisani "7" => automaticky literal
-	- priklady su podstatne pre uvedomenie, preco "term+":
-		- mame volanie funkcie, za nim argumenty, cize argumenty su termy
-		- lenze volanie funkcie je tiez term (QVARID)
-		- v pripade aplikovania lambdy funkcie sa dostaneme cez: 
-			- term varianty '(' expr (',' expr)* ')', t.j. uzatvorkovany expression
-			- za expression pouzijeme lambdu
-			- napravo su termy ako argumenty
-		=> tu by mozno bolo rozumne obmedzit moznosti na "term+" (a tym padom jednoduchsia referencovatelnost):
-			- aplikacia funkcie (pozor na to, ze operator je tiez funkcia)
-				- pozor na specialny operator (,,,,,,) ako konstruktor pre tuple!
-			- konstruktor (napr. "Just 7")
-				- mal by sa vyzadovat striktny pocet parametrov / argumentov
-			- typove synonyma
-			... pripadne dalsie ...
-			+ specialny pripad currying operatoru, vid priklad so stringom (++ zlava/sprava)
-				- uzatvorkovany operator bud sprava alebo zlava, na druhej strane vyraz - expression
-				- vychadza z '(' SOMEOP ')' ... treba doriesit
-		=> tu by sa hodila kontrola (semanticka analyza), ci je typ volanej funkcie korektny a ci je pocet argumentov tiez korektny
-			- pozor s poctom argumentov, nakolko currying je bezna vec (vid stvrty priklad)
+	- pozor na "(('!'|'?')* term)+", mozno iba "term+"? (predpokladam, ze ide o unarne operatory a tie boli vyriesene uz skor)
+	- [TODO] akcie substituovania termov, napr. pri napisani "7" => automaticky literal
+	- term+ mozno nahradit takto:
+		- samostnatny term: list, tuple, literaly, ...
+		- aplikacie funkcii
+			- klasicka aplikacia funkcie
+			f [1, 2, 3]
+			
+			- aplikacia operatorov ako funkcii (avsak ine, ako BinEx, kde je operator v strede)
+			(+) 1 a
+			map (*) [0..]
+			filter ((==) 3) [ 1, 2, 3, 4, 5 ]
+			
+			- currying
+			f x y = x + y
+			g = f 0
+			filter ((==) 3) [ 1, 2, 3, 4, 5 ]
+			
+			- pozor na specialny typ "currying-u":
+				f x = (x+)
+				g y = (f 1) y		- (f 1) vrati funkciu, ktoru ihned aplikujeme na "y"
+				
+				f x = (-x)
+				g y = y (f 1)		- prelozi, ale spusta sa napr. cez "g (7 +)" (t.j. y je funkcia prijimajuca 1 celociselny argument)
+					
+				f x = (-x)
+				g y = y + (f 1)		- ok, (f 1) vrati cislo
+
+				f x = (x+1+)		- neprejde
+				g y = (f 1) y
+				
+				f x = ((x+1)+)		- prelozi
+				g y = (f 1) y
+				
+				f x = (++x)
+				g y = (f "hello") y	- prejde pre 'g "str"'
+			
+			- pozor na aplikacie konstruktorov:
+			(,,) (x > 0) (x % 2 == 0) (x % 3 == 0)
+		
+		- aplikacia lambda funkcii
+			- klasicka aplikacia lambda funkcie:
+			(\x -> \y -> \z -> x + y + z) a b c
+			
+			- zaroven currying, prip. navratenie len lambdy
+			(\x -> \y -> \z -> x + y + z) a b
+		
+		- konstruktory a argumenty
+			(Rational x1 y1) +. (Rational x2 y2) = (x1 * y2 + x2 * y1) % (y1 * y2)
+		
+			data Point = Point Int Int
+			data Circle = Circle Point Int
+
+			f = Circle (Point (1+2) (2+3::Int)) 7
+			g = Point 1 2
+			
+		
+		- Celkovo tak mozno zhrnut nasledovne:
+		term+_improvement ::= '(' name arg (' ' arg)* ')'
+			- name: 
+				- qvarid, pokial nazov funkcie
+					- [TODO] qvarid, nie varid
+				- '(' operator ')', pokial operator ako funkcia
+				- '(' lambda ')', pokial aplikujeme ad-hoc lambda funkciu
+				- qconid, pokial nazov konstruktoru
+					- [TODO] qconid, nie conid
+				
+				nejasne, preco aj tieto su podporovane (a jak presne zapadaju do ostatnej gramatiky):
+				'(' '(' expression ')' operator ')' arg*
+				'(' operator '(' expression ')' ')' arg*
+				[TODO] toto zatial nie je podporovane a ani neviem, ci bude podporovane
+				
+			- arg: 
+				- expression 
+					- ich pocet moze byt <= poctu argumentov definovanych pre danu aplikovanu funkciu, pokial ide o aplikaciu funkcie (pozor na to, ze moze byt obcas aj nekonecny)
+					- pokial ide o konstruktor (z "data"), potom je pocet argumentov striktny
+			- zatvorky nie su nutne, ale hodia sa a z gramatiky nie je jasne, kde presne maju byt
+		
+		- [Q] gramatika mozno nie je uplne takto spravna
+		- [TODO] meno funkcie by sa malo napovedat (referencovat)
+		- [TODO] pocet parametrov (nesmie presiahnut, prip. musi byt striktny)
+		- [TODO] zabezpecit, ze je pouzity korektny typ (aplikacia funkcie; prijima argumenty korektneho typu? => typesystem)
+		
+		
+		
+TODO: Pokracovat odtial (zacat term)
 
 
-
-TERM ??
+TERM (~ Term) TODO
 ----------------------------------------------
 - gramatika:
 term ::= 	QCONID
@@ -679,8 +770,15 @@ term ::= 	QCONID
 	
 	
 - prevedenie:
-	- SOMEOP by malo byt referencovatelne
-		- nemusi ale nutne, porovnaj napr. importovanie veci z externych kniznic
+	- po novom, aplikacia funkcie, "data" konstrukty a pod. nie su sucastou tohto a spadaju pod samostatne koncepty
+		- tieto casti gramatiky pravdepodobne nie su nadalej aplikovatelne pre Term:
+		- '(' SOMEOP ')'
+		- referencovanie mena funkcie
+		- SOMEOP by malo byt referencovatelne
+			- nemusi ale nutne, porovnaj napr. importovanie veci z externych kniznic
+		...
+			
+			
 	- pozor na QCONID, pravdepodobne ide o pouzitie konstruktoru, ale chybaju v gramatike argumenty
 		- napr. "Just 7", ale z gramatiky to tak nevyplyva => treba upravit, prip. najst v gramatike
 	- QCONID aj QVARID by mali byt referencovatelne
@@ -731,7 +829,7 @@ lcqual ::= 	expr
 LITERAL
 ----------------------------------------------	
 - gramatika:
-literal ::= 'true' 
+literal ::= 'true'
 			'false'
 			CHARCONST 
 			STRINGCONST 
@@ -770,7 +868,7 @@ literal ::= 'true'
 		
 		
 
-CASE
+CASE (~ Case)
 ----------------------------------------------
 - gramatika:
 topex ::= 	'case' expr 'of' calts
@@ -779,8 +877,9 @@ topex ::= 	'case' expr 'of' calts
 calts ::= calt ('\n' calt)* 
 calt ::= 	expr '->' expr wherepart
 			expr ('|' gquals '=' expr)+ wherepart
+- sice na zaciatku "calt" je udane "expr", v skutocnosti ide aj tak iba o pattern
 
-			
+
 - priklady:
 head xs = case xs of
     [] -> error "No head for empty lists!"
@@ -807,8 +906,9 @@ f x = let a = w x in case () of
 			  
 
 - prevedenie:
-	- pozor na to, ze nemoze byt cokolvek na lavej strane (pattern, oproti ktoremu sa matchuje; vid guards)
-	- unita "()" reprezentuje "no useful information"
+	- [TODO] unita "()" reprezentuje "no useful information"; treba napomoct v typesystem toto pochopit
+	- [TODO] editor upravit
+	- [TODO] napovedy, jak obvykle
 	
 
 	
@@ -824,7 +924,7 @@ yesnoIf x yesResult noResult = if x > 100 then yesResult else noResult
 		
 
 
-LAMBDA
+LAMBDA (~ Lambda)
 ----------------------------------------------
 - gramatika:
 lambda ::= '\' term+ lambdabody
@@ -837,12 +937,18 @@ addThree = \x -> \y -> \z -> x + y + z
 sumThree a b c = (\x -> \y -> \z -> x + y + z) a b c
 
 flip f = \x \y -> f y x
-	
+
+f x = (\z y -> z+y) x x	
+
+f x = (\(a,b,c) -> a+2*b+3*c) (x,x,x)
+
 
 - prevedenie:
-	- v ramci gramatiky je "term+", ale pravdepodobne sa staci obmedzit iba na "\x \y -> ...", a toto nepodporovat: "\x y -> ..."
-	- term-y v "'\' term+" nic nereferencuju, lambdabody ale uz musi vediet referencovat termy udane nalavo v "'\' term+"
-
+	- [Q] v ramci gramatiky je "term+", ale pravdepodobne sa staci obmedzit iba na "\x \y -> ...", a toto nepodporovat: "\x y -> ..." - prinutime cistejsi kod
+	- [Q] zaroven - nemal by to byt jednoduchy pattern a nie term?
+	- BTW, toto neprejde: f = (\ -> 1), cize aspon 1 term je naozaj nutny
+	- [TODO] potrebne akcie substitucie expr a lambda za lambdaPart
+	- [TODO] term-y v "'\' term+" nic nereferencuju, lambdabody ale uz musi vediet referencovat termy udane nalavo v "'\' term+"
 
 
 LET (~ Let)
@@ -884,7 +990,7 @@ f = (let (a, b, c) = (1, 2, 3) in a + b + c) * 100
 
 
 
-DATA ??
+DATA (~ Data)
 ----------------------------------------------
 - gramatika:
 datainit ::= 'data' CONID tyvar* '=' dalts wheredef
@@ -905,23 +1011,24 @@ data Opx a b c = Sumx a | Zerox
 
 
 - prevedenie:
-	- wheredef mozno netreba
-	- referencovanie musi byt kontextualne, ale spada pod "simpletype"
+	- wheredef mozno netreba, v prikladoch nie je velmi bezny
+	- [TODO] referencovanie musi byt kontextualne, ale spada pod "simpletype"
 		- referencovat mozno uz existujuce ine data
 		- pripadne data deklarovane nalavo od konstruktorov
 		- pripade tyvar deklarovany nalavo od konstruktorov
 		- pripadne typ (Float, Int, ...)
-	- semantickou analyzou:
+	- [TODO] semantickou analyzou:
 		- "data Opx a b c", potom "a", "b", "c" musia byt rozneho nazvu
 		- pokial sa budem nudit, tak mozno urcit, ze "b" a "c" su redundantne v tomto: "data Opx a b c = Sumx a | Zerox"
 		
 		
 
-CLASS
+CLASS (~ Class)
 ----------------------------------------------
 - gramatika:
 classdef ::= 'class' (ccontext '=>')? CONID tyvar wheredef
 ccontext ::= qconid tyvar (',' qconid tyvar)*
+- wheredef je vynechany a namiesto toho zrecyklovany "LetDefinitions" koncept
 
 
 - priklady:
@@ -944,18 +1051,18 @@ instance Functor [] where
 	
 
 - prevedenie:
+	- [TODO] context musi byt QCONID, nie CONID
+	- [TODO] v ramci "ccontext" treba vediet referencovat uz existujuce triedy
+		- prip. nemusia, pokial su naimportovane...?
 	- az na bizarnost s prikladom "Functor" by nemalo byt komplikovane (opat ide o referencovatelnost z vnutra "wheredef", cize treba nejako injektovat?)
 	- pozor na zhlukovu anotaciu (deklaraciu funkcie)
-	- v ramci "ccontext" treba vediet referencovat uz existujuce triedy
-		- prip. nemusia, pokial su naimportovane...?
 	
 	
 	
-INSTANCE
+INSTANCE (~ Instance)
 ----------------------------------------------	
 - gramatika:
-instancedef ::= 'instance' insthead wheredef
-insthead ::= (icontext '=>')? qconid simpletype
+instancedef ::= 'instance' (icontext '=>')? qconid simpletype wheredef
 icontext ::= '(' qconid simpletype (',' qconid simpletype)* ')'
 
 	
@@ -980,7 +1087,9 @@ instance Functor (HM.HashMap k) where
 	
 
 - prevedenie:
-	- "id" mozno nebudem podporovat...? (treti priklad)
+	- [TODO] name by malo byt QCONID a nie CONID, ako je teraz
+	- [TODO] zaroven meno by malo byt referencovane; robi sa predsa instancia nejakej konkretnej triedy
+	- "id" asi nebudem podporovat (treti priklad)
 	- v ramci "qconid", ked sa zapisuje vlastne meno instancie, treba referencovat uz existujucu triedu
 		- opat, co ak naimportovana...?
 
