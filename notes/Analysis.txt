@@ -731,7 +731,7 @@ createCircle r = Circle (Point 0 0) r
 		
 		
 		
-TERM (~ Term) TODO
+TERM (~ Term)
 ----------------------------------------------
 - gramatika:
 term ::= 	QCONID
@@ -779,13 +779,6 @@ QVARID ::= 	CONID '.' (CONID '.')? (VARID | '!' | '?')
 		tuple ::= '(' expr (',' expr)+ ')'
 		expression ::= '(' expr ')'
 		list ::= '[' ']' | '[' expr (',' expr)* ']' | '[' expr (',' expr)* '..' ']' | '[' expr (',' expr)* '..' expr ']' | list_comprehension
-		
-		- pozor na zaporne cisla a medzery
-		[-110..-100] 	-– syntax error
-		[-110.. -100] 	-- ok
-		
-		
-		
 	- [Q] tieto zatial nie su podporovane:
 		'(' ')'
 		'(' SOMEOP ')'	
@@ -799,10 +792,13 @@ QVARID ::= 	CONID '.' (CONID '.')? (VARID | '!' | '?')
 		- a potom mame zopar standardnych funkcii, napr.:
 			- fst a, snd a (tuples)
 	- [TODO] term "_" sa nemoze vyskytovat hocikde
+	- [TODO] pozor na zaporne cisla a medzery v pripade zoznamov (dat pozor pri generacii kodu):
+		[-110..-100] 	-– syntax error
+		[-110.. -100] 	-- ok
 
 
 
-LIST COMPREHENSION ??
+LIST COMPREHENSION
 ----------------------------------------------		
 - gramatika:
 listcomprehension ::= '[' expr '|' lcquals ']'
@@ -810,7 +806,7 @@ lcquals ::= lcqual (',' lcqual)*
 lcqual ::= 	expr
 			expr '<-' expr
 			'let' letdefs
-			
+
 
 - priklady:
 	[ [ x, y, z] | x <- [ 1, 2 ], y <- [ 3, 4 ], z <- [ 5, 6 ] ]
@@ -823,16 +819,17 @@ lcqual ::= 	expr
 	
 	
 - prevedenie:
-	- akcie transformacie pre prechody medzi jednotlivymi definiciami zoznamov
-	- pozor na referencovatelnost
-		[x | x<-[1..10]]
+	- priradenie, ako napr. "expr '<-' expr", pravdepodobne bude pattern, preto zmenene
+	- [Q] 'let' letdefs len ako jeden letdef, lebo to bude asi neprehladne ich pisat viacero do jedneho riadku
+	- [TODO] pre koncept guardu treba overit, ze skutocne vracia typ boolean
+	- [TODO] pravdepodobne bude treba akcie transformacie pre prechody medzi jednotlivymi definiciami zoznamov
+	- [TODO] pozor na referencovatelnost a scope
+		[x | x <- [1..10] ]
 		- tu si vytvarame novu premennu x, ktoru potom chceme vediet referencovat
-	- treba testovat, ze pokial je "expr" sam, tak musi byt typu Bool
-	- "expr '<-' expr" tiez nemoze byt lubovolny (nalavo ma byt tzv. pattern)
-	
 	
 
-LITERAL
+	
+LITERAL (TODO)
 ----------------------------------------------	
 - gramatika:
 literal ::= 'true'
