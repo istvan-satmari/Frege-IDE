@@ -731,9 +731,6 @@ createCircle r = Circle (Point 0 0) r
 		
 		
 		
-TODO: Pokracovat odtial (zacat term)
-
-
 TERM (~ Term) TODO
 ----------------------------------------------
 - gramatika:
@@ -751,7 +748,11 @@ term ::= 	QCONID
 			'[' expr (',' expr)* '..' ']'
 			'[' expr (',' expr)* '..' expr ']'
 			listcomprehension
-			
+
+QCONID ::= (CONID '.')? (CONID '.')? CONID
+QVARID ::= 	CONID '.' (CONID '.')? (VARID | '!' | '?') 
+			VARID	
+
 			
 - priklady:
 	- zatvorky / tuples:
@@ -771,28 +772,33 @@ term ::= 	QCONID
 	
 - prevedenie:
 	- po novom, aplikacia funkcie, "data" konstrukty a pod. nie su sucastou tohto a spadaju pod samostatne koncepty
-		- tieto casti gramatiky pravdepodobne nie su nadalej aplikovatelne pre Term:
-		- '(' SOMEOP ')'
-		- referencovanie mena funkcie
-		- SOMEOP by malo byt referencovatelne
-			- nemusi ale nutne, porovnaj napr. importovanie veci z externych kniznic
-		...
-			
-			
-	- pozor na QCONID, pravdepodobne ide o pouzitie konstruktoru, ale chybaju v gramatike argumenty
-		- napr. "Just 7", ale z gramatiky to tak nevyplyva => treba upravit, prip. najst v gramatike
-	- QCONID aj QVARID by mali byt referencovatelne
-		- opat, nemusia...
-		- toto bude asi tazke zabezpecit, lebo to bude chciet referencovat len v ramci urciteho scope, napr.:
+	- mozno prerozdelit term na vacsie celky:
+		references ::= QCONID | QVARID
+		underscore ::= '_'
+		literal ::= literal
+		tuple ::= '(' expr (',' expr)+ ')'
+		expression ::= '(' expr ')'
+		list ::= '[' ']' | '[' expr (',' expr)* ']' | '[' expr (',' expr)* '..' ']' | '[' expr (',' expr)* '..' expr ']' | list_comprehension
+		
+		- pozor na zaporne cisla a medzery
+		[-110..-100] 	-– syntax error
+		[-110.. -100] 	-- ok
+		
+		
+		
+	- [Q] tieto zatial nie su podporovane:
+		'(' ')'
+		'(' SOMEOP ')'	
+	- [Q] tento druh nie z QVARID zatial nie je podporovany:
+		QVARID ::= 	CONID '.' (CONID '.')? ('!' | '?') 
+	- [TODO] referencovanie QCONID a QVARID v zavislosti od scope-u
+		- asi tazke zabezpecit, lebo to bude chciet referencovat len v ramci urciteho scope, napr.:
 			f x = 2 * x		-- x je referencovatelne
 			f y = 2 * y		-- tu je referencovatelne len y
 		- musia byt referencovatelne aj uz definovane ine funkcie
 		- a potom mame zopar standardnych funkcii, napr.:
 			- fst a, snd a (tuples)
-	- term "_" sa nemoze vyskytovat hocikde
-	- pozor na zaporne cisla a medzery
-		[-110..-100] 	-– syntax error
-		[-110.. -100] 	-- ok
+	- [TODO] term "_" sa nemoze vyskytovat hocikde
 
 
 
