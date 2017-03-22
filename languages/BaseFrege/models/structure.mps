@@ -378,7 +378,7 @@
     <node concept="1TJgyi" id="6G7jP5USw29" role="1TKVEl">
       <property role="IQ2nx" value="7712220098267840649" />
       <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" node="7Cxf1w4A_lZ" resolve="CHAR" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKX$9">
@@ -389,7 +389,7 @@
     <node concept="1TJgyi" id="6G7jP5USw2Q" role="1TKVEl">
       <property role="IQ2nx" value="7712220098267840694" />
       <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" node="7Cxf1w4A_m0" resolve="STRING" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKX$a">
@@ -400,7 +400,7 @@
     <node concept="1TJgyi" id="6G7jP5USw2B" role="1TKVEl">
       <property role="IQ2nx" value="7712220098267840679" />
       <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="7Cxf1w4A_m1" resolve="BIGINTEGER" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKX$b">
@@ -411,18 +411,18 @@
     <node concept="1TJgyi" id="6G7jP5USw2o" role="1TKVEl">
       <property role="IQ2nx" value="7712220098267840664" />
       <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="7Cxf1w4A_m2" resolve="DOUBLE" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKX$c">
     <property role="EcuMT" value="574920793184786700" />
     <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
-    <property role="TrG5h" value="BoolValue" />
+    <property role="TrG5h" value="BooleanValue" />
     <ref role="1TJDcQ" node="5ZITH0PGZDb" resolve="Literal" />
     <node concept="1TJgyi" id="6G7jP5USw1U" role="1TKVEl">
       <property role="IQ2nx" value="7712220098267840634" />
       <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <ref role="AX2Wp" node="7Cxf1w4A_lY" resolve="BOOLEAN" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKX$A">
@@ -1844,6 +1844,31 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7Cxf1w4Aony" resolve="NodeVARID" />
     </node>
+  </node>
+  <node concept="Az7Fb" id="7Cxf1w4A_lY">
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals.Primitives" />
+    <property role="TrG5h" value="BOOLEAN" />
+    <property role="FLfZY" value="true|false" />
+  </node>
+  <node concept="Az7Fb" id="7Cxf1w4A_lZ">
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals.Primitives" />
+    <property role="TrG5h" value="CHAR" />
+    <property role="FLfZY" value="^'([^'\\]|\\0|\\a|\\b|\\f|\\n|\\r|\\t|\\v|\\&quot;|\\&amp;|\\'|\\\\)'$" />
+  </node>
+  <node concept="Az7Fb" id="7Cxf1w4A_m0">
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals.Primitives" />
+    <property role="TrG5h" value="STRING" />
+    <property role="FLfZY" value="^&quot;([^&quot;]|\\&quot;)*&quot;$" />
+  </node>
+  <node concept="Az7Fb" id="7Cxf1w4A_m1">
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals.Primitives" />
+    <property role="TrG5h" value="BIGINTEGER" />
+    <property role="FLfZY" value="[0-9]+" />
+  </node>
+  <node concept="Az7Fb" id="7Cxf1w4A_m2">
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals.Primitives" />
+    <property role="TrG5h" value="DOUBLE" />
+    <property role="FLfZY" value="^[0-9]+(\.[0-9]+)?(E(+|-)?[0-9]+)?$" />
   </node>
 </model>
 

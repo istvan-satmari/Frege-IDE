@@ -832,19 +832,19 @@ lcqual ::= 	expr
 LITERAL (TODO)
 ----------------------------------------------	
 - gramatika:
-literal ::= 'true'
-			'false'
-			CHARCONST 
+literal ::= 'true' | 'false'
+			CHARCONST
 			STRINGCONST 
-			INTCONST
-			BIGINTCONST
+			INTCONST | BIGINTCONST
 			DOUBLECONST 
 			REGEXP
 			
 			
 - priklady:
 	- CHARCONST (char)
-	'a', ' ', '\n', '\&', '\DEL', '\CAN', '\ACK', '\0032101', '\0o1770', '\0x8A9E4001'
+		'a', ' ', '\n', '\&', '\DEL', '\CAN', '\ACK', '\0032101', '\0o1770', '\0x8A9E4001'
+		- pozri: http://book.realworldhaskell.org/read/characters-strings-and-escaping-rules.html
+		- boli implementovate len 1 znakove escapes, UNICODE escape zatial nie je podporovany
 	
 	- STRINGCONST (string)
 	"hello, \n, world"
@@ -862,12 +862,14 @@ literal ::= 'true'
 	 1046.1E-10
 	 
 			
-	
 - prevedenie:
-	- akcie na substituovatelnost, typicky expression -> literal
-		- napr. po zacati pisania "7", "mystring", ... => substituovat za prislusny literal
-	- niektore zrejme vynecham (REGEXP, INTCONST / BIGINTCONST - staci len INTCONST)
-		- a zrejme aj niektore zapisy (napr. octalovy, hexadecimalny zapis a pod.)
+	- [TODO] jak je to s unarnym operatorom minus pred integer a double? mozno zneuzit uz ten z expressions?
+	- [TODO] akcie na substituovatelnost, typicky expression -> literal, napr. po zacati pisania "7", "mystring", ... => substituovat za prislusny literal
+	- [Q] mnohe zrejme vynecham (REGEXP, INTCONST / BIGINTCONST - staci len INTCONST), a zrejme aj druhy zapisov (napr. octalovy, hexadecimalny zapis a pod.)
+		- podpora len jednoducheho char-u, bez escape
+	- [Q] podporovat viacriadkove stringy?
+	- [Q] podporujem len BIGINTCONST, ma zmysel podporovat aj zvlast INTCONST?
+	- [Q] s typom REGEXP som sa este nestretol, tak ho zatial vynechavam
 		
 		
 

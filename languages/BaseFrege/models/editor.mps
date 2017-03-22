@@ -778,7 +778,7 @@
         <property role="3F0ifm" value="let" />
       </node>
       <node concept="3F1sOY" id="5E$XTHV3XRT" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5E$XTHV3XRR" resolve="LetDef" />
+        <ref role="1NtTu8" to="sc0n:5E$XTHV3XRR" resolve="letDef" />
       </node>
       <node concept="2iRfu4" id="5E$XTHV3XRH" role="2iSdaV" />
     </node>
@@ -804,7 +804,7 @@
     <ref role="1XX52x" to="sc0n:5E$XTHV3XTh" resolve="LCQGuard" />
     <node concept="3EZMnI" id="5E$XTHV3XTu" role="2wV5jI">
       <node concept="3F1sOY" id="5E$XTHV3XT_" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5E$XTHV3XTi" resolve="Condition" />
+        <ref role="1NtTu8" to="sc0n:5E$XTHV3XTi" resolve="condition" />
       </node>
       <node concept="2iRfu4" id="5E$XTHV3XTx" role="2iSdaV" />
     </node>
