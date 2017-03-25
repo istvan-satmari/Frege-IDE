@@ -1507,7 +1507,7 @@
     <property role="EcuMT" value="4565621053812462089" />
     <property role="3GE5qa" value="Definitions.Patterns.Expression.Variables" />
     <property role="TrG5h" value="PVarName" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="3Xsm2yzyl7U" resolve="PVariable" />
     <node concept="1TJgyj" id="3Xsm2yzyl8a" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462090" />
       <property role="20lmBu" value="aggregation" />
