@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="BaseFrege.behavior.AIOperator_BehaviorDescriptor" file="AIOperator_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.AIVarid_BehaviorDescriptor" file="AIVarid_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.AnnotationItem_BehaviorDescriptor" file="AnnotationItem_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Annotation_BehaviorDescriptor" file="Annotation_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHDescriptor" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBehaviorAspectDescriptor" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.BinaryExpression_BehaviorDescriptor" file="BinaryExpression_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.BlockCommentLine_BehaviorDescriptor" file="BlockCommentLine_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.BlockComment_BehaviorDescriptor" file="BlockComment_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.BooleanValue_BehaviorDescriptor" file="BooleanValue_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Brackets_BehaviorDescriptor" file="Brackets_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.CPExprToExpr_BehaviorDescriptor" file="CPExprToExpr_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.CPExprToGuards_BehaviorDescriptor" file="CPExprToGuards_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.CasePart_BehaviorDescriptor" file="CasePart_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Case_BehaviorDescriptor" file="Case_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.CharValue_BehaviorDescriptor" file="CharValue_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ClassContextPart_BehaviorDescriptor" file="ClassContextPart_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ClassContext_BehaviorDescriptor" file="ClassContext_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Class_BehaviorDescriptor" file="Class_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Comment_BehaviorDescriptor" file="Comment_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ConstrCall_BehaviorDescriptor" file="ConstrCall_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.DataDefinitionPart_BehaviorDescriptor" file="DataDefinitionPart_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Data_BehaviorDescriptor" file="Data_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Definition_BehaviorDescriptor" file="Definition_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.DoubleValue_BehaviorDescriptor" file="DoubleValue_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ExpressionPart_BehaviorDescriptor" file="ExpressionPart_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Expression_BehaviorDescriptor" file="Expression_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.FCLambda_BehaviorDescriptor" file="FCLambda_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.FCNamed_BehaviorDescriptor" file="FCNamed_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.FCOperator_BehaviorDescriptor" file="FCOperator_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.FDAssignment_BehaviorDescriptor" file="FDAssignment_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.FDGuards_BehaviorDescriptor" file="FDGuards_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Fixity_BehaviorDescriptor" file="Fixity_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.FunCall_BehaviorDescriptor" file="FunCall_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.FunDef_BehaviorDescriptor" file="FunDef_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.FunctionDefinitions_BehaviorDescriptor" file="FunctionDefinitions_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Guard_BehaviorDescriptor" file="Guard_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.IICMConid_BehaviorDescriptor" file="IICMConid_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.IICMOperator_BehaviorDescriptor" file="IICMOperator_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.IICMVarid_BehaviorDescriptor" file="IICMVarid_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.IICMember_BehaviorDescriptor" file="IICMember_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.IfThenElse_BehaviorDescriptor" file="IfThenElse_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ImportAs_BehaviorDescriptor" file="ImportAs_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ImportHiding_BehaviorDescriptor" file="ImportHiding_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ImportItemClass_BehaviorDescriptor" file="ImportItemClass_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ImportItemOperator_BehaviorDescriptor" file="ImportItemOperator_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ImportItemQconid_BehaviorDescriptor" file="ImportItemQconid_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ImportItemQvarid_BehaviorDescriptor" file="ImportItemQvarid_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ImportItem_BehaviorDescriptor" file="ImportItem_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ImportList_BehaviorDescriptor" file="ImportList_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Import_BehaviorDescriptor" file="Import_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.InfixAbstract_BehaviorDescriptor" file="InfixAbstract_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Infix_BehaviorDescriptor" file="Infix_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Infixl_BehaviorDescriptor" file="Infixl_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Infixr_BehaviorDescriptor" file="Infixr_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.InstanceContextPart_BehaviorDescriptor" file="InstanceContextPart_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.InstanceContext_BehaviorDescriptor" file="InstanceContext_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Instance_BehaviorDescriptor" file="Instance_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.IntegerValue_BehaviorDescriptor" file="IntegerValue_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.LCQArrowAssignment_BehaviorDescriptor" file="LCQArrowAssignment_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.LCQGuard_BehaviorDescriptor" file="LCQGuard_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.LCQLet_BehaviorDescriptor" file="LCQLet_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.LCQualifier_BehaviorDescriptor" file="LCQualifier_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.LDAnnotation_BehaviorDescriptor" file="LDAnnotation_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.LDFunDef_BehaviorDescriptor" file="LDFunDef_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.LPExpression_BehaviorDescriptor" file="LPExpression_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.LPLambda_BehaviorDescriptor" file="LPLambda_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.LambdaPart_BehaviorDescriptor" file="LambdaPart_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Lambda_BehaviorDescriptor" file="Lambda_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.LetDefinition_BehaviorDescriptor" file="LetDefinition_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.LetDefinitions_BehaviorDescriptor" file="LetDefinitions_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Let_BehaviorDescriptor" file="Let_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.LineComment_BehaviorDescriptor" file="LineComment_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ListComprehension_BehaviorDescriptor" file="ListComprehension_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ListEnumeration_BehaviorDescriptor" file="ListEnumeration_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ListRange_BehaviorDescriptor" file="ListRange_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.List_BehaviorDescriptor" file="List_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Literal_BehaviorDescriptor" file="Literal_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.MPModule_BehaviorDescriptor" file="MPModule_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.MPSCONID_BehaviorDescriptor" file="MPSCONID_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.MPSVARID_BehaviorDescriptor" file="MPSVARID_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.MPSimple_BehaviorDescriptor" file="MPSimple_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Main_BehaviorDescriptor" file="Main_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ModulePart_BehaviorDescriptor" file="ModulePart_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Module_BehaviorDescriptor" file="Module_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.NodeCONID_BehaviorDescriptor" file="NodeCONID_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.NodeVARID_BehaviorDescriptor" file="NodeVARID_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Operator_BehaviorDescriptor" file="Operator_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.PConstructor_BehaviorDescriptor" file="PConstructor_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.PListBrackets_BehaviorDescriptor" file="PListBrackets_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.PListDot_BehaviorDescriptor" file="PListDot_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.PListVar_BehaviorDescriptor" file="PListVar_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.PList_BehaviorDescriptor" file="PList_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.PLiteral_BehaviorDescriptor" file="PLiteral_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.PTuple_BehaviorDescriptor" file="PTuple_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.PVarName_BehaviorDescriptor" file="PVarName_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.PVarWildcard_BehaviorDescriptor" file="PVarWildcard_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.PVariable_BehaviorDescriptor" file="PVariable_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.PatternArgument_BehaviorDescriptor" file="PatternArgument_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.PatternFunction_BehaviorDescriptor" file="PatternFunction_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.PatternOperator_BehaviorDescriptor" file="PatternOperator_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Pattern_BehaviorDescriptor" file="Pattern_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.QCONID_BehaviorDescriptor" file="QCONID_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.QVARID_BehaviorDescriptor" file="QVARID_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ResourcePart_BehaviorDescriptor" file="ResourcePart_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Resource_BehaviorDescriptor" file="Resource_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.RhoContext_BehaviorDescriptor" file="RhoContext_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Rho_BehaviorDescriptor" file="Rho_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Simpletype_BehaviorDescriptor" file="Simpletype_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Simpletypes_BehaviorDescriptor" file="Simpletypes_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Skeleton_BehaviorDescriptor" file="Skeleton_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.StringValue_BehaviorDescriptor" file="StringValue_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Tau_BehaviorDescriptor" file="Tau_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Term_BehaviorDescriptor" file="Term_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.TopExpression_BehaviorDescriptor" file="TopExpression_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Tuple_BehaviorDescriptor" file="Tuple_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.TypeBrackets_BehaviorDescriptor" file="TypeBrackets_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.TypeList_BehaviorDescriptor" file="TypeList_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.TypeName_BehaviorDescriptor" file="TypeName_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.TypeTuple_BehaviorDescriptor" file="TypeTuple_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.TypeVariable_BehaviorDescriptor" file="TypeVariable_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Type_BehaviorDescriptor" file="Type_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.UnaryOPExpression_BehaviorDescriptor" file="UnaryOPExpression_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Underscore_BehaviorDescriptor" file="Underscore_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.WherePart_BehaviorDescriptor" file="WherePart_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+</dependenciesRoot>
+

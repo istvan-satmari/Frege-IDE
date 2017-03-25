@@ -1,20 +1,6 @@
-- napisat e-mail (na dalsi tyzden) P. Parizkovi a V. Pechovi -- ze by som sa stretol (zasiel do firmy, zhruba v aprili)
-	- idealne ten e-mail skor
-	- skor len ukazat, ze co je
-- 3.4. - asi idealne, keby sme sa rovno v JetBrains stretli, prip. v skole (s p. Parizkom)
-
-
-
-
-
-
-
-
-
-
-
 TODO - vazne: v mnohych miestach zle pouzity "Pattern" koncept; niekde, napr. pri guardoch, nemoze byt aj "functionName arg arg ... arg"; treba nastavit na "PatternArgument"
-
+TODO - operator koncept
+TODO - pozriet sa na operatory; v Haskelli existuje len 1 unarny operator, a to minus (treba opravit)
 
 
 
@@ -50,7 +36,7 @@ varidkw ::= VARID|'data'|'type'|'native'|'pure'|'module'|'import'
 qvarids ::= qvarop (',' qvarop)*
 qvarop ::= (CONID '.' (CONID '.')?)? (VARID|'!'|'?')|SOMEOP
 ...
-nedava velmi zmysel podla prikladov?
+[Q] nedava velmi zmysel podla prikladov? necham zjednodusene zatial
 
 
 - priklady:
@@ -829,7 +815,7 @@ lcqual ::= 	expr
 	
 
 	
-LITERAL (TODO)
+LITERAL
 ----------------------------------------------	
 - gramatika:
 literal ::= 'true' | 'false'
@@ -913,7 +899,7 @@ f x = let a = w x in case () of
 - prevedenie:
 	- [TODO] unita "()" reprezentuje "no useful information"; treba napomoct v typesystem toto pochopit
 	- [TODO] editor upravit
-	- [TODO] napovedy, jak obvykle
+	- [TODO] napovedy (ctrl + space), jak obvykle
 	
 
 	
@@ -949,8 +935,9 @@ f x = (\(a,b,c) -> a+2*b+3*c) (x,x,x)
 
 
 - prevedenie:
-	- [Q] v ramci gramatiky je "term+", ale pravdepodobne sa staci obmedzit iba na "\x \y -> ...", a toto nepodporovat: "\x y -> ..." - prinutime cistejsi kod
-	- [Q] zaroven - nemal by to byt jednoduchy pattern a nie term?
+	- [Q] v ramci gramatiky je "term+", ale pravdepodobne sa staci obmedzit iba na "\x \y -> ...", a toto nepodporovat: "\x y -> ..." - prinutime cistejsi kod (?)
+		- ak nie, potom treba PatternArgument dat na "1..n"
+	- [Q] zaroven - nemal by to byt jednoduchy pattern a nie term? zatial som tak skutocne nastavil (na pattern)
 	- BTW, toto neprejde: f = (\ -> 1), cize aspon 1 term je naozaj nutny
 	- [TODO] potrebne akcie substitucie expr a lambda za lambdaPart
 	- [TODO] term-y v "'\' term+" nic nereferencuju, lambdabody ale uz musi vediet referencovat termy udane nalavo v "'\' term+"
@@ -1094,11 +1081,16 @@ instance Functor (HM.HashMap k) where
 - prevedenie:
 	- [TODO] name by malo byt QCONID a nie CONID, ako je teraz
 	- [TODO] zaroven meno by malo byt referencovane; robi sa predsa instancia nejakej konkretnej triedy
-	- "id" asi nebudem podporovat (treti priklad)
+	- [Q] "id" asi nebudem podporovat (treti priklad)
 	- v ramci "qconid", ked sa zapisuje vlastne meno instancie, treba referencovat uz existujucu triedu
 		- opat, co ak naimportovana...?
 
 
+		
+
+[TODO]
+--------------------------------------------------------------------------------------------
+		
 
 INDENTACIA ???
 ----------------------------------------------

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="AIOperator_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.AIOperator_BehaviorDescriptor" />
+    </file>
+    <file name="AIVarid_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.AIVarid_BehaviorDescriptor" />
+    </file>
+    <file name="AnnotationItem_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.AnnotationItem_BehaviorDescriptor" />
+    </file>
+    <file name="Annotation_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Annotation_BehaviorDescriptor" />
+    </file>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="13,0,41,0" name="BaseFrege.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="BinaryExpression_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.BinaryExpression_BehaviorDescriptor" />
+    </file>
+    <file name="BlockCommentLine_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.BlockCommentLine_BehaviorDescriptor" />
+    </file>
+    <file name="BlockComment_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.BlockComment_BehaviorDescriptor" />
+    </file>
+    <file name="BooleanValue_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.BooleanValue_BehaviorDescriptor" />
+    </file>
+    <file name="Brackets_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Brackets_BehaviorDescriptor" />
+    </file>
+    <file name="CPExprToExpr_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.CPExprToExpr_BehaviorDescriptor" />
+    </file>
+    <file name="CPExprToGuards_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.CPExprToGuards_BehaviorDescriptor" />
+    </file>
+    <file name="CasePart_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.CasePart_BehaviorDescriptor" />
+    </file>
+    <file name="Case_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Case_BehaviorDescriptor" />
+    </file>
+    <file name="CharValue_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.CharValue_BehaviorDescriptor" />
+    </file>
+    <file name="ClassContextPart_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ClassContextPart_BehaviorDescriptor" />
+    </file>
+    <file name="ClassContext_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ClassContext_BehaviorDescriptor" />
+    </file>
+    <file name="Class_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Class_BehaviorDescriptor" />
+    </file>
+    <file name="Comment_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Comment_BehaviorDescriptor" />
+    </file>
+    <file name="ConstrCall_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ConstrCall_BehaviorDescriptor" />
+    </file>
+    <file name="DataDefinitionPart_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.DataDefinitionPart_BehaviorDescriptor" />
+    </file>
+    <file name="Data_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Data_BehaviorDescriptor" />
+    </file>
+    <file name="Definition_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Definition_BehaviorDescriptor" />
+    </file>
+    <file name="DoubleValue_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.DoubleValue_BehaviorDescriptor" />
+    </file>
+    <file name="ExpressionPart_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ExpressionPart_BehaviorDescriptor" />
+    </file>
+    <file name="Expression_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Expression_BehaviorDescriptor" />
+    </file>
+    <file name="FCLambda_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.FCLambda_BehaviorDescriptor" />
+    </file>
+    <file name="FCNamed_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.FCNamed_BehaviorDescriptor" />
+    </file>
+    <file name="FCOperator_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.FCOperator_BehaviorDescriptor" />
+    </file>
+    <file name="FDAssignment_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.FDAssignment_BehaviorDescriptor" />
+    </file>
+    <file name="FDGuards_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.FDGuards_BehaviorDescriptor" />
+    </file>
+    <file name="Fixity_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Fixity_BehaviorDescriptor" />
+    </file>
+    <file name="FunCall_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.FunCall_BehaviorDescriptor" />
+    </file>
+    <file name="FunDef_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.FunDef_BehaviorDescriptor" />
+    </file>
+    <file name="FunctionDefinitions_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.FunctionDefinitions_BehaviorDescriptor" />
+    </file>
+    <file name="Guard_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Guard_BehaviorDescriptor" />
+    </file>
+    <file name="IICMConid_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.IICMConid_BehaviorDescriptor" />
+    </file>
+    <file name="IICMOperator_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.IICMOperator_BehaviorDescriptor" />
+    </file>
+    <file name="IICMVarid_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.IICMVarid_BehaviorDescriptor" />
+    </file>
+    <file name="IICMember_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.IICMember_BehaviorDescriptor" />
+    </file>
+    <file name="IfThenElse_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.IfThenElse_BehaviorDescriptor" />
+    </file>
+    <file name="ImportAs_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ImportAs_BehaviorDescriptor" />
+    </file>
+    <file name="ImportHiding_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ImportHiding_BehaviorDescriptor" />
+    </file>
+    <file name="ImportItemClass_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ImportItemClass_BehaviorDescriptor" />
+    </file>
+    <file name="ImportItemOperator_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ImportItemOperator_BehaviorDescriptor" />
+    </file>
+    <file name="ImportItemQconid_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ImportItemQconid_BehaviorDescriptor" />
+    </file>
+    <file name="ImportItemQvarid_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ImportItemQvarid_BehaviorDescriptor" />
+    </file>
+    <file name="ImportItem_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ImportItem_BehaviorDescriptor" />
+    </file>
+    <file name="ImportList_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ImportList_BehaviorDescriptor" />
+    </file>
+    <file name="Import_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Import_BehaviorDescriptor" />
+    </file>
+    <file name="InfixAbstract_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.InfixAbstract_BehaviorDescriptor" />
+    </file>
+    <file name="Infix_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Infix_BehaviorDescriptor" />
+    </file>
+    <file name="Infixl_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Infixl_BehaviorDescriptor" />
+    </file>
+    <file name="Infixr_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Infixr_BehaviorDescriptor" />
+    </file>
+    <file name="InstanceContextPart_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.InstanceContextPart_BehaviorDescriptor" />
+    </file>
+    <file name="InstanceContext_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.InstanceContext_BehaviorDescriptor" />
+    </file>
+    <file name="Instance_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Instance_BehaviorDescriptor" />
+    </file>
+    <file name="IntegerValue_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.IntegerValue_BehaviorDescriptor" />
+    </file>
+    <file name="LCQArrowAssignment_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.LCQArrowAssignment_BehaviorDescriptor" />
+    </file>
+    <file name="LCQGuard_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.LCQGuard_BehaviorDescriptor" />
+    </file>
+    <file name="LCQLet_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.LCQLet_BehaviorDescriptor" />
+    </file>
+    <file name="LCQualifier_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.LCQualifier_BehaviorDescriptor" />
+    </file>
+    <file name="LDAnnotation_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.LDAnnotation_BehaviorDescriptor" />
+    </file>
+    <file name="LDFunDef_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.LDFunDef_BehaviorDescriptor" />
+    </file>
+    <file name="LPExpression_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.LPExpression_BehaviorDescriptor" />
+    </file>
+    <file name="LPLambda_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.LPLambda_BehaviorDescriptor" />
+    </file>
+    <file name="LambdaPart_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.LambdaPart_BehaviorDescriptor" />
+    </file>
+    <file name="Lambda_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Lambda_BehaviorDescriptor" />
+    </file>
+    <file name="LetDefinition_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.LetDefinition_BehaviorDescriptor" />
+    </file>
+    <file name="LetDefinitions_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.LetDefinitions_BehaviorDescriptor" />
+    </file>
+    <file name="Let_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Let_BehaviorDescriptor" />
+    </file>
+    <file name="LineComment_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.LineComment_BehaviorDescriptor" />
+    </file>
+    <file name="ListComprehension_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ListComprehension_BehaviorDescriptor" />
+    </file>
+    <file name="ListEnumeration_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ListEnumeration_BehaviorDescriptor" />
+    </file>
+    <file name="ListRange_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ListRange_BehaviorDescriptor" />
+    </file>
+    <file name="List_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.List_BehaviorDescriptor" />
+    </file>
+    <file name="Literal_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Literal_BehaviorDescriptor" />
+    </file>
+    <file name="MPModule_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.MPModule_BehaviorDescriptor" />
+    </file>
+    <file name="MPSCONID_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.MPSCONID_BehaviorDescriptor" />
+    </file>
+    <file name="MPSVARID_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.MPSVARID_BehaviorDescriptor" />
+    </file>
+    <file name="MPSimple_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.MPSimple_BehaviorDescriptor" />
+    </file>
+    <file name="Main_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Main_BehaviorDescriptor" />
+    </file>
+    <file name="ModulePart_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ModulePart_BehaviorDescriptor" />
+    </file>
+    <file name="Module_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Module_BehaviorDescriptor" />
+    </file>
+    <file name="NodeCONID_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.NodeCONID_BehaviorDescriptor" />
+    </file>
+    <file name="NodeVARID_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.NodeVARID_BehaviorDescriptor" />
+    </file>
+    <file name="Operator_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Operator_BehaviorDescriptor" />
+    </file>
+    <file name="PConstructor_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.PConstructor_BehaviorDescriptor" />
+    </file>
+    <file name="PListBrackets_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.PListBrackets_BehaviorDescriptor" />
+    </file>
+    <file name="PListDot_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.PListDot_BehaviorDescriptor" />
+    </file>
+    <file name="PListVar_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.PListVar_BehaviorDescriptor" />
+    </file>
+    <file name="PList_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.PList_BehaviorDescriptor" />
+    </file>
+    <file name="PLiteral_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.PLiteral_BehaviorDescriptor" />
+    </file>
+    <file name="PTuple_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.PTuple_BehaviorDescriptor" />
+    </file>
+    <file name="PVarName_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.PVarName_BehaviorDescriptor" />
+    </file>
+    <file name="PVarWildcard_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.PVarWildcard_BehaviorDescriptor" />
+    </file>
+    <file name="PVariable_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.PVariable_BehaviorDescriptor" />
+    </file>
+    <file name="PatternArgument_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.PatternArgument_BehaviorDescriptor" />
+    </file>
+    <file name="PatternFunction_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.PatternFunction_BehaviorDescriptor" />
+    </file>
+    <file name="PatternOperator_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.PatternOperator_BehaviorDescriptor" />
+    </file>
+    <file name="Pattern_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Pattern_BehaviorDescriptor" />
+    </file>
+    <file name="QCONID_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.QCONID_BehaviorDescriptor" />
+    </file>
+    <file name="QVARID_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.QVARID_BehaviorDescriptor" />
+    </file>
+    <file name="ResourcePart_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ResourcePart_BehaviorDescriptor" />
+    </file>
+    <file name="Resource_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Resource_BehaviorDescriptor" />
+    </file>
+    <file name="RhoContext_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.RhoContext_BehaviorDescriptor" />
+    </file>
+    <file name="Rho_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Rho_BehaviorDescriptor" />
+    </file>
+    <file name="Simpletype_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Simpletype_BehaviorDescriptor" />
+    </file>
+    <file name="Simpletypes_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Simpletypes_BehaviorDescriptor" />
+    </file>
+    <file name="Skeleton_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Skeleton_BehaviorDescriptor" />
+    </file>
+    <file name="StringValue_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.StringValue_BehaviorDescriptor" />
+    </file>
+    <file name="Tau_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Tau_BehaviorDescriptor" />
+    </file>
+    <file name="Term_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Term_BehaviorDescriptor" />
+    </file>
+    <file name="TopExpression_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.TopExpression_BehaviorDescriptor" />
+    </file>
+    <file name="Tuple_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Tuple_BehaviorDescriptor" />
+    </file>
+    <file name="TypeBrackets_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.TypeBrackets_BehaviorDescriptor" />
+    </file>
+    <file name="TypeList_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.TypeList_BehaviorDescriptor" />
+    </file>
+    <file name="TypeName_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.TypeName_BehaviorDescriptor" />
+    </file>
+    <file name="TypeTuple_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.TypeTuple_BehaviorDescriptor" />
+    </file>
+    <file name="TypeVariable_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.TypeVariable_BehaviorDescriptor" />
+    </file>
+    <file name="Type_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Type_BehaviorDescriptor" />
+    </file>
+    <file name="UnaryOPExpression_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.UnaryOPExpression_BehaviorDescriptor" />
+    </file>
+    <file name="Underscore_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Underscore_BehaviorDescriptor" />
+    </file>
+    <file name="WherePart_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.WherePart_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

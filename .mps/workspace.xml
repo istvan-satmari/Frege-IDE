@@ -7,9 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65abf65e-8e03-479e-b0f7-6bf6b438b46f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/Frege/models/Frege/Test.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/models/editor.mps" afterPath="$PROJECT_DIR$/languages/BaseFrege/models/editor.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/models/structure.mps" afterPath="$PROJECT_DIR$/languages/BaseFrege/models/structure.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes/Analysis.txt" afterPath="$PROJECT_DIR$/notes/Analysis.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Frege/Frege.msd" afterPath="$PROJECT_DIR$/solutions/Frege/Frege.msd" />
     </list>
     <ignored path="Frege IDE.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -26,7 +29,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="b0c0950c-4b9b-4881-ba30-2887761a2451/r:69547c4b-081d-44c9-9889-311f506067d1(TempModuleb0c0950c-4b9b-4881-ba30-2887761a2451/TempModel_516947164943254)">
+            <model ref="a39b2eac-4146-4fbd-b2ed-59a58afb0032/r:f04c1a41-ce0e-431b-9921-6493d5cbafea(TempModulea39b2eac-4146-4fbd-b2ed-59a58afb0032/TempModel_783429980947831)">
               <persistence version="9" />
               <languages>
                 <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
@@ -56,9 +59,9 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="7Cxf1w4AjYy">
-                <node concept="3balQm" id="7Cxf1w4AjYz" role="aymYE" />
-                <node concept="2Clz$F" id="7Cxf1w4AjY$" role="aymYO">
+              <node concept="aymSD" id="1NZxxHzexh_">
+                <node concept="3balQm" id="1NZxxHzexhA" role="aymYE" />
+                <node concept="2Clz$F" id="1NZxxHzexhB" role="aymYO">
                   <property role="TrG5h" value="CommandHolder" />
                 </node>
               </node>
@@ -85,7 +88,75 @@
     </search_options>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="Skeleton" pinned="false" current-in-tab="true">
+        <entry file="mps://node://Frege/Frege.Test/Skeleton">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="115" />
+                    <property name="caretXRelative" value="55" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                      <node node_reference="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Test)/2089536204310458154" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Test)/2089536204310458154" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NodeCONID" pinned="false" current-in-tab="false">
+        <entry file="mps://node://BaseFrege/BaseFrege.structure/NodeCONID">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="85" />
+                    <property name="caretXRelative" value="70" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                      <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711649" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Test)/2089536204310458154" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711649" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -194,10 +265,72 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Favorites" />
       <pane id="FileSystem" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/Frege/Frege.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frege" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Test) in IdeaFile{file://C:/Users/Satmari/Desktop/Frege/Repository/Frege-IDE/solutions/Frege/models/Frege/Test.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="$PROJECT_DIR$/solutions/Frege/Frege.msd" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frege" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure) in IdeaFile{file://C:/Users/Satmari/Desktop/Frege/Repository/Frege-IDE/languages/BaseFrege/models/structure.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
@@ -218,113 +351,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor) in IdeaFile{file://C:/Users/Satmari/Desktop/Frege/Repository/Frege-IDE/languages/BaseFrege/models/editor.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure) in IdeaFile{file://C:/Users/Satmari/Desktop/Frege/Repository/Frege-IDE/languages/BaseFrege/models/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Definitions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Expressions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure) in IdeaFile{file://C:/Users/Satmari/Desktop/Frege/Repository/Frege-IDE/languages/BaseFrege/models/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor) in IdeaFile{file://C:/Users/Satmari/Desktop/Frege/Repository/Frege-IDE/languages/BaseFrege/models/editor.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Definitions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Expressions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure) in IdeaFile{file://C:/Users/Satmari/Desktop/Frege/Repository/Frege-IDE/languages/BaseFrege/models/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Definitions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor) in IdeaFile{file://C:/Users/Satmari/Desktop/Frege/Repository/Frege-IDE/languages/BaseFrege/models/editor.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -353,10 +380,6 @@
               <option name="myItemId" value="Expressions" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Terms" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
@@ -367,6 +390,42 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="JUnit Tests" factoryName="JUnit Tests">
+      <MyState />
+      <myJUnitSettings>
+        <MyState>
+          <option name="myModel" />
+          <option name="myModule" />
+          <option name="myInProcess" value="true" />
+          <option name="myReuseCaches" value="true" />
+          <option name="myDebug" value="false" />
+          <option name="myCachesPath" value="C:\Users\Satmari\AppData\Local\Temp\mps_test_dir0" />
+          <option name="myTestCases">
+            <list />
+          </option>
+          <option name="myTestMethods">
+            <list />
+          </option>
+          <option name="myRunType" value="0" />
+        </MyState>
+      </myJUnitSettings>
+      <myJavaRunParameters>
+        <MyState>
+          <option name="myJavaRunParameters">
+            <JavaRunParameters>
+              <option name="jrePath" />
+              <option name="programParameters" />
+              <option name="useAlternativeJre" value="false" />
+              <option name="vmOptions" />
+              <option name="workingDirectory" />
+            </JavaRunParameters>
+          </option>
+        </MyState>
+      </myJavaRunParameters>
+      <method />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -374,31 +433,33 @@
     <configuration>C:\Users\Satmari\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3227513" sideWeight="0.48472077" order="23" side_tool="false" content_ui="tabs" />
+      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32401657" sideWeight="0.4859375" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3146998" sideWeight="0.5062631" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.49789253" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3457557" sideWeight="0.5083333" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26604554" sideWeight="0.52552086" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32712215" sideWeight="0.4749478" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26666668" sideWeight="0.47629082" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26604554" sideWeight="0.47447917" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23188406" sideWeight="0.49166667" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15520833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15520833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
@@ -406,9 +467,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -427,7 +486,7 @@
         <query>
           <scope scope_class="jetbrains.mps.ide.findusages.model.scopes.ProjectScope" />
           <holder holder_class="jetbrains.mps.ide.findusages.model.holders.NodeHolder">
-            <node ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786835" />
+            <node ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453198" />
           </holder>
         </query>
         <usage_view>
@@ -463,7 +522,7 @@
                               </data>
                               <children>
                                 <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="WherePart" info="" excluded="false" expanded="false" isresult="true" results_section="false" nodePtr="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786835">
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IICMember" info="" excluded="false" expanded="false" isresult="true" results_section="false" nodePtr="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453198">
                                     <role name="target" />
                                   </data>
                                   <children />
@@ -498,42 +557,7 @@
                               </data>
                               <children>
                                 <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="FDGuards" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6912716259988856043">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="where" info="role: &lt;i&gt;linkDeclaration&lt;/i&gt;; in: &lt;i&gt;FDGuards&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750718063">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="BaseFrege" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="BaseFrege.editor" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="WherePart_Editor" info="" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/6531617606750725142">
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IICMConid" info="" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453231">
                                     <role name="target" />
                                   </data>
                                   <children />
@@ -561,17 +585,73 @@
                               </data>
                               <children>
                                 <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="FDAssignment" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6912716259988856042">
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ImportItemClass" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453131">
                                     <role name="root" />
                                   </data>
                                   <children>
                                     <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="where" info="role: &lt;i&gt;linkDeclaration&lt;/i&gt;; in: &lt;i&gt;FDAssignment&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690992">
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="members" info="role: &lt;i&gt;linkDeclaration&lt;/i&gt;; in: &lt;i&gt;ImportItemClass&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453134">
                                         <role name="target" />
                                       </data>
                                       <children />
                                     </child>
                                   </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="BaseFrege" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="BaseFrege.structure" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IICMVarid" info="" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453215">
+                                    <role name="target" />
+                                  </data>
+                                  <children />
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="BaseFrege" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="BaseFrege.structure" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IICMOperator" info="" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453247">
+                                    <role name="target" />
+                                  </data>
+                                  <children />
                                 </child>
                               </children>
                             </child>
@@ -607,174 +687,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Project setup, core concepts." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="335" />
-                <property name="caretXRelative" value="35" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711588" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711588" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConceptDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="95" />
-                <property name="caretXRelative" value="5" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712753551" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712753551" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712753551" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712753551" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConceptDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="95" />
-                <property name="caretXRelative" value="5" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712753551" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712753551" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712753551" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712753551" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/TermVARID">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="125" />
-                <property name="caretXRelative" value="90" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_l1c0" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711650" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711650" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711650" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/CONID">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="135" />
-                <property name="caretXRelative" value="45" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711649" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711649" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711649" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/QCONID">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/ImportAs">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
@@ -782,10 +695,10 @@
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
                 <property name="caretX" value="200" />
-                <property name="caretXRelative" value="40" />
+                <property name="caretXRelative" value="90" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711681" />
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812419391" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -794,7 +707,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711681" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812419391" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -802,22 +715,22 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711590" />
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812419390" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/QVARID">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/IICMConid">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="200" />
+                <property name="caretXRelative" value="90" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_d0" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712753551" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453232" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -826,7 +739,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712753551" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453232" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -834,150 +747,22 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712753551" />
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453231" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/Brackets">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="85" />
-                <property name="caretXRelative" value="70" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690439" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690439" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690439" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/Underscore">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="85" />
-                <property name="caretXRelative" value="70" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712693671" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712693671" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712693671" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/ListEnumeration">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/ImportItemQconid">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="115" />
-                <property name="caretXRelative" value="15" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_conceptAlias" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690562" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786690" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690562" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/ListRange">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="85" />
-                <property name="caretXRelative" value="70" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690612" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690612" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690612" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/ListComprehension">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="180" />
-                <property name="caretXRelative" value="20" />
+                <property name="caretX" value="170" />
+                <property name="caretXRelative" value="60" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690717" />
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453100" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -986,7 +771,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690717" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -994,54 +779,22 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690660" />
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453099" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/Case">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="85" />
-                <property name="caretXRelative" value="70" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786747" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786747" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/FDAssignment">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/ImportItemQvarid">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="85" />
-                <property name="caretXRelative" value="70" />
+                <property name="caretX" value="170" />
+                <property name="caretXRelative" value="60" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6912716259988856042" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453116" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1050,7 +803,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6912716259988856042" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1058,105 +811,35 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6912716259988856042" />
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453115" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/PatternArgument">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConceptDeclaration]">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="335" />
-                <property name="caretXRelative" value="155" />
+                <property name="caretX" value="95" />
+                <property name="caretXRelative" value="5" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812461971" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812461971" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812461971" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/Pattern">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="255" />
-                <property name="caretXRelative" value="75" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812461970" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812461970" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812461970" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/PatternFunction">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="150" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812461973" />
-                  <parent cellId="Collection_6h6dhy_c0" cellNumber="0" isInList="false">
-                    <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812461973" />
-                  </parent>
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorMarkers>
-              <errorMarker text="ValTermVarid" propertyCell="false" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812461973" />
-                <parent cellId="Collection_6h6dhy_c0" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812461973" />
-                </parent>
+              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
+                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" />
               </errorMarker>
             </errorMarkers>
             <transactionalProperties />
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812461973" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1164,166 +847,35 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812461972" />
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/LCQExpr">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <node />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/WherePart">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConceptDeclaration]">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="85" />
-                <property name="caretXRelative" value="70" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786835" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786835" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786835" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/Class">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="310" />
-                <property name="caretXRelative" value="130" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2906222646419641979" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2906222646419641979" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786693" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/LetDefinitions">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="445" />
-                <property name="caretXRelative" value="145" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7420331049347593195" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7420331049347593195" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7420331049347593195" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/LDAnnotation">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="425" />
-                <property name="caretXRelative" value="125" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7420331049347593182" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7420331049347593182" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7420331049347593182" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/LetDefinition">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="105" />
+                <property name="caretX" value="95" />
                 <property name="caretXRelative" value="5" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_conceptAlias" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/7420331049347575266" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
-            <errorMarkers />
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
+                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" />
+              </errorMarker>
+            </errorMarkers>
             <transactionalProperties />
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/7420331049347575266" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1331,22 +883,22 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/7420331049347575266" />
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/LCQArrowAssignment">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/IICMOperator">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="135" />
-                <property name="caretXRelative" value="100" />
+                <property name="caretX" value="220" />
+                <property name="caretXRelative" value="10" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="role" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690858" />
+                <cellInfo cellId="Constant_6h6dhy_e2a" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310232605" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1355,7 +907,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690858" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1363,31 +915,35 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690855" />
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453247" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/LCQualifier">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConceptDeclaration]">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="295" />
-                <property name="caretXRelative" value="115" />
+                <property name="caretX" value="95" />
+                <property name="caretXRelative" value="5" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690773" />
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241587" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
-            <errorMarkers />
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
+                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241587" />
+              </errorMarker>
+            </errorMarkers>
             <transactionalProperties />
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690773" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241587" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1395,31 +951,35 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690773" />
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241587" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/LCQLet">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConceptDeclaration]">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="135" />
-                <property name="caretXRelative" value="35" />
+                <property name="caretX" value="95" />
+                <property name="caretXRelative" value="5" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_conceptAlias" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690783" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241587" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
-            <errorMarkers />
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
+                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241587" />
+              </errorMarker>
+            </errorMarkers>
             <transactionalProperties />
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690783" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241587" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1427,31 +987,38 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690783" />
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241587" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/LCQGuard">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="85" />
-                <property name="caretXRelative" value="70" />
+                <property name="caretX" value="305" />
+                <property name="caretXRelative" value="5" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690897" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241590" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
-            <errorMarkers />
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
+                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241590" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_constraint" cellNumber="0" isInList="false">
+                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241590" />
+              </errorMarker>
+            </errorMarkers>
             <transactionalProperties />
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690897" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241590" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1459,22 +1026,59 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690897" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/LDFunDef">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="85" />
-                <property name="caretXRelative" value="70" />
+                <property name="caretX" value="305" />
+                <property name="caretXRelative" value="5" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/7420331049347575265" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241590" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
+                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241590" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_constraint" cellNumber="0" isInList="false">
+                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241590" />
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241590" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/InstanceContextPart">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="240" />
+                <property name="caretXRelative" value="60" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2906222646419642759" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1483,7 +1087,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/7420331049347575265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812419342" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1491,11 +1095,43 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/7420331049347575265" />
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2906222646419642757" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/Tuple">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/ModulePart">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="285" />
+                <property name="caretXRelative" value="105" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812402373" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241588" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812402373" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/IRPart">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
@@ -1503,10 +1139,10 @@
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
                 <property name="caretX" value="130" />
-                <property name="caretXRelative" value="20" />
+                <property name="caretXRelative" value="55" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8562096718746050220" />
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2089536204310272578" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1515,7 +1151,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8562096718746050220" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2089536204310272578" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1523,11 +1159,747 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786691" />
+          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2089536204310272576" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/List">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/ImportResource">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="85" />
+                <property name="caretXRelative" value="70" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241581" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConceptDeclaration]">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="95" />
+                <property name="caretXRelative" value="5" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272583" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
+                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272583" />
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272583" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272583" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConceptDeclaration]">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="95" />
+                <property name="caretXRelative" value="5" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272583" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
+                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272583" />
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272583" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272583" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConceptDeclaration]">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="95" />
+                <property name="caretXRelative" value="5" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272599" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
+                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272599" />
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272599" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272599" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConceptDeclaration]">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="95" />
+                <property name="caretXRelative" value="5" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272599" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="name" cellNumber="0" isInList="false">
+                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272599" />
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272599" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272599" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/ModulePartModule">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="85" />
+                <property name="caretXRelative" value="50" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_a1c0" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812402374" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812402374" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812402374" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/MPSVARID">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="85" />
+                <property name="caretXRelative" value="70" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272599" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272599" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272599" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/MPSCONID">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="85" />
+                <property name="caretXRelative" value="70" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272583" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272583" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310272583" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/PConstructor">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="210" />
+                <property name="caretXRelative" value="60" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812462105" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812462105" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812462072" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/PVarName">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="190" />
+                <property name="caretXRelative" value="90" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812462090" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812462090" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812462089" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/PatternOperator">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="270" />
+                <property name="caretXRelative" value="80" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812462025" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2906222646419661708" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812462024" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/Type">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="280" />
+                <property name="caretXRelative" value="90" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2906222646419661708" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2906222646419641984" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2906222646419661707" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/TypeName">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="170" />
+                <property name="caretXRelative" value="60" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453460" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453460" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8562096718746085892" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/TypeVariable">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="200" />
+                <property name="caretXRelative" value="90" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453402" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453402" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8562096718746085876" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/UnaryOPExpression">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="225" />
+                <property name="caretXRelative" value="5" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_conceptShortDescription" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/7420331049347593509" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/7420331049347593509" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/7420331049347593509" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/Class">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="210" />
+                <property name="caretXRelative" value="105" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_role" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2089536204310284142" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786591" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/1948263994234089223" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/Definition">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="285" />
+                <property name="caretXRelative" value="105" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786591" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/3711906423253570679" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-15" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_2hk56f_a_0" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/3711906423253570679" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="name" propertyCell="false" cellNumber="1" isInList="false">
+                <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/3711906423253570679" />
+                <parent cellId="Collection_2hk56f_a3a" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/3711906423253570679" />
+                </parent>
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786591" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/Module">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="365" />
+                <property name="caretXRelative" value="65" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/574920793184786505" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/4565621053812445522" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/574920793184786505" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/ModulePartSimple">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="265" />
+                <property name="caretXRelative" value="85" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812419342" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812419342" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812419342" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/Instance">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="210" />
+                <property name="caretXRelative" value="105" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_role" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2089536204310300556" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2089536204310300556" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2906222646419642720" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/ImportList">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="85" />
+                <property name="caretXRelative" value="70" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812445485" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812445485" saveSessionState="false" viewPositionX="0" viewPositionY="300">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812445485" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/Import">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="85" />
+                <property name="caretXRelative" value="70" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786551" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786551" saveSessionState="false" viewPositionX="0" viewPositionY="300">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786551" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/FunCall">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
@@ -1537,8 +1909,8 @@
                 <property name="caretX" value="35" />
                 <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="emptyChildrenPlaceHolder" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786690" />
+                <cellInfo cellId="emptyRefPlaceHolder" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/3711906423253552749" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1547,7 +1919,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786690" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/6051851628362613867" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1555,538 +1927,13 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786690" />
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/3711906423253552749" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/Literal">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/FCLambda">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="255" />
-                <property name="caretXRelative" value="75" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6912716259988863563" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6912716259988863563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6912716259988863563" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="305" />
-                <property name="caretXRelative" value="5" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764798" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764798" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_constraint" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764798" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764798" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="305" />
-                <property name="caretXRelative" value="5" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764798" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764798" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_constraint" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764798" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764798" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/Boolean">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="375" />
-                <property name="caretXRelative" value="75" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764798" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764798" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/BoolValue">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="425" />
-                <property name="caretXRelative" value="125" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7712220098267840644" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7712220098267840644" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7712220098267840644" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="305" />
-                <property name="caretXRelative" value="5" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764799" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764799" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_constraint" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764799" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764799" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="305" />
-                <property name="caretXRelative" value="5" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764799" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764799" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_constraint" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764799" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764799" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/CharValue">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="395" />
-                <property name="caretXRelative" value="95" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7712220098267840659" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7712220098267840659" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7712220098267840659" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/CHAR">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="225" />
-                <property name="caretXRelative" value="5" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_constraint" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764799" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764799" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="305" />
-                <property name="caretXRelative" value="5" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764800" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764800" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_constraint" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764800" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764800" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="305" />
-                <property name="caretXRelative" value="5" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764800" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764800" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_constraint" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764800" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764800" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/StringValue">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="415" />
-                <property name="caretXRelative" value="115" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7712220098267840704" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7712220098267840704" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7712220098267840704" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/STRING">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_993c3a_a2a" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764800" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764800" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="305" />
-                <property name="caretXRelative" value="5" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764801" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764801" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_constraint" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764801" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764801" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="305" />
-                <property name="caretXRelative" value="5" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764801" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764801" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_constraint" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764801" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764801" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/IntegerValue">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
@@ -2095,7 +1942,7 @@
                 <property name="caretXRelative" value="70" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786698" />
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6051851628362636526" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2104,7 +1951,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786698" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/6051851628362613867" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2112,11 +1959,57 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786698" />
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6051851628362636526" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/FCNamed">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="375" />
+                <property name="caretXRelative" value="75" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/6051851628362613867" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/6051851628362613867" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/6051851628362613867" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/structure/CHAR_PropertySupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="91" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/structure/STRING_PropertySupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/BIGINTEGER">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
@@ -2127,18 +2020,73 @@
                 <property name="caretXRelative" value="5" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764802" />
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764801" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764802" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_constraint" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764802" />
-              </errorMarker>
-            </errorMarkers>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764801" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/BOOLEAN">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="305" />
+                <property name="caretXRelative" value="5" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764798" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764798" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/CHAR">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="755" />
+                <property name="caretXRelative" value="535" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_constraint" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764799" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
             <transactionalProperties />
             <foldable />
             <restoreAlways />
@@ -2154,29 +2102,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/IMPORTPATHPART">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="305" />
-                <property name="caretXRelative" value="5" />
+                <property name="caretX" value="385" />
+                <property name="caretXRelative" value="85" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764802" />
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241590" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="true" cellId="property_name" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764802" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="true" cellId="property_constraint" cellNumber="0" isInList="false">
-                <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764802" />
-              </errorMarker>
-            </errorMarkers>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241590" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/STRING">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="245" />
+                <property name="caretXRelative" value="25" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_constraint" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764800" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
             <transactionalProperties />
             <foldable />
             <restoreAlways />
@@ -2199,8 +2171,8 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="245" />
-                <property name="caretXRelative" value="25" />
+                <property name="caretX" value="305" />
+                <property name="caretXRelative" value="85" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_constraint" cellNumber="0" isInList="false">
                   <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764802" />
@@ -2212,7 +2184,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764802" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764802" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2223,18 +2195,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/DoubleValue">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/IICMVarid">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="415" />
-                <property name="caretXRelative" value="115" />
+                <property name="caretX" value="35" />
+                <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7712220098267840674" />
+                <cellInfo cellId="emptyRefPlaceHolder" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453215" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2243,7 +2215,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7712220098267840674" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453215" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2251,22 +2223,29 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/7712220098267840674" />
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453215" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/BIGINTEGER">
+    <entry file="file://$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/structure/DOUBLE_PropertySupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/NodeCONID">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="285" />
-                <property name="caretXRelative" value="65" />
+                <property name="caretX" value="85" />
+                <property name="caretXRelative" value="70" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_constraint" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764801" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711649" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2275,7 +2254,39 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712764801" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Test)/2089536204310458154" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711649" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Frege/Frege.Test/Skeleton">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="115" />
+                <property name="caretXRelative" value="55" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                  <node node_reference="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Test)/2089536204310458154" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Test)/2089536204310458154" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
