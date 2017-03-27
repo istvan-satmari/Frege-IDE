@@ -844,7 +844,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="pattern" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3Xsm2yzyl6i" resolve="Pattern" />
+      <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
     </node>
     <node concept="1TJgyj" id="5ZITH0PGZzl" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988863189" />
