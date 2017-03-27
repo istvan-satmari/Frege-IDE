@@ -9,7 +9,7 @@ package BaseFrege.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class Operator_BehaviorDescriptor {
+public class NodeOperator_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }

@@ -188,7 +188,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="operator" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="Operator" />
+      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="NodeOperator" />
     </node>
     <node concept="1TJgyi" id="5ZITH0PGMQi" role="1TKVEl">
       <property role="IQ2nx" value="6912716259988811154" />
@@ -733,7 +733,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="operator" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="Operator" />
+      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="NodeOperator" />
     </node>
   </node>
   <node concept="1TIwiD" id="5ZITH0PGXNE">
@@ -1298,7 +1298,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="Operator" />
+      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="NodeOperator" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyj0p">
@@ -1435,7 +1435,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="operator" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="Operator" />
+      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="NodeOperator" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyl7Q">
@@ -1728,7 +1728,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="operator" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="Operator" />
+      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="NodeOperator" />
     </node>
     <node concept="1TJgyj" id="5fWvJRHV8AA" role="1TKVEi">
       <property role="IQ2ns" value="6051851628362631590" />
@@ -1875,8 +1875,13 @@
   <node concept="1TIwiD" id="1NZxxHzeFNo">
     <property role="EcuMT" value="2089536204310232280" />
     <property role="3GE5qa" value="Definitions.Expressions.Terms" />
-    <property role="TrG5h" value="Operator" />
+    <property role="TrG5h" value="NodeOperator" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5G3QggfmaCL" role="1TKVEl">
+      <property role="IQ2nx" value="6558324093842139697" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="5G3QggfmaCI" resolve="OPERATOR" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1NZxxHzeI4H">
     <property role="EcuMT" value="2089536204310241581" />
@@ -1939,6 +1944,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7Cxf1w4Aony" resolve="NodeVARID" />
     </node>
+  </node>
+  <node concept="Az7Fb" id="5G3QggfmaCI">
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Primitives" />
+    <property role="TrG5h" value="OPERATOR" />
+    <property role="FLfZY" value="^[-#$%&amp;*+./&lt;=&gt;?@\\^|~:]+$" />
   </node>
 </model>
 

@@ -346,11 +346,11 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="BaseFrege.behavior.NodeVARID_BehaviorDescriptor" file="NodeVARID_BehaviorDescriptor.java">
+  <dependency className="BaseFrege.behavior.NodeOperator_BehaviorDescriptor" file="NodeOperator_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="BaseFrege.behavior.Operator_BehaviorDescriptor" file="Operator_BehaviorDescriptor.java">
+  <dependency className="BaseFrege.behavior.NodeVARID_BehaviorDescriptor" file="NodeVARID_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

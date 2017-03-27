@@ -1,4 +1,3 @@
-TODO - vazne: v mnohych miestach zle pouzity "Pattern" koncept; niekde, napr. pri guardoch, nemoze byt aj "functionName arg arg ... arg"; treba nastavit na "PatternArgument"
 TODO - operator koncept
 TODO - pozriet sa na operatory; v Haskelli existuje len 1 unarny operator, a to minus (treba opravit)
 
@@ -304,7 +303,37 @@ infixl 8 ‘myplus‘
 		..  :  ::  =  \  |  <-  ->  @  ˜  =>
 		- mozno skladat z tychto symbolov:
 		#  $  %  &  *  +  .  /  <  =  >  ?  @  \  ^  |  -  ~
+		
+		- podrobnejsie:
+		http://stackoverflow.com/questions/10548170/what-characters-are-permitted-for-haskell-operators
+		
+		asciiSymbol  ->   ! # $ % & * + . / < = > ? @ \ ^ | - ~
+		symbol     ->   asciiSymbol | unicodeSymbol (any Unicode symbol or punctuation, t.j. nie bezne pismena), okrem: ( ) , ; [ ] ` { }  _ : " '
+			- budem podporovat len asciiSymbol
+			
+		reservedop -> ..  :  ::  =  \  |  <-  ->  @  ~  =>
+		
+		varsym     -> symbol (symbol | :)*    	-- pricom sa ale nesmie naskladat na "reservedop" a ani nesmie mat formu ---------- atd. ("dashes")
+		consym     -> : (symbol | :)*			-- pricom sa ale nesmie naskladat na "reservedop"
 
+        An operator symbol starting with a colon ":" is a constructor.
+        An operator symbol starting with any other character is an ordinary identifier.
+		
+		Konstruktorove operatory nas ale nemusia zaujimat, lebo nasledujuci priklad:
+		data Rose a = a :> [Rose a] deriving Show
+		main = print $ 7 :> [1 :> [], 2 :> [], 3 :> [0 :> []]]
+		vo Frege neprejde a naopak tento priklad:
+		x :- y = x*y*2
+		main = print $ 7 :- 2
+		neprejde v Haskelli, ale zato vo Frege ano.
+		
+		Celkovo tak:
+		symbol ::= ! # $ % & * + . / < = > ? @ \ ^ | - ~ :
+		operator ::= symbol*
+		pricom sa nesmie naskladat na:
+		reservedop -> ..  :  ::  =  \  |  <-  ->  @  ~  =>
+		[TODO] skontrolovat cez constraint / typesystem, ci sa operator nenaskladal na nepovolenu sekvenciu
+		
 
 
 ANNOTATION (~ Annotation)

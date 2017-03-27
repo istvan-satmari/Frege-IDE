@@ -256,11 +256,11 @@
     <file name="NodeCONID_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.NodeCONID_BehaviorDescriptor" />
     </file>
+    <file name="NodeOperator_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.NodeOperator_BehaviorDescriptor" />
+    </file>
     <file name="NodeVARID_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.NodeVARID_BehaviorDescriptor" />
-    </file>
-    <file name="Operator_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.Operator_BehaviorDescriptor" />
     </file>
     <file name="PConstructor_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.PConstructor_BehaviorDescriptor" />

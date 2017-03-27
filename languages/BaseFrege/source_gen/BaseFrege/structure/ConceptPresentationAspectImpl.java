@@ -93,8 +93,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Module = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ModulePart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_NodeCONID = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_NodeOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Operator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PConstructor = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PList = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PListBrackets = new ConceptPresentationBuilder().create();
@@ -307,9 +307,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 83:
         return props_NodeCONID;
       case 84:
-        return props_NodeVARID;
+        return props_NodeOperator;
       case 85:
-        return props_Operator;
+        return props_NodeVARID;
       case 86:
         return props_PConstructor;
       case 87:

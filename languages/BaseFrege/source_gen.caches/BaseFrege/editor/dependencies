@@ -401,6 +401,7 @@
     <classNode dependClassName="BaseFrege.editor.Main_Editor" />
     <classNode dependClassName="BaseFrege.editor.Module_Editor" />
     <classNode dependClassName="BaseFrege.editor.NodeCONID_Editor" />
+    <classNode dependClassName="BaseFrege.editor.NodeOperator_Editor" />
     <classNode dependClassName="BaseFrege.editor.NodeVARID_Editor" />
     <classNode dependClassName="BaseFrege.editor.PConstructor_Editor" />
     <classNode dependClassName="BaseFrege.editor.PListBrackets_Editor" />
@@ -1256,6 +1257,15 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="BaseFrege.editor.NodeCONID_Editor" file="NodeCONID_Editor.java">
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="BaseFrege.editor.NodeOperator_Editor" file="NodeOperator_Editor.java">
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />

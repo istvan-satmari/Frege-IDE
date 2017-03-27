@@ -57,7 +57,9 @@
       <concept id="8800381220712753551" name="BaseFrege.structure.QVARID" flags="ng" index="1YILmn">
         <child id="8800381220712753557" name="varid" index="1YILmd" />
       </concept>
-      <concept id="2089536204310232280" name="BaseFrege.structure.Operator" flags="ng" index="1ZLjF3" />
+      <concept id="2089536204310232280" name="BaseFrege.structure.NodeOperator" flags="ng" index="1ZLjF3">
+        <property id="6558324093842139697" name="value" index="1kmRcP" />
+      </concept>
       <concept id="2089536204310241581" name="BaseFrege.structure.Resource" flags="ng" index="1ZLmsQ">
         <child id="2089536204310241582" name="resource" index="1ZLmsP" />
       </concept>
@@ -110,7 +112,9 @@
                 <property role="1YIbBE" value="y" />
               </node>
             </node>
-            <node concept="1ZLjF3" id="1NZxxHzfAGI" role="YO7Fd" />
+            <node concept="1ZLjF3" id="5G3QggfmEsC" role="YO7Fd">
+              <property role="1kmRcP" value=".:-?" />
+            </node>
           </node>
         </node>
         <node concept="2sPgAW" id="1NZxxHzfz06" role="1EnjJl">

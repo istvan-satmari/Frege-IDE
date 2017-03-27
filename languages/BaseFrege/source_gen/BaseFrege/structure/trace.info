@@ -34,6 +34,26 @@
       <unit id="2089536204310241590" at="7,0,18,0" name="BaseFrege.structure.PATHPART_PropertySupport" />
     </file>
   </root>
+  <root nodeRef="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6558324093842139694">
+    <file name="OPERATOR_PropertySupport.java">
+      <node id="6558324093842139694" at="8,44,9,28" concept="4" />
+      <node id="6558324093842139694" at="10,24,11,21" concept="1" />
+      <node id="6558324093842139694" at="12,12,13,24" concept="1" />
+      <node id="6558324093842139694" at="14,5,15,58" concept="5" />
+      <node id="6558324093842139694" at="12,10,14,5" concept="0" />
+      <node id="6558324093842139694" at="9,28,14,5" concept="2" />
+      <node id="6558324093842139694" at="8,0,17,0" concept="3" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <scope id="6558324093842139694" at="10,24,11,21" />
+      <scope id="6558324093842139694" at="12,12,13,24" />
+      <scope id="6558324093842139694" at="8,44,15,58">
+        <var name="testValue" id="6558324093842139694" />
+      </scope>
+      <scope id="6558324093842139694" at="8,0,17,0">
+        <var name="value" id="6558324093842139694" />
+      </scope>
+      <unit id="6558324093842139694" at="7,0,18,0" name="BaseFrege.structure.OPERATOR_PropertySupport" />
+    </file>
+  </root>
   <root nodeRef="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711588">
     <file name="CONID_PropertySupport.java">
       <node id="8800381220712711588" at="8,44,9,28" concept="4" />

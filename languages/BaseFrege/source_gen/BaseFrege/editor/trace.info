@@ -11,7 +11,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="15,0,511,0" name="BaseFrege.editor.EditorAspectDescriptorImpl" />
+      <unit at="15,0,516,0" name="BaseFrege.editor.EditorAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/1948263994234089223">
@@ -8490,6 +8490,44 @@
       </scope>
       <unit id="6531617606750725142" at="53,0,87,0" name="BaseFrege.editor.WherePart_Editor$letDefsSingleRoleHandler_t6g7ih_a1a" />
       <unit id="6531617606750725142" at="22,0,88,0" name="BaseFrege.editor.WherePart_Editor" />
+    </file>
+  </root>
+  <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/6558324093842139707">
+    <file name="NodeOperator_Editor.java">
+      <node id="6558324093842139707" at="14,79,15,61" concept="5" />
+      <node id="6558324093842139709" at="17,87,18,82" concept="4" />
+      <node id="6558324093842139709" at="18,82,19,30" concept="1" />
+      <node id="6558324093842139709" at="19,30,20,43" concept="1" />
+      <node id="6558324093842139709" at="20,43,21,26" concept="4" />
+      <node id="6558324093842139709" at="21,26,22,58" concept="1" />
+      <node id="6558324093842139709" at="22,58,23,43" concept="1" />
+      <node id="6558324093842139709" at="23,43,24,28" concept="1" />
+      <node id="6558324093842139709" at="24,28,25,73" concept="1" />
+      <node id="6558324093842139709" at="25,73,26,57" concept="4" />
+      <node id="6558324093842139709" at="27,35,28,82" concept="4" />
+      <node id="6558324093842139709" at="28,82,29,112" concept="5" />
+      <node id="6558324093842139709" at="30,10,31,22" concept="5" />
+      <node id="6558324093842139707" at="14,0,17,0" concept="3" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="6558324093842139709" at="26,57,31,22" concept="2" />
+      <node id="6558324093842139709" at="17,0,33,0" concept="3" trace="createProperty_8iin43_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="6558324093842139707" at="14,79,15,61" />
+      <scope id="6558324093842139709" at="27,35,29,112">
+        <var name="manager" id="6558324093842139709" />
+      </scope>
+      <scope id="6558324093842139707" at="14,0,17,0">
+        <var name="editorContext" id="6558324093842139707" />
+        <var name="node" id="6558324093842139707" />
+      </scope>
+      <scope id="6558324093842139709" at="17,87,31,22">
+        <var name="attributeConcept" id="6558324093842139709" />
+        <var name="editorCell" id="6558324093842139709" />
+        <var name="provider" id="6558324093842139709" />
+      </scope>
+      <scope id="6558324093842139709" at="17,0,33,0">
+        <var name="editorContext" id="6558324093842139709" />
+        <var name="node" id="6558324093842139709" />
+      </scope>
+      <unit id="6558324093842139707" at="13,0,34,0" name="BaseFrege.editor.NodeOperator_Editor" />
     </file>
   </root>
   <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/6912716259988828290">
