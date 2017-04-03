@@ -18,14 +18,16 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(123);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(125);
   /*package*/ final ConceptDescriptor myConceptAIOperator = createDescriptorForAIOperator();
   /*package*/ final ConceptDescriptor myConceptAIVarid = createDescriptorForAIVarid();
   /*package*/ final ConceptDescriptor myConceptAnnotation = createDescriptorForAnnotation();
   /*package*/ final ConceptDescriptor myConceptAnnotationItem = createDescriptorForAnnotationItem();
+  /*package*/ final ConceptDescriptor myConceptBCContent = createDescriptorForBCContent();
+  /*package*/ final ConceptDescriptor myConceptBCLine = createDescriptorForBCLine();
+  /*package*/ final ConceptDescriptor myConceptBCNestedComment = createDescriptorForBCNestedComment();
   /*package*/ final ConceptDescriptor myConceptBinaryExpression = createDescriptorForBinaryExpression();
   /*package*/ final ConceptDescriptor myConceptBlockComment = createDescriptorForBlockComment();
-  /*package*/ final ConceptDescriptor myConceptBlockCommentLine = createDescriptorForBlockCommentLine();
   /*package*/ final ConceptDescriptor myConceptBooleanValue = createDescriptorForBooleanValue();
   /*package*/ final ConceptDescriptor myConceptBrackets = createDescriptorForBrackets();
   /*package*/ final ConceptDescriptor myConceptCPExprToExpr = createDescriptorForCPExprToExpr();
@@ -148,130 +150,132 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     myIndexMap.put(myConceptAIVarid.getId(), 1);
     myIndexMap.put(myConceptAnnotation.getId(), 2);
     myIndexMap.put(myConceptAnnotationItem.getId(), 3);
-    myIndexMap.put(myConceptBinaryExpression.getId(), 4);
-    myIndexMap.put(myConceptBlockComment.getId(), 5);
-    myIndexMap.put(myConceptBlockCommentLine.getId(), 6);
-    myIndexMap.put(myConceptBooleanValue.getId(), 7);
-    myIndexMap.put(myConceptBrackets.getId(), 8);
-    myIndexMap.put(myConceptCPExprToExpr.getId(), 9);
-    myIndexMap.put(myConceptCPExprToGuards.getId(), 10);
-    myIndexMap.put(myConceptCase.getId(), 11);
-    myIndexMap.put(myConceptCasePart.getId(), 12);
-    myIndexMap.put(myConceptCharValue.getId(), 13);
-    myIndexMap.put(myConceptClass.getId(), 14);
-    myIndexMap.put(myConceptClassContext.getId(), 15);
-    myIndexMap.put(myConceptClassContextPart.getId(), 16);
-    myIndexMap.put(myConceptComment.getId(), 17);
-    myIndexMap.put(myConceptConstrCall.getId(), 18);
-    myIndexMap.put(myConceptData.getId(), 19);
-    myIndexMap.put(myConceptDataDefinitionPart.getId(), 20);
-    myIndexMap.put(myConceptDefinition.getId(), 21);
-    myIndexMap.put(myConceptDoubleValue.getId(), 22);
-    myIndexMap.put(myConceptExpression.getId(), 23);
-    myIndexMap.put(myConceptExpressionPart.getId(), 24);
-    myIndexMap.put(myConceptFCLambda.getId(), 25);
-    myIndexMap.put(myConceptFCNamed.getId(), 26);
-    myIndexMap.put(myConceptFCOperator.getId(), 27);
-    myIndexMap.put(myConceptFDAssignment.getId(), 28);
-    myIndexMap.put(myConceptFDGuards.getId(), 29);
-    myIndexMap.put(myConceptFixity.getId(), 30);
-    myIndexMap.put(myConceptFunCall.getId(), 31);
-    myIndexMap.put(myConceptFunDef.getId(), 32);
-    myIndexMap.put(myConceptFunctionDefinitions.getId(), 33);
-    myIndexMap.put(myConceptGuard.getId(), 34);
-    myIndexMap.put(myConceptIICMConid.getId(), 35);
-    myIndexMap.put(myConceptIICMOperator.getId(), 36);
-    myIndexMap.put(myConceptIICMVarid.getId(), 37);
-    myIndexMap.put(myConceptIICMember.getId(), 38);
-    myIndexMap.put(myConceptIfThenElse.getId(), 39);
-    myIndexMap.put(myConceptImport.getId(), 40);
-    myIndexMap.put(myConceptImportAs.getId(), 41);
-    myIndexMap.put(myConceptImportHiding.getId(), 42);
-    myIndexMap.put(myConceptImportItem.getId(), 43);
-    myIndexMap.put(myConceptImportItemClass.getId(), 44);
-    myIndexMap.put(myConceptImportItemOperator.getId(), 45);
-    myIndexMap.put(myConceptImportItemQconid.getId(), 46);
-    myIndexMap.put(myConceptImportItemQvarid.getId(), 47);
-    myIndexMap.put(myConceptImportList.getId(), 48);
-    myIndexMap.put(myConceptInfix.getId(), 49);
-    myIndexMap.put(myConceptInfixAbstract.getId(), 50);
-    myIndexMap.put(myConceptInfixl.getId(), 51);
-    myIndexMap.put(myConceptInfixr.getId(), 52);
-    myIndexMap.put(myConceptInstance.getId(), 53);
-    myIndexMap.put(myConceptInstanceContext.getId(), 54);
-    myIndexMap.put(myConceptInstanceContextPart.getId(), 55);
-    myIndexMap.put(myConceptIntegerValue.getId(), 56);
-    myIndexMap.put(myConceptLCQArrowAssignment.getId(), 57);
-    myIndexMap.put(myConceptLCQGuard.getId(), 58);
-    myIndexMap.put(myConceptLCQLet.getId(), 59);
-    myIndexMap.put(myConceptLCQualifier.getId(), 60);
-    myIndexMap.put(myConceptLDAnnotation.getId(), 61);
-    myIndexMap.put(myConceptLDFunDef.getId(), 62);
-    myIndexMap.put(myConceptLPExpression.getId(), 63);
-    myIndexMap.put(myConceptLPLambda.getId(), 64);
-    myIndexMap.put(myConceptLambda.getId(), 65);
-    myIndexMap.put(myConceptLambdaPart.getId(), 66);
-    myIndexMap.put(myConceptLet.getId(), 67);
-    myIndexMap.put(myConceptLetDefinition.getId(), 68);
-    myIndexMap.put(myConceptLetDefinitions.getId(), 69);
-    myIndexMap.put(myConceptLineComment.getId(), 70);
-    myIndexMap.put(myConceptList.getId(), 71);
-    myIndexMap.put(myConceptListComprehension.getId(), 72);
-    myIndexMap.put(myConceptListEnumeration.getId(), 73);
-    myIndexMap.put(myConceptListRange.getId(), 74);
-    myIndexMap.put(myConceptLiteral.getId(), 75);
-    myIndexMap.put(myConceptMPModule.getId(), 76);
-    myIndexMap.put(myConceptMPSCONID.getId(), 77);
-    myIndexMap.put(myConceptMPSVARID.getId(), 78);
-    myIndexMap.put(myConceptMPSimple.getId(), 79);
-    myIndexMap.put(myConceptMain.getId(), 80);
-    myIndexMap.put(myConceptModule.getId(), 81);
-    myIndexMap.put(myConceptModulePart.getId(), 82);
-    myIndexMap.put(myConceptNodeCONID.getId(), 83);
-    myIndexMap.put(myConceptNodeOperator.getId(), 84);
-    myIndexMap.put(myConceptNodeVARID.getId(), 85);
-    myIndexMap.put(myConceptPConstructor.getId(), 86);
-    myIndexMap.put(myConceptPList.getId(), 87);
-    myIndexMap.put(myConceptPListBrackets.getId(), 88);
-    myIndexMap.put(myConceptPListDot.getId(), 89);
-    myIndexMap.put(myConceptPListVar.getId(), 90);
-    myIndexMap.put(myConceptPLiteral.getId(), 91);
-    myIndexMap.put(myConceptPTuple.getId(), 92);
-    myIndexMap.put(myConceptPVarName.getId(), 93);
-    myIndexMap.put(myConceptPVarWildcard.getId(), 94);
-    myIndexMap.put(myConceptPVariable.getId(), 95);
-    myIndexMap.put(myConceptPattern.getId(), 96);
-    myIndexMap.put(myConceptPatternArgument.getId(), 97);
-    myIndexMap.put(myConceptPatternFunction.getId(), 98);
-    myIndexMap.put(myConceptPatternOperator.getId(), 99);
-    myIndexMap.put(myConceptQCONID.getId(), 100);
-    myIndexMap.put(myConceptQVARID.getId(), 101);
-    myIndexMap.put(myConceptResource.getId(), 102);
-    myIndexMap.put(myConceptResourcePart.getId(), 103);
-    myIndexMap.put(myConceptRho.getId(), 104);
-    myIndexMap.put(myConceptRhoContext.getId(), 105);
-    myIndexMap.put(myConceptSimpletype.getId(), 106);
-    myIndexMap.put(myConceptSimpletypes.getId(), 107);
-    myIndexMap.put(myConceptSkeleton.getId(), 108);
-    myIndexMap.put(myConceptStringValue.getId(), 109);
-    myIndexMap.put(myConceptTau.getId(), 110);
-    myIndexMap.put(myConceptTerm.getId(), 111);
-    myIndexMap.put(myConceptTopExpression.getId(), 112);
-    myIndexMap.put(myConceptTuple.getId(), 113);
-    myIndexMap.put(myConceptType.getId(), 114);
-    myIndexMap.put(myConceptTypeBrackets.getId(), 115);
-    myIndexMap.put(myConceptTypeList.getId(), 116);
-    myIndexMap.put(myConceptTypeName.getId(), 117);
-    myIndexMap.put(myConceptTypeTuple.getId(), 118);
-    myIndexMap.put(myConceptTypeVariable.getId(), 119);
-    myIndexMap.put(myConceptUnaryOPExpression.getId(), 120);
-    myIndexMap.put(myConceptUnderscore.getId(), 121);
-    myIndexMap.put(myConceptWherePart.getId(), 122);
+    myIndexMap.put(myConceptBCContent.getId(), 4);
+    myIndexMap.put(myConceptBCLine.getId(), 5);
+    myIndexMap.put(myConceptBCNestedComment.getId(), 6);
+    myIndexMap.put(myConceptBinaryExpression.getId(), 7);
+    myIndexMap.put(myConceptBlockComment.getId(), 8);
+    myIndexMap.put(myConceptBooleanValue.getId(), 9);
+    myIndexMap.put(myConceptBrackets.getId(), 10);
+    myIndexMap.put(myConceptCPExprToExpr.getId(), 11);
+    myIndexMap.put(myConceptCPExprToGuards.getId(), 12);
+    myIndexMap.put(myConceptCase.getId(), 13);
+    myIndexMap.put(myConceptCasePart.getId(), 14);
+    myIndexMap.put(myConceptCharValue.getId(), 15);
+    myIndexMap.put(myConceptClass.getId(), 16);
+    myIndexMap.put(myConceptClassContext.getId(), 17);
+    myIndexMap.put(myConceptClassContextPart.getId(), 18);
+    myIndexMap.put(myConceptComment.getId(), 19);
+    myIndexMap.put(myConceptConstrCall.getId(), 20);
+    myIndexMap.put(myConceptData.getId(), 21);
+    myIndexMap.put(myConceptDataDefinitionPart.getId(), 22);
+    myIndexMap.put(myConceptDefinition.getId(), 23);
+    myIndexMap.put(myConceptDoubleValue.getId(), 24);
+    myIndexMap.put(myConceptExpression.getId(), 25);
+    myIndexMap.put(myConceptExpressionPart.getId(), 26);
+    myIndexMap.put(myConceptFCLambda.getId(), 27);
+    myIndexMap.put(myConceptFCNamed.getId(), 28);
+    myIndexMap.put(myConceptFCOperator.getId(), 29);
+    myIndexMap.put(myConceptFDAssignment.getId(), 30);
+    myIndexMap.put(myConceptFDGuards.getId(), 31);
+    myIndexMap.put(myConceptFixity.getId(), 32);
+    myIndexMap.put(myConceptFunCall.getId(), 33);
+    myIndexMap.put(myConceptFunDef.getId(), 34);
+    myIndexMap.put(myConceptFunctionDefinitions.getId(), 35);
+    myIndexMap.put(myConceptGuard.getId(), 36);
+    myIndexMap.put(myConceptIICMConid.getId(), 37);
+    myIndexMap.put(myConceptIICMOperator.getId(), 38);
+    myIndexMap.put(myConceptIICMVarid.getId(), 39);
+    myIndexMap.put(myConceptIICMember.getId(), 40);
+    myIndexMap.put(myConceptIfThenElse.getId(), 41);
+    myIndexMap.put(myConceptImport.getId(), 42);
+    myIndexMap.put(myConceptImportAs.getId(), 43);
+    myIndexMap.put(myConceptImportHiding.getId(), 44);
+    myIndexMap.put(myConceptImportItem.getId(), 45);
+    myIndexMap.put(myConceptImportItemClass.getId(), 46);
+    myIndexMap.put(myConceptImportItemOperator.getId(), 47);
+    myIndexMap.put(myConceptImportItemQconid.getId(), 48);
+    myIndexMap.put(myConceptImportItemQvarid.getId(), 49);
+    myIndexMap.put(myConceptImportList.getId(), 50);
+    myIndexMap.put(myConceptInfix.getId(), 51);
+    myIndexMap.put(myConceptInfixAbstract.getId(), 52);
+    myIndexMap.put(myConceptInfixl.getId(), 53);
+    myIndexMap.put(myConceptInfixr.getId(), 54);
+    myIndexMap.put(myConceptInstance.getId(), 55);
+    myIndexMap.put(myConceptInstanceContext.getId(), 56);
+    myIndexMap.put(myConceptInstanceContextPart.getId(), 57);
+    myIndexMap.put(myConceptIntegerValue.getId(), 58);
+    myIndexMap.put(myConceptLCQArrowAssignment.getId(), 59);
+    myIndexMap.put(myConceptLCQGuard.getId(), 60);
+    myIndexMap.put(myConceptLCQLet.getId(), 61);
+    myIndexMap.put(myConceptLCQualifier.getId(), 62);
+    myIndexMap.put(myConceptLDAnnotation.getId(), 63);
+    myIndexMap.put(myConceptLDFunDef.getId(), 64);
+    myIndexMap.put(myConceptLPExpression.getId(), 65);
+    myIndexMap.put(myConceptLPLambda.getId(), 66);
+    myIndexMap.put(myConceptLambda.getId(), 67);
+    myIndexMap.put(myConceptLambdaPart.getId(), 68);
+    myIndexMap.put(myConceptLet.getId(), 69);
+    myIndexMap.put(myConceptLetDefinition.getId(), 70);
+    myIndexMap.put(myConceptLetDefinitions.getId(), 71);
+    myIndexMap.put(myConceptLineComment.getId(), 72);
+    myIndexMap.put(myConceptList.getId(), 73);
+    myIndexMap.put(myConceptListComprehension.getId(), 74);
+    myIndexMap.put(myConceptListEnumeration.getId(), 75);
+    myIndexMap.put(myConceptListRange.getId(), 76);
+    myIndexMap.put(myConceptLiteral.getId(), 77);
+    myIndexMap.put(myConceptMPModule.getId(), 78);
+    myIndexMap.put(myConceptMPSCONID.getId(), 79);
+    myIndexMap.put(myConceptMPSVARID.getId(), 80);
+    myIndexMap.put(myConceptMPSimple.getId(), 81);
+    myIndexMap.put(myConceptMain.getId(), 82);
+    myIndexMap.put(myConceptModule.getId(), 83);
+    myIndexMap.put(myConceptModulePart.getId(), 84);
+    myIndexMap.put(myConceptNodeCONID.getId(), 85);
+    myIndexMap.put(myConceptNodeOperator.getId(), 86);
+    myIndexMap.put(myConceptNodeVARID.getId(), 87);
+    myIndexMap.put(myConceptPConstructor.getId(), 88);
+    myIndexMap.put(myConceptPList.getId(), 89);
+    myIndexMap.put(myConceptPListBrackets.getId(), 90);
+    myIndexMap.put(myConceptPListDot.getId(), 91);
+    myIndexMap.put(myConceptPListVar.getId(), 92);
+    myIndexMap.put(myConceptPLiteral.getId(), 93);
+    myIndexMap.put(myConceptPTuple.getId(), 94);
+    myIndexMap.put(myConceptPVarName.getId(), 95);
+    myIndexMap.put(myConceptPVarWildcard.getId(), 96);
+    myIndexMap.put(myConceptPVariable.getId(), 97);
+    myIndexMap.put(myConceptPattern.getId(), 98);
+    myIndexMap.put(myConceptPatternArgument.getId(), 99);
+    myIndexMap.put(myConceptPatternFunction.getId(), 100);
+    myIndexMap.put(myConceptPatternOperator.getId(), 101);
+    myIndexMap.put(myConceptQCONID.getId(), 102);
+    myIndexMap.put(myConceptQVARID.getId(), 103);
+    myIndexMap.put(myConceptResource.getId(), 104);
+    myIndexMap.put(myConceptResourcePart.getId(), 105);
+    myIndexMap.put(myConceptRho.getId(), 106);
+    myIndexMap.put(myConceptRhoContext.getId(), 107);
+    myIndexMap.put(myConceptSimpletype.getId(), 108);
+    myIndexMap.put(myConceptSimpletypes.getId(), 109);
+    myIndexMap.put(myConceptSkeleton.getId(), 110);
+    myIndexMap.put(myConceptStringValue.getId(), 111);
+    myIndexMap.put(myConceptTau.getId(), 112);
+    myIndexMap.put(myConceptTerm.getId(), 113);
+    myIndexMap.put(myConceptTopExpression.getId(), 114);
+    myIndexMap.put(myConceptTuple.getId(), 115);
+    myIndexMap.put(myConceptType.getId(), 116);
+    myIndexMap.put(myConceptTypeBrackets.getId(), 117);
+    myIndexMap.put(myConceptTypeList.getId(), 118);
+    myIndexMap.put(myConceptTypeName.getId(), 119);
+    myIndexMap.put(myConceptTypeTuple.getId(), 120);
+    myIndexMap.put(myConceptTypeVariable.getId(), 121);
+    myIndexMap.put(myConceptUnaryOPExpression.getId(), 122);
+    myIndexMap.put(myConceptUnderscore.getId(), 123);
+    myIndexMap.put(myConceptWherePart.getId(), 124);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAIOperator, myConceptAIVarid, myConceptAnnotation, myConceptAnnotationItem, myConceptBinaryExpression, myConceptBlockComment, myConceptBlockCommentLine, myConceptBooleanValue, myConceptBrackets, myConceptCPExprToExpr, myConceptCPExprToGuards, myConceptCase, myConceptCasePart, myConceptCharValue, myConceptClass, myConceptClassContext, myConceptClassContextPart, myConceptComment, myConceptConstrCall, myConceptData, myConceptDataDefinitionPart, myConceptDefinition, myConceptDoubleValue, myConceptExpression, myConceptExpressionPart, myConceptFCLambda, myConceptFCNamed, myConceptFCOperator, myConceptFDAssignment, myConceptFDGuards, myConceptFixity, myConceptFunCall, myConceptFunDef, myConceptFunctionDefinitions, myConceptGuard, myConceptIICMConid, myConceptIICMOperator, myConceptIICMVarid, myConceptIICMember, myConceptIfThenElse, myConceptImport, myConceptImportAs, myConceptImportHiding, myConceptImportItem, myConceptImportItemClass, myConceptImportItemOperator, myConceptImportItemQconid, myConceptImportItemQvarid, myConceptImportList, myConceptInfix, myConceptInfixAbstract, myConceptInfixl, myConceptInfixr, myConceptInstance, myConceptInstanceContext, myConceptInstanceContextPart, myConceptIntegerValue, myConceptLCQArrowAssignment, myConceptLCQGuard, myConceptLCQLet, myConceptLCQualifier, myConceptLDAnnotation, myConceptLDFunDef, myConceptLPExpression, myConceptLPLambda, myConceptLambda, myConceptLambdaPart, myConceptLet, myConceptLetDefinition, myConceptLetDefinitions, myConceptLineComment, myConceptList, myConceptListComprehension, myConceptListEnumeration, myConceptListRange, myConceptLiteral, myConceptMPModule, myConceptMPSCONID, myConceptMPSVARID, myConceptMPSimple, myConceptMain, myConceptModule, myConceptModulePart, myConceptNodeCONID, myConceptNodeOperator, myConceptNodeVARID, myConceptPConstructor, myConceptPList, myConceptPListBrackets, myConceptPListDot, myConceptPListVar, myConceptPLiteral, myConceptPTuple, myConceptPVarName, myConceptPVarWildcard, myConceptPVariable, myConceptPattern, myConceptPatternArgument, myConceptPatternFunction, myConceptPatternOperator, myConceptQCONID, myConceptQVARID, myConceptResource, myConceptResourcePart, myConceptRho, myConceptRhoContext, myConceptSimpletype, myConceptSimpletypes, myConceptSkeleton, myConceptStringValue, myConceptTau, myConceptTerm, myConceptTopExpression, myConceptTuple, myConceptType, myConceptTypeBrackets, myConceptTypeList, myConceptTypeName, myConceptTypeTuple, myConceptTypeVariable, myConceptUnaryOPExpression, myConceptUnderscore, myConceptWherePart);
+    return Arrays.asList(myConceptAIOperator, myConceptAIVarid, myConceptAnnotation, myConceptAnnotationItem, myConceptBCContent, myConceptBCLine, myConceptBCNestedComment, myConceptBinaryExpression, myConceptBlockComment, myConceptBooleanValue, myConceptBrackets, myConceptCPExprToExpr, myConceptCPExprToGuards, myConceptCase, myConceptCasePart, myConceptCharValue, myConceptClass, myConceptClassContext, myConceptClassContextPart, myConceptComment, myConceptConstrCall, myConceptData, myConceptDataDefinitionPart, myConceptDefinition, myConceptDoubleValue, myConceptExpression, myConceptExpressionPart, myConceptFCLambda, myConceptFCNamed, myConceptFCOperator, myConceptFDAssignment, myConceptFDGuards, myConceptFixity, myConceptFunCall, myConceptFunDef, myConceptFunctionDefinitions, myConceptGuard, myConceptIICMConid, myConceptIICMOperator, myConceptIICMVarid, myConceptIICMember, myConceptIfThenElse, myConceptImport, myConceptImportAs, myConceptImportHiding, myConceptImportItem, myConceptImportItemClass, myConceptImportItemOperator, myConceptImportItemQconid, myConceptImportItemQvarid, myConceptImportList, myConceptInfix, myConceptInfixAbstract, myConceptInfixl, myConceptInfixr, myConceptInstance, myConceptInstanceContext, myConceptInstanceContextPart, myConceptIntegerValue, myConceptLCQArrowAssignment, myConceptLCQGuard, myConceptLCQLet, myConceptLCQualifier, myConceptLDAnnotation, myConceptLDFunDef, myConceptLPExpression, myConceptLPLambda, myConceptLambda, myConceptLambdaPart, myConceptLet, myConceptLetDefinition, myConceptLetDefinitions, myConceptLineComment, myConceptList, myConceptListComprehension, myConceptListEnumeration, myConceptListRange, myConceptLiteral, myConceptMPModule, myConceptMPSCONID, myConceptMPSVARID, myConceptMPSimple, myConceptMain, myConceptModule, myConceptModulePart, myConceptNodeCONID, myConceptNodeOperator, myConceptNodeVARID, myConceptPConstructor, myConceptPList, myConceptPListBrackets, myConceptPListDot, myConceptPListVar, myConceptPLiteral, myConceptPTuple, myConceptPVarName, myConceptPVarWildcard, myConceptPVariable, myConceptPattern, myConceptPatternArgument, myConceptPatternFunction, myConceptPatternOperator, myConceptQCONID, myConceptQVARID, myConceptResource, myConceptResourcePart, myConceptRho, myConceptRhoContext, myConceptSimpletype, myConceptSimpletypes, myConceptSkeleton, myConceptStringValue, myConceptTau, myConceptTerm, myConceptTopExpression, myConceptTuple, myConceptType, myConceptTypeBrackets, myConceptTypeList, myConceptTypeName, myConceptTypeTuple, myConceptTypeVariable, myConceptUnaryOPExpression, myConceptUnderscore, myConceptWherePart);
   }
 
   @Override
@@ -291,242 +295,246 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 3:
         return myConceptAnnotationItem;
       case 4:
-        return myConceptBinaryExpression;
+        return myConceptBCContent;
       case 5:
-        return myConceptBlockComment;
+        return myConceptBCLine;
       case 6:
-        return myConceptBlockCommentLine;
+        return myConceptBCNestedComment;
       case 7:
-        return myConceptBooleanValue;
+        return myConceptBinaryExpression;
       case 8:
-        return myConceptBrackets;
+        return myConceptBlockComment;
       case 9:
-        return myConceptCPExprToExpr;
+        return myConceptBooleanValue;
       case 10:
-        return myConceptCPExprToGuards;
+        return myConceptBrackets;
       case 11:
-        return myConceptCase;
+        return myConceptCPExprToExpr;
       case 12:
-        return myConceptCasePart;
+        return myConceptCPExprToGuards;
       case 13:
-        return myConceptCharValue;
+        return myConceptCase;
       case 14:
-        return myConceptClass;
+        return myConceptCasePart;
       case 15:
-        return myConceptClassContext;
+        return myConceptCharValue;
       case 16:
-        return myConceptClassContextPart;
+        return myConceptClass;
       case 17:
-        return myConceptComment;
+        return myConceptClassContext;
       case 18:
-        return myConceptConstrCall;
+        return myConceptClassContextPart;
       case 19:
-        return myConceptData;
+        return myConceptComment;
       case 20:
-        return myConceptDataDefinitionPart;
+        return myConceptConstrCall;
       case 21:
-        return myConceptDefinition;
+        return myConceptData;
       case 22:
-        return myConceptDoubleValue;
+        return myConceptDataDefinitionPart;
       case 23:
-        return myConceptExpression;
+        return myConceptDefinition;
       case 24:
-        return myConceptExpressionPart;
+        return myConceptDoubleValue;
       case 25:
-        return myConceptFCLambda;
+        return myConceptExpression;
       case 26:
-        return myConceptFCNamed;
+        return myConceptExpressionPart;
       case 27:
-        return myConceptFCOperator;
+        return myConceptFCLambda;
       case 28:
-        return myConceptFDAssignment;
+        return myConceptFCNamed;
       case 29:
-        return myConceptFDGuards;
+        return myConceptFCOperator;
       case 30:
-        return myConceptFixity;
+        return myConceptFDAssignment;
       case 31:
-        return myConceptFunCall;
+        return myConceptFDGuards;
       case 32:
-        return myConceptFunDef;
+        return myConceptFixity;
       case 33:
-        return myConceptFunctionDefinitions;
+        return myConceptFunCall;
       case 34:
-        return myConceptGuard;
+        return myConceptFunDef;
       case 35:
-        return myConceptIICMConid;
+        return myConceptFunctionDefinitions;
       case 36:
-        return myConceptIICMOperator;
+        return myConceptGuard;
       case 37:
-        return myConceptIICMVarid;
+        return myConceptIICMConid;
       case 38:
-        return myConceptIICMember;
+        return myConceptIICMOperator;
       case 39:
-        return myConceptIfThenElse;
+        return myConceptIICMVarid;
       case 40:
-        return myConceptImport;
+        return myConceptIICMember;
       case 41:
-        return myConceptImportAs;
+        return myConceptIfThenElse;
       case 42:
-        return myConceptImportHiding;
+        return myConceptImport;
       case 43:
-        return myConceptImportItem;
+        return myConceptImportAs;
       case 44:
-        return myConceptImportItemClass;
+        return myConceptImportHiding;
       case 45:
-        return myConceptImportItemOperator;
+        return myConceptImportItem;
       case 46:
-        return myConceptImportItemQconid;
+        return myConceptImportItemClass;
       case 47:
-        return myConceptImportItemQvarid;
+        return myConceptImportItemOperator;
       case 48:
-        return myConceptImportList;
+        return myConceptImportItemQconid;
       case 49:
-        return myConceptInfix;
+        return myConceptImportItemQvarid;
       case 50:
-        return myConceptInfixAbstract;
+        return myConceptImportList;
       case 51:
-        return myConceptInfixl;
+        return myConceptInfix;
       case 52:
-        return myConceptInfixr;
+        return myConceptInfixAbstract;
       case 53:
-        return myConceptInstance;
+        return myConceptInfixl;
       case 54:
-        return myConceptInstanceContext;
+        return myConceptInfixr;
       case 55:
-        return myConceptInstanceContextPart;
+        return myConceptInstance;
       case 56:
-        return myConceptIntegerValue;
+        return myConceptInstanceContext;
       case 57:
-        return myConceptLCQArrowAssignment;
+        return myConceptInstanceContextPart;
       case 58:
-        return myConceptLCQGuard;
+        return myConceptIntegerValue;
       case 59:
-        return myConceptLCQLet;
+        return myConceptLCQArrowAssignment;
       case 60:
-        return myConceptLCQualifier;
+        return myConceptLCQGuard;
       case 61:
-        return myConceptLDAnnotation;
+        return myConceptLCQLet;
       case 62:
-        return myConceptLDFunDef;
+        return myConceptLCQualifier;
       case 63:
-        return myConceptLPExpression;
+        return myConceptLDAnnotation;
       case 64:
-        return myConceptLPLambda;
+        return myConceptLDFunDef;
       case 65:
-        return myConceptLambda;
+        return myConceptLPExpression;
       case 66:
-        return myConceptLambdaPart;
+        return myConceptLPLambda;
       case 67:
-        return myConceptLet;
+        return myConceptLambda;
       case 68:
-        return myConceptLetDefinition;
+        return myConceptLambdaPart;
       case 69:
-        return myConceptLetDefinitions;
+        return myConceptLet;
       case 70:
-        return myConceptLineComment;
+        return myConceptLetDefinition;
       case 71:
-        return myConceptList;
+        return myConceptLetDefinitions;
       case 72:
-        return myConceptListComprehension;
+        return myConceptLineComment;
       case 73:
-        return myConceptListEnumeration;
+        return myConceptList;
       case 74:
-        return myConceptListRange;
+        return myConceptListComprehension;
       case 75:
-        return myConceptLiteral;
+        return myConceptListEnumeration;
       case 76:
-        return myConceptMPModule;
+        return myConceptListRange;
       case 77:
-        return myConceptMPSCONID;
+        return myConceptLiteral;
       case 78:
-        return myConceptMPSVARID;
+        return myConceptMPModule;
       case 79:
-        return myConceptMPSimple;
+        return myConceptMPSCONID;
       case 80:
-        return myConceptMain;
+        return myConceptMPSVARID;
       case 81:
-        return myConceptModule;
+        return myConceptMPSimple;
       case 82:
-        return myConceptModulePart;
+        return myConceptMain;
       case 83:
-        return myConceptNodeCONID;
+        return myConceptModule;
       case 84:
-        return myConceptNodeOperator;
+        return myConceptModulePart;
       case 85:
-        return myConceptNodeVARID;
+        return myConceptNodeCONID;
       case 86:
-        return myConceptPConstructor;
+        return myConceptNodeOperator;
       case 87:
-        return myConceptPList;
+        return myConceptNodeVARID;
       case 88:
-        return myConceptPListBrackets;
+        return myConceptPConstructor;
       case 89:
-        return myConceptPListDot;
+        return myConceptPList;
       case 90:
-        return myConceptPListVar;
+        return myConceptPListBrackets;
       case 91:
-        return myConceptPLiteral;
+        return myConceptPListDot;
       case 92:
-        return myConceptPTuple;
+        return myConceptPListVar;
       case 93:
-        return myConceptPVarName;
+        return myConceptPLiteral;
       case 94:
-        return myConceptPVarWildcard;
+        return myConceptPTuple;
       case 95:
-        return myConceptPVariable;
+        return myConceptPVarName;
       case 96:
-        return myConceptPattern;
+        return myConceptPVarWildcard;
       case 97:
-        return myConceptPatternArgument;
+        return myConceptPVariable;
       case 98:
-        return myConceptPatternFunction;
+        return myConceptPattern;
       case 99:
-        return myConceptPatternOperator;
+        return myConceptPatternArgument;
       case 100:
-        return myConceptQCONID;
+        return myConceptPatternFunction;
       case 101:
-        return myConceptQVARID;
+        return myConceptPatternOperator;
       case 102:
-        return myConceptResource;
+        return myConceptQCONID;
       case 103:
-        return myConceptResourcePart;
+        return myConceptQVARID;
       case 104:
-        return myConceptRho;
+        return myConceptResource;
       case 105:
-        return myConceptRhoContext;
+        return myConceptResourcePart;
       case 106:
-        return myConceptSimpletype;
+        return myConceptRho;
       case 107:
-        return myConceptSimpletypes;
+        return myConceptRhoContext;
       case 108:
-        return myConceptSkeleton;
+        return myConceptSimpletype;
       case 109:
-        return myConceptStringValue;
+        return myConceptSimpletypes;
       case 110:
-        return myConceptTau;
+        return myConceptSkeleton;
       case 111:
-        return myConceptTerm;
+        return myConceptStringValue;
       case 112:
-        return myConceptTopExpression;
+        return myConceptTau;
       case 113:
-        return myConceptTuple;
+        return myConceptTerm;
       case 114:
-        return myConceptType;
+        return myConceptTopExpression;
       case 115:
-        return myConceptTypeBrackets;
+        return myConceptTuple;
       case 116:
-        return myConceptTypeList;
+        return myConceptType;
       case 117:
-        return myConceptTypeName;
+        return myConceptTypeBrackets;
       case 118:
-        return myConceptTypeTuple;
+        return myConceptTypeList;
       case 119:
-        return myConceptTypeVariable;
+        return myConceptTypeName;
       case 120:
-        return myConceptUnaryOPExpression;
+        return myConceptTypeTuple;
       case 121:
-        return myConceptUnderscore;
+        return myConceptTypeVariable;
       case 122:
+        return myConceptUnaryOPExpression;
+      case 123:
+        return myConceptUnderscore;
+      case 124:
         return myConceptWherePart;
       default:
         throw new IllegalStateException();
@@ -555,14 +563,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForAnnotationItem() {
     return new ConceptDescriptorBuilder("BaseFrege.structure.AnnotationItem", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3894eb9L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().sourceNode(new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "4565621053812461241")).create();
   }
+  private static ConceptDescriptor createDescriptorForBCContent() {
+    return new ConceptDescriptorBuilder("BaseFrege.structure.BCContent", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb6dcL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().sourceNode(new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "1156512287654131420")).create();
+  }
+  private static ConceptDescriptor createDescriptorForBCLine() {
+    return new ConceptDescriptorBuilder("BaseFrege.structure.BCLine", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e2aL)).super_("BaseFrege.structure.BCContent").version(1).super_(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb6dcL)).parents("BaseFrege.structure.BCContent").parentIds(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb6dcL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x76d2ad9a0d655e2bL, "text", new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "8562096718746050091"))).properties("text").sourceNode(new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "8562096718746050090")).create();
+  }
+  private static ConceptDescriptor createDescriptorForBCNestedComment() {
+    return new ConceptDescriptorBuilder("BaseFrege.structure.BCNestedComment", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb707L)).super_("BaseFrege.structure.BCContent").version(1).super_(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb6dcL)).parents("BaseFrege.structure.BCContent").parentIds(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb6dcL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x100cc1cc53ffb723L, "comment", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e0fL), false, false, false, new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "1156512287654131491"))).children(new String[]{"comment"}, new boolean[]{false}).alias("{-", "Nested block comment").sourceNode(new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "1156512287654131463")).create();
+  }
   private static ConceptDescriptor createDescriptorForBinaryExpression() {
     return new ConceptDescriptorBuilder("BaseFrege.structure.BinaryExpression", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b37071L)).super_("BaseFrege.structure.ExpressionPart").version(1).super_(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc6582a350aL)).parents("BaseFrege.structure.ExpressionPart").parentIds(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc6582a350aL)).childDescriptors(new ConceptDescriptorBuilder.Link(0x5feee6d035b3dde8L, "left", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc6582a350aL), false, false, false, new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "6912716259988856296")), new ConceptDescriptorBuilder.Link(0x5feee6d035b3ddeaL, "right", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc6582a350aL), false, false, false, new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "6912716259988856298")), new ConceptDescriptorBuilder.Link(0x66fa4fc6582a350bL, "operator", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1cff861b633abcd8L), false, false, false, new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "7420331049347593483"))).children(new String[]{"left", "right", "operator"}, new boolean[]{false, false, false}).sourceNode(new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "6912716259988828273")).create();
   }
   private static ConceptDescriptor createDescriptorForBlockComment() {
-    return new ConceptDescriptorBuilder("BaseFrege.structure.BlockComment", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e0fL)).super_("BaseFrege.structure.Comment").version(1).super_(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655de6L)).parents("BaseFrege.structure.Comment").parentIds(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655de6L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x76d2ad9a0d655e3aL, "parts", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e0fL), true, true, false, new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "8562096718746050106"))).children(new String[]{"parts"}, new boolean[]{true}).alias("{-", "").sourceNode(new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "8562096718746050063")).create();
-  }
-  private static ConceptDescriptor createDescriptorForBlockCommentLine() {
-    return new ConceptDescriptorBuilder("BaseFrege.structure.BlockCommentLine", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e2aL)).super_("BaseFrege.structure.BlockComment").version(1).super_(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e0fL)).parents("BaseFrege.structure.BlockComment").parentIds(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e0fL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x76d2ad9a0d655e2bL, "text", new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "8562096718746050091"))).properties("text").sourceNode(new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "8562096718746050090")).create();
+    return new ConceptDescriptorBuilder("BaseFrege.structure.BlockComment", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e0fL)).super_("BaseFrege.structure.Comment").version(1).super_(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655de6L)).parents("BaseFrege.structure.Comment").parentIds(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655de6L)).childDescriptors(new ConceptDescriptorBuilder.Link(0x76d2ad9a0d655e3aL, "parts", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb6dcL), true, true, false, new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "8562096718746050106"))).children(new String[]{"parts"}, new boolean[]{true}).alias("{-", "").sourceNode(new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "8562096718746050063")).create();
   }
   private static ConceptDescriptor createDescriptorForBooleanValue() {
     return new ConceptDescriptorBuilder("BaseFrege.structure.BooleanValue", MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d90cL)).super_("BaseFrege.structure.Literal").version(1).super_(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3fa4bL)).parents("BaseFrege.structure.Literal").parentIds(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3fa4bL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x6b074f517ae2007aL, "value", new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "7712220098267840634"))).properties("value").sourceNode(new SNodePointer("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)", "574920793184786700")).create();

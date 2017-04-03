@@ -1,4 +1,3 @@
-TODO - operator koncept
 TODO - pozriet sa na operatory; v Haskelli existuje len 1 unarny operator, a to minus (treba opravit)
 
 

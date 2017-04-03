@@ -10,11 +10,11 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 
-public class BlockCommentLine_Editor extends DefaultNodeEditor {
+public class BCLine_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createProperty_vncqfn_a(editorContext, node);
+    return this.createProperty_p61lsr_a(editorContext, node);
   }
-  private EditorCell createProperty_vncqfn_a(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_p61lsr_a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("text");
     provider.setNoTargetText("<no text>");

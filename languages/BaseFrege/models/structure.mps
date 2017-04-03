@@ -558,14 +558,14 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parts" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7riFpCdplSf" resolve="BlockComment" />
+      <ref role="20lvS9" node="10cKsLjZVrs" resolve="BCContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="7riFpCdplSE">
     <property role="EcuMT" value="8562096718746050090" />
     <property role="3GE5qa" value="Definitions.Comments.BlockComment" />
-    <property role="TrG5h" value="BlockCommentLine" />
-    <ref role="1TJDcQ" node="7riFpCdplSf" resolve="BlockComment" />
+    <property role="TrG5h" value="BCLine" />
+    <ref role="1TJDcQ" node="10cKsLjZVrs" resolve="BCContent" />
     <node concept="1TJgyi" id="7riFpCdplSF" role="1TKVEl">
       <property role="IQ2nx" value="8562096718746050091" />
       <property role="TrG5h" value="text" />
@@ -1915,7 +1915,7 @@
     </node>
   </node>
   <node concept="Az7Fb" id="1NZxxHzeI4Q">
-    <property role="3GE5qa" value="Resource" />
+    <property role="3GE5qa" value="Resource.Primitives" />
     <property role="TrG5h" value="PATHPART" />
     <property role="FLfZY" value="^([a-zA-Z][_a-zA-Z0-9]*)|(_[_a-zA-Z0-9]+)$" />
   </node>
@@ -1949,6 +1949,29 @@
     <property role="3GE5qa" value="Definitions.Expressions.Terms.Primitives" />
     <property role="TrG5h" value="OPERATOR" />
     <property role="FLfZY" value="^[-#$%&amp;*+./&lt;=&gt;?@\\^|~:]+$" />
+  </node>
+  <node concept="1TIwiD" id="10cKsLjZVrs">
+    <property role="EcuMT" value="1156512287654131420" />
+    <property role="3GE5qa" value="Definitions.Comments.BlockComment" />
+    <property role="TrG5h" value="BCContent" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="10cKsLjZVs7">
+    <property role="EcuMT" value="1156512287654131463" />
+    <property role="3GE5qa" value="Definitions.Comments.BlockComment" />
+    <property role="TrG5h" value="BCNestedComment" />
+    <property role="34LRSv" value="{-" />
+    <property role="R4oN_" value="Nested block comment" />
+    <ref role="1TJDcQ" node="10cKsLjZVrs" resolve="BCContent" />
+    <node concept="1TJgyj" id="10cKsLjZVsz" role="1TKVEi">
+      <property role="IQ2ns" value="1156512287654131491" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="comment" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7riFpCdplSf" resolve="BlockComment" />
+    </node>
   </node>
 </model>
 

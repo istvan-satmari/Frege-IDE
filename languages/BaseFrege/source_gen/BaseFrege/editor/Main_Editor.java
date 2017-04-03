@@ -21,7 +21,7 @@ public class Main_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_w8a4ih_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(main _ = do) will be resolved later");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
     editorCell.setCellId("Constant_w8a4ih_a0");
     editorCell.setDefaultText("");
     return editorCell;

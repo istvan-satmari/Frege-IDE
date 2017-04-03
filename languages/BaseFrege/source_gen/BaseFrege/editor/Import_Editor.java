@@ -15,7 +15,6 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class Import_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -27,9 +26,8 @@ public class Import_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_jvmgtf_a0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_jvmgtf_b0(editorContext, node));
-    if (renderingCondition_jvmgtf_a2a(node, editorContext)) {
-      editorCell.addEditorCell(this.createRefNode_jvmgtf_c0(editorContext, node));
-    }
+    editorCell.addEditorCell(this.createRefNode_jvmgtf_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_jvmgtf_d0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_jvmgtf_a0(EditorContext editorContext, SNode node) {
@@ -104,7 +102,37 @@ public class Import_Editor extends DefaultNodeEditor {
       return "<no as>";
     }
   }
-  private static boolean renderingCondition_jvmgtf_a2a(SNode node, EditorContext editorContext) {
-    return (SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d877L, 0x76d2ad9a0d6513caL, "as")) != null);
+  private EditorCell createRefNode_jvmgtf_d0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Import_Editor.listSingleRoleHandler_jvmgtf_d0(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d877L, 0x3f5c5828a388ab5cL, "list"), editorContext);
+    return provider.createCell();
+  }
+  private class listSingleRoleHandler_jvmgtf_d0 extends SingleRoleCellProvider {
+    public listSingleRoleHandler_jvmgtf_d0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+      super(ownerNode, containmentLink, context);
+    }
+    protected EditorCell createChildCell(SNode child) {
+      EditorCell editorCell = super.createChildCell(child);
+      installCellInfo(child, editorCell);
+      return editorCell;
+    }
+    private void installCellInfo(SNode child, EditorCell editorCell) {
+      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+        editorCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(editorCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d877L, 0x3f5c5828a388ab5cL, "list"), child), new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext)));
+      }
+      if (editorCell.getRole() == null) {
+        editorCell.setRole("list");
+      }
+    }
+    @Override
+    protected EditorCell createEmptyCell() {
+      EditorCell editorCell = super.createEmptyCell();
+      editorCell.setCellId("empty_list");
+
+      installCellInfo(null, editorCell);
+      return editorCell;
+    }
+    protected String getNoTargetText() {
+      return "<no list>";
+    }
   }
 }

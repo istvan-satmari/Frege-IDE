@@ -25,8 +25,6 @@ import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandlerElementKeyMap;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class FCNamed_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -38,9 +36,7 @@ public class FCNamed_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_53x7x4_a0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_53x7x4_b0(editorContext, node));
-    if (renderingCondition_53x7x4_a2a(node, editorContext)) {
-      editorCell.addEditorCell(this.createRefNodeList_53x7x4_c0(editorContext, node));
-    }
+    editorCell.addEditorCell(this.createRefNodeList_53x7x4_c0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_53x7x4_d0(editorContext, node));
     return editorCell;
   }
@@ -134,9 +130,6 @@ public class FCNamed_Editor extends DefaultNodeEditor {
       editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(prevNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
       return editorCell;
     }
-  }
-  private static boolean renderingCondition_53x7x4_a2a(SNode node, EditorContext editorContext) {
-    return ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53fc7efdedec445dL, 0x53fc7efdedec4460L, "arguments"))).isNotEmpty();
   }
   private EditorCell createConstant_53x7x4_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");

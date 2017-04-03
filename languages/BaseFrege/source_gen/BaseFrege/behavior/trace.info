@@ -13,14 +13,20 @@
     <file name="Annotation_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.Annotation_BehaviorDescriptor" />
     </file>
+    <file name="BCContent_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.BCContent_BehaviorDescriptor" />
+    </file>
+    <file name="BCLine_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.BCLine_BehaviorDescriptor" />
+    </file>
+    <file name="BCNestedComment_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.BCNestedComment_BehaviorDescriptor" />
+    </file>
     <file name="BehaviorAspectDescriptor.java">
       <unit at="13,0,41,0" name="BaseFrege.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BinaryExpression_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.BinaryExpression_BehaviorDescriptor" />
-    </file>
-    <file name="BlockCommentLine_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.BlockCommentLine_BehaviorDescriptor" />
     </file>
     <file name="BlockComment_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.BlockComment_BehaviorDescriptor" />
