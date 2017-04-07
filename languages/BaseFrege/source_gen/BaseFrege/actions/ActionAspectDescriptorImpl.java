@@ -18,6 +18,6 @@ public class ActionAspectDescriptorImpl extends BaseActionAspectDescriptor imple
 
   @Override
   public boolean hasBuilders() {
-    return false;
+    return true;
   }
 }

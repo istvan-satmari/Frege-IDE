@@ -9,6 +9,7 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.editor.runtime.style.Padding;
 import jetbrains.mps.editor.runtime.style.Measure;
+import jetbrains.mps.nodeEditor.MPSFonts;
 
 public class Separators_StyleSheet {
   public static void apply_Padded(Style style, EditorCell editorCell) {
@@ -16,6 +17,13 @@ public class Separators_StyleSheet {
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
     style.set(StyleAttributes.PADDING_LEFT, 0, new Padding(1, Measure.SPACES));
     style.set(StyleAttributes.PADDING_RIGHT, 0, new Padding(0, Measure.SPACES));
+  }
+  public static void apply_PaddedRightPlain(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    style.set(StyleAttributes.PADDING_LEFT, 0, new Padding(0, Measure.SPACES));
+    style.set(StyleAttributes.PADDING_RIGHT, 0, new Padding(1, Measure.SPACES));
+    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.PLAIN);
   }
 
 }

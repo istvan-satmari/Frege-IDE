@@ -55,6 +55,10 @@ module AnotherBigModule (module Data.Set, module AnotherBigModule) where
 	- 'module' VlastneMenoModulu parts where
 	- parts s jednotlivymi castami oddelenymi ciarkami
 		- pokial prazdne, zatvorky nezobrazujeme
+		
+	- [TODO] zistit, co mozno exportovat a jak
+		- striktna referencia, t.j. aby bolo mozne pouzit len konkretne nodes
+		
 	- 2 moznosti z abstraktneho: "module QCONID", alebo "QCONID"
 		- [TODO] musi byt kvalifikovane meno (v oboch pripadoch)
 		- QCONID su CONID oddelene bodkami
