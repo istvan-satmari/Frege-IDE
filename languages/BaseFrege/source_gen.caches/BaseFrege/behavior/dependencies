@@ -110,6 +110,10 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="BaseFrege.behavior.EmptyLine_BehaviorDescriptor" file="EmptyLine_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="BaseFrege.behavior.ExpressionPart_BehaviorDescriptor" file="ExpressionPart_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -423,10 +427,6 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="BaseFrege.behavior.QVARID_BehaviorDescriptor" file="QVARID_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="BaseFrege.behavior.ResourcePart_BehaviorDescriptor" file="ResourcePart_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

@@ -4,7 +4,7 @@ package BaseFrege.structure;
 
 import jetbrains.mps.smodel.PropertySupport;
 
-public class PATHPART_PropertySupport extends PropertySupport {
+public class RESOURCEPATH_PropertySupport extends PropertySupport {
   public boolean canSetValue(String value) {
     String testValue = null;
     if (value == null) {
@@ -12,6 +12,6 @@ public class PATHPART_PropertySupport extends PropertySupport {
     } else {
       testValue = value;
     }
-    return testValue.matches("^([a-zA-Z][_a-zA-Z0-9]*)|(_[_a-zA-Z0-9]+)$");
+    return testValue.matches("^((([a-zA-Z][_a-zA-Z0-9]*)|(_[_a-zA-Z0-9]+)).)*([A-Z][_a-zA-Z0-9]*)$");
   }
 }

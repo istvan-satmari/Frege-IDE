@@ -21,48 +21,46 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuItem;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
-public class BCContent_SubstituteMenu extends SubstituteMenuBase {
+public class Definition_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new BCContent_SubstituteMenu.SubstituteMenuPart_Subconcepts_5v8dkg_a());
-    result.add(new BCContent_SubstituteMenu.SubstituteMenuPart_Action_5v8dkg_b());
+    result.add(new Definition_SubstituteMenu.SubstituteMenuPart_Subconcepts_d54ywy_a());
+    result.add(new Definition_SubstituteMenu.SubstituteMenuPart_Action_d54ywy_b());
     return result;
   }
-  public class SubstituteMenuPart_Subconcepts_5v8dkg_a extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+  public class SubstituteMenuPart_Subconcepts_d54ywy_a extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb6dcL, "BaseFrege.structure.BCContent"));
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition"));
     }
     @Override
     protected Collection<SubstituteMenuItem> createItemsForConcept(SubstituteMenuContext context, SAbstractConcept concept) {
       return context.createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(context.getEditorContext().getRepository()), concept));
     }
   }
-  private class SubstituteMenuPart_Action_5v8dkg_b extends SingleItemSubstituteMenuPart {
+  private class SubstituteMenuPart_Action_d54ywy_b extends SingleItemSubstituteMenuPart {
 
     @Nullable
     @Override
     protected SubstituteMenuItem createItem(SubstituteMenuContext _context) {
-      return new BCContent_SubstituteMenu.SubstituteMenuPart_Action_5v8dkg_b.Item(_context);
+      return new Definition_SubstituteMenu.SubstituteMenuPart_Action_d54ywy_b.Item(_context);
     }
     private class Item extends DefaultSubstituteMenuItem {
       private final SubstituteMenuContext _context;
       public Item(SubstituteMenuContext context) {
-        super(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb6dcL, "BaseFrege.structure.BCContent"), context.getParentNode(), context.getCurrentTargetNode(), context.getEditorContext());
+        super(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition"), context.getParentNode(), context.getCurrentTargetNode(), context.getEditorContext());
         _context = context;
       }
 
       @Nullable
       @Override
       public SNode createNode(@NotNull String pattern) {
-        // When typing inside a block comment {- -}, use BCLine by default 
-        SNode blockLine = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e2aL, "BaseFrege.structure.BCLine"));
-        SPropertyOperations.set(blockLine, MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e2aL, 0x76d2ad9a0d655e2bL, "text"), pattern);
+        // Definition is an empty line by default 
+        SNode empty = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc541493b9L, "BaseFrege.structure.EmptyLine"));
 
-        return blockLine;
+        return empty;
       }
       @Nullable
       @Override

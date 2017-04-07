@@ -598,7 +598,7 @@
     <property role="EcuMT" value="8562096718746085892" />
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="TypeName" />
-    <property role="R4oN_" value="tyname" />
+    <property role="R4oN_" value="Type name" />
     <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
     <node concept="1TJgyj" id="3Xsm2yzyj1k" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812453460" />
@@ -668,7 +668,8 @@
     <property role="EcuMT" value="8562096718746103442" />
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="TypeList" />
-    <property role="R4oN_" value="'[' tau ']'" />
+    <property role="R4oN_" value="List type" />
+    <property role="34LRSv" value="[" />
     <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
     <node concept="1TJgyj" id="7riFpCdpyUj" role="1TKVEi">
       <property role="IQ2ns" value="8562096718746103443" />
@@ -1325,7 +1326,8 @@
     <property role="EcuMT" value="4565621053812453533" />
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="TypeBrackets" />
-    <property role="R4oN_" value="'(' tau ')'" />
+    <property role="34LRSv" value="(" />
+    <property role="R4oN_" value="Type in brackets" />
     <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
     <node concept="1TJgyj" id="3Xsm2yzyj2u" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812453534" />
@@ -1888,36 +1890,16 @@
     <property role="3GE5qa" value="Resource" />
     <property role="TrG5h" value="Resource" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1NZxxHzeI4K" role="1TKVEi">
-      <property role="IQ2ns" value="2089536204310241584" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="pathParts" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1NZxxHzeI4N" resolve="ResourcePart" />
-    </node>
-    <node concept="1TJgyj" id="1NZxxHzeI4I" role="1TKVEi">
-      <property role="IQ2ns" value="2089536204310241582" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="resource" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Cxf1w4Aonx" resolve="NodeCONID" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1NZxxHzeI4N">
-    <property role="EcuMT" value="2089536204310241587" />
-    <property role="3GE5qa" value="Resource" />
-    <property role="TrG5h" value="ResourcePart" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1NZxxHzeI4O" role="1TKVEl">
-      <property role="IQ2nx" value="2089536204310241588" />
+    <node concept="1TJgyi" id="4VDn71FB_AE" role="1TKVEl">
+      <property role="IQ2nx" value="5686177642443594154" />
       <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" node="1NZxxHzeI4Q" resolve="PATHPART" />
+      <ref role="AX2Wp" node="1NZxxHzeI4Q" resolve="RESOURCEPATH" />
     </node>
   </node>
   <node concept="Az7Fb" id="1NZxxHzeI4Q">
     <property role="3GE5qa" value="Resource.Primitives" />
-    <property role="TrG5h" value="PATHPART" />
-    <property role="FLfZY" value="^([a-zA-Z][_a-zA-Z0-9]*)|(_[_a-zA-Z0-9]+)$" />
+    <property role="TrG5h" value="RESOURCEPATH" />
+    <property role="FLfZY" value="^((([a-zA-Z][_a-zA-Z0-9]*)|(_[_a-zA-Z0-9]+)).)*([A-Z][_a-zA-Z0-9]*)$" />
   </node>
   <node concept="1TIwiD" id="1NZxxHzePD7">
     <property role="EcuMT" value="2089536204310272583" />
@@ -1972,6 +1954,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7riFpCdplSf" resolve="BlockComment" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="10cKsLk59eT">
+    <property role="EcuMT" value="1156512287655498681" />
+    <property role="3GE5qa" value="Definitions" />
+    <property role="TrG5h" value="EmptyLine" />
+    <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
   </node>
 </model>
 

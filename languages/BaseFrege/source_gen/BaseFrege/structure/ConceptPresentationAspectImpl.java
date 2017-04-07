@@ -34,6 +34,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_DataDefinitionPart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Definition = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DoubleValue = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_EmptyLine = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Expression = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ExpressionPart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FCLambda = new ConceptPresentationBuilder().create();
@@ -114,7 +115,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_QCONID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_QVARID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Resource = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ResourcePart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rho = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_RhoContext = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Simpletype = new ConceptPresentationBuilder().create();
@@ -191,167 +191,167 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 24:
         return props_DoubleValue;
       case 25:
-        return props_Expression;
+        return props_EmptyLine;
       case 26:
-        return props_ExpressionPart;
+        return props_Expression;
       case 27:
-        return props_FCLambda;
+        return props_ExpressionPart;
       case 28:
-        return props_FCNamed;
+        return props_FCLambda;
       case 29:
-        return props_FCOperator;
+        return props_FCNamed;
       case 30:
-        return props_FDAssignment;
+        return props_FCOperator;
       case 31:
-        return props_FDGuards;
+        return props_FDAssignment;
       case 32:
-        return props_Fixity;
+        return props_FDGuards;
       case 33:
-        return props_FunCall;
+        return props_Fixity;
       case 34:
-        return props_FunDef;
+        return props_FunCall;
       case 35:
-        return props_FunctionDefinitions;
+        return props_FunDef;
       case 36:
-        return props_Guard;
+        return props_FunctionDefinitions;
       case 37:
-        return props_IICMConid;
+        return props_Guard;
       case 38:
-        return props_IICMOperator;
+        return props_IICMConid;
       case 39:
-        return props_IICMVarid;
+        return props_IICMOperator;
       case 40:
-        return props_IICMember;
+        return props_IICMVarid;
       case 41:
-        return props_IfThenElse;
+        return props_IICMember;
       case 42:
-        return props_Import;
+        return props_IfThenElse;
       case 43:
-        return props_ImportAs;
+        return props_Import;
       case 44:
-        return props_ImportHiding;
+        return props_ImportAs;
       case 45:
-        return props_ImportItem;
+        return props_ImportHiding;
       case 46:
-        return props_ImportItemClass;
+        return props_ImportItem;
       case 47:
-        return props_ImportItemOperator;
+        return props_ImportItemClass;
       case 48:
-        return props_ImportItemQconid;
+        return props_ImportItemOperator;
       case 49:
-        return props_ImportItemQvarid;
+        return props_ImportItemQconid;
       case 50:
-        return props_ImportList;
+        return props_ImportItemQvarid;
       case 51:
-        return props_Infix;
+        return props_ImportList;
       case 52:
-        return props_InfixAbstract;
+        return props_Infix;
       case 53:
-        return props_Infixl;
+        return props_InfixAbstract;
       case 54:
-        return props_Infixr;
+        return props_Infixl;
       case 55:
-        return props_Instance;
+        return props_Infixr;
       case 56:
-        return props_InstanceContext;
+        return props_Instance;
       case 57:
-        return props_InstanceContextPart;
+        return props_InstanceContext;
       case 58:
-        return props_IntegerValue;
+        return props_InstanceContextPart;
       case 59:
-        return props_LCQArrowAssignment;
+        return props_IntegerValue;
       case 60:
-        return props_LCQGuard;
+        return props_LCQArrowAssignment;
       case 61:
-        return props_LCQLet;
+        return props_LCQGuard;
       case 62:
-        return props_LCQualifier;
+        return props_LCQLet;
       case 63:
-        return props_LDAnnotation;
+        return props_LCQualifier;
       case 64:
-        return props_LDFunDef;
+        return props_LDAnnotation;
       case 65:
-        return props_LPExpression;
+        return props_LDFunDef;
       case 66:
-        return props_LPLambda;
+        return props_LPExpression;
       case 67:
-        return props_Lambda;
+        return props_LPLambda;
       case 68:
-        return props_LambdaPart;
+        return props_Lambda;
       case 69:
-        return props_Let;
+        return props_LambdaPart;
       case 70:
-        return props_LetDefinition;
+        return props_Let;
       case 71:
-        return props_LetDefinitions;
+        return props_LetDefinition;
       case 72:
-        return props_LineComment;
+        return props_LetDefinitions;
       case 73:
-        return props_List;
+        return props_LineComment;
       case 74:
-        return props_ListComprehension;
+        return props_List;
       case 75:
-        return props_ListEnumeration;
+        return props_ListComprehension;
       case 76:
-        return props_ListRange;
+        return props_ListEnumeration;
       case 77:
-        return props_Literal;
+        return props_ListRange;
       case 78:
-        return props_MPModule;
+        return props_Literal;
       case 79:
-        return props_MPSCONID;
+        return props_MPModule;
       case 80:
-        return props_MPSVARID;
+        return props_MPSCONID;
       case 81:
-        return props_MPSimple;
+        return props_MPSVARID;
       case 82:
-        return props_Main;
+        return props_MPSimple;
       case 83:
-        return props_Module;
+        return props_Main;
       case 84:
-        return props_ModulePart;
+        return props_Module;
       case 85:
-        return props_NodeCONID;
+        return props_ModulePart;
       case 86:
-        return props_NodeOperator;
+        return props_NodeCONID;
       case 87:
-        return props_NodeVARID;
+        return props_NodeOperator;
       case 88:
-        return props_PConstructor;
+        return props_NodeVARID;
       case 89:
-        return props_PList;
+        return props_PConstructor;
       case 90:
-        return props_PListBrackets;
+        return props_PList;
       case 91:
-        return props_PListDot;
+        return props_PListBrackets;
       case 92:
-        return props_PListVar;
+        return props_PListDot;
       case 93:
-        return props_PLiteral;
+        return props_PListVar;
       case 94:
-        return props_PTuple;
+        return props_PLiteral;
       case 95:
-        return props_PVarName;
+        return props_PTuple;
       case 96:
-        return props_PVarWildcard;
+        return props_PVarName;
       case 97:
-        return props_PVariable;
+        return props_PVarWildcard;
       case 98:
-        return props_Pattern;
+        return props_PVariable;
       case 99:
-        return props_PatternArgument;
+        return props_Pattern;
       case 100:
-        return props_PatternFunction;
+        return props_PatternArgument;
       case 101:
-        return props_PatternOperator;
+        return props_PatternFunction;
       case 102:
-        return props_QCONID;
+        return props_PatternOperator;
       case 103:
-        return props_QVARID;
+        return props_QCONID;
       case 104:
-        return props_Resource;
+        return props_QVARID;
       case 105:
-        return props_ResourcePart;
+        return props_Resource;
       case 106:
         return props_Rho;
       case 107:

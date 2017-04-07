@@ -53,7 +53,6 @@ module AnotherBigModule (module Data.Set, module AnotherBigModule) where
 	
 - prevedenie:
 	- 'module' VlastneMenoModulu parts where
-		- [TODO] VlastneMenoModulu moze byt kvalifikovane meno; na konci musi byt CONID
 	- parts s jednotlivymi castami oddelenymi ciarkami
 		- pokial prazdne, zatvorky nezobrazujeme
 	- 2 moznosti z abstraktneho: "module QCONID", alebo "QCONID"
@@ -216,7 +215,6 @@ a -> (a -> b) -> b
 
 
 - prevedenie:
-	- [TODO] tyname (~ TypeName) - ma byt typu qconid
 	- [TODO] kontext v zmysle "(simpletype+ '=>')?" by mal byt upraveny na nieco rozumnejsie
 		- problematicke, lebo je najprv nutne previes na TypeTuple a odtial sa da dostat k takym konstruktom, ako napr. "(Eq a, Num i) =>"
 		- trebars iba "TypeName TypeVariable" oddelene ciarkami

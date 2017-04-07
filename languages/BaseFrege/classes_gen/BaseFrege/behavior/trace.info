@@ -79,6 +79,9 @@
     <file name="DoubleValue_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.DoubleValue_BehaviorDescriptor" />
     </file>
+    <file name="EmptyLine_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.EmptyLine_BehaviorDescriptor" />
+    </file>
     <file name="ExpressionPart_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.ExpressionPart_BehaviorDescriptor" />
     </file>
@@ -315,9 +318,6 @@
     </file>
     <file name="QVARID_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.QVARID_BehaviorDescriptor" />
-    </file>
-    <file name="ResourcePart_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.ResourcePart_BehaviorDescriptor" />
     </file>
     <file name="Resource_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.Resource_BehaviorDescriptor" />
