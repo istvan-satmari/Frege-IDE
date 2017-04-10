@@ -77,4 +77,40 @@ public class QueriesGenerated {
     });
     return result;
   }
+  public static List<SubstituteAction> sideTransform_ActionsFactory_Class_2889766862468281975(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
+    ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, "BaseFrege.structure.ClassContext").getDeclarationNode(), _context.getSourceNode()) {
+      public SNode doSubstitute(@Nullable final EditorContext editorContext, String pattern) {
+        //  The current situation: class| Name var where 
+        SNode ccontext = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, "BaseFrege.structure.ClassContext")), null);
+        SLinkOperations.setTarget(_context.getSourceNode(), MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, 0x1b099fc7c901af7aL, "context"), ccontext);
+
+        SNode ccp = ListSequence.fromList(SLinkOperations.getChildren(ccontext, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, 0x1b099fc7c901afc8L, "parts"))).first();
+
+        // If user starter typing "=>" or "()", we have to ignore it 
+        if (!(pattern.startsWith("=")) && !(pattern.startsWith("("))) {
+          SPropertyOperations.set(SLinkOperations.getTarget(SLinkOperations.getTarget(ccp, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901afa7L, 0x1b099fc7c901afa8L, "class")), MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985a6L, 0x7a213c1804998606L, "conid")), MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e1L, 0x7a213c18049985e3L, "value"), pattern);
+        }
+
+        return SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(ccontext, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, 0x1b099fc7c901afc8L, "parts"))).first(), MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901afa7L, 0x1b099fc7c901afa8L, "class"));
+      }
+      public String getMatchingText(String pattern) {
+        return pattern;
+      }
+      public String getVisibleMatchingText(String pattern) {
+        return getMatchingText(pattern);
+      }
+      @Override
+      protected boolean isEnabled() {
+        SNode sourceNode = getSourceNode();
+        SNode parent = SNodeOperations.getParent(sourceNode);
+        SNode containingLink = SNodeOperations.getContainingLinkDeclaration(sourceNode);
+        return parent == null || containingLink == null || (ModelConstraints.canBeParent(parent, MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, "BaseFrege.structure.ClassContext").getDeclarationNode(), containingLink, null, null) && ModelConstraints.canBeAncestor(parent, null, MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, "BaseFrege.structure.ClassContext").getDeclarationNode(), containingLink, null));
+      }
+    });
+    return result;
+  }
+  public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_Class_2889766862468281976(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
+    return (SLinkOperations.getTarget(_context.getSourceNode(), MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, 0x1b099fc7c901af7aL, "context")) == null);
+  }
 }

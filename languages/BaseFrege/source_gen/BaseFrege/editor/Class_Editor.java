@@ -50,6 +50,9 @@ public class Class_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_rerokq_a0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "class");
     editorCell.setCellId("Constant_rerokq_a0a");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.RT_ANCHOR_TAG, 0, "ext_1_RTransform");
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }

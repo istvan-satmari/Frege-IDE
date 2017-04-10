@@ -115,7 +115,9 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY">
+        <child id="16410578721629643" name="emptyCellModel" index="2ruayu" />
+      </concept>
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1187258617779" name="jetbrains.mps.lang.editor.structure.ForegroundNullColorStyleClassItem" flags="ln" index="1I8cUB" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
@@ -1069,6 +1071,9 @@
         </node>
         <node concept="3F0ifn" id="2xkYx_u2r7O" role="3EZMnx">
           <property role="3F0ifm" value="class" />
+          <node concept="2V7CMv" id="2wqwUqp7veE" role="3F10Kt">
+            <property role="2V7CMs" value="ext_1_RTransform" />
+          </node>
         </node>
         <node concept="3F1sOY" id="1G9BWv90qZn" role="3EZMnx">
           <ref role="1NtTu8" to="sc0n:1G9BWv90qXU" resolve="context" />
@@ -1111,17 +1116,24 @@
     <node concept="3EZMnI" id="1G9BWv90qY8" role="2wV5jI">
       <node concept="3F0ifn" id="1G9BWv90qYf" role="3EZMnx">
         <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" node="4VDn71FCWtC" resolve="BasicText" />
       </node>
       <node concept="3F2HdR" id="1G9BWv90qZa" role="3EZMnx">
-        <property role="2czwfO" value=", " />
+        <property role="2czwfO" value="," />
         <ref role="1NtTu8" to="sc0n:1G9BWv90qZ8" resolve="parts" />
+        <ref role="1k5W1q" node="4VDn71FCWtC" resolve="BasicText" />
         <node concept="2iRfu4" id="1G9BWv90qZc" role="2czzBx" />
+        <node concept="tppnM" id="2wqwUqp95xy" role="sWeuL">
+          <ref role="1k5W1q" node="4VDn71FCX7P" resolve="PaddedRightPlain" />
+        </node>
       </node>
       <node concept="3F0ifn" id="1G9BWv90qYl" role="3EZMnx">
         <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" node="4VDn71FCWtC" resolve="BasicText" />
       </node>
       <node concept="3F0ifn" id="1G9BWv90qYt" role="3EZMnx">
         <property role="3F0ifm" value="=&gt;" />
+        <ref role="1k5W1q" node="4VDn71FCWtC" resolve="BasicText" />
       </node>
       <node concept="2iRfu4" id="1G9BWv90qYb" role="2iSdaV" />
     </node>
@@ -1132,9 +1144,15 @@
     <node concept="3EZMnI" id="1G9BWv90qYR" role="2wV5jI">
       <node concept="3F1sOY" id="1G9BWv90qYY" role="3EZMnx">
         <ref role="1NtTu8" to="sc0n:1G9BWv90qYC" resolve="class" />
+        <node concept="3F0ifn" id="2wqwUqp9H5K" role="2ruayu">
+          <property role="3F0ifm" value="&lt;class&gt;" />
+        </node>
       </node>
       <node concept="3F1sOY" id="1G9BWv90qZ4" role="3EZMnx">
         <ref role="1NtTu8" to="sc0n:1G9BWv90qYE" resolve="typeVariable" />
+        <node concept="3F0ifn" id="2wqwUqp9H5M" role="2ruayu">
+          <property role="3F0ifm" value="&lt;type variable&gt;" />
+        </node>
       </node>
       <node concept="2iRfu4" id="1G9BWv90qYU" role="2iSdaV" />
     </node>
