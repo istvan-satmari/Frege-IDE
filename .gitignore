@@ -69,4 +69,6 @@ delete/*
 # =========================
 # Compiled code
 # =========================
+
+# Class files
 *.class

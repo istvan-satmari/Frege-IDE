@@ -67,6 +67,11 @@
           <property role="1YIbBE" value="c" />
         </node>
       </node>
+      <node concept="1VHOhI" id="2wqwUqp5M8P" role="13J2EG">
+        <node concept="1YIbBU" id="2wqwUqp5M8O" role="2sPmwM">
+          <property role="1YIbBE" value="d" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
