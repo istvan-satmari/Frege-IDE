@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
   <root>
     <file name="AIOperator_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.AIOperator_BehaviorDescriptor" />
@@ -34,7 +23,7 @@
       <unit at="11,0,17,0" name="BaseFrege.behavior.BCNestedComment_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="14,0,48,0" name="BaseFrege.behavior.BehaviorAspectDescriptor" />
+      <unit at="13,0,41,0" name="BaseFrege.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BinaryExpression_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.BinaryExpression_BehaviorDescriptor" />
@@ -267,6 +256,12 @@
     <file name="MPSimple_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.MPSimple_BehaviorDescriptor" />
     </file>
+    <file name="MainEmpty_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.MainEmpty_BehaviorDescriptor" />
+    </file>
+    <file name="MainString_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.MainString_BehaviorDescriptor" />
+    </file>
     <file name="Main_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.Main_BehaviorDescriptor" />
     </file>
@@ -392,72 +387,6 @@
     </file>
     <file name="WherePart_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.WherePart_BehaviorDescriptor" />
-    </file>
-  </root>
-  <root nodeRef="r:f3acc988-19e1-4f05-8291-435175dbbc1f(BaseFrege.behavior)/9092736557046825811">
-    <file name="Skeleton__BehaviorDescriptor.java">
-      <node id="9092736557046825811" at="21,0,22,0" concept="6" trace="CONCEPT" />
-      <node id="9092736557046825811" at="22,0,23,0" concept="6" trace="REGISTRY" />
-      <node id="9092736557046825811" at="25,0,26,0" concept="6" trace="BH_METHODS" />
-      <node id="9092736557046825863" at="27,63,28,358" concept="1" />
-      <node id="9092736557046825811" at="32,46,33,20" concept="8" />
-      <node id="9092736557046825811" at="37,114,38,21" concept="1" />
-      <node id="9092736557046825811" at="42,114,43,49" concept="4" />
-      <node id="9092736557046825811" at="44,26,45,56" concept="10" />
-      <node id="9092736557046825811" at="48,14,49,58" concept="10" />
-      <node id="9092736557046825811" at="54,128,55,49" concept="4" />
-      <node id="9092736557046825811" at="56,26,57,56" concept="10" />
-      <node id="9092736557046825811" at="60,14,61,58" concept="10" />
-      <node id="9092736557046825811" at="67,48,68,22" concept="5" />
-      <node id="9092736557046825811" at="73,40,74,19" concept="5" />
-      <node id="9092736557046825811" at="27,0,30,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="9092736557046825811" at="32,0,35,0" concept="0" trace="Skeleton__BehaviorDescriptor#()V" />
-      <node id="9092736557046825811" at="43,49,46,5" concept="2" />
-      <node id="9092736557046825811" at="55,49,58,5" concept="2" />
-      <node id="9092736557046825811" at="36,0,40,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
-      <node id="9092736557046825811" at="46,5,50,5" concept="9" />
-      <node id="9092736557046825811" at="58,5,62,5" concept="9" />
-      <node id="9092736557046825811" at="65,0,70,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
-      <node id="9092736557046825811" at="71,0,76,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="9092736557046825811" at="41,0,52,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="9092736557046825811" at="53,0,64,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <scope id="9092736557046825811" at="27,63,28,358" />
-      <scope id="9092736557046825811" at="32,46,33,20" />
-      <scope id="9092736557046825811" at="37,114,38,21" />
-      <scope id="9092736557046825811" at="44,26,45,56" />
-      <scope id="9092736557046825811" at="48,14,49,58" />
-      <scope id="9092736557046825811" at="56,26,57,56" />
-      <scope id="9092736557046825811" at="60,14,61,58" />
-      <scope id="9092736557046825811" at="67,48,68,22" />
-      <scope id="9092736557046825811" at="73,40,74,19" />
-      <scope id="9092736557046825811" at="27,0,30,0">
-        <var name="__thisNode__" id="9092736557046825811" />
-      </scope>
-      <scope id="9092736557046825811" at="32,0,35,0" />
-      <scope id="9092736557046825811" at="36,0,40,0">
-        <var name="constructor" id="9092736557046825811" />
-        <var name="node" id="9092736557046825811" />
-        <var name="parameters" id="9092736557046825811" />
-      </scope>
-      <scope id="9092736557046825811" at="65,0,70,0" />
-      <scope id="9092736557046825811" at="71,0,76,0" />
-      <scope id="9092736557046825811" at="42,114,50,5">
-        <var name="methodIndex" id="9092736557046825811" />
-      </scope>
-      <scope id="9092736557046825811" at="54,128,62,5">
-        <var name="methodIndex" id="9092736557046825811" />
-      </scope>
-      <scope id="9092736557046825811" at="41,0,52,0">
-        <var name="method" id="9092736557046825811" />
-        <var name="node" id="9092736557046825811" />
-        <var name="parameters" id="9092736557046825811" />
-      </scope>
-      <scope id="9092736557046825811" at="53,0,64,0">
-        <var name="concept" id="9092736557046825811" />
-        <var name="method" id="9092736557046825811" />
-        <var name="parameters" id="9092736557046825811" />
-      </scope>
-      <unit id="9092736557046825811" at="20,0,77,0" name="BaseFrege.behavior.Skeleton__BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

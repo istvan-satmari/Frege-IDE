@@ -81,7 +81,7 @@
       <property role="IQ2ns" value="574920793184786599" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="main" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="vUxQDjKXyA" resolve="Main" />
     </node>
   </node>
@@ -144,6 +144,9 @@
   <node concept="1TIwiD" id="vUxQDjKXyA">
     <property role="EcuMT" value="574920793184786598" />
     <property role="TrG5h" value="Main" />
+    <property role="3GE5qa" value="Main" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="vUxQDjKXz0">

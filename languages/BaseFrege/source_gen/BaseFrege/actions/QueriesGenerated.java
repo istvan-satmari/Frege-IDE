@@ -18,6 +18,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.constraints.ModelConstraints;
 import jetbrains.mps.smodel.action.SideTransformPreconditionContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class QueriesGenerated {
   public static List<SubstituteAction> sideTransform_ActionsFactory_Module_5686177642443744779(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
@@ -45,5 +47,34 @@ public class QueriesGenerated {
   }
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_Module_5686177642443744807(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
     return ListSequence.fromList(SLinkOperations.getChildren(_context.getSourceNode(), MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d830L, 0x76d2ad9a0d638f23L, "parts"))).isEmpty();
+  }
+  public static List<SubstituteAction> sideTransform_ActionsFactory_Data_2889766862467370466(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
+    ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f4L, "BaseFrege.structure.TypeVariable").getDeclarationNode(), _context.getSourceNode()) {
+      public SNode doSubstitute(@Nullable final EditorContext editorContext, String pattern) {
+        SNode varid = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e2L, "BaseFrege.structure.NodeVARID"));
+        SPropertyOperations.set(varid, MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e2L, 0x7a213c18049985f2L, "value"), pattern);
+
+        SNode tv = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f4L, "BaseFrege.structure.TypeVariable"));
+        SLinkOperations.setTarget(tv, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f4L, 0x3f5c5828a389301aL, "value"), varid);
+
+        ListSequence.fromList(SLinkOperations.getChildren(_context.getSourceNode(), MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d904L, 0x608e2b4f233201e3L, "typeVariables"))).addElement(tv);
+        return ListSequence.fromList(SLinkOperations.getChildren(_context.getSourceNode(), MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d904L, 0x608e2b4f233201e3L, "typeVariables"))).last();
+      }
+      public String getMatchingText(String pattern) {
+        return pattern;
+      }
+      public String getVisibleMatchingText(String pattern) {
+        return getMatchingText(pattern);
+      }
+      @Override
+      protected boolean isEnabled() {
+        SNode sourceNode = getSourceNode();
+        SNode parent = SNodeOperations.getParent(sourceNode);
+        SNode containingLink = SNodeOperations.getContainingLinkDeclaration(sourceNode);
+        return parent == null || containingLink == null || (ModelConstraints.canBeParent(parent, MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f4L, "BaseFrege.structure.TypeVariable").getDeclarationNode(), containingLink, null, null) && ModelConstraints.canBeAncestor(parent, null, MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f4L, "BaseFrege.structure.TypeVariable").getDeclarationNode(), containingLink, null));
+      }
+    });
+    return result;
   }
 }

@@ -21,10 +21,12 @@ import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import jetbrains.mps.smodel.action.NodeFactoryManager;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
-import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandlerElementKeyMap;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandlerElementKeyMap;
 
 public class Data_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -36,7 +38,9 @@ public class Data_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_rat5n5_a0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_rat5n5_b0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_rat5n5_c0(editorContext, node));
+    if (renderingCondition_rat5n5_a2a(node, editorContext)) {
+      editorCell.addEditorCell(this.createRefNodeList_rat5n5_c0(editorContext, node));
+    }
     editorCell.addEditorCell(this.createConstant_rat5n5_d0(editorContext, node));
     editorCell.addEditorCell(this.createRefNodeList_rat5n5_e0(editorContext, node));
     return editorCell;
@@ -119,9 +123,15 @@ public class Data_Editor extends DefaultNodeEditor {
       }
     }
   }
+  private static boolean renderingCondition_rat5n5_a2a(SNode node, EditorContext editorContext) {
+    return ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d904L, 0x608e2b4f233201e3L, "typeVariables"))).isNotEmpty();
+  }
   private EditorCell createConstant_rat5n5_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=");
     editorCell.setCellId("Constant_rat5n5_d0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.RT_ANCHOR_TAG, 0, "ext_1_RTransform");
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
