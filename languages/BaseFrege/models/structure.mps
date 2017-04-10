@@ -110,6 +110,7 @@
     <property role="EcuMT" value="574920793184786551" />
     <property role="TrG5h" value="Import" />
     <property role="3GE5qa" value="Import" />
+    <property role="34LRSv" value="import" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3Xsm2yzyaGV" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812419387" />

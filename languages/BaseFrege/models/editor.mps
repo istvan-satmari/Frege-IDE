@@ -21,6 +21,7 @@
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
         <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -324,10 +325,7 @@
   </node>
   <node concept="24kQdi" id="vUxQDjKXyO">
     <ref role="1XX52x" to="sc0n:vUxQDjKXyA" resolve="Main" />
-    <node concept="3EZMnI" id="vUxQDjKXyQ" role="2wV5jI">
-      <node concept="3F0ifn" id="vUxQDjKXyX" role="3EZMnx" />
-      <node concept="2iRfu4" id="vUxQDjKXyT" role="2iSdaV" />
-    </node>
+    <node concept="3F0ifn" id="7SJSV$AZl5k" role="2wV5jI" />
   </node>
   <node concept="24kQdi" id="vUxQDjKXzb">
     <property role="3GE5qa" value="Definitions" />
@@ -1262,12 +1260,17 @@
       <node concept="3F1sOY" id="3Xsm2yzy2au" role="3EZMnx">
         <ref role="1NtTu8" to="sc0n:vUxQDjKXx_" resolve="module" />
       </node>
-      <node concept="3F0ifn" id="3Xsm2yzy2ax" role="3EZMnx" />
       <node concept="3F2HdR" id="3Xsm2yzy2aC" role="3EZMnx">
         <ref role="1NtTu8" to="sc0n:vUxQDjKXys" resolve="imports" />
         <node concept="2iRkQZ" id="3Xsm2yzy2aE" role="2czzBx" />
+        <node concept="3F0ifn" id="7SJSV$B07oJ" role="2czzBI">
+          <property role="ilYzB" value="&lt;no imports&gt;" />
+          <ref role="1k5W1q" node="7SJSV$AZl6H" resolve="Optional" />
+          <node concept="VPxyj" id="7SJSV$B0kVW" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
       </node>
-      <node concept="3F0ifn" id="3Xsm2yzy2aL" role="3EZMnx" />
       <node concept="3F2HdR" id="3Xsm2yzy2aY" role="3EZMnx">
         <ref role="1NtTu8" to="sc0n:vUxQDjKXyy" resolve="definitions" />
         <node concept="2iRkQZ" id="3Xsm2yzy2b0" role="2czzBx" />
@@ -1284,8 +1287,14 @@
             </node>
           </node>
         </node>
+        <node concept="3F0ifn" id="7SJSV$B07oF" role="2czzBI">
+          <property role="ilYzB" value="&lt;no definitions&gt;" />
+          <ref role="1k5W1q" node="7SJSV$AZl6H" resolve="Optional" />
+          <node concept="VPxyj" id="7SJSV$B0kY8" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
       </node>
-      <node concept="3F0ifn" id="3Xsm2yzy2b8" role="3EZMnx" />
       <node concept="3F1sOY" id="3Xsm2yzy2br" role="3EZMnx">
         <ref role="1NtTu8" to="sc0n:vUxQDjKXyB" resolve="main" />
       </node>
@@ -2159,6 +2168,15 @@
       </node>
       <node concept="1I8cUB" id="7SJSV$AXqsS" role="3F10Kt">
         <property role="Vb096" value="red" />
+      </node>
+    </node>
+    <node concept="14StLt" id="7SJSV$AZl6H" role="V601i">
+      <property role="TrG5h" value="Optional" />
+      <node concept="Vb9p2" id="7SJSV$AZl7c" role="3F10Kt">
+        <property role="Vbekb" value="ITALIC" />
+      </node>
+      <node concept="1I8cUB" id="7SJSV$AZl71" role="3F10Kt">
+        <property role="Vb096" value="lightGray" />
       </node>
     </node>
   </node>
