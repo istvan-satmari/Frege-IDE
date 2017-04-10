@@ -256,12 +256,6 @@
     <file name="MPSimple_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.MPSimple_BehaviorDescriptor" />
     </file>
-    <file name="MainEmpty_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.MainEmpty_BehaviorDescriptor" />
-    </file>
-    <file name="MainString_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.MainString_BehaviorDescriptor" />
-    </file>
     <file name="Main_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.Main_BehaviorDescriptor" />
     </file>

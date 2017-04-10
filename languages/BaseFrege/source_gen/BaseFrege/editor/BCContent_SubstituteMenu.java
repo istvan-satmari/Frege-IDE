@@ -58,11 +58,22 @@ public class BCContent_SubstituteMenu extends SubstituteMenuBase {
       @Nullable
       @Override
       public SNode createNode(@NotNull String pattern) {
-        // When typing inside a block comment {- -}, use BCLine by default 
+        // When typing inside a block comment {- -}, decide whether to use BCLine or a nested BlockComment 
         SNode blockLine = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e2aL, "BaseFrege.structure.BCLine"));
         SPropertyOperations.set(blockLine, MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e2aL, 0x76d2ad9a0d655e2bL, "text"), pattern);
 
         return blockLine;
+      }
+      @Override
+      public boolean canExecute(@NotNull String pattern) {
+        return canExecute_internal(pattern, false);
+      }
+      @Override
+      public boolean canExecuteStrictly(@NotNull String pattern) {
+        return canExecute_internal(pattern, true);
+      }
+      public boolean canExecute_internal(@NotNull String pattern, boolean strictly) {
+        return (pattern != null && pattern.length() > 0) && !(pattern.startsWith(SConceptOperations.conceptAlias(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb707L, "BaseFrege.structure.BCNestedComment"))));
       }
       @Nullable
       @Override
