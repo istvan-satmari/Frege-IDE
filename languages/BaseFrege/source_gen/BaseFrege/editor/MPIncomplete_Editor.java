@@ -29,6 +29,7 @@ public class MPIncomplete_Editor extends DefaultNodeEditor {
     Style style = new StyleImpl();
     Common_StyleSheet.apply_Error(style, editorCell);
     style.set(StyleAttributes.EDITABLE, 0, true);
+    style.set(StyleAttributes.RT_ANCHOR_TAG, 0, "ext_1_RTransform");
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("<export entity>");
     editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPartExt[]{new MPIncomplete_Editor.ReplaceWith_MPSCONID_cellMenu_acvytx_a0a(), new MPIncomplete_Editor.ReplaceWith_MPSVARID_cellMenu_acvytx_b0a(), new MPIncomplete_Editor.ReplaceWith_MPModule_cellMenu_acvytx_c0a(), new SChildSubstituteInfoPartEx(editorCell)}));
