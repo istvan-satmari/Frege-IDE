@@ -318,185 +318,190 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
           break;
         case 59:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new MPModule_Editor());
+            return Collections.<ConceptEditor>singletonList(new MPIncomplete_Editor());
           }
           break;
         case 60:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new MPSCONID_Editor());
+            return Collections.<ConceptEditor>singletonList(new MPModule_Editor());
           }
           break;
         case 61:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new MPSVARID_Editor());
+            return Collections.<ConceptEditor>singletonList(new MPSCONID_Editor());
           }
           break;
         case 62:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Main_Editor());
+            return Collections.<ConceptEditor>singletonList(new MPSVARID_Editor());
           }
           break;
         case 63:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Module_Editor());
+            return Collections.<ConceptEditor>singletonList(new Main_Editor());
           }
           break;
         case 64:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new NodeCONID_Editor());
+            return Collections.<ConceptEditor>singletonList(new Module_Editor());
           }
           break;
         case 65:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new NodeOperator_Editor());
+            return Collections.<ConceptEditor>singletonList(new NodeCONID_Editor());
           }
           break;
         case 66:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new NodeVARID_Editor());
+            return Collections.<ConceptEditor>singletonList(new NodeOperator_Editor());
           }
           break;
         case 67:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new PConstructor_Editor());
+            return Collections.<ConceptEditor>singletonList(new NodeVARID_Editor());
           }
           break;
         case 68:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new PListBrackets_Editor());
+            return Collections.<ConceptEditor>singletonList(new PConstructor_Editor());
           }
           break;
         case 69:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new PListDot_Editor());
+            return Collections.<ConceptEditor>singletonList(new PListBrackets_Editor());
           }
           break;
         case 70:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new PListVar_Editor());
+            return Collections.<ConceptEditor>singletonList(new PListDot_Editor());
           }
           break;
         case 71:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new PTuple_Editor());
+            return Collections.<ConceptEditor>singletonList(new PListVar_Editor());
           }
           break;
         case 72:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new PVarName_Editor());
+            return Collections.<ConceptEditor>singletonList(new PTuple_Editor());
           }
           break;
         case 73:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new PVarWildcard_Editor());
+            return Collections.<ConceptEditor>singletonList(new PVarName_Editor());
           }
           break;
         case 74:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new PatternFunction_Editor());
+            return Collections.<ConceptEditor>singletonList(new PVarWildcard_Editor());
           }
           break;
         case 75:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new PatternOperator_Editor());
+            return Collections.<ConceptEditor>singletonList(new PatternFunction_Editor());
           }
           break;
         case 76:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new QCONID_Editor());
+            return Collections.<ConceptEditor>singletonList(new PatternOperator_Editor());
           }
           break;
         case 77:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new QVARID_Editor());
+            return Collections.<ConceptEditor>singletonList(new QCONID_Editor());
           }
           break;
         case 78:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Resource_Editor());
+            return Collections.<ConceptEditor>singletonList(new QVARID_Editor());
           }
           break;
         case 79:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Rho_Editor());
+            return Collections.<ConceptEditor>singletonList(new Resource_Editor());
           }
           break;
         case 80:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new RhoContext_Editor());
+            return Collections.<ConceptEditor>singletonList(new Rho_Editor());
           }
           break;
         case 81:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Simpletypes_Editor());
+            return Collections.<ConceptEditor>singletonList(new RhoContext_Editor());
           }
           break;
         case 82:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Skeleton_Editor());
+            return Collections.<ConceptEditor>singletonList(new Simpletypes_Editor());
           }
           break;
         case 83:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new StringValue_Editor());
+            return Collections.<ConceptEditor>singletonList(new Skeleton_Editor());
           }
           break;
         case 84:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Tau_Editor());
+            return Collections.<ConceptEditor>singletonList(new StringValue_Editor());
           }
           break;
         case 85:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Term_Editor());
+            return Collections.<ConceptEditor>singletonList(new Tau_Editor());
           }
           break;
         case 86:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Tuple_Editor());
+            return Collections.<ConceptEditor>singletonList(new Term_Editor());
           }
           break;
         case 87:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Type_Editor());
+            return Collections.<ConceptEditor>singletonList(new Tuple_Editor());
           }
           break;
         case 88:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new TypeBrackets_Editor());
+            return Collections.<ConceptEditor>singletonList(new Type_Editor());
           }
           break;
         case 89:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new TypeList_Editor());
+            return Collections.<ConceptEditor>singletonList(new TypeBrackets_Editor());
           }
           break;
         case 90:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new TypeName_Editor());
+            return Collections.<ConceptEditor>singletonList(new TypeList_Editor());
           }
           break;
         case 91:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new TypeTuple_Editor());
+            return Collections.<ConceptEditor>singletonList(new TypeName_Editor());
           }
           break;
         case 92:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new TypeVariable_Editor());
+            return Collections.<ConceptEditor>singletonList(new TypeTuple_Editor());
           }
           break;
         case 93:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new UnaryOPExpression_Editor());
+            return Collections.<ConceptEditor>singletonList(new TypeVariable_Editor());
           }
           break;
         case 94:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Underscore_Editor());
+            return Collections.<ConceptEditor>singletonList(new UnaryOPExpression_Editor());
           }
           break;
         case 95:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new Underscore_Editor());
+          }
+          break;
+        case 96:
           if (true) {
             return Collections.<ConceptEditor>singletonList(new WherePart_Editor());
           }
@@ -521,11 +526,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
             return Collections.<SubstituteMenu>singletonList(new BCContent_SubstituteMenu());
           }
           break;
-        case 1:
-          if (true) {
-            return Collections.<SubstituteMenu>singletonList(new Definition_SubstituteMenu());
-          }
-          break;
         default:
       }
     }
@@ -540,6 +540,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3894ebaL, "BaseFrege.structure.AIVarid"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c0L, "BaseFrege.structure.Annotation"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e2aL, "BaseFrege.structure.BCLine"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb707L, "BaseFrege.structure.BCNestedComment"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b37071L, "BaseFrege.structure.BinaryExpression"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e0fL, "BaseFrege.structure.BlockComment"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d90cL, "BaseFrege.structure.BooleanValue"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fdc87L, "BaseFrege.structure.Brackets"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3f8a8L, "BaseFrege.structure.CPExprToExpr"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3f8d2L, "BaseFrege.structure.CPExprToGuards"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d93bL, "BaseFrege.structure.Case"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d908L, "BaseFrege.structure.CharValue"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, "BaseFrege.structure.Class"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, "BaseFrege.structure.ClassContext"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901afa7L, "BaseFrege.structure.ClassContextPart"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53fc7efdedebfe7dL, "BaseFrege.structure.ConstrCall"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d904L, "BaseFrege.structure.Data"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x608e2b4f233247d0L, "BaseFrege.structure.DataDefinitionPart"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d90bL, "BaseFrege.structure.DoubleValue"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc541493b9L, "BaseFrege.structure.EmptyLine"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8d7L, "BaseFrege.structure.Expression"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53fc7efdedec9ceeL, "BaseFrege.structure.FCLambda"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53fc7efdedec445dL, "BaseFrege.structure.FCNamed"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53fc7efdedec89a3L, "BaseFrege.structure.FCOperator"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3dceaL, "BaseFrege.structure.FDAssignment"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3dcebL, "BaseFrege.structure.FDGuards"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, "BaseFrege.structure.Fixity"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, "BaseFrege.structure.FunctionDefinitions"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d926L, "BaseFrege.structure.Guard"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892f6fL, "BaseFrege.structure.IICMConid"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892f7fL, "BaseFrege.structure.IICMOperator"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892f5fL, "BaseFrege.structure.IICMVarid"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d994L, "BaseFrege.structure.IfThenElse"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d877L, "BaseFrege.structure.Import"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a388ab3eL, "BaseFrege.structure.ImportAs"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a389113fL, "BaseFrege.structure.ImportHiding"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892f0bL, "BaseFrege.structure.ImportItemClass"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892f40L, "BaseFrege.structure.ImportItemOperator"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892eebL, "BaseFrege.structure.ImportItemQconid"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892efbL, "BaseFrege.structure.ImportItemQvarid"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a389112dL, "BaseFrege.structure.ImportList"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d906L, "BaseFrege.structure.Instance"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x2854fa195e09d983L, "BaseFrege.structure.InstanceContext"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x2854fa195e09d985L, "BaseFrege.structure.InstanceContextPart"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d90aL, "BaseFrege.structure.IntegerValue"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fde27L, "BaseFrege.structure.LCQArrowAssignment"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fde51L, "BaseFrege.structure.LCQGuard"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fdddfL, "BaseFrege.structure.LCQLet"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc6582a33d3L, "BaseFrege.structure.LDAnnotation"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc65829ede1L, "BaseFrege.structure.LDFunDef"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3575c62ea7ed3709L, "BaseFrege.structure.LPExpression"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3575c62ea7ed3719L, "BaseFrege.structure.LPLambda"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d907L, "BaseFrege.structure.Lambda"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d995L, "BaseFrege.structure.Let"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc65829ede0L, "BaseFrege.structure.LetDefinitions"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655de7L, "BaseFrege.structure.LineComment"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fdd64L, "BaseFrege.structure.ListComprehension"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fdd02L, "BaseFrege.structure.ListEnumeration"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fdd34L, "BaseFrege.structure.ListRange"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38868c6L, "BaseFrege.structure.MPModule"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1cff861b633b5a47L, "BaseFrege.structure.MPSCONID"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1cff861b633b5a57L, "BaseFrege.structure.MPSVARID"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8a6L, "BaseFrege.structure.Main"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d830L, "BaseFrege.structure.Module"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e1L, "BaseFrege.structure.NodeCONID"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1cff861b633abcd8L, "BaseFrege.structure.NodeOperator"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e2L, "BaseFrege.structure.NodeVARID"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38951f8L, "BaseFrege.structure.PConstructor"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38952abL, "BaseFrege.structure.PListBrackets"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895253L, "BaseFrege.structure.PListDot"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a389529bL, "BaseFrege.structure.PListVar"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38951f6L, "BaseFrege.structure.PTuple"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895209L, "BaseFrege.structure.PVarName"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38951fbL, "BaseFrege.structure.PVarWildcard"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895194L, "BaseFrege.structure.PatternFunction"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38951c8L, "BaseFrege.structure.PatternOperator"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985a6L, "BaseFrege.structure.QCONID"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049a298fL, "BaseFrege.structure.QVARID"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1cff861b633ae12dL, "BaseFrege.structure.Resource"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3893019L, "BaseFrege.structure.Rho"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38930ddL, "BaseFrege.structure.RhoContext"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65ea05L, "BaseFrege.structure.Simpletypes"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d82fL, "BaseFrege.structure.Skeleton"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d909L, "BaseFrege.structure.StringValue"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65ea2dL, "BaseFrege.structure.Tau"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8edL, "BaseFrege.structure.Term"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d903L, "BaseFrege.structure.Tuple"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x2854fa195e0a238bL, "BaseFrege.structure.Type"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a389309dL, "BaseFrege.structure.TypeBrackets"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d662e92L, "BaseFrege.structure.TypeList"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65ea04L, "BaseFrege.structure.TypeName"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d662e79L, "BaseFrege.structure.TypeTuple"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f4L, "BaseFrege.structure.TypeVariable"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc6582a3525L, "BaseFrege.structure.UnaryOPExpression"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c1804993fa7L, "BaseFrege.structure.Underscore"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d993L, "BaseFrege.structure.WherePart"));
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0d = buildConceptIndices(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb6dcL, "BaseFrege.structure.BCContent"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3894ebaL, "BaseFrege.structure.AIVarid"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c0L, "BaseFrege.structure.Annotation"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e2aL, "BaseFrege.structure.BCLine"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb707L, "BaseFrege.structure.BCNestedComment"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b37071L, "BaseFrege.structure.BinaryExpression"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e0fL, "BaseFrege.structure.BlockComment"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d90cL, "BaseFrege.structure.BooleanValue"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fdc87L, "BaseFrege.structure.Brackets"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3f8a8L, "BaseFrege.structure.CPExprToExpr"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3f8d2L, "BaseFrege.structure.CPExprToGuards"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d93bL, "BaseFrege.structure.Case"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d908L, "BaseFrege.structure.CharValue"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, "BaseFrege.structure.Class"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, "BaseFrege.structure.ClassContext"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901afa7L, "BaseFrege.structure.ClassContextPart"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53fc7efdedebfe7dL, "BaseFrege.structure.ConstrCall"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d904L, "BaseFrege.structure.Data"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x608e2b4f233247d0L, "BaseFrege.structure.DataDefinitionPart"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d90bL, "BaseFrege.structure.DoubleValue"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc541493b9L, "BaseFrege.structure.EmptyLine"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8d7L, "BaseFrege.structure.Expression"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53fc7efdedec9ceeL, "BaseFrege.structure.FCLambda"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53fc7efdedec445dL, "BaseFrege.structure.FCNamed"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53fc7efdedec89a3L, "BaseFrege.structure.FCOperator"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3dceaL, "BaseFrege.structure.FDAssignment"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3dcebL, "BaseFrege.structure.FDGuards"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, "BaseFrege.structure.Fixity"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, "BaseFrege.structure.FunctionDefinitions"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d926L, "BaseFrege.structure.Guard"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892f6fL, "BaseFrege.structure.IICMConid"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892f7fL, "BaseFrege.structure.IICMOperator"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892f5fL, "BaseFrege.structure.IICMVarid"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d994L, "BaseFrege.structure.IfThenElse"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d877L, "BaseFrege.structure.Import"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a388ab3eL, "BaseFrege.structure.ImportAs"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a389113fL, "BaseFrege.structure.ImportHiding"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892f0bL, "BaseFrege.structure.ImportItemClass"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892f40L, "BaseFrege.structure.ImportItemOperator"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892eebL, "BaseFrege.structure.ImportItemQconid"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3892efbL, "BaseFrege.structure.ImportItemQvarid"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a389112dL, "BaseFrege.structure.ImportList"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d906L, "BaseFrege.structure.Instance"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x2854fa195e09d983L, "BaseFrege.structure.InstanceContext"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x2854fa195e09d985L, "BaseFrege.structure.InstanceContextPart"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d90aL, "BaseFrege.structure.IntegerValue"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fde27L, "BaseFrege.structure.LCQArrowAssignment"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fde51L, "BaseFrege.structure.LCQGuard"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fdddfL, "BaseFrege.structure.LCQLet"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc6582a33d3L, "BaseFrege.structure.LDAnnotation"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc65829ede1L, "BaseFrege.structure.LDFunDef"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3575c62ea7ed3709L, "BaseFrege.structure.LPExpression"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3575c62ea7ed3719L, "BaseFrege.structure.LPLambda"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d907L, "BaseFrege.structure.Lambda"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d995L, "BaseFrege.structure.Let"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc65829ede0L, "BaseFrege.structure.LetDefinitions"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655de7L, "BaseFrege.structure.LineComment"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fdd64L, "BaseFrege.structure.ListComprehension"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fdd02L, "BaseFrege.structure.ListEnumeration"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fdd34L, "BaseFrege.structure.ListRange"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7e2fe3b926f59ab8L, "BaseFrege.structure.MPIncomplete"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38868c6L, "BaseFrege.structure.MPModule"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1cff861b633b5a47L, "BaseFrege.structure.MPSCONID"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1cff861b633b5a57L, "BaseFrege.structure.MPSVARID"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8a6L, "BaseFrege.structure.Main"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d830L, "BaseFrege.structure.Module"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e1L, "BaseFrege.structure.NodeCONID"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1cff861b633abcd8L, "BaseFrege.structure.NodeOperator"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e2L, "BaseFrege.structure.NodeVARID"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38951f8L, "BaseFrege.structure.PConstructor"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38952abL, "BaseFrege.structure.PListBrackets"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895253L, "BaseFrege.structure.PListDot"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a389529bL, "BaseFrege.structure.PListVar"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38951f6L, "BaseFrege.structure.PTuple"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895209L, "BaseFrege.structure.PVarName"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38951fbL, "BaseFrege.structure.PVarWildcard"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895194L, "BaseFrege.structure.PatternFunction"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38951c8L, "BaseFrege.structure.PatternOperator"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985a6L, "BaseFrege.structure.QCONID"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049a298fL, "BaseFrege.structure.QVARID"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1cff861b633ae12dL, "BaseFrege.structure.Resource"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3893019L, "BaseFrege.structure.Rho"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38930ddL, "BaseFrege.structure.RhoContext"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65ea05L, "BaseFrege.structure.Simpletypes"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d82fL, "BaseFrege.structure.Skeleton"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d909L, "BaseFrege.structure.StringValue"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65ea2dL, "BaseFrege.structure.Tau"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8edL, "BaseFrege.structure.Term"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d903L, "BaseFrege.structure.Tuple"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x2854fa195e0a238bL, "BaseFrege.structure.Type"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a389309dL, "BaseFrege.structure.TypeBrackets"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d662e92L, "BaseFrege.structure.TypeList"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65ea04L, "BaseFrege.structure.TypeName"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d662e79L, "BaseFrege.structure.TypeTuple"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f4L, "BaseFrege.structure.TypeVariable"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc6582a3525L, "BaseFrege.structure.UnaryOPExpression"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c1804993fa7L, "BaseFrege.structure.Underscore"), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d993L, "BaseFrege.structure.WherePart"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0d = buildConceptIndices(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb6dcL, "BaseFrege.structure.BCContent"));
 }

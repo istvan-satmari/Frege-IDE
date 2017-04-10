@@ -67,7 +67,14 @@ module AnotherBigModule (module Data.Set, module AnotherBigModule) where
 		- referencuje bud to, co sa uz naimportovalo
 		- alebo referencuje sam seba ("AnotherBigModule")
 	
-
+	[TODO]
+	https://www.haskell.org/tutorial/modules.html
+	module Tree ( Tree(Leaf,Branch), fringe ) where
+	data Tree a = Leaf a | Branch (Tree a) (Tree a) 
+	
+Note that the name of a type and its constructors have be grouped together, as in Tree(Leaf,Branch). As short-hand, we could also write Tree(..).  Exporting a subset of the constructors is also possible !!!
+	
+	
 	
 IMPORTS (~ Import)
 ----------------------------------------------
