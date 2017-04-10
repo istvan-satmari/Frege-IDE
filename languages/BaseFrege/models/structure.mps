@@ -1593,6 +1593,7 @@
     <property role="EcuMT" value="7420331049347575265" />
     <property role="3GE5qa" value="Definitions.Expressions.Let" />
     <property role="TrG5h" value="LDFunDef" />
+    <property role="R4oN_" value="Function definition" />
     <ref role="1TJDcQ" node="6rUjWpoauRy" resolve="LetDefinition" />
     <node concept="1TJgyj" id="6rUjWpoauR_" role="1TKVEi">
       <property role="IQ2ns" value="7420331049347575269" />
@@ -1614,6 +1615,8 @@
     <property role="EcuMT" value="7420331049347593171" />
     <property role="3GE5qa" value="Definitions.Expressions.Let" />
     <property role="TrG5h" value="LDAnnotation" />
+    <property role="34LRSv" value="::" />
+    <property role="R4oN_" value="Annotation" />
     <ref role="1TJDcQ" node="6rUjWpoauRy" resolve="LetDefinition" />
     <node concept="1TJgyj" id="6rUjWpoazfk" role="1TKVEi">
       <property role="IQ2ns" value="7420331049347593172" />

@@ -7,10 +7,10 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,43 +25,34 @@ public class Class_Editor extends DefaultNodeEditor {
     return this.createCollection_rerokq_a(editorContext, node);
   }
   private EditorCell createCollection_rerokq_a(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_rerokq_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createCollection_rerokq_a0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_rerokq_b0(editorContext, node));
-    return editorCell;
-  }
-  private EditorCell createCollection_rerokq_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-    editorCell.setCellId("Collection_rerokq_a0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.SELECTABLE, 0, false);
-    editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(this.createConstant_rerokq_a0a(editorContext, node));
-    if (renderingCondition_rerokq_a1a0(node, editorContext)) {
-      editorCell.addEditorCell(this.createRefNode_rerokq_b0a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_rerokq_a0(editorContext, node));
+    if (renderingCondition_rerokq_a1a(node, editorContext)) {
+      editorCell.addEditorCell(this.createRefNode_rerokq_b0(editorContext, node));
     }
-    editorCell.addEditorCell(this.createRefNode_rerokq_c0a(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_rerokq_d0a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_rerokq_e0a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_rerokq_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_rerokq_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_rerokq_e0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_rerokq_f0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_rerokq_a0a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_rerokq_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "class");
-    editorCell.setCellId("Constant_rerokq_a0a");
+    editorCell.setCellId("Constant_rerokq_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.RT_ANCHOR_TAG, 0, "ext_1_RTransform");
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_rerokq_b0a(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Class_Editor.contextSingleRoleHandler_rerokq_b0a(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, 0x1b099fc7c901af7aL, "context"), editorContext);
+  private EditorCell createRefNode_rerokq_b0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Class_Editor.contextSingleRoleHandler_rerokq_b0(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, 0x1b099fc7c901af7aL, "context"), editorContext);
     return provider.createCell();
   }
-  private class contextSingleRoleHandler_rerokq_b0a extends SingleRoleCellProvider {
-    public contextSingleRoleHandler_rerokq_b0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class contextSingleRoleHandler_rerokq_b0 extends SingleRoleCellProvider {
+    public contextSingleRoleHandler_rerokq_b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -89,15 +80,15 @@ public class Class_Editor extends DefaultNodeEditor {
       return "<no context>";
     }
   }
-  private static boolean renderingCondition_rerokq_a1a0(SNode node, EditorContext editorContext) {
+  private static boolean renderingCondition_rerokq_a1a(SNode node, EditorContext editorContext) {
     return (SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, 0x1b099fc7c901af7aL, "context")) != null);
   }
-  private EditorCell createRefNode_rerokq_c0a(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Class_Editor.nameSingleRoleHandler_rerokq_c0a(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, 0x1b099fc7c901af16L, "name"), editorContext);
+  private EditorCell createRefNode_rerokq_c0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Class_Editor.nameSingleRoleHandler_rerokq_c0(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, 0x1b099fc7c901af16L, "name"), editorContext);
     return provider.createCell();
   }
-  private class nameSingleRoleHandler_rerokq_c0a extends SingleRoleCellProvider {
-    public nameSingleRoleHandler_rerokq_c0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class nameSingleRoleHandler_rerokq_c0 extends SingleRoleCellProvider {
+    public nameSingleRoleHandler_rerokq_c0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -125,12 +116,12 @@ public class Class_Editor extends DefaultNodeEditor {
       return "<no name>";
     }
   }
-  private EditorCell createRefNode_rerokq_d0a(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Class_Editor.typeVariableSingleRoleHandler_rerokq_d0a(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, 0x1b099fc7c901af1cL, "typeVariable"), editorContext);
+  private EditorCell createRefNode_rerokq_d0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Class_Editor.typeVariableSingleRoleHandler_rerokq_d0(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, 0x1b099fc7c901af1cL, "typeVariable"), editorContext);
     return provider.createCell();
   }
-  private class typeVariableSingleRoleHandler_rerokq_d0a extends SingleRoleCellProvider {
-    public typeVariableSingleRoleHandler_rerokq_d0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class typeVariableSingleRoleHandler_rerokq_d0 extends SingleRoleCellProvider {
+    public typeVariableSingleRoleHandler_rerokq_d0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -158,18 +149,21 @@ public class Class_Editor extends DefaultNodeEditor {
       return "<no typeVariable>";
     }
   }
-  private EditorCell createConstant_rerokq_e0a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_rerokq_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "where");
-    editorCell.setCellId("Constant_rerokq_e0a");
+    editorCell.setCellId("Constant_rerokq_e0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_rerokq_b0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Class_Editor.wherePartsSingleRoleHandler_rerokq_b0(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, 0x2854fa195e09d67bL, "whereParts"), editorContext);
+  private EditorCell createRefNode_rerokq_f0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Class_Editor.wherePartsSingleRoleHandler_rerokq_f0(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, 0x2854fa195e09d67bL, "whereParts"), editorContext);
     return provider.createCell();
   }
-  private class wherePartsSingleRoleHandler_rerokq_b0 extends SingleRoleCellProvider {
-    public wherePartsSingleRoleHandler_rerokq_b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class wherePartsSingleRoleHandler_rerokq_f0 extends SingleRoleCellProvider {
+    public wherePartsSingleRoleHandler_rerokq_f0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -184,6 +178,12 @@ public class Class_Editor extends DefaultNodeEditor {
       if (editorCell.getRole() == null) {
         editorCell.setRole("whereParts");
       }
+      Style style = new StyleImpl();
+      SNode node = myOwnerNode;
+      EditorContext editorContext = myEditorContext;
+      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, 0, true);
+      style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+      editorCell.getStyle().putAll(style);
     }
     @Override
     protected EditorCell createEmptyCell() {

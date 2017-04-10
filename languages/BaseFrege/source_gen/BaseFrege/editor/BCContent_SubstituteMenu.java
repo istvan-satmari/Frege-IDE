@@ -73,7 +73,7 @@ public class BCContent_SubstituteMenu extends SubstituteMenuBase {
         return canExecute_internal(pattern, true);
       }
       public boolean canExecute_internal(@NotNull String pattern, boolean strictly) {
-        return (pattern != null && pattern.length() > 0) && !(pattern.startsWith(SConceptOperations.conceptAlias(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb707L, "BaseFrege.structure.BCNestedComment"))));
+        return (pattern != null && pattern.length() > 0);
       }
       @Nullable
       @Override
