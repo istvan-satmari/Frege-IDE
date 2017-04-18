@@ -16,6 +16,9 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 public class Expression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -29,9 +32,7 @@ public class Expression_Editor extends DefaultNodeEditor {
     if (renderingCondition_1ltshm_a1a(node, editorContext)) {
       editorCell.addEditorCell(this.createConstant_1ltshm_b0(editorContext, node));
     }
-    if (renderingCondition_1ltshm_a2a(node, editorContext)) {
-      editorCell.addEditorCell(this.createRefNode_1ltshm_c0(editorContext, node));
-    }
+    editorCell.addEditorCell(this.createRefNode_1ltshm_c0(editorContext, node));
     return editorCell;
   }
   private EditorCell createRefNode_1ltshm_a0(EditorContext editorContext, SNode node) {
@@ -99,17 +100,21 @@ public class Expression_Editor extends DefaultNodeEditor {
     }
     @Override
     protected EditorCell createEmptyCell() {
-      EditorCell editorCell = super.createEmptyCell();
-      editorCell.setCellId("empty_type");
+      EditorCell editorCell = createEmptyCell_internal(myEditorContext, myOwnerNode);
 
       installCellInfo(null, editorCell);
       return editorCell;
     }
-    protected String getNoTargetText() {
-      return "<no type>";
+    private EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
+      return this.createCollection_1ltshm_a2a(editorContext, node);
     }
-  }
-  private static boolean renderingCondition_1ltshm_a2a(SNode node, EditorContext editorContext) {
-    return (SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8d7L, 0x5feee6d035b37090L, "type")) != null);
+    private EditorCell createCollection_1ltshm_a2a(EditorContext editorContext, SNode node) {
+      EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+      editorCell.setCellId("Collection_1ltshm_a2a");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.SELECTABLE, 0, false);
+      editorCell.getStyle().putAll(style);
+      return editorCell;
+    }
   }
 }

@@ -14,7 +14,9 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
@@ -22,9 +24,6 @@ import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import jetbrains.mps.smodel.action.NodeFactoryManager;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 public class ImportList_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -34,9 +33,7 @@ public class ImportList_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
     editorCell.setCellId("Collection_69uch0_a");
     editorCell.setBig(true);
-    if (renderingCondition_69uch0_a0a(node, editorContext)) {
-      editorCell.addEditorCell(this.createRefNode_69uch0_a0(editorContext, node));
-    }
+    editorCell.addEditorCell(this.createRefNode_69uch0_a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_69uch0_b0(editorContext, node));
     editorCell.addEditorCell(this.createRefNodeList_69uch0_c0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_69uch0_d0(editorContext, node));
@@ -65,18 +62,22 @@ public class ImportList_Editor extends DefaultNodeEditor {
     }
     @Override
     protected EditorCell createEmptyCell() {
-      EditorCell editorCell = super.createEmptyCell();
-      editorCell.setCellId("empty_hiding");
+      EditorCell editorCell = createEmptyCell_internal(myEditorContext, myOwnerNode);
 
       installCellInfo(null, editorCell);
       return editorCell;
     }
-    protected String getNoTargetText() {
-      return "<no hiding>";
+    private EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
+      return this.createCollection_69uch0_a0a(editorContext, node);
     }
-  }
-  private static boolean renderingCondition_69uch0_a0a(SNode node, EditorContext editorContext) {
-    return (SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a389112dL, 0x3f5c5828a389114dL, "hiding")) != null);
+    private EditorCell createCollection_69uch0_a0a(EditorContext editorContext, SNode node) {
+      EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+      editorCell.setCellId("Collection_69uch0_a0a");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.SELECTABLE, 0, false);
+      editorCell.getStyle().putAll(style);
+      return editorCell;
+    }
   }
   private EditorCell createConstant_69uch0_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");

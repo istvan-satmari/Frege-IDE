@@ -15,7 +15,9 @@ import jetbrains.mps.nodeEditor.cellMenu.OldNewCompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 public class FDAssignment_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -28,9 +30,7 @@ public class FDAssignment_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createRefNode_78xic0_a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_78xic0_b0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_78xic0_c0(editorContext, node));
-    if (renderingCondition_78xic0_a3a(node, editorContext)) {
-      editorCell.addEditorCell(this.createRefNode_78xic0_d0(editorContext, node));
-    }
+    editorCell.addEditorCell(this.createRefNode_78xic0_d0(editorContext, node));
     return editorCell;
   }
   private EditorCell createRefNode_78xic0_a0(EditorContext editorContext, SNode node) {
@@ -128,17 +128,21 @@ public class FDAssignment_Editor extends DefaultNodeEditor {
     }
     @Override
     protected EditorCell createEmptyCell() {
-      EditorCell editorCell = super.createEmptyCell();
-      editorCell.setCellId("empty_where");
+      EditorCell editorCell = createEmptyCell_internal(myEditorContext, myOwnerNode);
 
       installCellInfo(null, editorCell);
       return editorCell;
     }
-    protected String getNoTargetText() {
-      return "<no where>";
+    private EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
+      return this.createCollection_78xic0_a3a(editorContext, node);
     }
-  }
-  private static boolean renderingCondition_78xic0_a3a(SNode node, EditorContext editorContext) {
-    return (SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3dceaL, 0x5aa4f79b7b0fdeb0L, "where")) != null);
+    private EditorCell createCollection_78xic0_a3a(EditorContext editorContext, SNode node) {
+      EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+      editorCell.setCellId("Collection_78xic0_a3a");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.SELECTABLE, 0, false);
+      editorCell.getStyle().putAll(style);
+      return editorCell;
+    }
   }
 }

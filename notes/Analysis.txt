@@ -1,4 +1,9 @@
-TODO - pozriet sa na operatory; v Haskelli existuje len 1 unarny operator, a to minus (treba opravit)
+TODO
+----------------------------------------------
+- plany na neskor:
+	- pozriet sa na operatory; v Haskelli existuje len 1 unarny operator, a to minus (treba opravit)
+	- referencie 
+		- asi striktne, t.j. ziadne CONID, VARID, a pod.
 
 
 
@@ -55,10 +60,8 @@ module AnotherBigModule (module Data.Set, module AnotherBigModule) where
 	- 'module' VlastneMenoModulu parts where
 	- parts s jednotlivymi castami oddelenymi ciarkami
 		- pokial prazdne, zatvorky nezobrazujeme
-		
 	- [TODO] zistit, co mozno exportovat a jak
 		- striktna referencia, t.j. aby bolo mozne pouzit len konkretne nodes
-		
 	- 2 moznosti z abstraktneho: "module QCONID", alebo "QCONID"
 		- [TODO] musi byt kvalifikovane meno (v oboch pripadoch)
 		- QCONID su CONID oddelene bodkami
@@ -226,6 +229,9 @@ a -> (a -> b) -> b
 
 
 - prevedenie:
+	- [Q] context je prilis zlozity a nevidel som nikde na to priklad
+		- nestaci "class-ovsky"
+	
 	- [TODO] kontext v zmysle "(simpletype+ '=>')?" by mal byt upraveny na nieco rozumnejsie
 		- problematicke, lebo je najprv nutne previes na TypeTuple a odtial sa da dostat k takym konstruktom, ako napr. "(Eq a, Num i) =>"
 		- trebars iba "TypeName TypeVariable" oddelene ciarkami
@@ -1041,6 +1047,8 @@ data Opx a b c = Sumx a | Zerox
 
 - prevedenie:
 	- wheredef mozno netreba, v prikladoch nie je velmi bezny
+	- [TODO] cez akcie plynule vytvorenie skryteho "simpletype*" v ramci dalts
+		- "Nothing | Just_|"
 	- [TODO] referencovanie musi byt kontextualne, ale spada pod "simpletype"
 		- referencovat mozno uz existujuce ine data
 		- pripadne data deklarovane nalavo od konstruktorov
