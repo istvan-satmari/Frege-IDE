@@ -25,5 +25,11 @@ public class Separators_StyleSheet {
     style.set(StyleAttributes.PADDING_RIGHT, 0, new Padding(1, Measure.SPACES));
     style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.PLAIN);
   }
+  public static void apply_Unpadded(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    style.set(StyleAttributes.PADDING_LEFT, 0, new Padding(0, Measure.SPACES));
+    style.set(StyleAttributes.PADDING_RIGHT, 0, new Padding(0, Measure.SPACES));
+  }
 
 }

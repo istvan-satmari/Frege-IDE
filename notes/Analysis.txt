@@ -1,9 +1,17 @@
 TODO
 ----------------------------------------------
+- teraz:
+	- umoznit pohodlne editovanie a pouzivanie IDE (t.j. viacere akcie a editory nastavit)
+	- vyplnit "description" a "alias" pre koncepty pre jasnejsiu napovedu pri "ctrl + space"
+	- stale su veci, ktore neviem, jak sa daju urobit a chyba dostatocne mnzostvo prikladov v MPS na to
+
 - plany na neskor:
 	- pozriet sa na operatory; v Haskelli existuje len 1 unarny operator, a to minus (treba opravit)
 	- referencie 
+		- tyka sa toho aj scoping
 		- asi striktne, t.j. ziadne CONID, VARID, a pod.
+	- constraints a typesystem
+		- kontrola chybne zadanych konstruktov
 
 
 
@@ -130,7 +138,7 @@ import learnyou.chapter07.geometry.Sphere as Sph ()
 	import qconid (as CONID)? hiding? '(' ((VARID|CONID|SOMEOP) ',')* ')'
 	=> alespon nejaka podobnost (zhruba to teda sedi):
 	(varid? conid)? 	~ (as? CONID)?
-	varid 				~ hiding?	
+	varid 				~ hiding?
 	
 	- cast s "spec (VARID|CONID|SOMEOP)?", tak tu zatvorku asi vynecham
 
