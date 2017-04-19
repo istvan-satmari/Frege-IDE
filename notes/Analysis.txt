@@ -4,6 +4,19 @@ TODO
 	- umoznit pohodlne editovanie a pouzivanie IDE (t.j. viacere akcie a editory nastavit)
 	- vyplnit "description" a "alias" pre koncepty pre jasnejsiu napovedu pri "ctrl + space"
 	- stale su veci, ktore neviem, jak sa daju urobit a chyba dostatocne mnzostvo prikladov v MPS na to
+	
+	Import
+	- vymazat medzeru v "import frege.data.List __ hiding ( << ... >> )"
+		- t.j. pokial nie je "as"
+		- aby nahodou nevymazalo cely koncept, pokial sa klikne delete
+	- vymazat "<< ... >>" v ramci zatvoriek v koncepte "ImportList"
+	- pokial sme v situacii "import frege.data.List ( << ... >> )", treba vediet pridat slovo "hiding"
+	
+	Data
+	- vediet plynule pridat argumenty konstruktoru, napr. v ramci "data Maybe x = Nothing | Just", malo by ist pridat "data Maybe x = Nothing | Just x"
+	
+	
+	
 
 - plany na neskor:
 	- pozriet sa na operatory; v Haskelli existuje len 1 unarny operator, a to minus (treba opravit)
@@ -149,7 +162,7 @@ import learnyou.chapter07.geometry.Sphere as Sph ()
 		- ziadne referencie tu netreba
 		- [TODO] je to skratka qconid, pravdepodobne
 	- Pozor, aj podla gramatiky je to tak, ze pokial je "hiding" pritomne, tak musi byt pritomne aj '(' specs ')'
-		[TODO] specialne, pokial je pritomne "hiding", tak ta zatvorka importitem-ov musi byt neprazdna, podla gramatiky:
+		specialne, pokial je pritomne "hiding", tak ta zatvorka importitem-ov musi byt neprazdna, podla gramatiky:
 		importliste ::= VARID '(' importspecs ')' | '(' importspecs? ')' -- VARID predstavuje "hiding"	
 		- treba vyriesit cez typesystem
 	- [TODO] importitem

@@ -28,7 +28,7 @@ public class check_Data_NonTypesystemRule extends AbstractNonTypesystemRule_Runt
             if ((SPropertyOperations.getString(SLinkOperations.getTarget(tv1, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f4L, 0x3f5c5828a389301aL, "value")), MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e2L, 0x7a213c18049985f2L, "value")) == SPropertyOperations.getString(SLinkOperations.getTarget(tv2, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f4L, 0x3f5c5828a389301aL, "value")), MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e2L, 0x7a213c18049985f2L, "value"))) && (tv1 != tv2)) {
               {
                 MessageTarget errorTarget = new NodeMessageTarget();
-                IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(tv2, "Duplicate type variable name", "r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)", "1156512287655872707", null, errorTarget);
+                IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(tv2, "Duplicate type variable name.", "r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)", "1156512287655872707", null, errorTarget);
               }
             }
           }

@@ -7,10 +7,10 @@
   <imports />
   <registry>
     <language id="90eaf9a4-a968-473c-8aed-fef10c04a5df" name="BaseFrege">
-      <concept id="4565621053812445485" name="BaseFrege.structure.ImportList" flags="ng" index="2sPk$5">
-        <child id="4565621053812445517" name="hiding" index="2sPk__" />
+      <concept id="4565621053812419390" name="BaseFrege.structure.ImportAs" flags="ng" index="2sPfcm">
+        <child id="4565621053812419391" name="value" index="2sPfcn" />
       </concept>
-      <concept id="4565621053812445503" name="BaseFrege.structure.ImportHiding" flags="ng" index="2sPk$n" />
+      <concept id="4565621053812445485" name="BaseFrege.structure.ImportList" flags="ng" index="2sPk$5" />
       <concept id="6957546093226903504" name="BaseFrege.structure.DataDefinitionPart" flags="ng" index="13J6Mv">
         <child id="6957546093226903505" name="name" index="13J6Mu" />
       </concept>
@@ -21,6 +21,7 @@
       <concept id="574920793184786551" name="BaseFrege.structure.Import" flags="ng" index="1kelWt">
         <child id="4565621053812419387" name="resource" index="2sPfcj" />
         <child id="4565621053812419420" name="list" index="2sPfdO" />
+        <child id="8562096718746031050" name="as" index="1VHVTg" />
       </concept>
       <concept id="574920793184786479" name="BaseFrege.structure.Skeleton" flags="ng" index="1kelX5">
         <child id="574920793184786533" name="module" index="1kelWf" />
@@ -66,8 +67,11 @@
       <node concept="1ZLmsQ" id="3mlr36XqhqZ" role="2sPfcj">
         <property role="_tKnq" value="frege.data.List" />
       </node>
-      <node concept="2sPk$5" id="3mlr36XslWk" role="2sPfdO">
-        <node concept="2sPk$n" id="3mlr36XslWl" role="2sPk__" />
+      <node concept="2sPk$5" id="3mlr36XslWk" role="2sPfdO" />
+      <node concept="2sPfcm" id="3mlr36Xsylu" role="1VHVTg">
+        <node concept="1YIbBT" id="3mlr36Xsylv" role="2sPfcn">
+          <property role="1YIbBV" value="List" />
+        </node>
       </node>
     </node>
   </node>

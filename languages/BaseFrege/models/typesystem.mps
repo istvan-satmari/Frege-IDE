@@ -86,6 +86,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -110,6 +111,7 @@
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
     </language>
   </registry>
   <node concept="18kY7G" id="10cKsLk0RZe">
@@ -125,7 +127,7 @@
         <node concept="3clFbS" id="10cKsLk0RZX" role="3clFbx">
           <node concept="2MkqsV" id="10cKsLk0Xuu" role="3cqZAp">
             <node concept="Xl_RD" id="10cKsLk0Xv8" role="2MkJ7o">
-              <property role="Xl_RC" value="\&quot;{-\&quot; and \&quot;-}\&quot; have to be used on the conceptual level" />
+              <property role="Xl_RC" value="\&quot;{-\&quot; and \&quot;-}\&quot; have to be used on the conceptual level." />
             </node>
             <node concept="1YBJjd" id="10cKsLk0XuN" role="2OEOjV">
               <ref role="1YBMHb" node="10cKsLk0RZh" resolve="blockLine" />
@@ -252,7 +254,7 @@
                                   <ref role="3cqZAo" node="10cKsLk6pzL" resolve="tv2" />
                                 </node>
                                 <node concept="Xl_RD" id="10cKsLk6x7s" role="2MkJ7o">
-                                  <property role="Xl_RC" value="Duplicate type variable name" />
+                                  <property role="Xl_RC" value="Duplicate type variable name." />
                                 </node>
                               </node>
                             </node>
@@ -279,6 +281,52 @@
     <node concept="1YaCAy" id="10cKsLk6dEL" role="1YuTPh">
       <property role="TrG5h" value="data" />
       <ref role="1YaFvo" to="sc0n:vUxQDjKX$4" resolve="Data" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3mlr36Xsn_R">
+    <property role="TrG5h" value="check_ImportList" />
+    <property role="3GE5qa" value="Import" />
+    <node concept="3clFbS" id="3mlr36Xsn_S" role="18ibNy">
+      <node concept="3clFbJ" id="3mlr36Xsn_Y" role="3cqZAp">
+        <node concept="1Wc70l" id="3mlr36XspCi" role="3clFbw">
+          <node concept="2OqwBi" id="3mlr36XsrI0" role="3uHU7w">
+            <node concept="2OqwBi" id="3mlr36XspPk" role="2Oq$k0">
+              <node concept="1YBJjd" id="3mlr36XspG_" role="2Oq$k0">
+                <ref role="1YBMHb" node="3mlr36Xsn_U" resolve="importList" />
+              </node>
+              <node concept="3Tsc0h" id="3mlr36Xsq2i" role="2OqNvi">
+                <ref role="3TtcxE" to="sc0n:3Xsm2yzyiKz" resolve="items" />
+              </node>
+            </node>
+            <node concept="1v1jN8" id="3mlr36XstqN" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="3mlr36XsoMa" role="3uHU7B">
+            <node concept="2OqwBi" id="3mlr36XsnIL" role="2Oq$k0">
+              <node concept="1YBJjd" id="3mlr36XsnAd" role="2Oq$k0">
+                <ref role="1YBMHb" node="3mlr36Xsn_U" resolve="importList" />
+              </node>
+              <node concept="3TrEf2" id="3mlr36XsnS6" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:3Xsm2yzyh5d" resolve="hiding" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="3mlr36XsoYR" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="3mlr36XsnA0" role="3clFbx">
+          <node concept="2MkqsV" id="3mlr36Xstzi" role="3cqZAp">
+            <node concept="Xl_RD" id="3mlr36Xsuhb" role="2MkJ7o">
+              <property role="Xl_RC" value="An item has to be specified when hiding." />
+            </node>
+            <node concept="1YBJjd" id="3mlr36XstzE" role="2OEOjV">
+              <ref role="1YBMHb" node="3mlr36Xsn_U" resolve="importList" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3mlr36Xsn_U" role="1YuTPh">
+      <property role="TrG5h" value="importList" />
+      <ref role="1YaFvo" to="sc0n:3Xsm2yzyh4H" resolve="ImportList" />
     </node>
   </node>
 </model>

@@ -22,7 +22,7 @@ public class check_BCLine_NonTypesystemRule extends AbstractNonTypesystemRule_Ru
     if (SPropertyOperations.getString(blockLine, MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e2aL, 0x76d2ad9a0d655e2bL, "text")).contains("{-") || SPropertyOperations.getString(blockLine, MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d655e2aL, 0x76d2ad9a0d655e2bL, "text")).contains("-}")) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(blockLine, "\"{-\" and \"-}\" have to be used on the conceptual level", "r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)", "1156512287654401950", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(blockLine, "\"{-\" and \"-}\" have to be used on the conceptual level.", "r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)", "1156512287654401950", null, errorTarget);
       }
     }
   }
