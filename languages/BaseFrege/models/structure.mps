@@ -182,7 +182,7 @@
     <property role="EcuMT" value="574920793184786626" />
     <property role="3GE5qa" value="Definitions" />
     <property role="TrG5h" value="Fixity" />
-    <property role="34LRSv" value="infix" />
+    <property role="34LRSv" value="fixity" />
     <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
     <node concept="1TJgyj" id="5ZITH0PGMRe" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988811214" />
@@ -200,7 +200,7 @@
     </node>
     <node concept="1TJgyi" id="5ZITH0PGMQi" role="1TKVEl">
       <property role="IQ2nx" value="6912716259988811154" />
-      <property role="TrG5h" value="Priority" />
+      <property role="TrG5h" value="priority" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>

@@ -241,9 +241,6 @@
     <file name="Literal_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.Literal_BehaviorDescriptor" />
     </file>
-    <file name="MPIncomplete_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.MPIncomplete_BehaviorDescriptor" />
-    </file>
     <file name="MPModule_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.MPModule_BehaviorDescriptor" />
     </file>

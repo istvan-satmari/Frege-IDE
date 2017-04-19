@@ -15,6 +15,11 @@ TODO
 	Data
 	- vediet plynule pridat argumenty konstruktoru, napr. v ramci "data Maybe x = Nothing | Just", malo by ist pridat "data Maybe x = Nothing | Just x"
 	
+	Infix
+	- treba rozlisit, ci je napisane "infix", "infixr", "infixl"
+	- kedze rovnaky prefix, tak tazke, v ktorej chvili sa rozhodnut (nie je akcia na klavesu enter, pokial viem)
+	=> "infix " pre "infix" variant, co je trochu neprijemne, ale zatial neviem ine riesenie
+	
 	
 	
 
@@ -195,6 +200,10 @@ visibledefinition ::= 	'instance' insthead wheredef
 
 						
 - prevedenie:
+	- [TODO] co sa tyka akcii, najst rozumny sposob (t.j. zadefinovat substitucie) pre:
+		- FunctionDefinitions
+		- anotacie funkcii
+		ostatne evidentne funguju OK
 	- IMPORTS je samostatna sucast, cize "import" z gramatiky ignorujem
 	- DEFINITIONS je abstraktne, od neho dedia:
 		- FIXITY
@@ -219,8 +228,8 @@ COMMENTS
 		STRING
 		...
 	-}
-	- [TODO] skontrolovat korektnu indentaciu v pripade vnorenych blokovych komentarov
-	- [TODO] blokovy komentar moze byt nested, ale asi by som v ramci 1 riadku dal tuto kontrolu:
+	- skontrolovat korektnu indentaciu v pripade vnorenych blokovych komentarov
+	- blokovy komentar moze byt nested, ale asi by som v ramci 1 riadku dal tuto kontrolu:
 		- nemoze stat {- osamote (musi byt v tom istom riadku aj takto ukonceny)
 		
 		

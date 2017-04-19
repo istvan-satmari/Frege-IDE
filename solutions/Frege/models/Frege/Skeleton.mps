@@ -14,6 +14,7 @@
       <concept id="6957546093226903504" name="BaseFrege.structure.DataDefinitionPart" flags="ng" index="13J6Mv">
         <child id="6957546093226903505" name="name" index="13J6Mu" />
       </concept>
+      <concept id="1156512287655498681" name="BaseFrege.structure.EmptyLine" flags="ng" index="14659P" />
       <concept id="574920793184786692" name="BaseFrege.structure.Data" flags="ng" index="1kelTI">
         <child id="7934180497854199160" name="name" index="10tqDo" />
         <child id="1948263994234089211" name="parts" index="3i234W" />
@@ -32,9 +33,18 @@
       <concept id="574920793184786480" name="BaseFrege.structure.Module" flags="ng" index="1kelXq">
         <child id="2089536204310272563" name="name" index="1ZLdKC" />
       </concept>
+      <concept id="574920793184786626" name="BaseFrege.structure.Fixity" flags="ng" index="1kelYC">
+        <property id="6912716259988811154" name="priority" index="1EnsH2" />
+        <child id="4565621053812461132" name="operator" index="2sPhp$" />
+        <child id="6912716259988811214" name="infix" index="1EnsGu" />
+      </concept>
       <concept id="574920793184786598" name="BaseFrege.structure.Main" flags="ng" index="1kelZc" />
+      <concept id="6912716259988811212" name="BaseFrege.structure.Infixr" flags="ng" index="1EnsGs" />
       <concept id="8800381220712711649" name="BaseFrege.structure.NodeCONID" flags="ng" index="1YIbBT">
         <property id="8800381220712711651" name="value" index="1YIbBV" />
+      </concept>
+      <concept id="2089536204310232280" name="BaseFrege.structure.NodeOperator" flags="ng" index="1ZLjF3">
+        <property id="6558324093842139697" name="value" index="1kmRcP" />
       </concept>
       <concept id="2089536204310241581" name="BaseFrege.structure.Resource" flags="ng" index="1ZLmsQ">
         <property id="5686177642443594154" name="value" index="_tKnq" />
@@ -57,6 +67,15 @@
         </node>
       </node>
     </node>
+    <node concept="1kelYC" id="mSTsZCjakP" role="1kelZ8">
+      <property role="1EnsH2" value="7" />
+      <node concept="1EnsGs" id="mSTsZCjarI" role="1EnsGu" />
+      <node concept="1ZLjF3" id="mSTsZCjali" role="2sPhp$">
+        <property role="1kmRcP" value="?:?..-" />
+      </node>
+    </node>
+    <node concept="14659P" id="mSTsZCjaz0" role="1kelZ8" />
+    <node concept="14659P" id="mSTsZCjasd" role="1kelZ8" />
     <node concept="1kelXq" id="7SJSV$B5TVW" role="1kelWf">
       <node concept="1ZLmsQ" id="7SJSV$B5TVX" role="1ZLdKC">
         <property role="_tKnq" value="frege.sample.Example" />

@@ -38,9 +38,14 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -327,6 +332,56 @@
     <node concept="1YaCAy" id="3mlr36Xsn_U" role="1YuTPh">
       <property role="TrG5h" value="importList" />
       <ref role="1YaFvo" to="sc0n:3Xsm2yzyh4H" resolve="ImportList" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="mSTsZCjcRe">
+    <property role="TrG5h" value="check_Fixity" />
+    <property role="3GE5qa" value="Definitions" />
+    <node concept="3clFbS" id="mSTsZCjcRf" role="18ibNy">
+      <node concept="3clFbJ" id="mSTsZCjcRl" role="3cqZAp">
+        <node concept="22lmx$" id="mSTsZCjk_0" role="3clFbw">
+          <node concept="3eOSWO" id="mSTsZCjmf3" role="3uHU7w">
+            <node concept="3cmrfG" id="mSTsZCjmf6" role="3uHU7w">
+              <property role="3cmrfH" value="9" />
+            </node>
+            <node concept="2OqwBi" id="mSTsZCjkU4" role="3uHU7B">
+              <node concept="1YBJjd" id="mSTsZCjkG4" role="2Oq$k0">
+                <ref role="1YBMHb" node="mSTsZCjcRh" resolve="fixity" />
+              </node>
+              <node concept="3TrcHB" id="mSTsZCjlbw" role="2OqNvi">
+                <ref role="3TsBF5" to="sc0n:5ZITH0PGMQi" resolve="priority" />
+              </node>
+            </node>
+          </node>
+          <node concept="3eOVzh" id="mSTsZCjiVC" role="3uHU7B">
+            <node concept="2OqwBi" id="mSTsZCjd0Q" role="3uHU7B">
+              <node concept="1YBJjd" id="mSTsZCjcRx" role="2Oq$k0">
+                <ref role="1YBMHb" node="mSTsZCjcRh" resolve="fixity" />
+              </node>
+              <node concept="3TrcHB" id="mSTsZCjdbB" role="2OqNvi">
+                <ref role="3TsBF5" to="sc0n:5ZITH0PGMQi" resolve="priority" />
+              </node>
+            </node>
+            <node concept="3cmrfG" id="mSTsZCjiVF" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="mSTsZCjcRn" role="3clFbx">
+          <node concept="2MkqsV" id="mSTsZCjmmm" role="3cqZAp">
+            <node concept="Xl_RD" id="mSTsZCjmy$" role="2MkJ7o">
+              <property role="Xl_RC" value="The priority of the operator must be in range 0 to 9." />
+            </node>
+            <node concept="1YBJjd" id="mSTsZCjmmy" role="2OEOjV">
+              <ref role="1YBMHb" node="mSTsZCjcRh" resolve="fixity" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="mSTsZCjcRh" role="1YuTPh">
+      <property role="TrG5h" value="fixity" />
+      <ref role="1YaFvo" to="sc0n:vUxQDjKXz2" resolve="Fixity" />
     </node>
   </node>
 </model>
