@@ -1,3 +1,6 @@
+Priste: 9.5. 10:00
+
+
 TODO
 ----------------------------------------------
 - teraz:
@@ -25,12 +28,12 @@ TODO
 
 - plany na neskor:
 	- pozriet sa na operatory; v Haskelli existuje len 1 unarny operator, a to minus (treba opravit)
-	- referencie 
+	- referencie
 		- tyka sa toho aj scoping
 		- asi striktne, t.j. ziadne CONID, VARID, a pod.
 	- constraints a typesystem
 		- kontrola chybne zadanych konstruktov
-
+	- textgen
 
 
 MODULE (~ Skeleton)
@@ -203,6 +206,49 @@ visibledefinition ::= 	'instance' insthead wheredef
 	- [TODO] co sa tyka akcii, najst rozumny sposob (t.j. zadefinovat substitucie) pre:
 		- FunctionDefinitions
 		- anotacie funkcii
+		
+Priklady na anotacie funkcii:		
+convertUpper :: (Char -> Char) 	
+second :: (a, b, c) -> b  
+zip :: [a] -> [b] -> [(a, b)]
+calcBmis :: (Real a) => [(a, a)]
+groupOf :: Int -> [a] -> [[a]]
+powerset :: [a] -> [[a]]
+(-:) :: a -> (a -> b) -> b
+(<), (<=), (>=), (>) :: a -> a -> Bool
+replicate :: (Num i) => i -> a -> [a]
+elem :: (Eq a, Num i) => a -> [i] -> Bool
+sayMe :: (Integral a) => a -> String
+doubleSmallNumber :: Num a => a -> a
+findKey :: (Eq k) => k -> [(k,v)] -> Maybe v
+map :: (a -> b) -> [a] -> [b]
+applyLog :: (Monoid m) => (a, m) -> (a -> (b, m)) -> (b, m)
+numLongChains :: Int
+(-:) :: a -> (a -> b) -> b
+(%) :: Int -> Int -> Rational
+mDouble :: Int -> Int
+applyMaybe :: Maybe a -> (a -> b) -> Maybe b
+flip :: (a -> b -> c) -> b -> a -> c
+defMB = defValue (Nothing :: Maybe Bool)
+surface :: Shape -> Float	
+create :: Float -> Shape
+maybeOperation :: (SuperMaybe String) -> String
+myDisk :: FSItem
+getLines :: SizedBufferedReader -> IO [String]
+yesnoIf :: (YesNo y) => y -> a -> a -> a
+fmap :: (a -> b) -> f a -> f b
+(==) :: a -> a -> Bool
+(/=) :: a -> a -> Bool  
+(<), (<=), (>=), (>)  :: a -> a -> Bool
+fmap :: (a -> b) -> f a -> f b
+\x -> x+x :: Int
+encode :: Int -> String -> String
+shortLinesOnly :: String -> String
+
+
+
+		
+		
 		ostatne evidentne funguju OK
 	- IMPORTS je samostatna sucast, cize "import" z gramatiky ignorujem
 	- DEFINITIONS je abstraktne, od neho dedia:

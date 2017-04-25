@@ -1384,6 +1384,13 @@
     <property role="3GE5qa" value="Definitions.Annotation" />
     <property role="TrG5h" value="AIOperator" />
     <ref role="1TJDcQ" node="3Xsm2yzykUT" resolve="AnnotationItem" />
+    <node concept="1TJgyj" id="13DUwHFVzGx" role="1TKVEi">
+      <property role="IQ2ns" value="1218762508956744481" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="NodeOperator" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyl6i">
     <property role="EcuMT" value="4565621053812461970" />
