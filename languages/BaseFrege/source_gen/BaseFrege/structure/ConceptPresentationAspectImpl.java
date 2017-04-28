@@ -26,10 +26,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_CasePart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_CharValue = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Class = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ClassContext = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ClassContextPart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Comment = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ConstrCall = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Context = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ContextPart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Data = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DataDefinitionPart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Definition = new ConceptPresentationBuilder().create();
@@ -66,8 +66,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Infixl = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Infixr = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Instance = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_InstanceContext = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_InstanceContextPart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IntegerValue = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LCQArrowAssignment = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LCQGuard = new ConceptPresentationBuilder().create();
@@ -116,7 +114,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_QVARID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Resource = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rho = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_RhoContext = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Simpletype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Simpletypes = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Skeleton = new ConceptPresentationBuilder().create();
@@ -175,13 +172,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 16:
         return props_Class;
       case 17:
-        return props_ClassContext;
-      case 18:
-        return props_ClassContextPart;
-      case 19:
         return props_Comment;
-      case 20:
+      case 18:
         return props_ConstrCall;
+      case 19:
+        return props_Context;
+      case 20:
+        return props_ContextPart;
       case 21:
         return props_Data;
       case 22:
@@ -255,140 +252,134 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 56:
         return props_Instance;
       case 57:
-        return props_InstanceContext;
-      case 58:
-        return props_InstanceContextPart;
-      case 59:
         return props_IntegerValue;
-      case 60:
+      case 58:
         return props_LCQArrowAssignment;
-      case 61:
+      case 59:
         return props_LCQGuard;
-      case 62:
+      case 60:
         return props_LCQLet;
-      case 63:
+      case 61:
         return props_LCQualifier;
-      case 64:
+      case 62:
         return props_LDAnnotation;
-      case 65:
+      case 63:
         return props_LDFunDef;
-      case 66:
+      case 64:
         return props_LPExpression;
-      case 67:
+      case 65:
         return props_LPLambda;
-      case 68:
+      case 66:
         return props_Lambda;
-      case 69:
+      case 67:
         return props_LambdaPart;
-      case 70:
+      case 68:
         return props_Let;
-      case 71:
+      case 69:
         return props_LetDefinition;
-      case 72:
+      case 70:
         return props_LetDefinitions;
-      case 73:
+      case 71:
         return props_LineComment;
-      case 74:
+      case 72:
         return props_List;
-      case 75:
+      case 73:
         return props_ListComprehension;
-      case 76:
+      case 74:
         return props_ListEnumeration;
-      case 77:
+      case 75:
         return props_ListRange;
-      case 78:
+      case 76:
         return props_Literal;
-      case 79:
+      case 77:
         return props_MPModule;
-      case 80:
+      case 78:
         return props_MPSCONID;
-      case 81:
+      case 79:
         return props_MPSVARID;
-      case 82:
+      case 80:
         return props_MPSimple;
-      case 83:
+      case 81:
         return props_Main;
-      case 84:
+      case 82:
         return props_Module;
-      case 85:
+      case 83:
         return props_ModulePart;
-      case 86:
+      case 84:
         return props_NodeCONID;
-      case 87:
+      case 85:
         return props_NodeOperator;
-      case 88:
+      case 86:
         return props_NodeVARID;
-      case 89:
+      case 87:
         return props_PConstructor;
-      case 90:
+      case 88:
         return props_PList;
-      case 91:
+      case 89:
         return props_PListBrackets;
-      case 92:
+      case 90:
         return props_PListDot;
-      case 93:
+      case 91:
         return props_PListVar;
-      case 94:
+      case 92:
         return props_PLiteral;
-      case 95:
+      case 93:
         return props_PTuple;
-      case 96:
+      case 94:
         return props_PVarName;
-      case 97:
+      case 95:
         return props_PVarWildcard;
-      case 98:
+      case 96:
         return props_PVariable;
-      case 99:
+      case 97:
         return props_Pattern;
-      case 100:
+      case 98:
         return props_PatternArgument;
-      case 101:
+      case 99:
         return props_PatternFunction;
-      case 102:
+      case 100:
         return props_PatternOperator;
-      case 103:
+      case 101:
         return props_QCONID;
-      case 104:
+      case 102:
         return props_QVARID;
-      case 105:
+      case 103:
         return props_Resource;
-      case 106:
+      case 104:
         return props_Rho;
-      case 107:
-        return props_RhoContext;
-      case 108:
+      case 105:
         return props_Simpletype;
-      case 109:
+      case 106:
         return props_Simpletypes;
-      case 110:
+      case 107:
         return props_Skeleton;
-      case 111:
+      case 108:
         return props_StringValue;
-      case 112:
+      case 109:
         return props_Tau;
-      case 113:
+      case 110:
         return props_Term;
-      case 114:
+      case 111:
         return props_TopExpression;
-      case 115:
+      case 112:
         return props_Tuple;
-      case 116:
+      case 113:
         return props_Type;
-      case 117:
+      case 114:
         return props_TypeBrackets;
-      case 118:
+      case 115:
         return props_TypeList;
-      case 119:
+      case 116:
         return props_TypeName;
-      case 120:
+      case 117:
         return props_TypeTuple;
-      case 121:
+      case 118:
         return props_TypeVariable;
-      case 122:
+      case 119:
         return props_UnaryOPExpression;
-      case 123:
+      case 120:
         return props_Underscore;
-      case 124:
+      case 121:
         return props_WherePart;
     }
     throw new IllegalStateException("Unknown concept " + c);

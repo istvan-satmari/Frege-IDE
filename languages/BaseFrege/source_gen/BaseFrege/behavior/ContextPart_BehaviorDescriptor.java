@@ -9,7 +9,7 @@ package BaseFrege.behavior;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class ClassContextPart_BehaviorDescriptor {
+public class ContextPart_BehaviorDescriptor {
   public String getConceptFqName() {
     return null;
   }

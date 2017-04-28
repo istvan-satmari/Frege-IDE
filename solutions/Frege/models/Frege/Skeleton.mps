@@ -13,20 +13,11 @@
       <concept id="4565621053812419390" name="BaseFrege.structure.ImportAs" flags="ng" index="2sPfcm">
         <child id="4565621053812419391" name="value" index="2sPfcn" />
       </concept>
-      <concept id="4565621053812461242" name="BaseFrege.structure.AIVarid" flags="ng" index="2sPhqi">
-        <child id="4565621053812461243" name="value" index="2sPhqj" />
-      </concept>
-      <concept id="4565621053812461258" name="BaseFrege.structure.AIOperator" flags="ng" index="2sPhry">
-        <child id="1218762508956744481" name="value" index="1V1X4E" />
-      </concept>
       <concept id="4565621053812445485" name="BaseFrege.structure.ImportList" flags="ng" index="2sPk$5">
         <child id="4565621053812445517" name="hiding" index="2sPk__" />
         <child id="4565621053812452387" name="items" index="2sPngb" />
       </concept>
       <concept id="4565621053812445503" name="BaseFrege.structure.ImportHiding" flags="ng" index="2sPk$n" />
-      <concept id="4565621053812453401" name="BaseFrege.structure.Rho" flags="ng" index="2sPmwL">
-        <child id="4565621053812453572" name="tau" index="2sPmzG" />
-      </concept>
       <concept id="4565621053812453099" name="BaseFrege.structure.ImportItemQconid" flags="ng" index="2sPnr3">
         <child id="4565621053812453100" name="value" index="2sPnr4" />
       </concept>
@@ -59,21 +50,10 @@
         <child id="4565621053812461132" name="operator" index="2sPhp$" />
         <child id="6912716259988811214" name="infix" index="1EnsGu" />
       </concept>
-      <concept id="574920793184786624" name="BaseFrege.structure.Annotation" flags="ng" index="1kelYE">
-        <child id="4565621053812461135" name="type" index="2sPhpB" />
-        <child id="7934180497854199132" name="items" index="10tqDW" />
-      </concept>
       <concept id="574920793184786598" name="BaseFrege.structure.Main" flags="ng" index="1kelZc" />
       <concept id="6912716259988811212" name="BaseFrege.structure.Infixr" flags="ng" index="1EnsGs" />
-      <concept id="8562096718746085873" name="BaseFrege.structure.Simpletype" flags="ng" index="1VHOhF" />
       <concept id="8562096718746085876" name="BaseFrege.structure.TypeVariable" flags="ng" index="1VHOhI">
         <child id="4565621053812453402" name="value" index="2sPmwM" />
-      </concept>
-      <concept id="8562096718746085893" name="BaseFrege.structure.Simpletypes" flags="ng" index="1VHOuv">
-        <child id="8562096718746085894" name="Simpletypes" index="1VHOus" />
-      </concept>
-      <concept id="8562096718746085933" name="BaseFrege.structure.Tau" flags="ng" index="1VHOuR">
-        <child id="8562096718746085936" name="returnType" index="1VHOuE" />
       </concept>
       <concept id="8800381220712711590" name="BaseFrege.structure.QCONID" flags="ng" index="1YIbAY">
         <child id="8800381220712711686" name="conid" index="1YIbCu" />
@@ -144,41 +124,10 @@
         <property role="1kmRcP" value="?:?..-" />
       </node>
     </node>
-    <node concept="1kelYE" id="13DUwHFZxFx" role="1kelZ8">
-      <node concept="2sPmwL" id="13DUwHFZxFz" role="2sPhpB">
-        <node concept="1VHOuR" id="13DUwHFZxF$" role="2sPmzG">
-          <node concept="1VHOuv" id="13DUwHFZxF_" role="1VHOuE">
-            <node concept="1VHOhF" id="13DUwHFZxFA" role="1VHOus" />
-          </node>
-        </node>
-      </node>
-      <node concept="2sPhqi" id="13DUwHFZxFB" role="10tqDW">
-        <node concept="1YIbBU" id="13DUwHFZxFC" role="2sPhqj">
-          <property role="1YIbBE" value="f" />
-        </node>
-      </node>
-      <node concept="2sPhqi" id="13DUwHFZxFD" role="10tqDW">
-        <node concept="1YIbBU" id="13DUwHFZxFE" role="2sPhqj">
-          <property role="1YIbBE" value="g" />
-        </node>
-      </node>
-      <node concept="2sPhqi" id="13DUwHFZxFF" role="10tqDW">
-        <node concept="1YIbBU" id="13DUwHFZxFG" role="2sPhqj">
-          <property role="1YIbBE" value="h" />
-        </node>
-      </node>
-      <node concept="2sPhry" id="13DUwHFZxFH" role="10tqDW">
-        <node concept="1ZLjF3" id="13DUwHFZxFI" role="1V1X4E">
-          <property role="1kmRcP" value=".." />
-        </node>
-      </node>
-      <node concept="2sPhry" id="13DUwHFZxFJ" role="10tqDW">
-        <node concept="1ZLjF3" id="13DUwHFZxFK" role="1V1X4E">
-          <property role="1kmRcP" value="::" />
-        </node>
-      </node>
-    </node>
-    <node concept="14659P" id="13DUwHFZ9z0" role="1kelZ8" />
+    <node concept="14659P" id="2GgA6SGkw6q" role="1kelZ8" />
+    <node concept="14659P" id="AfhA7XbMIJ" role="1kelZ8" />
+    <node concept="14659P" id="AfhA7XbMG8" role="1kelZ8" />
+    <node concept="14659P" id="AfhA7XaKzj" role="1kelZ8" />
     <node concept="1kelXq" id="7SJSV$B5TVW" role="1kelWf">
       <node concept="1ZLmsQ" id="7SJSV$B5TVX" role="1ZLdKC">
         <property role="_tKnq" value="frege.sample.Example" />

@@ -26,6 +26,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 
 public class Definition_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
@@ -35,6 +36,7 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
     result.add(new Definition_SubstituteMenu.SubstituteMenuPart_Subconcepts_d54ywy_a());
     result.add(new Definition_SubstituteMenu.SubstituteMenuPart_Action_d54ywy_b());
     result.add(new Definition_SubstituteMenu.SubstituteMenuPart_Action_d54ywy_c());
+    result.add(new Definition_SubstituteMenu.SubstituteMenuPart_Action_d54ywy_d());
     return result;
   }
   public class SubstituteMenuPart_Subconcepts_d54ywy_a extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
@@ -167,6 +169,57 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
       }
       public boolean canExecute_internal(@NotNull String pattern, boolean strictly) {
         return (pattern != null && pattern.length() > 0) && pattern.endsWith("::");
+      }
+    }
+  }
+  private class SubstituteMenuPart_Action_d54ywy_d extends SingleItemSubstituteMenuPart {
+
+    @Nullable
+    @Override
+    protected SubstituteMenuItem createItem(SubstituteMenuContext _context) {
+      return new Definition_SubstituteMenu.SubstituteMenuPart_Action_d54ywy_d.Item(_context);
+    }
+    private class Item extends DefaultSubstituteMenuItem {
+      private final SubstituteMenuContext _context;
+      public Item(SubstituteMenuContext context) {
+        super(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition"), context.getParentNode(), context.getCurrentTargetNode(), context.getEditorContext());
+        _context = context;
+      }
+
+      @Nullable
+      @Override
+      public SNode createNode(@NotNull String pattern) {
+        // Substitute to function definition 
+        SNode node = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, "BaseFrege.structure.FunctionDefinitions"));
+
+        if (pattern.endsWith("=")) {
+          // Assignment 
+          SNode def = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3dceaL, "BaseFrege.structure.FDAssignment")), null);
+          ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, 0x45da4fd5064877c8L, "definitions"))).addElement(def);
+
+        } else if (pattern.endsWith("|")) {
+          //  Guards 
+          SNode def = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3dcebL, "BaseFrege.structure.FDGuards")), null);
+          ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, 0x45da4fd5064877c8L, "definitions"))).addElement(def);
+        }
+
+        return node;
+      }
+      @Nullable
+      @Override
+      public String getMatchingText(@NotNull String pattern) {
+        return pattern;
+      }
+      @Override
+      public boolean canExecute(@NotNull String pattern) {
+        return canExecute_internal(pattern, false);
+      }
+      @Override
+      public boolean canExecuteStrictly(@NotNull String pattern) {
+        return canExecute_internal(pattern, true);
+      }
+      public boolean canExecute_internal(@NotNull String pattern, boolean strictly) {
+        return (pattern != null && pattern.length() > 0) && (pattern.endsWith("=") || pattern.endsWith("|"));
       }
     }
   }

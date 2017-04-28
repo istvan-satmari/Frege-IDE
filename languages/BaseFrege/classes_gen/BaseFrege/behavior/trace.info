@@ -52,12 +52,6 @@
     <file name="CharValue_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.CharValue_BehaviorDescriptor" />
     </file>
-    <file name="ClassContextPart_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.ClassContextPart_BehaviorDescriptor" />
-    </file>
-    <file name="ClassContext_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.ClassContext_BehaviorDescriptor" />
-    </file>
     <file name="Class_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.Class_BehaviorDescriptor" />
     </file>
@@ -66,6 +60,12 @@
     </file>
     <file name="ConstrCall_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.ConstrCall_BehaviorDescriptor" />
+    </file>
+    <file name="ContextPart_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.ContextPart_BehaviorDescriptor" />
+    </file>
+    <file name="Context_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.Context_BehaviorDescriptor" />
     </file>
     <file name="DataDefinitionPart_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.DataDefinitionPart_BehaviorDescriptor" />
@@ -171,12 +171,6 @@
     </file>
     <file name="Infixr_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.Infixr_BehaviorDescriptor" />
-    </file>
-    <file name="InstanceContextPart_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.InstanceContextPart_BehaviorDescriptor" />
-    </file>
-    <file name="InstanceContext_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.InstanceContext_BehaviorDescriptor" />
     </file>
     <file name="Instance_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.Instance_BehaviorDescriptor" />
@@ -321,9 +315,6 @@
     </file>
     <file name="Resource_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.Resource_BehaviorDescriptor" />
-    </file>
-    <file name="RhoContext_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.RhoContext_BehaviorDescriptor" />
     </file>
     <file name="Rho_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.Rho_BehaviorDescriptor" />

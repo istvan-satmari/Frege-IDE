@@ -74,14 +74,6 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="BaseFrege.behavior.ClassContextPart_BehaviorDescriptor" file="ClassContextPart_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="BaseFrege.behavior.ClassContext_BehaviorDescriptor" file="ClassContext_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="BaseFrege.behavior.Class_BehaviorDescriptor" file="Class_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
@@ -91,6 +83,14 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="BaseFrege.behavior.ConstrCall_BehaviorDescriptor" file="ConstrCall_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ContextPart_BehaviorDescriptor" file="ContextPart_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Context_BehaviorDescriptor" file="Context_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -231,14 +231,6 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="BaseFrege.behavior.Infixr_BehaviorDescriptor" file="Infixr_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="BaseFrege.behavior.InstanceContextPart_BehaviorDescriptor" file="InstanceContextPart_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="BaseFrege.behavior.InstanceContext_BehaviorDescriptor" file="InstanceContext_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -431,10 +423,6 @@
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="BaseFrege.behavior.Resource_BehaviorDescriptor" file="Resource_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="BaseFrege.behavior.RhoContext_BehaviorDescriptor" file="RhoContext_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>

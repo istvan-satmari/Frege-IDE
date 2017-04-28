@@ -1,4 +1,5 @@
 Priste: 9.5. 10:00
+Skoncil som na definition > function definition (substitucia)
 
 
 TODO
@@ -202,54 +203,7 @@ visibledefinition ::= 	'instance' insthead wheredef
 						fundef
 
 						
-- prevedenie:
-	- [TODO] co sa tyka akcii, najst rozumny sposob (t.j. zadefinovat substitucie) pre:
-		- FunctionDefinitions
-		- anotacie funkcii
-		
-Priklady na anotacie funkcii:		
-convertUpper :: (Char -> Char) 	
-second :: (a, b, c) -> b  
-zip :: [a] -> [b] -> [(a, b)]
-calcBmis :: (Real a) => [(a, a)]
-groupOf :: Int -> [a] -> [[a]]
-powerset :: [a] -> [[a]]
-(-:) :: a -> (a -> b) -> b
-(<), (<=), (>=), (>) :: a -> a -> Bool
-replicate :: (Num i) => i -> a -> [a]
-elem :: (Eq a, Num i) => a -> [i] -> Bool
-sayMe :: (Integral a) => a -> String
-doubleSmallNumber :: Num a => a -> a
-findKey :: (Eq k) => k -> [(k,v)] -> Maybe v
-map :: (a -> b) -> [a] -> [b]
-applyLog :: (Monoid m) => (a, m) -> (a -> (b, m)) -> (b, m)
-numLongChains :: Int
-(-:) :: a -> (a -> b) -> b
-(%) :: Int -> Int -> Rational
-mDouble :: Int -> Int
-applyMaybe :: Maybe a -> (a -> b) -> Maybe b
-flip :: (a -> b -> c) -> b -> a -> c
-defMB = defValue (Nothing :: Maybe Bool)
-surface :: Shape -> Float	
-create :: Float -> Shape
-maybeOperation :: (SuperMaybe String) -> String
-myDisk :: FSItem
-getLines :: SizedBufferedReader -> IO [String]
-yesnoIf :: (YesNo y) => y -> a -> a -> a
-fmap :: (a -> b) -> f a -> f b
-(==) :: a -> a -> Bool
-(/=) :: a -> a -> Bool  
-(<), (<=), (>=), (>)  :: a -> a -> Bool
-fmap :: (a -> b) -> f a -> f b
-\x -> x+x :: Int
-encode :: Int -> String -> String
-shortLinesOnly :: String -> String
-
-
-
-		
-		
-		ostatne evidentne funguju OK
+- prevedenie:	
 	- IMPORTS je samostatna sucast, cize "import" z gramatiky ignorujem
 	- DEFINITIONS je abstraktne, od neho dedia:
 		- FIXITY
@@ -293,6 +247,38 @@ tyvar ::= VARID
 tau ::= (simpletype+ '->')* simpletype+
 
 
+
+Tau:
+	- jednotlive argumenty musi ist lahko pridavat (zneviditelnene)
+
+Simpletypes je niekolko simpletype-ov:
+	- musi ist rozumne lahko pridavat
+	
+Simpletype, z neho dedi:
+	- Brackets
+	- Tuple
+	- List
+	- Name
+	- Type variable
+
+
+Rho: RhoContext[0..1], Tau[1]
+Tau: Simpletypes[0..n] arguments, Simpletypes[1] return
+Simpletypes: Simpletype[1..n]
+Simpletype: Brackets, Tuple, List, Name, Type variable
+	- jednotlive obsahuju: Tau[1]
+	- tuple: Tau[1], Tau[1..n] (musia byt 2)
+		- totizto len tuple moze mat jednotlive polozky roznych typov
+	- prip. CONID, VARID
+
+z tych jednoduchis, simpletype:
+	- jednoduche typove premenne: a, b, c
+	- typove mena: Bool, String
+	- vlastne typy: Maybe v
+	
+	
+
+
 - priklady:
 [a] -> [b] -> [(a, b)]
 (Real a) => [(a, a)]
@@ -304,9 +290,17 @@ a -> (a -> b) -> b
 (Monoid m) => (a, m) -> (a -> (b, m)) -> (b, m)
 
 
+
+
+
+
+
+	
+	
+
 - prevedenie:
 	- [Q] context je prilis zlozity a nevidel som nikde na to priklad
-		- nestaci "class-ovsky"
+		- nestaci "class-ovsky"?
 	
 	- [TODO] kontext v zmysle "(simpletype+ '=>')?" by mal byt upraveny na nieco rozumnejsie
 		- problematicke, lebo je najprv nutne previes na TypeTuple a odtial sa da dostat k takym konstruktom, ako napr. "(Eq a, Num i) =>"
@@ -1290,6 +1284,60 @@ Semanticka analyza ??
 
 
 
+Priklady:	
+----------------------------------------------
+Priklady na anotacie funkcii:		
+convertUpper :: (Char -> Char) 	
+second :: (a, b, c) -> b  
+zip :: [a] -> [b] -> [(a, b)]
+calcBmis :: (Real a) => [(a, a)]
+groupOf :: Int -> [a] -> [[a]]
+powerset :: [a] -> [[a]]
+(-:) :: a -> (a -> b) -> b
+(<), (<=), (>=), (>) :: a -> a -> Bool
+replicate :: (Num i) => i -> a -> [a]
+elem :: (Eq a, Num i) => a -> [i] -> Bool
+sayMe :: (Integral a) => a -> String
+doubleSmallNumber :: Num a => a -> a
+findKey :: (Eq k) => k -> [(k,v)] -> Maybe v
+map :: (a -> b) -> [a] -> [b]
+applyLog :: (Monoid m) => (a, m) -> (a -> (b, m)) -> (b, m)
+numLongChains :: Int
+(-:) :: a -> (a -> b) -> b
+(%) :: Int -> Int -> Rational
+mDouble :: Int -> Int
+applyMaybe :: Maybe a -> (a -> b) -> Maybe b
+flip :: (a -> b -> c) -> b -> a -> c
+defMB = defValue (Nothing :: Maybe Bool)
+surface :: Shape -> Float	
+create :: Float -> Shape
+maybeOperation :: (SuperMaybe String) -> String
+myDisk :: FSItem
+getLines :: SizedBufferedReader -> IO [String]
+yesnoIf :: (YesNo y) => y -> a -> a -> a
+fmap :: (a -> b) -> f a -> f b
+(==) :: a -> a -> Bool
+(/=) :: a -> a -> Bool  
+(<), (<=), (>=), (>)  :: a -> a -> Bool
+fmap :: (a -> b) -> f a -> f b
+\x -> x+x :: Int
+encode :: Int -> String -> String
+shortLinesOnly :: String -> String
+	
+Priklady na definicie funkcii:
+lostNumbers = [ 4, 8, 15, 16, 23, 42 ]
+f n = n `div` 2
+f a b c = 1
+a `myop` b = a + b
+x % y = reduce $ Rational x y
+(Rational x1 y1) +. (Rational x2 y2) = (x1 * y2 + x2 * y1) % (y1 * y2)
+replicate n x
+    | n <= 0    = []
+    | otherwise = x : replicate' (n - 1) x
+take _ []     = []
+
+	
+	
 Vynechane:
 ----------------------------------------------
 

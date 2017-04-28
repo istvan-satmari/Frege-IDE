@@ -35,7 +35,9 @@ public class Tau_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
     editorCell.setCellId("Collection_wurdw2_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createRefNodeList_wurdw2_a0(editorContext, node));
+    if (renderingCondition_wurdw2_a0a(node, editorContext)) {
+      editorCell.addEditorCell(this.createRefNodeList_wurdw2_a0(editorContext, node));
+    }
     if (renderingCondition_wurdw2_a1a(node, editorContext)) {
       editorCell.addEditorCell(this.createConstant_wurdw2_b0(editorContext, node));
     }
@@ -92,6 +94,9 @@ public class Tau_Editor extends DefaultNodeEditor {
       editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(prevNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
       return editorCell;
     }
+  }
+  private static boolean renderingCondition_wurdw2_a0a(SNode node, EditorContext editorContext) {
+    return ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65ea2dL, 0x76d2ad9a0d65ea2eL, "arguments"))).isNotEmpty();
   }
   private EditorCell createConstant_wurdw2_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "->");

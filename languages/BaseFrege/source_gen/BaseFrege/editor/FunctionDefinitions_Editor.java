@@ -31,14 +31,14 @@ public class FunctionDefinitions_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNodeList_fh78v6_a0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new FunctionDefinitions_Editor.PatternsListHandler_fh78v6_a0(node, "Patterns", editorContext);
+    AbstractCellListHandler handler = new FunctionDefinitions_Editor.definitionsListHandler_fh78v6_a0(node, "definitions", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
-    editorCell.setCellId("refNodeList_Patterns");
+    editorCell.setCellId("refNodeList_definitions");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class PatternsListHandler_fh78v6_a0 extends RefNodeListHandler {
-    public PatternsListHandler_fh78v6_a0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class definitionsListHandler_fh78v6_a0 extends RefNodeListHandler {
+    public definitionsListHandler_fh78v6_a0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -64,7 +64,7 @@ public class FunctionDefinitions_Editor extends DefaultNodeEditor {
           elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
         }
         if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, 0x45da4fd5064877c8L, "Patterns"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
+          elementCell.setSubstituteInfo(new OldNewCompositeSubstituteInfo(myEditorContext, new SChildSubstituteInfo(elementCell, myOwnerNode, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, 0x45da4fd5064877c8L, "definitions"), elementNode), new DefaultChildSubstituteInfo(myOwnerNode, elementNode, super.getLinkDeclaration(), myEditorContext)));
         }
       }
     }

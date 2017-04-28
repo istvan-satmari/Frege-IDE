@@ -17,6 +17,7 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class Rho_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -26,7 +27,9 @@ public class Rho_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
     editorCell.setCellId("Collection_ml9zo9_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createRefNode_ml9zo9_a0(editorContext, node));
+    if (renderingCondition_ml9zo9_a0a(node, editorContext)) {
+      editorCell.addEditorCell(this.createRefNode_ml9zo9_a0(editorContext, node));
+    }
     editorCell.addEditorCell(this.createRefNode_ml9zo9_b0(editorContext, node));
     return editorCell;
   }
@@ -69,6 +72,9 @@ public class Rho_Editor extends DefaultNodeEditor {
       editorCell.getStyle().putAll(style);
       return editorCell;
     }
+  }
+  private static boolean renderingCondition_ml9zo9_a0a(SNode node, EditorContext editorContext) {
+    return (SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3893019L, 0x3f5c5828a38930fbL, "context")) != null);
   }
   private EditorCell createRefNode_ml9zo9_b0(EditorContext editorContext, SNode node) {
     SingleRoleCellProvider provider = new Rho_Editor.tauSingleRoleHandler_ml9zo9_b0(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3893019L, 0x3f5c5828a38930c4L, "tau"), editorContext);

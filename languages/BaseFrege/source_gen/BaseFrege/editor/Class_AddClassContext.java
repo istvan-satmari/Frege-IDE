@@ -80,7 +80,7 @@ public class Class_AddClassContext extends TransformationMenuBase {
         @Override
         public void execute(@NotNull String pattern) {
           //  The current situation: class| Name var where 
-          SNode ccontext = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, "BaseFrege.structure.ClassContext")), null);
+          SNode ccontext = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, "BaseFrege.structure.Context")), null);
           SLinkOperations.setTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d905L, 0x1b099fc7c901af7aL, "context"), ccontext);
 
           SNode ccp = ListSequence.fromList(SLinkOperations.getChildren(ccontext, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, 0x1b099fc7c901afc8L, "parts"))).first();
@@ -97,7 +97,7 @@ public class Class_AddClassContext extends TransformationMenuBase {
         @Nullable
         @Override
         public SAbstractConcept getOutputConcept() {
-          return MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, "BaseFrege.structure.ClassContext");
+          return MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, "BaseFrege.structure.Context");
         }
       }
     }
