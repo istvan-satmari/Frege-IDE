@@ -1,5 +1,5 @@
 Priste: 9.5. 10:00
-Skoncil som pri Type (add type variable)
+Skoncil som pri FunctionDefinition - narocne, zatial preskocene
 
 
 
@@ -627,7 +627,12 @@ bmiTell weight height
 - prevedenie:
 	- [TODO] editor je urcite zatial nakonfigurovany nespravne
 	- [TODO] koncepty musia byt rychlo preveditelne (t.j. annotation <-> FDAnnotation, atd.)
+		- ide o LetDefinitions koncept
+		- treba vediet rovnako, ako pri definition, zistit, co za koncept ma byt pouzity (defaultna substitucia z abstraktneho node)
+		- 
+	
 	- [TODO] tu musi byt kontextova napoveda; musi byt akoby zuzena na sucasny scope
+		- myslim "ctrl + space" a vsetko okolo toho (MPS musi korektne vyhladat v danom podstrome dosutpne referencie)
 	
 
 	
