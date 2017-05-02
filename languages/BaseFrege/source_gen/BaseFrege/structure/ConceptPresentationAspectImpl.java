@@ -15,7 +15,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_AnnotationItem = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BCContent = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BCLine = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_BCNestedComment = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_BCNestedComment = new ConceptPresentationBuilder().shortDesc("Nested block comment").create();
   private final ConceptPresentation props_BinaryExpression = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BlockComment = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BooleanValue = new ConceptPresentationBuilder().create();
@@ -67,12 +67,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Infixr = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Instance = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IntegerValue = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LCQArrowAssignment = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_LCQArrowAssignment = new ConceptPresentationBuilder().shortDesc("expr <- expr").create();
   private final ConceptPresentation props_LCQGuard = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LCQLet = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LCQualifier = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LDAnnotation = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LDFunDef = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_LDAnnotation = new ConceptPresentationBuilder().shortDesc("Annotation").create();
+  private final ConceptPresentation props_LDFunDef = new ConceptPresentationBuilder().shortDesc("Function definition").create();
   private final ConceptPresentation props_LPExpression = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LPLambda = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Lambda = new ConceptPresentationBuilder().create();
@@ -86,10 +86,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ListEnumeration = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ListRange = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Literal = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MPModule = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_MPModule = new ConceptPresentationBuilder().shortDesc("Export a complete module").create();
   private final ConceptPresentation props_MPSCONID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_MPSVARID = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MPSimple = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_MPSimple = new ConceptPresentationBuilder().shortDesc("Export either a function, or a type, etc.").create();
   private final ConceptPresentation props_Main = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Module = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ModulePart = new ConceptPresentationBuilder().create();
@@ -121,12 +121,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_TopExpression = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Tuple = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Type = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TypeBrackets = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TypeData = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TypeFunction = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TypeBrackets = new ConceptPresentationBuilder().shortDesc("Type in brackets").create();
+  private final ConceptPresentation props_TypeData = new ConceptPresentationBuilder().shortDesc("Represents e.g. \"Maybe [a]\"").create();
+  private final ConceptPresentation props_TypeFunction = new ConceptPresentationBuilder().shortDesc("(simpletypes '->')* simpletypes").create();
+  private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type").create();
+  private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("'(' tau (',' tau)* ')'").create();
+  private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable").create();
   private final ConceptPresentation props_UnaryOPExpression = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Underscore = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_WherePart = new ConceptPresentationBuilder().create();
@@ -136,249 +136,249 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case 0:
+      case LanguageConceptSwitch.AIOperator:
         return props_AIOperator;
-      case 1:
+      case LanguageConceptSwitch.AIVarid:
         return props_AIVarid;
-      case 2:
+      case LanguageConceptSwitch.Annotation:
         return props_Annotation;
-      case 3:
+      case LanguageConceptSwitch.AnnotationItem:
         return props_AnnotationItem;
-      case 4:
+      case LanguageConceptSwitch.BCContent:
         return props_BCContent;
-      case 5:
+      case LanguageConceptSwitch.BCLine:
         return props_BCLine;
-      case 6:
+      case LanguageConceptSwitch.BCNestedComment:
         return props_BCNestedComment;
-      case 7:
+      case LanguageConceptSwitch.BinaryExpression:
         return props_BinaryExpression;
-      case 8:
+      case LanguageConceptSwitch.BlockComment:
         return props_BlockComment;
-      case 9:
+      case LanguageConceptSwitch.BooleanValue:
         return props_BooleanValue;
-      case 10:
+      case LanguageConceptSwitch.Brackets:
         return props_Brackets;
-      case 11:
+      case LanguageConceptSwitch.CPExprToExpr:
         return props_CPExprToExpr;
-      case 12:
+      case LanguageConceptSwitch.CPExprToGuards:
         return props_CPExprToGuards;
-      case 13:
+      case LanguageConceptSwitch.Case:
         return props_Case;
-      case 14:
+      case LanguageConceptSwitch.CasePart:
         return props_CasePart;
-      case 15:
+      case LanguageConceptSwitch.CharValue:
         return props_CharValue;
-      case 16:
+      case LanguageConceptSwitch.Class:
         return props_Class;
-      case 17:
+      case LanguageConceptSwitch.Comment:
         return props_Comment;
-      case 18:
+      case LanguageConceptSwitch.ConstrCall:
         return props_ConstrCall;
-      case 19:
+      case LanguageConceptSwitch.Context:
         return props_Context;
-      case 20:
+      case LanguageConceptSwitch.ContextPart:
         return props_ContextPart;
-      case 21:
+      case LanguageConceptSwitch.Data:
         return props_Data;
-      case 22:
+      case LanguageConceptSwitch.DataDefinitionPart:
         return props_DataDefinitionPart;
-      case 23:
+      case LanguageConceptSwitch.Definition:
         return props_Definition;
-      case 24:
+      case LanguageConceptSwitch.DoubleValue:
         return props_DoubleValue;
-      case 25:
+      case LanguageConceptSwitch.EmptyLine:
         return props_EmptyLine;
-      case 26:
+      case LanguageConceptSwitch.Expression:
         return props_Expression;
-      case 27:
+      case LanguageConceptSwitch.ExpressionPart:
         return props_ExpressionPart;
-      case 28:
+      case LanguageConceptSwitch.FCLambda:
         return props_FCLambda;
-      case 29:
+      case LanguageConceptSwitch.FCNamed:
         return props_FCNamed;
-      case 30:
+      case LanguageConceptSwitch.FCOperator:
         return props_FCOperator;
-      case 31:
+      case LanguageConceptSwitch.FDAssignment:
         return props_FDAssignment;
-      case 32:
+      case LanguageConceptSwitch.FDGuards:
         return props_FDGuards;
-      case 33:
+      case LanguageConceptSwitch.Fixity:
         return props_Fixity;
-      case 34:
+      case LanguageConceptSwitch.FunCall:
         return props_FunCall;
-      case 35:
+      case LanguageConceptSwitch.FunDef:
         return props_FunDef;
-      case 36:
+      case LanguageConceptSwitch.FunctionDefinitions:
         return props_FunctionDefinitions;
-      case 37:
+      case LanguageConceptSwitch.Guard:
         return props_Guard;
-      case 38:
+      case LanguageConceptSwitch.IICMConid:
         return props_IICMConid;
-      case 39:
+      case LanguageConceptSwitch.IICMOperator:
         return props_IICMOperator;
-      case 40:
+      case LanguageConceptSwitch.IICMVarid:
         return props_IICMVarid;
-      case 41:
+      case LanguageConceptSwitch.IICMember:
         return props_IICMember;
-      case 42:
+      case LanguageConceptSwitch.IfThenElse:
         return props_IfThenElse;
-      case 43:
+      case LanguageConceptSwitch.Import:
         return props_Import;
-      case 44:
+      case LanguageConceptSwitch.ImportAs:
         return props_ImportAs;
-      case 45:
+      case LanguageConceptSwitch.ImportHiding:
         return props_ImportHiding;
-      case 46:
+      case LanguageConceptSwitch.ImportItem:
         return props_ImportItem;
-      case 47:
+      case LanguageConceptSwitch.ImportItemClass:
         return props_ImportItemClass;
-      case 48:
+      case LanguageConceptSwitch.ImportItemOperator:
         return props_ImportItemOperator;
-      case 49:
+      case LanguageConceptSwitch.ImportItemQconid:
         return props_ImportItemQconid;
-      case 50:
+      case LanguageConceptSwitch.ImportItemQvarid:
         return props_ImportItemQvarid;
-      case 51:
+      case LanguageConceptSwitch.ImportList:
         return props_ImportList;
-      case 52:
+      case LanguageConceptSwitch.Infix:
         return props_Infix;
-      case 53:
+      case LanguageConceptSwitch.InfixAbstract:
         return props_InfixAbstract;
-      case 54:
+      case LanguageConceptSwitch.Infixl:
         return props_Infixl;
-      case 55:
+      case LanguageConceptSwitch.Infixr:
         return props_Infixr;
-      case 56:
+      case LanguageConceptSwitch.Instance:
         return props_Instance;
-      case 57:
+      case LanguageConceptSwitch.IntegerValue:
         return props_IntegerValue;
-      case 58:
+      case LanguageConceptSwitch.LCQArrowAssignment:
         return props_LCQArrowAssignment;
-      case 59:
+      case LanguageConceptSwitch.LCQGuard:
         return props_LCQGuard;
-      case 60:
+      case LanguageConceptSwitch.LCQLet:
         return props_LCQLet;
-      case 61:
+      case LanguageConceptSwitch.LCQualifier:
         return props_LCQualifier;
-      case 62:
+      case LanguageConceptSwitch.LDAnnotation:
         return props_LDAnnotation;
-      case 63:
+      case LanguageConceptSwitch.LDFunDef:
         return props_LDFunDef;
-      case 64:
+      case LanguageConceptSwitch.LPExpression:
         return props_LPExpression;
-      case 65:
+      case LanguageConceptSwitch.LPLambda:
         return props_LPLambda;
-      case 66:
+      case LanguageConceptSwitch.Lambda:
         return props_Lambda;
-      case 67:
+      case LanguageConceptSwitch.LambdaPart:
         return props_LambdaPart;
-      case 68:
+      case LanguageConceptSwitch.Let:
         return props_Let;
-      case 69:
+      case LanguageConceptSwitch.LetDefinition:
         return props_LetDefinition;
-      case 70:
+      case LanguageConceptSwitch.LetDefinitions:
         return props_LetDefinitions;
-      case 71:
+      case LanguageConceptSwitch.LineComment:
         return props_LineComment;
-      case 72:
+      case LanguageConceptSwitch.List:
         return props_List;
-      case 73:
+      case LanguageConceptSwitch.ListComprehension:
         return props_ListComprehension;
-      case 74:
+      case LanguageConceptSwitch.ListEnumeration:
         return props_ListEnumeration;
-      case 75:
+      case LanguageConceptSwitch.ListRange:
         return props_ListRange;
-      case 76:
+      case LanguageConceptSwitch.Literal:
         return props_Literal;
-      case 77:
+      case LanguageConceptSwitch.MPModule:
         return props_MPModule;
-      case 78:
+      case LanguageConceptSwitch.MPSCONID:
         return props_MPSCONID;
-      case 79:
+      case LanguageConceptSwitch.MPSVARID:
         return props_MPSVARID;
-      case 80:
+      case LanguageConceptSwitch.MPSimple:
         return props_MPSimple;
-      case 81:
+      case LanguageConceptSwitch.Main:
         return props_Main;
-      case 82:
+      case LanguageConceptSwitch.Module:
         return props_Module;
-      case 83:
+      case LanguageConceptSwitch.ModulePart:
         return props_ModulePart;
-      case 84:
+      case LanguageConceptSwitch.NodeCONID:
         return props_NodeCONID;
-      case 85:
+      case LanguageConceptSwitch.NodeOperator:
         return props_NodeOperator;
-      case 86:
+      case LanguageConceptSwitch.NodeVARID:
         return props_NodeVARID;
-      case 87:
+      case LanguageConceptSwitch.PConstructor:
         return props_PConstructor;
-      case 88:
+      case LanguageConceptSwitch.PList:
         return props_PList;
-      case 89:
+      case LanguageConceptSwitch.PListBrackets:
         return props_PListBrackets;
-      case 90:
+      case LanguageConceptSwitch.PListDot:
         return props_PListDot;
-      case 91:
+      case LanguageConceptSwitch.PListVar:
         return props_PListVar;
-      case 92:
+      case LanguageConceptSwitch.PLiteral:
         return props_PLiteral;
-      case 93:
+      case LanguageConceptSwitch.PTuple:
         return props_PTuple;
-      case 94:
+      case LanguageConceptSwitch.PVarName:
         return props_PVarName;
-      case 95:
+      case LanguageConceptSwitch.PVarWildcard:
         return props_PVarWildcard;
-      case 96:
+      case LanguageConceptSwitch.PVariable:
         return props_PVariable;
-      case 97:
+      case LanguageConceptSwitch.Pattern:
         return props_Pattern;
-      case 98:
+      case LanguageConceptSwitch.PatternArgument:
         return props_PatternArgument;
-      case 99:
+      case LanguageConceptSwitch.PatternFunction:
         return props_PatternFunction;
-      case 100:
+      case LanguageConceptSwitch.PatternOperator:
         return props_PatternOperator;
-      case 101:
+      case LanguageConceptSwitch.QCONID:
         return props_QCONID;
-      case 102:
+      case LanguageConceptSwitch.QVARID:
         return props_QVARID;
-      case 103:
+      case LanguageConceptSwitch.Resource:
         return props_Resource;
-      case 104:
+      case LanguageConceptSwitch.Rho:
         return props_Rho;
-      case 105:
+      case LanguageConceptSwitch.Simpletype:
         return props_Simpletype;
-      case 106:
+      case LanguageConceptSwitch.Skeleton:
         return props_Skeleton;
-      case 107:
+      case LanguageConceptSwitch.StringValue:
         return props_StringValue;
-      case 108:
+      case LanguageConceptSwitch.Term:
         return props_Term;
-      case 109:
+      case LanguageConceptSwitch.TopExpression:
         return props_TopExpression;
-      case 110:
+      case LanguageConceptSwitch.Tuple:
         return props_Tuple;
-      case 111:
+      case LanguageConceptSwitch.Type:
         return props_Type;
-      case 112:
+      case LanguageConceptSwitch.TypeBrackets:
         return props_TypeBrackets;
-      case 113:
+      case LanguageConceptSwitch.TypeData:
         return props_TypeData;
-      case 114:
+      case LanguageConceptSwitch.TypeFunction:
         return props_TypeFunction;
-      case 115:
+      case LanguageConceptSwitch.TypeList:
         return props_TypeList;
-      case 116:
+      case LanguageConceptSwitch.TypeTuple:
         return props_TypeTuple;
-      case 117:
+      case LanguageConceptSwitch.TypeVariable:
         return props_TypeVariable;
-      case 118:
+      case LanguageConceptSwitch.UnaryOPExpression:
         return props_UnaryOPExpression;
-      case 119:
+      case LanguageConceptSwitch.Underscore:
         return props_Underscore;
-      case 120:
+      case LanguageConceptSwitch.WherePart:
         return props_WherePart;
     }
-    throw new IllegalStateException("Unknown concept " + c);
+    return null;
   }
 }

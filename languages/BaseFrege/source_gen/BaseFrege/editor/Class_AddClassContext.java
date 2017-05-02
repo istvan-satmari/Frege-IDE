@@ -18,6 +18,7 @@ import jetbrains.mps.lang.editor.menus.GroupMenuPart;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Arrays;
+import jetbrains.mps.lang.editor.menus.transformation.ConstraintsFilteringTransformationMenuPartDecorator;
 import jetbrains.mps.lang.editor.menus.SingleItemMenuPart;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.openapi.editor.menus.transformation.ActionItemBase;
@@ -42,12 +43,12 @@ public class Class_AddClassContext extends TransformationMenuBase {
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.RIGHT_SIDE_TRANSFORM).contains(_context.getMenuLocation())) {
-      result.add(new Class_AddClassContext.TransformationMenuPart_Group_nv13mw_a0());
+      result.add(new Class_AddClassContext.TMP_Group_nv13mw_a0());
     }
     return result;
   }
 
-  public class TransformationMenuPart_Group_nv13mw_a0 extends GroupMenuPart<TransformationMenuItem, TransformationMenuContext> {
+  public class TMP_Group_nv13mw_a0 extends GroupMenuPart<TransformationMenuItem, TransformationMenuContext> {
     @Override
     protected boolean isApplicable(TransformationMenuContext _context) {
       // Typing right of "class" in class definition results in automatic class context insertion 
@@ -56,12 +57,12 @@ public class Class_AddClassContext extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Class_AddClassContext.TransformationMenuPart_Group_nv13mw_a0.TransformationMenuPart_Action_nv13mw_a0a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new ConstraintsFilteringTransformationMenuPartDecorator(new Class_AddClassContext.TMP_Group_nv13mw_a0.TMP_Action_nv13mw_a0a(), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1b099fc7c901af79L, "BaseFrege.structure.Context")));
     }
-    private class TransformationMenuPart_Action_nv13mw_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_nv13mw_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Class_AddClassContext.TransformationMenuPart_Group_nv13mw_a0.TransformationMenuPart_Action_nv13mw_a0a.Item(context);
+        return new Class_AddClassContext.TMP_Group_nv13mw_a0.TMP_Action_nv13mw_a0a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SideTransformCompletionActionItem, ConstraintsVerifiableActionItem {

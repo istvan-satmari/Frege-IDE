@@ -9,10 +9,11 @@ import jetbrains.mps.lang.editor.menus.MenuPart;
 import jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem;
 import jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext;
 import java.util.ArrayList;
+import jetbrains.mps.lang.editor.menus.substitute.ConstraintsFilteringSubstituteMenuPartDecorator;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.editor.menus.ConceptMenusPart;
 import java.util.Collection;
 import jetbrains.mps.smodel.ConceptDescendantsCache;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup;
 import jetbrains.mps.smodel.language.LanguageRegistry;
@@ -28,11 +29,11 @@ public class BCContent_SubstituteMenu extends SubstituteMenuBase {
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new BCContent_SubstituteMenu.SubstituteMenuPart_Subconcepts_5v8dkg_a());
-    result.add(new BCContent_SubstituteMenu.SubstituteMenuPart_Action_5v8dkg_b());
+    result.add(new BCContent_SubstituteMenu.SMP_Subconcepts_5v8dkg_a());
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new BCContent_SubstituteMenu.SMP_Action_5v8dkg_b(), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb6dcL, "BaseFrege.structure.BCContent")));
     return result;
   }
-  public class SubstituteMenuPart_Subconcepts_5v8dkg_a extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+  public class SMP_Subconcepts_5v8dkg_a extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
       return ConceptDescendantsCache.getInstance().getDirectDescendants(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x100cc1cc53ffb6dcL, "BaseFrege.structure.BCContent"));
     }
@@ -41,12 +42,12 @@ public class BCContent_SubstituteMenu extends SubstituteMenuBase {
       return context.createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(context.getEditorContext().getRepository()), concept));
     }
   }
-  private class SubstituteMenuPart_Action_5v8dkg_b extends SingleItemSubstituteMenuPart {
+  private class SMP_Action_5v8dkg_b extends SingleItemSubstituteMenuPart {
 
     @Nullable
     @Override
     protected SubstituteMenuItem createItem(SubstituteMenuContext _context) {
-      return new BCContent_SubstituteMenu.SubstituteMenuPart_Action_5v8dkg_b.Item(_context);
+      return new BCContent_SubstituteMenu.SMP_Action_5v8dkg_b.Item(_context);
     }
     private class Item extends DefaultSubstituteMenuItem {
       private final SubstituteMenuContext _context;

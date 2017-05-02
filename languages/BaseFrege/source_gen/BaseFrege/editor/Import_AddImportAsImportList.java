@@ -36,14 +36,14 @@ public class Import_AddImportAsImportList extends TransformationMenuBase {
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.LEFT_SIDE_TRANSFORM).contains(_context.getMenuLocation())) {
-      result.add(new Import_AddImportAsImportList.TransformationMenuPart_Group_h1qjlc_a0());
-      result.add(new Import_AddImportAsImportList.TransformationMenuPart_Group_h1qjlc_b0());
-      result.add(new Import_AddImportAsImportList.TransformationMenuPart_Group_h1qjlc_c0());
+      result.add(new Import_AddImportAsImportList.TMP_Group_h1qjlc_a0());
+      result.add(new Import_AddImportAsImportList.TMP_Group_h1qjlc_b0());
+      result.add(new Import_AddImportAsImportList.TMP_Group_h1qjlc_c0());
     }
     return result;
   }
 
-  public class TransformationMenuPart_Group_h1qjlc_a0 extends GroupMenuPart<TransformationMenuItem, TransformationMenuContext> {
+  public class TMP_Group_h1qjlc_a0 extends GroupMenuPart<TransformationMenuItem, TransformationMenuContext> {
     @Override
     protected boolean isApplicable(TransformationMenuContext _context) {
       //  When typing inside import resource_|, the "as" part will be created 
@@ -52,12 +52,12 @@ public class Import_AddImportAsImportList extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Import_AddImportAsImportList.TransformationMenuPart_Group_h1qjlc_a0.TransformationMenuPart_Action_h1qjlc_a0a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Import_AddImportAsImportList.TMP_Group_h1qjlc_a0.TMP_Action_h1qjlc_a0a());
     }
-    private class TransformationMenuPart_Action_h1qjlc_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_h1qjlc_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Import_AddImportAsImportList.TransformationMenuPart_Group_h1qjlc_a0.TransformationMenuPart_Action_h1qjlc_a0a.Item(context);
+        return new Import_AddImportAsImportList.TMP_Group_h1qjlc_a0.TMP_Action_h1qjlc_a0a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SideTransformCompletionActionItem {
@@ -82,7 +82,7 @@ public class Import_AddImportAsImportList extends TransformationMenuBase {
       }
     }
   }
-  public class TransformationMenuPart_Group_h1qjlc_b0 extends GroupMenuPart<TransformationMenuItem, TransformationMenuContext> {
+  public class TMP_Group_h1qjlc_b0 extends GroupMenuPart<TransformationMenuItem, TransformationMenuContext> {
     @Override
     protected boolean isApplicable(TransformationMenuContext _context) {
       //  When typing inside import resource_|, the list part will be created, i.e. import resource (f1, f2) 
@@ -91,12 +91,12 @@ public class Import_AddImportAsImportList extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Import_AddImportAsImportList.TransformationMenuPart_Group_h1qjlc_b0.TransformationMenuPart_Action_h1qjlc_a1a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Import_AddImportAsImportList.TMP_Group_h1qjlc_b0.TMP_Action_h1qjlc_a1a());
     }
-    private class TransformationMenuPart_Action_h1qjlc_a1a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_h1qjlc_a1a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Import_AddImportAsImportList.TransformationMenuPart_Group_h1qjlc_b0.TransformationMenuPart_Action_h1qjlc_a1a.Item(context);
+        return new Import_AddImportAsImportList.TMP_Group_h1qjlc_b0.TMP_Action_h1qjlc_a1a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SideTransformCompletionActionItem {
@@ -122,7 +122,7 @@ public class Import_AddImportAsImportList extends TransformationMenuBase {
       }
     }
   }
-  public class TransformationMenuPart_Group_h1qjlc_c0 extends GroupMenuPart<TransformationMenuItem, TransformationMenuContext> {
+  public class TMP_Group_h1qjlc_c0 extends GroupMenuPart<TransformationMenuItem, TransformationMenuContext> {
     @Override
     protected boolean isApplicable(TransformationMenuContext _context) {
       //  When typing in import resource_|, list part with hiding will be created: import resource hiding (f1, f2) 
@@ -131,12 +131,12 @@ public class Import_AddImportAsImportList extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Import_AddImportAsImportList.TransformationMenuPart_Group_h1qjlc_c0.TransformationMenuPart_Action_h1qjlc_a2a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Import_AddImportAsImportList.TMP_Group_h1qjlc_c0.TMP_Action_h1qjlc_a2a());
     }
-    private class TransformationMenuPart_Action_h1qjlc_a2a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_h1qjlc_a2a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Import_AddImportAsImportList.TransformationMenuPart_Group_h1qjlc_c0.TransformationMenuPart_Action_h1qjlc_a2a.Item(context);
+        return new Import_AddImportAsImportList.TMP_Group_h1qjlc_c0.TMP_Action_h1qjlc_a2a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SideTransformCompletionActionItem {

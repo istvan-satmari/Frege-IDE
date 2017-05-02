@@ -355,7 +355,7 @@ infixl 8 ‘myplus‘
 
 
 - prevedenie:
-	- [TODO] operatory - v podstate lubovolne poskladanie specialnych symbolov, s pravidlami:
+	- operatory - v podstate lubovolne poskladanie specialnych symbolov, s pravidlami:
 		- pozn. tu by sa operator nemal referencovat, tu sa zadava vlastny operator
 		- nesmu pouzivat rezervovane symboly:
 		..  :  ::  =  \  |  <-  ->  @  ˜  =>
@@ -390,7 +390,6 @@ infixl 8 ‘myplus‘
 		operator ::= symbol*
 		pricom sa nesmie naskladat na:
 		reservedop -> ..  :  ::  =  \  |  <-  ->  @  ~  =>
-		[TODO] skontrolovat cez constraint / typesystem, ci sa operator nenaskladal na nepovolenu sekvenciu
 		
 
 
@@ -404,14 +403,14 @@ annoitem ::=	VARID
 				'(' '-' ')'
 				'(' '?' ')'
 				'(' '!' ')'
-								
-				
+
+
 - priklady:
 zip :: [a] -> [b] -> [(a, b)]
 
 (-:) :: a -> (a -> b) -> b
 
-(<), (<=), (>=), (>)  :: a -> a -> Bool
+(<), (<=), (>=), (>) :: a -> a -> Bool
 
 elem :: (Eq a, Num i) => a -> [i] -> Bool
 
@@ -422,9 +421,7 @@ map :: (a -> b) -> [a] -> [b]
 	- vychadza z typovania
 	- pozor na to, ze mozno definovat viacere naraz a ze mozno anotovat aj operatory
 	- nazvy anotovanych poloziek (vid fundef pre dalsie detaily)
-	- [TODO] jednotlive anotovane polozky treba nejak zlepsit...
-		- momentalne chyba !, ?, - (neviem, ci vobec budem pridavat?)
-		- operator je nedokonceny
+	- [Q] momentalne chyba !, ?, - (neviem, ci vobec budem pridavat?)
 	
 	
 	
@@ -531,9 +528,22 @@ surface (Rectangle (Point x1 y1) (Point x2 y2)) = (abs $ x2 - x1) * (abs $ y2 - 
 		- celkovo mozno uvazit zhruba toto:
 			- evidentne funnkcia ako nieco s argumentami moze byt definovana len standardne, t.j. meno musi byt na zaciatku a potom argumenty, inak definicia typu (a,b,c) = (1,2,3) je skor definicia unarnych funkcii
 			- predpokladam nieco takehoto druhu:
+				
 				fundefhead ::= name args? | arg | arg OPERATOR arg
-				args = (arg ' ')* arg
+				name ::= VARID
+				args ::= (arg ' ')* arg
 				arg ::= pExpression
+				
+				Akcie:
+				- arg ako pExpression ma sam o sebe viacere prevody
+				- nicmenej na tejto urovni fundefhead prevadzame automaticky, pokial sa zacne pisat malym pismeno, na "name args?"
+				- problem je to potom previest na "arg OPERATOR arg", na druhej strane asi staci, pokial obsahuje cokolvek, co je OPERATOR, je jasne, ze OPERATOR sa moze vyskytnut len na tejto urovni, tak sa to prevedie
+					- nicmenej: moze vychadzat:
+						- name OPERATOR
+						- arg OPERATOR
+						...treba to nejak odchytit, pokial sa v tychto situaciach zacne pisat OPERATOR
+					
+				
 				pExpression ::= pTuple | pList | pConstructor | pLiteral | pVariable
 				pVariable ::= _ | varid
 				pLiteral ::= IntValue | CharValue | StringValue | BoolValue | ...
@@ -542,8 +552,13 @@ surface (Rectangle (Point x1 y1) (Point x2 y2)) = (abs $ x2 - x1) * (abs $ y2 - 
 				listColonItems ::= (pExpression ':')* pExpression
 				pExpressions ::= (pExpression ',')* pExpression
 				pTuple ::= '(' pExpressions ')'
+				
+				
+				
+				
+				
+				
 				- nie uplne dotiahnute veci:
-				[TODO] nejasny nazov funkcie; zatial nastaveny na VARID
 				[TODO] neujasnene, co to je operator (vid PatternOperator)
 				[TODO] literaly zatial vobec nie su (treba zneuzit koncept z expression nejako)
 				[TODO] ani pConstructor nie je jasny zatial
@@ -554,7 +569,7 @@ surface (Rectangle (Point x1 y1) (Point x2 y2)) = (abs $ x2 - x1) * (abs $ y2 - 
 					[1, f] = [2, 3]
 				- toto treba overit cez typesystem:
 					[TODO]	f x x = 3*x				-- rovnake argumenty nalavo
-					[TODO]	[7] = [10]				-- nalavo nie je ziadna pramenna
+					[TODO]	[7] = [10]				-- nalavo nie je ziadna premenna
 					[TODO]	f (1:(2, 3):4:[]) = 0	-- nie je mozne mixovanie v ramci daneho zoznamu; cize cez typesystem
 							blargh2 (1:[2]:[3]) = 0	-- opat ide len o mixovanie rozlicnych prvkov
 					[TODO?] - jedine cez typesystem prinutit, aby "pVariable" nebolo meno existujucej funkcie:

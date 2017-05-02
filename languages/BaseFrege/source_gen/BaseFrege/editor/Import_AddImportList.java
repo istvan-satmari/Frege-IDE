@@ -36,13 +36,13 @@ public class Import_AddImportList extends TransformationMenuBase {
   protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts(TransformationMenuContext _context) {
     List<MenuPart<TransformationMenuItem, TransformationMenuContext>> result = new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>();
     if (ListSequence.fromListAndArray(new ArrayList<String>(), MenuLocations.LEFT_SIDE_TRANSFORM).contains(_context.getMenuLocation())) {
-      result.add(new Import_AddImportList.TransformationMenuPart_Group_9ca0it_a0());
-      result.add(new Import_AddImportList.TransformationMenuPart_Group_9ca0it_b0());
+      result.add(new Import_AddImportList.TMP_Group_9ca0it_a0());
+      result.add(new Import_AddImportList.TMP_Group_9ca0it_b0());
     }
     return result;
   }
 
-  public class TransformationMenuPart_Group_9ca0it_a0 extends GroupMenuPart<TransformationMenuItem, TransformationMenuContext> {
+  public class TMP_Group_9ca0it_a0 extends GroupMenuPart<TransformationMenuItem, TransformationMenuContext> {
     @Override
     protected boolean isApplicable(TransformationMenuContext _context) {
       // import Resource as R_, list part will be created: import Resource as R (f1, f2) 
@@ -51,12 +51,12 @@ public class Import_AddImportList extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Import_AddImportList.TransformationMenuPart_Group_9ca0it_a0.TransformationMenuPart_Action_9ca0it_a0a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Import_AddImportList.TMP_Group_9ca0it_a0.TMP_Action_9ca0it_a0a());
     }
-    private class TransformationMenuPart_Action_9ca0it_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_9ca0it_a0a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Import_AddImportList.TransformationMenuPart_Group_9ca0it_a0.TransformationMenuPart_Action_9ca0it_a0a.Item(context);
+        return new Import_AddImportList.TMP_Group_9ca0it_a0.TMP_Action_9ca0it_a0a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SideTransformCompletionActionItem {
@@ -82,7 +82,7 @@ public class Import_AddImportList extends TransformationMenuBase {
       }
     }
   }
-  public class TransformationMenuPart_Group_9ca0it_b0 extends GroupMenuPart<TransformationMenuItem, TransformationMenuContext> {
+  public class TMP_Group_9ca0it_b0 extends GroupMenuPart<TransformationMenuItem, TransformationMenuContext> {
     @Override
     protected boolean isApplicable(TransformationMenuContext _context) {
       // import Resource as R_, list part with hiding will be created: import Resource as R hiding (f1, f2) 
@@ -91,12 +91,12 @@ public class Import_AddImportList extends TransformationMenuBase {
 
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Import_AddImportList.TransformationMenuPart_Group_9ca0it_b0.TransformationMenuPart_Action_9ca0it_a1a());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new Import_AddImportList.TMP_Group_9ca0it_b0.TMP_Action_9ca0it_a1a());
     }
-    private class TransformationMenuPart_Action_9ca0it_a1a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class TMP_Action_9ca0it_a1a extends SingleItemMenuPart<TransformationMenuItem, TransformationMenuContext> {
       @Nullable
       protected TransformationMenuItem createItem(TransformationMenuContext context) {
-        return new Import_AddImportList.TransformationMenuPart_Group_9ca0it_b0.TransformationMenuPart_Action_9ca0it_a1a.Item(context);
+        return new Import_AddImportList.TMP_Group_9ca0it_b0.TMP_Action_9ca0it_a1a.Item(context);
       }
 
       private class Item extends ActionItemBase implements SideTransformCompletionActionItem {
