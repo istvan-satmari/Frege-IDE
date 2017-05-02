@@ -62,6 +62,14 @@
       </concept>
       <concept id="574920793184786598" name="BaseFrege.structure.Main" flags="ng" index="1kelZc" />
       <concept id="6912716259988811212" name="BaseFrege.structure.Infixr" flags="ng" index="1EnsGs" />
+      <concept id="2906222646419661707" name="BaseFrege.structure.Type" flags="ng" index="1QnHAi">
+        <child id="2906222646419661713" name="equalTo" index="1QnHA8" />
+        <child id="2906222646419661708" name="name" index="1QnHAl" />
+        <child id="2906222646419661710" name="typeVariables" index="1QnHAn" />
+      </concept>
+      <concept id="8562096718746103442" name="BaseFrege.structure.TypeList" flags="ng" index="1VH8c8">
+        <child id="8562096718746103443" name="tau" index="1VH8c9" />
+      </concept>
       <concept id="8562096718746103417" name="BaseFrege.structure.TypeTuple" flags="ng" index="1VH8fz">
         <child id="4565621053812453464" name="tau" index="2sPmxK" />
         <child id="8562096718746103418" name="taus" index="1VH8fw" />
@@ -338,11 +346,105 @@
       </node>
     </node>
     <node concept="14659P" id="cLUB_1UwEa" role="1kelZ8" />
-    <node concept="14659P" id="cLUB_1UWXz" role="1kelZ8" />
-    <node concept="14659P" id="cLUB_1UWZd" role="1kelZ8" />
-    <node concept="14659P" id="cLUB_1UX0S" role="1kelZ8" />
-    <node concept="14659P" id="cLUB_1UX2$" role="1kelZ8" />
-    <node concept="14659P" id="AfhA7XaKzj" role="1kelZ8" />
+    <node concept="14659P" id="cLUB_1V5V0" role="1kelZ8" />
+    <node concept="1QnHAi" id="cLUB_1V63K" role="1kelZ8">
+      <node concept="1YIbBT" id="cLUB_1V63M" role="1QnHAl">
+        <property role="1YIbBV" value="Breadcrumbs" />
+      </node>
+      <node concept="2sPmwL" id="cLUB_1V63O" role="1QnHA8">
+        <node concept="1VHOuR" id="cLUB_1V63Q" role="2sPmzG">
+          <node concept="1VH8c8" id="cLUB_1V65J" role="1VHOuE">
+            <node concept="1VHOuR" id="cLUB_1V65L" role="1VH8c9">
+              <node concept="1VHOuv" id="cLUB_1V65S" role="1VHOuE">
+                <node concept="1YIbAY" id="cLUB_1V65T" role="3OC6DW">
+                  <node concept="1YIbBT" id="cLUB_1V65U" role="1YIbCu">
+                    <property role="1YIbBV" value="String" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1QnHAi" id="cLUB_1XvmW" role="1kelZ8">
+      <node concept="1YIbBT" id="cLUB_1XvmY" role="1QnHAl">
+        <property role="1YIbBV" value="S" />
+      </node>
+      <node concept="2sPmwL" id="cLUB_1Xvn0" role="1QnHA8">
+        <node concept="1VHOuR" id="cLUB_1Xvn2" role="2sPmzG">
+          <node concept="1VH8c8" id="cLUB_1Y37h" role="1VHOuE">
+            <node concept="1VHOuR" id="cLUB_1Y37j" role="1VH8c9">
+              <node concept="1VHOuv" id="cLUB_1Y37t" role="1VHOuE">
+                <node concept="1YIbAY" id="cLUB_1Y37u" role="3OC6DW">
+                  <node concept="1YIbBT" id="cLUB_1Y37v" role="1YIbCu">
+                    <property role="1YIbBV" value="String" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1VHOhI" id="cLUB_1Xvrm" role="1QnHAn">
+        <node concept="1YIbBU" id="cLUB_1Xvrn" role="2sPmwM">
+          <property role="1YIbBE" value="d" />
+        </node>
+      </node>
+      <node concept="1VHOhI" id="cLUB_1Xvrt" role="1QnHAn">
+        <node concept="1YIbBU" id="cLUB_1Xvru" role="2sPmwM">
+          <property role="1YIbBE" value="e" />
+        </node>
+      </node>
+      <node concept="1VHOhI" id="cLUB_1XvrC" role="1QnHAn">
+        <node concept="1YIbBU" id="cLUB_1XvrD" role="2sPmwM">
+          <property role="1YIbBE" value="f" />
+        </node>
+      </node>
+      <node concept="1VHOhI" id="cLUB_1Xvsa" role="1QnHAn">
+        <node concept="1YIbBU" id="cLUB_1Xvsb" role="2sPmwM">
+          <property role="1YIbBE" value="c" />
+        </node>
+      </node>
+      <node concept="1VHOhI" id="cLUB_1XVPf" role="1QnHAn">
+        <node concept="1YIbBU" id="cLUB_1XVPg" role="2sPmwM">
+          <property role="1YIbBE" value="x" />
+        </node>
+      </node>
+      <node concept="1VHOhI" id="cLUB_1XVQ9" role="1QnHAn">
+        <node concept="1YIbBU" id="cLUB_1XVQa" role="2sPmwM">
+          <property role="1YIbBE" value="fc" />
+        </node>
+      </node>
+      <node concept="1VHOhI" id="cLUB_1XVQG" role="1QnHAn">
+        <node concept="1YIbBU" id="cLUB_1XVQH" role="2sPmwM">
+          <property role="1YIbBE" value="xvve" />
+        </node>
+      </node>
+      <node concept="1VHOhI" id="cLUB_1XVRY" role="1QnHAn">
+        <node concept="1YIbBU" id="cLUB_1XVRZ" role="2sPmwM">
+          <property role="1YIbBE" value="cv" />
+        </node>
+      </node>
+      <node concept="1VHOhI" id="cLUB_1XVTw" role="1QnHAn">
+        <node concept="1YIbBU" id="cLUB_1XVTx" role="2sPmwM">
+          <property role="1YIbBE" value="vc" />
+        </node>
+      </node>
+      <node concept="1VHOhI" id="cLUB_1XVUn" role="1QnHAn">
+        <node concept="1YIbBU" id="cLUB_1XVUo" role="2sPmwM">
+          <property role="1YIbBE" value="ve" />
+        </node>
+      </node>
+      <node concept="1VHOhI" id="cLUB_1XVVi" role="1QnHAn">
+        <node concept="1YIbBU" id="cLUB_1XVVj" role="2sPmwM">
+          <property role="1YIbBE" value="ed" />
+        </node>
+      </node>
+    </node>
+    <node concept="14659P" id="cLUB_1Xvc1" role="1kelZ8" />
+    <node concept="14659P" id="cLUB_1XvfC" role="1kelZ8" />
+    <node concept="14659P" id="cLUB_1Xvjh" role="1kelZ8" />
     <node concept="1kelXq" id="7SJSV$B5TVW" role="1kelWf">
       <node concept="1ZLmsQ" id="7SJSV$B5TVX" role="1ZLdKC">
         <property role="_tKnq" value="frege.sample.Example" />

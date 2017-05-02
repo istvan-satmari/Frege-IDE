@@ -219,7 +219,7 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
         return canExecute_internal(pattern, true);
       }
       public boolean canExecute_internal(@NotNull String pattern, boolean strictly) {
-        return (pattern != null && pattern.length() > 0) && (pattern.endsWith("=") || pattern.endsWith("|"));
+        return false;
       }
     }
   }

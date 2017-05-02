@@ -384,5 +384,113 @@
       <ref role="1YaFvo" to="sc0n:vUxQDjKXz2" resolve="Fixity" />
     </node>
   </node>
+  <node concept="18kY7G" id="cLUB_1XVWg">
+    <property role="3GE5qa" value="Definitions" />
+    <property role="TrG5h" value="check_Type" />
+    <node concept="3clFbS" id="cLUB_1XVWh" role="18ibNy">
+      <node concept="3clFbF" id="cLUB_1XW91" role="3cqZAp">
+        <node concept="2OqwBi" id="cLUB_1XW92" role="3clFbG">
+          <node concept="2OqwBi" id="cLUB_1XW93" role="2Oq$k0">
+            <node concept="1YBJjd" id="cLUB_1XWnk" role="2Oq$k0">
+              <ref role="1YBMHb" node="cLUB_1XW7$" resolve="type" />
+            </node>
+            <node concept="3Tsc0h" id="cLUB_1XWI$" role="2OqNvi">
+              <ref role="3TtcxE" to="sc0n:2xkYx_u2yee" resolve="typeVariables" />
+            </node>
+          </node>
+          <node concept="2es0OD" id="cLUB_1XW96" role="2OqNvi">
+            <node concept="1bVj0M" id="cLUB_1XW97" role="23t8la">
+              <node concept="3clFbS" id="cLUB_1XW98" role="1bW5cS">
+                <node concept="3clFbF" id="cLUB_1XW99" role="3cqZAp">
+                  <node concept="2OqwBi" id="cLUB_1XW9a" role="3clFbG">
+                    <node concept="2OqwBi" id="cLUB_1XW9b" role="2Oq$k0">
+                      <node concept="1YBJjd" id="cLUB_1XWVo" role="2Oq$k0">
+                        <ref role="1YBMHb" node="cLUB_1XW7$" resolve="type" />
+                      </node>
+                      <node concept="3Tsc0h" id="cLUB_1XXgF" role="2OqNvi">
+                        <ref role="3TtcxE" to="sc0n:2xkYx_u2yee" resolve="typeVariables" />
+                      </node>
+                    </node>
+                    <node concept="2es0OD" id="cLUB_1XW9e" role="2OqNvi">
+                      <node concept="1bVj0M" id="cLUB_1XW9f" role="23t8la">
+                        <node concept="3clFbS" id="cLUB_1XW9g" role="1bW5cS">
+                          <node concept="3clFbJ" id="cLUB_1XW9h" role="3cqZAp">
+                            <node concept="1Wc70l" id="cLUB_1XW9i" role="3clFbw">
+                              <node concept="1eOMI4" id="cLUB_1XW9j" role="3uHU7w">
+                                <node concept="3y3z36" id="cLUB_1XW9k" role="1eOMHV">
+                                  <node concept="37vLTw" id="cLUB_1XW9l" role="3uHU7w">
+                                    <ref role="3cqZAo" node="cLUB_1XW9B" resolve="tv2" />
+                                  </node>
+                                  <node concept="37vLTw" id="cLUB_1XW9m" role="3uHU7B">
+                                    <ref role="3cqZAo" node="cLUB_1XW9D" resolve="tv1" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="1eOMI4" id="cLUB_1XW9n" role="3uHU7B">
+                                <node concept="3clFbC" id="cLUB_1XW9o" role="1eOMHV">
+                                  <node concept="2OqwBi" id="cLUB_1XW9p" role="3uHU7w">
+                                    <node concept="2OqwBi" id="cLUB_1XW9q" role="2Oq$k0">
+                                      <node concept="37vLTw" id="cLUB_1XW9r" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="cLUB_1XW9B" resolve="tv2" />
+                                      </node>
+                                      <node concept="3TrEf2" id="cLUB_1XW9s" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="sc0n:3Xsm2yzyj0q" resolve="value" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrcHB" id="cLUB_1XW9t" role="2OqNvi">
+                                      <ref role="3TsBF5" to="sc0n:7Cxf1w4AonM" resolve="value" />
+                                    </node>
+                                  </node>
+                                  <node concept="2OqwBi" id="cLUB_1XW9u" role="3uHU7B">
+                                    <node concept="2OqwBi" id="cLUB_1XW9v" role="2Oq$k0">
+                                      <node concept="37vLTw" id="cLUB_1XW9w" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="cLUB_1XW9D" resolve="tv1" />
+                                      </node>
+                                      <node concept="3TrEf2" id="cLUB_1XW9x" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="sc0n:3Xsm2yzyj0q" resolve="value" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrcHB" id="cLUB_1XW9y" role="2OqNvi">
+                                      <ref role="3TsBF5" to="sc0n:7Cxf1w4AonM" resolve="value" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbS" id="cLUB_1XW9z" role="3clFbx">
+                              <node concept="2MkqsV" id="cLUB_1XW9$" role="3cqZAp">
+                                <node concept="37vLTw" id="cLUB_1XW9_" role="2OEOjV">
+                                  <ref role="3cqZAo" node="cLUB_1XW9B" resolve="tv2" />
+                                </node>
+                                <node concept="Xl_RD" id="cLUB_1XW9A" role="2MkJ7o">
+                                  <property role="Xl_RC" value="Duplicate type variable name." />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Rh6nW" id="cLUB_1XW9B" role="1bW2Oz">
+                          <property role="TrG5h" value="tv2" />
+                          <node concept="2jxLKc" id="cLUB_1XW9C" role="1tU5fm" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="Rh6nW" id="cLUB_1XW9D" role="1bW2Oz">
+                <property role="TrG5h" value="tv1" />
+                <node concept="2jxLKc" id="cLUB_1XW9E" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="cLUB_1XW7$" role="1YuTPh">
+      <property role="TrG5h" value="type" />
+      <ref role="1YaFvo" to="sc0n:2xkYx_u2yeb" resolve="Type" />
+    </node>
+  </node>
 </model>
 

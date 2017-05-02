@@ -1,5 +1,6 @@
 Priste: 9.5. 10:00
-Skoncil som na definition > function definition (substitucia)
+Skoncil som pri Type (add type variable)
+
 
 
 TODO
@@ -24,7 +25,13 @@ TODO
 	- kedze rovnaky prefix, tak tazke, v ktorej chvili sa rozhodnut (nie je akcia na klavesu enter, pokial viem)
 	=> "infix " pre "infix" variant, co je trochu neprijemne, ale zatial neviem ine riesenie
 	
-	
+- celkovo k ackaim este nutne transformacie odvedla, priklad: 
+	- mame anotaciu funkcie, napr.: f :: String -> Maybe Int
+	- chceme rychlo transformovat na: f :: [String] -> Maybe Int
+		- t.j. pripisanim "[" pred "String" by sa mala previest transformacia
+		- jak sa to robi:
+			- treba akciu (ano, akcia, nie editor) substitucie pre kazdu kombinaciu, ale to funguje len pre "ctrl + space" variant
+			- pre druhe netusim; treba zistit
 	
 
 - plany na neskor:
@@ -323,6 +330,8 @@ type ListZipper a = ([a], [a])
 	- [TODO] v ramci rho by sa hodilo nejak injektovat tie tyvars, ktore boli deklarovane uz za CONID
 		- ako kontextovu napovedu, napr.:
 		type Breadcrumbs a = [Crumb <<tu by malo vediet ponuknut "a">>]	
+	- [TODO] zrejme tu "rho" nie je take volne, ako pri anotacii; treba obmedzit, aby napr. nemohli byt definovane vlastne typove premenne a pod.
+		- treba overit podla prikladov, ci je tomu naozaj tak
 	- [TODO] zaroven by asi mali mat navzajom odlisne meno, ale to cez typesystem / constraint
 	- [TODO] zaroven treba potom odinadial vediet referencovat tento "type"
 		- ako priklad: "CONID" musi byt obaleny specialnym konceptom "TYPEDEFNAME", ktory sa bude dat referencovat
