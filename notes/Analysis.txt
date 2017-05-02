@@ -247,38 +247,6 @@ tyvar ::= VARID
 tau ::= (simpletype+ '->')* simpletype+
 
 
-
-Tau:
-	- jednotlive argumenty musi ist lahko pridavat (zneviditelnene)
-
-Simpletypes je niekolko simpletype-ov:
-	- musi ist rozumne lahko pridavat
-	
-Simpletype, z neho dedi:
-	- Brackets
-	- Tuple
-	- List
-	- Name
-	- Type variable
-
-
-Rho: RhoContext[0..1], Tau[1]
-Tau: Simpletypes[0..n] arguments, Simpletypes[1] return
-Simpletypes: Simpletype[1..n]
-Simpletype: Brackets, Tuple, List, Name, Type variable
-	- jednotlive obsahuju: Tau[1]
-	- tuple: Tau[1], Tau[1..n] (musia byt 2)
-		- totizto len tuple moze mat jednotlive polozky roznych typov
-	- prip. CONID, VARID
-
-z tych jednoduchis, simpletype:
-	- jednoduche typove premenne: a, b, c
-	- typove mena: Bool, String
-	- vlastne typy: Maybe v
-	
-	
-
-
 - priklady:
 [a] -> [b] -> [(a, b)]
 (Real a) => [(a, a)]
@@ -290,18 +258,17 @@ a -> (a -> b) -> b
 (Monoid m) => (a, m) -> (a -> (b, m)) -> (b, m)
 
 
-
-
-
-
-
-	
-	
-
 - prevedenie:
+	Zmenene nazvoslovie:
+		Tau - FunctionType
+		Simpletypes - teraz ako potomok Simpletype, "TypeData" (v podstate sluzi len na to)
+		- Celkovo totiz mame:
+			- typove premenne: a, b, c
+			- typove mena: Bool, String (sucastou TypeData)
+			- vlastne typy: Maybe v
 	- [Q] context je prilis zlozity a nevidel som nikde na to priklad
 		- nestaci "class-ovsky"?
-	
+	- [Q / TODO] uz tu by sa asi malo zistovat, ci pouzite data, napr. "Maybe" ma spravny pocet argumentov
 	- [TODO] kontext v zmysle "(simpletype+ '=>')?" by mal byt upraveny na nieco rozumnejsie
 		- problematicke, lebo je najprv nutne previes na TypeTuple a odtial sa da dostat k takym konstruktom, ako napr. "(Eq a, Num i) =>"
 		- trebars iba "TypeName TypeVariable" oddelene ciarkami

@@ -322,17 +322,11 @@
     <file name="Simpletype_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.Simpletype_BehaviorDescriptor" />
     </file>
-    <file name="Simpletypes_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.Simpletypes_BehaviorDescriptor" />
-    </file>
     <file name="Skeleton_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.Skeleton_BehaviorDescriptor" />
     </file>
     <file name="StringValue_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.StringValue_BehaviorDescriptor" />
-    </file>
-    <file name="Tau_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.Tau_BehaviorDescriptor" />
     </file>
     <file name="Term_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.Term_BehaviorDescriptor" />
@@ -346,11 +340,14 @@
     <file name="TypeBrackets_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.TypeBrackets_BehaviorDescriptor" />
     </file>
+    <file name="TypeData_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.TypeData_BehaviorDescriptor" />
+    </file>
+    <file name="TypeFunction_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="BaseFrege.behavior.TypeFunction_BehaviorDescriptor" />
+    </file>
     <file name="TypeList_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.TypeList_BehaviorDescriptor" />
-    </file>
-    <file name="TypeName_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="BaseFrege.behavior.TypeName_BehaviorDescriptor" />
     </file>
     <file name="TypeTuple_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="BaseFrege.behavior.TypeTuple_BehaviorDescriptor" />

@@ -115,17 +115,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Resource = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Rho = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Simpletype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Simpletypes = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Skeleton = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_StringValue = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Tau = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Term = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TopExpression = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Tuple = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Type = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TypeBrackets = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TypeData = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TypeFunction = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TypeName = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_UnaryOPExpression = new ConceptPresentationBuilder().create();
@@ -350,36 +349,34 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 105:
         return props_Simpletype;
       case 106:
-        return props_Simpletypes;
-      case 107:
         return props_Skeleton;
-      case 108:
+      case 107:
         return props_StringValue;
-      case 109:
-        return props_Tau;
-      case 110:
+      case 108:
         return props_Term;
-      case 111:
+      case 109:
         return props_TopExpression;
-      case 112:
+      case 110:
         return props_Tuple;
-      case 113:
+      case 111:
         return props_Type;
-      case 114:
+      case 112:
         return props_TypeBrackets;
+      case 113:
+        return props_TypeData;
+      case 114:
+        return props_TypeFunction;
       case 115:
         return props_TypeList;
       case 116:
-        return props_TypeName;
-      case 117:
         return props_TypeTuple;
-      case 118:
+      case 117:
         return props_TypeVariable;
-      case 119:
+      case 118:
         return props_UnaryOPExpression;
-      case 120:
+      case 119:
         return props_Underscore;
-      case 121:
+      case 120:
         return props_WherePart;
     }
     throw new IllegalStateException("Unknown concept " + c);

@@ -434,19 +434,11 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="BaseFrege.behavior.Simpletypes_BehaviorDescriptor" file="Simpletypes_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
   <dependency className="BaseFrege.behavior.Skeleton_BehaviorDescriptor" file="Skeleton_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="BaseFrege.behavior.StringValue_BehaviorDescriptor" file="StringValue_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.String" />
-  </dependency>
-  <dependency className="BaseFrege.behavior.Tau_BehaviorDescriptor" file="Tau_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
@@ -466,11 +458,15 @@
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="BaseFrege.behavior.TypeList_BehaviorDescriptor" file="TypeList_BehaviorDescriptor.java">
+  <dependency className="BaseFrege.behavior.TypeData_BehaviorDescriptor" file="TypeData_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
-  <dependency className="BaseFrege.behavior.TypeName_BehaviorDescriptor" file="TypeName_BehaviorDescriptor.java">
+  <dependency className="BaseFrege.behavior.TypeFunction_BehaviorDescriptor" file="TypeFunction_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.TypeList_BehaviorDescriptor" file="TypeList_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
