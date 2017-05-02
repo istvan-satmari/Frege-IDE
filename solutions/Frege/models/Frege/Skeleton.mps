@@ -62,6 +62,7 @@
       </concept>
       <concept id="574920793184786598" name="BaseFrege.structure.Main" flags="ng" index="1kelZc" />
       <concept id="6912716259988811212" name="BaseFrege.structure.Infixr" flags="ng" index="1EnsGs" />
+      <concept id="6912716259988811233" name="BaseFrege.structure.Infix" flags="ng" index="1EnsGL" />
       <concept id="2906222646419661707" name="BaseFrege.structure.Type" flags="ng" index="1QnHAi">
         <child id="2906222646419661713" name="equalTo" index="1QnHA8" />
         <child id="2906222646419661708" name="name" index="1QnHAl" />
@@ -114,7 +115,14 @@
         <property role="1YIbBV" value="Maybe" />
       </node>
       <node concept="13J6Mv" id="4y9TXCOU_GX" role="3i234W">
-        <node concept="1YIbBT" id="4y9TXCOU_GZ" role="13J6Mu" />
+        <node concept="1YIbBT" id="4y9TXCOU_GZ" role="13J6Mu">
+          <property role="1YIbBV" value="Nothing" />
+        </node>
+      </node>
+      <node concept="13J6Mv" id="cLUB_1YknG" role="3i234W">
+        <node concept="1YIbBT" id="cLUB_1YknH" role="13J6Mu">
+          <property role="1YIbBV" value="Just" />
+        </node>
       </node>
       <node concept="1VHOhI" id="4y9TXCOU_Hh" role="13J2EG">
         <node concept="1YIbBU" id="4y9TXCOU_Hg" role="2sPmwM">
@@ -442,6 +450,20 @@
         </node>
       </node>
     </node>
+    <node concept="14659P" id="cLUB_1Yc6k" role="1kelZ8" />
+    <node concept="1kelYC" id="cLUB_1YctP" role="1kelZ8">
+      <property role="1EnsH2" value="8" />
+      <node concept="1EnsGL" id="cLUB_1YcGs" role="1EnsGu" />
+      <node concept="1ZLjF3" id="cLUB_1YctT" role="2sPhp$">
+        <property role="1kmRcP" value=".--&gt;" />
+      </node>
+    </node>
+    <node concept="14659P" id="cLUB_1Yf25" role="1kelZ8" />
+    <node concept="14659P" id="cLUB_1YfgD" role="1kelZ8" />
+    <node concept="14659P" id="cLUB_1Yflu" role="1kelZ8" />
+    <node concept="14659P" id="cLUB_1Yfql" role="1kelZ8" />
+    <node concept="14659P" id="cLUB_1Yfve" role="1kelZ8" />
+    <node concept="14659P" id="cLUB_1Ycp4" role="1kelZ8" />
     <node concept="14659P" id="cLUB_1Xvc1" role="1kelZ8" />
     <node concept="14659P" id="cLUB_1XvfC" role="1kelZ8" />
     <node concept="14659P" id="cLUB_1Xvjh" role="1kelZ8" />

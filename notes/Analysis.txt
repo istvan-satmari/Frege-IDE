@@ -32,6 +32,7 @@ TODO
 		- jak sa to robi:
 			- treba akciu (ano, akcia, nie editor) substitucie pre kazdu kombinaciu, ale to funguje len pre "ctrl + space" variant
 			- pre druhe netusim; treba zistit
+				- jedna z moznosti je vsak pre pevne urcene nazvy, napr. "infix", "infixl" a "infixr", kde je toto urcene v editore cez alias a prevod je okamzity
 	
 
 - plany na neskor:
@@ -354,9 +355,6 @@ infixl 8 ‘myplus‘
 
 
 - prevedenie:
-	- 3 varianty podla zacinajuceho slova
-		- [TODO] jak sa napise "infix", vytvori sa "fixity" koncept, ale bude treba vediet rychlo prevadzat medzi infix / infixl / infixr (cez akcie, asi)
-	- [TODO] nezabudnut na znaky "`", ktore z nejakeho dovodu nie su v gramatike popisane
 	- [TODO] operatory - v podstate lubovolne poskladanie specialnych symbolov, s pravidlami:
 		- pozn. tu by sa operator nemal referencovat, tu sa zadava vlastny operator
 		- nesmu pouzivat rezervovane symboly:

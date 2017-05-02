@@ -18,12 +18,22 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -31,6 +41,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -41,11 +52,19 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
+      <concept id="1154542696413" name="jetbrains.mps.baseLanguage.structure.ArrayCreatorWithInitializer" flags="nn" index="3g6Rrh">
+        <child id="1154542793668" name="componentType" index="3g7fb8" />
+        <child id="1154542803372" name="initValue" index="3g7hyw" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -115,7 +134,9 @@
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
+      <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
     </language>
   </registry>
@@ -490,6 +511,149 @@
     <node concept="1YaCAy" id="cLUB_1XW7$" role="1YuTPh">
       <property role="TrG5h" value="type" />
       <ref role="1YaFvo" to="sc0n:2xkYx_u2yeb" resolve="Type" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="cLUB_1Yf_w">
+    <property role="TrG5h" value="check_NodeOperator" />
+    <property role="3GE5qa" value="Definitions.Expressions.Terms" />
+    <node concept="3clFbS" id="cLUB_1Yf_x" role="18ibNy">
+      <node concept="3SKdUt" id="cLUB_1Yf_E" role="3cqZAp">
+        <node concept="3SKdUq" id="cLUB_1Yf_G" role="3SKWNk">
+          <property role="3SKdUp" value="Reserved operators: ..  :  ::  =  \  |  &lt;-  -&gt;  @  ~  =&gt;" />
+        </node>
+      </node>
+      <node concept="3cpWs8" id="cLUB_1Yhd5" role="3cqZAp">
+        <node concept="3cpWsn" id="cLUB_1Yhd8" role="3cpWs9">
+          <property role="TrG5h" value="reserved" />
+          <node concept="10Q1$e" id="cLUB_1YhdC" role="1tU5fm">
+            <node concept="17QB3L" id="cLUB_1Yhd3" role="10Q1$1" />
+          </node>
+          <node concept="2ShNRf" id="cLUB_1YkBU" role="33vP2m">
+            <node concept="3g6Rrh" id="cLUB_1YkTV" role="2ShVmc">
+              <node concept="17QB3L" id="cLUB_1YkLO" role="3g7fb8" />
+              <node concept="Xl_RD" id="cLUB_1YkUy" role="3g7hyw">
+                <property role="Xl_RC" value="-&gt;" />
+              </node>
+              <node concept="Xl_RD" id="cLUB_1YkW$" role="3g7hyw">
+                <property role="Xl_RC" value="&lt;-" />
+              </node>
+              <node concept="Xl_RD" id="cLUB_1YlZt" role="3g7hyw">
+                <property role="Xl_RC" value="=&gt;" />
+              </node>
+              <node concept="Xl_RD" id="cLUB_1YkYr" role="3g7hyw">
+                <property role="Xl_RC" value=".." />
+              </node>
+              <node concept="Xl_RD" id="cLUB_1Yl0_" role="3g7hyw">
+                <property role="Xl_RC" value=":" />
+              </node>
+              <node concept="Xl_RD" id="cLUB_1Yl32" role="3g7hyw">
+                <property role="Xl_RC" value="::" />
+              </node>
+              <node concept="Xl_RD" id="cLUB_1Yl5M" role="3g7hyw">
+                <property role="Xl_RC" value="=" />
+              </node>
+              <node concept="Xl_RD" id="cLUB_1Yl8P" role="3g7hyw">
+                <property role="Xl_RC" value="\\" />
+              </node>
+              <node concept="Xl_RD" id="cLUB_1Ylcb" role="3g7hyw">
+                <property role="Xl_RC" value="|" />
+              </node>
+              <node concept="Xl_RD" id="cLUB_1YllD" role="3g7hyw">
+                <property role="Xl_RC" value="@" />
+              </node>
+              <node concept="Xl_RD" id="cLUB_1Ylp_" role="3g7hyw">
+                <property role="Xl_RC" value="~" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="cLUB_1YtGg" role="3cqZAp">
+        <node concept="3clFbS" id="cLUB_1YtGi" role="3clFbx">
+          <node concept="2MkqsV" id="cLUB_1YtX8" role="3cqZAp">
+            <node concept="Xl_RD" id="cLUB_1Yu1T" role="2MkJ7o">
+              <property role="Xl_RC" value="Reserved operator not allowed here." />
+            </node>
+            <node concept="1YBJjd" id="cLUB_1Yu25" role="2OEOjV">
+              <ref role="1YBMHb" node="cLUB_1Yf_z" resolve="operator" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="cLUB_1Yqyl" role="3clFbw">
+          <node concept="2OqwBi" id="cLUB_1YmfT" role="2Oq$k0">
+            <node concept="37vLTw" id="cLUB_1Ym8h" role="2Oq$k0">
+              <ref role="3cqZAo" node="cLUB_1Yhd8" resolve="reserved" />
+            </node>
+            <node concept="39bAoz" id="cLUB_1Ypuj" role="2OqNvi" />
+          </node>
+          <node concept="2HwmR7" id="cLUB_1YqK3" role="2OqNvi">
+            <node concept="1bVj0M" id="cLUB_1YqK5" role="23t8la">
+              <node concept="3clFbS" id="cLUB_1YqK6" role="1bW5cS">
+                <node concept="3clFbF" id="cLUB_1YqQv" role="3cqZAp">
+                  <node concept="2OqwBi" id="cLUB_1Yrew" role="3clFbG">
+                    <node concept="37vLTw" id="cLUB_1YqQu" role="2Oq$k0">
+                      <ref role="3cqZAo" node="cLUB_1YqK7" resolve="it" />
+                    </node>
+                    <node concept="liA8E" id="cLUB_1Yr_M" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <node concept="2OqwBi" id="cLUB_1YrUr" role="37wK5m">
+                        <node concept="1YBJjd" id="cLUB_1YrKh" role="2Oq$k0">
+                          <ref role="1YBMHb" node="cLUB_1Yf_z" resolve="operator" />
+                        </node>
+                        <node concept="3TrcHB" id="cLUB_1Yso5" role="2OqNvi">
+                          <ref role="3TsBF5" to="sc0n:5G3QggfmaCL" resolve="value" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="Rh6nW" id="cLUB_1YqK7" role="1bW2Oz">
+                <property role="TrG5h" value="it" />
+                <node concept="2jxLKc" id="cLUB_1YqK8" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="cLUB_1Yu0m" role="3cqZAp" />
+      <node concept="3SKdUt" id="cLUB_1Yf_S" role="3cqZAp">
+        <node concept="3SKdUq" id="cLUB_1Yf_U" role="3SKWNk">
+          <property role="3SKdUp" value="Dashes: -- (2 and more always act like a comment)" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="cLUB_1Yu5_" role="3cqZAp">
+        <node concept="3clFbS" id="cLUB_1Yu5B" role="3clFbx">
+          <node concept="2MkqsV" id="cLUB_1Yvsk" role="3cqZAp">
+            <node concept="Xl_RD" id="cLUB_1YvsA" role="2MkJ7o">
+              <property role="Xl_RC" value="Custom operator cannot start with dashes." />
+            </node>
+            <node concept="1YBJjd" id="cLUB_1Yvtz" role="2OEOjV">
+              <ref role="1YBMHb" node="cLUB_1Yf_z" resolve="operator" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="cLUB_1YuYc" role="3clFbw">
+          <node concept="2OqwBi" id="cLUB_1YufX" role="2Oq$k0">
+            <node concept="1YBJjd" id="cLUB_1Yu7o" role="2Oq$k0">
+              <ref role="1YBMHb" node="cLUB_1Yf_z" resolve="operator" />
+            </node>
+            <node concept="3TrcHB" id="cLUB_1YuuB" role="2OqNvi">
+              <ref role="3TsBF5" to="sc0n:5G3QggfmaCL" resolve="value" />
+            </node>
+          </node>
+          <node concept="liA8E" id="cLUB_1YvpB" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+            <node concept="Xl_RD" id="cLUB_1YvqH" role="37wK5m">
+              <property role="Xl_RC" value="--" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="cLUB_1Yf_z" role="1YuTPh">
+      <property role="TrG5h" value="operator" />
+      <ref role="1YaFvo" to="sc0n:1NZxxHzeFNo" resolve="NodeOperator" />
     </node>
   </node>
 </model>
