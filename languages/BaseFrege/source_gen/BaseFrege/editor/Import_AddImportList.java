@@ -109,7 +109,7 @@ public class Import_AddImportList extends TransformationMenuBase {
         @Nullable
         @Override
         public String getLabelText(String pattern) {
-          return "hid";
+          return "h";
         }
 
         @Override

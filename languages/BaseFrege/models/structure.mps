@@ -85,6 +85,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="vUxQDjKXyA" resolve="Main" />
     </node>
+    <node concept="PrWs8" id="2eBOBbTCIff" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKXwK">
     <property role="EcuMT" value="574920793184786480" />
@@ -118,7 +121,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="resource" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1NZxxHzeI4H" resolve="Resource" />
+      <ref role="20lvS9" node="2eBOBbTEbfX" resolve="ImportedResource" />
     </node>
     <node concept="1TJgyj" id="7riFpCdphfa" role="1TKVEi">
       <property role="IQ2ns" value="8562096718746031050" />
@@ -1108,24 +1111,23 @@
   </node>
   <node concept="1TIwiD" id="3Xsm2yzy6z6">
     <property role="EcuMT" value="4565621053812402374" />
-    <property role="3GE5qa" value="Module" />
+    <property role="3GE5qa" value="Module.ExportedParts" />
     <property role="TrG5h" value="MPModule" />
     <property role="34LRSv" value="module" />
     <property role="R4oN_" value="Export a complete module" />
     <ref role="1TJDcQ" node="3Xsm2yzy6z5" resolve="ModulePart" />
-    <node concept="1TJgyj" id="3Xsm2yzyaGJ" role="1TKVEi">
-      <property role="IQ2ns" value="4565621053812419375" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="value" />
+    <node concept="1TJgyj" id="2eBOBbTBu$C" role="1TKVEi">
+      <property role="IQ2ns" value="2569253503694137640" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="module" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1NZxxHzeI4H" resolve="Resource" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyaGe">
     <property role="EcuMT" value="4565621053812419342" />
-    <property role="3GE5qa" value="Module.MPSimple" />
+    <property role="3GE5qa" value="Module.ExportedParts.Module.MPSimple" />
     <property role="TrG5h" value="MPSimple" />
-    <property role="R4oN_" value="Export either a function, or a type, etc." />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="3Xsm2yzy6z5" resolve="ModulePart" />
@@ -1874,7 +1876,7 @@
   </node>
   <node concept="1TIwiD" id="1NZxxHzePD7">
     <property role="EcuMT" value="2089536204310272583" />
-    <property role="3GE5qa" value="Module.MPSimple" />
+    <property role="3GE5qa" value="Module.ExportedParts.Module.MPSimple" />
     <property role="TrG5h" value="MPSCONID" />
     <ref role="1TJDcQ" node="3Xsm2yzyaGe" resolve="MPSimple" />
     <node concept="1TJgyj" id="1NZxxHzePD8" role="1TKVEi">
@@ -1887,7 +1889,7 @@
   </node>
   <node concept="1TIwiD" id="1NZxxHzePDn">
     <property role="EcuMT" value="2089536204310272599" />
-    <property role="3GE5qa" value="Module.MPSimple" />
+    <property role="3GE5qa" value="Module.ExportedParts.Module.MPSimple" />
     <property role="TrG5h" value="MPSVARID" />
     <ref role="1TJDcQ" node="3Xsm2yzyaGe" resolve="MPSimple" />
     <node concept="1TJgyj" id="1NZxxHzePDo" role="1TKVEi">
@@ -1933,6 +1935,19 @@
     <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
     <node concept="PrWs8" id="7SJSV$AYI1$" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2eBOBbTEbfX">
+    <property role="EcuMT" value="2569253503694844925" />
+    <property role="3GE5qa" value="Import" />
+    <property role="TrG5h" value="ImportedResource" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2eBOBbTEbfY" role="1TKVEi">
+      <property role="IQ2ns" value="2569253503694844926" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="resource" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1NZxxHzeI4H" resolve="Resource" />
     </node>
   </node>
 </model>

@@ -70,7 +70,7 @@ public class Import_AddImportAsImportList extends TransformationMenuBase {
         @Nullable
         @Override
         public String getLabelText(String pattern) {
-          return "as";
+          return "a";
         }
 
         @Override
@@ -149,7 +149,7 @@ public class Import_AddImportAsImportList extends TransformationMenuBase {
         @Nullable
         @Override
         public String getLabelText(String pattern) {
-          return "hid";
+          return "h";
         }
 
         @Override

@@ -18,10 +18,10 @@ public class Common_StyleSheet {
    * @deprecated Since MPS 3.5 use generated StyleClass
    */
   @Deprecated
-  public static void apply_BasicText(Style style, EditorCell editorCell) {
+  public static void apply_Plain(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Common_StyleSheet.BasicTextStyleClass(editorContext, node).apply(style, editorCell);
+    new Common_StyleSheet.PlainStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -53,9 +53,19 @@ public class Common_StyleSheet {
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
     new Common_StyleSheet.OptionalStyleClass(editorContext, node).apply(style, editorCell);
   }
+  /**
+   * 
+   * @deprecated Since MPS 3.5 use generated StyleClass
+   */
+  @Deprecated
+  public static void apply_Meta(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    new Common_StyleSheet.MetaStyleClass(editorContext, node).apply(style, editorCell);
+  }
 
-  public static class BasicTextStyleClass extends AbstractStyleClass {
-    public BasicTextStyleClass(EditorContext editorContext, SNode node) {
+  public static class PlainStyleClass extends AbstractStyleClass {
+    public PlainStyleClass(EditorContext editorContext, SNode node) {
       super(editorContext, node);
     }
 
@@ -98,6 +108,19 @@ public class Common_StyleSheet {
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
       style.set(StyleAttributes.NULL_TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.lightGray));
+    }
+
+  }
+  public static class MetaStyleClass extends AbstractStyleClass {
+    public MetaStyleClass(EditorContext editorContext, SNode node) {
+      super(editorContext, node);
+    }
+
+    @Override
+    public void apply(Style style, EditorCell editorCell) {
+      style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
+      style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_BLUE));
+      style.set(StyleAttributes.BACKGROUND_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.LIGHT_BLUE));
     }
 
   }

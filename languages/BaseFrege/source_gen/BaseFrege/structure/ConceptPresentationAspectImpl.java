@@ -61,6 +61,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ImportItemQconid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportItemQvarid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportList = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ImportedResource = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Infix = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_InfixAbstract = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Infixl = new ConceptPresentationBuilder().create();
@@ -89,7 +90,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_MPModule = new ConceptPresentationBuilder().shortDesc("Export a complete module").create();
   private final ConceptPresentation props_MPSCONID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_MPSVARID = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MPSimple = new ConceptPresentationBuilder().shortDesc("Export either a function, or a type, etc.").create();
+  private final ConceptPresentation props_MPSimple = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Main = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Module = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ModulePart = new ConceptPresentationBuilder().create();
@@ -240,6 +241,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_ImportItemQvarid;
       case LanguageConceptSwitch.ImportList:
         return props_ImportList;
+      case LanguageConceptSwitch.ImportedResource:
+        return props_ImportedResource;
       case LanguageConceptSwitch.Infix:
         return props_Infix;
       case LanguageConceptSwitch.InfixAbstract:
