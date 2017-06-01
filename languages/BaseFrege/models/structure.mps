@@ -171,7 +171,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="type" />
-      <ref role="20lvS9" node="3Xsm2yzyj0p" resolve="Rho" />
+      <ref role="20lvS9" node="3Xsm2yzyj0p" resolve="FullType" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKXz1">
@@ -227,7 +227,7 @@
       <property role="IQ2ns" value="6912716259988828304" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
-      <ref role="20lvS9" node="3Xsm2yzyj0p" resolve="Rho" />
+      <ref role="20lvS9" node="3Xsm2yzyj0p" resolve="FullType" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKXzH">
@@ -616,7 +616,7 @@
     <property role="EcuMT" value="8562096718746085893" />
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="TypeData" />
-    <property role="R4oN_" value="Represents e.g. &quot;Maybe [a]&quot;" />
+    <property role="R4oN_" value="Represents algebraic datatype." />
     <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
     <node concept="1TJgyj" id="AfhA7XbMKt" role="1TKVEi">
       <property role="IQ2ns" value="688846654684474397" />
@@ -637,7 +637,7 @@
     <property role="EcuMT" value="8562096718746085933" />
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="TypeFunction" />
-    <property role="R4oN_" value="(simpletypes '-&gt;')* simpletypes" />
+    <property role="R4oN_" value="Complete type signature of a function." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7riFpCdpuCI" role="1TKVEi">
       <property role="IQ2ns" value="8562096718746085934" />
@@ -658,19 +658,19 @@
     <property role="EcuMT" value="8562096718746103417" />
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="TypeTuple" />
-    <property role="R4oN_" value="'(' tau (',' tau)* ')'" />
+    <property role="R4oN_" value="Type of a tuple." />
     <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
     <node concept="1TJgyj" id="3Xsm2yzyj1o" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812453464" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tau" />
+      <property role="20kJfa" value="first" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7riFpCdpuCH" resolve="TypeFunction" />
     </node>
     <node concept="1TJgyj" id="7riFpCdpyTU" role="1TKVEi">
       <property role="IQ2ns" value="8562096718746103418" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="taus" />
+      <property role="20kJfa" value="rest" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7riFpCdpuCH" resolve="TypeFunction" />
     </node>
@@ -679,13 +679,13 @@
     <property role="EcuMT" value="8562096718746103442" />
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="TypeList" />
-    <property role="R4oN_" value="List type" />
+    <property role="R4oN_" value="List type." />
     <property role="34LRSv" value="[" />
     <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
     <node concept="1TJgyj" id="7riFpCdpyUj" role="1TKVEi">
       <property role="IQ2ns" value="8562096718746103443" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tau" />
+      <property role="20kJfa" value="itemsType" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7riFpCdpuCH" resolve="TypeFunction" />
     </node>
@@ -1102,7 +1102,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="equalTo" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3Xsm2yzyj0p" resolve="Rho" />
+      <ref role="20lvS9" node="3Xsm2yzyj0p" resolve="FullType" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzy6z5">
@@ -1285,7 +1285,7 @@
   <node concept="1TIwiD" id="3Xsm2yzyj0p">
     <property role="EcuMT" value="4565621053812453401" />
     <property role="3GE5qa" value="Definitions.Types" />
-    <property role="TrG5h" value="Rho" />
+    <property role="TrG5h" value="FullType" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3Xsm2yzyj3V" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812453627" />
@@ -1297,7 +1297,7 @@
     <node concept="1TJgyj" id="3Xsm2yzyj34" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812453572" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tau" />
+      <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7riFpCdpuCH" resolve="TypeFunction" />
     </node>
@@ -1307,12 +1307,12 @@
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="TypeBrackets" />
     <property role="34LRSv" value="(" />
-    <property role="R4oN_" value="Type in brackets" />
+    <property role="R4oN_" value="Type inside brackets." />
     <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
     <node concept="1TJgyj" id="3Xsm2yzyj2u" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812453534" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tau" />
+      <property role="20kJfa" value="bracketedType" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7riFpCdpuCH" resolve="TypeFunction" />
     </node>

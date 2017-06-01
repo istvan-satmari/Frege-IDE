@@ -46,6 +46,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FOSymbolicOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Fixity = new ConceptPresentationBuilder().shortDesc("Set priority of an operator.").create();
   private final ConceptPresentation props_FixityOperator = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FullType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunCall = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunDef = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunctionDefinitions = new ConceptPresentationBuilder().create();
@@ -117,7 +118,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_QCONID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_QVARID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Resource = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Rho = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Simpletype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Skeleton = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_StringValue = new ConceptPresentationBuilder().create();
@@ -125,11 +125,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_TopExpression = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Tuple = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Type = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TypeBrackets = new ConceptPresentationBuilder().shortDesc("Type in brackets").create();
-  private final ConceptPresentation props_TypeData = new ConceptPresentationBuilder().shortDesc("Represents e.g. \"Maybe [a]\"").create();
-  private final ConceptPresentation props_TypeFunction = new ConceptPresentationBuilder().shortDesc("(simpletypes '->')* simpletypes").create();
-  private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type").create();
-  private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("'(' tau (',' tau)* ')'").create();
+  private final ConceptPresentation props_TypeBrackets = new ConceptPresentationBuilder().shortDesc("Type inside brackets.").create();
+  private final ConceptPresentation props_TypeData = new ConceptPresentationBuilder().shortDesc("Represents algebraic datatype.").create();
+  private final ConceptPresentation props_TypeFunction = new ConceptPresentationBuilder().shortDesc("Complete type signature of a function.").create();
+  private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type.").create();
+  private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("Type of a tuple.").create();
   private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable").create();
   private final ConceptPresentation props_UnaryOPExpression = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Underscore = new ConceptPresentationBuilder().create();
@@ -214,6 +214,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Fixity;
       case LanguageConceptSwitch.FixityOperator:
         return props_FixityOperator;
+      case LanguageConceptSwitch.FullType:
+        return props_FullType;
       case LanguageConceptSwitch.FunCall:
         return props_FunCall;
       case LanguageConceptSwitch.FunDef:
@@ -356,8 +358,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_QVARID;
       case LanguageConceptSwitch.Resource:
         return props_Resource;
-      case LanguageConceptSwitch.Rho:
-        return props_Rho;
       case LanguageConceptSwitch.Simpletype:
         return props_Simpletype;
       case LanguageConceptSwitch.Skeleton:
