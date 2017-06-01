@@ -42,7 +42,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FCOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDAssignment = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGuards = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Fixity = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FOCharacterOperator = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FOSymbolicOperator = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Fixity = new ConceptPresentationBuilder().shortDesc("Set priority of an operator.").create();
+  private final ConceptPresentation props_FixityOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunCall = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunDef = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunctionDefinitions = new ConceptPresentationBuilder().create();
@@ -62,10 +65,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ImportItemQvarid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportList = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportedResource = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Infix = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Infix = new ConceptPresentationBuilder().shortDesc("Infix operator.").create();
   private final ConceptPresentation props_InfixAbstract = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Infixl = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Infixr = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Infixl = new ConceptPresentationBuilder().shortDesc("Left associative operator.").create();
+  private final ConceptPresentation props_Infixr = new ConceptPresentationBuilder().shortDesc("Right associative operator.").create();
   private final ConceptPresentation props_Instance = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IntegerValue = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LCQArrowAssignment = new ConceptPresentationBuilder().shortDesc("expr <- expr").create();
@@ -87,7 +90,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ListEnumeration = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ListRange = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Literal = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MPModule = new ConceptPresentationBuilder().shortDesc("Export a complete module").create();
+  private final ConceptPresentation props_MPModule = new ConceptPresentationBuilder().shortDesc("Export a complete module.").create();
   private final ConceptPresentation props_MPSCONID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_MPSVARID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_MPSimple = new ConceptPresentationBuilder().create();
@@ -203,8 +206,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_FDAssignment;
       case LanguageConceptSwitch.FDGuards:
         return props_FDGuards;
+      case LanguageConceptSwitch.FOCharacterOperator:
+        return props_FOCharacterOperator;
+      case LanguageConceptSwitch.FOSymbolicOperator:
+        return props_FOSymbolicOperator;
       case LanguageConceptSwitch.Fixity:
         return props_Fixity;
+      case LanguageConceptSwitch.FixityOperator:
+        return props_FixityOperator;
       case LanguageConceptSwitch.FunCall:
         return props_FunCall;
       case LanguageConceptSwitch.FunDef:

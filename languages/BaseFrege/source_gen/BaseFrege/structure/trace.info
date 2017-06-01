@@ -8,13 +8,13 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="ConceptPresentationAspectImpl.java">
-      <unit at="11,0,388,0" name="BaseFrege.structure.ConceptPresentationAspectImpl" />
+      <unit at="11,0,397,0" name="BaseFrege.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,270,0" name="BaseFrege.structure.LanguageConceptSwitch" />
+      <unit at="10,0,276,0" name="BaseFrege.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="14,0,1415,0" name="BaseFrege.structure.StructureAspectDescriptor" />
+      <unit at="14,0,1446,0" name="BaseFrege.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2089536204310241590">

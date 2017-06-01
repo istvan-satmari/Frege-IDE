@@ -187,6 +187,7 @@
     <property role="3GE5qa" value="Definitions" />
     <property role="TrG5h" value="Fixity" />
     <property role="34LRSv" value="fixity" />
+    <property role="R4oN_" value="Set priority of an operator." />
     <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
     <node concept="1TJgyj" id="5ZITH0PGMRe" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988811214" />
@@ -200,7 +201,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="operator" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="NodeOperator" />
+      <ref role="20lvS9" node="C3uKRKZJBe" resolve="FixityOperator" />
     </node>
     <node concept="1TJgyi" id="5ZITH0PGMQi" role="1TKVEl">
       <property role="IQ2nx" value="6912716259988811154" />
@@ -694,6 +695,7 @@
     <property role="TrG5h" value="Infixr" />
     <property role="3GE5qa" value="Definitions.Fixity" />
     <property role="34LRSv" value="infixr" />
+    <property role="R4oN_" value="Right associative operator." />
     <ref role="1TJDcQ" node="5ZITH0PGMRd" resolve="InfixAbstract" />
   </node>
   <node concept="1TIwiD" id="5ZITH0PGMRd">
@@ -709,6 +711,7 @@
     <property role="3GE5qa" value="Definitions.Fixity" />
     <property role="TrG5h" value="Infixl" />
     <property role="34LRSv" value="infixl" />
+    <property role="R4oN_" value="Left associative operator." />
     <ref role="1TJDcQ" node="5ZITH0PGMRd" resolve="InfixAbstract" />
   </node>
   <node concept="1TIwiD" id="5ZITH0PGMRx">
@@ -716,6 +719,7 @@
     <property role="3GE5qa" value="Definitions.Fixity" />
     <property role="TrG5h" value="Infix" />
     <property role="34LRSv" value="infix" />
+    <property role="R4oN_" value="Infix operator." />
     <ref role="1TJDcQ" node="5ZITH0PGMRd" resolve="InfixAbstract" />
   </node>
   <node concept="1TIwiD" id="5ZITH0PGR1L">
@@ -1114,7 +1118,7 @@
     <property role="3GE5qa" value="Module.ExportedParts" />
     <property role="TrG5h" value="MPModule" />
     <property role="34LRSv" value="module" />
-    <property role="R4oN_" value="Export a complete module" />
+    <property role="R4oN_" value="Export a complete module." />
     <ref role="1TJDcQ" node="3Xsm2yzy6z5" resolve="ModulePart" />
     <node concept="1TJgyj" id="2eBOBbTBu$C" role="1TKVEi">
       <property role="IQ2ns" value="2569253503694137640" />
@@ -1948,6 +1952,36 @@
       <property role="20kJfa" value="resource" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1NZxxHzeI4H" resolve="Resource" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="C3uKRKZJBe">
+    <property role="EcuMT" value="721555665117444558" />
+    <property role="3GE5qa" value="Definitions.Fixity.Operator" />
+    <property role="TrG5h" value="FixityOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="C3uKRKZJBf">
+    <property role="EcuMT" value="721555665117444559" />
+    <property role="3GE5qa" value="Definitions.Fixity.Operator" />
+    <property role="TrG5h" value="FOSymbolicOperator" />
+    <ref role="1TJDcQ" node="C3uKRKZJBe" resolve="FixityOperator" />
+    <node concept="1TJgyi" id="C3uKRKZJBg" role="1TKVEl">
+      <property role="IQ2nx" value="721555665117444560" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="5G3QggfmaCI" resolve="OPERATOR" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="C3uKRKZQzv">
+    <property role="EcuMT" value="721555665117472991" />
+    <property role="3GE5qa" value="Definitions.Fixity.Operator" />
+    <property role="TrG5h" value="FOCharacterOperator" />
+    <ref role="1TJDcQ" node="C3uKRKZJBe" resolve="FixityOperator" />
+    <node concept="1TJgyi" id="C3uKRKZQzw" role="1TKVEl">
+      <property role="IQ2nx" value="721555665117472992" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="7Cxf1w4Aom_" resolve="VARID" />
     </node>
   </node>
 </model>
