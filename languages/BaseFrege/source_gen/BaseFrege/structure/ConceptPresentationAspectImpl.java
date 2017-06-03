@@ -130,7 +130,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_TypeFunction = new ConceptPresentationBuilder().shortDesc("Complete type signature of a function.").create();
   private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type.").create();
   private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("Type of a tuple.").create();
-  private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable").create();
+  private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable.").create();
   private final ConceptPresentation props_UnaryOPExpression = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Underscore = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_WherePart = new ConceptPresentationBuilder().create();

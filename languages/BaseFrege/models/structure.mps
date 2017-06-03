@@ -602,7 +602,7 @@
     <property role="EcuMT" value="8562096718746085876" />
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="TypeVariable" />
-    <property role="R4oN_" value="Type variable" />
+    <property role="R4oN_" value="Type variable." />
     <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
     <node concept="1TJgyj" id="3Xsm2yzyj0q" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812453402" />
