@@ -18,10 +18,20 @@ public class Separators_StyleSheet {
    * @deprecated Since MPS 3.5 use generated StyleClass
    */
   @Deprecated
-  public static void apply_Padded(Style style, EditorCell editorCell) {
+  public static void apply_VerticalBar(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Separators_StyleSheet.PaddedStyleClass(editorContext, node).apply(style, editorCell);
+    new Separators_StyleSheet.VerticalBarStyleClass(editorContext, node).apply(style, editorCell);
+  }
+  /**
+   * 
+   * @deprecated Since MPS 3.5 use generated StyleClass
+   */
+  @Deprecated
+  public static void apply_Space(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    new Separators_StyleSheet.SpaceStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -54,8 +64,20 @@ public class Separators_StyleSheet {
     new Separators_StyleSheet.CommaStyleClass(editorContext, node).apply(style, editorCell);
   }
 
-  public static class PaddedStyleClass extends AbstractStyleClass {
-    public PaddedStyleClass(EditorContext editorContext, SNode node) {
+  public static class VerticalBarStyleClass extends AbstractStyleClass {
+    public VerticalBarStyleClass(EditorContext editorContext, SNode node) {
+      super(editorContext, node);
+    }
+
+    @Override
+    public void apply(Style style, EditorCell editorCell) {
+      style.set(StyleAttributes.PADDING_LEFT, new Padding(1, Measure.SPACES));
+      style.set(StyleAttributes.PADDING_RIGHT, new Padding(0, Measure.SPACES));
+    }
+
+  }
+  public static class SpaceStyleClass extends AbstractStyleClass {
+    public SpaceStyleClass(EditorContext editorContext, SNode node) {
       super(editorContext, node);
     }
 
