@@ -12,6 +12,6 @@ public class STRING_PropertySupport extends PropertySupport {
     } else {
       testValue = value;
     }
-    return testValue.matches("^\"([^\"]|\\\")*\"$");
+    return testValue.matches("^([^\\\\\"]|\\\\\"|\\\\\\\\)*$");
   }
 }

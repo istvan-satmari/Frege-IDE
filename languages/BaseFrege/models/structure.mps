@@ -393,7 +393,9 @@
     <property role="EcuMT" value="574920793184786696" />
     <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
     <property role="TrG5h" value="CharValue" />
-    <ref role="1TJDcQ" node="5ZITH0PGZDb" resolve="Literal" />
+    <property role="34LRSv" value="'" />
+    <property role="R4oN_" value="Character literal." />
+    <ref role="1TJDcQ" node="1A7M7evcy1n" resolve="Literal" />
     <node concept="1TJgyi" id="6G7jP5USw29" role="1TKVEl">
       <property role="IQ2nx" value="7712220098267840649" />
       <property role="TrG5h" value="value" />
@@ -404,7 +406,9 @@
     <property role="EcuMT" value="574920793184786697" />
     <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
     <property role="TrG5h" value="StringValue" />
-    <ref role="1TJDcQ" node="5ZITH0PGZDb" resolve="Literal" />
+    <property role="34LRSv" value="&quot;" />
+    <property role="R4oN_" value="String literal." />
+    <ref role="1TJDcQ" node="1A7M7evcy1n" resolve="Literal" />
     <node concept="1TJgyi" id="6G7jP5USw2Q" role="1TKVEl">
       <property role="IQ2nx" value="7712220098267840694" />
       <property role="TrG5h" value="value" />
@@ -415,7 +419,8 @@
     <property role="EcuMT" value="574920793184786698" />
     <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
     <property role="TrG5h" value="IntegerValue" />
-    <ref role="1TJDcQ" node="5ZITH0PGZDb" resolve="Literal" />
+    <property role="R4oN_" value="Integer value." />
+    <ref role="1TJDcQ" node="1A7M7evcy1n" resolve="Literal" />
     <node concept="1TJgyi" id="6G7jP5USw2B" role="1TKVEl">
       <property role="IQ2nx" value="7712220098267840679" />
       <property role="TrG5h" value="value" />
@@ -426,7 +431,8 @@
     <property role="EcuMT" value="574920793184786699" />
     <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
     <property role="TrG5h" value="DoubleValue" />
-    <ref role="1TJDcQ" node="5ZITH0PGZDb" resolve="Literal" />
+    <property role="R4oN_" value="Double value." />
+    <ref role="1TJDcQ" node="1A7M7evcy1n" resolve="Literal" />
     <node concept="1TJgyi" id="6G7jP5USw2o" role="1TKVEl">
       <property role="IQ2nx" value="7712220098267840664" />
       <property role="TrG5h" value="value" />
@@ -437,12 +443,9 @@
     <property role="EcuMT" value="574920793184786700" />
     <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
     <property role="TrG5h" value="BooleanValue" />
-    <ref role="1TJDcQ" node="5ZITH0PGZDb" resolve="Literal" />
-    <node concept="1TJgyi" id="6G7jP5USw1U" role="1TKVEl">
-      <property role="IQ2nx" value="7712220098267840634" />
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" node="7Cxf1w4A_lY" resolve="BOOLEAN" />
-    </node>
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="1A7M7evcy1n" resolve="Literal" />
   </node>
   <node concept="1TIwiD" id="vUxQDjKX$A">
     <property role="EcuMT" value="574920793184786726" />
@@ -616,7 +619,7 @@
     <property role="EcuMT" value="8562096718746085893" />
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="TypeData" />
-    <property role="R4oN_" value="Represents algebraic datatype." />
+    <property role="R4oN_" value="Represents types and algebraic datatypes." />
     <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
     <node concept="1TJgyj" id="AfhA7XbMKt" role="1TKVEi">
       <property role="IQ2ns" value="688846654684474397" />
@@ -874,14 +877,6 @@
       <property role="20kJfa" value="where" />
       <ref role="20lvS9" node="vUxQDjKXAj" resolve="WherePart" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="5ZITH0PGZDb">
-    <property role="EcuMT" value="6912716259988863563" />
-    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
-    <property role="TrG5h" value="Literal" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="vUxQDjKXzH" resolve="Term" />
   </node>
   <node concept="1TIwiD" id="5E$XTHV3XM7">
     <property role="EcuMT" value="6531617606750690439" />
@@ -1419,6 +1414,7 @@
     <property role="3GE5qa" value="Definitions.Patterns.Expression" />
     <property role="TrG5h" value="PTuple" />
     <property role="34LRSv" value="(" />
+    <property role="R4oN_" value="Tuple pattern." />
     <ref role="1TJDcQ" node="3Xsm2yzyl6j" resolve="PatternArgument" />
     <node concept="1TJgyj" id="3Xsm2yzylbm" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462294" />
@@ -1440,13 +1436,15 @@
     <property role="EcuMT" value="4565621053812462072" />
     <property role="3GE5qa" value="Definitions.Patterns.Expression" />
     <property role="TrG5h" value="PConstructor" />
+    <property role="34LRSv" value="Constructor" />
+    <property role="R4oN_" value="A datatype constructor reference." />
     <ref role="1TJDcQ" node="3Xsm2yzyl6j" resolve="PatternArgument" />
     <node concept="1TJgyj" id="3Xsm2yzyl8p" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462105" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="name" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Cxf1w4AomA" resolve="QCONID" />
+      <ref role="20lvS9" node="7Cxf1w4Aonx" resolve="NodeCONID" />
     </node>
     <node concept="1TJgyj" id="3Xsm2yzyl8r" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462107" />
@@ -1460,9 +1458,16 @@
     <property role="EcuMT" value="4565621053812462073" />
     <property role="3GE5qa" value="Definitions.Patterns.Expression" />
     <property role="TrG5h" value="PLiteral" />
-    <property role="R5$K7" value="true" />
+    <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="3Xsm2yzyl6j" resolve="PatternArgument" />
+    <node concept="1TJgyj" id="1A7M7ev3E1o" role="1TKVEi">
+      <property role="IQ2ns" value="1839659371719467096" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1A7M7evcy1n" resolve="Literal" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyl7U">
     <property role="EcuMT" value="4565621053812462074" />
@@ -1477,12 +1482,15 @@
     <property role="3GE5qa" value="Definitions.Patterns.Expression.Variables" />
     <property role="TrG5h" value="PVarWildcard" />
     <property role="34LRSv" value="_" />
+    <property role="R4oN_" value="Non-referentiable function argument." />
     <ref role="1TJDcQ" node="3Xsm2yzyl7U" resolve="PVariable" />
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyl89">
     <property role="EcuMT" value="4565621053812462089" />
     <property role="3GE5qa" value="Definitions.Patterns.Expression.Variables" />
     <property role="TrG5h" value="PVarName" />
+    <property role="R4oN_" value="Referentiable function argument." />
+    <property role="34LRSv" value="var" />
     <ref role="1TJDcQ" node="3Xsm2yzyl7U" resolve="PVariable" />
     <node concept="1TJgyj" id="3Xsm2yzyl8a" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462090" />
@@ -1495,8 +1503,9 @@
   <node concept="1TIwiD" id="3Xsm2yzyl9j">
     <property role="EcuMT" value="4565621053812462163" />
     <property role="3GE5qa" value="Definitions.Patterns.Expression.Lists" />
-    <property role="TrG5h" value="PListDot" />
+    <property role="TrG5h" value="PListColon" />
     <property role="34LRSv" value=":" />
+    <property role="R4oN_" value="List pattern." />
     <ref role="1TJDcQ" node="3Xsm2yzyl7R" resolve="PList" />
     <node concept="1TJgyj" id="3Xsm2yzyl9k" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462164" />
@@ -1517,6 +1526,8 @@
     <property role="EcuMT" value="4565621053812462235" />
     <property role="3GE5qa" value="Definitions.Patterns.Expression.Lists" />
     <property role="TrG5h" value="PListVar" />
+    <property role="R4oN_" value="Referentiable function argument." />
+    <property role="34LRSv" value="var" />
     <ref role="1TJDcQ" node="3Xsm2yzyl7R" resolve="PList" />
     <node concept="1TJgyj" id="3Xsm2yzylas" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462236" />
@@ -1531,7 +1542,8 @@
     <property role="3GE5qa" value="Definitions.Patterns.Expression.Lists" />
     <property role="TrG5h" value="PListBrackets" />
     <property role="34LRSv" value="[" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="R4oN_" value="List pattern." />
+    <ref role="1TJDcQ" node="3Xsm2yzyl7R" resolve="PList" />
     <node concept="1TJgyj" id="3Xsm2yzylaG" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462252" />
       <property role="20lmBu" value="aggregation" />
@@ -1826,30 +1838,25 @@
       <ref role="20lvS9" node="7Cxf1w4Aony" resolve="NodeVARID" />
     </node>
   </node>
-  <node concept="Az7Fb" id="7Cxf1w4A_lY">
-    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals.Primitives" />
-    <property role="TrG5h" value="BOOLEAN" />
-    <property role="FLfZY" value="true|false" />
-  </node>
   <node concept="Az7Fb" id="7Cxf1w4A_lZ">
     <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals.Primitives" />
     <property role="TrG5h" value="CHAR" />
-    <property role="FLfZY" value="^'([^'\\]|\\0|\\a|\\b|\\f|\\n|\\r|\\t|\\v|\\\&quot;|\\&amp;|\\'|\\\\)'$" />
+    <property role="FLfZY" value="^([^']|\\\\0|\\\\a|\\\\b|\\\\f|\\\\n|\\\\r|\\\\t|\\\\v|\\\\\&quot;|\\\\&amp;|\\\\')$" />
   </node>
   <node concept="Az7Fb" id="7Cxf1w4A_m0">
     <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals.Primitives" />
     <property role="TrG5h" value="STRING" />
-    <property role="FLfZY" value="^\&quot;([^\&quot;]|\\\&quot;)*\&quot;$" />
+    <property role="FLfZY" value="^([^\\\\\&quot;]|\\\\\&quot;|\\\\\\\\)*$" />
   </node>
   <node concept="Az7Fb" id="7Cxf1w4A_m1">
     <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals.Primitives" />
     <property role="TrG5h" value="BIGINTEGER" />
-    <property role="FLfZY" value="[0-9]+" />
+    <property role="FLfZY" value="^[0-9]+$" />
   </node>
   <node concept="Az7Fb" id="7Cxf1w4A_m2">
     <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals.Primitives" />
     <property role="TrG5h" value="DOUBLE" />
-    <property role="FLfZY" value="^[0-9]+(.[0-9]+)?(E(+|-)?[0-9]+)?$" />
+    <property role="FLfZY" value="^[0-9]+(\\.[0-9]+)?(E(\\+|\\-)?[0-9]+)?$" />
   </node>
   <node concept="1TIwiD" id="1NZxxHzeFNo">
     <property role="EcuMT" value="2089536204310232280" />
@@ -1983,6 +1990,30 @@
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" node="7Cxf1w4Aom_" resolve="VARID" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1A7M7ev83xY">
+    <property role="EcuMT" value="1839659371720620158" />
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals.BooleanValues" />
+    <property role="TrG5h" value="TrueValue" />
+    <property role="34LRSv" value="true" />
+    <property role="R4oN_" value="True boolean value." />
+    <ref role="1TJDcQ" node="vUxQDjKX$c" resolve="BooleanValue" />
+  </node>
+  <node concept="1TIwiD" id="1A7M7ev83xZ">
+    <property role="EcuMT" value="1839659371720620159" />
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals.BooleanValues" />
+    <property role="TrG5h" value="FalseValue" />
+    <property role="34LRSv" value="false" />
+    <property role="R4oN_" value="False boolean value." />
+    <ref role="1TJDcQ" node="vUxQDjKX$c" resolve="BooleanValue" />
+  </node>
+  <node concept="1TIwiD" id="1A7M7evcy1n">
+    <property role="EcuMT" value="1839659371721793623" />
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
+    <property role="TrG5h" value="Literal" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="vUxQDjKXzH" resolve="Term" />
   </node>
 </model>
 

@@ -12,6 +12,10 @@ import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
+  private final BHDescriptor myCharValue__BehaviorDescriptor = new CharValue__BehaviorDescriptor();
+  private final BHDescriptor myStringValue__BehaviorDescriptor = new StringValue__BehaviorDescriptor();
+  private final BHDescriptor myIntegerValue__BehaviorDescriptor = new IntegerValue__BehaviorDescriptor();
+  private final BHDescriptor myDoubleValue__BehaviorDescriptor = new DoubleValue__BehaviorDescriptor();
   private final BHDescriptor mySimpletype__BehaviorDescriptor = new Simpletype__BehaviorDescriptor();
   private final BHDescriptor myNodeCONID__BehaviorDescriptor = new NodeCONID__BehaviorDescriptor();
   private final BHDescriptor myNodeVARID__BehaviorDescriptor = new NodeVARID__BehaviorDescriptor();
@@ -22,16 +26,24 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   @Nullable
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     SAbstractConcept cncpt = concept;
-    switch (index_846f5o_a0g.index(cncpt)) {
+    switch (index_846f5o_a0k.index(cncpt)) {
       case 0:
-        return myNodeCONID__BehaviorDescriptor;
+        return myCharValue__BehaviorDescriptor;
       case 1:
-        return myNodeVARID__BehaviorDescriptor;
+        return myDoubleValue__BehaviorDescriptor;
       case 2:
+        return myIntegerValue__BehaviorDescriptor;
+      case 3:
+        return myNodeCONID__BehaviorDescriptor;
+      case 4:
+        return myNodeVARID__BehaviorDescriptor;
+      case 5:
         return mySimpletype__BehaviorDescriptor;
+      case 6:
+        return myStringValue__BehaviorDescriptor;
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex index_846f5o_a0g = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e1L), MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e2L), MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f1L)).seal();
+  private static final ConceptSwitchIndex index_846f5o_a0k = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d908L), MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d90bL), MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d90aL), MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e1L), MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e2L), MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f1L), MetaIdFactory.conceptId(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d909L)).seal();
 }

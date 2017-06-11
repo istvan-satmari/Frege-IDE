@@ -12,6 +12,6 @@ public class CHAR_PropertySupport extends PropertySupport {
     } else {
       testValue = value;
     }
-    return testValue.matches("^'([^'\\]|\\0|\\a|\\b|\\f|\\n|\\r|\\t|\\v|\\\"|\\&|\\'|\\\\)'$");
+    return testValue.matches("^([^']|\\\\0|\\\\a|\\\\b|\\\\f|\\\\n|\\\\r|\\\\t|\\\\v|\\\\\"|\\\\&|\\\\')$");
   }
 }

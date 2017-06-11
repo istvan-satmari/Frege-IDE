@@ -21,6 +21,8 @@ import jetbrains.mps.lang.editor.menus.substitute.SingleItemSubstituteMenuPart;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuItem;
 import org.jetbrains.mps.openapi.model.SNode;
+import BaseFrege.behavior.NodeCONID__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -62,7 +64,7 @@ public class ModulePart_SubstituteMenu extends SubstituteMenuBase {
       @Override
       public SNode createNode(@NotNull String pattern) {
         //  When typing inside module export brackets, decide according to pattern 
-        if (pattern.matches("[A-Z][_a-zA-Z0-9]*")) {
+        if (pattern.matches(NodeCONID__BehaviorDescriptor.getPattern_id30ixEdP_kLg.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e1L, "BaseFrege.structure.NodeCONID"))))) {
           SNode node = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1cff861b633b5a47L, "BaseFrege.structure.MPSCONID")), null);
           SPropertyOperations.set(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1cff861b633b5a47L, 0x1cff861b633b5a48L, "value")), MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e1L, 0x7a213c18049985e3L, "value"), pattern);
           return node;

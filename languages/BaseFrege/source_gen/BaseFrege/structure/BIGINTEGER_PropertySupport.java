@@ -12,6 +12,6 @@ public class BIGINTEGER_PropertySupport extends PropertySupport {
     } else {
       testValue = value;
     }
-    return testValue.matches("[0-9]+");
+    return testValue.matches("^[0-9]+$");
   }
 }

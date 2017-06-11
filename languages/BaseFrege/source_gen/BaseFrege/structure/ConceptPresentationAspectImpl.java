@@ -24,7 +24,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_CPExprToGuards = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Case = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_CasePart = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_CharValue = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_CharValue = new ConceptPresentationBuilder().shortDesc("Character literal.").create();
   private final ConceptPresentation props_Class = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Comment = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ConstrCall = new ConceptPresentationBuilder().create();
@@ -33,7 +33,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Data = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DataDefinitionPart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Definition = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DoubleValue = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_DoubleValue = new ConceptPresentationBuilder().shortDesc("Double value.").create();
   private final ConceptPresentation props_EmptyLine = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Expression = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ExpressionPart = new ConceptPresentationBuilder().create();
@@ -44,6 +44,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FDGuards = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FOCharacterOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FOSymbolicOperator = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FalseValue = new ConceptPresentationBuilder().shortDesc("False boolean value.").create();
   private final ConceptPresentation props_Fixity = new ConceptPresentationBuilder().shortDesc("Set priority of an operator.").create();
   private final ConceptPresentation props_FixityOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FullType = new ConceptPresentationBuilder().create();
@@ -71,7 +72,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Infixl = new ConceptPresentationBuilder().shortDesc("Left associative operator.").create();
   private final ConceptPresentation props_Infixr = new ConceptPresentationBuilder().shortDesc("Right associative operator.").create();
   private final ConceptPresentation props_Instance = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IntegerValue = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_IntegerValue = new ConceptPresentationBuilder().shortDesc("Integer value.").create();
   private final ConceptPresentation props_LCQArrowAssignment = new ConceptPresentationBuilder().shortDesc("expr <- expr").create();
   private final ConceptPresentation props_LCQGuard = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LCQLet = new ConceptPresentationBuilder().create();
@@ -101,15 +102,15 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_NodeCONID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_NodeOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PConstructor = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PConstructor = new ConceptPresentationBuilder().shortDesc("A datatype constructor reference.").create();
   private final ConceptPresentation props_PList = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PListBrackets = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PListDot = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PListVar = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PListBrackets = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
+  private final ConceptPresentation props_PListColon = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
+  private final ConceptPresentation props_PListVar = new ConceptPresentationBuilder().shortDesc("Referentiable function argument.").create();
   private final ConceptPresentation props_PLiteral = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PTuple = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PVarName = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PVarWildcard = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PTuple = new ConceptPresentationBuilder().shortDesc("Tuple pattern.").create();
+  private final ConceptPresentation props_PVarName = new ConceptPresentationBuilder().shortDesc("Referentiable function argument.").create();
+  private final ConceptPresentation props_PVarWildcard = new ConceptPresentationBuilder().shortDesc("Non-referentiable function argument.").create();
   private final ConceptPresentation props_PVariable = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Pattern = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PatternArgument = new ConceptPresentationBuilder().create();
@@ -120,13 +121,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Resource = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Simpletype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Skeleton = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_StringValue = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_StringValue = new ConceptPresentationBuilder().shortDesc("String literal.").create();
   private final ConceptPresentation props_Term = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TopExpression = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TrueValue = new ConceptPresentationBuilder().shortDesc("True boolean value.").create();
   private final ConceptPresentation props_Tuple = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Type = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TypeBrackets = new ConceptPresentationBuilder().shortDesc("Type inside brackets.").create();
-  private final ConceptPresentation props_TypeData = new ConceptPresentationBuilder().shortDesc("Represents algebraic datatype.").create();
+  private final ConceptPresentation props_TypeData = new ConceptPresentationBuilder().shortDesc("Represents types and algebraic datatypes.").create();
   private final ConceptPresentation props_TypeFunction = new ConceptPresentationBuilder().shortDesc("Complete type signature of a function.").create();
   private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type.").create();
   private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("Type of a tuple.").create();
@@ -210,6 +212,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_FOCharacterOperator;
       case LanguageConceptSwitch.FOSymbolicOperator:
         return props_FOSymbolicOperator;
+      case LanguageConceptSwitch.FalseValue:
+        return props_FalseValue;
       case LanguageConceptSwitch.Fixity:
         return props_Fixity;
       case LanguageConceptSwitch.FixityOperator:
@@ -330,8 +334,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_PList;
       case LanguageConceptSwitch.PListBrackets:
         return props_PListBrackets;
-      case LanguageConceptSwitch.PListDot:
-        return props_PListDot;
+      case LanguageConceptSwitch.PListColon:
+        return props_PListColon;
       case LanguageConceptSwitch.PListVar:
         return props_PListVar;
       case LanguageConceptSwitch.PLiteral:
@@ -368,6 +372,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Term;
       case LanguageConceptSwitch.TopExpression:
         return props_TopExpression;
+      case LanguageConceptSwitch.TrueValue:
+        return props_TrueValue;
       case LanguageConceptSwitch.Tuple:
         return props_Tuple;
       case LanguageConceptSwitch.Type:

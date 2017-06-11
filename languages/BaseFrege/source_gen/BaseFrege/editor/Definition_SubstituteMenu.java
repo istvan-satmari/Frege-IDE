@@ -26,9 +26,10 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import BaseFrege.behavior.NodeVARID__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class Definition_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
@@ -140,7 +141,7 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
           }
 
           SNode annoItemNode = null;
-          if (annoItem.matches("([a-z][_a-zA-Z0-9]*)|(_[_a-zA-Z0-9]+)")) {
+          if (annoItem.matches(NodeVARID__BehaviorDescriptor.getPattern_id30ixEdP_hUv.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e2L, "BaseFrege.structure.NodeVARID"))))) {
             // In case it is VARID 
             SNode aiNode = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3894ebaL, "BaseFrege.structure.AIVarid")), null);
             SPropertyOperations.set(SLinkOperations.getTarget(aiNode, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3894ebaL, 0x3f5c5828a3894ebbL, "value")), MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e2L, 0x7a213c18049985f2L, "value"), annoItem);

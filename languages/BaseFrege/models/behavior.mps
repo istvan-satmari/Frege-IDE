@@ -20,6 +20,7 @@
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
       </concept>
+      <concept id="1703835097132541506" name="jetbrains.mps.lang.behavior.structure.ThisConceptExpression" flags="ng" index="1fM9EW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
@@ -426,6 +427,141 @@
     </node>
     <node concept="13hLZK" id="30ixEdP_kL6" role="13h7CW">
       <node concept="3clFbS" id="30ixEdP_kL7" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7mwfunX6r4h">
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
+    <ref role="13h7C2" to="sc0n:vUxQDjKX$8" resolve="CharValue" />
+    <node concept="13i0hz" id="7mwfunX6r4s" role="13h7CS">
+      <property role="TrG5h" value="getPattern" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="7mwfunX6r4t" role="1B3o_S" />
+      <node concept="17QB3L" id="7mwfunX6r4u" role="3clF45" />
+      <node concept="3clFbS" id="7mwfunX6r4v" role="3clF47">
+        <node concept="3cpWs6" id="7mwfunX6r4w" role="3cqZAp">
+          <node concept="Xl_RD" id="7mwfunX6r4x" role="3cqZAk">
+            <property role="Xl_RC" value="^([^']|\\\\0|\\\\a|\\\\b|\\\\f|\\\\n|\\\\r|\\\\t|\\\\v|\\\\\&quot;|\\\\&amp;|\\\\')$" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7mwfunX6r61" role="13h7CS">
+      <property role="TrG5h" value="getFirstCharacterPattern" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="7mwfunX6r62" role="1B3o_S" />
+      <node concept="17QB3L" id="7mwfunX6r63" role="3clF45" />
+      <node concept="3clFbS" id="7mwfunX6r64" role="3clF47">
+        <node concept="3cpWs6" id="7mwfunX6r65" role="3cqZAp">
+          <node concept="2OqwBi" id="7mwfunX6roN" role="3cqZAk">
+            <node concept="1fM9EW" id="7mwfunX6r9$" role="2Oq$k0" />
+            <node concept="2qgKlT" id="7mwfunX6rH3" role="2OqNvi">
+              <ref role="37wK5l" node="7mwfunX6r4s" resolve="getPattern" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7mwfunX6r4i" role="13h7CW">
+      <node concept="3clFbS" id="7mwfunX6r4j" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7mwfunX6rOl">
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
+    <ref role="13h7C2" to="sc0n:vUxQDjKX$b" resolve="DoubleValue" />
+    <node concept="13i0hz" id="7mwfunX6rOw" role="13h7CS">
+      <property role="TrG5h" value="getPattern" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="7mwfunX6rOx" role="1B3o_S" />
+      <node concept="17QB3L" id="7mwfunX6rOy" role="3clF45" />
+      <node concept="3clFbS" id="7mwfunX6rOz" role="3clF47">
+        <node concept="3cpWs6" id="7mwfunX81qs" role="3cqZAp">
+          <node concept="Xl_RD" id="7mwfunX81qM" role="3cqZAk">
+            <property role="Xl_RC" value="^[0-9]+(\\.[0-9]+)?(E(\\+|\\-)?[0-9]+)?$" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7mwfunX6rQx" role="13h7CS">
+      <property role="TrG5h" value="getFirstCharacterPattern" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="7mwfunX6rQy" role="1B3o_S" />
+      <node concept="17QB3L" id="7mwfunX6rQz" role="3clF45" />
+      <node concept="3clFbS" id="7mwfunX6rQ$" role="3clF47">
+        <node concept="3cpWs6" id="7mwfunX6rQ_" role="3cqZAp">
+          <node concept="Xl_RD" id="7mwfunX6rZS" role="3cqZAk">
+            <property role="Xl_RC" value="[0-9]" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7mwfunX6rOm" role="13h7CW">
+      <node concept="3clFbS" id="7mwfunX6rOn" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7mwfunX6s1f">
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
+    <ref role="13h7C2" to="sc0n:vUxQDjKX$a" resolve="IntegerValue" />
+    <node concept="13i0hz" id="7mwfunX6s4D" role="13h7CS">
+      <property role="TrG5h" value="getPattern" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="7mwfunX6s4E" role="1B3o_S" />
+      <node concept="17QB3L" id="7mwfunX6s4F" role="3clF45" />
+      <node concept="3clFbS" id="7mwfunX6s4G" role="3clF47">
+        <node concept="3cpWs6" id="7mwfunX6s4H" role="3cqZAp">
+          <node concept="Xl_RD" id="7mwfunX6s4I" role="3cqZAk">
+            <property role="Xl_RC" value="^[0-9]+$" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7mwfunX6s5e" role="13h7CS">
+      <property role="TrG5h" value="getFirstCharacterPattern" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="7mwfunX6s5f" role="1B3o_S" />
+      <node concept="17QB3L" id="7mwfunX6s5g" role="3clF45" />
+      <node concept="3clFbS" id="7mwfunX6s5h" role="3clF47">
+        <node concept="3cpWs6" id="7mwfunX6s5i" role="3cqZAp">
+          <node concept="Xl_RD" id="7mwfunX6s5j" role="3cqZAk">
+            <property role="Xl_RC" value="[0-9]" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7mwfunX6s1g" role="13h7CW">
+      <node concept="3clFbS" id="7mwfunX6s1h" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7mwfunX6s6i">
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
+    <ref role="13h7C2" to="sc0n:vUxQDjKX$9" resolve="StringValue" />
+    <node concept="13i0hz" id="7mwfunX6s6t" role="13h7CS">
+      <property role="TrG5h" value="getPattern" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="7mwfunX6s6u" role="1B3o_S" />
+      <node concept="17QB3L" id="7mwfunX6s6v" role="3clF45" />
+      <node concept="3clFbS" id="7mwfunX6s6w" role="3clF47">
+        <node concept="3cpWs6" id="7mwfunX6s6x" role="3cqZAp">
+          <node concept="Xl_RD" id="7mwfunX6s6y" role="3cqZAk">
+            <property role="Xl_RC" value="^([^\\\\\&quot;]|\\\\\&quot;|\\\\\\\\)*$" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7mwfunX6s7J" role="13h7CS">
+      <property role="TrG5h" value="getFirstCharacterPattern" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="7mwfunX6s7K" role="1B3o_S" />
+      <node concept="17QB3L" id="7mwfunX6s7L" role="3clF45" />
+      <node concept="3clFbS" id="7mwfunX6s7M" role="3clF47">
+        <node concept="3cpWs6" id="7mwfunX6s7N" role="3cqZAp">
+          <node concept="Xl_RD" id="7mwfunX6s7O" role="3cqZAk">
+            <property role="Xl_RC" value="([^\\\\\&quot;]|\\\\\&quot;|\\\\\\\\)" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7mwfunX6s6j" role="13h7CW">
+      <node concept="3clFbS" id="7mwfunX6s6k" role="2VODD2" />
     </node>
   </node>
 </model>
