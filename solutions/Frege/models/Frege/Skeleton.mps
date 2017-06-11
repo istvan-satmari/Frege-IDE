@@ -15,6 +15,10 @@
       </concept>
       <concept id="4565621053812461972" name="BaseFrege.structure.PatternFunction" flags="ng" index="2sPgAW">
         <child id="4565621053812461973" name="name" index="2sPgAX" />
+        <child id="4565621053812461975" name="arguments" index="2sPgAZ" />
+      </concept>
+      <concept id="4565621053812462073" name="BaseFrege.structure.PLiteral" flags="ng" index="2sPgBh">
+        <child id="1839659371719467096" name="value" index="26ymwF" />
       </concept>
       <concept id="4565621053812461242" name="BaseFrege.structure.AIVarid" flags="ng" index="2sPhqi">
         <child id="4565621053812461243" name="value" index="2sPhqj" />
@@ -953,6 +957,11 @@
         <node concept="2sPgAW" id="1A7M7evc_CY" role="1EnjJl">
           <node concept="1YIbBU" id="1A7M7evc_D0" role="2sPgAX">
             <property role="1YIbBE" value="f" />
+          </node>
+          <node concept="2sPgBh" id="7mwfunXal4n" role="2sPgAZ">
+            <node concept="1kelTx" id="7mwfunXal4x" role="26ymwF">
+              <property role="hTkZ9" value="01.71" />
+            </node>
           </node>
         </node>
         <node concept="1kelYX" id="1A7M7evc_CQ" role="1EnjJn">
