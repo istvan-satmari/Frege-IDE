@@ -85,7 +85,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="vUxQDjKXyA" resolve="Main" />
     </node>
-    <node concept="PrWs8" id="2eBOBbTCIff" role="PzmwI">
+    <node concept="PrWs8" id="6t243n3uJJX" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
@@ -95,13 +95,6 @@
     <property role="3GE5qa" value="Module" />
     <property role="34LRSv" value="module" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1NZxxHzePCN" role="1TKVEi">
-      <property role="IQ2ns" value="2089536204310272563" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="name" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1NZxxHzeI4H" resolve="Resource" />
-    </node>
     <node concept="1TJgyj" id="7riFpCdoSWz" role="1TKVEi">
       <property role="IQ2ns" value="8562096718745931555" />
       <property role="20lmBu" value="aggregation" />
@@ -1413,7 +1406,6 @@
     <property role="EcuMT" value="4565621053812462070" />
     <property role="3GE5qa" value="Definitions.Patterns.Expression" />
     <property role="TrG5h" value="PTuple" />
-    <property role="34LRSv" value="(" />
     <property role="R4oN_" value="Tuple pattern." />
     <ref role="1TJDcQ" node="3Xsm2yzyl6j" resolve="PatternArgument" />
     <node concept="1TJgyj" id="3Xsm2yzylbm" role="1TKVEi">
@@ -1422,6 +1414,9 @@
       <property role="20kJfa" value="items" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
+    </node>
+    <node concept="PrWs8" id="7mwfunXaybh" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyl7R">
@@ -1504,7 +1499,6 @@
     <property role="EcuMT" value="4565621053812462163" />
     <property role="3GE5qa" value="Definitions.Patterns.Expression.Lists" />
     <property role="TrG5h" value="PListColon" />
-    <property role="34LRSv" value=":" />
     <property role="R4oN_" value="List pattern." />
     <ref role="1TJDcQ" node="3Xsm2yzyl7R" resolve="PList" />
     <node concept="1TJgyj" id="3Xsm2yzyl9k" role="1TKVEi">
@@ -1958,7 +1952,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="resource" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1NZxxHzeI4H" resolve="Resource" />
+      <ref role="20lvS9" node="vUxQDjKXwJ" resolve="Skeleton" />
     </node>
   </node>
   <node concept="1TIwiD" id="C3uKRKZJBe">
@@ -2014,6 +2008,21 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="vUxQDjKXzH" resolve="Term" />
+  </node>
+  <node concept="1TIwiD" id="7mwfunXaybd">
+    <property role="EcuMT" value="8475842556715475661" />
+    <property role="3GE5qa" value="Definitions.Patterns.Expression" />
+    <property role="TrG5h" value="PBracket" />
+    <property role="34LRSv" value="(" />
+    <property role="R4oN_" value="Pattern in round brackets." />
+    <ref role="1TJDcQ" node="3Xsm2yzyl6j" resolve="PatternArgument" />
+    <node concept="1TJgyj" id="7mwfunXaybT" role="1TKVEi">
+      <property role="IQ2ns" value="8475842556715475705" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="argument" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
+    </node>
   </node>
 </model>
 

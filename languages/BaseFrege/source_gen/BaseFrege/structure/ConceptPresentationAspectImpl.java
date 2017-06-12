@@ -102,6 +102,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_NodeCONID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_NodeOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PBracket = new ConceptPresentationBuilder().shortDesc("Pattern in round brackets.").create();
   private final ConceptPresentation props_PConstructor = new ConceptPresentationBuilder().shortDesc("A datatype constructor reference.").create();
   private final ConceptPresentation props_PList = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PListBrackets = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
@@ -328,6 +329,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_NodeOperator;
       case LanguageConceptSwitch.NodeVARID:
         return props_NodeVARID;
+      case LanguageConceptSwitch.PBracket:
+        return props_PBracket;
       case LanguageConceptSwitch.PConstructor:
         return props_PConstructor;
       case LanguageConceptSwitch.PList:
