@@ -1115,7 +1115,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("BaseFrege.structure.ModulePart", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38868c5L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812402374");
-    b.associate("module", 0x23a7d272f99de928L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1cff861b633ae12dL).optional(false).origin("2569253503694137640").done();
+    b.associate("module", 0x23a7d272f99de928L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x23a7d272f9a8b3fdL).optional(false).origin("2569253503694137640").done();
     b.alias("module");
     return b.create();
   }

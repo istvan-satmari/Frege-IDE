@@ -316,7 +316,6 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
-      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
@@ -541,8 +540,8 @@
             </node>
           </node>
         </node>
-        <node concept="3$7jql" id="2eBOBbT_PxG" role="3F10Kt">
-          <property role="3$6WeP" value="-1" />
+        <node concept="11LMrY" id="7cjyLS5tTvq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F2HdR" id="7riFpCdp8Lf" role="3EZMnx">
@@ -594,8 +593,8 @@
             </node>
           </node>
         </node>
-        <node concept="3$7fVu" id="2eBOBbT$MIo" role="3F10Kt">
-          <property role="3$6WeP" value="-1" />
+        <node concept="11L4FC" id="7cjyLS5tTOt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="vUxQDjKXxw" role="3EZMnx">
@@ -1613,9 +1612,6 @@
         <ref role="1NtTu8" to="sc0n:1G9BWv90qZ8" resolve="parts" />
         <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
         <node concept="2iRfu4" id="1G9BWv90qZc" role="2czzBx" />
-        <node concept="tppnM" id="2wqwUqp95xy" role="sWeuL">
-          <ref role="1k5W1q" node="4VDn71FCX7P" resolve="PaddedRightPlain" />
-        </node>
       </node>
       <node concept="3F0ifn" id="1G9BWv90qYl" role="3EZMnx">
         <property role="3F0ifm" value=")" />
@@ -1877,12 +1873,17 @@
       <node concept="3F0ifn" id="3Xsm2yzyaGL" role="3EZMnx">
         <property role="3F0ifm" value="module" />
       </node>
-      <node concept="1iCGBv" id="2eBOBbTC4JC" role="3EZMnx">
+      <node concept="1iCGBv" id="7cjyLS5uzy4" role="3EZMnx">
         <ref role="1NtTu8" to="sc0n:2eBOBbTBu$C" resolve="module" />
-        <node concept="1sVBvm" id="2eBOBbTC4JE" role="1sWHZn">
-          <node concept="3F0A7n" id="2eBOBbTC4JQ" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="sc0n:4VDn71FB_AE" resolve="value" />
+        <node concept="1sVBvm" id="7cjyLS5uzy6" role="1sWHZn">
+          <node concept="1iCGBv" id="7cjyLS5uzyp" role="2wV5jI">
+            <ref role="1NtTu8" to="sc0n:2eBOBbTEbfY" resolve="resource" />
+            <node concept="1sVBvm" id="7cjyLS5uzyr" role="1sWHZn">
+              <node concept="3F0A7n" id="7cjyLS5uzyy" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -2228,10 +2229,7 @@
           </node>
         </node>
         <node concept="tppnM" id="1A7M7ev5dLa" role="sWeuL">
-          <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
-          <node concept="11L4FC" id="1A7M7ev5e4Y" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
+          <ref role="1k5W1q" node="2eBOBbTAoA6" resolve="Comma" />
         </node>
       </node>
       <node concept="3F0ifn" id="1A7M7ev5MWA" role="3EZMnx">
@@ -2278,7 +2276,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="3Xsm2yzylbR" role="3EZMnx">
-        <property role="2czwfO" value=", " />
+        <property role="2czwfO" value="," />
         <ref role="1NtTu8" to="sc0n:3Xsm2yzylbm" resolve="items" />
         <node concept="2iRfu4" id="3Xsm2yzylbT" role="2czzBx" />
         <node concept="tppnM" id="7mwfunXdefc" role="sWeuL">
@@ -2818,30 +2816,11 @@
         <property role="3$6WeP" value="0" />
       </node>
     </node>
-    <node concept="14StLt" id="4VDn71FCX7P" role="V601i">
-      <property role="TrG5h" value="PaddedRightPlain" />
-      <node concept="3$7fVu" id="4VDn71FCX83" role="3F10Kt">
-        <property role="3$6WeP" value="0" />
-      </node>
-      <node concept="3$7jql" id="4VDn71FCX8e" role="3F10Kt">
-        <property role="3$6WeP" value="1" />
-      </node>
-      <node concept="Vb9p2" id="4VDn71FCX8F" role="3F10Kt" />
-    </node>
-    <node concept="14StLt" id="3mlr36XpJ4V" role="V601i">
-      <property role="TrG5h" value="Unpadded" />
-      <node concept="3$7fVu" id="3mlr36XpJ5d" role="3F10Kt">
-        <property role="3$6WeP" value="0" />
-      </node>
-      <node concept="3$7jql" id="3mlr36XpJ5l" role="3F10Kt">
-        <property role="3$6WeP" value="0" />
-      </node>
-    </node>
     <node concept="14StLt" id="2eBOBbTAoA6" role="V601i">
       <property role="TrG5h" value="Comma" />
       <node concept="Vb9p2" id="2eBOBbTAoAu" role="3F10Kt" />
-      <node concept="3$7fVu" id="2eBOBbTAoAA" role="3F10Kt">
-        <property role="3$6WeP" value="0" />
+      <node concept="11L4FC" id="7cjyLS5t0L3" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
       <node concept="3$7jql" id="2eBOBbTAoAN" role="3F10Kt">
         <property role="3$6WeP" value="1" />
@@ -6820,33 +6799,14 @@
       <node concept="16NL3D" id="7mwfunXnCA2" role="upBLP">
         <node concept="16Na2f" id="7mwfunXnCA3" role="16NL3A">
           <node concept="3clFbS" id="7mwfunXnCA4" role="2VODD2">
-            <node concept="3SKdUt" id="7mwfunXnIXW" role="3cqZAp">
-              <node concept="3SKdUq" id="7mwfunXnIXY" role="3SKWNk">
-                <property role="3SKdUp" value="TODO: Nejak to proste zablokovat, pokial uzivatel napisal wildcard _, ale zaroven je prave na takej bunke, kde moze byt jak bezny wildcard tak aj wrapovany" />
-              </node>
-            </node>
-            <node concept="3SKdUt" id="7mwfunXnJkM" role="3cqZAp">
-              <node concept="3SKdUq" id="7mwfunXnJkO" role="3SKWNk">
-                <property role="3SKdUp" value="TODO: cize ten wrapovany treba zakazat, pokial je na takom mieste" />
-              </node>
-            </node>
-            <node concept="1X3_iC" id="6t243n3v8G$" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbJ" id="7mwfunXnHkH" role="8Wnug">
-                <node concept="3clFbS" id="7mwfunXnHkJ" role="3clFbx">
-                  <node concept="3clFbH" id="7mwfunXnHkI" role="3cqZAp" />
+            <node concept="3cpWs6" id="7cjyLS5rBFQ" role="3cqZAp">
+              <node concept="2OqwBi" id="7cjyLS5rAC4" role="3cqZAk">
+                <node concept="1yR$tW" id="7cjyLS5rAlQ" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="7cjyLS5rAX6" role="2OqNvi">
+                  <node concept="chp4Y" id="7cjyLS5rBij" role="cj9EA">
+                    <ref role="cht4Q" to="sc0n:3Xsm2yzyl7R" resolve="PList" />
+                  </node>
                 </node>
-                <node concept="2OqwBi" id="7mwfunXnHNJ" role="3clFbw">
-                  <node concept="1yR$tW" id="7mwfunXnHuV" role="2Oq$k0" />
-                  <node concept="1B$H19" id="7mwfunXnHNO" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="7mwfunXnHaF" role="3cqZAp" />
-            <node concept="3cpWs6" id="7mwfunXnIBr" role="3cqZAp">
-              <node concept="3clFbT" id="7mwfunXnIIX" role="3cqZAk">
-                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>

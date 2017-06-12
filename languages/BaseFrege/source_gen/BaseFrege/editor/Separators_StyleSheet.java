@@ -38,26 +38,6 @@ public class Separators_StyleSheet {
    * @deprecated Since MPS 3.5 use generated StyleClass
    */
   @Deprecated
-  public static void apply_PaddedRightPlain(Style style, EditorCell editorCell) {
-    SNode node = (editorCell == null ? null : editorCell.getSNode());
-    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Separators_StyleSheet.PaddedRightPlainStyleClass(editorContext, node).apply(style, editorCell);
-  }
-  /**
-   * 
-   * @deprecated Since MPS 3.5 use generated StyleClass
-   */
-  @Deprecated
-  public static void apply_Unpadded(Style style, EditorCell editorCell) {
-    SNode node = (editorCell == null ? null : editorCell.getSNode());
-    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
-    new Separators_StyleSheet.UnpaddedStyleClass(editorContext, node).apply(style, editorCell);
-  }
-  /**
-   * 
-   * @deprecated Since MPS 3.5 use generated StyleClass
-   */
-  @Deprecated
   public static void apply_Comma(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
@@ -88,31 +68,6 @@ public class Separators_StyleSheet {
     }
 
   }
-  public static class PaddedRightPlainStyleClass extends AbstractStyleClass {
-    public PaddedRightPlainStyleClass(EditorContext editorContext, SNode node) {
-      super(editorContext, node);
-    }
-
-    @Override
-    public void apply(Style style, EditorCell editorCell) {
-      style.set(StyleAttributes.PADDING_LEFT, new Padding(0, Measure.SPACES));
-      style.set(StyleAttributes.PADDING_RIGHT, new Padding(1, Measure.SPACES));
-      style.set(StyleAttributes.FONT_STYLE, MPSFonts.PLAIN);
-    }
-
-  }
-  public static class UnpaddedStyleClass extends AbstractStyleClass {
-    public UnpaddedStyleClass(EditorContext editorContext, SNode node) {
-      super(editorContext, node);
-    }
-
-    @Override
-    public void apply(Style style, EditorCell editorCell) {
-      style.set(StyleAttributes.PADDING_LEFT, new Padding(0, Measure.SPACES));
-      style.set(StyleAttributes.PADDING_RIGHT, new Padding(0, Measure.SPACES));
-    }
-
-  }
   public static class CommaStyleClass extends AbstractStyleClass {
     public CommaStyleClass(EditorContext editorContext, SNode node) {
       super(editorContext, node);
@@ -121,7 +76,7 @@ public class Separators_StyleSheet {
     @Override
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.PLAIN);
-      style.set(StyleAttributes.PADDING_LEFT, new Padding(0, Measure.SPACES));
+      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
       style.set(StyleAttributes.PADDING_RIGHT, new Padding(1, Measure.SPACES));
     }
 

@@ -1113,7 +1113,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="module" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1NZxxHzeI4H" resolve="Resource" />
+      <ref role="20lvS9" node="2eBOBbTEbfX" resolve="ImportedResource" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyaGe">
