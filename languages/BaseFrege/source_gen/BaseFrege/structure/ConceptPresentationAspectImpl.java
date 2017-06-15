@@ -104,8 +104,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PBracket = new ConceptPresentationBuilder().shortDesc("Pattern in round brackets.").create();
   private final ConceptPresentation props_PConstructor = new ConceptPresentationBuilder().shortDesc("A datatype constructor reference.").create();
-  private final ConceptPresentation props_PList = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PListBrackets = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
+  private final ConceptPresentation props_PLEBPatternArgument = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PLEBPlaceholder = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PList = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
+  private final ConceptPresentation props_PListBracket = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
   private final ConceptPresentation props_PListColon = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
   private final ConceptPresentation props_PListVar = new ConceptPresentationBuilder().shortDesc("Referentiable function argument.").create();
   private final ConceptPresentation props_PLiteral = new ConceptPresentationBuilder().create();
@@ -333,10 +335,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_PBracket;
       case LanguageConceptSwitch.PConstructor:
         return props_PConstructor;
+      case LanguageConceptSwitch.PLEBPatternArgument:
+        return props_PLEBPatternArgument;
+      case LanguageConceptSwitch.PLEBPlaceholder:
+        return props_PLEBPlaceholder;
       case LanguageConceptSwitch.PList:
         return props_PList;
-      case LanguageConceptSwitch.PListBrackets:
-        return props_PListBrackets;
+      case LanguageConceptSwitch.PListBracket:
+        return props_PListBracket;
       case LanguageConceptSwitch.PListColon:
         return props_PListColon;
       case LanguageConceptSwitch.PListVar:

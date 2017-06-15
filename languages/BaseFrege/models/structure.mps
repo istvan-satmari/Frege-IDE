@@ -1407,6 +1407,7 @@
     <property role="3GE5qa" value="Definitions.Patterns.Expression" />
     <property role="TrG5h" value="PTuple" />
     <property role="R4oN_" value="Tuple pattern." />
+    <property role="34LRSv" value="tuple" />
     <ref role="1TJDcQ" node="3Xsm2yzyl6j" resolve="PatternArgument" />
     <node concept="1TJgyj" id="3Xsm2yzylbm" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462294" />
@@ -1425,6 +1426,8 @@
     <property role="TrG5h" value="PList" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="List pattern." />
+    <property role="34LRSv" value="list" />
     <ref role="1TJDcQ" node="3Xsm2yzyl6j" resolve="PatternArgument" />
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyl7S">
@@ -1500,6 +1503,7 @@
     <property role="3GE5qa" value="Definitions.Patterns.Expression.Lists" />
     <property role="TrG5h" value="PListColon" />
     <property role="R4oN_" value="List pattern." />
+    <property role="34LRSv" value=":" />
     <ref role="1TJDcQ" node="3Xsm2yzyl7R" resolve="PList" />
     <node concept="1TJgyj" id="3Xsm2yzyl9k" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462164" />
@@ -1514,6 +1518,9 @@
       <property role="20kJfa" value="tail" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3Xsm2yzyl7R" resolve="PList" />
+    </node>
+    <node concept="PrWs8" id="1QLLtx6ghcf" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzylar">
@@ -1534,7 +1541,7 @@
   <node concept="1TIwiD" id="3Xsm2yzylaF">
     <property role="EcuMT" value="4565621053812462251" />
     <property role="3GE5qa" value="Definitions.Patterns.Expression.Lists" />
-    <property role="TrG5h" value="PListBrackets" />
+    <property role="TrG5h" value="PListBracket" />
     <property role="34LRSv" value="[" />
     <property role="R4oN_" value="List pattern." />
     <ref role="1TJDcQ" node="3Xsm2yzyl7R" resolve="PList" />
@@ -1542,8 +1549,8 @@
       <property role="IQ2ns" value="4565621053812462252" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="items" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7cjyLS5vyPN" resolve="PLEBPlaceholder" />
     </node>
   </node>
   <node concept="1TIwiD" id="6rUjWpoauRw">
@@ -2020,6 +2027,30 @@
       <property role="IQ2ns" value="8475842556715475705" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="argument" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cjyLS5vyPN">
+    <property role="EcuMT" value="8292124299976650099" />
+    <property role="3GE5qa" value="Definitions.Patterns.Expression.Lists.PListBracket" />
+    <property role="TrG5h" value="PLEBPlaceholder" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7cjyLS5vyQg" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7cjyLS5vyPO">
+    <property role="EcuMT" value="8292124299976650100" />
+    <property role="3GE5qa" value="Definitions.Patterns.Expression.Lists.PListBracket" />
+    <property role="TrG5h" value="PLEBPatternArgument" />
+    <ref role="1TJDcQ" node="7cjyLS5vyPN" resolve="PLEBPlaceholder" />
+    <node concept="1TJgyj" id="7cjyLS5vyPR" role="1TKVEi">
+      <property role="IQ2ns" value="8292124299976650103" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arg" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
     </node>
