@@ -20,7 +20,6 @@
       <concept id="4565621053812462073" name="BaseFrege.structure.PLiteral" flags="ng" index="2sPgBh">
         <child id="1839659371719467096" name="value" index="26ymwF" />
       </concept>
-      <concept id="4565621053812462075" name="BaseFrege.structure.PVarWildcard" flags="ng" index="2sPgBj" />
       <concept id="4565621053812462070" name="BaseFrege.structure.PTuple" flags="ng" index="2sPgBu">
         <child id="4565621053812462294" name="items" index="2sPgFY" />
       </concept>
@@ -810,7 +809,7 @@
               </node>
               <node concept="2sPgCx" id="50lglqqtDnL" role="2sPgFY">
                 <node concept="1YIbBU" id="50lglqqtDnM" role="2sPgCy">
-                  <property role="1YIbBE" value="a" />
+                  <property role="1YIbBE" value="b" />
                 </node>
               </node>
               <node concept="2sPgE3" id="50lglqqtDnX" role="2sPgFY">
@@ -855,7 +854,7 @@
             </node>
             <node concept="2sPgCx" id="50lglqqwLka" role="2sPgAZ">
               <node concept="1YIbBU" id="50lglqqwLkb" role="2sPgCy">
-                <property role="1YIbBE" value="b" />
+                <property role="1YIbBE" value="bc" />
               </node>
             </node>
             <node concept="2sPgE3" id="50lglqqwLkl" role="2sPgAZ">
@@ -885,7 +884,7 @@
               <node concept="1QrqpE" id="50lglqqNBuM" role="2sPgE4">
                 <node concept="2sPgCx" id="50lglqqNBuK" role="1QrqpD">
                   <node concept="1YIbBU" id="50lglqqNBuL" role="2sPgCy">
-                    <property role="1YIbBE" value="adw" />
+                    <property role="1YIbBE" value="adaw" />
                   </node>
                 </node>
               </node>
@@ -900,7 +899,7 @@
                 <node concept="2sPgDV" id="50lglqqMGlW" role="1QrqpD">
                   <node concept="2sPgCx" id="50lglqqMGlR" role="2sPgDW">
                     <node concept="1YIbBU" id="50lglqqMGlS" role="2sPgCy">
-                      <property role="1YIbBE" value="x" />
+                      <property role="1YIbBE" value="xwwq" />
                     </node>
                   </node>
                   <node concept="2sPgEN" id="50lglqqMGm5" role="2sPgDY">
@@ -916,7 +915,7 @@
                 <node concept="2sPgDV" id="50lglqqMGmO" role="1QrqpD">
                   <node concept="2sPgCx" id="50lglqqMGmJ" role="2sPgDW">
                     <node concept="1YIbBU" id="50lglqqMGmK" role="2sPgCy">
-                      <property role="1YIbBE" value="x" />
+                      <property role="1YIbBE" value="xz" />
                     </node>
                   </node>
                   <node concept="2sPgE3" id="50lglqqMGmV" role="2sPgDY">
@@ -934,7 +933,7 @@
                 <node concept="2sPgDV" id="50lglqqNBy6" role="1QrqpD">
                   <node concept="2sPgCx" id="50lglqqNBy1" role="2sPgDW">
                     <node concept="1YIbBU" id="50lglqqNBy2" role="2sPgCy">
-                      <property role="1YIbBE" value="x" />
+                      <property role="1YIbBE" value="xxa" />
                     </node>
                   </node>
                   <node concept="2sPgEN" id="50lglqqNByf" role="2sPgDY">
@@ -950,14 +949,14 @@
                 <node concept="2sPgDV" id="50lglqqNBzC" role="1QrqpD">
                   <node concept="2sPgCx" id="50lglqqNBzz" role="2sPgDW">
                     <node concept="1YIbBU" id="50lglqqNBz$" role="2sPgCy">
-                      <property role="1YIbBE" value="x" />
+                      <property role="1YIbBE" value="b" />
                     </node>
                   </node>
                   <node concept="2sPgE3" id="50lglqqNBzJ" role="2sPgDY">
                     <node concept="1QrqpE" id="50lglqqNBzR" role="2sPgE4">
                       <node concept="2sPgCx" id="50lglqqNBzP" role="1QrqpD">
                         <node concept="1YIbBU" id="50lglqqNBzQ" role="2sPgCy">
-                          <property role="1YIbBE" value="x" />
+                          <property role="1YIbBE" value="xax" />
                         </node>
                       </node>
                     </node>
@@ -982,7 +981,7 @@
                           <node concept="2sPgDV" id="50lglqqOtJi" role="2sPgDY">
                             <node concept="2sPgCx" id="50lglqqOtJo" role="2sPgDW">
                               <node concept="1YIbBU" id="50lglqqOtJp" role="2sPgCy">
-                                <property role="1YIbBE" value="x" />
+                                <property role="1YIbBE" value="xa" />
                               </node>
                             </node>
                             <node concept="2sPgEN" id="50lglqqOtJt" role="2sPgDY">
@@ -1009,34 +1008,49 @@
         </node>
       </node>
     </node>
-    <node concept="13$zwi" id="50lglqqOuMm" role="1kelZ8">
-      <node concept="1EnjCU" id="50lglqqOuSB" role="13$zwt">
-        <node concept="1rUzOy" id="50lglqqOuSD" role="1EnjJl">
-          <node concept="2sPgAW" id="50lglqqOuSW" role="1rUzOz">
-            <node concept="1YIbBU" id="50lglqqOuSR" role="2sPgAX">
-              <property role="1YIbBE" value="myname" />
+    <node concept="13$zwi" id="50lglqqQlqO" role="1kelZ8">
+      <node concept="1EnjCU" id="50lglqqQlx3" role="13$zwt">
+        <node concept="1rUzOy" id="50lglqqQlx5" role="1EnjJl">
+          <node concept="2sPgAW" id="50lglqqQlxo" role="1rUzOz">
+            <node concept="1YIbBU" id="50lglqqQlxj" role="2sPgAX">
+              <property role="1YIbBE" value="ff" />
             </node>
-            <node concept="2sPgDV" id="50lglqqOuTe" role="2sPgAZ">
-              <node concept="2sPgCx" id="50lglqqOuT9" role="2sPgDW">
-                <node concept="1YIbBU" id="50lglqqOuTa" role="2sPgCy">
-                  <property role="1YIbBE" value="c" />
+            <node concept="2sPgE3" id="50lglqqQlxr" role="2sPgAZ">
+              <node concept="1QrqpE" id="50lglqqQlxB" role="2sPgE4">
+                <node concept="2sPgCx" id="50lglqqQlx_" role="1QrqpD">
+                  <node concept="1YIbBU" id="50lglqqQlxA" role="2sPgCy">
+                    <property role="1YIbBE" value="a" />
+                  </node>
                 </node>
               </node>
-              <node concept="2sPgEN" id="50lglqqOuTm" role="2sPgDY">
-                <node concept="2sPgBj" id="50lglqqOuTl" role="2sPgEO" />
+              <node concept="1QrqpE" id="50lglqqQlxN" role="2sPgE4">
+                <node concept="2sPgCx" id="50lglqqQlxL" role="1QrqpD">
+                  <node concept="1YIbBU" id="50lglqqQlxM" role="2sPgCy">
+                    <property role="1YIbBE" value="b" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1QrqpE" id="50lglqqQly7" role="2sPgE4">
+                <node concept="2sPgE3" id="50lglqqQly3" role="1QrqpD">
+                  <node concept="1QrqpE" id="50lglqqQlyk" role="2sPgE4">
+                    <node concept="2sPgCx" id="50lglqqQlyi" role="1QrqpD">
+                      <node concept="1YIbBU" id="50lglqqQlyj" role="2sPgCy">
+                        <property role="1YIbBE" value="cc" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="1kelYX" id="50lglqqOuSH" role="1EnjJn">
-          <node concept="1kelTw" id="50lglqqOuTq" role="1Enppr">
+        <node concept="1kelYX" id="50lglqqQlx9" role="1EnjJn">
+          <node concept="1kelTw" id="50lglqqQlyp" role="1Enppr">
             <property role="hTkZQ" value="0" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="14659P" id="50lglqqOuob" role="1kelZ8" />
-    <node concept="14659P" id="50lglqqOuuv" role="1kelZ8" />
     <node concept="14659P" id="50lglqqOu$O" role="1kelZ8" />
     <node concept="14659P" id="66KGco2z8z" role="1kelZ8" />
     <node concept="14659P" id="50lglqqOuhS" role="1kelZ8" />

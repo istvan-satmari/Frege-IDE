@@ -8,6 +8,7 @@
   <imports>
     <import index="sc0n" ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="yq4j" ref="r:f3acc988-19e1-4f05-8291-435175dbbc1f(BaseFrege.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -116,9 +117,13 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -933,6 +938,49 @@
     <node concept="1YaCAy" id="1419SZwmF6n" role="1YuTPh">
       <property role="TrG5h" value="pListBracket" />
       <ref role="1YaFvo" to="sc0n:3Xsm2yzylaF" resolve="PListBracket" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="50lglqqQ2i0">
+    <property role="TrG5h" value="check_Pattern" />
+    <property role="3GE5qa" value="Definitions.Patterns" />
+    <node concept="3clFbS" id="50lglqqQ2i1" role="18ibNy">
+      <node concept="3SKdUt" id="50lglqqQ2i7" role="3cqZAp">
+        <node concept="3SKdUq" id="50lglqqQ2i8" role="3SKWNk">
+          <property role="3SKdUp" value="Check fdor duplicities of variable names" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="50lglqqQ2ig" role="3cqZAp">
+        <node concept="3clFbS" id="50lglqqQ2ii" role="3clFbx">
+          <node concept="2MkqsV" id="50lglqqQ4cf" role="3cqZAp">
+            <node concept="Xl_RD" id="50lglqqQ4cg" role="2MkJ7o">
+              <property role="Xl_RC" value="Must not contain variables with same name." />
+            </node>
+            <node concept="1YBJjd" id="50lglqqQ4d1" role="2OEOjV">
+              <ref role="1YBMHb" node="50lglqqQ2i3" resolve="pattern" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="50lglqqQ2Yl" role="3clFbw">
+          <node concept="35c_gC" id="50lglqqQ2Hm" role="2Oq$k0">
+            <ref role="35c_gD" to="sc0n:3Xsm2yzyl6i" resolve="Pattern" />
+          </node>
+          <node concept="2qgKlT" id="50lglqqQ3wP" role="2OqNvi">
+            <ref role="37wK5l" to="yq4j:50lglqqPWCj" resolve="ContainsDuplicities" />
+            <node concept="2OqwBi" id="50lglqqQ3If" role="37wK5m">
+              <node concept="1YBJjd" id="50lglqqQ3_o" role="2Oq$k0">
+                <ref role="1YBMHb" node="50lglqqQ2i3" resolve="pattern" />
+              </node>
+              <node concept="2qgKlT" id="50lglqqQ3VV" role="2OqNvi">
+                <ref role="37wK5l" to="yq4j:50lglqqP9oo" resolve="GetVariableNames" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="50lglqqQ2i3" role="1YuTPh">
+      <property role="TrG5h" value="pattern" />
+      <ref role="1YaFvo" to="sc0n:3Xsm2yzyl6i" resolve="Pattern" />
     </node>
   </node>
 </model>
