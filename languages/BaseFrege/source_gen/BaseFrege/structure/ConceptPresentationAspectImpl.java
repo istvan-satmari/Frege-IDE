@@ -103,7 +103,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_NodeOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PBracket = new ConceptPresentationBuilder().shortDesc("Pattern in round brackets.").create();
-  private final ConceptPresentation props_PConstructor = new ConceptPresentationBuilder().shortDesc("A datatype constructor reference.").create();
+  private final ConceptPresentation props_PConstructor = new ConceptPresentationBuilder().shortDesc("Datatype constructor reference.").create();
   private final ConceptPresentation props_PLEBPatternArgument = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PLEBPlaceholder = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PList = new ConceptPresentationBuilder().shortDesc("List pattern.").create();

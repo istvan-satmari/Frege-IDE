@@ -413,6 +413,7 @@
     <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
     <property role="TrG5h" value="IntegerValue" />
     <property role="R4oN_" value="Integer value." />
+    <property role="34LRSv" value="integer" />
     <ref role="1TJDcQ" node="1A7M7evcy1n" resolve="Literal" />
     <node concept="1TJgyi" id="6G7jP5USw2B" role="1TKVEl">
       <property role="IQ2nx" value="7712220098267840679" />
@@ -425,6 +426,7 @@
     <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
     <property role="TrG5h" value="DoubleValue" />
     <property role="R4oN_" value="Double value." />
+    <property role="34LRSv" value="double" />
     <ref role="1TJDcQ" node="1A7M7evcy1n" resolve="Literal" />
     <node concept="1TJgyi" id="6G7jP5USw2o" role="1TKVEl">
       <property role="IQ2nx" value="7712220098267840664" />
@@ -1434,8 +1436,8 @@
     <property role="EcuMT" value="4565621053812462072" />
     <property role="3GE5qa" value="Definitions.Patterns.Expression" />
     <property role="TrG5h" value="PConstructor" />
-    <property role="34LRSv" value="Constructor" />
-    <property role="R4oN_" value="A datatype constructor reference." />
+    <property role="34LRSv" value="constructor" />
+    <property role="R4oN_" value="Datatype constructor reference." />
     <ref role="1TJDcQ" node="3Xsm2yzyl6j" resolve="PatternArgument" />
     <node concept="1TJgyj" id="3Xsm2yzyl8p" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462105" />

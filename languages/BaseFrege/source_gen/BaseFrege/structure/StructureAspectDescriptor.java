@@ -642,6 +642,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("BaseFrege.structure.Literal", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1987c8739f322057L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786699");
     b.prop("value", 0x6b074f517ae20098L, "7712220098267840664");
+    b.alias("double");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEmptyLine() {
@@ -959,6 +960,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("BaseFrege.structure.Literal", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1987c8739f322057L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786698");
     b.prop("value", 0x6b074f517ae200a7L, "7712220098267840679");
+    b.alias("integer");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLCQArrowAssignment() {
@@ -1208,7 +1210,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812462072");
     b.aggregate("name", 0x3f5c5828a3895219L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e1L).optional(false).ordered(true).multiple(false).origin("4565621053812462105").done();
     b.aggregate("arguments", 0x3f5c5828a389521bL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895193L).optional(true).ordered(true).multiple(true).origin("4565621053812462107").done();
-    b.alias("Constructor");
+    b.alias("constructor");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPLEBPatternArgument() {

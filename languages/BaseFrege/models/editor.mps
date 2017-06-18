@@ -34,6 +34,9 @@
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
         <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
+      <concept id="1196434649611" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_SimpleString" flags="ng" index="2h3Zct">
+        <property id="1196434851095" name="text" index="2h4Kg1" />
+      </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="3459162043708467089" name="jetbrains.mps.lang.editor.structure.CellActionMap_CanExecuteFunction" flags="in" index="jK8Ss" />
@@ -117,6 +120,9 @@
       <concept id="8998492695583109601" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_CanSubstitute" flags="ig" index="16Na2f" />
       <concept id="8998492695583125082" name="jetbrains.mps.lang.editor.structure.SubstituteFeature_MatchingText" flags="ng" index="16NfWO">
         <child id="8998492695583129244" name="query" index="16NeZM" />
+      </concept>
+      <concept id="8998492695583129971" name="jetbrains.mps.lang.editor.structure.SubstituteFeature_DescriptionText" flags="ng" index="16NL0t">
+        <child id="8998492695583129972" name="query" index="16NL0q" />
       </concept>
       <concept id="8998492695583129991" name="jetbrains.mps.lang.editor.structure.SubstituteFeature_CanSubstitute" flags="ng" index="16NL3D">
         <child id="8998492695583129992" name="query" index="16NL3A" />
@@ -6087,6 +6093,11 @@
           </node>
         </node>
       </node>
+      <node concept="16NL0t" id="50lglqqurYp" role="upBLP">
+        <node concept="2h3Zct" id="50lglqqus4A" role="16NL0q">
+          <property role="2h4Kg1" value="Referentiable variable." />
+        </node>
+      </node>
       <node concept="ucgPf" id="1A7M7ev6vGh" role="3aKz83">
         <node concept="3clFbS" id="1A7M7ev6vGj" role="2VODD2">
           <node concept="3SKdUt" id="1A7M7ev6wRX" role="3cqZAp">
@@ -8239,6 +8250,19 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="3p36aQ" id="50lglqqsASu">
+    <property role="3GE5qa" value="Definitions.Patterns.Expression.Lists.PListBracket" />
+    <ref role="aqKnT" to="sc0n:7cjyLS5vyPN" resolve="PLEBPlaceholder" />
+    <node concept="2VfDsV" id="50lglqqtDsg" role="3ft7WO" />
+  </node>
+  <node concept="3p36aQ" id="50lglqqsASv">
+    <property role="3GE5qa" value="Definitions.Patterns.Expression" />
+    <ref role="aqKnT" to="sc0n:3Xsm2yzyl7Q" resolve="PTuple" />
+  </node>
+  <node concept="3p36aQ" id="50lglqqsAT6">
+    <property role="3GE5qa" value="Definitions.Patterns.Expression.Lists" />
+    <ref role="aqKnT" to="sc0n:3Xsm2yzyl9j" resolve="PListColon" />
   </node>
 </model>
 
