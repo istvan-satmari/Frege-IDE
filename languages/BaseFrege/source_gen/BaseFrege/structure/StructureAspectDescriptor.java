@@ -1283,7 +1283,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("BaseFrege.structure.PatternArgument", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895193L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x19796fa16a19888bL);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812462070");
-    b.aggregate("items", 0x3f5c5828a38952d6L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895193L).optional(false).ordered(true).multiple(true).origin("4565621053812462294").done();
+    b.aggregate("firstItem", 0x501541569b1e4c0cL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895193L).optional(false).ordered(true).multiple(false).origin("5770590337770605580").done();
+    b.aggregate("additionalItems", 0x3f5c5828a38952d6L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895193L).optional(false).ordered(true).multiple(true).origin("4565621053812462294").done();
     b.alias("tuple");
     return b.create();
   }

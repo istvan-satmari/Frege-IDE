@@ -1419,10 +1419,17 @@
     <property role="R4oN_" value="Tuple pattern." />
     <property role="34LRSv" value="tuple" />
     <ref role="1TJDcQ" node="3Xsm2yzyl6j" resolve="PatternArgument" />
+    <node concept="1TJgyj" id="50lglqr7$Kc" role="1TKVEi">
+      <property role="IQ2ns" value="5770590337770605580" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="firstItem" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
+    </node>
     <node concept="1TJgyj" id="3Xsm2yzylbm" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462294" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="items" />
+      <property role="20kJfa" value="additionalItems" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
     </node>
