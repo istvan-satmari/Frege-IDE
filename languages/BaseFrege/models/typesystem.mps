@@ -160,6 +160,9 @@
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
       <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
       <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435808" name="initValue" index="HW$Y0" />
@@ -940,47 +943,182 @@
       <ref role="1YaFvo" to="sc0n:3Xsm2yzylaF" resolve="PListBracket" />
     </node>
   </node>
-  <node concept="18kY7G" id="50lglqqQ2i0">
-    <property role="TrG5h" value="check_Pattern" />
+  <node concept="18kY7G" id="50lglqqQQdE">
+    <property role="TrG5h" value="check_PatternWrapper" />
     <property role="3GE5qa" value="Definitions.Patterns" />
-    <node concept="3clFbS" id="50lglqqQ2i1" role="18ibNy">
-      <node concept="3SKdUt" id="50lglqqQ2i7" role="3cqZAp">
-        <node concept="3SKdUq" id="50lglqqQ2i8" role="3SKWNk">
-          <property role="3SKdUp" value="Check fdor duplicities of variable names" />
+    <node concept="3clFbS" id="50lglqqQQdF" role="18ibNy">
+      <node concept="3SKdUt" id="50lglqqQQf_" role="3cqZAp">
+        <node concept="3SKdUq" id="50lglqqQQfA" role="3SKWNk">
+          <property role="3SKdUp" value="Get all of the children variable names" />
         </node>
       </node>
-      <node concept="3clFbJ" id="50lglqqQ2ig" role="3cqZAp">
-        <node concept="3clFbS" id="50lglqqQ2ii" role="3clFbx">
-          <node concept="2MkqsV" id="50lglqqQ4cf" role="3cqZAp">
-            <node concept="Xl_RD" id="50lglqqQ4cg" role="2MkJ7o">
-              <property role="Xl_RC" value="Must not contain variables with same name." />
+      <node concept="3cpWs8" id="50lglqqQQfB" role="3cqZAp">
+        <node concept="3cpWsn" id="50lglqqQQfC" role="3cpWs9">
+          <property role="TrG5h" value="variableNames" />
+          <node concept="_YKpA" id="50lglqqQQfD" role="1tU5fm">
+            <node concept="17QB3L" id="50lglqqQQfE" role="_ZDj9" />
+          </node>
+          <node concept="2OqwBi" id="50lglqqQQfF" role="33vP2m">
+            <node concept="2OqwBi" id="50lglqqQQ$s" role="2Oq$k0">
+              <node concept="1YBJjd" id="50lglqqQQoh" role="2Oq$k0">
+                <ref role="1YBMHb" node="50lglqqQQdH" resolve="patternWrapper" />
+              </node>
+              <node concept="3TrEf2" id="50lglqqQQIg" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:1QLLtx6mZzV" resolve="pattern" />
+              </node>
             </node>
-            <node concept="1YBJjd" id="50lglqqQ4d1" role="2OEOjV">
-              <ref role="1YBMHb" node="50lglqqQ2i3" resolve="pattern" />
+            <node concept="2qgKlT" id="50lglqqQQYn" role="2OqNvi">
+              <ref role="37wK5l" to="yq4j:50lglqqP9oo" resolve="GetVariableNames" />
             </node>
           </node>
         </node>
-        <node concept="2OqwBi" id="50lglqqQ2Yl" role="3clFbw">
-          <node concept="35c_gC" id="50lglqqQ2Hm" role="2Oq$k0">
-            <ref role="35c_gD" to="sc0n:3Xsm2yzyl6i" resolve="Pattern" />
-          </node>
-          <node concept="2qgKlT" id="50lglqqQ3wP" role="2OqNvi">
-            <ref role="37wK5l" to="yq4j:50lglqqPWCj" resolve="ContainsDuplicities" />
-            <node concept="2OqwBi" id="50lglqqQ3If" role="37wK5m">
-              <node concept="1YBJjd" id="50lglqqQ3_o" role="2Oq$k0">
-                <ref role="1YBMHb" node="50lglqqQ2i3" resolve="pattern" />
-              </node>
-              <node concept="2qgKlT" id="50lglqqQ3VV" role="2OqNvi">
-                <ref role="37wK5l" to="yq4j:50lglqqP9oo" resolve="GetVariableNames" />
-              </node>
+      </node>
+      <node concept="3clFbH" id="50lglqqQQfq" role="3cqZAp" />
+      <node concept="3SKdUt" id="50lglqqQRKl" role="3cqZAp">
+        <node concept="3SKdUq" id="50lglqqQRKm" role="3SKWNk">
+          <property role="3SKdUp" value="Check for duplicities of variable names" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="50lglqqQRKn" role="3cqZAp">
+        <node concept="3clFbS" id="50lglqqQRKo" role="3clFbx">
+          <node concept="2MkqsV" id="50lglqqQRKp" role="3cqZAp">
+            <node concept="Xl_RD" id="50lglqqQRKq" role="2MkJ7o">
+              <property role="Xl_RC" value="Must not contain variables with same name." />
+            </node>
+            <node concept="1YBJjd" id="50lglqqQSG5" role="2OEOjV">
+              <ref role="1YBMHb" node="50lglqqQQdH" resolve="patternWrapper" />
             </node>
           </node>
+        </node>
+        <node concept="2OqwBi" id="50lglqqQRKs" role="3clFbw">
+          <node concept="35c_gC" id="50lglqqQRKt" role="2Oq$k0">
+            <ref role="35c_gD" to="sc0n:3Xsm2yzyl6i" resolve="Pattern" />
+          </node>
+          <node concept="2qgKlT" id="50lglqqQRKu" role="2OqNvi">
+            <ref role="37wK5l" to="yq4j:50lglqqPWCj" resolve="ContainsVariableDuplicities" />
+            <node concept="37vLTw" id="50lglqqQRKv" role="37wK5m">
+              <ref role="3cqZAo" node="50lglqqQQfC" resolve="variableNames" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="50lglqqQSjF" role="3cqZAp" />
+      <node concept="3SKdUt" id="50lglqqQRia" role="3cqZAp">
+        <node concept="3SKdUq" id="50lglqqQRic" role="3SKWNk">
+          <property role="3SKdUp" value="Check for presence of at least 1 variable" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="50lglqqQxZl" role="3cqZAp">
+        <node concept="3clFbS" id="50lglqqQxZn" role="3clFbx">
+          <node concept="2MkqsV" id="50lglqqQzCA" role="3cqZAp">
+            <node concept="Xl_RD" id="50lglqqQzCB" role="2MkJ7o">
+              <property role="Xl_RC" value="Must contain at least 1 variable or be a constant function." />
+            </node>
+            <node concept="1YBJjd" id="50lglqqQR2H" role="2OEOjV">
+              <ref role="1YBMHb" node="50lglqqQQdH" resolve="patternWrapper" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="50lglqqQyRT" role="3clFbw">
+          <node concept="37vLTw" id="50lglqqQR2n" role="2Oq$k0">
+            <ref role="3cqZAo" node="50lglqqQQfC" resolve="variableNames" />
+          </node>
+          <node concept="1v1jN8" id="50lglqqQzCl" role="2OqNvi" />
         </node>
       </node>
     </node>
-    <node concept="1YaCAy" id="50lglqqQ2i3" role="1YuTPh">
-      <property role="TrG5h" value="pattern" />
-      <ref role="1YaFvo" to="sc0n:3Xsm2yzyl6i" resolve="Pattern" />
+    <node concept="1YaCAy" id="50lglqqQQdH" role="1YuTPh">
+      <property role="TrG5h" value="patternWrapper" />
+      <ref role="1YaFvo" to="sc0n:1QLLtx6mZzU" resolve="PatternWrapper" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="50lglqqQRb8">
+    <property role="TrG5h" value="check_PatternArgumentWrapper" />
+    <property role="3GE5qa" value="Definitions.Patterns" />
+    <node concept="3clFbS" id="50lglqqQRb9" role="18ibNy">
+      <node concept="3SKdUt" id="50lglqqQT4i" role="3cqZAp">
+        <node concept="3SKdUq" id="50lglqqQT4j" role="3SKWNk">
+          <property role="3SKdUp" value="Get all of the children variable names" />
+        </node>
+      </node>
+      <node concept="3cpWs8" id="50lglqqQT4k" role="3cqZAp">
+        <node concept="3cpWsn" id="50lglqqQT4l" role="3cpWs9">
+          <property role="TrG5h" value="variableNames" />
+          <node concept="_YKpA" id="50lglqqQT4m" role="1tU5fm">
+            <node concept="17QB3L" id="50lglqqQT4n" role="_ZDj9" />
+          </node>
+          <node concept="2OqwBi" id="50lglqqQT4o" role="33vP2m">
+            <node concept="2OqwBi" id="50lglqqQT4p" role="2Oq$k0">
+              <node concept="1YBJjd" id="50lglqqQTma" role="2Oq$k0">
+                <ref role="1YBMHb" node="50lglqqQRbb" resolve="patternArgumentWrapper" />
+              </node>
+              <node concept="3TrEf2" id="50lglqqQU1$" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:50lglqqQR7r" resolve="pattern" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="50lglqqQT4s" role="2OqNvi">
+              <ref role="37wK5l" to="yq4j:50lglqqP9oo" resolve="GetVariableNames" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="50lglqqQT4t" role="3cqZAp" />
+      <node concept="3SKdUt" id="50lglqqQT4u" role="3cqZAp">
+        <node concept="3SKdUq" id="50lglqqQT4v" role="3SKWNk">
+          <property role="3SKdUp" value="Check for duplicities of variable names" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="50lglqqQT4w" role="3cqZAp">
+        <node concept="3clFbS" id="50lglqqQT4x" role="3clFbx">
+          <node concept="2MkqsV" id="50lglqqQT4y" role="3cqZAp">
+            <node concept="Xl_RD" id="50lglqqQT4z" role="2MkJ7o">
+              <property role="Xl_RC" value="Must not contain variables with same name." />
+            </node>
+            <node concept="1YBJjd" id="50lglqqQTxB" role="2OEOjV">
+              <ref role="1YBMHb" node="50lglqqQRbb" resolve="patternArgumentWrapper" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="50lglqqQT4_" role="3clFbw">
+          <node concept="35c_gC" id="50lglqqQT4A" role="2Oq$k0">
+            <ref role="35c_gD" to="sc0n:3Xsm2yzyl6i" resolve="Pattern" />
+          </node>
+          <node concept="2qgKlT" id="50lglqqQT4B" role="2OqNvi">
+            <ref role="37wK5l" to="yq4j:50lglqqPWCj" resolve="ContainsVariableDuplicities" />
+            <node concept="37vLTw" id="50lglqqQT4C" role="37wK5m">
+              <ref role="3cqZAo" node="50lglqqQT4l" resolve="variableNames" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="50lglqqQT4D" role="3cqZAp" />
+      <node concept="3SKdUt" id="50lglqqQT4E" role="3cqZAp">
+        <node concept="3SKdUq" id="50lglqqQT4F" role="3SKWNk">
+          <property role="3SKdUp" value="Check for presence of at least 1 variable" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="50lglqqQT4G" role="3cqZAp">
+        <node concept="3clFbS" id="50lglqqQT4H" role="3clFbx">
+          <node concept="2MkqsV" id="50lglqqQT4I" role="3cqZAp">
+            <node concept="Xl_RD" id="50lglqqQT4J" role="2MkJ7o">
+              <property role="Xl_RC" value="Must contain at least 1 variable or be a constant function." />
+            </node>
+            <node concept="1YBJjd" id="50lglqqQTHk" role="2OEOjV">
+              <ref role="1YBMHb" node="50lglqqQRbb" resolve="patternArgumentWrapper" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="50lglqqQT4L" role="3clFbw">
+          <node concept="37vLTw" id="50lglqqQT4M" role="2Oq$k0">
+            <ref role="3cqZAo" node="50lglqqQT4l" resolve="variableNames" />
+          </node>
+          <node concept="1v1jN8" id="50lglqqQT4N" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="50lglqqQRbb" role="1YuTPh">
+      <property role="TrG5h" value="patternArgumentWrapper" />
+      <ref role="1YaFvo" to="sc0n:50lglqqQR7q" resolve="PatternArgumentWrapper" />
     </node>
   </node>
 </model>

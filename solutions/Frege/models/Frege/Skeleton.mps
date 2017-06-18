@@ -680,22 +680,6 @@
       </node>
     </node>
     <node concept="14659P" id="6t243n3yQ0u" role="1kelZ8" />
-    <node concept="13$zwi" id="1QLLtx6pxrM" role="1kelZ8">
-      <node concept="1EnjCU" id="66KGcnAtK$" role="13$zwt">
-        <node concept="1rUzOy" id="66KGcnAtK_" role="1EnjJl">
-          <node concept="2sPgBh" id="66KGcnIIUY" role="1rUzOz">
-            <node concept="1kelTz" id="66KGcnIIUW" role="26ymwF">
-              <property role="hTkZB" value="a" />
-            </node>
-          </node>
-        </node>
-        <node concept="1kelYX" id="66KGcnAtKB" role="1EnjJn">
-          <node concept="1kelTw" id="66KGco1_qJ" role="1Enppr">
-            <property role="hTkZQ" value="0" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="13$zwi" id="66KGcnLi$w" role="1kelZ8">
       <node concept="1EnjCU" id="66KGcnMI9q" role="13$zwt">
         <node concept="1rUzOy" id="66KGcnMI9s" role="1EnjJl">

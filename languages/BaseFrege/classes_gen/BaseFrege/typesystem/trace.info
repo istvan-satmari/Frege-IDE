@@ -11,7 +11,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,48,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,52,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/1156512287654379470">
@@ -393,43 +393,114 @@
       <unit id="412332047022738894" at="17,0,38,0" name="BaseFrege.typesystem.check_Fixity_NonTypesystemRule" />
     </file>
   </root>
-  <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/5770590337766007936">
-    <file name="check_Pattern_NonTypesystemRule.java">
-      <node id="5770590337766007943" at="21,120,22,48" concept="7" />
-      <node id="5770590337766015759" at="24,7,25,60" concept="5" />
-      <node id="5770590337766015759" at="25,60,26,243" concept="5" />
-      <node id="5770590337766007936" at="30,50,31,135" concept="6" />
-      <node id="5770590337766007936" at="33,68,34,102" concept="6" />
-      <node id="5770590337766007936" at="36,30,37,17" concept="6" />
-      <node id="5770590337766007936" at="19,0,21,0" concept="1" trace="check_Pattern_NonTypesystemRule#()V" />
-      <node id="5770590337766007936" at="30,0,33,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="5770590337766007936" at="33,0,36,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="5770590337766007936" at="36,0,39,0" concept="4" trace="overrides#()Z" />
-      <node id="5770590337766015759" at="23,318,27,7" concept="0" />
-      <node id="5770590337766007952" at="22,48,28,5" concept="3" />
-      <node id="5770590337766007936" at="21,0,30,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="5770590337766007936" at="19,44,19,44" />
-      <scope id="5770590337766007936" at="30,50,31,135" />
-      <scope id="5770590337766007936" at="33,68,34,102" />
-      <scope id="5770590337766007936" at="36,30,37,17" />
-      <scope id="5770590337766007936" at="19,0,21,0" />
-      <scope id="5770590337766015759" at="24,7,26,243">
-        <var name="_reporter_2309309498" id="5770590337766015759" />
-        <var name="errorTarget" id="5770590337766015759" />
+  <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/5770590337766220650">
+    <file name="check_PatternWrapper_NonTypesystemRule.java">
+      <node id="5770590337766220773" at="24,127,25,46" concept="7" />
+      <node id="5770590337766220775" at="25,46,26,276" concept="5" />
+      <node id="5770590337766220762" at="26,276,27,0" concept="8" />
+      <node id="5770590337766226965" at="27,0,28,47" concept="7" />
+      <node id="5770590337766226969" at="30,7,31,60" concept="5" />
+      <node id="5770590337766226969" at="31,60,32,250" concept="5" />
+      <node id="5770590337766229227" at="34,5,35,0" concept="8" />
+      <node id="5770590337766225034" at="35,0,36,49" concept="7" />
+      <node id="5770590337766144550" at="38,7,39,60" concept="5" />
+      <node id="5770590337766144550" at="39,60,40,267" concept="5" />
+      <node id="5770590337766220650" at="44,50,45,142" concept="6" />
+      <node id="5770590337766220650" at="47,68,48,102" concept="6" />
+      <node id="5770590337766220650" at="50,30,51,17" concept="6" />
+      <node id="5770590337766220650" at="22,0,24,0" concept="1" trace="check_PatternWrapper_NonTypesystemRule#()V" />
+      <node id="5770590337766220650" at="44,0,47,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5770590337766220650" at="47,0,50,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5770590337766220650" at="50,0,53,0" concept="4" trace="overrides#()Z" />
+      <node id="5770590337766226969" at="29,265,33,7" concept="0" />
+      <node id="5770590337766144550" at="37,57,41,7" concept="0" />
+      <node id="5770590337766226967" at="28,47,34,5" concept="3" />
+      <node id="5770590337766137813" at="36,49,42,5" concept="3" />
+      <node id="5770590337766220650" at="24,0,44,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5770590337766220650" at="22,51,22,51" />
+      <scope id="5770590337766220650" at="44,50,45,142" />
+      <scope id="5770590337766220650" at="47,68,48,102" />
+      <scope id="5770590337766220650" at="50,30,51,17" />
+      <scope id="5770590337766220650" at="22,0,24,0" />
+      <scope id="5770590337766226969" at="30,7,32,250">
+        <var name="_reporter_2309309498" id="5770590337766226969" />
+        <var name="errorTarget" id="5770590337766226969" />
       </scope>
-      <scope id="5770590337766007936" at="30,0,33,0" />
-      <scope id="5770590337766007936" at="33,0,36,0">
-        <var name="argument" id="5770590337766007936" />
+      <scope id="5770590337766144550" at="38,7,40,267">
+        <var name="_reporter_2309309498" id="5770590337766144550" />
+        <var name="errorTarget" id="5770590337766144550" />
       </scope>
-      <scope id="5770590337766007936" at="36,0,39,0" />
-      <scope id="5770590337766007954" at="23,318,27,7" />
-      <scope id="5770590337766007937" at="21,120,28,5" />
-      <scope id="5770590337766007936" at="21,0,30,0">
-        <var name="pattern" id="5770590337766007936" />
-        <var name="status" id="5770590337766007936" />
-        <var name="typeCheckingContext" id="5770590337766007936" />
+      <scope id="5770590337766220650" at="44,0,47,0" />
+      <scope id="5770590337766220650" at="47,0,50,0">
+        <var name="argument" id="5770590337766220650" />
       </scope>
-      <unit id="5770590337766007936" at="18,0,40,0" name="BaseFrege.typesystem.check_Pattern_NonTypesystemRule" />
+      <scope id="5770590337766220650" at="50,0,53,0" />
+      <scope id="5770590337766226968" at="29,265,33,7" />
+      <scope id="5770590337766137815" at="37,57,41,7" />
+      <scope id="5770590337766220651" at="24,127,42,5">
+        <var name="variableNames" id="5770590337766220776" />
+      </scope>
+      <scope id="5770590337766220650" at="24,0,44,0">
+        <var name="patternWrapper" id="5770590337766220650" />
+        <var name="status" id="5770590337766220650" />
+        <var name="typeCheckingContext" id="5770590337766220650" />
+      </scope>
+      <unit id="5770590337766220650" at="21,0,54,0" name="BaseFrege.typesystem.check_PatternWrapper_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/5770590337766224584">
+    <file name="check_PatternArgumentWrapper_NonTypesystemRule.java">
+      <node id="5770590337766232338" at="24,135,25,46" concept="7" />
+      <node id="5770590337766232340" at="25,46,26,284" concept="5" />
+      <node id="5770590337766232349" at="26,284,27,0" concept="8" />
+      <node id="5770590337766232350" at="27,0,28,47" concept="7" />
+      <node id="5770590337766232354" at="30,7,31,60" concept="5" />
+      <node id="5770590337766232354" at="31,60,32,258" concept="5" />
+      <node id="5770590337766232361" at="34,5,35,0" concept="8" />
+      <node id="5770590337766232362" at="35,0,36,49" concept="7" />
+      <node id="5770590337766232366" at="38,7,39,60" concept="5" />
+      <node id="5770590337766232366" at="39,60,40,275" concept="5" />
+      <node id="5770590337766224584" at="44,50,45,150" concept="6" />
+      <node id="5770590337766224584" at="47,68,48,102" concept="6" />
+      <node id="5770590337766224584" at="50,30,51,17" concept="6" />
+      <node id="5770590337766224584" at="22,0,24,0" concept="1" trace="check_PatternArgumentWrapper_NonTypesystemRule#()V" />
+      <node id="5770590337766224584" at="44,0,47,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5770590337766224584" at="47,0,50,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5770590337766224584" at="50,0,53,0" concept="4" trace="overrides#()Z" />
+      <node id="5770590337766232354" at="29,265,33,7" concept="0" />
+      <node id="5770590337766232366" at="37,57,41,7" concept="0" />
+      <node id="5770590337766232352" at="28,47,34,5" concept="3" />
+      <node id="5770590337766232364" at="36,49,42,5" concept="3" />
+      <node id="5770590337766224584" at="24,0,44,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5770590337766224584" at="22,59,22,59" />
+      <scope id="5770590337766224584" at="44,50,45,150" />
+      <scope id="5770590337766224584" at="47,68,48,102" />
+      <scope id="5770590337766224584" at="50,30,51,17" />
+      <scope id="5770590337766224584" at="22,0,24,0" />
+      <scope id="5770590337766232354" at="30,7,32,258">
+        <var name="_reporter_2309309498" id="5770590337766232354" />
+        <var name="errorTarget" id="5770590337766232354" />
+      </scope>
+      <scope id="5770590337766232366" at="38,7,40,275">
+        <var name="_reporter_2309309498" id="5770590337766232366" />
+        <var name="errorTarget" id="5770590337766232366" />
+      </scope>
+      <scope id="5770590337766224584" at="44,0,47,0" />
+      <scope id="5770590337766224584" at="47,0,50,0">
+        <var name="argument" id="5770590337766224584" />
+      </scope>
+      <scope id="5770590337766224584" at="50,0,53,0" />
+      <scope id="5770590337766232353" at="29,265,33,7" />
+      <scope id="5770590337766232365" at="37,57,41,7" />
+      <scope id="5770590337766224585" at="24,135,42,5">
+        <var name="variableNames" id="5770590337766232341" />
+      </scope>
+      <scope id="5770590337766224584" at="24,0,44,0">
+        <var name="patternArgumentWrapper" id="5770590337766224584" />
+        <var name="status" id="5770590337766224584" />
+        <var name="typeCheckingContext" id="5770590337766224584" />
+      </scope>
+      <unit id="5770590337766224584" at="21,0,54,0" name="BaseFrege.typesystem.check_PatternArgumentWrapper_NonTypesystemRule" />
     </file>
   </root>
 </debug-info>

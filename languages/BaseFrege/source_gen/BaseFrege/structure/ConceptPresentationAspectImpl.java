@@ -117,9 +117,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_PVariable = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Pattern = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PatternArgument = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PatternArgumentWrapper = new ConceptPresentationBuilder().shortDesc("Wrapper of a simple pattern.").create();
   private final ConceptPresentation props_PatternFunction = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PatternOperator = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PatternWrapper = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PatternWrapper = new ConceptPresentationBuilder().shortDesc("Wrapper of pattern for function definiton.").create();
   private final ConceptPresentation props_QCONID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_QVARID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Resource = new ConceptPresentationBuilder().create();
@@ -362,6 +363,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Pattern;
       case LanguageConceptSwitch.PatternArgument:
         return props_PatternArgument;
+      case LanguageConceptSwitch.PatternArgumentWrapper:
+        return props_PatternArgumentWrapper;
       case LanguageConceptSwitch.PatternFunction:
         return props_PatternFunction;
       case LanguageConceptSwitch.PatternOperator:

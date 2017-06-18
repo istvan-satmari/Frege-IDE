@@ -8550,5 +8550,12 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="50lglqqQR7_">
+    <property role="3GE5qa" value="Definitions.Patterns" />
+    <ref role="1XX52x" to="sc0n:50lglqqQR7q" resolve="PatternArgumentWrapper" />
+    <node concept="3F1sOY" id="50lglqqQR7B" role="2wV5jI">
+      <ref role="1NtTu8" to="sc0n:50lglqqQR7r" resolve="pattern" />
+    </node>
+  </node>
 </model>
 

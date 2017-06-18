@@ -118,6 +118,7 @@
         <child id="1163670677455" name="expression" index="3Kbmr1" />
         <child id="1163670683720" name="body" index="3Kbo56" />
       </concept>
+      <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -142,6 +143,7 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
+      <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -998,7 +1000,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="50lglqqPWCj" role="13h7CS">
-      <property role="TrG5h" value="ContainsDuplicities" />
+      <property role="TrG5h" value="ContainsVariableDuplicities" />
       <property role="2Ki8OM" value="true" />
       <node concept="37vLTG" id="50lglqqPWDF" role="3clF46">
         <property role="TrG5h" value="names" />
@@ -1009,6 +1011,11 @@
       <node concept="3Tm1VV" id="50lglqqPWCk" role="1B3o_S" />
       <node concept="10P_77" id="50lglqqPWCS" role="3clF45" />
       <node concept="3clFbS" id="50lglqqPWCm" role="3clF47">
+        <node concept="3SKdUt" id="50lglqqQtN0" role="3cqZAp">
+          <node concept="3SKdUq" id="50lglqqQtN2" role="3SKWNk">
+            <property role="3SKdUp" value="Checks for duplicities in variable names" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="50lglqqPWEL" role="3cqZAp">
           <node concept="3cpWsn" id="50lglqqPWEO" role="3cpWs9">
             <property role="TrG5h" value="namesChecked" />
@@ -1030,6 +1037,36 @@
             <ref role="3cqZAo" node="50lglqqPWDF" resolve="names" />
           </node>
           <node concept="3clFbS" id="50lglqqPXaQ" role="2LFqv$">
+            <node concept="3SKdUt" id="50lglqqQtQf" role="3cqZAp">
+              <node concept="3SKdUq" id="50lglqqQtQh" role="3SKWNk">
+                <property role="3SKdUp" value="Wildcard _ is omitted" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="50lglqqQtUh" role="3cqZAp">
+              <node concept="3clFbS" id="50lglqqQtUj" role="3clFbx">
+                <node concept="3N13vt" id="50lglqqQw5L" role="3cqZAp" />
+              </node>
+              <node concept="2OqwBi" id="50lglqqQug6" role="3clFbw">
+                <node concept="2GrUjf" id="50lglqqQtV9" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="50lglqqPXaM" resolve="name" />
+                </node>
+                <node concept="liA8E" id="50lglqqQuDq" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="2OqwBi" id="50lglqqQvtB" role="37wK5m">
+                    <node concept="35c_gC" id="50lglqqQuMf" role="2Oq$k0">
+                      <ref role="35c_gD" to="sc0n:3Xsm2yzyl7V" resolve="PVarWildcard" />
+                    </node>
+                    <node concept="3n3YKJ" id="50lglqqQw2P" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="50lglqqQwcN" role="3cqZAp" />
+            <node concept="3SKdUt" id="50lglqqQwjE" role="3cqZAp">
+              <node concept="3SKdUq" id="50lglqqQwjG" role="3SKWNk">
+                <property role="3SKdUp" value="Check for duplicity in the corresponding hashset" />
+              </node>
+            </node>
             <node concept="3clFbJ" id="50lglqqPXdx" role="3cqZAp">
               <node concept="2OqwBi" id="50lglqqPXRS" role="3clFbw">
                 <node concept="37vLTw" id="50lglqqPXdR" role="2Oq$k0">
@@ -1338,11 +1375,38 @@
       <ref role="13i0hy" node="50lglqqP9oo" resolve="GetVariableNames" />
       <node concept="3Tm1VV" id="50lglqqPEqi" role="1B3o_S" />
       <node concept="3clFbS" id="50lglqqPEqm" role="3clF47">
-        <node concept="3cpWs6" id="50lglqqPEra" role="3cqZAp">
-          <node concept="2ShNRf" id="50lglqqPEUy" role="3cqZAk">
-            <node concept="Tc6Ow" id="50lglqqPEZ5" role="2ShVmc">
-              <node concept="17QB3L" id="50lglqqPFlP" role="HW$YZ" />
+        <node concept="3cpWs8" id="50lglqqQsew" role="3cqZAp">
+          <node concept="3cpWsn" id="50lglqqQsex" role="3cpWs9">
+            <property role="TrG5h" value="childVariableNames" />
+            <node concept="_YKpA" id="50lglqqQsey" role="1tU5fm">
+              <node concept="17QB3L" id="50lglqqQsez" role="_ZDj9" />
             </node>
+            <node concept="2ShNRf" id="50lglqqQse$" role="33vP2m">
+              <node concept="Tc6Ow" id="50lglqqQse_" role="2ShVmc">
+                <node concept="17QB3L" id="50lglqqQseA" role="HW$YZ" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="50lglqqQseB" role="3cqZAp">
+          <node concept="2OqwBi" id="50lglqqQseC" role="3clFbG">
+            <node concept="37vLTw" id="50lglqqQseD" role="2Oq$k0">
+              <ref role="3cqZAo" node="50lglqqQsex" resolve="childVariableNames" />
+            </node>
+            <node concept="TSZUe" id="50lglqqQseE" role="2OqNvi">
+              <node concept="2OqwBi" id="50lglqqQtga" role="25WWJ7">
+                <node concept="35c_gC" id="50lglqqQsNS" role="2Oq$k0">
+                  <ref role="35c_gD" to="sc0n:3Xsm2yzyl7V" resolve="PVarWildcard" />
+                </node>
+                <node concept="3n3YKJ" id="50lglqqQtF9" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="50lglqqQseK" role="3cqZAp" />
+        <node concept="3cpWs6" id="50lglqqQseL" role="3cqZAp">
+          <node concept="37vLTw" id="50lglqqQseM" role="3cqZAk">
+            <ref role="3cqZAo" node="50lglqqQsex" resolve="childVariableNames" />
           </node>
         </node>
       </node>
