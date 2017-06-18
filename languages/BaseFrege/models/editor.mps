@@ -8557,5 +8557,15 @@
       <ref role="1NtTu8" to="sc0n:50lglqqQR7r" resolve="pattern" />
     </node>
   </node>
+  <node concept="3p36aQ" id="50lglqqSCFt">
+    <property role="3GE5qa" value="Definitions.Patterns" />
+    <ref role="aqKnT" to="sc0n:3Xsm2yzyl6k" resolve="PatternFunction" />
+    <node concept="2VfDsV" id="50lglqqSCFu" role="3ft7WO" />
+  </node>
+  <node concept="3p36aQ" id="50lglqqSCFw">
+    <property role="3GE5qa" value="Definitions.Patterns" />
+    <ref role="aqKnT" to="sc0n:3Xsm2yzyl78" resolve="PatternOperator" />
+    <node concept="2VfDsV" id="50lglqqSCJC" role="3ft7WO" />
+  </node>
 </model>
 
