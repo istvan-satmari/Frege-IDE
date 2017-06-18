@@ -7,6 +7,8 @@
   <imports />
   <registry>
     <language id="90eaf9a4-a968-473c-8aed-fef10c04a5df" name="BaseFrege">
+      <concept id="1839659371720620159" name="BaseFrege.structure.FalseValue" flags="ng" index="26DZ0c" />
+      <concept id="1839659371720620158" name="BaseFrege.structure.TrueValue" flags="ng" index="26DZ0d" />
       <concept id="4565621053812402374" name="BaseFrege.structure.MPModule" flags="ng" index="2sP33I">
         <reference id="2569253503694137640" name="module" index="3qezHq" />
       </concept>
@@ -1134,6 +1136,18 @@
               </node>
               <node concept="2sPgEN" id="50lglqqTpDs" role="2sPgDY">
                 <node concept="2sPgBj" id="50lglqqTpDr" role="2sPgEO" />
+              </node>
+            </node>
+            <node concept="2sPgDV" id="50lglqqVnaF" role="2sPgAZ">
+              <node concept="2sPgBh" id="50lglqqVnaI" role="2sPgDW">
+                <node concept="26DZ0d" id="50lglqqVnaJ" role="26ymwF" />
+              </node>
+              <node concept="2sPgE3" id="50lglqqVnbe" role="2sPgDY">
+                <node concept="1QrqpE" id="50lglqqVnbo" role="2sPgE4">
+                  <node concept="2sPgBh" id="50lglqqVnbm" role="1QrqpD">
+                    <node concept="26DZ0c" id="50lglqqVnbk" role="26ymwF" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
