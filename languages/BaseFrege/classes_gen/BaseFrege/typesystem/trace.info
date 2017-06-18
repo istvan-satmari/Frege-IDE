@@ -11,7 +11,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,52,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,56,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/1156512287654379470">
@@ -501,6 +501,55 @@
         <var name="typeCheckingContext" id="5770590337766224584" />
       </scope>
       <unit id="5770590337766224584" at="21,0,54,0" name="BaseFrege.typesystem.check_PatternArgumentWrapper_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/5770590337766575094">
+    <file name="check_PatternFunction_NonTypesystemRule.java">
+      <node id="5770590337766575101" at="23,128,24,61" concept="7" />
+      <node id="5770590337766575103" at="24,61,25,237" concept="5" />
+      <node id="5770590337766575133" at="27,40,28,356" concept="6" />
+      <node id="5770590337766575123" at="31,7,32,60" concept="5" />
+      <node id="5770590337766575123" at="32,60,33,398" concept="5" />
+      <node id="5770590337766575094" at="37,50,38,143" concept="6" />
+      <node id="5770590337766575094" at="40,68,41,102" concept="6" />
+      <node id="5770590337766575094" at="43,30,44,17" concept="6" />
+      <node id="5770590337766575094" at="21,0,23,0" concept="1" trace="check_PatternFunction_NonTypesystemRule#()V" />
+      <node id="5770590337766575131" at="27,0,30,0" concept="4" trace="accept#(Ljava/lang/String;)Z" />
+      <node id="5770590337766575094" at="37,0,40,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5770590337766575094" at="40,0,43,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5770590337766575094" at="43,0,46,0" concept="4" trace="overrides#()Z" />
+      <node id="5770590337766575123" at="30,9,34,7" concept="0" />
+      <node id="5770590337766575121" at="25,237,35,5" concept="3" />
+      <node id="5770590337766575094" at="23,0,37,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5770590337766575094" at="21,52,21,52" />
+      <scope id="5770590337766575132" at="27,40,28,356" />
+      <scope id="5770590337766575094" at="37,50,38,143" />
+      <scope id="5770590337766575094" at="40,68,41,102" />
+      <scope id="5770590337766575094" at="43,30,44,17" />
+      <scope id="5770590337766575094" at="21,0,23,0" />
+      <scope id="5770590337766575123" at="31,7,33,398">
+        <var name="_reporter_2309309498" id="5770590337766575123" />
+        <var name="errorTarget" id="5770590337766575123" />
+      </scope>
+      <scope id="5770590337766575131" at="27,0,30,0">
+        <var name="it" id="5770590337766575131" />
+      </scope>
+      <scope id="5770590337766575094" at="37,0,40,0" />
+      <scope id="5770590337766575094" at="40,0,43,0">
+        <var name="argument" id="5770590337766575094" />
+      </scope>
+      <scope id="5770590337766575094" at="43,0,46,0" />
+      <scope id="5770590337766575122" at="30,9,34,7" />
+      <scope id="5770590337766575095" at="23,128,35,5">
+        <var name="reserved" id="5770590337766575104" />
+      </scope>
+      <scope id="5770590337766575094" at="23,0,37,0">
+        <var name="patternFunction" id="5770590337766575094" />
+        <var name="status" id="5770590337766575094" />
+        <var name="typeCheckingContext" id="5770590337766575094" />
+      </scope>
+      <unit id="5770590337766575131" at="26,68,30,5" name="BaseFrege.typesystem.check_PatternFunction_NonTypesystemRule$1" />
+      <unit id="5770590337766575094" at="20,0,47,0" name="BaseFrege.typesystem.check_PatternFunction_NonTypesystemRule" />
     </file>
   </root>
 </debug-info>

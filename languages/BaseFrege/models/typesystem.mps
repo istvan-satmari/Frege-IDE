@@ -1121,5 +1121,160 @@
       <ref role="1YaFvo" to="sc0n:50lglqqQR7q" resolve="PatternArgumentWrapper" />
     </node>
   </node>
+  <node concept="18kY7G" id="50lglqqScJQ">
+    <property role="TrG5h" value="check_PatternFunction" />
+    <property role="3GE5qa" value="Definitions.Patterns" />
+    <node concept="3clFbS" id="50lglqqScJR" role="18ibNy">
+      <node concept="3SKdUt" id="50lglqqScJX" role="3cqZAp">
+        <node concept="3SKdUq" id="50lglqqScJY" role="3SKWNk">
+          <property role="3SKdUp" value="Check for usage of a reserved word as a function name" />
+        </node>
+      </node>
+      <node concept="3cpWs8" id="50lglqqScJZ" role="3cqZAp">
+        <node concept="3cpWsn" id="50lglqqScK0" role="3cpWs9">
+          <property role="TrG5h" value="reserved" />
+          <node concept="10Q1$e" id="50lglqqScK1" role="1tU5fm">
+            <node concept="17QB3L" id="50lglqqScK2" role="10Q1$1" />
+          </node>
+          <node concept="2ShNRf" id="50lglqqScK3" role="33vP2m">
+            <node concept="3g6Rrh" id="50lglqqScK4" role="2ShVmc">
+              <node concept="17QB3L" id="50lglqqScK5" role="3g7fb8" />
+              <node concept="Xl_RD" id="50lglqqScK6" role="3g7hyw">
+                <property role="Xl_RC" value="case" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqScK7" role="3g7hyw">
+                <property role="Xl_RC" value="class" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqScK8" role="3g7hyw">
+                <property role="Xl_RC" value="data" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSdRK" role="3g7hyw">
+                <property role="Xl_RC" value="default" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSdZD" role="3g7hyw">
+                <property role="Xl_RC" value="deriving" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSehl" role="3g7hyw">
+                <property role="Xl_RC" value="do" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSeyZ" role="3g7hyw">
+                <property role="Xl_RC" value="else" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSeD8" role="3g7hyw">
+                <property role="Xl_RC" value="foreign" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSeVk" role="3g7hyw">
+                <property role="Xl_RC" value="if" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSfdL" role="3g7hyw">
+                <property role="Xl_RC" value="import" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSfwv" role="3g7hyw">
+                <property role="Xl_RC" value="in" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSfHg" role="3g7hyw">
+                <property role="Xl_RC" value="infix" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSg0u" role="3g7hyw">
+                <property role="Xl_RC" value="infixl" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSgi5" role="3g7hyw">
+                <property role="Xl_RC" value="infixr" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSgOB" role="3g7hyw">
+                <property role="Xl_RC" value="instance" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSh8E" role="3g7hyw">
+                <property role="Xl_RC" value="let" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqShsW" role="3g7hyw">
+                <property role="Xl_RC" value="module" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSixI" role="3g7hyw">
+                <property role="Xl_RC" value="newtype" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSiXj" role="3g7hyw">
+                <property role="Xl_RC" value="of" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSjiq" role="3g7hyw">
+                <property role="Xl_RC" value="then" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSjBM" role="3g7hyw">
+                <property role="Xl_RC" value="type" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSk2v" role="3g7hyw">
+                <property role="Xl_RC" value="where" />
+              </node>
+              <node concept="Xl_RD" id="50lglqqSkAv" role="3g7hyw">
+                <property role="Xl_RC" value="_" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="50lglqqScKh" role="3cqZAp">
+        <node concept="3clFbS" id="50lglqqScKi" role="3clFbx">
+          <node concept="2MkqsV" id="50lglqqScKj" role="3cqZAp">
+            <node concept="Xl_RD" id="50lglqqScKk" role="2MkJ7o">
+              <property role="Xl_RC" value="Reserved word not allowed here." />
+            </node>
+            <node concept="2OqwBi" id="50lglqqSnO7" role="2OEOjV">
+              <node concept="1YBJjd" id="50lglqqSn$_" role="2Oq$k0">
+                <ref role="1YBMHb" node="50lglqqScJT" resolve="patternFunction" />
+              </node>
+              <node concept="3TrEf2" id="50lglqqSo8u" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:3Xsm2yzyl6l" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="50lglqqScKm" role="3clFbw">
+          <node concept="2OqwBi" id="50lglqqScKn" role="2Oq$k0">
+            <node concept="37vLTw" id="50lglqqScKo" role="2Oq$k0">
+              <ref role="3cqZAo" node="50lglqqScK0" resolve="reserved" />
+            </node>
+            <node concept="39bAoz" id="50lglqqScKp" role="2OqNvi" />
+          </node>
+          <node concept="2HwmR7" id="50lglqqScKq" role="2OqNvi">
+            <node concept="1bVj0M" id="50lglqqScKr" role="23t8la">
+              <node concept="3clFbS" id="50lglqqScKs" role="1bW5cS">
+                <node concept="3clFbF" id="50lglqqScKt" role="3cqZAp">
+                  <node concept="2OqwBi" id="50lglqqScKu" role="3clFbG">
+                    <node concept="37vLTw" id="50lglqqScKv" role="2Oq$k0">
+                      <ref role="3cqZAo" node="50lglqqScK$" resolve="it" />
+                    </node>
+                    <node concept="liA8E" id="50lglqqScKw" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <node concept="2OqwBi" id="50lglqqSlLx" role="37wK5m">
+                        <node concept="2OqwBi" id="50lglqqSlbo" role="2Oq$k0">
+                          <node concept="1YBJjd" id="50lglqqSkVU" role="2Oq$k0">
+                            <ref role="1YBMHb" node="50lglqqScJT" resolve="patternFunction" />
+                          </node>
+                          <node concept="3TrEf2" id="50lglqqSlpm" role="2OqNvi">
+                            <ref role="3Tt5mk" to="sc0n:3Xsm2yzyl6l" resolve="name" />
+                          </node>
+                        </node>
+                        <node concept="3TrcHB" id="50lglqqSm1v" role="2OqNvi">
+                          <ref role="3TsBF5" to="sc0n:7Cxf1w4AonM" resolve="value" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="Rh6nW" id="50lglqqScK$" role="1bW2Oz">
+                <property role="TrG5h" value="it" />
+                <node concept="2jxLKc" id="50lglqqScK_" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="50lglqqScJT" role="1YuTPh">
+      <property role="TrG5h" value="patternFunction" />
+      <ref role="1YaFvo" to="sc0n:3Xsm2yzyl6k" resolve="PatternFunction" />
+    </node>
+  </node>
 </model>
 
