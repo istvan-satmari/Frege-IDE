@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,20,0" name="BaseFrege.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,29,0" name="BaseFrege.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:b23b9986-aa5a-4d28-85ca-904a0fb5801c(BaseFrege.constraints)/109989384086298034">
+    <file name="NodeVARID_Constraints.java">
+      <node id="109989384086298034" at="17,34,18,137" concept="6" />
+      <node id="109989384086298034" at="22,84,23,119" concept="3" />
+      <node id="109989384086298034" at="26,40,27,20" concept="4" />
+      <node id="109989384086298034" at="30,70,31,38" concept="3" />
+      <node id="109989384086314460" at="31,38,32,35" concept="5" />
+      <node id="109989384086298494" at="32,35,33,79" concept="4" />
+      <node id="109989384086298034" at="35,7,36,22" concept="4" />
+      <node id="109989384086298034" at="17,0,20,0" concept="0" trace="NodeVARID_Constraints#()V" />
+      <node id="109989384086298034" at="25,0,29,0" concept="2" trace="hasOwnValidator#()Z" />
+      <node id="109989384086298034" at="29,0,35,0" concept="2" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="109989384086298034" at="23,119,35,7" concept="1" />
+      <node id="109989384086298034" at="21,0,38,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="109989384086298034" at="17,34,18,137" />
+      <scope id="109989384086298034" at="26,40,27,20" />
+      <scope id="109989384086298034" at="17,0,20,0" />
+      <scope id="109989384086298034" at="30,70,33,79">
+        <var name="propertyName" id="109989384086298034" />
+      </scope>
+      <scope id="109989384086298034" at="25,0,29,0" />
+      <scope id="109989384086298034" at="29,0,35,0">
+        <var name="node" id="109989384086298034" />
+        <var name="propertyValue" id="109989384086298034" />
+      </scope>
+      <scope id="109989384086298034" at="22,84,36,22">
+        <var name="properties" id="109989384086298034" />
+      </scope>
+      <scope id="109989384086298034" at="21,0,38,0" />
+      <unit id="109989384086298034" at="24,148,35,5" name="BaseFrege.constraints.NodeVARID_Constraints$1" />
+      <unit id="109989384086298034" at="16,0,39,0" name="BaseFrege.constraints.NodeVARID_Constraints" />
     </file>
   </root>
 </debug-info>

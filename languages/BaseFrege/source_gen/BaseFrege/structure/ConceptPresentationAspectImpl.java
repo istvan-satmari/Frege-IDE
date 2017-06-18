@@ -119,6 +119,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_PatternArgument = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PatternFunction = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PatternOperator = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PatternWrapper = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_QCONID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_QVARID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Resource = new ConceptPresentationBuilder().create();
@@ -365,6 +366,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_PatternFunction;
       case LanguageConceptSwitch.PatternOperator:
         return props_PatternOperator;
+      case LanguageConceptSwitch.PatternWrapper:
+        return props_PatternWrapper;
       case LanguageConceptSwitch.QCONID:
         return props_QCONID;
       case LanguageConceptSwitch.QVARID:

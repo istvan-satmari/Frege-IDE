@@ -758,7 +758,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="pattern" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3Xsm2yzyl6i" resolve="Pattern" />
+      <ref role="20lvS9" node="1QLLtx6mZzU" resolve="PatternWrapper" />
     </node>
     <node concept="1TJgyj" id="5ZITH0PGXO7" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988856071" />
@@ -785,7 +785,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="pattern" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3Xsm2yzyl6i" resolve="Pattern" />
+      <ref role="20lvS9" node="1QLLtx6mZzU" resolve="PatternWrapper" />
     </node>
     <node concept="1TJgyj" id="5ZITH0PGXOL" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988856113" />
@@ -2053,6 +2053,19 @@
       <property role="20kJfa" value="arg" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1QLLtx6mZzU">
+    <property role="EcuMT" value="2139708830661736698" />
+    <property role="3GE5qa" value="Definitions.Patterns" />
+    <property role="TrG5h" value="PatternWrapper" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1QLLtx6mZzV" role="1TKVEi">
+      <property role="IQ2ns" value="2139708830661736699" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="pattern" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3Xsm2yzyl6i" resolve="Pattern" />
     </node>
   </node>
 </model>
