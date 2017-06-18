@@ -198,12 +198,12 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
         if (pattern.endsWith("=")) {
           // Assignment 
           SNode def = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3dceaL, "BaseFrege.structure.FDAssignment")), null);
-          ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, 0x45da4fd5064877c8L, "definitions"))).addElement(def);
+          SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, 0x45da4fd5064877c8L, "definition"), def);
 
         } else if (pattern.endsWith("|")) {
           //  Guards 
           SNode def = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3dcebL, "BaseFrege.structure.FDGuards")), null);
-          ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, 0x45da4fd5064877c8L, "definitions"))).addElement(def);
+          SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, 0x45da4fd5064877c8L, "definition"), def);
         }
 
         return node;

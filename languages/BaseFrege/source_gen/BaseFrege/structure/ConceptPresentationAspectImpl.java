@@ -50,7 +50,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FullType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunCall = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunDef = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FunctionDefinitions = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FunctionDefinitions = new ConceptPresentationBuilder().shortDesc("Single function definition pattern.").create();
   private final ConceptPresentation props_Guard = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IICMConid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IICMOperator = new ConceptPresentationBuilder().create();

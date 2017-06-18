@@ -1003,12 +1003,14 @@
     <property role="EcuMT" value="5033423309891991495" />
     <property role="3GE5qa" value="Definitions" />
     <property role="TrG5h" value="FunctionDefinitions" />
+    <property role="34LRSv" value="fundef" />
+    <property role="R4oN_" value="Single function definition pattern." />
     <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
     <node concept="1TJgyj" id="4nqjXk6i7v8" role="1TKVEi">
       <property role="IQ2ns" value="5033423309891991496" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="definitions" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20kJfa" value="definition" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="vUxQDjKXz1" resolve="FunDef" />
     </node>
   </node>

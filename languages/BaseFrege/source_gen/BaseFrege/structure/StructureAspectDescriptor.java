@@ -783,7 +783,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("BaseFrege.structure.Definition", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/5033423309891991495");
-    b.aggregate("definitions", 0x45da4fd5064877c8L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c1L).optional(false).ordered(true).multiple(true).origin("5033423309891991496").done();
+    b.aggregate("definition", 0x45da4fd5064877c8L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c1L).optional(false).ordered(true).multiple(false).origin("5033423309891991496").done();
+    b.alias("fundef");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForGuard() {
