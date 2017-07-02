@@ -23,6 +23,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -167,14 +168,6 @@
       <ref role="20lvS9" node="3Xsm2yzyj0p" resolve="FullType" />
     </node>
   </node>
-  <node concept="1TIwiD" id="vUxQDjKXz1">
-    <property role="EcuMT" value="574920793184786625" />
-    <property role="3GE5qa" value="Definitions.FunDef" />
-    <property role="TrG5h" value="FunDef" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
   <node concept="1TIwiD" id="vUxQDjKXz2">
     <property role="EcuMT" value="574920793184786626" />
     <property role="3GE5qa" value="Definitions" />
@@ -265,6 +258,7 @@
     <property role="3GE5qa" value="Definitions" />
     <property role="TrG5h" value="Data" />
     <property role="34LRSv" value="data" />
+    <property role="R4oN_" value="Define a new algebraic datatype." />
     <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
     <node concept="1TJgyj" id="6SrRM0IrBlS" role="1TKVEi">
       <property role="IQ2ns" value="7934180497854199160" />
@@ -293,6 +287,7 @@
     <property role="3GE5qa" value="Definitions" />
     <property role="TrG5h" value="Class" />
     <property role="34LRSv" value="class" />
+    <property role="R4oN_" value="Define a new class." />
     <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
     <node concept="1TJgyj" id="1G9BWv90qWm" role="1TKVEi">
       <property role="IQ2ns" value="1948263994234089238" />
@@ -332,6 +327,7 @@
     <property role="3GE5qa" value="Definitions" />
     <property role="TrG5h" value="Instance" />
     <property role="34LRSv" value="instance" />
+    <property role="R4oN_" value="Define a new instance." />
     <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
     <node concept="1TJgyj" id="2xkYx_u2tMB" role="1TKVEi">
       <property role="IQ2ns" value="2906222646419643559" />
@@ -444,7 +440,7 @@
   </node>
   <node concept="1TIwiD" id="vUxQDjKX$A">
     <property role="EcuMT" value="574920793184786726" />
-    <property role="3GE5qa" value="Definitions.FunDef.Parts" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.Parts" />
     <property role="TrG5h" value="Guard" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5ZITH0PGXP1" role="1TKVEi">
@@ -483,7 +479,7 @@
   </node>
   <node concept="1TIwiD" id="vUxQDjKXAj">
     <property role="EcuMT" value="574920793184786835" />
-    <property role="3GE5qa" value="Definitions.FunDef.Parts" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.Parts" />
     <property role="TrG5h" value="WherePart" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5E$XTHV46gc" role="1TKVEi">
@@ -556,6 +552,7 @@
     <property role="3GE5qa" value="Definitions.Comments" />
     <property role="TrG5h" value="LineComment" />
     <property role="34LRSv" value="--" />
+    <property role="R4oN_" value="Line comment." />
     <ref role="1TJDcQ" node="7riFpCdplRA" resolve="Comment" />
     <node concept="1TJgyi" id="7riFpCdplS9" role="1TKVEl">
       <property role="IQ2nx" value="8562096718746050057" />
@@ -568,6 +565,7 @@
     <property role="3GE5qa" value="Definitions.Comments.BlockComment" />
     <property role="TrG5h" value="BlockComment" />
     <property role="34LRSv" value="{-" />
+    <property role="R4oN_" value="Multiline nestable comment." />
     <ref role="1TJDcQ" node="7riFpCdplRA" resolve="Comment" />
     <node concept="1TJgyj" id="7riFpCdplSU" role="1TKVEi">
       <property role="IQ2ns" value="8562096718746050106" />
@@ -751,10 +749,10 @@
   </node>
   <node concept="1TIwiD" id="5ZITH0PGXNE">
     <property role="EcuMT" value="6912716259988856042" />
-    <property role="3GE5qa" value="Definitions.FunDef" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition" />
     <property role="TrG5h" value="FDAssignment" />
     <property role="34LRSv" value="=" />
-    <ref role="1TJDcQ" node="vUxQDjKXz1" resolve="FunDef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5ZITH0PGXO5" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988856069" />
       <property role="20lmBu" value="aggregation" />
@@ -778,10 +776,10 @@
   </node>
   <node concept="1TIwiD" id="5ZITH0PGXNF">
     <property role="EcuMT" value="6912716259988856043" />
-    <property role="3GE5qa" value="Definitions.FunDef" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition" />
     <property role="TrG5h" value="FDGuards" />
     <property role="34LRSv" value="|" />
-    <ref role="1TJDcQ" node="vUxQDjKXz1" resolve="FunDef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5ZITH0PGXOJ" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988856111" />
       <property role="20lmBu" value="aggregation" />
@@ -1002,16 +1000,25 @@
   <node concept="1TIwiD" id="4nqjXk6i7v7">
     <property role="EcuMT" value="5033423309891991495" />
     <property role="3GE5qa" value="Definitions" />
-    <property role="TrG5h" value="FunctionDefinitions" />
+    <property role="TrG5h" value="FunctionDefinition" />
     <property role="34LRSv" value="fundef" />
     <property role="R4oN_" value="Single function definition pattern." />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
-    <node concept="1TJgyj" id="4nqjXk6i7v8" role="1TKVEi">
-      <property role="IQ2ns" value="5033423309891991496" />
+    <node concept="1TJgyj" id="7Bxqsr3wFjv" role="1TKVEi">
+      <property role="IQ2ns" value="8782417050753742047" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="definition" />
+      <property role="20kJfa" value="pattern" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="vUxQDjKXz1" resolve="FunDef" />
+      <ref role="20lvS9" node="1QLLtx6mZzU" resolve="PatternWrapper" />
+    </node>
+    <node concept="1TJgyj" id="7Bxqsr3wFj$" role="1TKVEi">
+      <property role="IQ2ns" value="8782417050753742052" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="vUxQDjKXzn" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="62eaOWzc$vg">
@@ -1074,6 +1081,7 @@
     <property role="3GE5qa" value="Definitions" />
     <property role="TrG5h" value="Type" />
     <property role="34LRSv" value="type" />
+    <property role="R4oN_" value="Definition of a type synonym." />
     <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
     <node concept="1TJgyj" id="2xkYx_u2yec" role="1TKVEi">
       <property role="IQ2ns" value="2906222646419661708" />
@@ -1596,7 +1604,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="representingNode" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="vUxQDjKXz1" resolve="FunDef" />
+      <ref role="20lvS9" node="4nqjXk6i7v7" resolve="FunctionDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="6rUjWpoauRy">
@@ -2098,6 +2106,37 @@
       <property role="20kJfa" value="pattern" />
       <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="LkFsxSSFbS">
+    <property role="EcuMT" value="888526103032017656" />
+    <property role="3GE5qa" value="Definitions" />
+    <property role="TrG5h" value="FDA" />
+    <property role="R4oN_" value="Represents either a function definition or annotation." />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
+    <node concept="PrWs8" id="LkFsxSSGJT" role="PzmwI">
+      <ref role="PrY4T" node="LkFsxSSFcG" resolve="IncompleteCommand" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="LkFsxSSFcG">
+    <property role="EcuMT" value="888526103032017708" />
+    <property role="TrG5h" value="IncompleteCommand" />
+    <property role="3GE5qa" value="Interfaces" />
+  </node>
+  <node concept="1TIwiD" id="LkFsxSSIxO">
+    <property role="EcuMT" value="888526103032031348" />
+    <property role="3GE5qa" value="Definitions.FDA" />
+    <property role="TrG5h" value="FDABracket" />
+    <property role="34LRSv" value="(" />
+    <property role="R4oN_" value="Brackets to hold either operator or become a function definition pattern." />
+    <ref role="1TJDcQ" node="LkFsxSSFbS" resolve="FDA" />
+  </node>
+  <node concept="1TIwiD" id="LkFsxSSIxV">
+    <property role="EcuMT" value="888526103032031355" />
+    <property role="3GE5qa" value="Definitions.FDA" />
+    <property role="TrG5h" value="FDAVarName" />
+    <ref role="1TJDcQ" node="LkFsxSSFbS" resolve="FDA" />
   </node>
 </model>
 

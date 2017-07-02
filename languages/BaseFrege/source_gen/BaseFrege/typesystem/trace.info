@@ -11,7 +11,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,56,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,60,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/1156512287654379470">
@@ -550,6 +550,42 @@
       </scope>
       <unit id="5770590337766575131" at="26,68,30,5" name="BaseFrege.typesystem.check_PatternFunction_NonTypesystemRule$1" />
       <unit id="5770590337766575094" at="20,0,47,0" name="BaseFrege.typesystem.check_PatternFunction_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/888526103032017743">
+    <file name="check_IncompleteCommand_NonTypesystemRule.java">
+      <node id="888526103032023090" at="20,5,21,58" concept="5" />
+      <node id="888526103032023090" at="21,58,22,235" concept="5" />
+      <node id="888526103032017743" at="25,50,26,153" concept="6" />
+      <node id="888526103032017743" at="28,68,29,102" concept="6" />
+      <node id="888526103032017743" at="31,30,32,17" concept="6" />
+      <node id="888526103032017743" at="17,0,19,0" concept="1" trace="check_IncompleteCommand_NonTypesystemRule#()V" />
+      <node id="888526103032017743" at="25,0,28,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="888526103032017743" at="28,0,31,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="888526103032017743" at="31,0,34,0" concept="4" trace="overrides#()Z" />
+      <node id="888526103032023090" at="19,130,23,5" concept="0" />
+      <node id="888526103032017743" at="19,0,25,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="888526103032017743" at="17,54,17,54" />
+      <scope id="888526103032017743" at="25,50,26,153" />
+      <scope id="888526103032017743" at="28,68,29,102" />
+      <scope id="888526103032017743" at="31,30,32,17" />
+      <scope id="888526103032017743" at="17,0,19,0" />
+      <scope id="888526103032023090" at="20,5,22,235">
+        <var name="_reporter_2309309498" id="888526103032023090" />
+        <var name="errorTarget" id="888526103032023090" />
+      </scope>
+      <scope id="888526103032017743" at="25,0,28,0" />
+      <scope id="888526103032017743" at="28,0,31,0">
+        <var name="argument" id="888526103032017743" />
+      </scope>
+      <scope id="888526103032017743" at="31,0,34,0" />
+      <scope id="888526103032017744" at="19,130,23,5" />
+      <scope id="888526103032017743" at="19,0,25,0">
+        <var name="incompleteCommand" id="888526103032017743" />
+        <var name="status" id="888526103032017743" />
+        <var name="typeCheckingContext" id="888526103032017743" />
+      </scope>
+      <unit id="888526103032017743" at="16,0,35,0" name="BaseFrege.typesystem.check_IncompleteCommand_NonTypesystemRule" />
     </file>
   </root>
 </debug-info>

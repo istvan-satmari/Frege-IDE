@@ -193,20 +193,17 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
       @Override
       public SNode createNode(@NotNull String pattern) {
         // Substitute to function definition 
-        SNode node = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, "BaseFrege.structure.FunctionDefinitions"));
+        SNode fundef = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, "BaseFrege.structure.FunctionDefinition")), null);
 
+        // TODO: Needs to be fixed 
         if (pattern.endsWith("=")) {
           // Assignment 
-          SNode def = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3dceaL, "BaseFrege.structure.FDAssignment")), null);
-          SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, 0x45da4fd5064877c8L, "definition"), def);
 
         } else if (pattern.endsWith("|")) {
           //  Guards 
-          SNode def = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3dcebL, "BaseFrege.structure.FDGuards")), null);
-          SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, 0x45da4fd5064877c8L, "definition"), def);
         }
 
-        return node;
+        return fundef;
       }
       @Nullable
       @Override

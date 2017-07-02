@@ -1276,5 +1276,23 @@
       <ref role="1YaFvo" to="sc0n:3Xsm2yzyl6k" resolve="PatternFunction" />
     </node>
   </node>
+  <node concept="18kY7G" id="LkFsxSSFdf">
+    <property role="TrG5h" value="check_IncompleteCommand" />
+    <property role="3GE5qa" value="Interfaces" />
+    <node concept="3clFbS" id="LkFsxSSFdg" role="18ibNy">
+      <node concept="2MkqsV" id="LkFsxSSGwM" role="3cqZAp">
+        <node concept="1YBJjd" id="LkFsxSSGEM" role="2OEOjV">
+          <ref role="1YBMHb" node="LkFsxSSFdi" resolve="incompleteCommand" />
+        </node>
+        <node concept="Xl_RD" id="LkFsxSSGH2" role="2MkJ7o">
+          <property role="Xl_RC" value="The statement is not valid." />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="LkFsxSSFdi" role="1YuTPh">
+      <property role="TrG5h" value="incompleteCommand" />
+      <ref role="1YaFvo" to="sc0n:LkFsxSSFcG" resolve="IncompleteCommand" />
+    </node>
+  </node>
 </model>
 
