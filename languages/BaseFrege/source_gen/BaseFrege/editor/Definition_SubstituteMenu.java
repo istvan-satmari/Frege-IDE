@@ -29,6 +29,7 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
     result.add(new Definition_SubstituteMenu.SMP_Subconcepts_d54ywy_a());
     result.add(new Definition_SubstituteMenu.SMP_Include_d54ywy_b());
+    result.add(new Definition_SubstituteMenu.SMP_Include_d54ywy_c());
     return result;
   }
   public class SMP_Subconcepts_d54ywy_a extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
@@ -47,6 +48,15 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
     protected SubstituteMenuLookup getMenuLookup(SubstituteMenuContext _context) {
       final EditorContext editorContext = _context.getEditorContext();
       return new NamedSubstituteMenuLookup(LanguageRegistry.getInstance(editorContext.getRepository()), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition"), "BaseFrege.editor.Definition_SubstituteToFixity");
+    }
+  }
+  public class SMP_Include_d54ywy_c extends IncludeSubstituteMenuSubstituteMenuPart {
+
+    @Nullable
+    @Override
+    protected SubstituteMenuLookup getMenuLookup(SubstituteMenuContext _context) {
+      final EditorContext editorContext = _context.getEditorContext();
+      return new NamedSubstituteMenuLookup(LanguageRegistry.getInstance(editorContext.getRepository()), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition"), "BaseFrege.editor.Definition_SubstituteToFDAVarName");
     }
   }
 }
