@@ -26,10 +26,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import BaseFrege.behavior.NodeVARID__BehaviorDescriptor;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 
 public class Definition_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
@@ -38,8 +34,6 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
     result.add(new Definition_SubstituteMenu.SMP_Subconcepts_d54ywy_a());
     result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new Definition_SubstituteMenu.SMP_Action_d54ywy_b(), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition")));
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new Definition_SubstituteMenu.SMP_Action_d54ywy_c(), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition")));
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new Definition_SubstituteMenu.SMP_Action_d54ywy_d(), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition")));
     return result;
   }
   public class SMP_Subconcepts_d54ywy_a extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
@@ -70,7 +64,7 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
       public SNode createNode(@NotNull String pattern) {
         // Substitute to fixity 
         SNode node = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, "BaseFrege.structure.Fixity")), null);
-
+        SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, 0x3f5c5828a3894e4cL, "operator"), SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0xa037b0df0fef9ceL, "BaseFrege.structure.FixityOperator")), null));
         if (pattern.equals("infix ")) {
           SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, 0x5feee6d035b32dceL, "infix"), SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b32de1L, "BaseFrege.structure.Infix")), null));
         } else if (pattern.equals("infixl")) {
@@ -78,8 +72,6 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
         } else if (pattern.equals("infixr")) {
           SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, 0x5feee6d035b32dceL, "infix"), SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b32dccL, "BaseFrege.structure.Infixr")), null));
         }
-
-        SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, 0x3f5c5828a3894e4cL, "operator"), SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0xa037b0df0fef9ceL, "BaseFrege.structure.FixityOperator")), null));
 
         return node;
       }
@@ -104,122 +96,6 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
             return it.equals(pattern);
           }
         });
-      }
-    }
-  }
-  private class SMP_Action_d54ywy_c extends SingleItemSubstituteMenuPart {
-
-    @Nullable
-    @Override
-    protected SubstituteMenuItem createItem(SubstituteMenuContext _context) {
-      return new Definition_SubstituteMenu.SMP_Action_d54ywy_c.Item(_context);
-    }
-    private class Item extends DefaultSubstituteMenuItem {
-      private final SubstituteMenuContext _context;
-      public Item(SubstituteMenuContext context) {
-        super(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition"), context.getParentNode(), context.getCurrentTargetNode(), context.getEditorContext());
-        _context = context;
-      }
-
-      @Nullable
-      @Override
-      public SNode createNode(@NotNull String pattern) {
-        // Substitute to function annotation 
-        SNode node = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c0L, "BaseFrege.structure.Annotation")), null);
-        SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c0L, 0x6e1bdf202e6e755cL, "items")).clear();
-
-        // Remove "::" from the pattern 
-        String restPattern = pattern.substring(0, pattern.length() - 2);
-
-        // Several items may have been specified 
-        String[] annoItems = restPattern.split("[ ,]");
-        for (int i = 0; i < annoItems.length; i++) {
-          String annoItem = annoItems[i];
-          // Skip empty 
-          if ((annoItem == null || annoItem.length() == 0)) {
-            continue;
-          }
-
-          SNode annoItemNode = null;
-          if (annoItem.matches(NodeVARID__BehaviorDescriptor.getPattern_id30ixEdP_hUv.invoke(SNodeOperations.asSConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e2L, "BaseFrege.structure.NodeVARID"))))) {
-            // In case it is VARID 
-            SNode aiNode = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3894ebaL, "BaseFrege.structure.AIVarid")), null);
-            SPropertyOperations.set(SLinkOperations.getTarget(aiNode, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3894ebaL, 0x3f5c5828a3894ebbL, "value")), MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e2L, 0x7a213c18049985f2L, "value"), annoItem);
-            annoItemNode = aiNode;
-          } else {
-            // In case it is an OPERATOR 
-            SNode aiNode = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3894ecaL, "BaseFrege.structure.AIOperator")), null);
-            SPropertyOperations.set(SLinkOperations.getTarget(aiNode, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3894ecaL, 0x10e9ea0b6bee3b21L, "value")), MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1cff861b633abcd8L, 0x5b03d9040f58aa31L, "value"), annoItem.substring(1, annoItem.length() - 1));
-            annoItemNode = aiNode;
-          }
-          ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c0L, 0x6e1bdf202e6e755cL, "items"))).addElement(annoItemNode);
-        }
-
-        return node;
-      }
-      @Nullable
-      @Override
-      public String getMatchingText(@NotNull String pattern) {
-        return pattern;
-      }
-      @Override
-      public boolean canExecute(@NotNull String pattern) {
-        return canExecute_internal(pattern, false);
-      }
-      @Override
-      public boolean canExecuteStrictly(@NotNull String pattern) {
-        return canExecute_internal(pattern, true);
-      }
-      public boolean canExecute_internal(@NotNull String pattern, boolean strictly) {
-        return (pattern != null && pattern.length() > 0) && pattern.endsWith("::") && SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(_context.getCurrentTargetNode())), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition"));
-      }
-    }
-  }
-  private class SMP_Action_d54ywy_d extends SingleItemSubstituteMenuPart {
-
-    @Nullable
-    @Override
-    protected SubstituteMenuItem createItem(SubstituteMenuContext _context) {
-      return new Definition_SubstituteMenu.SMP_Action_d54ywy_d.Item(_context);
-    }
-    private class Item extends DefaultSubstituteMenuItem {
-      private final SubstituteMenuContext _context;
-      public Item(SubstituteMenuContext context) {
-        super(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition"), context.getParentNode(), context.getCurrentTargetNode(), context.getEditorContext());
-        _context = context;
-      }
-
-      @Nullable
-      @Override
-      public SNode createNode(@NotNull String pattern) {
-        // Substitute to function definition 
-        SNode fundef = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L, "BaseFrege.structure.FunctionDefinition")), null);
-
-        // TODO: Needs to be fixed 
-        if (pattern.endsWith("=")) {
-          // Assignment 
-
-        } else if (pattern.endsWith("|")) {
-          //  Guards 
-        }
-
-        return fundef;
-      }
-      @Nullable
-      @Override
-      public String getMatchingText(@NotNull String pattern) {
-        return pattern;
-      }
-      @Override
-      public boolean canExecute(@NotNull String pattern) {
-        return canExecute_internal(pattern, false);
-      }
-      @Override
-      public boolean canExecuteStrictly(@NotNull String pattern) {
-        return canExecute_internal(pattern, true);
-      }
-      public boolean canExecute_internal(@NotNull String pattern, boolean strictly) {
-        return false;
       }
     }
   }

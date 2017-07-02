@@ -43,6 +43,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FDA = new ConceptPresentationBuilder().shortDesc("Represents either a function definition or annotation.").create();
   private final ConceptPresentation props_FDABracket = new ConceptPresentationBuilder().shortDesc("Brackets to hold either operator or become a function definition pattern.").create();
   private final ConceptPresentation props_FDAVarName = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FDAVarWildcard = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FDAVariable = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDAssignment = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGuards = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FOCharacterOperator = new ConceptPresentationBuilder().create();
@@ -218,6 +220,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_FDABracket;
       case LanguageConceptSwitch.FDAVarName:
         return props_FDAVarName;
+      case LanguageConceptSwitch.FDAVarWildcard:
+        return props_FDAVarWildcard;
+      case LanguageConceptSwitch.FDAVariable:
+        return props_FDAVariable;
       case LanguageConceptSwitch.FDAssignment:
         return props_FDAssignment;
       case LanguageConceptSwitch.FDGuards:

@@ -2134,9 +2134,31 @@
   </node>
   <node concept="1TIwiD" id="LkFsxSSIxV">
     <property role="EcuMT" value="888526103032031355" />
-    <property role="3GE5qa" value="Definitions.FDA" />
+    <property role="3GE5qa" value="Definitions.FDA.FDAVariable" />
     <property role="TrG5h" value="FDAVarName" />
+    <ref role="1TJDcQ" node="2rZSvAJxfN2" resolve="FDAVariable" />
+    <node concept="1TJgyj" id="2rZSvAJxfN4" role="1TKVEi">
+      <property role="IQ2ns" value="2810213155010313412" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="name" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7Cxf1w4Aony" resolve="NodeVARID" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2rZSvAJxfN2">
+    <property role="EcuMT" value="2810213155010313410" />
+    <property role="3GE5qa" value="Definitions.FDA" />
+    <property role="TrG5h" value="FDAVariable" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="LkFsxSSFbS" resolve="FDA" />
+  </node>
+  <node concept="1TIwiD" id="2rZSvAJxfN3">
+    <property role="EcuMT" value="2810213155010313411" />
+    <property role="3GE5qa" value="Definitions.FDA.FDAVariable" />
+    <property role="TrG5h" value="FDAVarWildcard" />
+    <property role="34LRSv" value="_" />
+    <ref role="1TJDcQ" node="2rZSvAJxfN2" resolve="FDAVariable" />
   </node>
 </model>
 
