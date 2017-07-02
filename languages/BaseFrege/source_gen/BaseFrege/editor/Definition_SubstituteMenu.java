@@ -9,23 +9,18 @@ import jetbrains.mps.lang.editor.menus.MenuPart;
 import jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem;
 import jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext;
 import java.util.ArrayList;
-import jetbrains.mps.lang.editor.menus.substitute.ConstraintsFilteringSubstituteMenuPartDecorator;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.editor.menus.ConceptMenusPart;
 import java.util.Collection;
 import jetbrains.mps.smodel.ConceptDescendantsCache;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup;
 import jetbrains.mps.smodel.language.LanguageRegistry;
-import jetbrains.mps.lang.editor.menus.substitute.SingleItemSubstituteMenuPart;
+import jetbrains.mps.lang.editor.menus.substitute.IncludeSubstituteMenuSubstituteMenuPart;
 import org.jetbrains.annotations.Nullable;
-import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuItem;
-import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.smodel.action.SNodeFactoryOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuLookup;
+import jetbrains.mps.openapi.editor.EditorContext;
+import jetbrains.mps.lang.editor.menus.substitute.NamedSubstituteMenuLookup;
 
 public class Definition_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
@@ -33,7 +28,7 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
     result.add(new Definition_SubstituteMenu.SMP_Subconcepts_d54ywy_a());
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new Definition_SubstituteMenu.SMP_Action_d54ywy_b(), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition")));
+    result.add(new Definition_SubstituteMenu.SMP_Include_d54ywy_b());
     return result;
   }
   public class SMP_Subconcepts_d54ywy_a extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
@@ -45,58 +40,13 @@ public class Definition_SubstituteMenu extends SubstituteMenuBase {
       return context.createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(context.getEditorContext().getRepository()), concept));
     }
   }
-  private class SMP_Action_d54ywy_b extends SingleItemSubstituteMenuPart {
+  public class SMP_Include_d54ywy_b extends IncludeSubstituteMenuSubstituteMenuPart {
 
     @Nullable
     @Override
-    protected SubstituteMenuItem createItem(SubstituteMenuContext _context) {
-      return new Definition_SubstituteMenu.SMP_Action_d54ywy_b.Item(_context);
-    }
-    private class Item extends DefaultSubstituteMenuItem {
-      private final SubstituteMenuContext _context;
-      public Item(SubstituteMenuContext context) {
-        super(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition"), context.getParentNode(), context.getCurrentTargetNode(), context.getEditorContext());
-        _context = context;
-      }
-
-      @Nullable
-      @Override
-      public SNode createNode(@NotNull String pattern) {
-        // Substitute to fixity 
-        SNode node = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, "BaseFrege.structure.Fixity")), null);
-        SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, 0x3f5c5828a3894e4cL, "operator"), SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0xa037b0df0fef9ceL, "BaseFrege.structure.FixityOperator")), null));
-        if (pattern.equals("infix ")) {
-          SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, 0x5feee6d035b32dceL, "infix"), SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b32de1L, "BaseFrege.structure.Infix")), null));
-        } else if (pattern.equals("infixl")) {
-          SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, 0x5feee6d035b32dceL, "infix"), SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b32de0L, "BaseFrege.structure.Infixl")), null));
-        } else if (pattern.equals("infixr")) {
-          SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, 0x5feee6d035b32dceL, "infix"), SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b32dccL, "BaseFrege.structure.Infixr")), null));
-        }
-
-        return node;
-      }
-      @Nullable
-      @Override
-      public String getMatchingText(@NotNull String pattern) {
-        return pattern;
-      }
-      @Override
-      public boolean canExecute(@NotNull String pattern) {
-        return canExecute_internal(pattern, false);
-      }
-      @Override
-      public boolean canExecuteStrictly(@NotNull String pattern) {
-        return canExecute_internal(pattern, true);
-      }
-      public boolean canExecute_internal(@NotNull final String pattern, boolean strictly) {
-        Iterable<String> fixityKeywords = ListSequence.fromListAndArray(new ArrayList<String>(), "infix ", "infixl", "infixr");
-
-        return (pattern != null && pattern.length() > 0) && Sequence.fromIterable(fixityKeywords).any(new IWhereFilter<String>() {
-          public boolean accept(String it) {
-            return it.equals(pattern);
-          }
-        });
-      }
+    protected SubstituteMenuLookup getMenuLookup(SubstituteMenuContext _context) {
+      final EditorContext editorContext = _context.getEditorContext();
+      return new NamedSubstituteMenuLookup(LanguageRegistry.getInstance(editorContext.getRepository()), MetaAdapterFactory.getConcept(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL, "BaseFrege.structure.Definition"), "BaseFrege.editor.Definition_SubstituteToFixity");
     }
   }
 }
