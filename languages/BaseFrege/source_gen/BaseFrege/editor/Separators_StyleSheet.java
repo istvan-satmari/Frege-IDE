@@ -89,6 +89,8 @@ public class Separators_StyleSheet {
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.PLAIN);
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+      style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
+      style.set(StyleAttributes.PADDING_LEFT, new Padding(0, Measure.SPACES));
       style.set(StyleAttributes.PADDING_RIGHT, new Padding(1, Measure.SPACES));
     }
 

@@ -748,8 +748,8 @@
       <node concept="3F0ifn" id="5ZITH0PGMQT" role="3EZMnx">
         <property role="3F0ifm" value="`" />
         <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
-        <node concept="3$7jql" id="2eBOBbTMwtr" role="3F10Kt">
-          <property role="3$6WeP" value="-1" />
+        <node concept="11LMrY" id="E4TzSixp$b" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F1sOY" id="6SrRM0IrBki" role="3EZMnx">
@@ -758,8 +758,8 @@
       <node concept="3F0ifn" id="5ZITH0PGMR5" role="3EZMnx">
         <property role="3F0ifm" value="`" />
         <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
-        <node concept="3$7fVu" id="2eBOBbTMwtt" role="3F10Kt">
-          <property role="3$6WeP" value="-1" />
+        <node concept="11L4FC" id="E4TzSixtVG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="2iRfu4" id="vUxQDjKXzg" role="2iSdaV" />
@@ -926,7 +926,7 @@
         <property role="2czwfO" value="," />
         <ref role="1NtTu8" to="sc0n:6SrRM0IrBls" resolve="items" />
         <node concept="2iRfu4" id="3Xsm2yzykTG" role="2czzBx" />
-        <node concept="tppnM" id="30ixEdPib7K" role="sWeuL">
+        <node concept="tppnM" id="E4TzSiDjA1" role="sWeuL">
           <ref role="1k5W1q" node="2eBOBbTAoA6" resolve="Comma" />
         </node>
       </node>
@@ -2084,10 +2084,12 @@
         <ref role="1NtTu8" to="sc0n:3Xsm2yzyl6l" resolve="name" />
       </node>
       <node concept="3F2HdR" id="3Xsm2yzyl72" role="3EZMnx">
-        <property role="2czwfO" value=" " />
         <ref role="1NtTu8" to="sc0n:3Xsm2yzyl6n" resolve="arguments" />
         <ref role="1ERwB7" node="66KGco1_DO" resolve="PatternFunction_RemoveAllArguments" />
         <node concept="2iRfu4" id="3Xsm2yzyl74" role="2czzBx" />
+        <node concept="tppnM" id="E4TzSiE7KF" role="sWeuL">
+          <ref role="1k5W1q" node="30ixEdPz3dY" resolve="Space" />
+        </node>
       </node>
       <node concept="2iRfu4" id="3Xsm2yzyl6S" role="2iSdaV" />
     </node>
@@ -2806,10 +2808,16 @@
     <node concept="14StLt" id="2eBOBbTAoA6" role="V601i">
       <property role="TrG5h" value="Comma" />
       <node concept="Vb9p2" id="2eBOBbTAoAu" role="3F10Kt" />
-      <node concept="11L4FC" id="7cjyLS5t0L3" role="3F10Kt">
+      <node concept="11L4FC" id="E4TzSiDj_K" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
-      <node concept="3$7jql" id="2eBOBbTAoAN" role="3F10Kt">
+      <node concept="11LMrY" id="E4TzSiDj_V" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+      <node concept="3$7fVu" id="E4TzSiAQ16" role="3F10Kt">
+        <property role="3$6WeP" value="0" />
+      </node>
+      <node concept="3$7jql" id="E4TzSiA1OY" role="3F10Kt">
         <property role="3$6WeP" value="1" />
       </node>
     </node>
@@ -3882,8 +3890,8 @@
       <node concept="3F0ifn" id="13DUwHFVzGR" role="3EZMnx">
         <property role="3F0ifm" value="(" />
         <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
-        <node concept="3$7jql" id="30ixEdPh$pv" role="3F10Kt">
-          <property role="3$6WeP" value="-1" />
+        <node concept="11LMrY" id="E4TzSiz$XV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F1sOY" id="13DUwHFVzH5" role="3EZMnx">
@@ -3892,8 +3900,8 @@
       <node concept="3F0ifn" id="13DUwHFVzGX" role="3EZMnx">
         <property role="3F0ifm" value=")" />
         <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
-        <node concept="3$7fVu" id="30ixEdPh$px" role="3F10Kt">
-          <property role="3$6WeP" value="-1" />
+        <node concept="11L4FC" id="E4TzSiz$XX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="2iRfu4" id="13DUwHFVzGN" role="2iSdaV" />
@@ -4712,8 +4720,13 @@
                       <node concept="ub8z3" id="4pdWx57O1iE" role="2Oq$k0" />
                       <node concept="liA8E" id="4pdWx57O2fE" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
-                        <node concept="Xl_RD" id="4pdWx57O3aS" role="37wK5m">
-                          <property role="Xl_RC" value="[-#$%&amp;*+./&lt;=&gt;?@\\^|~:]+" />
+                        <node concept="2OqwBi" id="E4TzSiyDLP" role="37wK5m">
+                          <node concept="35c_gC" id="E4TzSiyCj6" role="2Oq$k0">
+                            <ref role="35c_gD" to="sc0n:1NZxxHzeFNo" resolve="NodeOperator" />
+                          </node>
+                          <node concept="2qgKlT" id="E4TzSiyEf3" role="2OqNvi">
+                            <ref role="37wK5l" to="yq4j:1QLLtx6mXyJ" resolve="getPattern" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -4737,6 +4750,11 @@
       </node>
       <node concept="ucgPf" id="4pdWx57OgVh" role="3aKz83">
         <node concept="3clFbS" id="4pdWx57OgVj" role="2VODD2">
+          <node concept="3SKdUt" id="E4TzSiyJw7" role="3cqZAp">
+            <node concept="3SKdUq" id="E4TzSiyJw9" role="3SKWNk">
+              <property role="3SKdUp" value="Substitute to function name annotation item, if the pattern conforms to the VARID pattern" />
+            </node>
+          </node>
           <node concept="3cpWs8" id="4pdWx57OlSB" role="3cqZAp">
             <node concept="3cpWsn" id="4pdWx57OlSE" role="3cpWs9">
               <property role="TrG5h" value="ai" />
@@ -4787,8 +4805,13 @@
                   <node concept="ub8z3" id="4pdWx57OkpC" role="2Oq$k0" />
                   <node concept="liA8E" id="4pdWx57OlfF" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
-                    <node concept="Xl_RD" id="4pdWx57OlCz" role="37wK5m">
-                      <property role="Xl_RC" value="([a-z][_a-zA-Z0-9]*)|(_[_a-zA-Z0-9]+)" />
+                    <node concept="2OqwBi" id="E4TzSiyHrY" role="37wK5m">
+                      <node concept="35c_gC" id="E4TzSiyFYj" role="2Oq$k0">
+                        <ref role="35c_gD" to="sc0n:7Cxf1w4Aony" resolve="NodeVARID" />
+                      </node>
+                      <node concept="2qgKlT" id="E4TzSiyHSH" role="2OqNvi">
+                        <ref role="37wK5l" to="yq4j:30ixEdP_hUv" resolve="getPattern" />
+                      </node>
                     </node>
                   </node>
                 </node>
