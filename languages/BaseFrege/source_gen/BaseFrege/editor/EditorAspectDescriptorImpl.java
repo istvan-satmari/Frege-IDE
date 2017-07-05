@@ -359,6 +359,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
               return Arrays.asList(new TransformationMenu[]{new PatternArgument_OperatorTransformations()});
             case 3:
               return Arrays.asList(new TransformationMenu[]{new PatternArgument_PBracketToListOrTuple()});
+            case 4:
+              return Arrays.asList(new TransformationMenu[]{new PatternArgument_SetFunctionDefinitionToAssignment()});
             default:
           }
         }
@@ -496,7 +498,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   private static String[] stringSwitchCases_xbvbvu_a0a0a0g1a4 = new String[]{"BaseFrege.editor.FullType_AddContext"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0h1a4 = new String[]{"BaseFrege.editor.Import_AddImportAsImportList", "BaseFrege.editor.Import_AddImportList"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0i1a4 = new String[]{"BaseFrege.editor.Module_AddExportedParts"};
-  private static String[] stringSwitchCases_xbvbvu_a0a0a0j1a4 = new String[]{"BaseFrege.editor.PatternArgument_AddFunctionArgument", "BaseFrege.editor.PatternArgument_FunctionTransformation", "BaseFrege.editor.PatternArgument_OperatorTransformations", "BaseFrege.editor.PatternArgument_PBracketToListOrTuple"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a0j1a4 = new String[]{"BaseFrege.editor.PatternArgument_AddFunctionArgument", "BaseFrege.editor.PatternArgument_FunctionTransformation", "BaseFrege.editor.PatternArgument_OperatorTransformations", "BaseFrege.editor.PatternArgument_PBracketToListOrTuple", "BaseFrege.editor.PatternArgument_SetFunctionDefinitionToAssignment"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0k1a4 = new String[]{"BaseFrege.editor.Type_AddTypeVariable"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0l1a4 = new String[]{"BaseFrege.editor.TypeBrackets_ChangeToTuple"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0m1a4 = new String[]{"BaseFrege.editor.TypeData_AddArgument"};

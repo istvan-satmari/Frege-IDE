@@ -443,6 +443,8 @@
     <property role="EcuMT" value="574920793184786726" />
     <property role="3GE5qa" value="Definitions.FunctionDefinition.Parts" />
     <property role="TrG5h" value="Guard" />
+    <property role="34LRSv" value="|" />
+    <property role="R4oN_" value="Adds a new guard." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5ZITH0PGXP1" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988856129" />
@@ -455,6 +457,7 @@
       <property role="IQ2ns" value="6912716259988856149" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="vUxQDjKXzn" resolve="Expression" />
     </node>
   </node>
@@ -482,6 +485,7 @@
     <property role="EcuMT" value="574920793184786835" />
     <property role="3GE5qa" value="Definitions.FunctionDefinition.Parts" />
     <property role="TrG5h" value="WherePart" />
+    <property role="34LRSv" value="where" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5E$XTHV46gc" role="1TKVEi">
       <property role="IQ2ns" value="6531617606750725132" />
@@ -753,9 +757,9 @@
     <property role="3GE5qa" value="Definitions.FunctionDefinition" />
     <property role="TrG5h" value="FDAssignment" />
     <property role="34LRSv" value="=" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5ZITH0PGXO5" role="1TKVEi">
-      <property role="IQ2ns" value="6912716259988856069" />
+    <ref role="1TJDcQ" node="3PT0fU4S3xI" resolve="CompleteFD" />
+    <node concept="1TJgyj" id="3PT0fU4S6co" role="1TKVEi">
+      <property role="IQ2ns" value="4429572801646584600" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="pattern" />
       <property role="20lbJX" value="1" />
@@ -774,15 +778,18 @@
       <property role="20kJfa" value="where" />
       <ref role="20lvS9" node="vUxQDjKXAj" resolve="WherePart" />
     </node>
+    <node concept="PrWs8" id="3PT0fU4XHTt" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5ZITH0PGXNF">
     <property role="EcuMT" value="6912716259988856043" />
     <property role="3GE5qa" value="Definitions.FunctionDefinition" />
     <property role="TrG5h" value="FDGuards" />
     <property role="34LRSv" value="|" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5ZITH0PGXOJ" role="1TKVEi">
-      <property role="IQ2ns" value="6912716259988856111" />
+    <ref role="1TJDcQ" node="3PT0fU4S3xI" resolve="CompleteFD" />
+    <node concept="1TJgyj" id="3PT0fU4S987" role="1TKVEi">
+      <property role="IQ2ns" value="4429572801646596615" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="pattern" />
       <property role="20lbJX" value="1" />
@@ -800,6 +807,9 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="where" />
       <ref role="20lvS9" node="vUxQDjKXAj" resolve="WherePart" />
+    </node>
+    <node concept="PrWs8" id="3PT0fU4XHTr" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="5ZITH0PGXRI">
@@ -1014,12 +1024,8 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1QLLtx6mZzU" resolve="PatternWrapper" />
     </node>
-    <node concept="1TJgyj" id="7Bxqsr3wFj$" role="1TKVEi">
-      <property role="IQ2ns" value="8782417050753742052" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="vUxQDjKXzn" resolve="Expression" />
+    <node concept="PrWs8" id="3PT0fU4QpHG" role="PzmwI">
+      <ref role="PrY4T" node="LkFsxSSFcG" resolve="IncompleteCommand" />
     </node>
   </node>
   <node concept="1TIwiD" id="62eaOWzc$vg">
@@ -2160,6 +2166,14 @@
     <property role="TrG5h" value="FDAVarWildcard" />
     <property role="34LRSv" value="_" />
     <ref role="1TJDcQ" node="2rZSvAJxfN2" resolve="FDAVariable" />
+  </node>
+  <node concept="1TIwiD" id="3PT0fU4S3xI">
+    <property role="EcuMT" value="4429572801646573678" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition" />
+    <property role="TrG5h" value="CompleteFD" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
   </node>
 </model>
 

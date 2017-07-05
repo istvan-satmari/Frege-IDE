@@ -27,6 +27,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_CharValue = new ConceptPresentationBuilder().shortDesc("Character literal.").create();
   private final ConceptPresentation props_Class = new ConceptPresentationBuilder().shortDesc("Define a new class.").create();
   private final ConceptPresentation props_Comment = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_CompleteFD = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ConstrCall = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Context = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ContextPart = new ConceptPresentationBuilder().create();
@@ -55,7 +56,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FullType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunCall = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunctionDefinition = new ConceptPresentationBuilder().shortDesc("Single function definition pattern.").create();
-  private final ConceptPresentation props_Guard = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Guard = new ConceptPresentationBuilder().shortDesc("Adds a new guard.").create();
   private final ConceptPresentation props_IICMConid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IICMOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IICMVarid = new ConceptPresentationBuilder().create();
@@ -188,6 +189,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Class;
       case LanguageConceptSwitch.Comment:
         return props_Comment;
+      case LanguageConceptSwitch.CompleteFD:
+        return props_CompleteFD;
       case LanguageConceptSwitch.ConstrCall:
         return props_ConstrCall;
       case LanguageConceptSwitch.Context:
