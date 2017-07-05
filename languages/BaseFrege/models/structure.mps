@@ -168,6 +168,9 @@
       <property role="20kJfa" value="type" />
       <ref role="20lvS9" node="3Xsm2yzyj0p" resolve="FullType" />
     </node>
+    <node concept="PrWs8" id="3PT0fU5ayNJ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKXz2">
     <property role="EcuMT" value="574920793184786626" />
@@ -417,6 +420,9 @@
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" node="7Cxf1w4A_m1" resolve="BIGINTEGER" />
     </node>
+    <node concept="PrWs8" id="3PT0fU5dqb9" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKX$b">
     <property role="EcuMT" value="574920793184786699" />
@@ -429,6 +435,9 @@
       <property role="IQ2nx" value="7712220098267840664" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" node="7Cxf1w4A_m2" resolve="DOUBLE" />
+    </node>
+    <node concept="PrWs8" id="3PT0fU5dqbb" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKX$c">
@@ -1512,14 +1521,14 @@
     <property role="3GE5qa" value="Definitions.Patterns.Expression.Variables" />
     <property role="TrG5h" value="PVarWildcard" />
     <property role="34LRSv" value="_" />
-    <property role="R4oN_" value="Non-referentiable function argument." />
+    <property role="R4oN_" value="Non-referentiable variable." />
     <ref role="1TJDcQ" node="3Xsm2yzyl7U" resolve="PVariable" />
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyl89">
     <property role="EcuMT" value="4565621053812462089" />
     <property role="3GE5qa" value="Definitions.Patterns.Expression.Variables" />
     <property role="TrG5h" value="PVarName" />
-    <property role="R4oN_" value="Referentiable function argument." />
+    <property role="R4oN_" value="Referentiable variable." />
     <property role="34LRSv" value="var" />
     <ref role="1TJDcQ" node="3Xsm2yzyl7U" resolve="PVariable" />
     <node concept="1TJgyj" id="3Xsm2yzyl8a" role="1TKVEi">
@@ -1528,6 +1537,9 @@
       <property role="20kJfa" value="name" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7Cxf1w4Aony" resolve="NodeVARID" />
+    </node>
+    <node concept="PrWs8" id="3PT0fU5ct2O" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyl9j">
@@ -1559,7 +1571,7 @@
     <property role="EcuMT" value="4565621053812462235" />
     <property role="3GE5qa" value="Definitions.Patterns.Expression.Lists" />
     <property role="TrG5h" value="PListVar" />
-    <property role="R4oN_" value="Referentiable function argument." />
+    <property role="R4oN_" value="Variable for referencing list." />
     <property role="34LRSv" value="var" />
     <ref role="1TJDcQ" node="3Xsm2yzyl7R" resolve="PList" />
     <node concept="1TJgyj" id="3Xsm2yzylas" role="1TKVEi">
@@ -1568,6 +1580,9 @@
       <property role="20kJfa" value="variable" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3Xsm2yzyl7U" resolve="PVariable" />
+    </node>
+    <node concept="PrWs8" id="3PT0fU5ct2M" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzylaF">
@@ -2125,6 +2140,9 @@
     <node concept="PrWs8" id="LkFsxSSGJT" role="PzmwI">
       <ref role="PrY4T" node="LkFsxSSFcG" resolve="IncompleteCommand" />
     </node>
+    <node concept="PrWs8" id="3PT0fU5ayNF" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="PlHQZ" id="LkFsxSSFcG">
     <property role="EcuMT" value="888526103032017708" />
@@ -2151,6 +2169,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7Cxf1w4Aony" resolve="NodeVARID" />
     </node>
+    <node concept="PrWs8" id="3PT0fU5bvFS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2rZSvAJxfN2">
     <property role="EcuMT" value="2810213155010313410" />
@@ -2165,6 +2186,7 @@
     <property role="3GE5qa" value="Definitions.FDA.FDAVariable" />
     <property role="TrG5h" value="FDAVarWildcard" />
     <property role="34LRSv" value="_" />
+    <property role="R4oN_" value="Non-referentiable variable." />
     <ref role="1TJDcQ" node="2rZSvAJxfN2" resolve="FDAVariable" />
   </node>
   <node concept="1TIwiD" id="3PT0fU4S3xI">

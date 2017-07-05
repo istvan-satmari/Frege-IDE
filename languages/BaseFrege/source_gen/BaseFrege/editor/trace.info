@@ -15,7 +15,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1153952380246:jetbrains.mps.baseLanguage.structure.TryStatement" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="19,0,509,0" name="BaseFrege.editor.EditorAspectDescriptorImpl" />
+      <unit at="19,0,525,0" name="BaseFrege.editor.EditorAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384086114398">
@@ -5905,6 +5905,118 @@
       <unit id="4429572801647291995" at="121,0,155,0" name="BaseFrege.editor.PatternArgument_SetFunctionDefinitionToAssignment$TMP_Group_9mlwch_a0$TMP_Action_9mlwch_b0a" />
       <unit id="4429572801647291995" at="51,0,156,0" name="BaseFrege.editor.PatternArgument_SetFunctionDefinitionToAssignment$TMP_Group_9mlwch_a0" />
       <unit id="4429572801647289120" at="34,0,157,0" name="BaseFrege.editor.PatternArgument_SetFunctionDefinitionToAssignment" />
+    </file>
+  </root>
+  <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/4429572801651185273">
+    <file name="FDAssignment_SubstituteMenu.java">
+      <node id="4429572801651185273" at="16,118,17,140" concept="6" />
+      <node id="4429572801651185273" at="17,140,18,18" concept="7" />
+      <node id="4429572801651185273" at="14,0,20,0" concept="5" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljava/util/List;" />
+      <scope id="4429572801651185273" at="16,118,18,18">
+        <var name="result" id="4429572801651185273" />
+      </scope>
+      <scope id="4429572801651185273" at="14,0,20,0">
+        <var name="_context" id="4429572801651185273" />
+      </scope>
+      <unit id="4429572801651185273" at="13,0,21,0" name="BaseFrege.editor.FDAssignment_SubstituteMenu" />
+    </file>
+  </root>
+  <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/4429572801651185274">
+    <file name="FDGuards_SubstituteMenu.java">
+      <node id="4429572801651185274" at="16,118,17,140" concept="6" />
+      <node id="4429572801651185274" at="17,140,18,18" concept="7" />
+      <node id="4429572801651185274" at="14,0,20,0" concept="5" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljava/util/List;" />
+      <scope id="4429572801651185274" at="16,118,18,18">
+        <var name="result" id="4429572801651185274" />
+      </scope>
+      <scope id="4429572801651185274" at="14,0,20,0">
+        <var name="_context" id="4429572801651185274" />
+      </scope>
+      <unit id="4429572801651185274" at="13,0,21,0" name="BaseFrege.editor.FDGuards_SubstituteMenu" />
+    </file>
+  </root>
+  <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/4429572801651420401">
+    <file name="Annotation_SubstituteMenu.java">
+      <node id="4429572801651420401" at="16,118,17,140" concept="6" />
+      <node id="4429572801651420401" at="17,140,18,18" concept="7" />
+      <node id="4429572801651420401" at="14,0,20,0" concept="5" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljava/util/List;" />
+      <scope id="4429572801651420401" at="16,118,18,18">
+        <var name="result" id="4429572801651420401" />
+      </scope>
+      <scope id="4429572801651420401" at="14,0,20,0">
+        <var name="_context" id="4429572801651420401" />
+      </scope>
+      <unit id="4429572801651420401" at="13,0,21,0" name="BaseFrege.editor.Annotation_SubstituteMenu" />
+    </file>
+  </root>
+  <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/4429572801651669724">
+    <file name="FDAVarName_SubstituteMenu.java">
+      <node id="4429572801651669724" at="16,118,17,140" concept="6" />
+      <node id="4429572801651669724" at="17,140,18,18" concept="7" />
+      <node id="4429572801651669724" at="14,0,20,0" concept="5" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljava/util/List;" />
+      <scope id="4429572801651669724" at="16,118,18,18">
+        <var name="result" id="4429572801651669724" />
+      </scope>
+      <scope id="4429572801651669724" at="14,0,20,0">
+        <var name="_context" id="4429572801651669724" />
+      </scope>
+      <unit id="4429572801651669724" at="13,0,21,0" name="BaseFrege.editor.FDAVarName_SubstituteMenu" />
+    </file>
+  </root>
+  <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/4429572801651921078">
+    <file name="PVarName_SubstituteMenu.java">
+      <node id="4429572801651921078" at="16,118,17,140" concept="6" />
+      <node id="4429572801651921078" at="17,140,18,18" concept="7" />
+      <node id="4429572801651921078" at="14,0,20,0" concept="5" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljava/util/List;" />
+      <scope id="4429572801651921078" at="16,118,18,18">
+        <var name="result" id="4429572801651921078" />
+      </scope>
+      <scope id="4429572801651921078" at="14,0,20,0">
+        <var name="_context" id="4429572801651921078" />
+      </scope>
+      <unit id="4429572801651921078" at="13,0,21,0" name="BaseFrege.editor.PVarName_SubstituteMenu" />
+    </file>
+  </root>
+  <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/4429572801651921079">
+    <file name="PListVar_SubstituteMenu.java">
+      <node id="4429572801651921079" at="16,118,17,140" concept="6" />
+      <node id="4429572801651921079" at="17,140,18,18" concept="7" />
+      <node id="4429572801651921079" at="14,0,20,0" concept="5" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljava/util/List;" />
+      <scope id="4429572801651921079" at="16,118,18,18">
+        <var name="result" id="4429572801651921079" />
+      </scope>
+      <scope id="4429572801651921079" at="14,0,20,0">
+        <var name="_context" id="4429572801651921079" />
+      </scope>
+      <unit id="4429572801651921079" at="13,0,21,0" name="BaseFrege.editor.PListVar_SubstituteMenu" />
+    </file>
+  </root>
+  <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/4429572801652171469">
+    <file name="DoubleValue_SubstituteMenu.java">
+      <node id="4429572801652171469" at="16,118,17,140" concept="6" />
+      <node id="4429572801652171469" at="17,140,18,18" concept="7" />
+      <node id="4429572801652171469" at="14,0,20,0" concept="5" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljava/util/List;" />
+      <scope id="4429572801652171469" at="16,118,18,18">
+        <var name="result" id="4429572801652171469" />
+      </scope>
+      <scope id="4429572801652171469" at="14,0,20,0">
+        <var name="_context" id="4429572801652171469" />
+      </scope>
+      <unit id="4429572801652171469" at="13,0,21,0" name="BaseFrege.editor.DoubleValue_SubstituteMenu" />
+    </file>
+  </root>
+  <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/4429572801652171470">
+    <file name="IntegerValue_SubstituteMenu.java">
+      <node id="4429572801652171470" at="16,118,17,140" concept="6" />
+      <node id="4429572801652171470" at="17,140,18,18" concept="7" />
+      <node id="4429572801652171470" at="14,0,20,0" concept="5" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljava/util/List;" />
+      <scope id="4429572801652171470" at="16,118,18,18">
+        <var name="result" id="4429572801652171470" />
+      </scope>
+      <scope id="4429572801652171470" at="14,0,20,0">
+        <var name="_context" id="4429572801652171470" />
+      </scope>
+      <unit id="4429572801652171470" at="13,0,21,0" name="BaseFrege.editor.IntegerValue_SubstituteMenu" />
     </file>
   </root>
   <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/4565621053812384405">

@@ -9955,5 +9955,37 @@
       </node>
     </node>
   </node>
+  <node concept="3p36aQ" id="3PT0fU59DpT">
+    <property role="3GE5qa" value="Definitions.FunctionDefinition" />
+    <ref role="aqKnT" to="sc0n:5ZITH0PGXNE" resolve="FDAssignment" />
+  </node>
+  <node concept="3p36aQ" id="3PT0fU59DpU">
+    <property role="3GE5qa" value="Definitions.FunctionDefinition" />
+    <ref role="aqKnT" to="sc0n:5ZITH0PGXNF" resolve="FDGuards" />
+  </node>
+  <node concept="3p36aQ" id="3PT0fU5ayNL">
+    <property role="3GE5qa" value="Definitions.Annotation" />
+    <ref role="aqKnT" to="sc0n:vUxQDjKXz0" resolve="Annotation" />
+  </node>
+  <node concept="3p36aQ" id="3PT0fU5bvFs">
+    <property role="3GE5qa" value="Definitions.FDA.FDAVariable" />
+    <ref role="aqKnT" to="sc0n:LkFsxSSIxV" resolve="FDAVarName" />
+  </node>
+  <node concept="3p36aQ" id="3PT0fU5ct2Q">
+    <property role="3GE5qa" value="Definitions.Patterns.Expression.Variables" />
+    <ref role="aqKnT" to="sc0n:3Xsm2yzyl89" resolve="PVarName" />
+  </node>
+  <node concept="3p36aQ" id="3PT0fU5ct2R">
+    <property role="3GE5qa" value="Definitions.Patterns.Expression.Lists.PListBracket" />
+    <ref role="aqKnT" to="sc0n:3Xsm2yzylar" resolve="PListVar" />
+  </node>
+  <node concept="3p36aQ" id="3PT0fU5dqbd">
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
+    <ref role="aqKnT" to="sc0n:vUxQDjKX$b" resolve="DoubleValue" />
+  </node>
+  <node concept="3p36aQ" id="3PT0fU5dqbe">
+    <property role="3GE5qa" value="Definitions.Expressions.Terms.Literals" />
+    <ref role="aqKnT" to="sc0n:vUxQDjKX$a" resolve="IntegerValue" />
+  </node>
 </model>
 

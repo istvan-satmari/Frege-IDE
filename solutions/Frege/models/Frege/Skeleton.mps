@@ -7,6 +7,7 @@
   <imports />
   <registry>
     <language id="90eaf9a4-a968-473c-8aed-fef10c04a5df" name="BaseFrege">
+      <concept id="1839659371720620158" name="BaseFrege.structure.TrueValue" flags="ng" index="26DZ0d" />
       <concept id="4565621053812402374" name="BaseFrege.structure.MPModule" flags="ng" index="2sP33I">
         <reference id="2569253503694137640" name="module" index="3qezHq" />
       </concept>
@@ -17,8 +18,22 @@
         <child id="4565621053812461973" name="name" index="2sPgAX" />
         <child id="4565621053812461975" name="arguments" index="2sPgAZ" />
       </concept>
+      <concept id="4565621053812462073" name="BaseFrege.structure.PLiteral" flags="ng" index="2sPgBh">
+        <child id="1839659371719467096" name="value" index="26ymwF" />
+      </concept>
+      <concept id="4565621053812462075" name="BaseFrege.structure.PVarWildcard" flags="ng" index="2sPgBj" />
       <concept id="4565621053812462089" name="BaseFrege.structure.PVarName" flags="ng" index="2sPgCx">
         <child id="4565621053812462090" name="name" index="2sPgCy" />
+      </concept>
+      <concept id="4565621053812462163" name="BaseFrege.structure.PListColon" flags="ng" index="2sPgDV">
+        <child id="4565621053812462164" name="heads" index="2sPgDW" />
+        <child id="4565621053812462166" name="tail" index="2sPgDY" />
+      </concept>
+      <concept id="4565621053812462251" name="BaseFrege.structure.PListBracket" flags="ng" index="2sPgE3">
+        <child id="4565621053812462252" name="items" index="2sPgE4" />
+      </concept>
+      <concept id="4565621053812462235" name="BaseFrege.structure.PListVar" flags="ng" index="2sPgEN">
+        <child id="4565621053812462236" name="variable" index="2sPgEO" />
       </concept>
       <concept id="4565621053812461242" name="BaseFrege.structure.AIVarid" flags="ng" index="2sPhqi">
         <child id="4565621053812461243" name="value" index="2sPhqj" />
@@ -54,6 +69,9 @@
       </concept>
       <concept id="574920793184786698" name="BaseFrege.structure.IntegerValue" flags="ng" index="1kelTw">
         <property id="7712220098267840679" name="value" index="hTkZQ" />
+      </concept>
+      <concept id="574920793184786697" name="BaseFrege.structure.StringValue" flags="ng" index="1kelTz">
+        <property id="7712220098267840694" name="value" index="hTkZB" />
       </concept>
       <concept id="574920793184786692" name="BaseFrege.structure.Data" flags="ng" index="1kelTI">
         <child id="7934180497854199160" name="name" index="10tqDo" />
@@ -111,6 +129,9 @@
       <concept id="2906222646419661707" name="BaseFrege.structure.Type" flags="ng" index="1QnHAi">
         <child id="2906222646419661713" name="equalTo" index="1QnHA8" />
         <child id="2906222646419661708" name="name" index="1QnHAl" />
+      </concept>
+      <concept id="8292124299976650100" name="BaseFrege.structure.PLEBPatternArgument" flags="ng" index="1QrqpE">
+        <child id="8292124299976650103" name="arg" index="1QrqpD" />
       </concept>
       <concept id="721555665117472991" name="BaseFrege.structure.FOCharacterOperator" flags="ng" index="3UZ1fi">
         <property id="721555665117472992" name="value" index="3UZ1fH" />
@@ -807,11 +828,101 @@
       </node>
     </node>
     <node concept="14659P" id="3PT0fU4XMg1" role="1kelZ8" />
-    <node concept="14659P" id="3PT0fU513co" role="1kelZ8" />
-    <node concept="14659P" id="3PT0fU54hAh" role="1kelZ8" />
-    <node concept="14659P" id="3PT0fU58lFu" role="1kelZ8" />
-    <node concept="14659P" id="3PT0fU57ryD" role="1kelZ8" />
-    <node concept="14659P" id="3PT0fU57rBC" role="1kelZ8" />
+    <node concept="1EnjCU" id="3PT0fU5dpx$" role="1kelZ8">
+      <node concept="1kelYX" id="3PT0fU5dpxB" role="1EnjJn">
+        <node concept="1kelTw" id="3PT0fU5dpAM" role="1Enppr">
+          <property role="hTkZQ" value="0" />
+        </node>
+      </node>
+      <node concept="1rUzOy" id="3PT0fU5dpsp" role="2TAmfA">
+        <node concept="2sPgE3" id="3PT0fU5dpsk" role="1rUzOz">
+          <node concept="1QrqpE" id="3PT0fU5dpAQ" role="2sPgE4">
+            <node concept="2sPgCx" id="3PT0fU5dpAO" role="1QrqpD">
+              <node concept="1YIbBU" id="3PT0fU5dpAP" role="2sPgCy">
+                <property role="1YIbBE" value="tra" />
+              </node>
+            </node>
+          </node>
+          <node concept="1QrqpE" id="3PT0fU5dpB4" role="2sPgE4">
+            <node concept="2sPgBh" id="3PT0fU5dpB2" role="1QrqpD">
+              <node concept="26DZ0d" id="3PT0fU5dpB0" role="26ymwF" />
+            </node>
+          </node>
+          <node concept="1QrqpE" id="3PT0fU5dpBo" role="2sPgE4">
+            <node concept="2sPgBh" id="3PT0fU5dpBm" role="1QrqpD">
+              <node concept="1kelTz" id="3PT0fU5dpBk" role="26ymwF">
+                <property role="hTkZB" value="a" />
+              </node>
+            </node>
+          </node>
+          <node concept="1QrqpE" id="3PT0fU5dpEk" role="2sPgE4">
+            <node concept="2sPgBj" id="3PT0fU5dpEi" role="1QrqpD" />
+          </node>
+          <node concept="1QrqpE" id="3PT0fU5dpEK" role="2sPgE4">
+            <node concept="2sPgCx" id="3PT0fU5dpEZ" role="1QrqpD">
+              <node concept="1YIbBU" id="3PT0fU5dpF0" role="2sPgCy">
+                <property role="1YIbBE" value="_wd" />
+              </node>
+            </node>
+          </node>
+          <node concept="1QrqpE" id="3PT0fU5dpFl" role="2sPgE4">
+            <node concept="2sPgCx" id="3PT0fU5dpFj" role="1QrqpD">
+              <node concept="1YIbBU" id="3PT0fU5dpFk" role="2sPgCy">
+                <property role="1YIbBE" value="won" />
+              </node>
+            </node>
+          </node>
+          <node concept="1QrqpE" id="3PT0fU5dpFZ" role="2sPgE4">
+            <node concept="2sPgDV" id="3PT0fU5dpGD" role="1QrqpD">
+              <node concept="2sPgCx" id="3PT0fU5dpGG" role="2sPgDW">
+                <node concept="1YIbBU" id="3PT0fU5dpGH" role="2sPgCy">
+                  <property role="1YIbBE" value="x" />
+                </node>
+              </node>
+              <node concept="2sPgE3" id="3PT0fU5dpH4" role="2sPgDY">
+                <node concept="1QrqpE" id="3PT0fU5dpHc" role="2sPgE4">
+                  <node concept="2sPgCx" id="3PT0fU5dpHa" role="1QrqpD">
+                    <node concept="1YIbBU" id="3PT0fU5dpHb" role="2sPgCy">
+                      <property role="1YIbBE" value="x3" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1QrqpE" id="3PT0fU5dpHq" role="2sPgE4">
+                  <node concept="2sPgDV" id="3PT0fU5dpHB" role="1QrqpD">
+                    <node concept="2sPgCx" id="3PT0fU5dpHE" role="2sPgDW">
+                      <node concept="1YIbBU" id="3PT0fU5dpHF" role="2sPgCy">
+                        <property role="1YIbBE" value="x2" />
+                      </node>
+                    </node>
+                    <node concept="2sPgDV" id="3PT0fU5dpHK" role="2sPgDY">
+                      <node concept="2sPgCx" id="3PT0fU5dpHQ" role="2sPgDW">
+                        <node concept="1YIbBU" id="3PT0fU5dpHR" role="2sPgCy">
+                          <property role="1YIbBE" value="x1" />
+                        </node>
+                      </node>
+                      <node concept="2sPgEN" id="3PT0fU5dpHW" role="2sPgDY">
+                        <node concept="2sPgBj" id="3PT0fU5dpI3" role="2sPgEO" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2sPgEN" id="3PT0fU5dpGU" role="2sPgDW">
+                <node concept="2sPgCx" id="3PT0fU5dpGV" role="2sPgEO">
+                  <node concept="1YIbBU" id="3PT0fU5dpGW" role="2sPgCy">
+                    <property role="1YIbBE" value="wdo" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14659P" id="3PT0fU5dp35" role="1kelZ8" />
+    <node concept="14659P" id="3PT0fU5cs01" role="1kelZ8" />
+    <node concept="14659P" id="3PT0fU5enoF" role="1kelZ8" />
+    <node concept="14659P" id="3PT0fU5enuk" role="1kelZ8" />
     <node concept="14659P" id="3PT0fU57rGC" role="1kelZ8" />
     <node concept="14659P" id="3PT0fU518SS" role="1kelZ8" />
     <node concept="14659P" id="3PT0fU4S3t5" role="1kelZ8" />

@@ -44,7 +44,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FDA = new ConceptPresentationBuilder().shortDesc("Represents either a function definition or annotation.").create();
   private final ConceptPresentation props_FDABracket = new ConceptPresentationBuilder().shortDesc("Brackets to hold either operator or become a function definition pattern.").create();
   private final ConceptPresentation props_FDAVarName = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FDAVarWildcard = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FDAVarWildcard = new ConceptPresentationBuilder().shortDesc("Non-referentiable variable.").create();
   private final ConceptPresentation props_FDAVariable = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDAssignment = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGuards = new ConceptPresentationBuilder().create();
@@ -115,11 +115,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_PList = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
   private final ConceptPresentation props_PListBracket = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
   private final ConceptPresentation props_PListColon = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
-  private final ConceptPresentation props_PListVar = new ConceptPresentationBuilder().shortDesc("Referentiable function argument.").create();
+  private final ConceptPresentation props_PListVar = new ConceptPresentationBuilder().shortDesc("Variable for referencing list.").create();
   private final ConceptPresentation props_PLiteral = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PTuple = new ConceptPresentationBuilder().shortDesc("Tuple pattern.").create();
-  private final ConceptPresentation props_PVarName = new ConceptPresentationBuilder().shortDesc("Referentiable function argument.").create();
-  private final ConceptPresentation props_PVarWildcard = new ConceptPresentationBuilder().shortDesc("Non-referentiable function argument.").create();
+  private final ConceptPresentation props_PVarName = new ConceptPresentationBuilder().shortDesc("Referentiable variable.").create();
+  private final ConceptPresentation props_PVarWildcard = new ConceptPresentationBuilder().shortDesc("Non-referentiable variable.").create();
   private final ConceptPresentation props_PVariable = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Pattern = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PatternArgument = new ConceptPresentationBuilder().create();
