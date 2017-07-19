@@ -570,6 +570,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786747");
     b.aggregate("expression", 0x5feee6d035b3f871L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8d7L).optional(false).ordered(true).multiple(false).origin("6912716259988863089").done();
     b.aggregate("cases", 0x5feee6d035b3f87aL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3f879L).optional(false).ordered(true).multiple(true).origin("6912716259988863098").done();
+    b.alias("case");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForCasePart() {
@@ -1079,7 +1080,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("BaseFrege.structure.LetDefinition", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc65829ede2L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/7420331049347593171");
     b.aggregate("representingNode", 0x66fa4fc6582a33d4L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c0L).optional(false).ordered(true).multiple(false).origin("7420331049347593172").done();
-    b.alias("::");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLDFunDef() {

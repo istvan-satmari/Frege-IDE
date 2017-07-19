@@ -366,6 +366,7 @@
     <property role="3GE5qa" value="Definitions.Expressions" />
     <property role="TrG5h" value="Lambda" />
     <property role="34LRSv" value="\" />
+    <property role="R4oN_" value="Lambda function expression." />
     <ref role="1TJDcQ" node="5ZITH0PGXRI" resolve="TopExpression" />
     <node concept="1TJgyj" id="5E$XTHV3XUu" role="1TKVEi">
       <property role="IQ2ns" value="6531617606750690974" />
@@ -474,6 +475,8 @@
     <property role="EcuMT" value="574920793184786747" />
     <property role="3GE5qa" value="Definitions.Expressions" />
     <property role="TrG5h" value="Case" />
+    <property role="34LRSv" value="case" />
+    <property role="R4oN_" value="Case expression." />
     <ref role="1TJDcQ" node="5ZITH0PGXRI" resolve="TopExpression" />
     <node concept="1TJgyj" id="5ZITH0PGZxL" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988863089" />
@@ -509,6 +512,7 @@
     <property role="3GE5qa" value="Definitions.Expressions" />
     <property role="TrG5h" value="IfThenElse" />
     <property role="34LRSv" value="if" />
+    <property role="R4oN_" value="If expression." />
     <ref role="1TJDcQ" node="5ZITH0PGXRI" resolve="TopExpression" />
     <node concept="1TJgyj" id="5ZITH0PGZwj" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988862995" />
@@ -537,6 +541,7 @@
     <property role="3GE5qa" value="Definitions.Expressions" />
     <property role="TrG5h" value="Let" />
     <property role="34LRSv" value="let" />
+    <property role="R4oN_" value="Let expression." />
     <ref role="1TJDcQ" node="5ZITH0PGXRI" resolve="TopExpression" />
     <node concept="1TJgyj" id="5ZITH0PGZzW" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988863228" />
@@ -1619,7 +1624,7 @@
     <property role="EcuMT" value="7420331049347575265" />
     <property role="3GE5qa" value="Definitions.Expressions.Let" />
     <property role="TrG5h" value="LDFunDef" />
-    <property role="R4oN_" value="Function definition" />
+    <property role="R4oN_" value="Function definition." />
     <ref role="1TJDcQ" node="6rUjWpoauRy" resolve="LetDefinition" />
     <node concept="1TJgyj" id="6rUjWpoauR_" role="1TKVEi">
       <property role="IQ2ns" value="7420331049347575269" />
@@ -1641,8 +1646,7 @@
     <property role="EcuMT" value="7420331049347593171" />
     <property role="3GE5qa" value="Definitions.Expressions.Let" />
     <property role="TrG5h" value="LDAnnotation" />
-    <property role="34LRSv" value="::" />
-    <property role="R4oN_" value="Annotation" />
+    <property role="R4oN_" value="Annotation." />
     <ref role="1TJDcQ" node="6rUjWpoauRy" resolve="LetDefinition" />
     <node concept="1TJgyj" id="6rUjWpoazfk" role="1TKVEi">
       <property role="IQ2ns" value="7420331049347593172" />
@@ -1686,6 +1690,7 @@
     <property role="3GE5qa" value="Definitions.Expressions.Lambda" />
     <property role="TrG5h" value="LPExpression" />
     <property role="34LRSv" value="-&gt;" />
+    <property role="R4oN_" value="Define the lambda's body." />
     <ref role="1TJDcQ" node="3lPLyUBVjs8" resolve="LambdaPart" />
     <node concept="1TJgyj" id="3lPLyUBVjsa" role="1TKVEi">
       <property role="IQ2ns" value="3852202959973463818" />
@@ -1700,6 +1705,7 @@
     <property role="3GE5qa" value="Definitions.Expressions.Lambda" />
     <property role="TrG5h" value="LPLambda" />
     <property role="34LRSv" value="\" />
+    <property role="R4oN_" value="Declare a new argument." />
     <ref role="1TJDcQ" node="3lPLyUBVjs8" resolve="LambdaPart" />
     <node concept="1TJgyj" id="3lPLyUBVjsq" role="1TKVEi">
       <property role="IQ2ns" value="3852202959973463834" />

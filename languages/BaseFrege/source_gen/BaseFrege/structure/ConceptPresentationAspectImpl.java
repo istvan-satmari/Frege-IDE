@@ -22,7 +22,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Brackets = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_CPExprToExpr = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_CPExprToGuards = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Case = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Case = new ConceptPresentationBuilder().shortDesc("Case expression.").create();
   private final ConceptPresentation props_CasePart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_CharValue = new ConceptPresentationBuilder().shortDesc("Character literal.").create();
   private final ConceptPresentation props_Class = new ConceptPresentationBuilder().shortDesc("Define a new class.").create();
@@ -61,7 +61,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_IICMOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IICMVarid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IICMember = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IfThenElse = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_IfThenElse = new ConceptPresentationBuilder().shortDesc("If expression.").create();
   private final ConceptPresentation props_Import = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportAs = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportHiding = new ConceptPresentationBuilder().create();
@@ -83,13 +83,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_LCQGuard = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LCQLet = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LCQualifier = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LDAnnotation = new ConceptPresentationBuilder().shortDesc("Annotation").create();
-  private final ConceptPresentation props_LDFunDef = new ConceptPresentationBuilder().shortDesc("Function definition").create();
-  private final ConceptPresentation props_LPExpression = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LPLambda = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Lambda = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_LDAnnotation = new ConceptPresentationBuilder().shortDesc("Annotation.").create();
+  private final ConceptPresentation props_LDFunDef = new ConceptPresentationBuilder().shortDesc("Function definition.").create();
+  private final ConceptPresentation props_LPExpression = new ConceptPresentationBuilder().shortDesc("Define the lambda's body.").create();
+  private final ConceptPresentation props_LPLambda = new ConceptPresentationBuilder().shortDesc("Declare a new argument.").create();
+  private final ConceptPresentation props_Lambda = new ConceptPresentationBuilder().shortDesc("Lambda function expression.").create();
   private final ConceptPresentation props_LambdaPart = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Let = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Let = new ConceptPresentationBuilder().shortDesc("Let expression.").create();
   private final ConceptPresentation props_LetDefinition = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LetDefinitions = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LineComment = new ConceptPresentationBuilder().shortDesc("Line comment.").create();
