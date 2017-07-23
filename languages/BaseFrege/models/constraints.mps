@@ -62,7 +62,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="66KGcnxLQM">
-    <property role="3GE5qa" value="Definitions.Expressions.Terms.References" />
+    <property role="3GE5qa" value="Definitions.Names" />
     <ref role="1M2myG" to="sc0n:7Cxf1w4Aony" resolve="NodeVARID" />
     <node concept="EnEH3" id="66KGcnxLQN" role="1MhHOB">
       <ref role="EomxK" to="sc0n:7Cxf1w4AonM" resolve="value" />

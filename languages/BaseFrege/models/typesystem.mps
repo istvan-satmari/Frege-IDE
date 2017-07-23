@@ -550,7 +550,7 @@
   </node>
   <node concept="18kY7G" id="cLUB_1Yf_w">
     <property role="TrG5h" value="check_NodeOperator" />
-    <property role="3GE5qa" value="Definitions.Expressions.Terms" />
+    <property role="3GE5qa" value="Definitions.Names" />
     <node concept="3clFbS" id="cLUB_1Yf_x" role="18ibNy">
       <node concept="3SKdUt" id="cLUB_1Yf_E" role="3cqZAp">
         <node concept="3SKdUq" id="cLUB_1Yf_G" role="3SKWNk">
