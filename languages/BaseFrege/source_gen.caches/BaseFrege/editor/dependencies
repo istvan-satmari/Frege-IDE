@@ -191,6 +191,16 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
+  <dependency className="BaseFrege.editor.ArgumentOperator_SubstituteMenu" file="ArgumentOperator_SubstituteMenu.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
+  </dependency>
   <dependency className="BaseFrege.editor.ArgumentVARID_Editor" file="ArgumentVARID_Editor.java">
     <classNode dependClassName="BaseFrege.editor.ArgumentVARID_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
@@ -443,9 +453,12 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="BaseFrege.editor.Brackets_EditorBuilder_a" file="Brackets_EditorBuilder_a.java">
+    <classNode dependClassName="BaseFrege.editor.Common_StyleSheet.PlainStyleClass" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo" />
@@ -456,6 +469,7 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
@@ -994,6 +1008,7 @@
     <classNode dependClassName="BaseFrege.editor.Annotation_Editor" />
     <classNode dependClassName="BaseFrege.editor.Annotation_SubstituteMenu" />
     <classNode dependClassName="BaseFrege.editor.ArgumentOperator_Editor" />
+    <classNode dependClassName="BaseFrege.editor.ArgumentOperator_SubstituteMenu" />
     <classNode dependClassName="BaseFrege.editor.ArgumentVARID_Editor" />
     <classNode dependClassName="BaseFrege.editor.BCContent_SubstituteMenu" />
     <classNode dependClassName="BaseFrege.editor.BCLine_Editor" />
@@ -1084,8 +1099,10 @@
     <classNode dependClassName="BaseFrege.editor.Let_Editor" />
     <classNode dependClassName="BaseFrege.editor.LineComment_Editor" />
     <classNode dependClassName="BaseFrege.editor.ListComprehension_Editor" />
+    <classNode dependClassName="BaseFrege.editor.ListComprehension_SubstituteMenu" />
     <classNode dependClassName="BaseFrege.editor.ListEnumeration_Editor" />
     <classNode dependClassName="BaseFrege.editor.ListRange_Editor" />
+    <classNode dependClassName="BaseFrege.editor.ListRange_SubstituteMenu" />
     <classNode dependClassName="BaseFrege.editor.Literal_SubstituteMenu" />
     <classNode dependClassName="BaseFrege.editor.Literal_TransformationMenu" />
     <classNode dependClassName="BaseFrege.editor.MPModule_Editor" />
@@ -1141,8 +1158,8 @@
     <classNode dependClassName="BaseFrege.editor.Simpletype_SubstituteMenu" />
     <classNode dependClassName="BaseFrege.editor.Skeleton_Editor" />
     <classNode dependClassName="BaseFrege.editor.StringValue_Editor" />
-    <classNode dependClassName="BaseFrege.editor.Term_Editor" />
     <classNode dependClassName="BaseFrege.editor.Tuple_Editor" />
+    <classNode dependClassName="BaseFrege.editor.Tuple_SubstituteMenu" />
     <classNode dependClassName="BaseFrege.editor.TypeBrackets_ChangeToTuple" />
     <classNode dependClassName="BaseFrege.editor.TypeBrackets_Editor" />
     <classNode dependClassName="BaseFrege.editor.TypeData_AddArgument" />
@@ -1154,7 +1171,6 @@
     <classNode dependClassName="BaseFrege.editor.TypeVariable_Editor" />
     <classNode dependClassName="BaseFrege.editor.Type_AddTypeVariable" />
     <classNode dependClassName="BaseFrege.editor.Type_Editor" />
-    <classNode dependClassName="BaseFrege.editor.Underscore_Editor" />
     <classNode dependClassName="BaseFrege.editor.WherePart_Editor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -2692,6 +2708,16 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
+  <dependency className="BaseFrege.editor.ListComprehension_SubstituteMenu" file="ListComprehension_SubstituteMenu.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
+  </dependency>
   <dependency className="BaseFrege.editor.ListEnumeration_Editor" file="ListEnumeration_Editor.java">
     <classNode dependClassName="BaseFrege.editor.ListEnumeration_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
@@ -2735,13 +2761,16 @@
   </dependency>
   <dependency className="BaseFrege.editor.ListRange_EditorBuilder_a" file="ListRange_EditorBuilder_a.java">
     <classNode dependClassName="BaseFrege.editor.Common_StyleSheet.PlainStyleClass" />
+    <classNode dependClassName="BaseFrege.editor.Separators_StyleSheet.CommaStyleClass" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeListHandlerElementKeyMap" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo" />
@@ -2760,6 +2789,16 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
+  <dependency className="BaseFrege.editor.ListRange_SubstituteMenu" file="ListRange_SubstituteMenu.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
   <dependency className="BaseFrege.editor.Literal_SubstituteMenu" file="Literal_SubstituteMenu.java">
     <classNode dependClassName="BaseFrege.behavior.DoubleValue__BehaviorDescriptor" />
@@ -4224,24 +4263,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="BaseFrege.editor.Term_Editor" file="Term_Editor.java">
-    <classNode dependClassName="BaseFrege.editor.Term_EditorBuilder_a" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="BaseFrege.editor.Term_EditorBuilder_a" file="Term_EditorBuilder_a.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
-  </dependency>
   <dependency className="BaseFrege.editor.Tuple_Editor" file="Tuple_Editor.java">
     <classNode dependClassName="BaseFrege.editor.Tuple_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
@@ -4250,12 +4271,15 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="BaseFrege.editor.Tuple_EditorBuilder_a" file="Tuple_EditorBuilder_a.java">
+    <classNode dependClassName="BaseFrege.editor.Common_StyleSheet.PlainStyleClass" />
+    <classNode dependClassName="BaseFrege.editor.Separators_StyleSheet.CommaStyleClass" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeListHandlerElementKeyMap" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal" />
@@ -4275,6 +4299,16 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
+  <dependency className="BaseFrege.editor.Tuple_SubstituteMenu" file="Tuple_SubstituteMenu.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
   <dependency className="BaseFrege.editor.TypeBrackets_ChangeToTuple" file="TypeBrackets_ChangeToTuple.java">
     <classNode dependClassName="java.lang.Override" />
@@ -4644,22 +4678,6 @@
     <classNode dependClassName="jetbrains.mps.smodel.language.LanguageRegistry" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
-  </dependency>
-  <dependency className="BaseFrege.editor.Underscore_Editor" file="Underscore_Editor.java">
-    <classNode dependClassName="BaseFrege.editor.Underscore_EditorBuilder_a" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="BaseFrege.editor.Underscore_EditorBuilder_a" file="Underscore_EditorBuilder_a.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>

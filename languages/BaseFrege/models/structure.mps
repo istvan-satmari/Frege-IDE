@@ -256,6 +256,9 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="vUxQDjKXzn" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="4GJJ0fKc80Y" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKX$4">
     <property role="EcuMT" value="574920793184786692" />
@@ -872,6 +875,7 @@
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms" />
     <property role="TrG5h" value="Brackets" />
     <property role="34LRSv" value="(" />
+    <property role="R4oN_" value="Expression inside brackets." />
     <ref role="1TJDcQ" node="vUxQDjKXzH" resolve="Term" />
     <node concept="1TJgyj" id="5E$XTHV3XM8" role="1TKVEi">
       <property role="IQ2ns" value="6531617606750690440" />
@@ -886,7 +890,7 @@
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms.Lists" />
     <property role="TrG5h" value="ListEnumeration" />
     <property role="34LRSv" value="[" />
-    <property role="R4oN_" value="List." />
+    <property role="R4oN_" value="List of items." />
     <ref role="1TJDcQ" node="vUxQDjKX$2" resolve="List" />
     <node concept="1TJgyj" id="5E$XTHV3XO5" role="1TKVEi">
       <property role="IQ2ns" value="6531617606750690565" />
@@ -900,7 +904,7 @@
     <property role="EcuMT" value="6531617606750690612" />
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms.Lists" />
     <property role="TrG5h" value="ListRange" />
-    <property role="34LRSv" value=".." />
+    <property role="R4oN_" value="List defined as a range of items." />
     <ref role="1TJDcQ" node="vUxQDjKX$2" resolve="List" />
     <node concept="1TJgyj" id="5E$XTHV3XOP" role="1TKVEi">
       <property role="IQ2ns" value="6531617606750690613" />
@@ -916,11 +920,15 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="vUxQDjKXzn" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="4GJJ0fKcamJ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5E$XTHV3XP$">
     <property role="EcuMT" value="6531617606750690660" />
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms.Lists" />
     <property role="TrG5h" value="ListComprehension" />
+    <property role="R4oN_" value="List defined via patterns and guards." />
     <ref role="1TJDcQ" node="vUxQDjKX$2" resolve="List" />
     <node concept="1TJgyj" id="5E$XTHV3XQr" role="1TKVEi">
       <property role="IQ2ns" value="6531617606750690715" />
@@ -935,6 +943,9 @@
       <property role="20lbJX" value="1..n" />
       <property role="20kJfa" value="qualifiers" />
       <ref role="20lvS9" node="5E$XTHV3XRl" resolve="LCQualifier" />
+    </node>
+    <node concept="PrWs8" id="4GJJ0fKcamP" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="5E$XTHV3XRl">
@@ -1733,13 +1744,6 @@
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7Cxf1w4AjYB">
-    <property role="EcuMT" value="8800381220712693671" />
-    <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms" />
-    <property role="TrG5h" value="Underscore" />
-    <property role="34LRSv" value="_" />
-    <ref role="1TJDcQ" node="vUxQDjKXzH" resolve="Term" />
-  </node>
   <node concept="Az7Fb" id="7Cxf1w4Aom$">
     <property role="3GE5qa" value="Definitions.Names.Primitives" />
     <property role="TrG5h" value="CONID" />
@@ -1754,7 +1758,6 @@
     <property role="EcuMT" value="8800381220712711590" />
     <property role="3GE5qa" value="Definitions.Names" />
     <property role="TrG5h" value="QCONID" />
-    <ref role="1TJDcQ" node="vUxQDjKXzH" resolve="Term" />
     <node concept="1TJgyj" id="7Cxf1w4Aoo1" role="1TKVEi">
       <property role="IQ2ns" value="8800381220712711681" />
       <property role="20lmBu" value="aggregation" />
@@ -1806,7 +1809,6 @@
     <property role="EcuMT" value="8800381220712753551" />
     <property role="3GE5qa" value="Definitions.Names" />
     <property role="TrG5h" value="QVARID" />
-    <ref role="1TJDcQ" node="vUxQDjKXzH" resolve="Term" />
     <node concept="1TJgyj" id="7Cxf1w4AyAg" role="1TKVEi">
       <property role="IQ2ns" value="8800381220712753552" />
       <property role="20lmBu" value="aggregation" />
@@ -2248,6 +2250,9 @@
       <property role="20kJfa" value="operator" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1NZxxHzeFNo" resolve="NodeOperator" />
+    </node>
+    <node concept="PrWs8" id="4GJJ0fKc70f" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
 </model>

@@ -22,7 +22,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_BinaryExpressions = new ConceptPresentationBuilder().shortDesc("Represents expression constructed from TopExpressions separated by operators.").create();
   private final ConceptPresentation props_BlockComment = new ConceptPresentationBuilder().shortDesc("Multiline nestable comment.").create();
   private final ConceptPresentation props_BooleanValue = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Brackets = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Brackets = new ConceptPresentationBuilder().shortDesc("Expression inside brackets.").create();
   private final ConceptPresentation props_BracketsApplication = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_CPExprToExpr = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_CPExprToGuards = new ConceptPresentationBuilder().create();
@@ -95,9 +95,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_LetDefinitions = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LineComment = new ConceptPresentationBuilder().shortDesc("Line comment.").create();
   private final ConceptPresentation props_List = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ListComprehension = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ListEnumeration = new ConceptPresentationBuilder().shortDesc("List.").create();
-  private final ConceptPresentation props_ListRange = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ListComprehension = new ConceptPresentationBuilder().shortDesc("List defined via patterns and guards.").create();
+  private final ConceptPresentation props_ListEnumeration = new ConceptPresentationBuilder().shortDesc("List of items.").create();
+  private final ConceptPresentation props_ListRange = new ConceptPresentationBuilder().shortDesc("List defined as a range of items.").create();
   private final ConceptPresentation props_Literal = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_MPModule = new ConceptPresentationBuilder().shortDesc("Export a complete module.").create();
   private final ConceptPresentation props_MPSCONID = new ConceptPresentationBuilder().create();
@@ -147,7 +147,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type.").create();
   private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("Type of a tuple.").create();
   private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable.").create();
-  private final ConceptPresentation props_Underscore = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_WherePart = new ConceptPresentationBuilder().create();
 
   @Override
@@ -431,8 +430,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_TypeTuple;
       case LanguageConceptSwitch.TypeVariable:
         return props_TypeVariable;
-      case LanguageConceptSwitch.Underscore:
-        return props_Underscore;
       case LanguageConceptSwitch.WherePart:
         return props_WherePart;
     }
