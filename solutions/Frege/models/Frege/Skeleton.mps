@@ -58,12 +58,19 @@
       <concept id="4565621053812453099" name="BaseFrege.structure.ImportItemQconid" flags="ng" index="2sPnr3">
         <child id="4565621053812453100" name="value" index="2sPnr4" />
       </concept>
+      <concept id="6531617606750690897" name="BaseFrege.structure.LCQGuard" flags="ng" index="xEMBa">
+        <child id="6531617606750690898" name="condition" index="xEMB9" />
+      </concept>
       <concept id="6531617606750690562" name="BaseFrege.structure.ListEnumeration" flags="ng" index="xEMEp">
         <child id="6531617606750690565" name="items" index="xEMEu" />
       </concept>
       <concept id="6531617606750690612" name="BaseFrege.structure.ListRange" flags="ng" index="xEMEJ">
         <child id="6531617606750690615" name="upTo" index="xEMEG" />
         <child id="6531617606750690613" name="items" index="xEMEI" />
+      </concept>
+      <concept id="6531617606750690660" name="BaseFrege.structure.ListComprehension" flags="ng" index="xEMFZ">
+        <child id="6531617606750690715" name="expression" index="xEMC0" />
+        <child id="6531617606750690717" name="qualifiers" index="xEMC6" />
       </concept>
       <concept id="5417755601849709401" name="BaseFrege.structure.BinaryExpressions" flags="ng" index="2V3sXq">
         <child id="5417755601849709402" name="firstTopExpression" index="2V3sXp" />
@@ -1351,7 +1358,47 @@
         </node>
       </node>
     </node>
-    <node concept="14659P" id="1jjumDfoJog" role="1kelZ8" />
+    <node concept="1EnjCU" id="1jjumDfsS8M" role="1kelZ8">
+      <node concept="1kelYX" id="1jjumDfsS8P" role="1EnjJn">
+        <node concept="2V3sXq" id="1jjumDfsS8Q" role="1Enppr">
+          <node concept="xEMFZ" id="1jjumDfwGql" role="2V3sXp">
+            <node concept="xEMBa" id="1jjumDfwGqv" role="xEMC6">
+              <node concept="1kelYX" id="1jjumDfwGqx" role="xEMB9">
+                <node concept="2V3sXq" id="1jjumDfwGqz" role="1Enppr">
+                  <node concept="1kelTz" id="1jjumDfwGqF" role="2V3sXp">
+                    <property role="hTkZB" value="b" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1kelYX" id="1jjumDfvvy0" role="xEMC0">
+              <node concept="2V3sXq" id="1jjumDfvvy1" role="1Enppr">
+                <node concept="1kelTz" id="1jjumDfvvxW" role="2V3sXp">
+                  <property role="hTkZB" value="a" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1rUzOy" id="1jjumDfsS0c" role="2TAmfA">
+        <node concept="2sPgAW" id="1jjumDfsS09" role="1rUzOz">
+          <node concept="1YIbBU" id="1jjumDfsS0a" role="2sPgAX">
+            <property role="1YIbBE" value="ff" />
+          </node>
+          <node concept="2sPgCx" id="1jjumDfsS8G" role="2sPgAZ">
+            <node concept="1YIbBU" id="1jjumDfsS8H" role="2sPgCy">
+              <property role="1YIbBE" value="x" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14659P" id="1jjumDfwFQa" role="1kelZ8" />
+    <node concept="14659P" id="1jjumDfwFYP" role="1kelZ8" />
+    <node concept="14659P" id="1jjumDfwG7x" role="1kelZ8" />
+    <node concept="14659P" id="1jjumDfwGge" role="1kelZ8" />
+    <node concept="14659P" id="1jjumDfsRJj" role="1kelZ8" />
     <node concept="14659P" id="3PT0fU5fFV5" role="1kelZ8" />
     <node concept="1kelTJ" id="6t243n3yRlg" role="1kelZ8">
       <node concept="1YIbAY" id="6t243n3yRlh" role="3i233h">
