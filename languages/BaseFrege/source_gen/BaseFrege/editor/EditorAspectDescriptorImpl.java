@@ -320,6 +320,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
               return Arrays.asList(new TransformationMenu[]{new Expression_AddAnnotation()});
             case 1:
               return Arrays.asList(new TransformationMenu[]{new Expression_BracketsToTuple()});
+            case 2:
+              return Arrays.asList(new TransformationMenu[]{new Expression_ListEnumerationToRange()});
             default:
           }
         }
@@ -541,7 +543,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   private static String[] stringSwitchCases_xbvbvu_a0a0a0b1a4 = new String[]{"BaseFrege.editor.Class_AddClassContext"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0c1a4 = new String[]{"BaseFrege.editor.Data_AddTypeVariable"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0d1a4 = new String[]{"BaseFrege.editor.DataDefinitionPart_AddConstructorArgument"};
-  private static String[] stringSwitchCases_xbvbvu_a0a0a0e1a4 = new String[]{"BaseFrege.editor.Expression_AddAnnotation", "BaseFrege.editor.Expression_BracketsToTuple"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a0e1a4 = new String[]{"BaseFrege.editor.Expression_AddAnnotation", "BaseFrege.editor.Expression_BracketsToTuple", "BaseFrege.editor.Expression_ListEnumerationToRange"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0f1a4 = new String[]{"BaseFrege.editor.FDABracket_TransformWhenInsideBrackets"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0g1a4 = new String[]{"BaseFrege.editor.FullType_AddContext"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0h1a4 = new String[]{"BaseFrege.editor.Import_AddImportAsImportList", "BaseFrege.editor.Import_AddImportList"};
