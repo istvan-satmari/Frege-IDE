@@ -17,22 +17,15 @@
     </breakpoint>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65abf65e-8e03-479e-b0f7-6bf6b438b46f" name="Default" comment="Small improvements to the expression editor">
+    <list default="true" id="65abf65e-8e03-479e-b0f7-6bf6b438b46f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/classes_gen/BaseFrege/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/BaseFrege/classes_gen/BaseFrege/behavior/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/classes_gen/BaseFrege/editor/trace.info" afterPath="$PROJECT_DIR$/languages/BaseFrege/classes_gen/BaseFrege/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/models/behavior.mps" afterPath="$PROJECT_DIR$/languages/BaseFrege/models/behavior.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/models/editor.mps" afterPath="$PROJECT_DIR$/languages/BaseFrege/models/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/behavior/generated" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/behavior/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/editor/dependencies" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/editor/dependencies" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/editor/generated" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/editor/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/generated" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/EditorAspectDescriptorImpl.java" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/EditorAspectDescriptorImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/trace.info" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Frege/models/Frege/Skeleton.mps" afterPath="$PROJECT_DIR$/solutions/Frege/models/Frege/Skeleton.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Frege/source_gen.caches/Frege/Skeleton/generated" afterPath="$PROJECT_DIR$/solutions/Frege/source_gen.caches/Frege/Skeleton/generated" />
     </list>
     <ignored path="Frege IDE.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -49,7 +42,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="5787e2b2-4959-4bc1-b777-c10423e15eaa/r:9a2b7f47-2e78-48cd-ba9b-c132519127f7(TempModule5787e2b2-4959-4bc1-b777-c10423e15eaa/TempModel_760586145026460)">
+            <model ref="f5ecbc4a-2638-417a-a2b4-aade6f4f0c23/r:4781126c-a48d-4229-bc66-7bd03455789e(TempModulef5ecbc4a-2638-417a-a2b4-aade6f4f0c23/TempModel_838096969191082)">
               <persistence version="9" />
               <languages>
                 <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
@@ -83,13 +76,13 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="3kgTAZxwgJN">
-                <node concept="3balQm" id="3kgTAZxwgJO" role="aymYE" />
-                <node concept="2Clz$F" id="3kgTAZxwgJP" role="aymYO">
+              <node concept="aymSD" id="1jjumDfgQ2q">
+                <node concept="3balQm" id="1jjumDfgQ2r" role="aymYE" />
+                <node concept="2Clz$F" id="1jjumDfgQ2s" role="aymYO">
                   <property role="TrG5h" value="CommandHolder" />
                 </node>
-                <node concept="2_V_lH" id="3kgTAZxwgJQ" role="1PhJh3">
-                  <ref role="2_V_lI" node="3kgTAZxwgJP" resolve="CommandHolder" />
+                <node concept="2_V_lH" id="1jjumDfgQ2t" role="1PhJh3">
+                  <ref role="2_V_lI" node="1jjumDfgQ2s" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -120,15 +113,15 @@
         <entry file="mps://node://Frege/Frege.Skeleton/Testing">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="118">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="178">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="140" />
-                    <property name="caretXRelative" value="10" />
+                    <property name="caretX" value="105" />
+                    <property name="caretXRelative" value="40" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_iizcdy_c0" cellNumber="0" isInList="false">
-                      <node node_reference="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/5417755601850352104" />
+                    <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                      <node node_reference="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -137,7 +130,96 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/5417755601850352104" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopExpression" pinned="false" current-in-tab="false">
+        <entry file="mps://node://BaseFrege/BaseFrege.structure/TopExpression">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="545" />
+                    <property name="caretXRelative" value="130" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798252692207" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                      <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258559993" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                      <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258559534" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_x4c5fc_b0" cellNumber="0" isInList="false">
+                      <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258559530" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798252692207" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tuple_RemoveRestItems" pinned="false" current-in-tab="false">
+        <entry file="mps://node://BaseFrege/BaseFrege.editor/Tuple_RemoveRestItems">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="335" />
+                    <property name="caretXRelative" value="210" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/1500676598347853717" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                      <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/1500676598347853737" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -157,51 +239,20 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="165" />
-                    <property name="caretXRelative" value="10" />
+                    <property name="caretX" value="15" />
+                    <property name="caretXRelative" value="0" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_9zto5v_a0" cellNumber="0" isInList="false">
-                      <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384086114411" />
+                    <cellInfo cellId="Constant_ueqr71_d0" cellNumber="0" isInList="false">
+                      <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/1839659371721793623" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorMarkers />
                 <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258811177" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384086114413" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258811187" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798253533789" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_x4c5fc_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258811174" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_x4c5fc_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798253532939" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
+                <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/5417755601850352104" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -209,7 +260,7 @@
                 <restoreAlways />
                 <enabledHints />
               </inspectorMemento>
-              <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384086114398" />
+              <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/1839659371721793623" />
             </state>
           </provider>
         </entry>
@@ -262,7 +313,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/5417755601850352104" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -323,7 +374,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/5417755601850352104" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -384,7 +435,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/5417755601850352104" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -512,6 +563,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -527,106 +579,6 @@
               <option name="myItemId" value="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/structure.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Definitions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Expressions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Definitions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/editor.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Definitions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Expressions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Primary" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Terms" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lists" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/editor.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Definitions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Expressions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Primary" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -663,6 +615,30 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/structure.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Definitions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Expressions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Primary" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Terms" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -671,10 +647,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/structure.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -693,6 +665,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Definitions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Expressions" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -728,11 +704,51 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="f1b490a5-dd82-45c3-b498-54b8cc98db89" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frege" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/editor.mps}" />
+              <option name="myItemId" value="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/structure.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Definitions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Expressions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Primary" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/structure.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -750,7 +766,81 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="f1b490a5-dd82-45c3-b498-54b8cc98db89" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frege" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/solutions/Frege/models/Frege/Skeleton.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/editor.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Definitions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f1b490a5-dd82-45c3-b498-54b8cc98db89" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/structure.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Definitions" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/editor.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -760,25 +850,24 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="90eaf9a4-a968-473c-8aed-fef10c04a5df(BaseFrege)" />
+              <option name="myItemId" value="f1b490a5-dd82-45c3-b498-54b8cc98db89" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/languages/BaseFrege/models/structure.mps}" />
+              <option name="myItemId" value="Frege" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Definitions" />
+              <option name="myItemId" value="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton) in IdeaFile{file://C:/Users/Satmari/Google Drive/Private/In Progress/Frege/Repository/Frege-IDE/solutions/Frege/models/Frege/Skeleton.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="574920793184786647" />
+              <option name="myItemId" value="7440527357469482729" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -810,7 +899,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32401657" sideWeight="0.4921875" order="23" side_tool="false" content_ui="tabs" />
+      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32401657" sideWeight="0.49010417" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24637681" sideWeight="0.6921875" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -818,12 +907,12 @@
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.49789253" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24637681" sideWeight="0.7078125" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24637681" sideWeight="0.709375" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32712215" sideWeight="0.46875" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24637681" sideWeight="0.2921875" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24637681" sideWeight="0.290625" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1092,8 +1181,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Correction of patterns editors regarding IDontSubtittuteByDefault interface&#10;&#10;Even though set, the menu (ctrl+space) still displayed the concepts that implemented the interface.&#10;The commit resolves the issue." />
-    <MESSAGE value="Corrections of patterns editors regarding PList substitutions" />
     <MESSAGE value="Checking rule for same variable names in pattern" />
     <MESSAGE value="Checking rule for presence of at least 1 variable" />
     <MESSAGE value="Checking rule for reserved function names" />
@@ -1117,42 +1204,11 @@
     <MESSAGE value="Lambda expression editor improvements" />
     <MESSAGE value="Expression grammar corrections" />
     <MESSAGE value="Small improvements to the expression editor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small improvements to the expression editor" />
+    <MESSAGE value="Inclusion of transformations to subconcepts of Expression" />
+    <MESSAGE value="Fallback to bracketed expression from tuple" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fallback to bracketed expression from tuple" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://BaseFrege/BaseFrege.editor/null_TransformationMenu" />
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/FullType">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="85" />
-                <property name="caretXRelative" value="70" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453401" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453401" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812453401" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://BaseFrege/BaseFrege.editor/null_TransformationMenu" />
     <entry file="mps://node://BaseFrege/BaseFrege.editor/null_TransformationMenu" />
     <entry file="mps://node://BaseFrege/BaseFrege.structure/StringValue">
@@ -2013,46 +2069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/Tuple">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-15" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_ueqr71_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786691" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786691" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-15" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_ueqr71_a_0" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786691" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786691" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://BaseFrege@transient13/BaseFrege.editor@10_0/Literal_TransformationMenu" />
     <entry file="mps://node://BaseFrege@transient14/BaseFrege.editor@10_0/Literal_TransformationMenu" />
     <entry file="mps://node://BaseFrege@transient15/BaseFrege.editor@10_0/TopExpression_TransformationMenu" />
@@ -2153,38 +2169,6 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/5417755601849709407" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/TopExpression">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="315" />
-                <property name="caretXRelative" value="130" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="name" cellNumber="0" isInList="false">
-                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6912716259988856302" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6912716259988856302" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6912716259988856302" />
         </state>
       </provider>
     </entry>
@@ -2405,7 +2389,7 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/5417755601850352104" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2414,65 +2398,6 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798255931261" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/Term">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="625" />
-                <property name="caretXRelative" value="10" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_zedcwq_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/3823809451839273351" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258808174" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258808184" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_x4c5fc_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258808171" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258808184" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_x4c5fc_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258808171" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/5417755601850352104" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798255925818" />
         </state>
       </provider>
     </entry>
@@ -2523,7 +2448,7 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/5417755601850352104" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2535,18 +2460,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://BaseFrege/BaseFrege.structure/Literal">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/Term">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="165" />
+                <property name="caretX" value="625" />
                 <property name="caretXRelative" value="10" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_9zto5v_a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384086114411" />
+                <cellInfo cellId="Constant_zedcwq_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/3823809451839273351" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2555,38 +2480,34 @@
             <foldable>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258811177" />
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258808174" />
                 </cellIdElement>
               </collapsedElement>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384086114413" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258811187" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798253533789" />
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258808184" />
                 </cellIdElement>
               </collapsedElement>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_x4c5fc_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258811174" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_x4c5fc_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798253532939" />
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258808171" />
                 </cellIdElement>
               </collapsedElement>
             </foldable>
-            <restoreAlways />
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258808184" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_x4c5fc_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258808171" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/5417755601850352104" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2594,22 +2515,22 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384086114398" />
+          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798255925818" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://Frege/Frege.Skeleton/Testing">
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/Literal">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="118">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="140" />
-                <property name="caretXRelative" value="10" />
+                <property name="caretX" value="15" />
+                <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_iizcdy_c0" cellNumber="0" isInList="false">
-                  <node node_reference="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/5417755601850352104" />
+                <cellInfo cellId="Constant_ueqr71_d0" cellNumber="0" isInList="false">
+                  <node node_reference="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/1839659371721793623" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2618,7 +2539,240 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/5417755601850352104" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/1839659371721793623" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/Tuple">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="485" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="empty_emptyCellModel" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/6531617606750672494" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6912716259988856302" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/8562096718746050191" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/PatternFunction">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="310" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_x5m1a6_a0" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384094661269" />
+                </cellInfo>
+              </stackElement>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-310" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_y9czm0_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384094661271" />
+                </cellInfo>
+              </stackElement>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
+                <property name="role" value="statement" />
+                <property name="modelId" value="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)" />
+                <property name="firstNodeId" value="109989384094661271" />
+                <property name="parentNodeId" value="109989384094636663" />
+                <property name="lastNodeId" value="109989384094661688" />
+              </stackElement>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
+                <property name="role" value="statement" />
+                <property name="modelId" value="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)" />
+                <property name="firstNodeId" value="109989384094661271" />
+                <property name="parentNodeId" value="109989384094636663" />
+                <property name="lastNodeId" value="109989384094682851" />
+              </stackElement>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
+                <property name="role" value="statement" />
+                <property name="modelId" value="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)" />
+                <property name="firstNodeId" value="109989384094661271" />
+                <property name="parentNodeId" value="109989384094636663" />
+                <property name="lastNodeId" value="109989384094680856" />
+              </stackElement>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
+                <property name="role" value="statement" />
+                <property name="modelId" value="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)" />
+                <property name="firstNodeId" value="109989384094661271" />
+                <property name="parentNodeId" value="109989384094636663" />
+                <property name="lastNodeId" value="109989384094686416" />
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384094636662" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384094636675" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384094636662" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </inspectorMemento>
+          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384094636660" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.editor/&lt;no name&gt;[CellActionMapDeclaration]">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="335" />
+                <property name="caretXRelative" value="210" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/1500676598347853717" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/1500676598347853737" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://BaseFrege/BaseFrege.structure/TopExpression">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="545" />
+                <property name="caretXRelative" value="130" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798252692207" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258559993" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258559534" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_x4c5fc_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798258559530" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/2920538798252692207" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Frege/Frege.Skeleton/Testing">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="178">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="105" />
+                <property name="caretXRelative" value="40" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                  <node node_reference="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7440527357469485265" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
