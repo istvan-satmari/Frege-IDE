@@ -72,6 +72,9 @@
         <child id="6531617606750690715" name="expression" index="xEMC0" />
         <child id="6531617606750690717" name="qualifiers" index="xEMC6" />
       </concept>
+      <concept id="6531617606750690439" name="BaseFrege.structure.Brackets" flags="ng" index="xEMGs">
+        <child id="6531617606750690440" name="expression" index="xEMGj" />
+      </concept>
       <concept id="5417755601849709401" name="BaseFrege.structure.BinaryExpressions" flags="ng" index="2V3sXq">
         <child id="5417755601849709402" name="firstTopExpression" index="2V3sXp" />
       </concept>
@@ -1332,6 +1335,25 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="1kelYX" id="3omf8CfC2KL" role="xEMEu">
+                    <node concept="2V3sXq" id="3omf8CfC2KM" role="1Enppr">
+                      <node concept="xEMEp" id="3omf8CfC2KE" role="2V3sXp">
+                        <node concept="1kelYX" id="3omf8CfC2L7" role="xEMEu">
+                          <node concept="2V3sXq" id="3omf8CfC2L8" role="1Enppr">
+                            <node concept="xEMGs" id="3omf8CfC2Lf" role="2V3sXp">
+                              <node concept="1kelYX" id="3omf8CfC2Lh" role="xEMGj">
+                                <node concept="2V3sXq" id="3omf8CfC2Lj" role="1Enppr">
+                                  <node concept="1kelTz" id="3omf8CfC2Lr" role="2V3sXp">
+                                    <property role="hTkZB" value="a" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -1394,7 +1416,6 @@
         </node>
       </node>
     </node>
-    <node concept="14659P" id="1jjumDfwFQa" role="1kelZ8" />
     <node concept="14659P" id="1jjumDfwFYP" role="1kelZ8" />
     <node concept="14659P" id="1jjumDfwG7x" role="1kelZ8" />
     <node concept="14659P" id="1jjumDfwGge" role="1kelZ8" />
