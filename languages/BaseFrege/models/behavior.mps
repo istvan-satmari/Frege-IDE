@@ -4220,5 +4220,32 @@
       <node concept="3clFbS" id="6ZRRdP8ZWDf" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="3lI8B75KrVT">
+    <property role="3GE5qa" value="Definitions.Expressions" />
+    <ref role="13h7C2" to="sc0n:4GJJ0fK8Bdp" resolve="BinaryExpressions" />
+    <node concept="13i0hz" id="3lI8B75KrW4" role="13h7CS">
+      <property role="TrG5h" value="getExceptionsForOperators" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="3lI8B75KrW5" role="1B3o_S" />
+      <node concept="_YKpA" id="3lI8B75KuaO" role="3clF45">
+        <node concept="17QB3L" id="3lI8B75Kub0" role="_ZDj9" />
+      </node>
+      <node concept="3clFbS" id="3lI8B75KrW7" role="3clF47">
+        <node concept="3cpWs6" id="3lI8B75Ktqg" role="3cqZAp">
+          <node concept="2ShNRf" id="3lI8B75Ktqh" role="3cqZAk">
+            <node concept="Tc6Ow" id="3lI8B75Ktqi" role="2ShVmc">
+              <node concept="17QB3L" id="3lI8B75Ktqj" role="HW$YZ" />
+              <node concept="Xl_RD" id="3lI8B75Kuh_" role="HW$Y0">
+                <property role="Xl_RC" value="::" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="3lI8B75KrVU" role="13h7CW">
+      <node concept="3clFbS" id="3lI8B75KrVV" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
