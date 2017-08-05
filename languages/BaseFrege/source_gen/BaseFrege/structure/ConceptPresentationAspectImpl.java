@@ -141,11 +141,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_TrueValue = new ConceptPresentationBuilder().shortDesc("True boolean value.").create();
   private final ConceptPresentation props_Tuple = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Type = new ConceptPresentationBuilder().shortDesc("Definition of a type synonym.").create();
-  private final ConceptPresentation props_TypeBrackets = new ConceptPresentationBuilder().shortDesc("Type inside brackets.").create();
   private final ConceptPresentation props_TypeData = new ConceptPresentationBuilder().shortDesc("Represents types and algebraic datatypes.").create();
   private final ConceptPresentation props_TypeFunction = new ConceptPresentationBuilder().shortDesc("Complete type signature of a function.").create();
   private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type.").create();
-  private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("Type of a tuple.").create();
+  private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("Type of a one or several items.").create();
   private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable.").create();
   private final ConceptPresentation props_WherePart = new ConceptPresentationBuilder().create();
 
@@ -418,8 +417,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Tuple;
       case LanguageConceptSwitch.Type:
         return props_Type;
-      case LanguageConceptSwitch.TypeBrackets:
-        return props_TypeBrackets;
       case LanguageConceptSwitch.TypeData:
         return props_TypeData;
       case LanguageConceptSwitch.TypeFunction:

@@ -661,14 +661,7 @@
       <property role="IQ2ns" value="8562096718746085934" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="arguments" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7riFpCdpuBL" resolve="Simpletype" />
-    </node>
-    <node concept="1TJgyj" id="7riFpCdpuCK" role="1TKVEi">
-      <property role="IQ2ns" value="8562096718746085936" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="returnType" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7riFpCdpuBL" resolve="Simpletype" />
     </node>
   </node>
@@ -676,19 +669,13 @@
     <property role="EcuMT" value="8562096718746103417" />
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="TypeTuple" />
-    <property role="R4oN_" value="Type of a tuple." />
+    <property role="R4oN_" value="Type of a one or several items." />
+    <property role="34LRSv" value="(" />
     <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
-    <node concept="1TJgyj" id="3Xsm2yzyj1o" role="1TKVEi">
-      <property role="IQ2ns" value="4565621053812453464" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="first" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7riFpCdpuCH" resolve="TypeFunction" />
-    </node>
     <node concept="1TJgyj" id="7riFpCdpyTU" role="1TKVEi">
       <property role="IQ2ns" value="8562096718746103418" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="rest" />
+      <property role="20kJfa" value="types" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7riFpCdpuCH" resolve="TypeFunction" />
     </node>
@@ -703,7 +690,7 @@
     <node concept="1TJgyj" id="7riFpCdpyUj" role="1TKVEi">
       <property role="IQ2ns" value="8562096718746103443" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="itemsType" />
+      <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7riFpCdpuCH" resolve="TypeFunction" />
     </node>
@@ -1302,21 +1289,6 @@
       <property role="IQ2ns" value="4565621053812453572" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7riFpCdpuCH" resolve="TypeFunction" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3Xsm2yzyj2t">
-    <property role="EcuMT" value="4565621053812453533" />
-    <property role="3GE5qa" value="Definitions.Types" />
-    <property role="TrG5h" value="TypeBrackets" />
-    <property role="34LRSv" value="(" />
-    <property role="R4oN_" value="Type inside brackets." />
-    <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
-    <node concept="1TJgyj" id="3Xsm2yzyj2u" role="1TKVEi">
-      <property role="IQ2ns" value="4565621053812453534" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="bracketedType" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7riFpCdpuCH" resolve="TypeFunction" />
     </node>
