@@ -732,7 +732,7 @@
     <property role="3GE5qa" value="Definitions.FunctionDefinition" />
     <property role="TrG5h" value="FDAssignment" />
     <property role="34LRSv" value="=" />
-    <ref role="1TJDcQ" node="3PT0fU4S3xI" resolve="CompleteFD" />
+    <ref role="1TJDcQ" node="3PT0fU4S3xI" resolve="FDComplete" />
     <node concept="1TJgyj" id="3PT0fU4S6co" role="1TKVEi">
       <property role="IQ2ns" value="4429572801646584600" />
       <property role="20lmBu" value="aggregation" />
@@ -762,7 +762,7 @@
     <property role="3GE5qa" value="Definitions.FunctionDefinition" />
     <property role="TrG5h" value="FDGuards" />
     <property role="34LRSv" value="|" />
-    <ref role="1TJDcQ" node="3PT0fU4S3xI" resolve="CompleteFD" />
+    <ref role="1TJDcQ" node="3PT0fU4S3xI" resolve="FDComplete" />
     <node concept="1TJgyj" id="3PT0fU4S987" role="1TKVEi">
       <property role="IQ2ns" value="4429572801646596615" />
       <property role="20lmBu" value="aggregation" />
@@ -997,7 +997,7 @@
     <property role="3GE5qa" value="Definitions" />
     <property role="TrG5h" value="FunctionDefinition" />
     <property role="34LRSv" value="fundef" />
-    <property role="R4oN_" value="Single function definition pattern." />
+    <property role="R4oN_" value="Single function definition pattern, i.e. this represents an incomplete function definition." />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
@@ -2111,9 +2111,10 @@
   <node concept="1TIwiD" id="3PT0fU4S3xI">
     <property role="EcuMT" value="4429572801646573678" />
     <property role="3GE5qa" value="Definitions.FunctionDefinition" />
-    <property role="TrG5h" value="CompleteFD" />
+    <property role="TrG5h" value="FDComplete" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="Complete function definition." />
     <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
   </node>
   <node concept="1TIwiD" id="6ZRRdP8XeEF">
@@ -2225,6 +2226,104 @@
     </node>
     <node concept="PrWs8" id="4GJJ0fKc70f" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1lrXqCCgm9F">
+    <property role="EcuMT" value="1539093808845775467" />
+    <property role="3GE5qa" value="Definitions.Patterns" />
+    <property role="TrG5h" value="PatternFunctionInGroup" />
+    <property role="R4oN_" value="A derivative of PatternFunction targeted for grouped function definition." />
+    <ref role="1TJDcQ" node="3Xsm2yzyl6i" resolve="Pattern" />
+    <node concept="1TJgyj" id="1lrXqCCgm9N" role="1TKVEi">
+      <property role="IQ2ns" value="1539093808845775475" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
+    </node>
+    <node concept="PrWs8" id="1lrXqCCgm9G" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1lrXqCCgARB">
+    <property role="EcuMT" value="1539093808845843943" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition" />
+    <property role="TrG5h" value="FDGrouped" />
+    <ref role="1TJDcQ" node="3PT0fU4S3xI" resolve="FDComplete" />
+    <node concept="PrWs8" id="1lrXqCCgARC" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="1TJgyj" id="1lrXqCCgAS0" role="1TKVEi">
+      <property role="IQ2ns" value="1539093808845843968" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="commonEntity" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4QVy75p6$CO" resolve="FDGCommonEntity" />
+    </node>
+    <node concept="1TJgyj" id="1lrXqCCgARH" role="1TKVEi">
+      <property role="IQ2ns" value="1539093808845843949" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="matchers" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="3PT0fU4S3xI" resolve="FDComplete" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4QVy75p6yMa">
+    <property role="EcuMT" value="5601220581972913290" />
+    <property role="3GE5qa" value="Definitions.Patterns" />
+    <property role="TrG5h" value="PatternOperatorInGroup" />
+    <property role="R4oN_" value="A derivative of PatternOperator targeted for grouped operator definition." />
+    <ref role="1TJDcQ" node="3Xsm2yzyl6i" resolve="Pattern" />
+    <node concept="1TJgyj" id="4QVy75p6ziR" role="1TKVEi">
+      <property role="IQ2ns" value="5601220581972915383" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="argumentLeft" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
+    </node>
+    <node concept="1TJgyj" id="4QVy75p6ziS" role="1TKVEi">
+      <property role="IQ2ns" value="5601220581972915384" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="argumentRight" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
+    </node>
+    <node concept="PrWs8" id="4QVy75p6ziP" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4QVy75p6$CO">
+    <property role="EcuMT" value="5601220581972920884" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.FDG" />
+    <property role="TrG5h" value="FDGCommonEntity" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4QVy75p6$CP">
+    <property role="EcuMT" value="5601220581972920885" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.FDG" />
+    <property role="TrG5h" value="FDGCEName" />
+    <ref role="1TJDcQ" node="4QVy75p6$CO" resolve="FDGCommonEntity" />
+    <node concept="1TJgyj" id="4QVy75p6$CQ" role="1TKVEi">
+      <property role="IQ2ns" value="5601220581972920886" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="name" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7Cxf1w4Aony" resolve="NodeVARID" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4QVy75p6$E8">
+    <property role="EcuMT" value="5601220581972920968" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.FDG" />
+    <property role="TrG5h" value="FDGCEOperator" />
+    <ref role="1TJDcQ" node="4QVy75p6$CO" resolve="FDGCommonEntity" />
+    <node concept="1TJgyj" id="4QVy75p6$E9" role="1TKVEi">
+      <property role="IQ2ns" value="5601220581972920969" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operator" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="NodeOperator" />
     </node>
   </node>
 </model>

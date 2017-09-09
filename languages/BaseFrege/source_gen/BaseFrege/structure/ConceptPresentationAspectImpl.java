@@ -31,7 +31,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_CharValue = new ConceptPresentationBuilder().shortDesc("Character literal.").create();
   private final ConceptPresentation props_Class = new ConceptPresentationBuilder().shortDesc("Define a new class.").create();
   private final ConceptPresentation props_Comment = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_CompleteFD = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ConstructorApplication = new ConceptPresentationBuilder().shortDesc("Application of a datatype's constructor.").create();
   private final ConceptPresentation props_Context = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ContextPart = new ConceptPresentationBuilder().create();
@@ -48,6 +47,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FDAVarWildcard = new ConceptPresentationBuilder().shortDesc("Non-referentiable variable.").create();
   private final ConceptPresentation props_FDAVariable = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDAssignment = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FDComplete = new ConceptPresentationBuilder().shortDesc("Complete function definition.").create();
+  private final ConceptPresentation props_FDGCEName = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FDGCEOperator = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FDGCommonEntity = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FDGrouped = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGuards = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FOCharacterOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FOSymbolicOperator = new ConceptPresentationBuilder().create();
@@ -56,7 +60,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FixityOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FullType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunctionApplication = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FunctionDefinition = new ConceptPresentationBuilder().shortDesc("Single function definition pattern.").create();
+  private final ConceptPresentation props_FunctionDefinition = new ConceptPresentationBuilder().shortDesc("Single function definition pattern, i.e. this represents an incomplete function definition.").create();
   private final ConceptPresentation props_Guard = new ConceptPresentationBuilder().shortDesc("Adds a new guard.").create();
   private final ConceptPresentation props_IICMConid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IICMOperator = new ConceptPresentationBuilder().create();
@@ -127,7 +131,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_PatternArgument = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PatternArgumentWrapper = new ConceptPresentationBuilder().shortDesc("Wrapper of a simple pattern.").create();
   private final ConceptPresentation props_PatternFunction = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PatternFunctionInGroup = new ConceptPresentationBuilder().shortDesc("A derivative of PatternFunction targeted for grouped function definition.").create();
   private final ConceptPresentation props_PatternOperator = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_PatternOperatorInGroup = new ConceptPresentationBuilder().shortDesc("A derivative of PatternOperator targeted for grouped operator definition.").create();
   private final ConceptPresentation props_PatternWrapper = new ConceptPresentationBuilder().shortDesc("Wrapper of pattern for function definiton.").create();
   private final ConceptPresentation props_PrimaryExpression = new ConceptPresentationBuilder().shortDesc("Represents an expression that is either a function call or may be used as an argument to it.").create();
   private final ConceptPresentation props_QCONID = new ConceptPresentationBuilder().create();
@@ -197,8 +203,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Class;
       case LanguageConceptSwitch.Comment:
         return props_Comment;
-      case LanguageConceptSwitch.CompleteFD:
-        return props_CompleteFD;
       case LanguageConceptSwitch.ConstructorApplication:
         return props_ConstructorApplication;
       case LanguageConceptSwitch.Context:
@@ -231,6 +235,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_FDAVariable;
       case LanguageConceptSwitch.FDAssignment:
         return props_FDAssignment;
+      case LanguageConceptSwitch.FDComplete:
+        return props_FDComplete;
+      case LanguageConceptSwitch.FDGCEName:
+        return props_FDGCEName;
+      case LanguageConceptSwitch.FDGCEOperator:
+        return props_FDGCEOperator;
+      case LanguageConceptSwitch.FDGCommonEntity:
+        return props_FDGCommonEntity;
+      case LanguageConceptSwitch.FDGrouped:
+        return props_FDGrouped;
       case LanguageConceptSwitch.FDGuards:
         return props_FDGuards;
       case LanguageConceptSwitch.FOCharacterOperator:
@@ -389,8 +403,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_PatternArgumentWrapper;
       case LanguageConceptSwitch.PatternFunction:
         return props_PatternFunction;
+      case LanguageConceptSwitch.PatternFunctionInGroup:
+        return props_PatternFunctionInGroup;
       case LanguageConceptSwitch.PatternOperator:
         return props_PatternOperator;
+      case LanguageConceptSwitch.PatternOperatorInGroup:
+        return props_PatternOperatorInGroup;
       case LanguageConceptSwitch.PatternWrapper:
         return props_PatternWrapper;
       case LanguageConceptSwitch.PrimaryExpression:
