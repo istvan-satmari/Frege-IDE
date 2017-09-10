@@ -9914,11 +9914,6 @@
         <node concept="IWgqT" id="3lI8B75DhsG" role="aenpr">
           <node concept="1hCUdq" id="3lI8B75DhsH" role="1hCUd6">
             <node concept="3clFbS" id="3lI8B75DhsI" role="2VODD2">
-              <node concept="3SKdUt" id="3lI8B75DhsJ" role="3cqZAp">
-                <node concept="3SKdUq" id="3lI8B75DhsK" role="3SKWNk">
-                  <property role="3SKdUp" value="Transformation to add operator to binary epxressions, e.g. [1, 2] to [1, 2] ++ [3, 4, 5]" />
-                </node>
-              </node>
               <node concept="3cpWs6" id="3lI8B75DhsL" role="3cqZAp">
                 <node concept="2OqwBi" id="3lI8B75DhsM" role="3cqZAk">
                   <node concept="35c_gC" id="3lI8B75DhsN" role="2Oq$k0">
