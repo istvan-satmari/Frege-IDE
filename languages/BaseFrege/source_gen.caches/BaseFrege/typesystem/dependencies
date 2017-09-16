@@ -69,6 +69,7 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
   <dependency className="BaseFrege.typesystem.check_FDGrouped_NonTypesystemRule" file="check_FDGrouped_NonTypesystemRule.java">
+    <classNode dependClassName="BaseFrege.behavior.PatternWrapper__BehaviorDescriptor" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
