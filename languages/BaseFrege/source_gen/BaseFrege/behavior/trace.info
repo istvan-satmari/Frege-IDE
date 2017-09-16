@@ -1306,7 +1306,7 @@
       <node id="5601220581972699326" at="31,0,32,0" concept="12" trace="CanGetFDGrouped_id4QVy75p5ji2" />
       <node id="5601220581972699326" at="32,0,33,0" concept="12" trace="GetFDGrouped_id4QVy75p411F" />
       <node id="5601220581972699326" at="33,0,34,0" concept="12" trace="GetNodeToSelect_id4QVy75p8CBP" />
-      <node id="5601220581972699326" at="34,0,35,0" concept="12" trace="getNewMatcher_id181lOLSjaQh" />
+      <node id="5601220581972699326" at="34,0,35,0" concept="12" trace="GetNewMatcher_id181lOLSjaQh" />
       <node id="5601220581972699326" at="36,0,37,0" concept="12" trace="BH_METHODS" />
       <node id="5601220581972699629" at="41,89,42,16" concept="9" />
       <node id="5601220581972699615" at="44,111,45,50" concept="9" />
@@ -1356,7 +1356,7 @@
       <node id="5601220581972699326" at="47,0,57,0" concept="13" trace="GetNodeToSelect_id4QVy75p8CBP#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="5601220581972699326" at="105,0,116,0" concept="7" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
       <node id="5601220581972699326" at="90,5,102,5" concept="15" />
-      <node id="5601220581972699326" at="57,0,75,0" concept="13" trace="getNewMatcher_id181lOLSjaQh#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5601220581972699326" at="57,0,75,0" concept="13" trace="GetNewMatcher_id181lOLSjaQh#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="5601220581972699326" at="85,0,104,0" concept="7" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
       <scope id="5601220581972699326" at="38,63,38,63" />
       <scope id="5601220581972699341" at="41,89,42,16" />
