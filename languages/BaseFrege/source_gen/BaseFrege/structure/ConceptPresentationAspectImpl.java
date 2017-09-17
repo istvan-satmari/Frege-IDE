@@ -13,8 +13,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_AIVarid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Annotation = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AnnotationItem = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ArgumentOperator = new ConceptPresentationBuilder().shortDesc("References an operator.").create();
-  private final ConceptPresentation props_ArgumentVARID = new ConceptPresentationBuilder().shortDesc("References either a function or a variable.").create();
   private final ConceptPresentation props_BCContent = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BCLine = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BCNestedComment = new ConceptPresentationBuilder().shortDesc("Nested block comment").create();
@@ -114,6 +112,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_NodeOperator = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for operators.").create();
   private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for functions and variables.").create();
   private final ConceptPresentation props_OperatorApplication = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_OperatorReference = new ConceptPresentationBuilder().shortDesc("References an operator.").create();
   private final ConceptPresentation props_PBracket = new ConceptPresentationBuilder().shortDesc("Pattern in round brackets.").create();
   private final ConceptPresentation props_PConstructor = new ConceptPresentationBuilder().shortDesc("Datatype constructor reference.").create();
   private final ConceptPresentation props_PLEBPatternArgument = new ConceptPresentationBuilder().create();
@@ -125,6 +124,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_PLiteral = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PTuple = new ConceptPresentationBuilder().shortDesc("Tuple pattern.").create();
   private final ConceptPresentation props_PVarName = new ConceptPresentationBuilder().shortDesc("Referentiable variable.").create();
+  private final ConceptPresentation props_PVarOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PVarWildcard = new ConceptPresentationBuilder().shortDesc("Non-referentiable variable.").create();
   private final ConceptPresentation props_PVariable = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Pattern = new ConceptPresentationBuilder().create();
@@ -152,6 +152,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type.").create();
   private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("Type of a one or several items.").create();
   private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable.").create();
+  private final ConceptPresentation props_VariableReference = new ConceptPresentationBuilder().shortDesc("References either a function name or a variable.").create();
   private final ConceptPresentation props_WherePart = new ConceptPresentationBuilder().create();
 
   @Override
@@ -167,10 +168,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Annotation;
       case LanguageConceptSwitch.AnnotationItem:
         return props_AnnotationItem;
-      case LanguageConceptSwitch.ArgumentOperator:
-        return props_ArgumentOperator;
-      case LanguageConceptSwitch.ArgumentVARID:
-        return props_ArgumentVARID;
       case LanguageConceptSwitch.BCContent:
         return props_BCContent;
       case LanguageConceptSwitch.BCLine:
@@ -369,6 +366,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_NodeVARID;
       case LanguageConceptSwitch.OperatorApplication:
         return props_OperatorApplication;
+      case LanguageConceptSwitch.OperatorReference:
+        return props_OperatorReference;
       case LanguageConceptSwitch.PBracket:
         return props_PBracket;
       case LanguageConceptSwitch.PConstructor:
@@ -391,6 +390,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_PTuple;
       case LanguageConceptSwitch.PVarName:
         return props_PVarName;
+      case LanguageConceptSwitch.PVarOperator:
+        return props_PVarOperator;
       case LanguageConceptSwitch.PVarWildcard:
         return props_PVarWildcard;
       case LanguageConceptSwitch.PVariable:
@@ -445,6 +446,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_TypeTuple;
       case LanguageConceptSwitch.TypeVariable:
         return props_TypeVariable;
+      case LanguageConceptSwitch.VariableReference:
+        return props_VariableReference;
       case LanguageConceptSwitch.WherePart:
         return props_WherePart;
     }

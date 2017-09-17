@@ -9,7 +9,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,29,0" name="BaseFrege.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,33,0" name="BaseFrege.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:b23b9986-aa5a-4d28-85ca-904a0fb5801c(BaseFrege.constraints)/109989384086298034">
@@ -43,6 +43,74 @@
       <scope id="109989384086298034" at="21,0,38,0" />
       <unit id="109989384086298034" at="24,148,35,5" name="BaseFrege.constraints.NodeVARID_Constraints$1" />
       <unit id="109989384086298034" at="16,0,39,0" name="BaseFrege.constraints.NodeVARID_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:b23b9986-aa5a-4d28-85ca-904a0fb5801c(BaseFrege.constraints)/2410240425695816045">
+    <file name="OperatorReference_Constraints.java">
+      <node id="2410240425695816045" at="21,42,22,145" concept="6" />
+      <node id="2410240425695816045" at="26,90,27,131" concept="3" />
+      <node id="2410240425695816045" at="34,44,35,24" concept="4" />
+      <node id="2410240425695821673" at="38,128,39,203" concept="4" />
+      <node id="2410240425695816045" at="43,7,44,22" concept="4" />
+      <node id="2410240425695816045" at="21,0,24,0" concept="0" trace="OperatorReference_Constraints#()V" />
+      <node id="2410240425695816045" at="33,0,37,0" concept="2" trace="hasPresentation#()Z" />
+      <node id="2410240425695816045" at="37,0,41,0" concept="2" trace="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
+      <node id="2410240425695816045" at="31,56,41,10" concept="4" />
+      <node id="2410240425695816045" at="29,0,43,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="2410240425695816045" at="27,131,43,7" concept="1" />
+      <node id="2410240425695816045" at="25,0,46,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="2410240425695816045" at="21,42,22,145" />
+      <scope id="2410240425695816045" at="34,44,35,24" />
+      <scope id="5681697064999370336" at="38,128,39,203" />
+      <scope id="2410240425695816045" at="21,0,24,0" />
+      <scope id="2410240425695816045" at="33,0,37,0" />
+      <scope id="2410240425695816045" at="37,0,41,0">
+        <var name="_context" id="2410240425695816045" />
+        <var name="operationContext" id="2410240425695816045" />
+      </scope>
+      <scope id="2410240425695816045" at="31,56,41,10" />
+      <scope id="2410240425695816045" at="29,0,43,0" />
+      <scope id="2410240425695816045" at="26,90,44,22">
+        <var name="references" id="2410240425695816045" />
+      </scope>
+      <scope id="2410240425695816045" at="25,0,46,0" />
+      <unit id="2410240425695816045" at="32,19,41,9" name="BaseFrege.constraints.OperatorReference_Constraints$1$1" />
+      <unit id="2410240425695816045" at="28,151,43,5" name="BaseFrege.constraints.OperatorReference_Constraints$1" />
+      <unit id="2410240425695816045" at="20,0,47,0" name="BaseFrege.constraints.OperatorReference_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:b23b9986-aa5a-4d28-85ca-904a0fb5801c(BaseFrege.constraints)/2410240425696289760">
+    <file name="VariableReference_Constraints.java">
+      <node id="2410240425696289760" at="22,42,23,145" concept="6" />
+      <node id="2410240425696289760" at="27,90,28,131" concept="3" />
+      <node id="2410240425696289760" at="35,44,36,24" concept="4" />
+      <node id="2410240425696289807" at="39,128,40,361" concept="4" />
+      <node id="2410240425696289760" at="44,7,45,22" concept="4" />
+      <node id="2410240425696289760" at="22,0,25,0" concept="0" trace="VariableReference_Constraints#()V" />
+      <node id="2410240425696289760" at="34,0,38,0" concept="2" trace="hasPresentation#()Z" />
+      <node id="2410240425696289760" at="38,0,42,0" concept="2" trace="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
+      <node id="2410240425696289760" at="32,56,42,10" concept="4" />
+      <node id="2410240425696289760" at="30,0,44,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="2410240425696289760" at="28,131,44,7" concept="1" />
+      <node id="2410240425696289760" at="26,0,47,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="2410240425696289760" at="22,42,23,145" />
+      <scope id="2410240425696289760" at="35,44,36,24" />
+      <scope id="2410240425696289806" at="39,128,40,361" />
+      <scope id="2410240425696289760" at="22,0,25,0" />
+      <scope id="2410240425696289760" at="34,0,38,0" />
+      <scope id="2410240425696289760" at="38,0,42,0">
+        <var name="_context" id="2410240425696289760" />
+        <var name="operationContext" id="2410240425696289760" />
+      </scope>
+      <scope id="2410240425696289760" at="32,56,42,10" />
+      <scope id="2410240425696289760" at="30,0,44,0" />
+      <scope id="2410240425696289760" at="27,90,45,22">
+        <var name="references" id="2410240425696289760" />
+      </scope>
+      <scope id="2410240425696289760" at="26,0,47,0" />
+      <unit id="2410240425696289760" at="33,19,42,9" name="BaseFrege.constraints.VariableReference_Constraints$1$1" />
+      <unit id="2410240425696289760" at="29,151,44,5" name="BaseFrege.constraints.VariableReference_Constraints$1" />
+      <unit id="2410240425696289760" at="21,0,48,0" name="BaseFrege.constraints.VariableReference_Constraints" />
     </file>
   </root>
 </debug-info>

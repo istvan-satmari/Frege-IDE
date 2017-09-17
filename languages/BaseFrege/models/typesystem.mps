@@ -42,6 +42,7 @@
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -64,6 +65,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -145,6 +147,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -571,6 +574,36 @@
     <property role="TrG5h" value="check_NodeOperator" />
     <property role="3GE5qa" value="Definitions.Names" />
     <node concept="3clFbS" id="cLUB_1Yf_x" role="18ibNy">
+      <node concept="3SKdUt" id="25MTemGj9Ul" role="3cqZAp">
+        <node concept="3SKdUq" id="25MTemGj9Un" role="3SKWNk">
+          <property role="3SKdUp" value="Check if our operator is not null, otherwise skip the checking rule" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="25MTemGja2C" role="3cqZAp">
+        <node concept="3clFbS" id="25MTemGja2E" role="3clFbx">
+          <node concept="3cpWs6" id="25MTemGjcZg" role="3cqZAp" />
+        </node>
+        <node concept="22lmx$" id="25MTemGmQap" role="3clFbw">
+          <node concept="2OqwBi" id="25MTemGmRer" role="3uHU7w">
+            <node concept="2OqwBi" id="25MTemGmQsp" role="2Oq$k0">
+              <node concept="1YBJjd" id="25MTemGmQgh" role="2Oq$k0">
+                <ref role="1YBMHb" node="cLUB_1Yf_z" resolve="operator" />
+              </node>
+              <node concept="3TrcHB" id="25MTemGmQF7" role="2OqNvi">
+                <ref role="3TsBF5" to="sc0n:5G3QggfmaCL" resolve="value" />
+              </node>
+            </node>
+            <node concept="17RlXB" id="25MTemGmRDU" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="25MTemGjaf_" role="3uHU7B">
+            <node concept="1YBJjd" id="25MTemGja71" role="2Oq$k0">
+              <ref role="1YBMHb" node="cLUB_1Yf_z" resolve="operator" />
+            </node>
+            <node concept="3w_OXm" id="25MTemGjbm9" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="25MTemGlSu5" role="3cqZAp" />
       <node concept="3SKdUt" id="cLUB_1Yf_E" role="3cqZAp">
         <node concept="3SKdUq" id="cLUB_1Yf_G" role="3SKWNk">
           <property role="3SKdUp" value="Reserved operators: ..  :  ::  =  \  |  &lt;-  -&gt;  @  ~  =&gt;" />
@@ -687,18 +720,18 @@
             </node>
           </node>
         </node>
-        <node concept="2OqwBi" id="cLUB_1YuYc" role="3clFbw">
-          <node concept="2OqwBi" id="cLUB_1YufX" role="2Oq$k0">
-            <node concept="1YBJjd" id="cLUB_1Yu7o" role="2Oq$k0">
+        <node concept="2OqwBi" id="25MTemGlEnm" role="3clFbw">
+          <node concept="2OqwBi" id="25MTemGlDEM" role="2Oq$k0">
+            <node concept="1YBJjd" id="25MTemGlDuC" role="2Oq$k0">
               <ref role="1YBMHb" node="cLUB_1Yf_z" resolve="operator" />
             </node>
-            <node concept="3TrcHB" id="cLUB_1YuuB" role="2OqNvi">
+            <node concept="3TrcHB" id="25MTemGlDTy" role="2OqNvi">
               <ref role="3TsBF5" to="sc0n:5G3QggfmaCL" resolve="value" />
             </node>
           </node>
-          <node concept="liA8E" id="cLUB_1YvpB" role="2OqNvi">
+          <node concept="liA8E" id="25MTemGlEMR" role="2OqNvi">
             <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-            <node concept="Xl_RD" id="cLUB_1YvqH" role="37wK5m">
+            <node concept="Xl_RD" id="25MTemGlEO0" role="37wK5m">
               <property role="Xl_RC" value="--" />
             </node>
           </node>
@@ -1185,15 +1218,20 @@
                     <node concept="liA8E" id="50lglqqScKw" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                       <node concept="2OqwBi" id="50lglqqSlLx" role="37wK5m">
-                        <node concept="2OqwBi" id="50lglqqSlbo" role="2Oq$k0">
-                          <node concept="1YBJjd" id="50lglqqSkVU" role="2Oq$k0">
-                            <ref role="1YBMHb" node="50lglqqScJT" resolve="patternFunction" />
+                        <node concept="2OqwBi" id="25MTemGbC_x" role="2Oq$k0">
+                          <node concept="2OqwBi" id="50lglqqSlbo" role="2Oq$k0">
+                            <node concept="1YBJjd" id="50lglqqSkVU" role="2Oq$k0">
+                              <ref role="1YBMHb" node="50lglqqScJT" resolve="patternFunction" />
+                            </node>
+                            <node concept="3TrEf2" id="50lglqqSlpm" role="2OqNvi">
+                              <ref role="3Tt5mk" to="sc0n:3Xsm2yzyl6l" resolve="name" />
+                            </node>
                           </node>
-                          <node concept="3TrEf2" id="50lglqqSlpm" role="2OqNvi">
-                            <ref role="3Tt5mk" to="sc0n:3Xsm2yzyl6l" resolve="name" />
+                          <node concept="3TrEf2" id="25MTemGbD15" role="2OqNvi">
+                            <ref role="3Tt5mk" to="sc0n:3Xsm2yzyl8a" resolve="name" />
                           </node>
                         </node>
-                        <node concept="3TrcHB" id="50lglqqSm1v" role="2OqNvi">
+                        <node concept="3TrcHB" id="25MTemGbDnp" role="2OqNvi">
                           <ref role="3TsBF5" to="sc0n:7Cxf1w4AonM" resolve="value" />
                         </node>
                       </node>
