@@ -266,6 +266,7 @@
   <dependency className="BaseFrege.editor.BinExPart_TransformationMenu" file="BinExPart_TransformationMenu.java">
     <classNode dependClassName="BaseFrege.behavior.BinaryExpressions__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.NodeOperator__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.OperatorReference__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.Skeleton__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Character" />
     <classNode dependClassName="java.lang.Override" />
@@ -4658,6 +4659,7 @@
   <dependency className="BaseFrege.editor.TopExpression_TransformationMenu" file="TopExpression_TransformationMenu.java">
     <classNode dependClassName="BaseFrege.behavior.BinaryExpressions__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.NodeOperator__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.OperatorReference__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.Skeleton__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Character" />
     <classNode dependClassName="java.lang.Override" />
