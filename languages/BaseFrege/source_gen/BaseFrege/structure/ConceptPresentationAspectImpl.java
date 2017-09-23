@@ -64,6 +64,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_IICMOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IICMVarid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IICMember = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_IScopeConstrained = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_IScopeConstrainedNodeOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IfThenElse = new ConceptPresentationBuilder().shortDesc("If expression.").create();
   private final ConceptPresentation props_Import = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportAs = new ConceptPresentationBuilder().create();
@@ -270,6 +272,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_IICMVarid;
       case LanguageConceptSwitch.IICMember:
         return props_IICMember;
+      case LanguageConceptSwitch.IScopeConstrained:
+        return props_IScopeConstrained;
+      case LanguageConceptSwitch.IScopeConstrainedNodeOperator:
+        return props_IScopeConstrainedNodeOperator;
       case LanguageConceptSwitch.IfThenElse:
         return props_IfThenElse;
       case LanguageConceptSwitch.Import:

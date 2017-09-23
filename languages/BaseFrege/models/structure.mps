@@ -24,7 +24,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -1272,6 +1274,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4GJJ0fK9oDn" resolve="OperatorReference" />
     </node>
+    <node concept="PrWs8" id="6j$BkzqWNZd" role="PzmwI">
+      <ref role="PrY4T" node="6j$BkzqWvAQ" resolve="IScopeConstrainedNodeOperator" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyj0p">
     <property role="EcuMT" value="4565621053812453401" />
@@ -1325,6 +1330,9 @@
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4GJJ0fK9oDn" resolve="OperatorReference" />
+    </node>
+    <node concept="PrWs8" id="6j$BkzqWNZ6" role="PzmwI">
+      <ref role="PrY4T" node="6j$BkzqWvAQ" resolve="IScopeConstrainedNodeOperator" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyl6i">
@@ -1711,6 +1719,9 @@
       <property role="20kJfa" value="arguments" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4GJJ0fK8P_O" resolve="PrimaryExpression" />
+    </node>
+    <node concept="PrWs8" id="6j$BkzqWNZi" role="PzmwI">
+      <ref role="PrY4T" node="6j$BkzqWvAQ" resolve="IScopeConstrainedNodeOperator" />
     </node>
     <node concept="PrWs8" id="4GJJ0fK8QuE" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -2157,7 +2168,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="operator" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1NZxxHzeFNo" resolve="NodeOperator" />
+      <ref role="20lvS9" node="4GJJ0fK9oDn" resolve="OperatorReference" />
     </node>
     <node concept="1TJgyj" id="4GJJ0fK8Bdw" role="1TKVEi">
       <property role="IQ2ns" value="5417755601849709408" />
@@ -2165,6 +2176,9 @@
       <property role="20kJfa" value="topExpression" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5ZITH0PGXRI" resolve="TopExpression" />
+    </node>
+    <node concept="PrWs8" id="6j$BkzqWNZb" role="PzmwI">
+      <ref role="PrY4T" node="6j$BkzqWvAQ" resolve="IScopeConstrainedNodeOperator" />
     </node>
   </node>
   <node concept="1TIwiD" id="4GJJ0fK8P_O">
@@ -2201,10 +2215,10 @@
   </node>
   <node concept="1TIwiD" id="4GJJ0fK9oCL">
     <property role="EcuMT" value="5417755601849911857" />
-    <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms.References" />
+    <property role="3GE5qa" value="Definitions.References" />
     <property role="TrG5h" value="VariableReference" />
     <property role="R4oN_" value="References either a function name or a variable." />
-    <ref role="1TJDcQ" node="vUxQDjKXzH" resolve="Term" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="25MTemGdTdT" role="1TKVEi">
       <property role="IQ2ns" value="2410240425684603769" />
       <property role="20lmBu" value="reference" />
@@ -2215,10 +2229,10 @@
   </node>
   <node concept="1TIwiD" id="4GJJ0fK9oDn">
     <property role="EcuMT" value="5417755601849911895" />
-    <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms.References" />
+    <property role="3GE5qa" value="Definitions.References" />
     <property role="TrG5h" value="OperatorReference" />
     <property role="R4oN_" value="References an operator." />
-    <ref role="1TJDcQ" node="vUxQDjKXzH" resolve="Term" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="25MTemGdTex" role="1TKVEi">
       <property role="IQ2ns" value="2410240425684603809" />
       <property role="20lmBu" value="reference" />
@@ -2337,6 +2351,19 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1NZxxHzeFNo" resolve="NodeOperator" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="6j$BkzqWvAQ">
+    <property role="EcuMT" value="7270108634719320502" />
+    <property role="3GE5qa" value="Definitions.References" />
+    <property role="TrG5h" value="IScopeConstrainedNodeOperator" />
+    <node concept="PrWs8" id="6j$BkzqW$J3" role="PrDN$">
+      <ref role="PrY4T" node="6j$BkzqW$Gh" resolve="IScopeConstrained" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6j$BkzqW$Gh">
+    <property role="EcuMT" value="7270108634719341329" />
+    <property role="3GE5qa" value="Interfaces" />
+    <property role="TrG5h" value="IScopeConstrained" />
   </node>
 </model>
 

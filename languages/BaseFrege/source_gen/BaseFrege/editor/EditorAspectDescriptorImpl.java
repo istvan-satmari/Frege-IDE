@@ -346,7 +346,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
         if (true) {
           switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0a0f1a4, menuId.getFqName())) {
             case 0:
-              return Arrays.asList(new TransformationMenu[]{new FDABracket_TransformWhenInsideBrackets()});
+              return Arrays.asList(new TransformationMenu[]{new FDABracket_TransformWhenInsideBracketst()});
             default:
           }
         }
@@ -535,7 +535,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   private static String[] stringSwitchCases_xbvbvu_a0a0a0c1a4 = new String[]{"BaseFrege.editor.Class_AddClassContext"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0d1a4 = new String[]{"BaseFrege.editor.Data_AddTypeVariable"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0e1a4 = new String[]{"BaseFrege.editor.Expression_BracketsToTuple", "BaseFrege.editor.Expression_ListEnumerationToComprehension", "BaseFrege.editor.Expression_ListEnumerationToRange"};
-  private static String[] stringSwitchCases_xbvbvu_a0a0a0f1a4 = new String[]{"BaseFrege.editor.FDABracket_TransformWhenInsideBrackets"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a0f1a4 = new String[]{"BaseFrege.editor.FDABracket_TransformWhenInsideBracketst"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0g1a4 = new String[]{"BaseFrege.editor.Import_AddImportAsImportList", "BaseFrege.editor.Import_AddImportList"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0h1a4 = new String[]{"BaseFrege.editor.Module_AddExportedParts"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0i1a4 = new String[]{"BaseFrege.editor.PatternArgument_AddFunctionArgument", "BaseFrege.editor.PatternArgument_FunctionTransformation", "BaseFrege.editor.PatternArgument_OperatorTransformations", "BaseFrege.editor.PatternArgument_PBracketToListOrTuple", "BaseFrege.editor.PatternArgument_SetFunctionDefinitionToAssignmentOrGuard"};
