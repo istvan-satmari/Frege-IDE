@@ -7040,12 +7040,9 @@
       </node>
     </node>
   </node>
-  <node concept="13h7C7" id="6j$BkzqXTsz">
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
-    <ref role="13h7C2" to="sc0n:5fWvJRHV8Az" resolve="OperatorApplication" />
-    <node concept="13hLZK" id="6j$BkzqXTs$" role="13h7CW">
-      <node concept="3clFbS" id="6j$BkzqXTs_" role="2VODD2" />
-    </node>
+  <node concept="13h7C7" id="3xAZ$1A6m$a">
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.References" />
+    <ref role="13h7C2" to="sc0n:3xAZ$1A6myr" resolve="PEOperatorReference" />
     <node concept="13i0hz" id="6j$BkzqXTt6" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
@@ -7060,8 +7057,8 @@
         </node>
         <node concept="3cpWs6" id="1Q7PHwq3YO2" role="3cqZAp">
           <node concept="2YIFZM" id="1Q7PHwq3YO3" role="3cqZAk">
-            <ref role="37wK5l" to="o8zo:6t3ylNOzI9Y" resolve="forNamedElements" />
             <ref role="1Pybhc" to="o8zo:7ipADkTevLm" resolve="SimpleRoleScope" />
+            <ref role="37wK5l" to="o8zo:6t3ylNOzI9Y" resolve="forNamedElements" />
             <node concept="2OqwBi" id="1Q7PHwq3YO4" role="37wK5m">
               <node concept="13iPFW" id="1Q7PHwq3YO5" role="2Oq$k0" />
               <node concept="2Xjw5R" id="1Q7PHwq3YO6" role="2OqNvi">
@@ -7082,6 +7079,9 @@
       <node concept="3uibUv" id="6j$BkzqXTtb" role="3clF45">
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
       </node>
+    </node>
+    <node concept="13hLZK" id="3xAZ$1A6m$b" role="13h7CW">
+      <node concept="3clFbS" id="3xAZ$1A6m$c" role="2VODD2" />
     </node>
   </node>
 </model>

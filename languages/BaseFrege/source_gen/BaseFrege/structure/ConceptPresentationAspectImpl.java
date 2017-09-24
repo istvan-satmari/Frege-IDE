@@ -59,6 +59,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FullType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunctionApplication = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunctionDefinition = new ConceptPresentationBuilder().shortDesc("Single function definition pattern, i.e. this represents an incomplete function definition.").create();
+  private final ConceptPresentation props_GenericApplication = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Guard = new ConceptPresentationBuilder().shortDesc("Adds a new guard.").create();
   private final ConceptPresentation props_IICMConid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IICMOperator = new ConceptPresentationBuilder().create();
@@ -117,6 +118,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_OperatorReference = new ConceptPresentationBuilder().shortDesc("References an operator.").create();
   private final ConceptPresentation props_PBracket = new ConceptPresentationBuilder().shortDesc("Pattern in round brackets.").create();
   private final ConceptPresentation props_PConstructor = new ConceptPresentationBuilder().shortDesc("Datatype constructor reference.").create();
+  private final ConceptPresentation props_PEOperatorReference = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PLEBPatternArgument = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PLEBPlaceholder = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PList = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
@@ -262,6 +264,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_FunctionApplication;
       case LanguageConceptSwitch.FunctionDefinition:
         return props_FunctionDefinition;
+      case LanguageConceptSwitch.GenericApplication:
+        return props_GenericApplication;
       case LanguageConceptSwitch.Guard:
         return props_Guard;
       case LanguageConceptSwitch.IICMConid:
@@ -378,6 +382,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_PBracket;
       case LanguageConceptSwitch.PConstructor:
         return props_PConstructor;
+      case LanguageConceptSwitch.PEOperatorReference:
+        return props_PEOperatorReference;
       case LanguageConceptSwitch.PLEBPatternArgument:
         return props_PLEBPatternArgument;
       case LanguageConceptSwitch.PLEBPlaceholder:
