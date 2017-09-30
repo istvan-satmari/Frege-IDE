@@ -6308,57 +6308,59 @@
   </root>
   <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/3850052603491672410">
     <file name="BinaryExpressions_RemoveFirstTopExpression.java">
-      <node id="3850052603491672410" at="19,95,20,152" concept="3" />
-      <node id="3850052603491672410" at="20,152,21,158" concept="3" />
-      <node id="3850052603491672410" at="24,0,25,0" concept="4" trace="myNode" />
-      <node id="3850052603491672410" at="25,74,26,25" concept="3" />
-      <node id="3850052603491672410" at="28,40,29,76" concept="9" />
-      <node id="3850052603491672410" at="31,54,32,56" concept="3" />
-      <node id="3850052603491695886" at="34,75,35,93" concept="10" />
-      <node id="2410240425682806792" at="36,221,37,573" concept="3" />
-      <node id="2410240425682278860" at="37,573,38,15" concept="9" />
-      <node id="3850052603491678102" at="39,7,40,0" concept="11" />
-      <node id="3850052603491678010" at="40,0,41,237" concept="8" />
-      <node id="3850052603491713991" at="41,237,42,192" concept="3" />
-      <node id="3850052603491748957" at="42,192,43,361" concept="3" />
-      <node id="3850052603491757379" at="43,361,44,401" concept="3" />
+      <node id="3850052603491672410" at="17,95,18,152" concept="3" />
+      <node id="3850052603491672410" at="18,152,19,158" concept="3" />
+      <node id="3850052603491672410" at="22,0,23,0" concept="4" trace="myNode" />
+      <node id="3850052603491672410" at="23,74,24,25" concept="3" />
+      <node id="3850052603491672410" at="26,40,27,76" concept="9" />
+      <node id="3850052603491672410" at="29,54,30,56" concept="3" />
+      <node id="3850052603491678010" at="32,75,33,237" concept="8" />
+      <node id="3850052603491713991" at="33,237,34,192" concept="3" />
+      <node id="3850052603491748957" at="34,192,35,361" concept="3" />
+      <node id="3850052603491757379" at="35,361,36,401" concept="3" />
+      <node id="3850052603491672410" at="39,60,40,66" concept="9" />
+      <node id="3850052603491695886" at="42,81,43,93" concept="10" />
+      <node id="1515513853486633052" at="43,93,44,225" concept="9" />
       <node id="3850052603491672410" at="48,0,49,0" concept="4" trace="myNode" />
       <node id="3850052603491672410" at="49,77,50,25" concept="3" />
       <node id="3850052603491672410" at="52,40,53,76" concept="9" />
       <node id="3850052603491672410" at="55,54,56,56" concept="3" />
-      <node id="3850052603491695886" at="58,75,59,93" concept="10" />
-      <node id="2410240425682806792" at="60,221,61,573" concept="3" />
-      <node id="2410240425682278860" at="61,573,62,15" concept="9" />
-      <node id="3850052603491678102" at="63,7,64,0" concept="11" />
-      <node id="3850052603491678010" at="64,0,65,237" concept="8" />
-      <node id="3850052603491713991" at="65,237,66,192" concept="3" />
-      <node id="3850052603491748957" at="66,192,67,361" concept="3" />
-      <node id="3850052603491757379" at="67,361,68,401" concept="3" />
-      <node id="3850052603491672410" at="25,0,28,0" concept="2" trace="BinaryExpressions_RemoveFirstTopExpression_DELETE#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="3850052603491672410" at="28,0,31,0" concept="7" trace="getDescriptionText#()Ljava/lang/String;" />
-      <node id="3850052603491672410" at="31,0,34,0" concept="7" trace="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="3850052603491678010" at="58,75,59,237" concept="8" />
+      <node id="3850052603491713991" at="59,237,60,192" concept="3" />
+      <node id="3850052603491748957" at="60,192,61,361" concept="3" />
+      <node id="3850052603491757379" at="61,361,62,401" concept="3" />
+      <node id="3850052603491672410" at="65,60,66,66" concept="9" />
+      <node id="3850052603491695886" at="68,81,69,93" concept="10" />
+      <node id="1515513853486633052" at="69,93,70,225" concept="9" />
+      <node id="3850052603491672410" at="23,0,26,0" concept="2" trace="BinaryExpressions_RemoveFirstTopExpression_DELETE#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3850052603491672410" at="26,0,29,0" concept="7" trace="getDescriptionText#()Ljava/lang/String;" />
+      <node id="3850052603491672410" at="29,0,32,0" concept="7" trace="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="3850052603491672410" at="49,0,52,0" concept="2" trace="BinaryExpressions_RemoveFirstTopExpression_BACKSPACE#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3850052603491672410" at="52,0,55,0" concept="7" trace="getDescriptionText#()Ljava/lang/String;" />
       <node id="3850052603491672410" at="55,0,58,0" concept="7" trace="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
-      <node id="3850052603491672410" at="19,0,23,0" concept="12" trace="setCellActions#(Ljetbrains/mps/openapi/editor/cells/EditorCell;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
-      <node id="3850052603491678144" at="35,93,39,7" concept="6" />
-      <node id="3850052603491678144" at="59,93,63,7" concept="6" />
-      <node id="3850052603491672410" at="34,0,46,0" concept="7" trace="execute_internal#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="3850052603491672410" at="58,0,70,0" concept="7" trace="execute_internal#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="3850052603491672410" at="25,74,26,25" />
-      <scope id="3850052603491672410" at="28,40,29,76" />
-      <scope id="3850052603491672410" at="31,54,32,56" />
+      <node id="3850052603491672410" at="17,0,21,0" concept="12" trace="setCellActions#(Ljetbrains/mps/openapi/editor/cells/EditorCell;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="3850052603491672410" at="38,0,42,0" concept="7" trace="canExecute#(Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="3850052603491672410" at="42,0,46,0" concept="7" trace="canExecute_internal#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3850052603491672410" at="64,0,68,0" concept="7" trace="canExecute#(Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="3850052603491672410" at="68,0,72,0" concept="7" trace="canExecute_internal#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3850052603491672410" at="32,0,38,0" concept="7" trace="execute_internal#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3850052603491672410" at="58,0,64,0" concept="7" trace="execute_internal#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="3850052603491672410" at="23,74,24,25" />
+      <scope id="3850052603491672410" at="26,40,27,76" />
+      <scope id="3850052603491672410" at="29,54,30,56" />
+      <scope id="3850052603491672410" at="39,60,40,66" />
       <scope id="3850052603491672410" at="49,77,50,25" />
       <scope id="3850052603491672410" at="52,40,53,76" />
       <scope id="3850052603491672410" at="55,54,56,56" />
-      <scope id="3850052603491672410" at="19,95,21,158" />
-      <scope id="3850052603491678146" at="36,221,38,15" />
-      <scope id="3850052603491678146" at="60,221,62,15" />
-      <scope id="3850052603491672410" at="25,0,28,0">
+      <scope id="3850052603491672410" at="65,60,66,66" />
+      <scope id="3850052603491672410" at="17,95,19,158" />
+      <scope id="1515513853486625806" at="42,81,44,225" />
+      <scope id="1515513853486625806" at="68,81,70,225" />
+      <scope id="3850052603491672410" at="23,0,26,0">
         <var name="node" id="3850052603491672410" />
       </scope>
-      <scope id="3850052603491672410" at="28,0,31,0" />
-      <scope id="3850052603491672410" at="31,0,34,0">
+      <scope id="3850052603491672410" at="26,0,29,0" />
+      <scope id="3850052603491672410" at="29,0,32,0">
         <var name="editorContext" id="3850052603491672410" />
       </scope>
       <scope id="3850052603491672410" at="49,0,52,0">
@@ -6368,28 +6370,42 @@
       <scope id="3850052603491672410" at="55,0,58,0">
         <var name="editorContext" id="3850052603491672410" />
       </scope>
-      <scope id="3850052603491672410" at="19,0,23,0">
+      <scope id="3850052603491672410" at="17,0,21,0">
         <var name="context" id="3850052603491672410" />
         <var name="editorCell" id="3850052603491672410" />
         <var name="node" id="3850052603491672410" />
       </scope>
-      <scope id="3850052603491674073" at="34,75,44,401">
+      <scope id="3850052603491674073" at="32,75,36,401">
         <var name="firstPart" id="3850052603491678013" />
       </scope>
-      <scope id="3850052603491674073" at="58,75,68,401">
-        <var name="firstPart" id="3850052603491678013" />
+      <scope id="3850052603491672410" at="38,0,42,0">
+        <var name="editorContext" id="3850052603491672410" />
       </scope>
-      <scope id="3850052603491672410" at="34,0,46,0">
+      <scope id="3850052603491672410" at="42,0,46,0">
         <var name="editorContext" id="3850052603491672410" />
         <var name="node" id="3850052603491672410" />
       </scope>
-      <scope id="3850052603491672410" at="58,0,70,0">
+      <scope id="3850052603491674073" at="58,75,62,401">
+        <var name="firstPart" id="3850052603491678013" />
+      </scope>
+      <scope id="3850052603491672410" at="64,0,68,0">
+        <var name="editorContext" id="3850052603491672410" />
+      </scope>
+      <scope id="3850052603491672410" at="68,0,72,0">
         <var name="editorContext" id="3850052603491672410" />
         <var name="node" id="3850052603491672410" />
       </scope>
-      <unit id="3850052603491672410" at="23,0,47,0" name="BaseFrege.editor.BinaryExpressions_RemoveFirstTopExpression$BinaryExpressions_RemoveFirstTopExpression_DELETE" />
-      <unit id="3850052603491672410" at="47,0,71,0" name="BaseFrege.editor.BinaryExpressions_RemoveFirstTopExpression$BinaryExpressions_RemoveFirstTopExpression_BACKSPACE" />
-      <unit id="3850052603491672410" at="18,0,72,0" name="BaseFrege.editor.BinaryExpressions_RemoveFirstTopExpression" />
+      <scope id="3850052603491672410" at="32,0,38,0">
+        <var name="editorContext" id="3850052603491672410" />
+        <var name="node" id="3850052603491672410" />
+      </scope>
+      <scope id="3850052603491672410" at="58,0,64,0">
+        <var name="editorContext" id="3850052603491672410" />
+        <var name="node" id="3850052603491672410" />
+      </scope>
+      <unit id="3850052603491672410" at="21,0,47,0" name="BaseFrege.editor.BinaryExpressions_RemoveFirstTopExpression$BinaryExpressions_RemoveFirstTopExpression_DELETE" />
+      <unit id="3850052603491672410" at="47,0,73,0" name="BaseFrege.editor.BinaryExpressions_RemoveFirstTopExpression$BinaryExpressions_RemoveFirstTopExpression_BACKSPACE" />
+      <unit id="3850052603491672410" at="16,0,74,0" name="BaseFrege.editor.BinaryExpressions_RemoveFirstTopExpression" />
     </file>
   </root>
   <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/3850052603493367364">

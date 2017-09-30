@@ -11769,51 +11769,6 @@
       <property role="1hHO97" value="Removes the first TopExpression and its associated operator." />
       <node concept="1hAIg9" id="3lI8B75G6vo" role="1hA7z_">
         <node concept="3clFbS" id="3lI8B75G6vp" role="2VODD2">
-          <node concept="3SKdUt" id="3lI8B75GbOe" role="3cqZAp">
-            <node concept="3SKdUq" id="3lI8B75GbOg" role="3SKWNk">
-              <property role="3SKdUp" value="The additional parts need not be empty, otherwise fallback to the default behaviour" />
-            </node>
-          </node>
-          <node concept="3clFbJ" id="3lI8B75G7v0" role="3cqZAp">
-            <node concept="3clFbS" id="3lI8B75G7v2" role="3clFbx">
-              <node concept="3clFbF" id="25MTemG72w8" role="3cqZAp">
-                <node concept="37vLTI" id="25MTemG7Xrv" role="3clFbG">
-                  <node concept="2ShNRf" id="25MTemG8Zbp" role="37vLTx">
-                    <node concept="2fJWfE" id="25MTemG8ZjX" role="2ShVmc">
-                      <node concept="3Tqbb2" id="25MTemG8ZjZ" role="3zrR0E">
-                        <ref role="ehGHo" to="sc0n:4GJJ0fK8Bdp" resolve="BinaryExpressions" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="25MTemG7W4z" role="37vLTJ">
-                    <node concept="1PxgMI" id="25MTemG7VW4" role="2Oq$k0">
-                      <node concept="chp4Y" id="25MTemG7VWU" role="3oSUPX">
-                        <ref role="cht4Q" to="sc0n:vUxQDjKXzn" resolve="Expression" />
-                      </node>
-                      <node concept="2OqwBi" id="25MTemG72B2" role="1m5AlR">
-                        <node concept="0IXxy" id="25MTemG72w6" role="2Oq$k0" />
-                        <node concept="1mfA1w" id="25MTemG7VsD" role="2OqNvi" />
-                      </node>
-                    </node>
-                    <node concept="3TrEf2" id="25MTemG7WeH" role="2OqNvi">
-                      <ref role="3Tt5mk" to="sc0n:5ZITH0PGR2b" resolve="expression" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3cpWs6" id="25MTemG51Bc" role="3cqZAp" />
-            </node>
-            <node concept="2OqwBi" id="3lI8B75G9tc" role="3clFbw">
-              <node concept="2OqwBi" id="3lI8B75G7Cq" role="2Oq$k0">
-                <node concept="0IXxy" id="3lI8B75G7vQ" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="3lI8B75G7LK" role="2OqNvi">
-                  <ref role="3TtcxE" to="sc0n:4GJJ0fK8Bds" resolve="additionalParts" />
-                </node>
-              </node>
-              <node concept="1v1jN8" id="3lI8B75Gb6H" role="2OqNvi" />
-            </node>
-          </node>
-          <node concept="3clFbH" id="3lI8B75G7um" role="3cqZAp" />
           <node concept="3cpWs8" id="3lI8B75G7sU" role="3cqZAp">
             <node concept="3cpWsn" id="3lI8B75G7sX" role="3cpWs9">
               <property role="TrG5h" value="firstPart" />
@@ -11886,6 +11841,26 @@
                   <property role="3cmrfH" value="0" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="jK8Ss" id="1k8bX7Tgfgd" role="jK8aL">
+        <node concept="3clFbS" id="1k8bX7Tgfge" role="2VODD2">
+          <node concept="3SKdUt" id="3lI8B75GbOe" role="3cqZAp">
+            <node concept="3SKdUq" id="3lI8B75GbOg" role="3SKWNk">
+              <property role="3SKdUp" value="The additional parts need not be empty, otherwise fallback to the default behaviour" />
+            </node>
+          </node>
+          <node concept="3cpWs6" id="1k8bX7Tgh1s" role="3cqZAp">
+            <node concept="2OqwBi" id="1k8bX7TgfyL" role="3cqZAk">
+              <node concept="2OqwBi" id="1k8bX7TgfyM" role="2Oq$k0">
+                <node concept="3Tsc0h" id="1k8bX7TgfyO" role="2OqNvi">
+                  <ref role="3TtcxE" to="sc0n:4GJJ0fK8Bds" resolve="additionalParts" />
+                </node>
+                <node concept="0IXxy" id="1k8bX7TggHP" role="2Oq$k0" />
+              </node>
+              <node concept="3GX2aA" id="1k8bX7ThA6J" role="2OqNvi" />
             </node>
           </node>
         </node>
