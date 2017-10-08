@@ -32,6 +32,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ConstructorApplication = new ConceptPresentationBuilder().shortDesc("Application of a datatype's constructor.").create();
   private final ConceptPresentation props_Context = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ContextPart = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_DSScopeProvider = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Data = new ConceptPresentationBuilder().shortDesc("Define a new algebraic datatype.").create();
   private final ConceptPresentation props_DataDefinitionPart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Definition = new ConceptPresentationBuilder().create();
@@ -65,8 +66,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_IICMOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IICMVarid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IICMember = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IScopeConstrained = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IScopeConstrainedNodeOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IfThenElse = new ConceptPresentationBuilder().shortDesc("If expression.").create();
   private final ConceptPresentation props_Import = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportAs = new ConceptPresentationBuilder().create();
@@ -210,6 +209,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Context;
       case LanguageConceptSwitch.ContextPart:
         return props_ContextPart;
+      case LanguageConceptSwitch.DSScopeProvider:
+        return props_DSScopeProvider;
       case LanguageConceptSwitch.Data:
         return props_Data;
       case LanguageConceptSwitch.DataDefinitionPart:
@@ -276,10 +277,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_IICMVarid;
       case LanguageConceptSwitch.IICMember:
         return props_IICMember;
-      case LanguageConceptSwitch.IScopeConstrained:
-        return props_IScopeConstrained;
-      case LanguageConceptSwitch.IScopeConstrainedNodeOperator:
-        return props_IScopeConstrainedNodeOperator;
       case LanguageConceptSwitch.IfThenElse:
         return props_IfThenElse;
       case LanguageConceptSwitch.Import:
