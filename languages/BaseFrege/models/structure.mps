@@ -92,8 +92,8 @@
     <node concept="PrWs8" id="6t243n3uJJX" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="PrWs8" id="1OEr8apDGtn" role="PzmwI">
-      <ref role="PrY4T" node="1OEr8apjUvo" resolve="DSScopeProvider" />
+    <node concept="PrWs8" id="5c96$3RGMCI" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKXwK">
@@ -514,8 +514,8 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6rUjWpoauRw" resolve="LetDefinitions" />
     </node>
-    <node concept="PrWs8" id="1OEr8aq96Ng" role="PzmwI">
-      <ref role="PrY4T" node="1OEr8apjUvo" resolve="DSScopeProvider" />
+    <node concept="PrWs8" id="5c96$3RIgFX" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKXAk">
@@ -1342,6 +1342,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5c96$3RKYgj" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyl6j">
     <property role="EcuMT" value="4565621053812461971" />
@@ -1350,6 +1353,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="3Xsm2yzyl6i" resolve="Pattern" />
+    <node concept="PrWs8" id="5c96$3RLQUX" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyl6k">
     <property role="EcuMT" value="4565621053812461972" />
@@ -2024,6 +2030,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3Xsm2yzyl6i" resolve="Pattern" />
     </node>
+    <node concept="PrWs8" id="5c96$3RItAe" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="50lglqqQR7q">
     <property role="EcuMT" value="5770590337766224346" />
@@ -2106,8 +2115,8 @@
     <property role="R5$K2" value="false" />
     <property role="R4oN_" value="Complete function definition." />
     <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
-    <node concept="PrWs8" id="1OEr8apkTDu" role="PzmwI">
-      <ref role="PrY4T" node="1OEr8apjUvo" resolve="DSScopeProvider" />
+    <node concept="PrWs8" id="5c96$3RHY6A" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="6ZRRdP8XeEF">
@@ -2284,8 +2293,8 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1OEr8apkVLW" role="PzmwI">
-      <ref role="PrY4T" node="1OEr8apjUvo" resolve="DSScopeProvider" />
+    <node concept="PrWs8" id="5c96$3RJH6_" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="4QVy75p6$CP">
@@ -2361,11 +2370,11 @@
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
-  <node concept="PlHQZ" id="1OEr8apjUvo">
-    <property role="EcuMT" value="2101611484295440344" />
+  <node concept="PlHQZ" id="5c96$3RFt7P">
+    <property role="EcuMT" value="5983342446274007541" />
     <property role="3GE5qa" value="Interfaces" />
-    <property role="TrG5h" value="DSScopeProvider" />
-    <node concept="PrWs8" id="1OEr8apjUvp" role="PrDN$">
+    <property role="TrG5h" value="DCScopeProvider" />
+    <node concept="PrWs8" id="5c96$3RFt8J" role="PrDN$">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>

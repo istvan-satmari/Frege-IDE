@@ -32,7 +32,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ConstructorApplication = new ConceptPresentationBuilder().shortDesc("Application of a datatype's constructor.").create();
   private final ConceptPresentation props_Context = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ContextPart = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DSScopeProvider = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_DCScopeProvider = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Data = new ConceptPresentationBuilder().shortDesc("Define a new algebraic datatype.").create();
   private final ConceptPresentation props_DataDefinitionPart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Definition = new ConceptPresentationBuilder().create();
@@ -209,8 +209,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Context;
       case LanguageConceptSwitch.ContextPart:
         return props_ContextPart;
-      case LanguageConceptSwitch.DSScopeProvider:
-        return props_DSScopeProvider;
+      case LanguageConceptSwitch.DCScopeProvider:
+        return props_DCScopeProvider;
       case LanguageConceptSwitch.Data:
         return props_Data;
       case LanguageConceptSwitch.DataDefinitionPart:
