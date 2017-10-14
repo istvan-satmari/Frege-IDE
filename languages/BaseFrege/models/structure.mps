@@ -291,7 +291,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1..n" />
       <property role="20kJfa" value="parts" />
-      <ref role="20lvS9" node="62eaOWzc$vg" resolve="DataDefinitionPart" />
+      <ref role="20lvS9" node="62eaOWzc$vg" resolve="DataConstructor" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKX$5">
@@ -1023,7 +1023,7 @@
   <node concept="1TIwiD" id="62eaOWzc$vg">
     <property role="EcuMT" value="6957546093226903504" />
     <property role="3GE5qa" value="Definitions.Data" />
-    <property role="TrG5h" value="DataDefinitionPart" />
+    <property role="TrG5h" value="DataConstructor" />
     <property role="34LRSv" value="|" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="62eaOWzc$vh" role="1TKVEi">
@@ -1353,9 +1353,6 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="3Xsm2yzyl6i" resolve="Pattern" />
-    <node concept="PrWs8" id="5c96$3RLQUX" role="PzmwI">
-      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyl6k">
     <property role="EcuMT" value="4565621053812461972" />
@@ -1457,7 +1454,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="name" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Cxf1w4Aonx" resolve="NodeCONID" />
+      <ref role="20lvS9" node="5c96$3ROPee" resolve="ConstructorReference" />
     </node>
     <node concept="1TJgyj" id="3Xsm2yzyl8r" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462107" />
@@ -2016,6 +2013,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
     </node>
+    <node concept="PrWs8" id="5c96$3RVSxV" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1QLLtx6mZzU">
     <property role="EcuMT" value="2139708830661736698" />
@@ -2376,6 +2376,20 @@
     <property role="TrG5h" value="DCScopeProvider" />
     <node concept="PrWs8" id="5c96$3RFt8J" role="PrDN$">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5c96$3ROPee">
+    <property role="EcuMT" value="5983342446276465550" />
+    <property role="3GE5qa" value="Definitions.References" />
+    <property role="TrG5h" value="ConstructorReference" />
+    <property role="R4oN_" value="References a datatype constructor." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5c96$3ROPy8" role="1TKVEi">
+      <property role="IQ2ns" value="5983342446276466824" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="62eaOWzc$vg" resolve="DataConstructor" />
     </node>
   </node>
 </model>

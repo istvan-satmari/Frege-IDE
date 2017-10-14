@@ -1576,7 +1576,7 @@
   </node>
   <node concept="24kQdi" id="62eaOWzc$vr">
     <property role="3GE5qa" value="Definitions.Data" />
-    <ref role="1XX52x" to="sc0n:62eaOWzc$vg" resolve="DataDefinitionPart" />
+    <ref role="1XX52x" to="sc0n:62eaOWzc$vg" resolve="DataConstructor" />
     <node concept="3EZMnI" id="62eaOWzc$vt" role="2wV5jI">
       <node concept="3F1sOY" id="62eaOWzc$v$" role="3EZMnx">
         <ref role="1NtTu8" to="sc0n:62eaOWzc$vh" resolve="name" />
@@ -12636,6 +12636,24 @@
   <node concept="3p36aQ" id="1Q7PHwqieIM">
     <property role="3GE5qa" value="Definitions.References" />
     <ref role="aqKnT" to="sc0n:4GJJ0fK9oCL" resolve="VariableReference" />
+  </node>
+  <node concept="24kQdi" id="5c96$3ROPyz">
+    <property role="3GE5qa" value="Definitions.References" />
+    <ref role="1XX52x" to="sc0n:5c96$3ROPee" resolve="ConstructorReference" />
+    <node concept="1iCGBv" id="5c96$3RWHSx" role="2wV5jI">
+      <ref role="1NtTu8" to="sc0n:5c96$3ROPy8" resolve="ref" />
+      <node concept="1sVBvm" id="5c96$3RWHSz" role="1sWHZn">
+        <node concept="1iCGBv" id="5c96$3RWHSE" role="2wV5jI">
+          <ref role="1NtTu8" to="sc0n:62eaOWzc$vh" resolve="name" />
+          <node concept="1sVBvm" id="5c96$3RWHSG" role="1sWHZn">
+            <node concept="3F0A7n" id="5c96$3RWHSN" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="sc0n:7Cxf1w4Aonz" resolve="value" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

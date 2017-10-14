@@ -30,11 +30,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Class = new ConceptPresentationBuilder().shortDesc("Define a new class.").create();
   private final ConceptPresentation props_Comment = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ConstructorApplication = new ConceptPresentationBuilder().shortDesc("Application of a datatype's constructor.").create();
+  private final ConceptPresentation props_ConstructorReference = new ConceptPresentationBuilder().shortDesc("References a datatype constructor.").create();
   private final ConceptPresentation props_Context = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ContextPart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DCScopeProvider = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Data = new ConceptPresentationBuilder().shortDesc("Define a new algebraic datatype.").create();
-  private final ConceptPresentation props_DataDefinitionPart = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_DataConstructor = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Definition = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DoubleValue = new ConceptPresentationBuilder().shortDesc("Double value.").create();
   private final ConceptPresentation props_EmptyExpression = new ConceptPresentationBuilder().create();
@@ -205,6 +206,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Comment;
       case LanguageConceptSwitch.ConstructorApplication:
         return props_ConstructorApplication;
+      case LanguageConceptSwitch.ConstructorReference:
+        return props_ConstructorReference;
       case LanguageConceptSwitch.Context:
         return props_Context;
       case LanguageConceptSwitch.ContextPart:
@@ -213,8 +216,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_DCScopeProvider;
       case LanguageConceptSwitch.Data:
         return props_Data;
-      case LanguageConceptSwitch.DataDefinitionPart:
-        return props_DataDefinitionPart;
+      case LanguageConceptSwitch.DataConstructor:
+        return props_DataConstructor;
       case LanguageConceptSwitch.Definition:
         return props_Definition;
       case LanguageConceptSwitch.DoubleValue:

@@ -23,6 +23,7 @@
     <classNode dependClassName="BaseFrege.behavior.BinaryExpressions__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.CharValue__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.DCScopeProvider__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.Data__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.Definition__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.DoubleValue__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.Expression__BehaviorDescriptor" />
@@ -159,6 +160,23 @@
     <classNode dependClassName="jetbrains.mps.scope.CompositeScope" />
     <classNode dependClassName="jetbrains.mps.scope.EmptyScope" />
     <classNode dependClassName="jetbrains.mps.scope.Scope" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Data__BehaviorDescriptor" file="Data__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -446,6 +464,32 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
+  <dependency className="BaseFrege.behavior.FilteredRoleScope" file="FilteredRoleScope.java">
+    <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
+    <classNode dependClassName="jetbrains.mps.scope.SimpleRoleScope" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.scope.Scope" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.FilteredRoleScopePVarName" file="FilteredRoleScopePVarName.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="BaseFrege.behavior.FilteredRoleScope" />
+  </dependency>
   <dependency className="BaseFrege.behavior.IICMOperator__BehaviorDescriptor" file="IICMOperator__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -616,6 +660,7 @@
   </dependency>
   <dependency className="BaseFrege.behavior.PBracket__BehaviorDescriptor" file="PBracket__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.SimpleRoleScopePVarName" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -630,7 +675,11 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.scope.EmptyScope" />
+    <classNode dependClassName="jetbrains.mps.scope.Scope" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -640,6 +689,7 @@
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="BaseFrege.behavior.PConstructor__BehaviorDescriptor" file="PConstructor__BehaviorDescriptor.java">
+    <classNode dependClassName="BaseFrege.behavior.FilteredRoleScopePVarName" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
@@ -657,7 +707,11 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.scope.EmptyScope" />
+    <classNode dependClassName="jetbrains.mps.scope.Scope" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -684,6 +738,7 @@
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="BaseFrege.behavior.PLEBPatternArgument__BehaviorDescriptor" file="PLEBPatternArgument__BehaviorDescriptor.java">
+    <classNode dependClassName="BaseFrege.behavior.FilteredRoleScopePVarName" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
@@ -699,7 +754,11 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.scope.EmptyScope" />
+    <classNode dependClassName="jetbrains.mps.scope.Scope" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -761,6 +820,7 @@
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="BaseFrege.behavior.PListColon__BehaviorDescriptor" file="PListColon__BehaviorDescriptor.java">
+    <classNode dependClassName="BaseFrege.behavior.FilteredRoleScopePVarName" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
@@ -778,7 +838,11 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.scope.EmptyScope" />
+    <classNode dependClassName="jetbrains.mps.scope.Scope" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -788,6 +852,7 @@
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="BaseFrege.behavior.PListVar__BehaviorDescriptor" file="PListVar__BehaviorDescriptor.java">
+    <classNode dependClassName="BaseFrege.behavior.FilteredRoleScopePVarName" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
@@ -803,7 +868,11 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.scope.EmptyScope" />
+    <classNode dependClassName="jetbrains.mps.scope.Scope" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -863,7 +932,9 @@
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="BaseFrege.behavior.PTuple__BehaviorDescriptor" file="PTuple__BehaviorDescriptor.java">
+    <classNode dependClassName="BaseFrege.behavior.FilteredRoleScopePVarName" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.SimpleRoleScopePVarName" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -880,7 +951,12 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.scope.CompositeScope" />
+    <classNode dependClassName="jetbrains.mps.scope.EmptyScope" />
+    <classNode dependClassName="jetbrains.mps.scope.Scope" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -988,6 +1064,7 @@
   </dependency>
   <dependency className="BaseFrege.behavior.PatternFunctionInGroup__BehaviorDescriptor" file="PatternFunctionInGroup__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.DCScopeProvider__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.FilteredRoleScopePVarName" />
     <classNode dependClassName="BaseFrege.behavior.NodeVARID__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Boolean" />
@@ -1008,6 +1085,7 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
@@ -1024,6 +1102,7 @@
   </dependency>
   <dependency className="BaseFrege.behavior.PatternFunction__BehaviorDescriptor" file="PatternFunction__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.DCScopeProvider__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.FilteredRoleScopePVarName" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
@@ -1048,7 +1127,6 @@
     <classNode dependClassName="jetbrains.mps.scope.CompositeScope" />
     <classNode dependClassName="jetbrains.mps.scope.EmptyScope" />
     <classNode dependClassName="jetbrains.mps.scope.Scope" />
-    <classNode dependClassName="jetbrains.mps.scope.SimpleRoleScope" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -1061,6 +1139,7 @@
     <classNode dependClassName="BaseFrege.behavior.DCScopeProvider__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.NodeOperator__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.SimpleRoleScopePVarName" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
@@ -1079,6 +1158,7 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
@@ -1090,12 +1170,15 @@
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="BaseFrege.behavior.PatternOperator__BehaviorDescriptor" file="PatternOperator__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.DCScopeProvider__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.SimpleRoleScopeNodeOperator" />
+    <classNode dependClassName="BaseFrege.behavior.SimpleRoleScopePVarName" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -1115,16 +1198,15 @@
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.scope.CompositeScope" />
     <classNode dependClassName="jetbrains.mps.scope.EmptyScope" />
     <classNode dependClassName="jetbrains.mps.scope.Scope" />
-    <classNode dependClassName="jetbrains.mps.scope.SimpleRoleScope" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
@@ -1210,6 +1292,27 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.SimpleRoleScopeNodeOperator" file="SimpleRoleScopeNodeOperator.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.scope.SimpleRoleScope" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.SimpleRoleScopePVarName" file="SimpleRoleScopePVarName.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.scope.SimpleRoleScope" />
   </dependency>
   <dependency className="BaseFrege.behavior.Skeleton__BehaviorDescriptor" file="Skeleton__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.DCScopeProvider__BehaviorDescriptor" />

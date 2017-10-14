@@ -218,5 +218,54 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5c96$3ROPzg">
+    <property role="3GE5qa" value="Definitions.References" />
+    <ref role="1M2myG" to="sc0n:5c96$3ROPee" resolve="ConstructorReference" />
+    <node concept="1N5Pfh" id="5c96$3ROPQz" role="1Mr941">
+      <ref role="1N5Vy1" to="sc0n:5c96$3ROPy8" resolve="ref" />
+      <node concept="Bn3R3" id="5c96$3ROPQ$" role="Bn3R6">
+        <node concept="3clFbS" id="5c96$3ROPQ_" role="2VODD2">
+          <node concept="3cpWs6" id="5c96$3ROPQA" role="3cqZAp">
+            <node concept="2OqwBi" id="5c96$3RWJ0n" role="3cqZAk">
+              <node concept="2OqwBi" id="5c96$3RWIiR" role="2Oq$k0">
+                <node concept="Bn53e" id="5c96$3ROPQC" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5c96$3RWI$z" role="2OqNvi">
+                  <ref role="3Tt5mk" to="sc0n:62eaOWzc$vh" resolve="name" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="5c96$3RWJln" role="2OqNvi">
+                <ref role="3TsBF5" to="sc0n:7Cxf1w4Aonz" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3dgokm" id="5c96$3ROPQE" role="1N6uqs">
+        <node concept="3clFbS" id="5c96$3ROPQF" role="2VODD2">
+          <node concept="3cpWs6" id="5c96$3ROPQG" role="3cqZAp">
+            <node concept="2OqwBi" id="5c96$3ROPQH" role="3cqZAk">
+              <node concept="2OqwBi" id="5c96$3ROPQI" role="2Oq$k0">
+                <node concept="2rP1CM" id="5c96$3ROPQJ" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="5c96$3ROPQK" role="2OqNvi">
+                  <node concept="1xMEDy" id="5c96$3ROPQL" role="1xVPHs">
+                    <node concept="chp4Y" id="5c96$3ROPQM" role="ri$Ld">
+                      <ref role="cht4Q" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="5c96$3ROPQN" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:52_Geb4QDV$" resolve="getScope" />
+                <node concept="35c_gC" id="5c96$3ROPQO" role="37wK5m">
+                  <ref role="35c_gD" to="sc0n:62eaOWzc$vg" resolve="DataConstructor" />
+                </node>
+                <node concept="2rP1CM" id="5c96$3ROPQP" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

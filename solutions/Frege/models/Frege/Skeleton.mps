@@ -274,7 +274,27 @@
         </node>
       </node>
     </node>
-    <node concept="14659P" id="6t243n3yQwW" role="1kelZ8" />
+    <node concept="1kelTI" id="5c96$3ROPrt" role="1kelZ8">
+      <node concept="1YIbBT" id="5c96$3ROPrv" role="10tqDo">
+        <property role="1YIbBV" value="Temperature" />
+      </node>
+      <node concept="13J6Mv" id="5c96$3ROPrx" role="3i234W">
+        <node concept="1YIbBT" id="5c96$3ROPrz" role="13J6Mu">
+          <property role="1YIbBV" value="Cool" />
+        </node>
+      </node>
+      <node concept="13J6Mv" id="5c96$3ROPy2" role="3i234W">
+        <node concept="1YIbBT" id="5c96$3ROPy3" role="13J6Mu">
+          <property role="1YIbBV" value="Hot" />
+        </node>
+      </node>
+      <node concept="1VHOhI" id="5c96$3ROPxZ" role="13J2EG">
+        <node concept="1YIbBU" id="5c96$3ROPxY" role="2sPmwM">
+          <property role="1YIbBE" value="x" />
+        </node>
+      </node>
+    </node>
+    <node concept="14659P" id="5c96$3ROPl7" role="1kelZ8" />
     <node concept="1EnjCU" id="3PT0fU5dpx$" role="1kelZ8">
       <node concept="1kelYX" id="3PT0fU5dpxB" role="1EnjJn">
         <node concept="2V3sXq" id="4GJJ0fKb$oQ" role="1Enppr">
@@ -1097,7 +1117,7 @@
         </node>
       </node>
       <node concept="2sPhry" id="1OEr8apq19n" role="10tqDW">
-        <node concept="2V2zpk" id="1OEr8apq19o" role="1V1X4E">
+        <node concept="2V2zpk" id="5c96$3RWHRE" role="1V1X4E">
           <ref role="2dhnt4" node="1k8bX7TjcC6" />
         </node>
       </node>
