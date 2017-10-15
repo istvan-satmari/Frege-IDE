@@ -4144,48 +4144,26 @@
               </node>
             </node>
           </node>
-          <node concept="3SKdUt" id="1Q7PHwpMlrT" role="3cqZAp">
-            <node concept="3SKdUq" id="1Q7PHwpMlrV" role="3SKWNk">
-              <property role="3SKdUp" value="TODO: Must be scope-based." />
-            </node>
-          </node>
-          <node concept="3clFbF" id="1Q7PHwpMjkF" role="3cqZAp">
-            <node concept="2OqwBi" id="1Q7PHwpMjkG" role="3clFbG">
-              <node concept="2OqwBi" id="1Q7PHwpMjkH" role="2Oq$k0">
-                <node concept="37vLTw" id="1Q7PHwpMjIO" role="2Oq$k0">
+          <node concept="3clFbH" id="5myFpmLn1ON" role="3cqZAp" />
+          <node concept="3clFbF" id="5myFpmLmY9o" role="3cqZAp">
+            <node concept="2OqwBi" id="5myFpmLmZmo" role="3clFbG">
+              <node concept="2OqwBi" id="5myFpmLmYxg" role="2Oq$k0">
+                <node concept="37vLTw" id="5myFpmLmY9m" role="2Oq$k0">
                   <ref role="3cqZAo" node="4pdWx57O5Go" resolve="ai" />
                 </node>
-                <node concept="3TrEf2" id="1Q7PHwpMjkJ" role="2OqNvi">
+                <node concept="3TrEf2" id="5myFpmLmYVs" role="2OqNvi">
                   <ref role="3Tt5mk" to="sc0n:13DUwHFVzGx" resolve="value" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="1Q7PHwpMjkK" role="2OqNvi">
-                <ref role="37wK5l" to="yq4j:25MTemH2e9Y" resolve="findAndSetReference" />
-                <node concept="2OqwBi" id="1Q7PHwpMjkL" role="37wK5m">
-                  <node concept="2OqwBi" id="1Q7PHwpMjkM" role="2Oq$k0">
-                    <node concept="1yR$tW" id="1Q7PHwpMkgd" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="1Q7PHwpMjkO" role="2OqNvi">
-                      <node concept="1xMEDy" id="1Q7PHwpMjkP" role="1xVPHs">
-                        <node concept="chp4Y" id="1Q7PHwpMjkQ" role="ri$Ld">
-                          <ref role="cht4Q" to="sc0n:vUxQDjKXwJ" resolve="Skeleton" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="1Q7PHwpMjkR" role="2OqNvi">
-                    <ref role="37wK5l" to="yq4j:25MTemH1DtI" resolve="getAllNodes" />
-                    <node concept="35c_gC" id="1Q7PHwpMjkS" role="37wK5m">
-                      <ref role="35c_gD" to="sc0n:1NZxxHzeFNo" resolve="NodeOperator" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="37vLTw" id="1Q7PHwq9CWa" role="37wK5m">
+              <node concept="2qgKlT" id="5myFpmLmZMy" role="2OqNvi">
+                <ref role="37wK5l" to="yq4j:5myFpmLmGp3" resolve="findAndSetReference" />
+                <node concept="1yR$tW" id="5myFpmLn0dK" role="37wK5m" />
+                <node concept="37vLTw" id="5myFpmLn0E0" role="37wK5m">
                   <ref role="3cqZAo" node="4pdWx57OdC1" resolve="patternRest" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="4pdWx57OfEE" role="3cqZAp" />
           <node concept="3cpWs6" id="4pdWx57OfSO" role="3cqZAp">
             <node concept="37vLTw" id="4pdWx57Og2w" role="3cqZAk">
               <ref role="3cqZAo" node="4pdWx57O5Go" resolve="ai" />
@@ -7427,46 +7405,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="3SKdUt" id="1Q7PHwpMiyQ" role="3cqZAp">
-                <node concept="3SKdUq" id="1Q7PHwpMiyS" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: Must be scope-based." />
-                </node>
-              </node>
-              <node concept="3clFbF" id="25MTemH2KnO" role="3cqZAp">
-                <node concept="2OqwBi" id="25MTemH2KnP" role="3clFbG">
-                  <node concept="2OqwBi" id="25MTemH2Lwi" role="2Oq$k0">
-                    <node concept="37vLTw" id="25MTemH2Lio" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7Bxqsr3CrJ2" resolve="operatorToAnnotate" />
-                    </node>
-                    <node concept="3TrEf2" id="25MTemH2LJv" role="2OqNvi">
-                      <ref role="3Tt5mk" to="sc0n:13DUwHFVzGx" resolve="value" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="25MTemH2KnT" role="2OqNvi">
-                    <ref role="37wK5l" to="yq4j:25MTemH2e9Y" resolve="findAndSetReference" />
-                    <node concept="2OqwBi" id="1Q7PHwpMh0F" role="37wK5m">
-                      <node concept="2OqwBi" id="1Q7PHwpMgwJ" role="2Oq$k0">
-                        <node concept="7Obwk" id="1Q7PHwpMgfT" role="2Oq$k0" />
-                        <node concept="2Xjw5R" id="1Q7PHwpMgQi" role="2OqNvi">
-                          <node concept="1xMEDy" id="1Q7PHwpMgQk" role="1xVPHs">
-                            <node concept="chp4Y" id="1Q7PHwpMgSt" role="ri$Ld">
-                              <ref role="cht4Q" to="sc0n:vUxQDjKXwJ" resolve="Skeleton" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="2qgKlT" id="1Q7PHwpMhii" role="2OqNvi">
-                        <ref role="37wK5l" to="yq4j:25MTemH1DtI" resolve="getAllNodes" />
-                        <node concept="35c_gC" id="1Q7PHwpMhmO" role="37wK5m">
-                          <ref role="35c_gD" to="sc0n:1NZxxHzeFNo" resolve="NodeOperator" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="ub8z3" id="25MTemH2MWw" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="7Bxqsr3CrIC" role="3cqZAp" />
+              <node concept="3clFbH" id="5myFpmLndx2" role="3cqZAp" />
               <node concept="3cpWs8" id="7Bxqsr3ClTI" role="3cqZAp">
                 <node concept="3cpWsn" id="7Bxqsr3ClTL" role="3cpWs9">
                   <property role="TrG5h" value="annotation" />
@@ -7511,6 +7450,37 @@
                       <ref role="3cqZAo" node="7Bxqsr3ClTL" resolve="annotation" />
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="5myFpmLndHM" role="3cqZAp" />
+              <node concept="3SKdUt" id="1Q7PHwpMiyQ" role="3cqZAp">
+                <node concept="3SKdUq" id="1Q7PHwpMiyS" role="3SKWNk">
+                  <property role="3SKdUp" value="Set the operator" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="5myFpmLneQb" role="3cqZAp">
+                <node concept="2OqwBi" id="5myFpmLnh0d" role="3clFbG">
+                  <node concept="2OqwBi" id="5myFpmLngdx" role="2Oq$k0">
+                    <node concept="37vLTw" id="5myFpmLnfJt" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7Bxqsr3CrJ2" resolve="operatorToAnnotate" />
+                    </node>
+                    <node concept="3TrEf2" id="5myFpmLngGV" role="2OqNvi">
+                      <ref role="3Tt5mk" to="sc0n:13DUwHFVzGx" resolve="value" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="5myFpmLnhxy" role="2OqNvi">
+                    <ref role="37wK5l" to="yq4j:5myFpmLmGp3" resolve="findAndSetReference" />
+                    <node concept="37vLTw" id="5myFpmLnh_8" role="37wK5m">
+                      <ref role="3cqZAo" node="7Bxqsr3CrJ2" resolve="operatorToAnnotate" />
+                    </node>
+                    <node concept="ub8z3" id="5myFpmLnhI2" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="5myFpmLndIA" role="3cqZAp" />
+              <node concept="3SKdUt" id="5myFpmLnhY2" role="3cqZAp">
+                <node concept="3SKdUq" id="5myFpmLnhY4" role="3SKWNk">
+                  <property role="3SKdUp" value="Set focus" />
                 </node>
               </node>
               <node concept="3clFbF" id="1Q7PHwpP9O0" role="3cqZAp">
@@ -10110,45 +10080,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3SKdUt" id="1Q7PHwq5ErY" role="3cqZAp">
-                <node concept="3SKdUq" id="1Q7PHwq5ErZ" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: Must be scope-based." />
-                </node>
-              </node>
-              <node concept="3clFbF" id="1Q7PHwq5Es0" role="3cqZAp">
-                <node concept="2OqwBi" id="1Q7PHwq5Es1" role="3clFbG">
-                  <node concept="2OqwBi" id="1Q7PHwq5Es2" role="2Oq$k0">
-                    <node concept="37vLTw" id="1Q7PHwq5Es3" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3lI8B75DhsV" resolve="part" />
-                    </node>
-                    <node concept="3TrEf2" id="1Q7PHwq5Es4" role="2OqNvi">
-                      <ref role="3Tt5mk" to="sc0n:4GJJ0fK8Bdy" resolve="operator" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="1Q7PHwq5Es5" role="2OqNvi">
-                    <ref role="37wK5l" to="yq4j:25MTemH2e9Y" resolve="findAndSetReference" />
-                    <node concept="2OqwBi" id="1Q7PHwq5Es6" role="37wK5m">
-                      <node concept="2OqwBi" id="1Q7PHwq5Es7" role="2Oq$k0">
-                        <node concept="7Obwk" id="1Q7PHwq5Es8" role="2Oq$k0" />
-                        <node concept="2Xjw5R" id="1Q7PHwq5Es9" role="2OqNvi">
-                          <node concept="1xMEDy" id="1Q7PHwq5Esa" role="1xVPHs">
-                            <node concept="chp4Y" id="1Q7PHwq5Esb" role="ri$Ld">
-                              <ref role="cht4Q" to="sc0n:vUxQDjKXwJ" resolve="Skeleton" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="2qgKlT" id="1Q7PHwq5Esc" role="2OqNvi">
-                        <ref role="37wK5l" to="yq4j:25MTemH1DtI" resolve="getAllNodes" />
-                        <node concept="35c_gC" id="1Q7PHwq5Esd" role="37wK5m">
-                          <ref role="35c_gD" to="sc0n:1NZxxHzeFNo" resolve="NodeOperator" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="ub8z3" id="1Q7PHwq5Ese" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbH" id="3lI8B75Dht8" role="3cqZAp" />
               <node concept="3cpWs8" id="3lI8B75Dht9" role="3cqZAp">
                 <node concept="3cpWsn" id="3lI8B75Dhta" role="3cpWs9">
@@ -10187,7 +10118,37 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="3lI8B75Dhtp" role="3cqZAp" />
+              <node concept="3clFbH" id="5myFpmLnjsB" role="3cqZAp" />
+              <node concept="3SKdUt" id="1Q7PHwq5ErY" role="3cqZAp">
+                <node concept="3SKdUq" id="1Q7PHwq5ErZ" role="3SKWNk">
+                  <property role="3SKdUp" value="Set the operator" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="5myFpmLnkjp" role="3cqZAp">
+                <node concept="2OqwBi" id="5myFpmLnlpo" role="3clFbG">
+                  <node concept="2OqwBi" id="5myFpmLnkDS" role="2Oq$k0">
+                    <node concept="37vLTw" id="5myFpmLnkjn" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3lI8B75DhsV" resolve="part" />
+                    </node>
+                    <node concept="3TrEf2" id="5myFpmLnl9$" role="2OqNvi">
+                      <ref role="3Tt5mk" to="sc0n:4GJJ0fK8Bdy" resolve="operator" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="5myFpmLnlU_" role="2OqNvi">
+                    <ref role="37wK5l" to="yq4j:5myFpmLmGp3" resolve="findAndSetReference" />
+                    <node concept="37vLTw" id="5myFpmLnlYb" role="37wK5m">
+                      <ref role="3cqZAo" node="3lI8B75DhsV" resolve="part" />
+                    </node>
+                    <node concept="ub8z3" id="5myFpmLnm8o" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="5myFpmLnjUm" role="3cqZAp" />
+              <node concept="3SKdUt" id="5myFpmLnmt9" role="3cqZAp">
+                <node concept="3SKdUq" id="5myFpmLnmtb" role="3SKWNk">
+                  <property role="3SKdUp" value="Set focus" />
+                </node>
+              </node>
               <node concept="3clFbF" id="1Q7PHwq6UT$" role="3cqZAp">
                 <node concept="2OqwBi" id="1Q7PHwq6UT_" role="3clFbG">
                   <node concept="37vLTw" id="1Q7PHwq6UTA" role="2Oq$k0">
@@ -11521,49 +11482,10 @@
                   </node>
                 </node>
               </node>
-              <node concept="3SKdUt" id="1Q7PHwq5AK6" role="3cqZAp">
-                <node concept="3SKdUq" id="1Q7PHwq5AK7" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: Must be scope-based." />
-                </node>
-              </node>
-              <node concept="3clFbF" id="1Q7PHwq5vCS" role="3cqZAp">
-                <node concept="2OqwBi" id="1Q7PHwq5vCT" role="3clFbG">
-                  <node concept="2OqwBi" id="1Q7PHwq5wGm" role="2Oq$k0">
-                    <node concept="37vLTw" id="1Q7PHwq5weQ" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3lI8B75Dlpc" resolve="part" />
-                    </node>
-                    <node concept="3TrEf2" id="1Q7PHwq5x92" role="2OqNvi">
-                      <ref role="3Tt5mk" to="sc0n:4GJJ0fK8Bdy" resolve="operator" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="1Q7PHwq5vCX" role="2OqNvi">
-                    <ref role="37wK5l" to="yq4j:25MTemH2e9Y" resolve="findAndSetReference" />
-                    <node concept="2OqwBi" id="1Q7PHwq5vCY" role="37wK5m">
-                      <node concept="2OqwBi" id="1Q7PHwq5vCZ" role="2Oq$k0">
-                        <node concept="7Obwk" id="1Q7PHwq5zQT" role="2Oq$k0" />
-                        <node concept="2Xjw5R" id="1Q7PHwq5vD1" role="2OqNvi">
-                          <node concept="1xMEDy" id="1Q7PHwq5vD2" role="1xVPHs">
-                            <node concept="chp4Y" id="1Q7PHwq5vD3" role="ri$Ld">
-                              <ref role="cht4Q" to="sc0n:vUxQDjKXwJ" resolve="Skeleton" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="2qgKlT" id="1Q7PHwq5vD4" role="2OqNvi">
-                        <ref role="37wK5l" to="yq4j:25MTemH1DtI" resolve="getAllNodes" />
-                        <node concept="35c_gC" id="1Q7PHwq5vD5" role="37wK5m">
-                          <ref role="35c_gD" to="sc0n:1NZxxHzeFNo" resolve="NodeOperator" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="ub8z3" id="1Q7PHwq5vD6" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbH" id="3lI8B75Dlpp" role="3cqZAp" />
               <node concept="3SKdUt" id="3lI8B75DqS2" role="3cqZAp">
                 <node concept="3SKdUq" id="3lI8B75DqS4" role="3SKWNk">
-                  <property role="3SKdUp" value="Find the BinExPart that is we" />
+                  <property role="3SKdUp" value="Find the BinExPart that is we and insert into the correct place" />
                 </node>
               </node>
               <node concept="3cpWs8" id="3lI8B75Dlpq" role="3cqZAp">
@@ -11663,7 +11585,37 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="1Q7PHwq6LSJ" role="3cqZAp" />
+              <node concept="3clFbH" id="5myFpmLn3Ke" role="3cqZAp" />
+              <node concept="3SKdUt" id="5myFpmLn5Pl" role="3cqZAp">
+                <node concept="3SKdUq" id="5myFpmLn5Pn" role="3SKWNk">
+                  <property role="3SKdUp" value="Set the operator" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="5myFpmLn7Sb" role="3cqZAp">
+                <node concept="2OqwBi" id="5myFpmLn9iH" role="3clFbG">
+                  <node concept="2OqwBi" id="5myFpmLn8tH" role="2Oq$k0">
+                    <node concept="37vLTw" id="5myFpmLn7S9" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3lI8B75Dlpc" resolve="part" />
+                    </node>
+                    <node concept="3TrEf2" id="5myFpmLn92T" role="2OqNvi">
+                      <ref role="3Tt5mk" to="sc0n:4GJJ0fK8Bdy" resolve="operator" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="5myFpmLn9R3" role="2OqNvi">
+                    <ref role="37wK5l" to="yq4j:5myFpmLmGp3" resolve="findAndSetReference" />
+                    <node concept="37vLTw" id="5myFpmLn9UD" role="37wK5m">
+                      <ref role="3cqZAo" node="3lI8B75Dlpc" resolve="part" />
+                    </node>
+                    <node concept="ub8z3" id="5myFpmLnad5" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="5myFpmLn41x" role="3cqZAp" />
+              <node concept="3SKdUt" id="5myFpmLnc4R" role="3cqZAp">
+                <node concept="3SKdUq" id="5myFpmLnc4T" role="3SKWNk">
+                  <property role="3SKdUp" value="Set focus" />
+                </node>
+              </node>
               <node concept="3clFbF" id="3lI8B75DlpF" role="3cqZAp">
                 <node concept="2OqwBi" id="3lI8B75DlpG" role="3clFbG">
                   <node concept="37vLTw" id="3lI8B75DlpH" role="2Oq$k0">
@@ -12503,51 +12455,28 @@
               </node>
             </node>
           </node>
-          <node concept="3SKdUt" id="1Q7PHwq9Fku" role="3cqZAp">
-            <node concept="3SKdUq" id="1Q7PHwq9Fkv" role="3SKWNk">
-              <property role="3SKdUp" value="TODO: Must be scope-based." />
-            </node>
-          </node>
-          <node concept="3clFbF" id="1Q7PHwq9Fkw" role="3cqZAp">
-            <node concept="2OqwBi" id="1Q7PHwq9Fkx" role="3clFbG">
-              <node concept="2OqwBi" id="1Q7PHwq9Fky" role="2Oq$k0">
-                <node concept="2OqwBi" id="evJytSmWuz" role="2Oq$k0">
-                  <node concept="37vLTw" id="1Q7PHwq9Fkz" role="2Oq$k0">
+          <node concept="3clFbF" id="5myFpmLmPRs" role="3cqZAp">
+            <node concept="2OqwBi" id="5myFpmLmScy" role="3clFbG">
+              <node concept="2OqwBi" id="5myFpmLmRiF" role="2Oq$k0">
+                <node concept="2OqwBi" id="5myFpmLmQ7G" role="2Oq$k0">
+                  <node concept="37vLTw" id="5myFpmLmPRq" role="2Oq$k0">
                     <ref role="3cqZAo" node="1Q7PHwq9Fkp" resolve="oa" />
                   </node>
-                  <node concept="3TrEf2" id="evJytSmWZs" role="2OqNvi">
+                  <node concept="3TrEf2" id="5myFpmLmQIx" role="2OqNvi">
                     <ref role="3Tt5mk" to="sc0n:5fWvJRHV8A$" resolve="operator" />
                   </node>
                 </node>
-                <node concept="3TrEf2" id="evJytSmYtm" role="2OqNvi">
+                <node concept="3TrEf2" id="5myFpmLmRJW" role="2OqNvi">
                   <ref role="3Tt5mk" to="sc0n:3xAZ$1A6myL" resolve="operator" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="1Q7PHwq9Fk_" role="2OqNvi">
-                <ref role="37wK5l" to="yq4j:25MTemH2e9Y" resolve="findAndSetReference" />
-                <node concept="2OqwBi" id="1Q7PHwq9FkA" role="37wK5m">
-                  <node concept="2OqwBi" id="1Q7PHwq9FkB" role="2Oq$k0">
-                    <node concept="1yR$tW" id="1Q7PHwq9FkC" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="1Q7PHwq9FkD" role="2OqNvi">
-                      <node concept="1xMEDy" id="1Q7PHwq9FkE" role="1xVPHs">
-                        <node concept="chp4Y" id="1Q7PHwq9FkF" role="ri$Ld">
-                          <ref role="cht4Q" to="sc0n:vUxQDjKXwJ" resolve="Skeleton" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="1Q7PHwq9FkG" role="2OqNvi">
-                    <ref role="37wK5l" to="yq4j:25MTemH1DtI" resolve="getAllNodes" />
-                    <node concept="35c_gC" id="1Q7PHwq9FkH" role="37wK5m">
-                      <ref role="35c_gD" to="sc0n:1NZxxHzeFNo" resolve="NodeOperator" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="ub8z3" id="1Q7PHwq9FkI" role="37wK5m" />
+              <node concept="2qgKlT" id="5myFpmLmSIz" role="2OqNvi">
+                <ref role="37wK5l" to="yq4j:5myFpmLmGp3" resolve="findAndSetReference" />
+                <node concept="1yR$tW" id="5myFpmLmWjJ" role="37wK5m" />
+                <node concept="ub8z3" id="5myFpmLmUpt" role="37wK5m" />
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="1Q7PHwq9FkJ" role="3cqZAp" />
           <node concept="3cpWs6" id="1Q7PHwq9FkK" role="3cqZAp">
             <node concept="37vLTw" id="1Q7PHwq9FkL" role="3cqZAk">
               <ref role="3cqZAo" node="1Q7PHwq9Fkp" resolve="oa" />

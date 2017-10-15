@@ -2358,6 +2358,7 @@
     <property role="EcuMT" value="4064215266292754587" />
     <property role="3GE5qa" value="Definitions.Expressions.Primary.References" />
     <property role="TrG5h" value="PEOperatorReference" />
+    <property role="R4oN_" value="Wrapper around OperatorReference to allow default PrimaryExpression transformations right of the node." />
     <ref role="1TJDcQ" node="4GJJ0fK8P_O" resolve="PrimaryExpression" />
     <node concept="1TJgyj" id="3xAZ$1A6myL" role="1TKVEi">
       <property role="IQ2ns" value="4064215266292754609" />

@@ -61,7 +61,6 @@
     <classNode dependClassName="BaseFrege.behavior.NodeOperator__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.NodeVARID__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.OperatorReference__BehaviorDescriptor" />
-    <classNode dependClassName="BaseFrege.behavior.Skeleton__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -1523,7 +1522,6 @@
   <dependency className="BaseFrege.editor.FDABracket_TransformWhenInsideBracketst" file="FDABracket_TransformWhenInsideBracketst.java">
     <classNode dependClassName="BaseFrege.behavior.NodeOperator__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.OperatorReference__BehaviorDescriptor" />
-    <classNode dependClassName="BaseFrege.behavior.Skeleton__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -4775,7 +4773,6 @@
   <dependency className="BaseFrege.editor.TopExpression_SubstituteMenu" file="TopExpression_SubstituteMenu.java">
     <classNode dependClassName="BaseFrege.behavior.NodeOperator__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.OperatorReference__BehaviorDescriptor" />
-    <classNode dependClassName="BaseFrege.behavior.Skeleton__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
