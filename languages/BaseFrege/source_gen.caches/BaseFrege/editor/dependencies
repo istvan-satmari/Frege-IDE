@@ -4772,6 +4772,8 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.transformation.TransformationMenuBase" />
   </dependency>
   <dependency className="BaseFrege.editor.TopExpression_SubstituteMenu" file="TopExpression_SubstituteMenu.java">
+    <classNode dependClassName="BaseFrege.behavior.EditorSelectOperatorReference" />
+    <classNode dependClassName="BaseFrege.behavior.EditorSelectVariableReference" />
     <classNode dependClassName="BaseFrege.behavior.NodeOperator__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.NodeVARID__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.OperatorReference__BehaviorDescriptor" />

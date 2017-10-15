@@ -68,6 +68,11 @@
       <concept id="8478191136883534237" name="jetbrains.mps.lang.editor.structure.IExtensibleSubstituteMenuPart" flags="ng" index="upBLQ">
         <child id="8478191136883534238" name="features" index="upBLP" />
       </concept>
+      <concept id="8478191136883534207" name="jetbrains.mps.lang.editor.structure.SubstituteFeature_Selection" flags="ng" index="upBMk">
+        <child id="8478191136883534208" name="query" index="upBLF" />
+      </concept>
+      <concept id="8478191136882577348" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_SubstituteMenu_CreatedNode" flags="ng" index="uqdCJ" />
+      <concept id="8478191136882577194" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_Select" flags="in" index="uqdF1" />
       <concept id="1177335944525" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_SubstituteString" flags="in" index="uGdhv" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -296,6 +301,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -9664,10 +9672,6 @@
       <node concept="2iRfu4" id="4GJJ0fK8PR8" role="2iSdaV" />
     </node>
   </node>
-  <node concept="3p36aQ" id="4GJJ0fK8QuI">
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
-    <ref role="aqKnT" to="sc0n:5fWvJRHV4ht" resolve="FunctionApplication" />
-  </node>
   <node concept="3p36aQ" id="4GJJ0fK8QuJ">
     <property role="3GE5qa" value="Definitions.Expressions.Primary" />
     <ref role="aqKnT" to="sc0n:5fWvJRHV8Az" resolve="OperatorApplication" />
@@ -12435,6 +12439,36 @@
     <ref role="aqKnT" to="sc0n:5ZITH0PGXRI" resolve="TopExpression" />
     <node concept="2VfDsV" id="1Q7PHwq8$Wf" role="3ft7WO" />
     <node concept="3eGOop" id="1Q7PHwq9Fke" role="3ft7WO">
+      <node concept="upBMk" id="5myFpmLVvLQ" role="upBLP">
+        <node concept="uqdF1" id="5myFpmLVvLS" role="upBLF">
+          <node concept="3clFbS" id="5myFpmLVvLU" role="2VODD2">
+            <node concept="3clFbF" id="5myFpmLVBBL" role="3cqZAp">
+              <node concept="2YIFZM" id="5myFpmLVBCo" role="3clFbG">
+                <ref role="37wK5l" to="yq4j:5myFpmLVw2V" resolve="Select" />
+                <ref role="1Pybhc" to="yq4j:5myFpmLVw2i" resolve="EditorSelectOperatorReference" />
+                <node concept="2OqwBi" id="5myFpmLVDyO" role="37wK5m">
+                  <node concept="2OqwBi" id="5myFpmLVC4B" role="2Oq$k0">
+                    <node concept="1PxgMI" id="5myFpmLVBPb" role="2Oq$k0">
+                      <node concept="chp4Y" id="5myFpmLVBRf" role="3oSUPX">
+                        <ref role="cht4Q" to="sc0n:5fWvJRHV8Az" resolve="OperatorApplication" />
+                      </node>
+                      <node concept="uqdCJ" id="5myFpmLVBGf" role="1m5AlR" />
+                    </node>
+                    <node concept="3TrEf2" id="5myFpmLVCmg" role="2OqNvi">
+                      <ref role="3Tt5mk" to="sc0n:5fWvJRHV8A$" resolve="operator" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="5myFpmLVDRd" role="2OqNvi">
+                    <ref role="3Tt5mk" to="sc0n:3xAZ$1A6myL" resolve="operator" />
+                  </node>
+                </node>
+                <node concept="1Q80Hx" id="5myFpmLVCQt" role="37wK5m" />
+                <node concept="ub8z3" id="5myFpmLVD5B" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="16NfWO" id="1Q7PHwq9Fkf" role="upBLP">
         <node concept="uGdhv" id="1Q7PHwq9Fkg" role="16NeZM">
           <node concept="3clFbS" id="1Q7PHwq9Fkh" role="2VODD2">
@@ -12525,6 +12559,31 @@
       </node>
     </node>
     <node concept="3eGOop" id="5myFpmLqM2l" role="3ft7WO">
+      <node concept="upBMk" id="5myFpmLPalH" role="upBLP">
+        <node concept="uqdF1" id="5myFpmLPalJ" role="upBLF">
+          <node concept="3clFbS" id="5myFpmLPalL" role="2VODD2">
+            <node concept="3clFbF" id="5myFpmLTEeR" role="3cqZAp">
+              <node concept="2YIFZM" id="5myFpmLTEk2" role="3clFbG">
+                <ref role="37wK5l" to="yq4j:5myFpmLTpu1" resolve="Select" />
+                <ref role="1Pybhc" to="yq4j:5myFpmLS$N9" resolve="EditorSelectVariableReference" />
+                <node concept="2OqwBi" id="5myFpmLTEUU" role="37wK5m">
+                  <node concept="1PxgMI" id="5myFpmLTEF6" role="2Oq$k0">
+                    <node concept="chp4Y" id="5myFpmLTEHn" role="3oSUPX">
+                      <ref role="cht4Q" to="sc0n:5fWvJRHV4ht" resolve="FunctionApplication" />
+                    </node>
+                    <node concept="uqdCJ" id="5myFpmLTEkn" role="1m5AlR" />
+                  </node>
+                  <node concept="3TrEf2" id="5myFpmLTFcK" role="2OqNvi">
+                    <ref role="3Tt5mk" to="sc0n:5fWvJRHV4hu" resolve="function" />
+                  </node>
+                </node>
+                <node concept="1Q80Hx" id="5myFpmLTEpH" role="37wK5m" />
+                <node concept="ub8z3" id="5myFpmLTEth" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="16NfWO" id="5myFpmLqNqg" role="upBLP">
         <node concept="uGdhv" id="5myFpmLqNxN" role="16NeZM">
           <node concept="3clFbS" id="5myFpmLqNxP" role="2VODD2">
@@ -12679,6 +12738,10 @@
   <node concept="3p36aQ" id="5myFpmLAjva">
     <property role="3GE5qa" value="Definitions.Patterns.Expression.Variables" />
     <ref role="aqKnT" to="sc0n:3Xsm2yzyl89" resolve="PVarName" />
+  </node>
+  <node concept="3p36aQ" id="5myFpmLNTeb">
+    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
+    <ref role="aqKnT" to="sc0n:5fWvJRHV4ht" resolve="FunctionApplication" />
   </node>
 </model>
 

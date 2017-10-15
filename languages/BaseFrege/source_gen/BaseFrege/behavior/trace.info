@@ -4153,6 +4153,56 @@
       <unit id="6170685297888206074" at="12,0,27,0" name="BaseFrege.behavior.ReferenceFinderDataConstructor" />
     </file>
   </root>
+  <root nodeRef="r:f3acc988-19e1-4f05-8291-435175dbbc1f(BaseFrege.behavior)/6170685297897131209">
+    <file name="EditorSelectVariableReference.java">
+      <node id="6170685297897369983" at="14,94,15,27" concept="9" />
+      <node id="6170685297897388503" at="16,527,17,513" concept="9" />
+      <node id="6170685297897406235" at="18,41,19,42" concept="3" />
+      <node id="6170685297897370356" at="21,5,22,0" concept="12" />
+      <node id="6170685297897347086" at="22,0,23,127" concept="3" />
+      <node id="6170685297897399645" at="17,513,20,7" concept="7" />
+      <node id="6170685297897370635" at="15,27,21,5" concept="7" />
+      <node id="6170685297897346945" at="14,0,25,0" concept="14" trace="Select#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;Ljava/lang/String;)V" />
+      <scope id="6170685297897399647" at="18,41,19,42" />
+      <scope id="6170685297897370637" at="16,527,20,7">
+        <var name="maxLength" id="6170685297897388506" />
+      </scope>
+      <scope id="6170685297897131270" at="14,94,23,127">
+        <var name="selectionStart" id="6170685297897369986" />
+      </scope>
+      <scope id="6170685297897346945" at="14,0,25,0">
+        <var name="editorContext" id="6170685297897338239" />
+        <var name="nodeToSelect" id="6170685297897343120" />
+        <var name="pattern" id="6170685297897346606" />
+      </scope>
+      <unit id="6170685297897131209" at="13,0,26,0" name="BaseFrege.behavior.EditorSelectVariableReference" />
+    </file>
+  </root>
+  <root nodeRef="r:f3acc988-19e1-4f05-8291-435175dbbc1f(BaseFrege.behavior)/6170685297897898130">
+    <file name="EditorSelectOperatorReference.java">
+      <node id="6170685297897898173" at="14,94,15,27" concept="9" />
+      <node id="6170685297897898179" at="16,369,17,355" concept="9" />
+      <node id="6170685297897898193" at="18,41,19,42" concept="3" />
+      <node id="6170685297897898217" at="21,5,22,0" concept="12" />
+      <node id="6170685297897898218" at="22,0,23,127" concept="3" />
+      <node id="6170685297897898191" at="17,355,20,7" concept="7" />
+      <node id="6170685297897898177" at="15,27,21,5" concept="7" />
+      <node id="6170685297897898171" at="14,0,25,0" concept="14" trace="Select#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;Ljava/lang/String;)V" />
+      <scope id="6170685297897898192" at="18,41,19,42" />
+      <scope id="6170685297897898178" at="16,369,20,7">
+        <var name="maxLength" id="6170685297897898180" />
+      </scope>
+      <scope id="6170685297897898172" at="14,94,23,127">
+        <var name="selectionStart" id="6170685297897898174" />
+      </scope>
+      <scope id="6170685297897898171" at="14,0,25,0">
+        <var name="editorContext" id="6170685297897898227" />
+        <var name="nodeToSelect" id="6170685297897898225" />
+        <var name="pattern" id="6170685297897898229" />
+      </scope>
+      <unit id="6170685297897898130" at="13,0,26,0" name="BaseFrege.behavior.EditorSelectOperatorReference" />
+    </file>
+  </root>
   <root nodeRef="r:f3acc988-19e1-4f05-8291-435175dbbc1f(BaseFrege.behavior)/7270108634719404015">
     <file name="AIOperator__BehaviorDescriptor.java">
       <node id="7270108634719404015" at="20,0,21,0" concept="13" trace="CONCEPT" />
