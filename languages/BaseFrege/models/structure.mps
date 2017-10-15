@@ -1509,7 +1509,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7Cxf1w4Aony" resolve="NodeVARID" />
     </node>
-    <node concept="PrWs8" id="3PT0fU5ct2O" role="PzmwI">
+    <node concept="PrWs8" id="5myFpmLAjv5" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
@@ -1687,7 +1687,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="function" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Cxf1w4Aony" resolve="NodeVARID" />
+      <ref role="20lvS9" node="4GJJ0fK9oCL" resolve="VariableReference" />
     </node>
     <node concept="PrWs8" id="4GJJ0fK8QuG" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />

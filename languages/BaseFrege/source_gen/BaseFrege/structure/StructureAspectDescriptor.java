@@ -916,7 +916,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("BaseFrege.structure.GenericApplication", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1d87d6d81a2ba502L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x19796fa16a19888bL);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6051851628362613853");
-    b.aggregate("function", 0x53fc7efdedec445eL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7a213c18049985e2L).optional(false).ordered(true).multiple(false).origin("6051851628362613854").done();
+    b.aggregate("function", 0x53fc7efdedec445eL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x4b2fbc03f0258a31L).optional(false).ordered(true).multiple(false).origin("6051851628362613854").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFunctionDefinition() {
