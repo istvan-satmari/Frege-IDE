@@ -1687,7 +1687,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="function" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4GJJ0fK9oCL" resolve="VariableReference" />
+      <ref role="20lvS9" node="5myFpmM3Ukx" resolve="PEVariableReference" />
     </node>
     <node concept="PrWs8" id="5myFpmLNTfb" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -2391,6 +2391,23 @@
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="62eaOWzc$vg" resolve="DataConstructor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5myFpmM3Ukx">
+    <property role="EcuMT" value="6170685297900102945" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.References" />
+    <property role="TrG5h" value="PEVariableReference" />
+    <property role="R4oN_" value="Wrapper around VariableReference to allow default PrimaryExpression transformations right of the node." />
+    <ref role="1TJDcQ" node="4GJJ0fK8P_O" resolve="PrimaryExpression" />
+    <node concept="PrWs8" id="5myFpmM3Uky" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="1TJgyj" id="5myFpmM3Uk_" role="1TKVEi">
+      <property role="IQ2ns" value="6170685297900102949" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="variable" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4GJJ0fK9oCL" resolve="VariableReference" />
     </node>
   </node>
 </model>

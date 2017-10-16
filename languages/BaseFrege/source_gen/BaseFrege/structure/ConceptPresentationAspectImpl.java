@@ -119,6 +119,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_PBracket = new ConceptPresentationBuilder().shortDesc("Pattern in round brackets.").create();
   private final ConceptPresentation props_PConstructor = new ConceptPresentationBuilder().shortDesc("Datatype constructor reference.").create();
   private final ConceptPresentation props_PEOperatorReference = new ConceptPresentationBuilder().shortDesc("Wrapper around OperatorReference to allow default PrimaryExpression transformations right of the node.").create();
+  private final ConceptPresentation props_PEVariableReference = new ConceptPresentationBuilder().shortDesc("Wrapper around VariableReference to allow default PrimaryExpression transformations right of the node.").create();
   private final ConceptPresentation props_PLEBPatternArgument = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PLEBPlaceholder = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PList = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
@@ -384,6 +385,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_PConstructor;
       case LanguageConceptSwitch.PEOperatorReference:
         return props_PEOperatorReference;
+      case LanguageConceptSwitch.PEVariableReference:
+        return props_PEVariableReference;
       case LanguageConceptSwitch.PLEBPatternArgument:
         return props_PLEBPatternArgument;
       case LanguageConceptSwitch.PLEBPlaceholder:
