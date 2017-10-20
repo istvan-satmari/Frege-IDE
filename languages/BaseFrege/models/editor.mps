@@ -10559,6 +10559,116 @@
           </node>
         </node>
       </node>
+      <node concept="aenpk" id="4Zne4OH_gN3" role="1Qtc8A">
+        <node concept="mvV$s" id="4Zne4OH_gN4" role="aenpr">
+          <node concept="A1WHr" id="4Zne4OH_gN5" role="A14EM">
+            <ref role="2ZyFGn" to="sc0n:1Q7PHwqaUk2" resolve="GenericApplication" />
+          </node>
+          <node concept="mvVNg" id="4Zne4OH_gN6" role="mvV$0">
+            <node concept="3clFbS" id="4Zne4OH_gN7" role="2VODD2">
+              <node concept="3clFbF" id="4Zne4OH_gN8" role="3cqZAp">
+                <node concept="1PxgMI" id="4Zne4OH_gN9" role="3clFbG">
+                  <node concept="chp4Y" id="4Zne4OH_gNa" role="3oSUPX">
+                    <ref role="cht4Q" to="sc0n:1Q7PHwqaUk2" resolve="GenericApplication" />
+                  </node>
+                  <node concept="2OqwBi" id="4Zne4OH_gNb" role="1m5AlR">
+                    <node concept="7Obwk" id="4Zne4OH_gNc" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="4Zne4OH_gNd" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="27VH4U" id="4Zne4OH_gNe" role="aenpu">
+          <node concept="3clFbS" id="4Zne4OH_gNf" role="2VODD2">
+            <node concept="3SKdUt" id="4Zne4OH_gNg" role="3cqZAp">
+              <node concept="3SKdUq" id="4Zne4OH_gNh" role="3SKWNk">
+                <property role="3SKdUp" value="Transformation menus for GenericApplication (OperatorApplication, FunctionApplication)" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="4Zne4OH_gNi" role="3cqZAp">
+              <node concept="3SKdUq" id="4Zne4OH_gNj" role="3SKWNk">
+                <property role="3SKdUp" value="Only applicable, if we are the right-most editor cell, i.e. there are no arguments defined" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="4Zne4OH_gNk" role="3cqZAp">
+              <node concept="3cpWsn" id="4Zne4OH_gNl" role="3cpWs9">
+                <property role="TrG5h" value="parent" />
+                <node concept="3Tqbb2" id="4Zne4OH_gNm" role="1tU5fm" />
+                <node concept="2OqwBi" id="4Zne4OH_gNn" role="33vP2m">
+                  <node concept="7Obwk" id="4Zne4OH_gNo" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="4Zne4OH_gNp" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="4Zne4OH_gNq" role="3cqZAp">
+              <node concept="3clFbS" id="4Zne4OH_gNr" role="3clFbx">
+                <node concept="3cpWs8" id="4Zne4OH_gNs" role="3cqZAp">
+                  <node concept="3cpWsn" id="4Zne4OH_gNt" role="3cpWs9">
+                    <property role="TrG5h" value="ga" />
+                    <node concept="3Tqbb2" id="4Zne4OH_gNu" role="1tU5fm">
+                      <ref role="ehGHo" to="sc0n:1Q7PHwqaUk2" resolve="GenericApplication" />
+                    </node>
+                    <node concept="1PxgMI" id="4Zne4OH_gNv" role="33vP2m">
+                      <node concept="chp4Y" id="4Zne4OH_gNw" role="3oSUPX">
+                        <ref role="cht4Q" to="sc0n:1Q7PHwqaUk2" resolve="GenericApplication" />
+                      </node>
+                      <node concept="37vLTw" id="4Zne4OH_gNx" role="1m5AlR">
+                        <ref role="3cqZAo" node="4Zne4OH_gNl" resolve="parent" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="4Zne4OH_gNy" role="3cqZAp">
+                  <node concept="3clFbS" id="4Zne4OH_gNz" role="3clFbx">
+                    <node concept="3cpWs6" id="4Zne4OH_gN$" role="3cqZAp">
+                      <node concept="3clFbT" id="4Zne4OH_gN_" role="3cqZAk">
+                        <property role="3clFbU" value="true" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="4Zne4OH_gNA" role="3clFbw">
+                    <node concept="2OqwBi" id="4Zne4OH_gNB" role="2Oq$k0">
+                      <node concept="37vLTw" id="4Zne4OH_gNC" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4Zne4OH_gNt" resolve="ga" />
+                      </node>
+                      <node concept="3Tsc0h" id="4Zne4OH_gND" role="2OqNvi">
+                        <ref role="3TtcxE" to="sc0n:1Q7PHwqaUkx" resolve="arguments" />
+                      </node>
+                    </node>
+                    <node concept="1v1jN8" id="4Zne4OH_gNE" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="4Zne4OH_gNF" role="3clFbw">
+                <node concept="2OqwBi" id="4Zne4OH_gNG" role="3uHU7w">
+                  <node concept="37vLTw" id="4Zne4OH_gNH" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4Zne4OH_gNl" resolve="parent" />
+                  </node>
+                  <node concept="1mIQ4w" id="4Zne4OH_gNI" role="2OqNvi">
+                    <node concept="chp4Y" id="4Zne4OH_gNJ" role="cj9EA">
+                      <ref role="cht4Q" to="sc0n:1Q7PHwqaUk2" resolve="GenericApplication" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="4Zne4OH_gNK" role="3uHU7B">
+                  <node concept="3x8VRR" id="4Zne4OH_gNL" role="2OqNvi" />
+                  <node concept="37vLTw" id="4Zne4OH_gNM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4Zne4OH_gNl" resolve="parent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="4Zne4OH_gNN" role="3cqZAp" />
+            <node concept="3cpWs6" id="4Zne4OH_gNO" role="3cqZAp">
+              <node concept="3clFbT" id="4Zne4OH_gNP" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="IW6AY" id="2y7PD0QMACU">
