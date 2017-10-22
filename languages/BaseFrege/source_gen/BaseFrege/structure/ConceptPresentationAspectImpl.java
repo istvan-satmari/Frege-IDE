@@ -62,21 +62,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FunctionDefinition = new ConceptPresentationBuilder().shortDesc("Single function definition pattern, i.e. this represents an incomplete function definition.").create();
   private final ConceptPresentation props_GenericApplication = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Guard = new ConceptPresentationBuilder().shortDesc("Adds a new guard.").create();
-  private final ConceptPresentation props_IICMConid = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IICMOperator = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IICMVarid = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IICMember = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_IIFunction = new ConceptPresentationBuilder().shortDesc("Import a function.").create();
   private final ConceptPresentation props_IfThenElse = new ConceptPresentationBuilder().shortDesc("If expression.").create();
   private final ConceptPresentation props_Import = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ImportAH = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportAs = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportHiding = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportItem = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImportItemClass = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImportItemOperator = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImportItemQconid = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImportItemQvarid = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImportList = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImportedResource = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ImportItems = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IncompleteCommand = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Infix = new ConceptPresentationBuilder().shortDesc("Infix operator.").create();
   private final ConceptPresentation props_InfixAbstract = new ConceptPresentationBuilder().create();
@@ -104,9 +97,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Literal = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_MEFunction = new ConceptPresentationBuilder().shortDesc("Export a function.").create();
   private final ConceptPresentation props_MEOperator = new ConceptPresentationBuilder().shortDesc("Export an operator function.").create();
-  private final ConceptPresentation props_MEPMImportedModule = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_MEPMImport = new ConceptPresentationBuilder().shortDesc("Reexport of an imported module.").create();
   private final ConceptPresentation props_MEPMReference = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MEPMSelf = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_MEPMSelf = new ConceptPresentationBuilder().shortDesc("Reexport of the current module.").create();
   private final ConceptPresentation props_MEPModule = new ConceptPresentationBuilder().shortDesc("Export a complete module.").create();
   private final ConceptPresentation props_Main = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Module = new ConceptPresentationBuilder().create();
@@ -273,36 +266,22 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_GenericApplication;
       case LanguageConceptSwitch.Guard:
         return props_Guard;
-      case LanguageConceptSwitch.IICMConid:
-        return props_IICMConid;
-      case LanguageConceptSwitch.IICMOperator:
-        return props_IICMOperator;
-      case LanguageConceptSwitch.IICMVarid:
-        return props_IICMVarid;
-      case LanguageConceptSwitch.IICMember:
-        return props_IICMember;
+      case LanguageConceptSwitch.IIFunction:
+        return props_IIFunction;
       case LanguageConceptSwitch.IfThenElse:
         return props_IfThenElse;
       case LanguageConceptSwitch.Import:
         return props_Import;
+      case LanguageConceptSwitch.ImportAH:
+        return props_ImportAH;
       case LanguageConceptSwitch.ImportAs:
         return props_ImportAs;
       case LanguageConceptSwitch.ImportHiding:
         return props_ImportHiding;
       case LanguageConceptSwitch.ImportItem:
         return props_ImportItem;
-      case LanguageConceptSwitch.ImportItemClass:
-        return props_ImportItemClass;
-      case LanguageConceptSwitch.ImportItemOperator:
-        return props_ImportItemOperator;
-      case LanguageConceptSwitch.ImportItemQconid:
-        return props_ImportItemQconid;
-      case LanguageConceptSwitch.ImportItemQvarid:
-        return props_ImportItemQvarid;
-      case LanguageConceptSwitch.ImportList:
-        return props_ImportList;
-      case LanguageConceptSwitch.ImportedResource:
-        return props_ImportedResource;
+      case LanguageConceptSwitch.ImportItems:
+        return props_ImportItems;
       case LanguageConceptSwitch.IncompleteCommand:
         return props_IncompleteCommand;
       case LanguageConceptSwitch.Infix:
@@ -357,8 +336,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_MEFunction;
       case LanguageConceptSwitch.MEOperator:
         return props_MEOperator;
-      case LanguageConceptSwitch.MEPMImportedModule:
-        return props_MEPMImportedModule;
+      case LanguageConceptSwitch.MEPMImport:
+        return props_MEPMImport;
       case LanguageConceptSwitch.MEPMReference:
         return props_MEPMReference;
       case LanguageConceptSwitch.MEPMSelf:

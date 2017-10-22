@@ -2519,25 +2519,69 @@
       <ref role="13i0hy" to="tpcu:52_Geb4QDV$" resolve="getScope" />
       <node concept="3Tm1VV" id="5c96$3RGUi9" role="1B3o_S" />
       <node concept="3clFbS" id="5c96$3RGUim" role="3clF47">
-        <node concept="3SKdUt" id="5c96$3RGVrr" role="3cqZAp">
-          <node concept="3SKdUq" id="5c96$3RGVrs" role="3SKWNk">
-            <property role="3SKdUp" value="Skeleton is a root node so it provides its childrens' scopes" />
+        <node concept="3SKdUt" id="3PPtPKKDJGm" role="3cqZAp">
+          <node concept="3SKdUq" id="3PPtPKKDJGn" role="3SKWNk">
+            <property role="3SKdUp" value="Request for scope comes from a child" />
           </node>
         </node>
-        <node concept="3cpWs6" id="5c96$3RGVNg" role="3cqZAp">
-          <node concept="2OqwBi" id="5c96$3RGVY$" role="3cqZAk">
-            <node concept="13iPFW" id="5c96$3RGVNA" role="2Oq$k0" />
-            <node concept="2qgKlT" id="5c96$3RGWct" role="2OqNvi">
-              <ref role="37wK5l" node="5c96$3RFu09" resolve="getPublicScope" />
-              <node concept="37vLTw" id="5c96$3RGWgY" role="37wK5m">
-                <ref role="3cqZAo" node="5c96$3RGUin" resolve="kind" />
+        <node concept="3clFbJ" id="3PPtPKKDNiP" role="3cqZAp">
+          <node concept="3clFbS" id="3PPtPKKDNiR" role="3clFbx">
+            <node concept="3SKdUt" id="3PPtPKKDQxN" role="3cqZAp">
+              <node concept="3SKdUq" id="3PPtPKKDQxP" role="3SKWNk">
+                <property role="3SKdUp" value="For imports we have to provide scope of the sibling Skeletons" />
               </node>
-              <node concept="37vLTw" id="5c96$3RGWlF" role="37wK5m">
-                <ref role="3cqZAo" node="5c96$3RGUip" resolve="child" />
+            </node>
+            <node concept="3SKdUt" id="3PPtPKKDRnl" role="3cqZAp">
+              <node concept="3SKdUq" id="3PPtPKKDRnn" role="3SKWNk">
+                <property role="3SKdUp" value="TODO" />
               </node>
-              <node concept="13iPFW" id="5c96$3RGWTq" role="37wK5m" />
-              <node concept="Xl_RD" id="5c96$3RGX3h" role="37wK5m">
-                <property role="Xl_RC" value="public" />
+            </node>
+            <node concept="3cpWs6" id="3PPtPKKHqF0" role="3cqZAp">
+              <node concept="2OqwBi" id="3PPtPKKHqF1" role="3cqZAk">
+                <node concept="13iPFW" id="3PPtPKKHqF2" role="2Oq$k0" />
+                <node concept="2qgKlT" id="3PPtPKKHqF3" role="2OqNvi">
+                  <ref role="37wK5l" node="5c96$3RFu09" resolve="getPublicScope" />
+                  <node concept="37vLTw" id="3PPtPKKHqF4" role="37wK5m">
+                    <ref role="3cqZAo" node="5c96$3RGUin" resolve="kind" />
+                  </node>
+                  <node concept="37vLTw" id="3PPtPKKHqF5" role="37wK5m">
+                    <ref role="3cqZAo" node="5c96$3RGUip" resolve="child" />
+                  </node>
+                  <node concept="13iPFW" id="3PPtPKKHqF6" role="37wK5m" />
+                  <node concept="Xl_RD" id="3PPtPKKHqF7" role="37wK5m">
+                    <property role="Xl_RC" value="public" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="iy1fb" id="3PPtPKKDN$2" role="3clFbw">
+            <ref role="iy1sa" to="sc0n:vUxQDjKXys" resolve="imports" />
+          </node>
+          <node concept="9aQIb" id="3PPtPKKDQMX" role="9aQIa">
+            <node concept="3clFbS" id="3PPtPKKDQMY" role="9aQI4">
+              <node concept="3SKdUt" id="5c96$3RGVrr" role="3cqZAp">
+                <node concept="3SKdUq" id="5c96$3RGVrs" role="3SKWNk">
+                  <property role="3SKdUp" value="For non-imports, we provide childrens' scopes" />
+                </node>
+              </node>
+              <node concept="3cpWs6" id="5c96$3RGVNg" role="3cqZAp">
+                <node concept="2OqwBi" id="5c96$3RGVY$" role="3cqZAk">
+                  <node concept="13iPFW" id="5c96$3RGVNA" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="5c96$3RGWct" role="2OqNvi">
+                    <ref role="37wK5l" node="5c96$3RFu09" resolve="getPublicScope" />
+                    <node concept="37vLTw" id="5c96$3RGWgY" role="37wK5m">
+                      <ref role="3cqZAo" node="5c96$3RGUin" resolve="kind" />
+                    </node>
+                    <node concept="37vLTw" id="5c96$3RGWlF" role="37wK5m">
+                      <ref role="3cqZAo" node="5c96$3RGUip" resolve="child" />
+                    </node>
+                    <node concept="13iPFW" id="5c96$3RGWTq" role="37wK5m" />
+                    <node concept="Xl_RD" id="5c96$3RGX3h" role="37wK5m">
+                      <property role="Xl_RC" value="public" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -9166,13 +9210,6 @@
     <ref role="13h7C2" to="sc0n:4GJJ0fK8Bdv" resolve="BinExPart" />
     <node concept="13hLZK" id="6j$BkzqXNkp" role="13h7CW">
       <node concept="3clFbS" id="6j$BkzqXNkq" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="6j$BkzqXTq1">
-    <property role="3GE5qa" value="Import.Items.Class" />
-    <ref role="13h7C2" to="sc0n:3Xsm2yzyiXZ" resolve="IICMOperator" />
-    <node concept="13hLZK" id="6j$BkzqXTq2" role="13h7CW">
-      <node concept="3clFbS" id="6j$BkzqXTq3" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="3xAZ$1A6m$a">

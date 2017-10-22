@@ -23,6 +23,8 @@
       <concept id="4428577046415188443" name="BaseFrege.structure.MEFunction" flags="ng" index="dsXq7">
         <child id="4428577046415188444" name="function" index="dsXq0" />
       </concept>
+      <concept id="4428577046425635176" name="BaseFrege.structure.ImportHiding" flags="ng" index="dORSO" />
+      <concept id="4428577046425682856" name="BaseFrege.structure.IIFunction" flags="ng" index="dOVjO" />
       <concept id="3852202959973463817" name="BaseFrege.structure.LPExpression" flags="ng" index="2iAf4B">
         <child id="3852202959973463818" name="expression" index="2iAf4$" />
       </concept>
@@ -76,16 +78,11 @@
       <concept id="4565621053812461258" name="BaseFrege.structure.AIOperator" flags="ng" index="2sPhry">
         <child id="1218762508956744481" name="value" index="1V1X4E" />
       </concept>
-      <concept id="4565621053812445485" name="BaseFrege.structure.ImportList" flags="ng" index="2sPk$5">
-        <child id="4565621053812445517" name="hiding" index="2sPk__" />
+      <concept id="4565621053812445485" name="BaseFrege.structure.ImportItems" flags="ng" index="2sPk$5">
         <child id="4565621053812452387" name="items" index="2sPngb" />
       </concept>
-      <concept id="4565621053812445503" name="BaseFrege.structure.ImportHiding" flags="ng" index="2sPk$n" />
       <concept id="4565621053812453401" name="BaseFrege.structure.FullType" flags="ng" index="2sPmwL">
         <child id="4565621053812453572" name="type" index="2sPmzG" />
-      </concept>
-      <concept id="4565621053812453099" name="BaseFrege.structure.ImportItemQconid" flags="ng" index="2sPnr3">
-        <child id="4565621053812453100" name="value" index="2sPnr4" />
       </concept>
       <concept id="6531617606750690562" name="BaseFrege.structure.ListEnumeration" flags="ng" index="xEMEp">
         <child id="6531617606750690565" name="items" index="xEMEu" />
@@ -157,8 +154,9 @@
         <child id="6912716259988863000" name="else" index="1EnhV8" />
       </concept>
       <concept id="574920793184786551" name="BaseFrege.structure.Import" flags="ng" index="1kelWt">
-        <child id="4565621053812419387" name="resource" index="2sPfcj" />
-        <child id="4565621053812419420" name="list" index="2sPfdO" />
+        <reference id="4428577046425609326" name="module" index="dOdcM" />
+        <child id="4565621053812419420" name="items" index="2sPfdO" />
+        <child id="8562096718746031050" name="ah" index="1VHVTg" />
       </concept>
       <concept id="574920793184786479" name="BaseFrege.structure.Skeleton" flags="ng" index="1kelX5">
         <child id="574920793184786533" name="module" index="1kelWf" />
@@ -183,9 +181,6 @@
         <child id="6912716259988828299" name="expression" index="1Enppr" />
       </concept>
       <concept id="574920793184786598" name="BaseFrege.structure.Main" flags="ng" index="1kelZc" />
-      <concept id="2569253503694844925" name="BaseFrege.structure.ImportedResource" flags="ng" index="3q3Q6f">
-        <reference id="2569253503694844926" name="resource" index="3q3Q6c" />
-      </concept>
       <concept id="2139708830661736698" name="BaseFrege.structure.PatternWrapper" flags="ng" index="1rUzOy">
         <child id="2139708830661736699" name="pattern" index="1rUzOz" />
       </concept>
@@ -221,9 +216,6 @@
       <concept id="8562096718746085933" name="BaseFrege.structure.TypeFunction" flags="ng" index="1VHOuR">
         <child id="8562096718746085934" name="arguments" index="1VHOuO" />
       </concept>
-      <concept id="8800381220712711590" name="BaseFrege.structure.QCONID" flags="ng" index="1YIbAY">
-        <child id="8800381220712711686" name="conid" index="1YIbCu" />
-      </concept>
       <concept id="8800381220712711649" name="BaseFrege.structure.NodeCONID" flags="ng" index="1YIbBT">
         <property id="8800381220712711651" name="value" index="1YIbBV" />
       </concept>
@@ -242,6 +234,9 @@
   </registry>
   <node concept="1kelX5" id="6t243n3yPVD">
     <property role="TrG5h" value="Skeleton" />
+    <node concept="1kelWt" id="3PPtPKKPvzK" role="1kelZQ">
+      <ref role="dOdcM" node="6t243n3yPVE" />
+    </node>
     <node concept="14659P" id="181lOLSiLCK" role="1kelZ8" />
     <node concept="14659P" id="6XayDjsNKRG" role="1kelZ8" />
     <node concept="1kelYC" id="6t243n3yPYC" role="1kelZ8">
@@ -1270,26 +1265,6 @@
     <node concept="14659P" id="1OEr8apoPDU" role="1kelZ8" />
     <node concept="14659P" id="1OEr8apoPWB" role="1kelZ8" />
     <node concept="14659P" id="4Zne4OHATN0" role="1kelZ8" />
-    <node concept="1kelWt" id="6t243n3yPVO" role="1kelZQ">
-      <node concept="3q3Q6f" id="6t243n3zzNX" role="2sPfcj">
-        <ref role="3q3Q6c" node="6t243n3yRv7" resolve="Exemplar" />
-      </node>
-    </node>
-    <node concept="1kelWt" id="6t243n3yPW4" role="1kelZQ">
-      <node concept="3q3Q6f" id="6t243n3zzO0" role="2sPfcj">
-        <ref role="3q3Q6c" node="6t243n3yRv7" resolve="Exemplar" />
-      </node>
-      <node concept="2sPk$5" id="6t243n3yPW6" role="2sPfdO">
-        <node concept="2sPk$n" id="6t243n3yPW7" role="2sPk__" />
-        <node concept="2sPnr3" id="6t243n3yPW8" role="2sPngb">
-          <node concept="1YIbAY" id="6t243n3yPW9" role="2sPnr4">
-            <node concept="1YIbBT" id="6t243n3yPWa" role="1YIbCu">
-              <property role="1YIbBV" value="Something" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1kelXq" id="6t243n3yPVE" role="1kelWf">
       <node concept="iP7Yn" id="3PPtPKK0Fz0" role="iPoTc">
         <property role="iP7Ye" value="frege" />
@@ -1305,9 +1280,8 @@
   </node>
   <node concept="1kelX5" id="6t243n3yRv7">
     <property role="TrG5h" value="Exemplar" />
-    <node concept="14659P" id="6j$Bkzr7Hnu" role="1kelZ8" />
-    <node concept="14659P" id="6j$Bkzr7Hnw" role="1kelZ8" />
     <node concept="14659P" id="6j$Bkzr7Hnz" role="1kelZ8" />
+    <node concept="14659P" id="3PPtPKKOrHV" role="1kelZ8" />
     <node concept="X6pxd" id="6j$Bkzr7HoI" role="1kelZ8">
       <node concept="kCsbT" id="6j$Bkzr7HoL" role="X6pIE">
         <node concept="2dhntu" id="6j$Bkzr7HoM" role="kCsbS">
@@ -1770,9 +1744,12 @@
       </node>
     </node>
     <node concept="1kelZc" id="6t243n3yRv9" role="1kelZd" />
-    <node concept="1kelWt" id="7cjyLS5vgPt" role="1kelZQ">
-      <node concept="3q3Q6f" id="7cjyLS5vgPx" role="2sPfcj">
-        <ref role="3q3Q6c" node="6t243n3yPVD" resolve="Skeleton" />
+    <node concept="1kelWt" id="3PPtPKKIcxW" role="1kelZQ">
+      <ref role="dOdcM" node="6t243n3yRv8" />
+      <node concept="dORSO" id="3PPtPKKOrLx" role="1VHVTg" />
+      <node concept="2sPk$5" id="3PPtPKKOrLy" role="2sPfdO">
+        <node concept="dOVjO" id="3PPtPKKOrLF" role="2sPngb" />
+        <node concept="dOVjO" id="3PPtPKKOrLL" role="2sPngb" />
       </node>
     </node>
   </node>

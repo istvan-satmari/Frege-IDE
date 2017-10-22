@@ -346,5 +346,54 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3PPtPKKDrva">
+    <property role="3GE5qa" value="Import" />
+    <ref role="1M2myG" to="sc0n:vUxQDjKXxR" resolve="Import" />
+    <node concept="1N5Pfh" id="3PPtPKKDrvh" role="1Mr941">
+      <ref role="1N5Vy1" to="sc0n:3PPtPKKDqhI" resolve="module" />
+      <node concept="Bn3R3" id="3PPtPKKDrvi" role="Bn3R6">
+        <node concept="3clFbS" id="3PPtPKKDrvj" role="2VODD2">
+          <node concept="3cpWs6" id="3PPtPKKDrvk" role="3cqZAp">
+            <node concept="2OqwBi" id="3PPtPKKDrvl" role="3cqZAk">
+              <node concept="2OqwBi" id="3PPtPKKDrvm" role="2Oq$k0">
+                <node concept="Bn53e" id="3PPtPKKDrvn" role="2Oq$k0" />
+                <node concept="3TrEf2" id="3PPtPKKDrvo" role="2OqNvi">
+                  <ref role="3Tt5mk" to="sc0n:3PPtPKJCf$g" resolve="name" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="3PPtPKKDrvp" role="2OqNvi">
+                <ref role="37wK5l" to="yq4j:3PPtPKK8q45" resolve="getFullName" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3dgokm" id="3PPtPKKDrvq" role="1N6uqs">
+        <node concept="3clFbS" id="3PPtPKKDrvr" role="2VODD2">
+          <node concept="3cpWs6" id="3PPtPKKDrvs" role="3cqZAp">
+            <node concept="2OqwBi" id="3PPtPKKDrvt" role="3cqZAk">
+              <node concept="2OqwBi" id="3PPtPKKDrvu" role="2Oq$k0">
+                <node concept="2rP1CM" id="3PPtPKKDrvv" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="3PPtPKKDrvw" role="2OqNvi">
+                  <node concept="1xMEDy" id="3PPtPKKDrvx" role="1xVPHs">
+                    <node concept="chp4Y" id="3PPtPKKDrvy" role="ri$Ld">
+                      <ref role="cht4Q" to="sc0n:vUxQDjKXwJ" resolve="Skeleton" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="3PPtPKKDrvz" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:52_Geb4QDV$" resolve="getScope" />
+                <node concept="35c_gC" id="3PPtPKKDrv$" role="37wK5m">
+                  <ref role="35c_gD" to="sc0n:vUxQDjKXwK" resolve="Module" />
+                </node>
+                <node concept="2rP1CM" id="3PPtPKKDrv_" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
