@@ -748,6 +748,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6t243n3y9w4">
+    <property role="3GE5qa" value="Skeleton" />
     <ref role="13h7C2" to="sc0n:vUxQDjKXwJ" resolve="Skeleton" />
     <node concept="13i0hz" id="25MTemH25F9" role="13h7CS">
       <property role="2Ki8OM" value="true" />
@@ -11275,6 +11276,24 @@
         <node concept="3cpWs6" id="3PPtPKJCpbS" role="3cqZAp">
           <node concept="Xl_RD" id="3PPtPKJCpbT" role="3cqZAk">
             <property role="Xl_RC" value="[A-Z]" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="3PPtPKJUqe0" role="13h7CS">
+      <property role="2Ki8OM" value="true" />
+      <property role="TrG5h" value="getPropertyPattern" />
+      <node concept="3Tm1VV" id="3PPtPKJUqe1" role="1B3o_S" />
+      <node concept="17QB3L" id="3PPtPKJUqgc" role="3clF45" />
+      <node concept="3clFbS" id="3PPtPKJUqe3" role="3clF47">
+        <node concept="3SKdUt" id="3PPtPKJUqki" role="3cqZAp">
+          <node concept="3SKdUq" id="3PPtPKJUqkk" role="3SKWNk">
+            <property role="3SKdUp" value="Returns actual pattern for the ANYCASEIDENTIFIER" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3PPtPKJUqfa" role="3cqZAp">
+          <node concept="Xl_RD" id="3PPtPKJUqft" role="3cqZAk">
+            <property role="Xl_RC" value="^([a-zA-Z][_a-zA-Z0-9]*)|(_[_a-zA-Z0-9]+)$" />
           </node>
         </node>
       </node>

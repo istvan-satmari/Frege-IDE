@@ -235,7 +235,7 @@
     </language>
   </registry>
   <node concept="1kelX5" id="6t243n3yPVD">
-    <property role="TrG5h" value="mymodule.frege.Testing" />
+    <property role="TrG5h" value="Something" />
     <node concept="14659P" id="181lOLSiLCK" role="1kelZ8" />
     <node concept="14659P" id="6XayDjsNKRG" role="1kelZ8" />
     <node concept="1kelYC" id="6t243n3yPYC" role="1kelZ8">
@@ -1303,12 +1303,12 @@
       <node concept="2sP33I" id="7cjyLS5vgOU" role="1VGiaT">
         <ref role="3qezHq" node="6t243n3zzNX" />
       </node>
-      <node concept="iP7Yn" id="3PPtPKJOsgx" role="iPoTc">
+      <node concept="iP7Yn" id="3PPtPKK0Fz0" role="iPoTc">
         <property role="iP7Ye" value="frege" />
-        <node concept="iP7Yn" id="3PPtPKJOsgH" role="iP7Yg">
-          <property role="iP7Ye" value="prelude" />
-          <node concept="iP7ZQ" id="3PPtPKJOsgI" role="iP7Yg">
-            <property role="iP7ZR" value="Math" />
+        <node concept="iP7Yn" id="3PPtPKK0Fz5" role="iP7Yg">
+          <property role="iP7Ye" value="module" />
+          <node concept="iP7ZQ" id="3PPtPKK0Fzx" role="iP7Yg">
+            <property role="iP7ZR" value="Exemplar" />
           </node>
         </node>
       </node>
@@ -1759,7 +1759,7 @@
     <node concept="1kelZc" id="6t243n3yRv9" role="1kelZd" />
     <node concept="1kelWt" id="7cjyLS5vgPt" role="1kelZQ">
       <node concept="3q3Q6f" id="7cjyLS5vgPx" role="2sPfcj">
-        <ref role="3q3Q6c" node="6t243n3yPVD" resolve="mymodule.frege.Testing" />
+        <ref role="3q3Q6c" node="6t243n3yPVD" resolve="Something" />
       </node>
     </node>
   </node>

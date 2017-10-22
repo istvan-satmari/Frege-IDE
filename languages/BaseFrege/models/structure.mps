@@ -60,6 +60,7 @@
     <property role="EcuMT" value="574920793184786479" />
     <property role="TrG5h" value="Skeleton" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="Skeleton" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="vUxQDjKXx_" role="1TKVEi">
       <property role="IQ2ns" value="574920793184786533" />
@@ -89,7 +90,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="vUxQDjKXyA" resolve="Main" />
     </node>
-    <node concept="PrWs8" id="6t243n3uJJX" role="PzmwI">
+    <node concept="PrWs8" id="3PPtPKJSr3v" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="5c96$3RGMCI" role="PzmwI">
