@@ -102,13 +102,15 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ListEnumeration = new ConceptPresentationBuilder().shortDesc("List of items.").create();
   private final ConceptPresentation props_ListRange = new ConceptPresentationBuilder().shortDesc("List defined as a range of items.").create();
   private final ConceptPresentation props_Literal = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MPModule = new ConceptPresentationBuilder().shortDesc("Export a complete module.").create();
-  private final ConceptPresentation props_MPSCONID = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MPSVARID = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MPSimple = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_MEFunction = new ConceptPresentationBuilder().shortDesc("Export a function.").create();
+  private final ConceptPresentation props_MEOperator = new ConceptPresentationBuilder().shortDesc("Export an operator function.").create();
+  private final ConceptPresentation props_MEPMImportedModule = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_MEPMReference = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_MEPMSelf = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_MEPModule = new ConceptPresentationBuilder().shortDesc("Export a complete module.").create();
   private final ConceptPresentation props_Main = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Module = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ModuleExportedPart = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ModuleExport = new ConceptPresentationBuilder().shortDesc("An item from the current module to export to the outside.").create();
   private final ConceptPresentation props_ModuleName = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ModuleNameFinal = new ConceptPresentationBuilder().shortDesc("Final part in the module name description, e.g. \"frege.prelude.Math\", \"Math\" is the ModuleNameFinal node.").create();
   private final ConceptPresentation props_ModuleNamePreFinal = new ConceptPresentationBuilder().shortDesc("Represents name of the current module separated by dots, e.g. \"frege\".\"prelude.Math\" (\"frege\" and the rest).").create();
@@ -351,20 +353,24 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_ListRange;
       case LanguageConceptSwitch.Literal:
         return props_Literal;
-      case LanguageConceptSwitch.MPModule:
-        return props_MPModule;
-      case LanguageConceptSwitch.MPSCONID:
-        return props_MPSCONID;
-      case LanguageConceptSwitch.MPSVARID:
-        return props_MPSVARID;
-      case LanguageConceptSwitch.MPSimple:
-        return props_MPSimple;
+      case LanguageConceptSwitch.MEFunction:
+        return props_MEFunction;
+      case LanguageConceptSwitch.MEOperator:
+        return props_MEOperator;
+      case LanguageConceptSwitch.MEPMImportedModule:
+        return props_MEPMImportedModule;
+      case LanguageConceptSwitch.MEPMReference:
+        return props_MEPMReference;
+      case LanguageConceptSwitch.MEPMSelf:
+        return props_MEPMSelf;
+      case LanguageConceptSwitch.MEPModule:
+        return props_MEPModule;
       case LanguageConceptSwitch.Main:
         return props_Main;
       case LanguageConceptSwitch.Module:
         return props_Module;
-      case LanguageConceptSwitch.ModuleExportedPart:
-        return props_ModuleExportedPart;
+      case LanguageConceptSwitch.ModuleExport:
+        return props_ModuleExport;
       case LanguageConceptSwitch.ModuleName:
         return props_ModuleName;
       case LanguageConceptSwitch.ModuleNameFinal:

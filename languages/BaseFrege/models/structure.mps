@@ -115,7 +115,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parts" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3Xsm2yzy6z5" resolve="ModuleExportedPart" />
+      <ref role="20lvS9" node="3Xsm2yzy6z5" resolve="ModuleExport" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKXxR">
@@ -1040,33 +1040,26 @@
   <node concept="1TIwiD" id="3Xsm2yzy6z5">
     <property role="EcuMT" value="4565621053812402373" />
     <property role="3GE5qa" value="Module" />
-    <property role="TrG5h" value="ModuleExportedPart" />
+    <property role="TrG5h" value="ModuleExport" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="An item from the current module to export to the outside." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3Xsm2yzy6z6">
     <property role="EcuMT" value="4565621053812402374" />
-    <property role="3GE5qa" value="Module.ExportedParts" />
-    <property role="TrG5h" value="MPModule" />
+    <property role="3GE5qa" value="Module.ModuleExport" />
+    <property role="TrG5h" value="MEPModule" />
     <property role="34LRSv" value="module" />
     <property role="R4oN_" value="Export a complete module." />
-    <ref role="1TJDcQ" node="3Xsm2yzy6z5" resolve="ModuleExportedPart" />
-    <node concept="1TJgyj" id="2eBOBbTBu$C" role="1TKVEi">
-      <property role="IQ2ns" value="2569253503694137640" />
-      <property role="20lmBu" value="reference" />
+    <ref role="1TJDcQ" node="3Xsm2yzy6z5" resolve="ModuleExport" />
+    <node concept="1TJgyj" id="3PPtPKK8otJ" role="1TKVEi">
+      <property role="IQ2ns" value="4428577046416951151" />
+      <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="module" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2eBOBbTEbfX" resolve="ImportedResource" />
+      <ref role="20lvS9" node="3PPtPKK8otI" resolve="MEPMReference" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="3Xsm2yzyaGe">
-    <property role="EcuMT" value="4565621053812419342" />
-    <property role="3GE5qa" value="Module.ExportedParts.Module.MPSimple" />
-    <property role="TrG5h" value="MPSimple" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="3Xsm2yzy6z5" resolve="ModuleExportedPart" />
   </node>
   <node concept="1TIwiD" id="3Xsm2yzyaGY">
     <property role="EcuMT" value="4565621053812419390" />
@@ -1764,32 +1757,6 @@
     <property role="TrG5h" value="ANYCASEIDENTIFIER" />
     <property role="FLfZY" value="^([a-zA-Z][_a-zA-Z0-9]*)|(_[_a-zA-Z0-9]+)$" />
   </node>
-  <node concept="1TIwiD" id="1NZxxHzePD7">
-    <property role="EcuMT" value="2089536204310272583" />
-    <property role="3GE5qa" value="Module.ExportedParts.Module.MPSimple" />
-    <property role="TrG5h" value="MPSCONID" />
-    <ref role="1TJDcQ" node="3Xsm2yzyaGe" resolve="MPSimple" />
-    <node concept="1TJgyj" id="1NZxxHzePD8" role="1TKVEi">
-      <property role="IQ2ns" value="2089536204310272584" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Cxf1w4Aonx" resolve="NodeCONID" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1NZxxHzePDn">
-    <property role="EcuMT" value="2089536204310272599" />
-    <property role="3GE5qa" value="Module.ExportedParts.Module.MPSimple" />
-    <property role="TrG5h" value="MPSVARID" />
-    <ref role="1TJDcQ" node="3Xsm2yzyaGe" resolve="MPSimple" />
-    <node concept="1TJgyj" id="1NZxxHzePDo" role="1TKVEi">
-      <property role="IQ2ns" value="2089536204310272600" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Cxf1w4Aony" resolve="NodeVARID" />
-    </node>
-  </node>
   <node concept="Az7Fb" id="5G3QggfmaCI">
     <property role="3GE5qa" value="Definitions.Names.Primitives" />
     <property role="TrG5h" value="OPERATOR" />
@@ -2370,6 +2337,63 @@
     <node concept="PrWs8" id="3PPtPKJCoYr" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3PPtPKK1E7r">
+    <property role="EcuMT" value="4428577046415188443" />
+    <property role="3GE5qa" value="Module.ModuleExport" />
+    <property role="TrG5h" value="MEFunction" />
+    <property role="R4oN_" value="Export a function." />
+    <ref role="1TJDcQ" node="3Xsm2yzy6z5" resolve="ModuleExport" />
+    <node concept="1TJgyj" id="3PPtPKK1E7s" role="1TKVEi">
+      <property role="IQ2ns" value="4428577046415188444" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="function" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4GJJ0fK9oCL" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3PPtPKK551D">
+    <property role="EcuMT" value="4428577046416085097" />
+    <property role="3GE5qa" value="Module.ModuleExport" />
+    <property role="TrG5h" value="MEOperator" />
+    <property role="R4oN_" value="Export an operator function." />
+    <ref role="1TJDcQ" node="3Xsm2yzy6z5" resolve="ModuleExport" />
+    <node concept="1TJgyj" id="3PPtPKK551G" role="1TKVEi">
+      <property role="IQ2ns" value="4428577046416085100" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operator" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4GJJ0fK9oDn" resolve="OperatorReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3PPtPKK8otH">
+    <property role="EcuMT" value="4428577046416951149" />
+    <property role="3GE5qa" value="Module.ModuleExport.MEPModule" />
+    <property role="TrG5h" value="MEPMSelf" />
+    <property role="R4oN_" value="Reexport of the current module." />
+    <ref role="1TJDcQ" node="3PPtPKK8otI" resolve="MEPMReference" />
+    <node concept="1TJgyj" id="3PPtPKK8ov5" role="1TKVEi">
+      <property role="IQ2ns" value="4428577046416951237" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="module" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="vUxQDjKXwK" resolve="Module" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3PPtPKK8otI">
+    <property role="EcuMT" value="4428577046416951150" />
+    <property role="3GE5qa" value="Module.ModuleExport.MEPModule" />
+    <property role="TrG5h" value="MEPMReference" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3PPtPKK8oui">
+    <property role="EcuMT" value="4428577046416951186" />
+    <property role="3GE5qa" value="Module.ModuleExport.MEPModule" />
+    <property role="TrG5h" value="MEPMImport" />
+    <property role="R4oN_" value="Reexport of an imported module." />
+    <ref role="1TJDcQ" node="3PPtPKK8otI" resolve="MEPMReference" />
   </node>
 </model>
 

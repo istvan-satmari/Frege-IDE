@@ -14,6 +14,15 @@
       <concept id="2410240425684603835" name="BaseFrege.structure.PVarOperator" flags="ng" index="2dhntu">
         <child id="2410240425684603839" name="operator" index="2dhntq" />
       </concept>
+      <concept id="4428577046416951149" name="BaseFrege.structure.MEPMSelf" flags="ng" index="dlf0L">
+        <reference id="4428577046416951237" name="module" index="dlf2p" />
+      </concept>
+      <concept id="4428577046416085097" name="BaseFrege.structure.MEOperator" flags="ng" index="doisP">
+        <child id="4428577046416085100" name="operator" index="doisK" />
+      </concept>
+      <concept id="4428577046415188443" name="BaseFrege.structure.MEFunction" flags="ng" index="dsXq7">
+        <child id="4428577046415188444" name="function" index="dsXq0" />
+      </concept>
       <concept id="3852202959973463817" name="BaseFrege.structure.LPExpression" flags="ng" index="2iAf4B">
         <child id="3852202959973463818" name="expression" index="2iAf4$" />
       </concept>
@@ -37,8 +46,8 @@
       <concept id="5601220581972920968" name="BaseFrege.structure.FDGCEOperator" flags="ng" index="kCsbT">
         <child id="5601220581972920969" name="operator" index="kCsbS" />
       </concept>
-      <concept id="4565621053812402374" name="BaseFrege.structure.MPModule" flags="ng" index="2sP33I">
-        <reference id="2569253503694137640" name="module" index="3qezHq" />
+      <concept id="4565621053812402374" name="BaseFrege.structure.MEPModule" flags="ng" index="2sP33I">
+        <child id="4428577046416951151" name="module" index="dlf0N" />
       </concept>
       <concept id="4565621053812462073" name="BaseFrege.structure.PLiteral" flags="ng" index="2sPgBh">
         <child id="1839659371719467096" name="value" index="26ymwF" />
@@ -221,9 +230,6 @@
       <concept id="8800381220712711650" name="BaseFrege.structure.NodeVARID" flags="ng" index="1YIbBU">
         <property id="8800381220712711666" name="value" index="1YIbBE" />
       </concept>
-      <concept id="2089536204310272599" name="BaseFrege.structure.MPSVARID" flags="ng" index="1ZLdLc">
-        <child id="2089536204310272600" name="value" index="1ZLdL3" />
-      </concept>
       <concept id="2089536204310232280" name="BaseFrege.structure.NodeOperator" flags="ng" index="1ZLjF3">
         <property id="6558324093842139697" name="value" index="1kmRcP" />
       </concept>
@@ -235,7 +241,7 @@
     </language>
   </registry>
   <node concept="1kelX5" id="6t243n3yPVD">
-    <property role="TrG5h" value="Something" />
+    <property role="TrG5h" value="Skeleton" />
     <node concept="14659P" id="181lOLSiLCK" role="1kelZ8" />
     <node concept="14659P" id="6XayDjsNKRG" role="1kelZ8" />
     <node concept="1kelYC" id="6t243n3yPYC" role="1kelZ8">
@@ -1285,30 +1291,12 @@
       </node>
     </node>
     <node concept="1kelXq" id="6t243n3yPVE" role="1kelWf">
-      <node concept="1ZLdLc" id="7cjyLS5uzq_" role="1VGiaT">
-        <node concept="1YIbBU" id="7cjyLS5uzqA" role="1ZLdL3">
-          <property role="1YIbBE" value="a" />
-        </node>
-      </node>
-      <node concept="1ZLdLc" id="7cjyLS5uzqH" role="1VGiaT">
-        <node concept="1YIbBU" id="7cjyLS5uzqI" role="1ZLdL3">
-          <property role="1YIbBE" value="c" />
-        </node>
-      </node>
-      <node concept="1ZLdLc" id="7cjyLS5uzqT" role="1VGiaT">
-        <node concept="1YIbBU" id="7cjyLS5uzqU" role="1ZLdL3">
-          <property role="1YIbBE" value="d" />
-        </node>
-      </node>
-      <node concept="2sP33I" id="7cjyLS5vgOU" role="1VGiaT">
-        <ref role="3qezHq" node="6t243n3zzNX" />
-      </node>
       <node concept="iP7Yn" id="3PPtPKK0Fz0" role="iPoTc">
         <property role="iP7Ye" value="frege" />
         <node concept="iP7Yn" id="3PPtPKK0Fz5" role="iP7Yg">
           <property role="iP7Ye" value="module" />
-          <node concept="iP7ZQ" id="3PPtPKK0Fzx" role="iP7Yg">
-            <property role="iP7ZR" value="Exemplar" />
+          <node concept="iP7ZQ" id="3PPtPKK8p_Z" role="iP7Yg">
+            <property role="iP7ZR" value="Skeleton" />
           </node>
         </node>
       </node>
@@ -1755,11 +1743,36 @@
           <property role="iP7ZR" value="Exemplar" />
         </node>
       </node>
+      <node concept="dsXq7" id="3PPtPKK550B" role="1VGiaT">
+        <node concept="2V2zoM" id="3PPtPKK550_" role="dsXq0">
+          <ref role="2dhnus" node="5myFpmL$1iE" />
+        </node>
+      </node>
+      <node concept="dsXq7" id="3PPtPKK550L" role="1VGiaT">
+        <node concept="2V2zoM" id="3PPtPKK550J" role="dsXq0">
+          <ref role="2dhnus" node="5myFpmL$0YO" />
+        </node>
+      </node>
+      <node concept="doisP" id="3PPtPKK8orb" role="1VGiaT">
+        <node concept="2V2zpk" id="3PPtPKK8or9" role="doisK">
+          <ref role="2dhnt4" node="1OEr8apGKMq" />
+        </node>
+      </node>
+      <node concept="doisP" id="3PPtPKK8ort" role="1VGiaT">
+        <node concept="2V2zpk" id="3PPtPKK8orr" role="doisK">
+          <ref role="2dhnt4" node="6j$Bkzr7HoN" />
+        </node>
+      </node>
+      <node concept="2sP33I" id="3PPtPKKCon3" role="1VGiaT">
+        <node concept="dlf0L" id="3PPtPKKConr" role="dlf0N">
+          <ref role="dlf2p" node="6t243n3yRv8" />
+        </node>
+      </node>
     </node>
     <node concept="1kelZc" id="6t243n3yRv9" role="1kelZd" />
     <node concept="1kelWt" id="7cjyLS5vgPt" role="1kelZQ">
       <node concept="3q3Q6f" id="7cjyLS5vgPx" role="2sPfcj">
-        <ref role="3q3Q6c" node="6t243n3yPVD" resolve="Something" />
+        <ref role="3q3Q6c" node="6t243n3yPVD" resolve="Skeleton" />
       </node>
     </node>
   </node>
