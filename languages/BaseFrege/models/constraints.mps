@@ -267,5 +267,34 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3PPtPKJCpfe">
+    <property role="3GE5qa" value="Module.ModuleName" />
+    <ref role="1M2myG" to="sc0n:3PPtPKJCgyE" resolve="ModuleNameFinal" />
+    <node concept="EnEH3" id="3PPtPKJCppO" role="1MhHOB">
+      <ref role="EomxK" to="sc0n:3PPtPKJCgyF" resolve="name" />
+      <node concept="QB0g5" id="3PPtPKJCppP" role="QCWH9">
+        <node concept="3clFbS" id="3PPtPKJCppQ" role="2VODD2">
+          <node concept="3SKdUt" id="3PPtPKJCppR" role="3cqZAp">
+            <node concept="3SKdUq" id="3PPtPKJCppS" role="3SKWNk">
+              <property role="3SKdUp" value="Must not contain spaces" />
+            </node>
+          </node>
+          <node concept="3cpWs6" id="3PPtPKJCppT" role="3cqZAp">
+            <node concept="3fqX7Q" id="3PPtPKJCppU" role="3cqZAk">
+              <node concept="2OqwBi" id="3PPtPKJCppV" role="3fr31v">
+                <node concept="1Wqviy" id="3PPtPKJCppW" role="2Oq$k0" />
+                <node concept="liA8E" id="3PPtPKJCppX" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                  <node concept="Xl_RD" id="3PPtPKJCppY" role="37wK5m">
+                    <property role="Xl_RC" value=" " />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

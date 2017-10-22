@@ -20,6 +20,13 @@
       <concept id="3852202959973463833" name="BaseFrege.structure.LPLambda" flags="ng" index="2iAf4R">
         <child id="3852202959973463834" name="lambda" index="2iAf4O" />
       </concept>
+      <concept id="4428577046408530123" name="BaseFrege.structure.ModuleNamePreFinal" flags="ng" index="iP7Yn">
+        <property id="4428577046408530130" name="head" index="iP7Ye" />
+        <child id="4428577046408530124" name="tail" index="iP7Yg" />
+      </concept>
+      <concept id="4428577046408530090" name="BaseFrege.structure.ModuleNameFinal" flags="ng" index="iP7ZQ">
+        <property id="4428577046408530091" name="name" index="iP7ZR" />
+      </concept>
       <concept id="5601220581972913290" name="BaseFrege.structure.PatternOperatorInGroup" flags="ng" index="kCqjV">
         <child id="5601220581972915383" name="argumentLeft" index="kCrN6" />
         <child id="5601220581972915384" name="argumentRight" index="kCrN9" />
@@ -151,6 +158,7 @@
         <child id="574920793184786588" name="imports" index="1kelZQ" />
       </concept>
       <concept id="574920793184786480" name="BaseFrege.structure.Module" flags="ng" index="1kelXq">
+        <child id="4428577046408526096" name="name" index="iPoTc" />
         <child id="8562096718745931555" name="parts" index="1VGiaT" />
       </concept>
       <concept id="574920793184786626" name="BaseFrege.structure.Fixity" flags="ng" index="1kelYC">
@@ -227,7 +235,7 @@
     </language>
   </registry>
   <node concept="1kelX5" id="6t243n3yPVD">
-    <property role="TrG5h" value="Testing" />
+    <property role="TrG5h" value="mymodule.frege.Testing" />
     <node concept="14659P" id="181lOLSiLCK" role="1kelZ8" />
     <node concept="14659P" id="6XayDjsNKRG" role="1kelZ8" />
     <node concept="1kelYC" id="6t243n3yPYC" role="1kelZ8">
@@ -1171,6 +1179,33 @@
         </node>
         <node concept="1kelYX" id="5myFpmLprcP" role="1EnjJn">
           <node concept="2V3sXq" id="5myFpmLprcQ" role="1Enppr">
+            <node concept="2V3sXs" id="4Zne4OHC5Uf" role="2V3sXv">
+              <node concept="2V2zpk" id="4Zne4OHC5Ug" role="2V3sXx">
+                <ref role="2dhnt4" node="25MTemGj7mQ" />
+              </node>
+              <node concept="2Y43Ew" id="4Zne4OHDdSe" role="2V3sXz">
+                <node concept="3BFgyO" id="4Zne4OHDdSf" role="2Y43Ez">
+                  <node concept="2V2zoM" id="4Zne4OHDdSc" role="3BFgyK">
+                    <ref role="2dhnus" node="3PT0fU5dpGV" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2V3sXs" id="4Zne4OHEkEV" role="2V3sXv">
+              <node concept="2V2zpk" id="4Zne4OHEkEW" role="2V3sXx">
+                <ref role="2dhnt4" node="25MTemGj7mQ" />
+              </node>
+              <node concept="2Y43Ew" id="4Zne4OHEkFi" role="2V3sXz">
+                <node concept="3BFgyO" id="4Zne4OHEkFj" role="2Y43Ez">
+                  <node concept="2V2zoM" id="4Zne4OHEkFg" role="3BFgyK">
+                    <ref role="2dhnus" node="3PT0fU5dpEZ" />
+                  </node>
+                </node>
+                <node concept="1kelTw" id="4Zne4OHEkFr" role="7F7fT">
+                  <property role="hTkZQ" value="10" />
+                </node>
+              </node>
+            </node>
             <node concept="1kelTw" id="5myFpmLprjQ" role="2V3sXp">
               <property role="hTkZQ" value="0" />
             </node>
@@ -1179,7 +1214,7 @@
       </node>
     </node>
     <node concept="14659P" id="5myFpmLpqS3" role="1kelZ8" />
-    <node concept="14659P" id="1OEr8aq9IDJ" role="1kelZ8" />
+    <node concept="14659P" id="4Zne4OHAS$1" role="1kelZ8" />
     <node concept="1kelYE" id="1OEr8apq12V" role="1kelZ8">
       <node concept="2sPhqi" id="1OEr8apq12T" role="10tqDW">
         <node concept="1YIbBU" id="1OEr8apq12U" role="2sPhqj">
@@ -1228,7 +1263,7 @@
     </node>
     <node concept="14659P" id="1OEr8apoPDU" role="1kelZ8" />
     <node concept="14659P" id="1OEr8apoPWB" role="1kelZ8" />
-    <node concept="14659P" id="1OEr8apoQ2S" role="1kelZ8" />
+    <node concept="14659P" id="4Zne4OHATN0" role="1kelZ8" />
     <node concept="1kelWt" id="6t243n3yPVO" role="1kelZQ">
       <node concept="3q3Q6f" id="6t243n3zzNX" role="2sPfcj">
         <ref role="3q3Q6c" node="6t243n3yRv7" resolve="Exemplar" />
@@ -1267,6 +1302,15 @@
       </node>
       <node concept="2sP33I" id="7cjyLS5vgOU" role="1VGiaT">
         <ref role="3qezHq" node="6t243n3zzNX" />
+      </node>
+      <node concept="iP7Yn" id="3PPtPKJOsgx" role="iPoTc">
+        <property role="iP7Ye" value="frege" />
+        <node concept="iP7Yn" id="3PPtPKJOsgH" role="iP7Yg">
+          <property role="iP7Ye" value="prelude" />
+          <node concept="iP7ZQ" id="3PPtPKJOsgI" role="iP7Yg">
+            <property role="iP7ZR" value="Math" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1kelZc" id="6t243n3yPVF" role="1kelZd" />
@@ -1704,11 +1748,18 @@
     <node concept="14659P" id="5myFpmLZxyQ" role="1kelZ8" />
     <node concept="14659P" id="5myFpmLZx_u" role="1kelZ8" />
     <node concept="14659P" id="5myFpmLL9rK" role="1kelZ8" />
-    <node concept="1kelXq" id="6t243n3yRv8" role="1kelWf" />
+    <node concept="1kelXq" id="6t243n3yRv8" role="1kelWf">
+      <node concept="iP7Yn" id="3PPtPKJPsp6" role="iPoTc">
+        <property role="iP7Ye" value="mymodule" />
+        <node concept="iP7ZQ" id="3PPtPKJPsp7" role="iP7Yg">
+          <property role="iP7ZR" value="Exemplar" />
+        </node>
+      </node>
+    </node>
     <node concept="1kelZc" id="6t243n3yRv9" role="1kelZd" />
     <node concept="1kelWt" id="7cjyLS5vgPt" role="1kelZQ">
       <node concept="3q3Q6f" id="7cjyLS5vgPx" role="2sPfcj">
-        <ref role="3q3Q6c" node="6t243n3yPVD" resolve="Testing" />
+        <ref role="3q3Q6c" node="6t243n3yPVD" resolve="mymodule.frege.Testing" />
       </node>
     </node>
   </node>

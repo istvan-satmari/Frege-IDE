@@ -12,7 +12,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,68,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,72,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/1156512287654379470">
@@ -537,6 +537,50 @@
         <var name="typeCheckingContext" id="412332047022738894" />
       </scope>
       <unit id="412332047022738894" at="17,0,38,0" name="BaseFrege.typesystem.check_Fixity_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/4428577046410812133">
+    <file name="check_ModuleNameFinal_NonTypesystemRule.java">
+      <node id="4428577046410822669" at="24,7,25,60" concept="5" />
+      <node id="4428577046410822669" at="25,60,26,277" concept="5" />
+      <node id="4428577046410812133" at="30,50,31,143" concept="6" />
+      <node id="4428577046410812133" at="33,68,34,102" concept="6" />
+      <node id="4428577046410812133" at="36,30,37,17" concept="6" />
+      <node id="4428577046411098049" at="39,55,40,43" concept="6" />
+      <node id="4428577046410812133" at="20,0,22,0" concept="1" trace="check_ModuleNameFinal_NonTypesystemRule#()V" />
+      <node id="4428577046410812133" at="30,0,33,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4428577046410812133" at="33,0,36,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4428577046410812133" at="36,0,39,0" concept="4" trace="overrides#()Z" />
+      <node id="4428577046411098049" at="39,0,42,0" concept="9" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="4428577046410822669" at="23,614,27,7" concept="0" />
+      <node id="4428577046410812146" at="22,128,28,5" concept="3" />
+      <node id="4428577046410812133" at="22,0,30,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4428577046410812133" at="20,52,20,52" />
+      <scope id="4428577046410812133" at="30,50,31,143" />
+      <scope id="4428577046410812133" at="33,68,34,102" />
+      <scope id="4428577046410812133" at="36,30,37,17" />
+      <scope id="4428577046411098049" at="39,55,40,43" />
+      <scope id="4428577046410812133" at="20,0,22,0" />
+      <scope id="4428577046410822669" at="24,7,26,277">
+        <var name="_reporter_2309309498" id="4428577046410822669" />
+        <var name="errorTarget" id="4428577046410822669" />
+      </scope>
+      <scope id="4428577046410812133" at="30,0,33,0" />
+      <scope id="4428577046410812133" at="33,0,36,0">
+        <var name="argument" id="4428577046410812133" />
+      </scope>
+      <scope id="4428577046410812133" at="36,0,39,0" />
+      <scope id="4428577046411098049" at="39,0,42,0">
+        <var name="str" id="4428577046411098049" />
+      </scope>
+      <scope id="4428577046410812148" at="23,614,27,7" />
+      <scope id="4428577046410812134" at="22,128,28,5" />
+      <scope id="4428577046410812133" at="22,0,30,0">
+        <var name="moduleNameFinal" id="4428577046410812133" />
+        <var name="status" id="4428577046410812133" />
+        <var name="typeCheckingContext" id="4428577046410812133" />
+      </scope>
+      <unit id="4428577046410812133" at="19,0,43,0" name="BaseFrege.typesystem.check_ModuleNameFinal_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/5770590337766220650">

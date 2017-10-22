@@ -27,7 +27,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Case = new ConceptPresentationBuilder().shortDesc("Case expression.").create();
   private final ConceptPresentation props_CasePart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_CharValue = new ConceptPresentationBuilder().shortDesc("Character literal.").create();
-  private final ConceptPresentation props_Class = new ConceptPresentationBuilder().shortDesc("Define a new class.").create();
   private final ConceptPresentation props_Comment = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ConstructorApplication = new ConceptPresentationBuilder().shortDesc("Application of a datatype's constructor.").create();
   private final ConceptPresentation props_ConstructorReference = new ConceptPresentationBuilder().shortDesc("References a datatype constructor.").create();
@@ -83,7 +82,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_InfixAbstract = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Infixl = new ConceptPresentationBuilder().shortDesc("Left associative operator.").create();
   private final ConceptPresentation props_Infixr = new ConceptPresentationBuilder().shortDesc("Right associative operator.").create();
-  private final ConceptPresentation props_Instance = new ConceptPresentationBuilder().shortDesc("Define a new instance.").create();
   private final ConceptPresentation props_IntegerValue = new ConceptPresentationBuilder().shortDesc("Integer value.").create();
   private final ConceptPresentation props_LCQArrowAssignment = new ConceptPresentationBuilder().shortDesc("expr <- expr").create();
   private final ConceptPresentation props_LCQGuard = new ConceptPresentationBuilder().create();
@@ -110,7 +108,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_MPSimple = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Main = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Module = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ModulePart = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ModuleExportedPart = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ModuleName = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ModuleNameFinal = new ConceptPresentationBuilder().shortDesc("Final part in the module name description, e.g. \"frege.prelude.Math\", \"Math\" is the ModuleNameFinal node.").create();
+  private final ConceptPresentation props_ModuleNamePreFinal = new ConceptPresentationBuilder().shortDesc("Represents name of the current module separated by dots, e.g. \"frege\".\"prelude.Math\" (\"frege\" and the rest).").create();
   private final ConceptPresentation props_NodeCONID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for constructors.").create();
   private final ConceptPresentation props_NodeOperator = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for operators.").create();
   private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for functions and variables.").create();
@@ -143,7 +144,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_PrimaryExpression = new ConceptPresentationBuilder().shortDesc("Represents an expression that is either a function call or may be used as an argument to it.").create();
   private final ConceptPresentation props_QCONID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_QVARID = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Resource = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Simpletype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Skeleton = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_StringValue = new ConceptPresentationBuilder().shortDesc("String literal.").create();
@@ -201,8 +201,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_CasePart;
       case LanguageConceptSwitch.CharValue:
         return props_CharValue;
-      case LanguageConceptSwitch.Class:
-        return props_Class;
       case LanguageConceptSwitch.Comment:
         return props_Comment;
       case LanguageConceptSwitch.ConstructorApplication:
@@ -313,8 +311,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Infixl;
       case LanguageConceptSwitch.Infixr:
         return props_Infixr;
-      case LanguageConceptSwitch.Instance:
-        return props_Instance;
       case LanguageConceptSwitch.IntegerValue:
         return props_IntegerValue;
       case LanguageConceptSwitch.LCQArrowAssignment:
@@ -367,8 +363,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Main;
       case LanguageConceptSwitch.Module:
         return props_Module;
-      case LanguageConceptSwitch.ModulePart:
-        return props_ModulePart;
+      case LanguageConceptSwitch.ModuleExportedPart:
+        return props_ModuleExportedPart;
+      case LanguageConceptSwitch.ModuleName:
+        return props_ModuleName;
+      case LanguageConceptSwitch.ModuleNameFinal:
+        return props_ModuleNameFinal;
+      case LanguageConceptSwitch.ModuleNamePreFinal:
+        return props_ModuleNamePreFinal;
       case LanguageConceptSwitch.NodeCONID:
         return props_NodeCONID;
       case LanguageConceptSwitch.NodeOperator:
@@ -433,8 +435,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_QCONID;
       case LanguageConceptSwitch.QVARID:
         return props_QVARID;
-      case LanguageConceptSwitch.Resource:
-        return props_Resource;
       case LanguageConceptSwitch.Simpletype:
         return props_Simpletype;
       case LanguageConceptSwitch.Skeleton:

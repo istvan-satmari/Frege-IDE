@@ -43,6 +43,7 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -1592,6 +1593,64 @@
     <node concept="1YaCAy" id="181lOLSlEd2" role="1YuTPh">
       <property role="TrG5h" value="fdGrouped" />
       <ref role="1YaFvo" to="sc0n:1lrXqCCgARB" resolve="FDGrouped" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3PPtPKJKXF_">
+    <property role="TrG5h" value="check_ModuleNameFinal" />
+    <property role="3GE5qa" value="Module.ModuleName" />
+    <node concept="3clFbS" id="3PPtPKJKXFA" role="18ibNy">
+      <node concept="3clFbJ" id="3PPtPKJKXFM" role="3cqZAp">
+        <node concept="1Wc70l" id="3PPtPKJM1ES" role="3clFbw">
+          <node concept="2OqwBi" id="3PPtPKJM31N" role="3uHU7B">
+            <node concept="2OqwBi" id="3PPtPKJM1Xu" role="2Oq$k0">
+              <node concept="1YBJjd" id="3PPtPKJM1Ns" role="2Oq$k0">
+                <ref role="1YBMHb" node="3PPtPKJKXFC" resolve="moduleNameFinal" />
+              </node>
+              <node concept="3TrcHB" id="3PPtPKJM2xr" role="2OqNvi">
+                <ref role="3TsBF5" to="sc0n:3PPtPKJCgyF" resolve="name" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="3PPtPKJM3v1" role="2OqNvi" />
+          </node>
+          <node concept="3fqX7Q" id="3PPtPKJL08w" role="3uHU7w">
+            <node concept="2OqwBi" id="3PPtPKJL08y" role="3fr31v">
+              <node concept="2OqwBi" id="3PPtPKJL08z" role="2Oq$k0">
+                <node concept="1YBJjd" id="3PPtPKJL08$" role="2Oq$k0">
+                  <ref role="1YBMHb" node="3PPtPKJKXFC" resolve="moduleNameFinal" />
+                </node>
+                <node concept="3TrcHB" id="3PPtPKJL08_" role="2OqNvi">
+                  <ref role="3TsBF5" to="sc0n:3PPtPKJCgyF" resolve="name" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3PPtPKJL08A" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <node concept="2OqwBi" id="3PPtPKJL08B" role="37wK5m">
+                  <node concept="35c_gC" id="3PPtPKJL08C" role="2Oq$k0">
+                    <ref role="35c_gD" to="sc0n:3PPtPKJCgyE" resolve="ModuleNameFinal" />
+                  </node>
+                  <node concept="2qgKlT" id="3PPtPKJL08D" role="2OqNvi">
+                    <ref role="37wK5l" to="yq4j:3PPtPKJCpbI" resolve="getPattern" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="3PPtPKJKXFO" role="3clFbx">
+          <node concept="2MkqsV" id="3PPtPKJL0gd" role="3cqZAp">
+            <node concept="Xl_RD" id="3PPtPKJL0gG" role="2MkJ7o">
+              <property role="Xl_RC" value="Module name must end with an identifier with uppercase first letter." />
+            </node>
+            <node concept="1YBJjd" id="3PPtPKJL0gp" role="2OEOjV">
+              <ref role="1YBMHb" node="3PPtPKJKXFC" resolve="moduleNameFinal" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3PPtPKJKXFC" role="1YuTPh">
+      <property role="TrG5h" value="moduleNameFinal" />
+      <ref role="1YaFvo" to="sc0n:3PPtPKJCgyE" resolve="ModuleNameFinal" />
     </node>
   </node>
 </model>
