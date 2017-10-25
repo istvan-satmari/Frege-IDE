@@ -1593,7 +1593,7 @@
         <node concept="3clFbS" id="3PPtPKJKXFO" role="3clFbx">
           <node concept="2MkqsV" id="3PPtPKJL0gd" role="3cqZAp">
             <node concept="Xl_RD" id="3PPtPKJL0gG" role="2MkJ7o">
-              <property role="Xl_RC" value="Module name must end with an identifier with uppercase first letter." />
+              <property role="Xl_RC" value="Module name must end with uppercase-first-letter identifier." />
             </node>
             <node concept="1YBJjd" id="3PPtPKJL0gp" role="2OEOjV">
               <ref role="1YBMHb" node="3PPtPKJKXFC" resolve="moduleNameFinal" />

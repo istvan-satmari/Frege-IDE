@@ -105,8 +105,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Module = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ModuleExport = new ConceptPresentationBuilder().shortDesc("An item from the current module to export to the outside.").create();
   private final ConceptPresentation props_ModuleName = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ModuleNameFinal = new ConceptPresentationBuilder().shortDesc("Final part in the module name description, e.g. \"frege.prelude.Math\", \"Math\" is the ModuleNameFinal node.").create();
-  private final ConceptPresentation props_ModuleNamePreFinal = new ConceptPresentationBuilder().shortDesc("Represents name of the current module separated by dots, e.g. \"frege\".\"prelude.Math\" (\"frege\" and the rest).").create();
+  private final ConceptPresentation props_ModuleNameFinal = new ConceptPresentationBuilder().shortDesc("Final part in the module name description.").create();
+  private final ConceptPresentation props_ModuleNamePreFinal = new ConceptPresentationBuilder().shortDesc("Represents name of the current module separated by dots.").create();
   private final ConceptPresentation props_NodeCONID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for constructors.").create();
   private final ConceptPresentation props_NodeOperator = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for operators.").create();
   private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for functions and variables.").create();

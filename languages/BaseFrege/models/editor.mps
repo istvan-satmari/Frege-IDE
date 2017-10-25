@@ -2692,7 +2692,7 @@
     </node>
   </node>
   <node concept="3ICXOK" id="2wqwUqpa_Kc">
-    <property role="TrG5h" value="Module_AddExportedParts" />
+    <property role="TrG5h" value="Module_AddExport" />
     <property role="3GE5qa" value="Module" />
     <ref role="aqKnT" to="sc0n:vUxQDjKXwK" resolve="Module" />
     <node concept="yp4Wq" id="2wqwUqpa_Kd" role="lGtFl">
@@ -2701,7 +2701,7 @@
     <node concept="1Qtc8_" id="2wqwUqpa_Kg" role="IW6Ez">
       <node concept="3cWJ9i" id="2wqwUqpa_Ke" role="1Qtc8$">
         <node concept="CtIbL" id="2wqwUqpa_Kf" role="CtIbM">
-          <property role="CtIbK" value="LEFT" />
+          <property role="CtIbK" value="RIGHT" />
         </node>
       </node>
       <node concept="aenpk" id="2wqwUqpa_Ki" role="1Qtc8A">
@@ -2709,7 +2709,7 @@
           <node concept="3clFbS" id="2wqwUqpa_Kk" role="2VODD2">
             <node concept="3SKdUt" id="63titivLSEP" role="3cqZAp">
               <node concept="3SKdUq" id="63titivLSER" role="3SKWNk">
-                <property role="3SKdUp" value="Typing left of &quot;where&quot; in module header definition results in automatically creating brackets" />
+                <property role="3SKdUp" value="Add export when typing left bracket '('" />
               </node>
             </node>
             <node concept="3cpWs6" id="2wqwUqpa_Kl" role="3cqZAp">
@@ -2765,9 +2765,6 @@
                     <node concept="1Q80Hx" id="2wqwUqpa_KN" role="lBI5i" />
                     <node concept="2B6iha" id="2wqwUqpa_KO" role="lGT1i">
                       <property role="1lyBwo" value="mostRelevant" />
-                    </node>
-                    <node concept="3cmrfG" id="2wqwUqpa_KP" role="3dN3m$">
-                      <property role="3cmrfH" value="-1" />
                     </node>
                   </node>
                 </node>
@@ -12101,6 +12098,11 @@
           </node>
         </node>
       </node>
+      <node concept="mvV$s" id="3PPtPKL2KV9" role="1Qtc8A">
+        <node concept="A1WHr" id="3PPtPKL2L02" role="A14EM">
+          <ref role="2ZyFGn" to="sc0n:3PPtPKJCf$f" resolve="ModuleName" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3PPtPKK1E7R">
@@ -12550,7 +12552,7 @@
     <property role="3GE5qa" value="Module.ModuleExport.MEPModule" />
     <ref role="1XX52x" to="sc0n:3PPtPKK8oui" resolve="MEPMImport" />
     <node concept="1iCGBv" id="3PPtPKKXlzI" role="2wV5jI">
-      <ref role="1NtTu8" to="sc0n:3PPtPKKXkHw" resolve="module" />
+      <ref role="1NtTu8" to="sc0n:3PPtPKKXkHw" resolve="import" />
       <node concept="1sVBvm" id="3PPtPKKXlzJ" role="1sWHZn">
         <node concept="1HlG4h" id="3PPtPKKXlzK" role="2wV5jI">
           <node concept="1HfYo3" id="3PPtPKKXlzL" role="1HlULh">
@@ -12571,6 +12573,74 @@
                     </node>
                     <node concept="2qgKlT" id="3PPtPKKXrOI" role="2OqNvi">
                       <ref role="37wK5l" to="yq4j:3PPtPKK8q45" resolve="getFullName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="IW6AY" id="3PPtPKL1gAX">
+    <property role="3GE5qa" value="Module" />
+    <ref role="aqKnT" to="sc0n:3PPtPKJCf$f" resolve="ModuleName" />
+    <node concept="1Qtc8_" id="3PPtPKL1gB7" role="IW6Ez">
+      <node concept="3cWJ9i" id="3PPtPKL1gBb" role="1Qtc8$">
+        <node concept="CtIbL" id="3PPtPKL1gBd" role="CtIbM">
+          <property role="CtIbK" value="RIGHT" />
+        </node>
+      </node>
+      <node concept="aenpk" id="3PPtPKL1gC3" role="1Qtc8A">
+        <node concept="27VH4U" id="3PPtPKL1gC5" role="aenpu">
+          <node concept="3clFbS" id="3PPtPKL1gC6" role="2VODD2">
+            <node concept="3SKdUt" id="3PPtPKL1kVr" role="3cqZAp">
+              <node concept="3SKdUq" id="3PPtPKL1kVt" role="3SKWNk">
+                <property role="3SKdUp" value="This must be the last name part in the module name definition" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="3PPtPKL1llt" role="3cqZAp">
+              <node concept="1Wc70l" id="3PPtPKL1oGF" role="3cqZAk">
+                <node concept="2OqwBi" id="3PPtPKL1pbr" role="3uHU7w">
+                  <node concept="7Obwk" id="3PPtPKL1oWh" role="2Oq$k0" />
+                  <node concept="1mIQ4w" id="3PPtPKL1pxZ" role="2OqNvi">
+                    <node concept="chp4Y" id="3PPtPKL1pLd" role="cj9EA">
+                      <ref role="cht4Q" to="sc0n:3PPtPKJCgyE" resolve="ModuleNameFinal" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="3PPtPKL1nIz" role="3uHU7B">
+                  <node concept="2OqwBi" id="3PPtPKL1m3O" role="2Oq$k0">
+                    <node concept="7Obwk" id="3PPtPKL1lxa" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="3PPtPKL1mov" role="2OqNvi">
+                      <node concept="1xMEDy" id="3PPtPKL1mox" role="1xVPHs">
+                        <node concept="chp4Y" id="3PPtPKL1n4R" role="ri$Ld">
+                          <ref role="cht4Q" to="sc0n:vUxQDjKXwK" resolve="Module" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3x8VRR" id="3PPtPKL1o5l" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mvV$s" id="3PPtPKL1ieD" role="aenpr">
+          <node concept="A1WHu" id="3PPtPKL1iq5" role="A14EM">
+            <ref role="A1WHt" node="2wqwUqpa_Kc" resolve="Module_AddExport" />
+          </node>
+          <node concept="mvVNg" id="3PPtPKL1iq7" role="mvV$0">
+            <node concept="3clFbS" id="3PPtPKL1iq8" role="2VODD2">
+              <node concept="3cpWs6" id="3PPtPKL1itG" role="3cqZAp">
+                <node concept="2OqwBi" id="3PPtPKL1iFR" role="3cqZAk">
+                  <node concept="7Obwk" id="3PPtPKL1ixs" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="3PPtPKL1qrq" role="2OqNvi">
+                    <node concept="1xMEDy" id="3PPtPKL1qrs" role="1xVPHs">
+                      <node concept="chp4Y" id="3PPtPKL1qvO" role="ri$Ld">
+                        <ref role="cht4Q" to="sc0n:vUxQDjKXwK" resolve="Module" />
+                      </node>
                     </node>
                   </node>
                 </node>

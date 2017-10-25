@@ -2171,7 +2171,7 @@
     <property role="EcuMT" value="4428577046408530090" />
     <property role="3GE5qa" value="Module.ModuleName" />
     <property role="TrG5h" value="ModuleNameFinal" />
-    <property role="R4oN_" value="Final part in the module name description, e.g. &quot;frege.prelude.Math&quot;, &quot;Math&quot; is the ModuleNameFinal node." />
+    <property role="R4oN_" value="Final part in the module name description." />
     <ref role="1TJDcQ" node="3PPtPKJCf$f" resolve="ModuleName" />
     <node concept="1TJgyi" id="3PPtPKJCgyF" role="1TKVEl">
       <property role="IQ2nx" value="4428577046408530091" />
@@ -2183,7 +2183,7 @@
     <property role="EcuMT" value="4428577046408530123" />
     <property role="3GE5qa" value="Module.ModuleName" />
     <property role="TrG5h" value="ModuleNamePreFinal" />
-    <property role="R4oN_" value="Represents name of the current module separated by dots, e.g. &quot;frege&quot;.&quot;prelude.Math&quot; (&quot;frege&quot; and the rest)." />
+    <property role="R4oN_" value="Represents name of the current module separated by dots." />
     <ref role="1TJDcQ" node="3PPtPKJCf$f" resolve="ModuleName" />
     <node concept="1TJgyi" id="3PPtPKJCgzi" role="1TKVEl">
       <property role="IQ2nx" value="4428577046408530130" />

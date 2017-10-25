@@ -237,9 +237,6 @@
   </registry>
   <node concept="1kelX5" id="6t243n3yPVD">
     <property role="TrG5h" value="Skeleton" />
-    <node concept="1kelWt" id="3PPtPKKPvzK" role="1kelZQ">
-      <ref role="dOdcM" node="6t243n3yRv8" />
-    </node>
     <node concept="14659P" id="181lOLSiLCK" role="1kelZ8" />
     <node concept="14659P" id="6XayDjsNKRG" role="1kelZ8" />
     <node concept="1kelYC" id="6t243n3yPYC" role="1kelZ8">
@@ -1273,13 +1270,16 @@
         <property role="iP7Ye" value="frege" />
         <node concept="iP7Yn" id="3PPtPKK0Fz5" role="iP7Yg">
           <property role="iP7Ye" value="module" />
-          <node concept="iP7ZQ" id="3PPtPKK8p_Z" role="iP7Yg">
+          <node concept="iP7ZQ" id="3PPtPKL3Ovq" role="iP7Yg">
             <property role="iP7ZR" value="Skeleton" />
           </node>
         </node>
       </node>
     </node>
     <node concept="1kelZc" id="6t243n3yPVF" role="1kelZd" />
+    <node concept="1kelWt" id="3PPtPKL3OvF" role="1kelZQ">
+      <ref role="dOdcM" node="3PPtPKL0815" />
+    </node>
   </node>
   <node concept="1kelX5" id="6t243n3yRv7">
     <property role="TrG5h" value="Exemplar" />
