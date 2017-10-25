@@ -235,7 +235,7 @@
   <node concept="1kelX5" id="6t243n3yPVD">
     <property role="TrG5h" value="Skeleton" />
     <node concept="1kelWt" id="3PPtPKKPvzK" role="1kelZQ">
-      <ref role="dOdcM" node="6t243n3yPVE" />
+      <ref role="dOdcM" node="6t243n3yRv8" />
     </node>
     <node concept="14659P" id="181lOLSiLCK" role="1kelZ8" />
     <node concept="14659P" id="6XayDjsNKRG" role="1kelZ8" />
@@ -1745,7 +1745,7 @@
     </node>
     <node concept="1kelZc" id="6t243n3yRv9" role="1kelZd" />
     <node concept="1kelWt" id="3PPtPKKIcxW" role="1kelZQ">
-      <ref role="dOdcM" node="6t243n3yRv8" />
+      <ref role="dOdcM" node="6t243n3yPVE" />
       <node concept="dORSO" id="3PPtPKKOrLx" role="1VHVTg" />
       <node concept="2sPk$5" id="3PPtPKKOrLy" role="2sPfdO">
         <node concept="dOVjO" id="3PPtPKKOrLF" role="2sPngb" />
