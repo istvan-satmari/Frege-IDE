@@ -564,6 +564,17 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.scope.Scope" />
   </dependency>
+  <dependency className="BaseFrege.behavior.ListScopeImports" file="ListScopeImports.java">
+    <classNode dependClassName="BaseFrege.behavior.ModuleName__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.scope.ListScope" />
+  </dependency>
   <dependency className="BaseFrege.behavior.ModuleNameFinal__BehaviorDescriptor" file="ModuleNameFinal__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -1440,6 +1451,7 @@
   </dependency>
   <dependency className="BaseFrege.behavior.Skeleton__BehaviorDescriptor" file="Skeleton__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.DCScopeProvider__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.ListScopeImports" />
     <classNode dependClassName="BaseFrege.behavior.ModuleName__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Character" />

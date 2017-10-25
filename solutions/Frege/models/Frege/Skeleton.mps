@@ -17,6 +17,9 @@
       <concept id="4428577046416951149" name="BaseFrege.structure.MEPMSelf" flags="ng" index="dlf0L">
         <reference id="4428577046416951237" name="module" index="dlf2p" />
       </concept>
+      <concept id="4428577046416951186" name="BaseFrege.structure.MEPMImport" flags="ng" index="dlf3e">
+        <reference id="4428577046430829408" name="import" index="dw3KW" />
+      </concept>
       <concept id="4428577046416085097" name="BaseFrege.structure.MEOperator" flags="ng" index="doisP">
         <child id="4428577046416085100" name="operator" index="doisK" />
       </concept>
@@ -1742,16 +1745,36 @@
           <ref role="dlf2p" node="6t243n3yRv8" />
         </node>
       </node>
+      <node concept="2sP33I" id="3PPtPKKXkHg" role="1VGiaT">
+        <node concept="dlf3e" id="3PPtPKL081D" role="dlf0N">
+          <ref role="dw3KW" node="3PPtPKKIcxW" />
+        </node>
+      </node>
     </node>
     <node concept="1kelZc" id="6t243n3yRv9" role="1kelZd" />
     <node concept="1kelWt" id="3PPtPKKIcxW" role="1kelZQ">
       <ref role="dOdcM" node="6t243n3yPVE" />
-      <node concept="dORSO" id="3PPtPKKOrLx" role="1VHVTg" />
-      <node concept="2sPk$5" id="3PPtPKKOrLy" role="2sPfdO">
-        <node concept="dOVjO" id="3PPtPKKOrLF" role="2sPngb" />
-        <node concept="dOVjO" id="3PPtPKKOrLL" role="2sPngb" />
+      <node concept="dORSO" id="3PPtPKKXkGR" role="1VHVTg" />
+      <node concept="2sPk$5" id="3PPtPKKXkGS" role="2sPfdO">
+        <node concept="dOVjO" id="3PPtPKKXkGV" role="2sPngb" />
+        <node concept="dOVjO" id="3PPtPKKXkH0" role="2sPngb" />
       </node>
     </node>
+  </node>
+  <node concept="1kelX5" id="3PPtPKL0814">
+    <property role="TrG5h" value="Awesome" />
+    <node concept="1kelWt" id="3PPtPKL081c" role="1kelZQ">
+      <ref role="dOdcM" node="6t243n3yPVE" />
+    </node>
+    <node concept="1kelWt" id="3PPtPKL081e" role="1kelZQ">
+      <ref role="dOdcM" node="6t243n3yRv8" />
+    </node>
+    <node concept="1kelXq" id="3PPtPKL0815" role="1kelWf">
+      <node concept="iP7ZQ" id="3PPtPKL0816" role="iPoTc">
+        <property role="iP7ZR" value="Awesome" />
+      </node>
+    </node>
+    <node concept="1kelZc" id="3PPtPKL0817" role="1kelZd" />
   </node>
 </model>
 

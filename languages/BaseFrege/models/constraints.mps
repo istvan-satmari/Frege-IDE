@@ -395,5 +395,59 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3PPtPKKXkI1">
+    <property role="3GE5qa" value="Module.ModuleExport.MEPModule" />
+    <ref role="1M2myG" to="sc0n:3PPtPKK8oui" resolve="MEPMImport" />
+    <node concept="1N5Pfh" id="3PPtPKKXkI8" role="1Mr941">
+      <ref role="1N5Vy1" to="sc0n:3PPtPKKXkHw" resolve="module" />
+      <node concept="Bn3R3" id="3PPtPKKXkI9" role="Bn3R6">
+        <node concept="3clFbS" id="3PPtPKKXkIa" role="2VODD2">
+          <node concept="3cpWs6" id="3PPtPKKXt0n" role="3cqZAp">
+            <node concept="2OqwBi" id="3PPtPKKXvDd" role="3cqZAk">
+              <node concept="2OqwBi" id="3PPtPKKXuDd" role="2Oq$k0">
+                <node concept="2OqwBi" id="3PPtPKKXtDL" role="2Oq$k0">
+                  <node concept="Bn53e" id="3PPtPKKXt9k" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3PPtPKKXtVE" role="2OqNvi">
+                    <ref role="3Tt5mk" to="sc0n:3PPtPKKDqhI" resolve="module" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="3PPtPKKXuYq" role="2OqNvi">
+                  <ref role="3Tt5mk" to="sc0n:3PPtPKJCf$g" resolve="name" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="3PPtPKKXw0k" role="2OqNvi">
+                <ref role="37wK5l" to="yq4j:3PPtPKK8q45" resolve="getFullName" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3dgokm" id="3PPtPKKXkIh" role="1N6uqs">
+        <node concept="3clFbS" id="3PPtPKKXkIi" role="2VODD2">
+          <node concept="3cpWs6" id="3PPtPKKXkIj" role="3cqZAp">
+            <node concept="2OqwBi" id="3PPtPKKXkIk" role="3cqZAk">
+              <node concept="2OqwBi" id="3PPtPKKXkIl" role="2Oq$k0">
+                <node concept="2rP1CM" id="3PPtPKKXkIm" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="3PPtPKKXkIn" role="2OqNvi">
+                  <node concept="1xMEDy" id="3PPtPKKXkIo" role="1xVPHs">
+                    <node concept="chp4Y" id="3PPtPKKXkIp" role="ri$Ld">
+                      <ref role="cht4Q" to="sc0n:vUxQDjKXwJ" resolve="Skeleton" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="3PPtPKKXkIq" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:52_Geb4QDV$" resolve="getScope" />
+                <node concept="35c_gC" id="3PPtPKKXkIr" role="37wK5m">
+                  <ref role="35c_gD" to="sc0n:vUxQDjKXxR" resolve="Import" />
+                </node>
+                <node concept="2rP1CM" id="3PPtPKKXkIs" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

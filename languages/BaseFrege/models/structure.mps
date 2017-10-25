@@ -2257,6 +2257,13 @@
     <property role="TrG5h" value="MEPMImport" />
     <property role="R4oN_" value="Reexport of an imported module." />
     <ref role="1TJDcQ" node="3PPtPKK8otI" resolve="MEPMReference" />
+    <node concept="1TJgyj" id="3PPtPKKXkHw" role="1TKVEi">
+      <property role="IQ2ns" value="4428577046430829408" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="import" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="vUxQDjKXxR" resolve="Import" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3PPtPKKDw_A">
     <property role="EcuMT" value="4428577046425635174" />

@@ -1207,6 +1207,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("BaseFrege.structure.MEPMReference", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3d75775c3021876eL);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4428577046416951186");
+    b.associate("import", 0x3d75775c30f54b60L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d877L).optional(false).origin("4428577046430829408").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMEPMReference() {
