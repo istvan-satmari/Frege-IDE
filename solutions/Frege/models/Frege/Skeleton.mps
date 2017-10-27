@@ -14,9 +14,6 @@
       <concept id="2410240425684603835" name="BaseFrege.structure.PVarOperator" flags="ng" index="2dhntu">
         <child id="2410240425684603839" name="operator" index="2dhntq" />
       </concept>
-      <concept id="4428577046416951149" name="BaseFrege.structure.MEPMSelf" flags="ng" index="dlf0L">
-        <reference id="4428577046416951237" name="module" index="dlf2p" />
-      </concept>
       <concept id="4428577046416951186" name="BaseFrege.structure.MEPMImport" flags="ng" index="dlf3e">
         <reference id="4428577046430829408" name="import" index="dw3KW" />
       </concept>
@@ -51,6 +48,10 @@
       </concept>
       <concept id="4565621053812402374" name="BaseFrege.structure.MEPModule" flags="ng" index="2sP33I">
         <child id="4428577046416951151" name="module" index="dlf0N" />
+      </concept>
+      <concept id="4565621053812461972" name="BaseFrege.structure.PatternFunction" flags="ng" index="2sPgAW">
+        <child id="4565621053812461973" name="name" index="2sPgAX" />
+        <child id="4565621053812461975" name="arguments" index="2sPgAZ" />
       </concept>
       <concept id="4565621053812462073" name="BaseFrege.structure.PLiteral" flags="ng" index="2sPgBh">
         <child id="1839659371719467096" name="value" index="26ymwF" />
@@ -129,6 +130,9 @@
       </concept>
       <concept id="574920793184786699" name="BaseFrege.structure.DoubleValue" flags="ng" index="1kelTx">
         <property id="7712220098267840664" name="value" index="hTkZ9" />
+      </concept>
+      <concept id="574920793184786696" name="BaseFrege.structure.CharValue" flags="ng" index="1kelTy">
+        <property id="7712220098267840649" name="value" index="hTkZo" />
       </concept>
       <concept id="574920793184786697" name="BaseFrege.structure.StringValue" flags="ng" index="1kelTz">
         <property id="7712220098267840694" name="value" index="hTkZB" />
@@ -1548,7 +1552,7 @@
       <node concept="kCs94" id="5myFpmL$0YN" role="X6pIE">
         <node concept="2sPgCx" id="5myFpmL$0YO" role="kCs97">
           <node concept="1YIbBU" id="5myFpmL$0YP" role="2sPgCy">
-            <property role="1YIbBE" value="awesomeFunction" />
+            <property role="1YIbBE" value="exemplarFunction" />
           </node>
         </node>
       </node>
@@ -1741,20 +1745,18 @@
           <ref role="2dhnt4" node="6j$Bkzr7HoN" />
         </node>
       </node>
-      <node concept="2sP33I" id="3PPtPKKCon3" role="1VGiaT">
-        <node concept="dlf0L" id="3PPtPKKConr" role="dlf0N">
-          <ref role="dlf2p" node="6t243n3yRv8" />
-        </node>
-      </node>
-      <node concept="2sP33I" id="3PPtPKLc3Ww" role="1VGiaT">
-        <node concept="dlf3e" id="3PPtPKLjVJl" role="dlf0N">
-          <ref role="dw3KW" node="3PPtPKLgiGk" />
+      <node concept="2sP33I" id="3PPtPKLpKiQ" role="1VGiaT">
+        <node concept="dlf3e" id="3PPtPKLpKjc" role="dlf0N">
+          <ref role="dw3KW" node="3PPtPKLoR0n" />
         </node>
       </node>
     </node>
     <node concept="1kelZc" id="6t243n3yRv9" role="1kelZd" />
     <node concept="1kelWt" id="3PPtPKLgiGk" role="1kelZQ">
       <ref role="dOdcM" node="3PPtPKLjVJK" />
+    </node>
+    <node concept="1kelWt" id="3PPtPKLoR0n" role="1kelZQ">
+      <ref role="dOdcM" node="3PPtPKLoQYs" />
     </node>
   </node>
   <node concept="1kelX5" id="3PPtPKL0814">
@@ -1810,15 +1812,38 @@
     <node concept="1EnjCU" id="3PPtPKLkTpb" role="1kelZ8">
       <node concept="1kelYX" id="3PPtPKLkTpe" role="1EnjJn">
         <node concept="2V3sXq" id="3PPtPKLkTpf" role="1Enppr">
-          <node concept="1kelTz" id="3PPtPKLltgG" role="2V3sXp">
-            <property role="hTkZB" value="awesomeModuleFun3" />
+          <node concept="2V3sXs" id="3PPtPKLmWEM" role="2V3sXv">
+            <node concept="2V2zpk" id="3PPtPKLmWEN" role="2V3sXx">
+              <ref role="2dhnt4" node="1OEr8apGKMq" />
+            </node>
+            <node concept="2Y43Ew" id="3PPtPKLmWSG" role="2V3sXz">
+              <node concept="3BFgyO" id="3PPtPKLmWSH" role="2Y43Ez">
+                <node concept="2V2zoM" id="3PPtPKLmWSE" role="3BFgyK">
+                  <ref role="2dhnus" node="3PPtPKLmWEt" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2Y43Ew" id="3PPtPKLmWEF" role="2V3sXp">
+            <node concept="3BFgyO" id="3PPtPKLmWEG" role="2Y43Ez">
+              <node concept="2V2zoM" id="3PPtPKLmWED" role="3BFgyK">
+                <ref role="2dhnus" node="5myFpmL$1iE" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
       <node concept="1rUzOy" id="3PPtPKLkTp9" role="2TAmfA">
-        <node concept="2sPgCx" id="3PPtPKLkTp6" role="1rUzOz">
-          <node concept="1YIbBU" id="3PPtPKLkTp7" role="2sPgCy">
-            <property role="1YIbBE" value="awesomeModuleFun3" />
+        <node concept="2sPgAW" id="3PPtPKLmWEs" role="1rUzOz">
+          <node concept="2sPgCx" id="3PPtPKLmWEt" role="2sPgAX">
+            <node concept="1YIbBU" id="3PPtPKLkTp7" role="2sPgCy">
+              <property role="1YIbBE" value="awesomeModuleFun3" />
+            </node>
+          </node>
+          <node concept="2sPgCx" id="3PPtPKLmWEw" role="2sPgAZ">
+            <node concept="1YIbBU" id="3PPtPKLmWEx" role="2sPgCy">
+              <property role="1YIbBE" value="x" />
+            </node>
           </node>
         </node>
       </node>
@@ -1829,12 +1854,12 @@
       </node>
     </node>
     <node concept="1kelZc" id="3PPtPKL0817" role="1kelZd" />
+    <node concept="1kelWt" id="3PPtPKLmV18" role="1kelZQ">
+      <ref role="dOdcM" node="6t243n3yRv8" />
+    </node>
   </node>
   <node concept="1kelX5" id="3PPtPKLjVJJ">
     <property role="TrG5h" value="AnotherCoolModule" />
-    <node concept="1kelWt" id="3PPtPKLjVNQ" role="1kelZQ">
-      <ref role="dOdcM" node="3PPtPKL0815" />
-    </node>
     <node concept="1kelXq" id="3PPtPKLjVJK" role="1kelWf">
       <node concept="iP7ZQ" id="3PPtPKLjVJL" role="iPoTc">
         <property role="iP7ZR" value="AnotherCoolModule" />
@@ -1884,8 +1909,8 @@
         <node concept="2V3sXq" id="3PPtPKLjVSN" role="1Enppr">
           <node concept="2Y43Ew" id="3PPtPKLjVTg" role="2V3sXp">
             <node concept="3BFgyO" id="3PPtPKLjVTh" role="2Y43Ez">
-              <node concept="2V2zoM" id="3PPtPKLjVTe" role="3BFgyK">
-                <ref role="2dhnus" node="3PPtPKLjVOQ" />
+              <node concept="2V2zoM" id="3PPtPKLpKjn" role="3BFgyK">
+                <ref role="2dhnus" node="3PPtPKLjVLH" />
               </node>
             </node>
           </node>
@@ -1899,6 +1924,44 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1kelX5" id="3PPtPKLoQYr">
+    <property role="TrG5h" value="Perfect" />
+    <node concept="14659P" id="3PPtPKLoQYv" role="1kelZ8" />
+    <node concept="14659P" id="3PPtPKLoQYx" role="1kelZ8" />
+    <node concept="X6pxd" id="3PPtPKLoQZs" role="1kelZ8">
+      <node concept="kCs94" id="3PPtPKLoQZv" role="X6pIE">
+        <node concept="2sPgCx" id="3PPtPKLoQZw" role="kCs97">
+          <node concept="1YIbBU" id="3PPtPKLoQZx" role="2sPgCy">
+            <property role="1YIbBE" value="perfectFunction" />
+          </node>
+        </node>
+      </node>
+      <node concept="1EnjCU" id="3PPtPKLoQZe" role="X6px7">
+        <node concept="1rUzOy" id="3PPtPKLoQZn" role="2TAmfA">
+          <node concept="X6Dv1" id="3PPtPKLoQZk" role="1rUzOz">
+            <node concept="2sPgCx" id="3PPtPKLoQZl" role="X6Dvp">
+              <node concept="1YIbBU" id="3PPtPKLoQZm" role="2sPgCy">
+                <property role="1YIbBE" value="x" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1kelYX" id="3PPtPKLoQZp" role="1EnjJn">
+          <node concept="2V3sXq" id="3PPtPKLoQZq" role="1Enppr">
+            <node concept="1kelTy" id="3PPtPKLoQZK" role="2V3sXp">
+              <property role="hTkZo" value="\t" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1kelXq" id="3PPtPKLoQYs" role="1kelWf">
+      <node concept="iP7ZQ" id="3PPtPKLoQYt" role="iPoTc">
+        <property role="iP7ZR" value="Perfect" />
+      </node>
+    </node>
+    <node concept="1kelZc" id="3PPtPKLoQYu" role="1kelZd" />
   </node>
 </model>
 
