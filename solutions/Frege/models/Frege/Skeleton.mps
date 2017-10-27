@@ -26,8 +26,6 @@
       <concept id="4428577046415188443" name="BaseFrege.structure.MEFunction" flags="ng" index="dsXq7">
         <child id="4428577046415188444" name="function" index="dsXq0" />
       </concept>
-      <concept id="4428577046425635176" name="BaseFrege.structure.ImportHiding" flags="ng" index="dORSO" />
-      <concept id="4428577046425682856" name="BaseFrege.structure.IIFunction" flags="ng" index="dOVjO" />
       <concept id="3852202959973463817" name="BaseFrege.structure.LPExpression" flags="ng" index="2iAf4B">
         <child id="3852202959973463818" name="expression" index="2iAf4$" />
       </concept>
@@ -80,9 +78,6 @@
       </concept>
       <concept id="4565621053812461258" name="BaseFrege.structure.AIOperator" flags="ng" index="2sPhry">
         <child id="1218762508956744481" name="value" index="1V1X4E" />
-      </concept>
-      <concept id="4565621053812445485" name="BaseFrege.structure.ImportItems" flags="ng" index="2sPk$5">
-        <child id="4565621053812452387" name="items" index="2sPngb" />
       </concept>
       <concept id="4565621053812453401" name="BaseFrege.structure.FullType" flags="ng" index="2sPmwL">
         <child id="4565621053812453572" name="type" index="2sPmzG" />
@@ -158,8 +153,6 @@
       </concept>
       <concept id="574920793184786551" name="BaseFrege.structure.Import" flags="ng" index="1kelWt">
         <reference id="4428577046425609326" name="module" index="dOdcM" />
-        <child id="4565621053812419420" name="items" index="2sPfdO" />
-        <child id="8562096718746031050" name="ah" index="1VHVTg" />
       </concept>
       <concept id="574920793184786479" name="BaseFrege.structure.Skeleton" flags="ng" index="1kelX5">
         <child id="574920793184786533" name="module" index="1kelWf" />
@@ -260,7 +253,7 @@
         <property role="3UZobt" value=":-:" />
       </node>
     </node>
-    <node concept="14659P" id="6t243n3yQ9m" role="1kelZ8" />
+    <node concept="14659P" id="3PPtPKL4n7y" role="1kelZ8" />
     <node concept="14659P" id="7cjyLS5smf3" role="1kelZ8" />
     <node concept="1kelTI" id="6t243n3yPW_" role="1kelZ8">
       <node concept="1YIbBT" id="6t243n3yPWA" role="10tqDo">
@@ -1442,6 +1435,18 @@
                 </node>
               </node>
             </node>
+            <node concept="2V3sXs" id="3PPtPKLjVTn" role="2V3sXv">
+              <node concept="2V2zpk" id="3PPtPKLjVTo" role="2V3sXx">
+                <ref role="2dhnt4" node="1OEr8apGKMq" />
+              </node>
+              <node concept="2Y43Ew" id="3PPtPKLkTAO" role="2V3sXz">
+                <node concept="3BFgyO" id="3PPtPKLkTAP" role="2Y43Ez">
+                  <node concept="2V2zoM" id="3PPtPKLkTAM" role="3BFgyK">
+                    <ref role="2dhnus" node="3PPtPKLjVLH" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="1kelTz" id="5myFpmL$0Gg" role="2V3sXp">
               <property role="hTkZB" value="string" />
             </node>
@@ -1709,10 +1714,6 @@
     <node concept="14659P" id="5myFpmLZxwf" role="1kelZ8" />
     <node concept="14659P" id="5myFpmLZxr4" role="1kelZ8" />
     <node concept="14659P" id="5myFpmLL9$u" role="1kelZ8" />
-    <node concept="14659P" id="5myFpmLL9oS" role="1kelZ8" />
-    <node concept="14659P" id="5myFpmLZxyQ" role="1kelZ8" />
-    <node concept="14659P" id="5myFpmLZx_u" role="1kelZ8" />
-    <node concept="14659P" id="5myFpmLL9rK" role="1kelZ8" />
     <node concept="1kelXq" id="6t243n3yRv8" role="1kelWf">
       <node concept="iP7Yn" id="3PPtPKJPsp6" role="iPoTc">
         <property role="iP7Ye" value="mymodule" />
@@ -1745,29 +1746,82 @@
           <ref role="dlf2p" node="6t243n3yRv8" />
         </node>
       </node>
-      <node concept="2sP33I" id="3PPtPKKXkHg" role="1VGiaT">
-        <node concept="dlf3e" id="3PPtPKL081D" role="dlf0N">
-          <ref role="dw3KW" node="3PPtPKKIcxW" />
+      <node concept="2sP33I" id="3PPtPKLc3Ww" role="1VGiaT">
+        <node concept="dlf3e" id="3PPtPKLjVJl" role="dlf0N">
+          <ref role="dw3KW" node="3PPtPKLgiGk" />
         </node>
       </node>
     </node>
     <node concept="1kelZc" id="6t243n3yRv9" role="1kelZd" />
-    <node concept="1kelWt" id="3PPtPKKIcxW" role="1kelZQ">
-      <ref role="dOdcM" node="6t243n3yPVE" />
-      <node concept="dORSO" id="3PPtPKKXkGR" role="1VHVTg" />
-      <node concept="2sPk$5" id="3PPtPKKXkGS" role="2sPfdO">
-        <node concept="dOVjO" id="3PPtPKKXkGV" role="2sPngb" />
-        <node concept="dOVjO" id="3PPtPKKXkH0" role="2sPngb" />
-      </node>
+    <node concept="1kelWt" id="3PPtPKLgiGk" role="1kelZQ">
+      <ref role="dOdcM" node="3PPtPKLjVJK" />
     </node>
   </node>
   <node concept="1kelX5" id="3PPtPKL0814">
     <property role="TrG5h" value="Awesome" />
-    <node concept="1kelWt" id="3PPtPKL081c" role="1kelZQ">
-      <ref role="dOdcM" node="6t243n3yPVE" />
+    <node concept="14659P" id="3PPtPKLkTnh" role="1kelZ8" />
+    <node concept="1EnjCU" id="3PPtPKLjVOV" role="1kelZ8">
+      <node concept="1kelYX" id="3PPtPKLjVOY" role="1EnjJn">
+        <node concept="2V3sXq" id="3PPtPKLjVOZ" role="1Enppr">
+          <node concept="xEMEJ" id="3PPtPKLjVPq" role="2V3sXp">
+            <node concept="1kelYX" id="3PPtPKLjVPi" role="xEMEI">
+              <node concept="2V3sXq" id="3PPtPKLjVPj" role="1Enppr">
+                <node concept="1kelTw" id="3PPtPKLjVPh" role="2V3sXp">
+                  <property role="hTkZQ" value="1" />
+                </node>
+              </node>
+            </node>
+            <node concept="1kelYX" id="3PPtPKLjVPr" role="xEMEG">
+              <node concept="2V3sXq" id="3PPtPKLjVPs" role="1Enppr">
+                <node concept="1kelTw" id="3PPtPKLjVP_" role="2V3sXp">
+                  <property role="hTkZQ" value="7" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1rUzOy" id="3PPtPKLjVOT" role="2TAmfA">
+        <node concept="2sPgCx" id="3PPtPKLjVOQ" role="1rUzOz">
+          <node concept="1YIbBU" id="3PPtPKLjVOR" role="2sPgCy">
+            <property role="1YIbBE" value="awesomeModuleFun1" />
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="1kelWt" id="3PPtPKL081e" role="1kelZQ">
-      <ref role="dOdcM" node="6t243n3yRv8" />
+    <node concept="14659P" id="3PPtPKLjVRi" role="1kelZ8" />
+    <node concept="1EnjCU" id="3PPtPKLjVQe" role="1kelZ8">
+      <node concept="1kelYX" id="3PPtPKLjVQh" role="1EnjJn">
+        <node concept="2V3sXq" id="3PPtPKLjVQi" role="1Enppr">
+          <node concept="1kelTz" id="3PPtPKLjVRC" role="2V3sXp">
+            <property role="hTkZB" value="Hello, world!" />
+          </node>
+        </node>
+      </node>
+      <node concept="1rUzOy" id="3PPtPKLjVQc" role="2TAmfA">
+        <node concept="2sPgCx" id="3PPtPKLjVQ9" role="1rUzOz">
+          <node concept="1YIbBU" id="3PPtPKLjVQa" role="2sPgCy">
+            <property role="1YIbBE" value="awesomeModuleFun2" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14659P" id="3PPtPKLkToE" role="1kelZ8" />
+    <node concept="1EnjCU" id="3PPtPKLkTpb" role="1kelZ8">
+      <node concept="1kelYX" id="3PPtPKLkTpe" role="1EnjJn">
+        <node concept="2V3sXq" id="3PPtPKLkTpf" role="1Enppr">
+          <node concept="1kelTz" id="3PPtPKLltgG" role="2V3sXp">
+            <property role="hTkZB" value="awesomeModuleFun3" />
+          </node>
+        </node>
+      </node>
+      <node concept="1rUzOy" id="3PPtPKLkTp9" role="2TAmfA">
+        <node concept="2sPgCx" id="3PPtPKLkTp6" role="1rUzOz">
+          <node concept="1YIbBU" id="3PPtPKLkTp7" role="2sPgCy">
+            <property role="1YIbBE" value="awesomeModuleFun3" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1kelXq" id="3PPtPKL0815" role="1kelWf">
       <node concept="iP7ZQ" id="3PPtPKL0816" role="iPoTc">
@@ -1775,6 +1829,76 @@
       </node>
     </node>
     <node concept="1kelZc" id="3PPtPKL0817" role="1kelZd" />
+  </node>
+  <node concept="1kelX5" id="3PPtPKLjVJJ">
+    <property role="TrG5h" value="AnotherCoolModule" />
+    <node concept="1kelWt" id="3PPtPKLjVNQ" role="1kelZQ">
+      <ref role="dOdcM" node="3PPtPKL0815" />
+    </node>
+    <node concept="1kelXq" id="3PPtPKLjVJK" role="1kelWf">
+      <node concept="iP7ZQ" id="3PPtPKLjVJL" role="iPoTc">
+        <property role="iP7ZR" value="AnotherCoolModule" />
+      </node>
+    </node>
+    <node concept="1kelZc" id="3PPtPKLjVJM" role="1kelZd" />
+    <node concept="14659P" id="3PPtPKLjVNS" role="1kelZ8" />
+    <node concept="1EnjCU" id="3PPtPKLjVLM" role="1kelZ8">
+      <node concept="1kelYX" id="3PPtPKLjVLP" role="1EnjJn">
+        <node concept="2V3sXq" id="3PPtPKLjVLQ" role="1Enppr">
+          <node concept="xEMEp" id="3PPtPKLjVLZ" role="2V3sXp">
+            <node concept="1kelYX" id="3PPtPKLjVM9" role="xEMEu">
+              <node concept="2V3sXq" id="3PPtPKLjVMa" role="1Enppr">
+                <node concept="1kelTw" id="3PPtPKLjVM8" role="2V3sXp">
+                  <property role="hTkZQ" value="1" />
+                </node>
+              </node>
+            </node>
+            <node concept="1kelYX" id="3PPtPKLjVMp" role="xEMEu">
+              <node concept="2V3sXq" id="3PPtPKLjVMq" role="1Enppr">
+                <node concept="1kelTw" id="3PPtPKLjVMo" role="2V3sXp">
+                  <property role="hTkZQ" value="2" />
+                </node>
+              </node>
+            </node>
+            <node concept="1kelYX" id="3PPtPKLjVMJ" role="xEMEu">
+              <node concept="2V3sXq" id="3PPtPKLjVMK" role="1Enppr">
+                <node concept="1kelTw" id="3PPtPKLjVMI" role="2V3sXp">
+                  <property role="hTkZQ" value="3" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1rUzOy" id="3PPtPKLjVLK" role="2TAmfA">
+        <node concept="2sPgCx" id="3PPtPKLjVLH" role="1rUzOz">
+          <node concept="1YIbBU" id="3PPtPKLjVLI" role="2sPgCy">
+            <property role="1YIbBE" value="coolModuleFun1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14659P" id="3PPtPKLjVRF" role="1kelZ8" />
+    <node concept="1EnjCU" id="3PPtPKLjVSJ" role="1kelZ8">
+      <node concept="1kelYX" id="3PPtPKLjVSM" role="1EnjJn">
+        <node concept="2V3sXq" id="3PPtPKLjVSN" role="1Enppr">
+          <node concept="2Y43Ew" id="3PPtPKLjVTg" role="2V3sXp">
+            <node concept="3BFgyO" id="3PPtPKLjVTh" role="2Y43Ez">
+              <node concept="2V2zoM" id="3PPtPKLjVTe" role="3BFgyK">
+                <ref role="2dhnus" node="3PPtPKLjVOQ" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1rUzOy" id="3PPtPKLjVSH" role="2TAmfA">
+        <node concept="2sPgCx" id="3PPtPKLjVSE" role="1rUzOz">
+          <node concept="1YIbBU" id="3PPtPKLjVSF" role="2sPgCy">
+            <property role="1YIbBE" value="coolModuleFun2" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

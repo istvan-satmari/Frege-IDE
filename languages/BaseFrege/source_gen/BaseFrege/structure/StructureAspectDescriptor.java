@@ -941,6 +941,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForImport() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BaseFrege", "Import", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d877L);
     b.class_(false, false, false);
+    b.parent(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53091a40f7add1f5L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786551");
     b.associate("module", 0x3d75775c30a5a46eL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d830L).optional(false).origin("4428577046425609326").done();
     b.aggregate("ah", 0x76d2ad9a0d6513caL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3d75775c30a60966L).optional(true).ordered(true).multiple(false).origin("8562096718746031050").done();

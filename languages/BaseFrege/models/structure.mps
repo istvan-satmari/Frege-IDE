@@ -124,6 +124,9 @@
     <property role="3GE5qa" value="Import" />
     <property role="34LRSv" value="import" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3PPtPKL4EZD" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="7riFpCdphfa" role="1TKVEi">
       <property role="IQ2ns" value="8562096718746031050" />
       <property role="20lmBu" value="aggregation" />
