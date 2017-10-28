@@ -12108,7 +12108,7 @@
   <node concept="24kQdi" id="3PPtPKK1E7R">
     <property role="3GE5qa" value="Module.ModuleExport" />
     <ref role="1XX52x" to="sc0n:3PPtPKK1E7r" resolve="MEFunction" />
-    <node concept="3F1sOY" id="3PPtPKK1E7T" role="2wV5jI">
+    <node concept="3F1sOY" id="3PPtPKLzF_c" role="2wV5jI">
       <ref role="1NtTu8" to="sc0n:3PPtPKK1E7s" resolve="function" />
     </node>
   </node>
@@ -12276,8 +12276,8 @@
   <node concept="24kQdi" id="3PPtPKKDGf7">
     <property role="3GE5qa" value="Import.ImportItems" />
     <ref role="1XX52x" to="sc0n:3PPtPKKDGeC" resolve="IIFunction" />
-    <node concept="3F0ifn" id="3PPtPKKDGf9" role="2wV5jI">
-      <property role="3F0ifm" value="function" />
+    <node concept="3F1sOY" id="3PPtPKLGYKv" role="2wV5jI">
+      <ref role="1NtTu8" to="sc0n:3PPtPKLu0RU" resolve="function" />
     </node>
   </node>
   <node concept="3ICXOK" id="3PPtPKKDX0l">
@@ -12648,6 +12648,117 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3PPtPKLu1NF">
+    <property role="3GE5qa" value="Import.ImportItems" />
+    <ref role="1XX52x" to="sc0n:3PPtPKLu0RT" resolve="IIOperator" />
+    <node concept="3F1sOY" id="3PPtPKLu1NH" role="2wV5jI">
+      <ref role="1NtTu8" to="sc0n:3PPtPKLu0RW" resolve="operator" />
+    </node>
+  </node>
+  <node concept="3p36aQ" id="3PPtPKLu1O9">
+    <property role="3GE5qa" value="Import.ImportItems" />
+    <ref role="aqKnT" to="sc0n:3PPtPKLu0RT" resolve="IIOperator" />
+    <node concept="3N5dw7" id="3PPtPKLu1Od" role="3ft7WO">
+      <node concept="3N5aqt" id="3PPtPKLu1Oe" role="3Na0zg">
+        <node concept="3clFbS" id="3PPtPKLu1Of" role="2VODD2">
+          <node concept="3SKdUt" id="3PPtPKLu1Og" role="3cqZAp">
+            <node concept="3SKdUq" id="3PPtPKLu1Oh" role="3SKWNk">
+              <property role="3SKdUp" value="Display context help for referentiable operators" />
+            </node>
+          </node>
+          <node concept="3cpWs8" id="3PPtPKLu1Oi" role="3cqZAp">
+            <node concept="3cpWsn" id="3PPtPKLu1Oj" role="3cpWs9">
+              <property role="TrG5h" value="node" />
+              <node concept="3Tqbb2" id="3PPtPKLu1Ok" role="1tU5fm">
+                <ref role="ehGHo" to="sc0n:3PPtPKLu0RT" resolve="IIOperator" />
+              </node>
+              <node concept="2ShNRf" id="3PPtPKLu1Ol" role="33vP2m">
+                <node concept="2fJWfE" id="3PPtPKLu1Om" role="2ShVmc">
+                  <node concept="3Tqbb2" id="3PPtPKLu1On" role="3zrR0E">
+                    <ref role="ehGHo" to="sc0n:3PPtPKLu0RT" resolve="IIOperator" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="3PPtPKLu1Oo" role="3cqZAp">
+            <node concept="37vLTI" id="3PPtPKLu1Op" role="3clFbG">
+              <node concept="3N4pyC" id="3PPtPKLu1Oq" role="37vLTx" />
+              <node concept="2OqwBi" id="3PPtPKLu1Or" role="37vLTJ">
+                <node concept="37vLTw" id="3PPtPKLu1Os" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3PPtPKLu1Oj" resolve="node" />
+                </node>
+                <node concept="3TrEf2" id="3PPtPKLvimA" role="2OqNvi">
+                  <ref role="3Tt5mk" to="sc0n:3PPtPKLu0RW" resolve="operator" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="3PPtPKLu1Ou" role="3cqZAp" />
+          <node concept="3cpWs6" id="3PPtPKLu1Ov" role="3cqZAp">
+            <node concept="37vLTw" id="3PPtPKLu1Ow" role="3cqZAk">
+              <ref role="3cqZAo" node="3PPtPKLu1Oj" resolve="node" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2kknPJ" id="3PPtPKLu1Ox" role="2klrvf">
+        <ref role="2ZyFGn" to="sc0n:4GJJ0fK9oDn" resolve="OperatorReference" />
+      </node>
+    </node>
+  </node>
+  <node concept="3p36aQ" id="3PPtPKLGYK_">
+    <property role="3GE5qa" value="Import.ImportItems" />
+    <ref role="aqKnT" to="sc0n:3PPtPKKDGeC" resolve="IIFunction" />
+    <node concept="3N5dw7" id="3PPtPKLu1ev" role="3ft7WO">
+      <node concept="3N5aqt" id="3PPtPKLu1ew" role="3Na0zg">
+        <node concept="3clFbS" id="3PPtPKLu1ex" role="2VODD2">
+          <node concept="3SKdUt" id="3PPtPKLu1ey" role="3cqZAp">
+            <node concept="3SKdUq" id="3PPtPKLu1ez" role="3SKWNk">
+              <property role="3SKdUp" value="Display context help for referentiable functions" />
+            </node>
+          </node>
+          <node concept="3cpWs8" id="3PPtPKLu1e$" role="3cqZAp">
+            <node concept="3cpWsn" id="3PPtPKLu1e_" role="3cpWs9">
+              <property role="TrG5h" value="node" />
+              <node concept="3Tqbb2" id="3PPtPKLu1eA" role="1tU5fm">
+                <ref role="ehGHo" to="sc0n:3PPtPKKDGeC" resolve="IIFunction" />
+              </node>
+              <node concept="2ShNRf" id="3PPtPKLu1eB" role="33vP2m">
+                <node concept="2fJWfE" id="3PPtPKLu1eC" role="2ShVmc">
+                  <node concept="3Tqbb2" id="3PPtPKLu1eD" role="3zrR0E">
+                    <ref role="ehGHo" to="sc0n:3PPtPKKDGeC" resolve="IIFunction" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="3PPtPKLu1eE" role="3cqZAp">
+            <node concept="37vLTI" id="3PPtPKLu1eF" role="3clFbG">
+              <node concept="3N4pyC" id="3PPtPKLu1eG" role="37vLTx" />
+              <node concept="2OqwBi" id="3PPtPKLu1eH" role="37vLTJ">
+                <node concept="37vLTw" id="3PPtPKLu1eI" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3PPtPKLu1e_" resolve="node" />
+                </node>
+                <node concept="3TrEf2" id="3PPtPKLvhYq" role="2OqNvi">
+                  <ref role="3Tt5mk" to="sc0n:3PPtPKLu0RU" resolve="function" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="3PPtPKLu1eK" role="3cqZAp" />
+          <node concept="3cpWs6" id="3PPtPKLu1eL" role="3cqZAp">
+            <node concept="37vLTw" id="3PPtPKLu1eM" role="3cqZAk">
+              <ref role="3cqZAo" node="3PPtPKLu1e_" resolve="node" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2kknPJ" id="3PPtPKLu1eN" role="2klrvf">
+        <ref role="2ZyFGn" to="sc0n:4GJJ0fK9oCL" resolve="VariableReference" />
       </node>
     </node>
   </node>

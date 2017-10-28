@@ -2299,6 +2299,27 @@
     <property role="TrG5h" value="IIFunction" />
     <property role="R4oN_" value="Import a function." />
     <ref role="1TJDcQ" node="3Xsm2yzyiKA" resolve="ImportItem" />
+    <node concept="1TJgyj" id="3PPtPKLu0RU" role="1TKVEi">
+      <property role="IQ2ns" value="4428577046439398906" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="function" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4GJJ0fK9oCL" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3PPtPKLu0RT">
+    <property role="EcuMT" value="4428577046439398905" />
+    <property role="3GE5qa" value="Import.ImportItems" />
+    <property role="TrG5h" value="IIOperator" />
+    <property role="R4oN_" value="Import an operator function." />
+    <ref role="1TJDcQ" node="3Xsm2yzyiKA" resolve="ImportItem" />
+    <node concept="1TJgyj" id="3PPtPKLu0RW" role="1TKVEi">
+      <property role="IQ2ns" value="4428577046439398908" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operator" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4GJJ0fK9oDn" resolve="OperatorReference" />
+    </node>
   </node>
 </model>
 

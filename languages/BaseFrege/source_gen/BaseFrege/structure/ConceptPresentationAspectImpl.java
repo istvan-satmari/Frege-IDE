@@ -63,6 +63,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_GenericApplication = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Guard = new ConceptPresentationBuilder().shortDesc("Adds a new guard.").create();
   private final ConceptPresentation props_IIFunction = new ConceptPresentationBuilder().shortDesc("Import a function.").create();
+  private final ConceptPresentation props_IIOperator = new ConceptPresentationBuilder().shortDesc("Import an operator function.").create();
   private final ConceptPresentation props_IfThenElse = new ConceptPresentationBuilder().shortDesc("If expression.").create();
   private final ConceptPresentation props_Import = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportAH = new ConceptPresentationBuilder().create();
@@ -268,6 +269,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Guard;
       case LanguageConceptSwitch.IIFunction:
         return props_IIFunction;
+      case LanguageConceptSwitch.IIOperator:
+        return props_IIOperator;
       case LanguageConceptSwitch.IfThenElse:
         return props_IfThenElse;
       case LanguageConceptSwitch.Import:

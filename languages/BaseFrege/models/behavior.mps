@@ -19,6 +19,7 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="ncw5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util.annotation(MPS.Core/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2686,7 +2687,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3PPtPKLccYK" role="3cqZAp" />
       </node>
       <node concept="37vLTG" id="5c96$3RGUin" role="3clF46">
         <property role="TrG5h" value="kind" />
@@ -12587,6 +12587,75 @@
         <node concept="17QB3L" id="3PPtPKL4Grm" role="1tU5fm" />
       </node>
       <node concept="3uibUv" id="3PPtPKL4Grn" role="3clF45">
+        <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="3PPtPKLK2RN" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getScope" />
+      <ref role="13i0hy" to="tpcu:52_Geb4QDV$" resolve="getScope" />
+      <node concept="3Tm1VV" id="3PPtPKLK2RO" role="1B3o_S" />
+      <node concept="3clFbS" id="3PPtPKLK2RP" role="3clF47">
+        <node concept="3SKdUt" id="3PPtPKLK2RQ" role="3cqZAp">
+          <node concept="3SKdUq" id="3PPtPKLK2RR" role="3SKWNk">
+            <property role="3SKdUp" value="Request for scope comes from a child" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3PPtPKLOBDB" role="3cqZAp">
+          <node concept="3clFbS" id="3PPtPKLOBDD" role="3clFbx">
+            <node concept="3SKdUt" id="3PPtPKLK2Sg" role="3cqZAp">
+              <node concept="3SKdUq" id="3PPtPKLK2Sh" role="3SKWNk">
+                <property role="3SKdUp" value="Restriction on imported items - delegate to the imported module" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="3PPtPKLK7MW" role="3cqZAp">
+              <node concept="2OqwBi" id="3PPtPKLK7MX" role="3cqZAk">
+                <node concept="2OqwBi" id="3PPtPKLK7MY" role="2Oq$k0">
+                  <node concept="13iPFW" id="3PPtPKLK7MZ" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3PPtPKLK7N0" role="2OqNvi">
+                    <ref role="3Tt5mk" to="sc0n:3PPtPKKDqhI" resolve="module" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="3PPtPKLK7N1" role="2OqNvi">
+                  <ref role="37wK5l" node="3PPtPKL4FSk" resolve="getScopeForImport" />
+                  <node concept="37vLTw" id="3PPtPKLK7N2" role="37wK5m">
+                    <ref role="3cqZAo" node="3PPtPKLK2SB" resolve="kind" />
+                  </node>
+                  <node concept="37vLTw" id="3PPtPKLK7N3" role="37wK5m">
+                    <ref role="3cqZAo" node="3PPtPKLK2SD" resolve="child" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="iy1fb" id="3PPtPKLOBEX" role="3clFbw">
+            <ref role="iy1sa" to="sc0n:3Xsm2yzyaHs" resolve="items" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="3PPtPKLOBCt" role="3cqZAp" />
+        <node concept="3SKdUt" id="3PPtPKLK5t1" role="3cqZAp">
+          <node concept="3SKdUq" id="3PPtPKLK5t3" role="3SKWNk">
+            <property role="3SKdUp" value="Default" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3PPtPKLK4Z3" role="3cqZAp">
+          <node concept="2ShNRf" id="3PPtPKLK54l" role="3cqZAk">
+            <node concept="1pGfFk" id="3PPtPKLK5hm" role="2ShVmc">
+              <ref role="37wK5l" to="o8zo:7ipADkTfAzT" resolve="EmptyScope" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3PPtPKLK2SB" role="3clF46">
+        <property role="TrG5h" value="kind" />
+        <node concept="3bZ5Sz" id="3PPtPKLK2SC" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PPtPKLK2SD" role="3clF46">
+        <property role="TrG5h" value="child" />
+        <node concept="3Tqbb2" id="3PPtPKLK2SE" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="3PPtPKLK2SF" role="3clF45">
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
       </node>
     </node>

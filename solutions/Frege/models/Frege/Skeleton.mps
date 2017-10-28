@@ -23,6 +23,9 @@
       <concept id="4428577046415188443" name="BaseFrege.structure.MEFunction" flags="ng" index="dsXq7">
         <child id="4428577046415188444" name="function" index="dsXq0" />
       </concept>
+      <concept id="4428577046425682856" name="BaseFrege.structure.IIFunction" flags="ng" index="dOVjO">
+        <child id="4428577046439398906" name="function" index="c3nEA" />
+      </concept>
       <concept id="3852202959973463817" name="BaseFrege.structure.LPExpression" flags="ng" index="2iAf4B">
         <child id="3852202959973463818" name="expression" index="2iAf4$" />
       </concept>
@@ -79,6 +82,9 @@
       </concept>
       <concept id="4565621053812461258" name="BaseFrege.structure.AIOperator" flags="ng" index="2sPhry">
         <child id="1218762508956744481" name="value" index="1V1X4E" />
+      </concept>
+      <concept id="4565621053812445485" name="BaseFrege.structure.ImportItems" flags="ng" index="2sPk$5">
+        <child id="4565621053812452387" name="items" index="2sPngb" />
       </concept>
       <concept id="4565621053812453401" name="BaseFrege.structure.FullType" flags="ng" index="2sPmwL">
         <child id="4565621053812453572" name="type" index="2sPmzG" />
@@ -157,6 +163,7 @@
       </concept>
       <concept id="574920793184786551" name="BaseFrege.structure.Import" flags="ng" index="1kelWt">
         <reference id="4428577046425609326" name="module" index="dOdcM" />
+        <child id="4565621053812419420" name="items" index="2sPfdO" />
       </concept>
       <concept id="574920793184786479" name="BaseFrege.structure.Skeleton" flags="ng" index="1kelX5">
         <child id="574920793184786533" name="module" index="1kelWf" />
@@ -1776,6 +1783,18 @@
     <node concept="1kelZc" id="6t243n3yRv9" role="1kelZd" />
     <node concept="1kelWt" id="3PPtPKLgiGk" role="1kelZQ">
       <ref role="dOdcM" node="3PPtPKLjVJK" />
+      <node concept="2sPk$5" id="3PPtPKLyP2L" role="2sPfdO">
+        <node concept="dOVjO" id="3PPtPKLPwGE" role="2sPngb">
+          <node concept="2V2zoM" id="3PPtPKLPwGD" role="c3nEA">
+            <ref role="2dhnus" node="3PPtPKLjVLH" />
+          </node>
+        </node>
+        <node concept="dOVjO" id="3PPtPKLPwJn" role="2sPngb">
+          <node concept="2V2zoM" id="3PPtPKLPwJl" role="c3nEA">
+            <ref role="2dhnus" node="3PPtPKLjVSE" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1kelWt" id="3PPtPKLoR0n" role="1kelZQ">
       <ref role="dOdcM" node="3PPtPKLoQYs" />
