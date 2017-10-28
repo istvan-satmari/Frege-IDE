@@ -515,6 +515,12 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="BaseFrege.behavior.FilteredRoleScope" />
   </dependency>
+  <dependency className="BaseFrege.behavior.FunctionDefinitionUtilities" file="FunctionDefinitionUtilities.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
   <dependency className="BaseFrege.behavior.Import__BehaviorDescriptor" file="Import__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.ModuleName__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.Module__BehaviorDescriptor" />
@@ -946,6 +952,7 @@
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="BaseFrege.behavior.PBracket__BehaviorDescriptor" file="PBracket__BehaviorDescriptor.java">
+    <classNode dependClassName="BaseFrege.behavior.FunctionDefinitionUtilities" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.SimpleRoleScopePVarName" />
     <classNode dependClassName="java.lang.Class" />
@@ -977,6 +984,7 @@
   </dependency>
   <dependency className="BaseFrege.behavior.PConstructor__BehaviorDescriptor" file="PConstructor__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.FilteredRoleScopePVarName" />
+    <classNode dependClassName="BaseFrege.behavior.FunctionDefinitionUtilities" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
@@ -1026,6 +1034,7 @@
   </dependency>
   <dependency className="BaseFrege.behavior.PLEBPatternArgument__BehaviorDescriptor" file="PLEBPatternArgument__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.FilteredRoleScopePVarName" />
+    <classNode dependClassName="BaseFrege.behavior.FunctionDefinitionUtilities" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
@@ -1108,6 +1117,7 @@
   </dependency>
   <dependency className="BaseFrege.behavior.PListColon__BehaviorDescriptor" file="PListColon__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.FilteredRoleScopePVarName" />
+    <classNode dependClassName="BaseFrege.behavior.FunctionDefinitionUtilities" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
@@ -1140,6 +1150,7 @@
   </dependency>
   <dependency className="BaseFrege.behavior.PListVar__BehaviorDescriptor" file="PListVar__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.FilteredRoleScopePVarName" />
+    <classNode dependClassName="BaseFrege.behavior.FunctionDefinitionUtilities" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
@@ -1220,6 +1231,7 @@
   </dependency>
   <dependency className="BaseFrege.behavior.PTuple__BehaviorDescriptor" file="PTuple__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.FilteredRoleScopePVarName" />
+    <classNode dependClassName="BaseFrege.behavior.FunctionDefinitionUtilities" />
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.SimpleRoleScopePVarName" />
     <classNode dependClassName="java.lang.Class" />
@@ -1499,6 +1511,7 @@
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="BaseFrege.behavior.PatternWrapper__BehaviorDescriptor" file="PatternWrapper__BehaviorDescriptor.java">
+    <classNode dependClassName="BaseFrege.behavior.FunctionDefinitionUtilities" />
     <classNode dependClassName="BaseFrege.behavior.PatternFunctionInGroup__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.PatternOperatorInGroup__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.SimpleRoleScopePVarName" />
