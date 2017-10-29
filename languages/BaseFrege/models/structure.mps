@@ -1467,7 +1467,7 @@
   </node>
   <node concept="1TIwiD" id="5fWvJRHUZTX">
     <property role="EcuMT" value="6051851628362595965" />
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <property role="TrG5h" value="ConstructorApplication" />
     <property role="R4oN_" value="Application of a datatype's constructor." />
     <ref role="1TJDcQ" node="1Q7PHwqaUk2" resolve="GenericApplication" />
@@ -1484,7 +1484,7 @@
   </node>
   <node concept="1TIwiD" id="5fWvJRHV4ht">
     <property role="EcuMT" value="6051851628362613853" />
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <property role="TrG5h" value="FunctionApplication" />
     <ref role="1TJDcQ" node="1Q7PHwqaUk2" resolve="GenericApplication" />
     <node concept="1TJgyj" id="5fWvJRHV4hu" role="1TKVEi">
@@ -1497,7 +1497,7 @@
   </node>
   <node concept="1TIwiD" id="5fWvJRHV8Az">
     <property role="EcuMT" value="6051851628362631587" />
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <property role="TrG5h" value="OperatorApplication" />
     <ref role="1TJDcQ" node="1Q7PHwqaUk2" resolve="GenericApplication" />
     <node concept="1TJgyj" id="5fWvJRHV8A$" role="1TKVEi">
@@ -1932,7 +1932,7 @@
   </node>
   <node concept="1TIwiD" id="4GJJ0fK8PQJ">
     <property role="EcuMT" value="5417755601849769391" />
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <property role="TrG5h" value="BracketsApplication" />
     <ref role="1TJDcQ" node="1Q7PHwqaUk2" resolve="GenericApplication" />
     <node concept="1TJgyj" id="4GJJ0fK8PQK" role="1TKVEi">

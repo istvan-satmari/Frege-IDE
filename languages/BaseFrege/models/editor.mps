@@ -2096,7 +2096,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5fWvJRHV4hF">
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <ref role="1XX52x" to="sc0n:5fWvJRHV4ht" resolve="FunctionApplication" />
     <node concept="3EZMnI" id="5fWvJRHV4hH" role="2wV5jI">
       <node concept="3F1sOY" id="5fWvJRHV4hJ" role="3EZMnx">
@@ -2126,7 +2126,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5fWvJRHV8AO">
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <ref role="1XX52x" to="sc0n:5fWvJRHV8Az" resolve="OperatorApplication" />
     <node concept="3EZMnI" id="5fWvJRHV8AQ" role="2wV5jI">
       <node concept="3F1sOY" id="evJytSr6DZ" role="3EZMnx">
@@ -2156,7 +2156,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5fWvJRHVaEU">
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <ref role="1XX52x" to="sc0n:5fWvJRHUZTX" resolve="ConstructorApplication" />
     <node concept="3EZMnI" id="5fWvJRHVaEW" role="2wV5jI">
       <node concept="3F0ifn" id="5fWvJRHVaEX" role="3EZMnx">
@@ -8645,7 +8645,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4GJJ0fK8PR3">
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <ref role="1XX52x" to="sc0n:4GJJ0fK8PQJ" resolve="BracketsApplication" />
     <node concept="3EZMnI" id="4GJJ0fK8PR5" role="2wV5jI">
       <node concept="3F0ifn" id="4GJJ0fK8PRo" role="3EZMnx">
@@ -8673,11 +8673,11 @@
     </node>
   </node>
   <node concept="3p36aQ" id="4GJJ0fK8QuJ">
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <ref role="aqKnT" to="sc0n:5fWvJRHV8Az" resolve="OperatorApplication" />
   </node>
   <node concept="3p36aQ" id="4GJJ0fK8QuK">
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <ref role="aqKnT" to="sc0n:4GJJ0fK8PQJ" resolve="BracketsApplication" />
   </node>
   <node concept="24kQdi" id="4GJJ0fK9oD2">
@@ -11670,7 +11670,7 @@
     </node>
   </node>
   <node concept="3p36aQ" id="1Q7PHwqaUl9">
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <ref role="aqKnT" to="sc0n:5fWvJRHUZTX" resolve="ConstructorApplication" />
   </node>
   <node concept="24kQdi" id="3xAZ$1A6mzc">
@@ -11740,7 +11740,7 @@
     <ref role="aqKnT" to="sc0n:3Xsm2yzyl89" resolve="PVarName" />
   </node>
   <node concept="3p36aQ" id="5myFpmLNTeb">
-    <property role="3GE5qa" value="Definitions.Expressions.Primary" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <ref role="aqKnT" to="sc0n:5fWvJRHV4ht" resolve="FunctionApplication" />
     <node concept="3N5dw7" id="4Zne4OHAU9W" role="3ft7WO">
       <node concept="3N5aqt" id="4Zne4OHAU9X" role="3Na0zg">
