@@ -1470,45 +1470,39 @@
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <property role="TrG5h" value="ConstructorApplication" />
     <property role="R4oN_" value="Application of a datatype's constructor." />
-    <ref role="1TJDcQ" node="1Q7PHwqaUk2" resolve="GenericApplication" />
+    <ref role="1TJDcQ" node="3PPtPKMmDuS" resolve="ApplicationEntity" />
     <node concept="1TJgyj" id="5fWvJRHVaEH" role="1TKVEi">
       <property role="IQ2ns" value="6051851628362640045" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="constructor" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Cxf1w4Aonx" resolve="NodeCONID" />
-    </node>
-    <node concept="PrWs8" id="1Q7PHwqaUl7" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+      <ref role="20lvS9" node="5c96$3ROPee" resolve="ConstructorReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="5fWvJRHV4ht">
     <property role="EcuMT" value="6051851628362613853" />
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <property role="TrG5h" value="FunctionApplication" />
-    <ref role="1TJDcQ" node="1Q7PHwqaUk2" resolve="GenericApplication" />
-    <node concept="1TJgyj" id="5fWvJRHV4hu" role="1TKVEi">
-      <property role="IQ2ns" value="6051851628362613854" />
+    <ref role="1TJDcQ" node="3PPtPKMmDuS" resolve="ApplicationEntity" />
+    <node concept="1TJgyj" id="3PPtPKMn9HK" role="1TKVEi">
+      <property role="IQ2ns" value="4428577046454377328" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="function" />
+      <property role="20kJfa" value="variable" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5myFpmM3Ukx" resolve="PEVariableReference" />
+      <ref role="20lvS9" node="4GJJ0fK9oCL" resolve="VariableReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="5fWvJRHV8Az">
     <property role="EcuMT" value="6051851628362631587" />
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <property role="TrG5h" value="OperatorApplication" />
-    <ref role="1TJDcQ" node="1Q7PHwqaUk2" resolve="GenericApplication" />
-    <node concept="1TJgyj" id="5fWvJRHV8A$" role="1TKVEi">
-      <property role="IQ2ns" value="6051851628362631588" />
+    <ref role="1TJDcQ" node="3PPtPKMmDuS" resolve="ApplicationEntity" />
+    <node concept="1TJgyj" id="3PPtPKMnh5Y" role="1TKVEi">
+      <property role="IQ2ns" value="4428577046454407550" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="operator" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3xAZ$1A6myr" resolve="PEOperatorReference" />
-    </node>
-    <node concept="PrWs8" id="4GJJ0fK8QuE" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+      <ref role="20lvS9" node="4GJJ0fK9oDn" resolve="OperatorReference" />
     </node>
   </node>
   <node concept="Az7Fb" id="7Cxf1w4Aom$">
@@ -1934,16 +1928,13 @@
     <property role="EcuMT" value="5417755601849769391" />
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <property role="TrG5h" value="BracketsApplication" />
-    <ref role="1TJDcQ" node="1Q7PHwqaUk2" resolve="GenericApplication" />
+    <ref role="1TJDcQ" node="3PPtPKMmDuS" resolve="ApplicationEntity" />
     <node concept="1TJgyj" id="4GJJ0fK8PQK" role="1TKVEi">
       <property role="IQ2ns" value="5417755601849769392" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="vUxQDjKXzn" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="4GJJ0fK8PZQ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="4GJJ0fK9oCL">
@@ -2095,32 +2086,22 @@
     <property role="EcuMT" value="2127905572596196610" />
     <property role="3GE5qa" value="Definitions.Expressions.Primary" />
     <property role="TrG5h" value="GenericApplication" />
-    <property role="R5$K7" value="true" />
+    <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="5ZITH0PGXRI" resolve="TopExpression" />
+    <node concept="1TJgyj" id="3PPtPKMmXQ$" role="1TKVEi">
+      <property role="IQ2ns" value="4428577046454328740" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="aentity" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3PPtPKMmDuS" resolve="ApplicationEntity" />
+    </node>
     <node concept="1TJgyj" id="1Q7PHwqaUkx" role="1TKVEi">
       <property role="IQ2ns" value="2127905572596196641" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="arguments" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4GJJ0fK8P_O" resolve="PrimaryExpression" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3xAZ$1A6myr">
-    <property role="EcuMT" value="4064215266292754587" />
-    <property role="3GE5qa" value="Definitions.Expressions.Primary.References" />
-    <property role="TrG5h" value="PEOperatorReference" />
-    <property role="R4oN_" value="Wrapper around OperatorReference to allow default PrimaryExpression transformations right of the node." />
-    <ref role="1TJDcQ" node="4GJJ0fK8P_O" resolve="PrimaryExpression" />
-    <node concept="1TJgyj" id="3xAZ$1A6myL" role="1TKVEi">
-      <property role="IQ2ns" value="4064215266292754609" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="operator" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4GJJ0fK9oDn" resolve="OperatorReference" />
-    </node>
-    <node concept="PrWs8" id="3xAZ$1A6mEJ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="PlHQZ" id="5c96$3RFt7P">
@@ -2143,23 +2124,6 @@
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="62eaOWzc$vg" resolve="DataConstructor" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5myFpmM3Ukx">
-    <property role="EcuMT" value="6170685297900102945" />
-    <property role="3GE5qa" value="Definitions.Expressions.Primary.References" />
-    <property role="TrG5h" value="PEVariableReference" />
-    <property role="R4oN_" value="Wrapper around VariableReference to allow default PrimaryExpression transformations right of the node." />
-    <ref role="1TJDcQ" node="4GJJ0fK8P_O" resolve="PrimaryExpression" />
-    <node concept="PrWs8" id="5myFpmM3Uky" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-    <node concept="1TJgyj" id="5myFpmM3Uk_" role="1TKVEi">
-      <property role="IQ2ns" value="6170685297900102949" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="variable" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4GJJ0fK9oCL" resolve="VariableReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="3PPtPKJCf$f">
@@ -2319,6 +2283,52 @@
       <property role="20kJfa" value="operator" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4GJJ0fK9oDn" resolve="OperatorReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3PPtPKMmDuS">
+    <property role="EcuMT" value="4428577046454245304" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
+    <property role="TrG5h" value="ApplicationEntity" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="An entity to derive the application from." />
+    <ref role="1TJDcQ" node="4GJJ0fK8P_O" resolve="PrimaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="7W$X1KZ9NE1">
+    <property role="EcuMT" value="9161715944134228609" />
+    <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
+    <property role="TrG5h" value="ImportedEntityApplication" />
+    <ref role="1TJDcQ" node="3PPtPKMmDuS" resolve="ApplicationEntity" />
+    <node concept="1TJgyj" id="7W$X1KZab1N" role="1TKVEi">
+      <property role="IQ2ns" value="9161715944134324339" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="import" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7W$X1KZa2uu" resolve="ImportReference" />
+    </node>
+    <node concept="1TJgyj" id="7W$X1KZ9NFg" role="1TKVEi">
+      <property role="IQ2ns" value="9161715944134228688" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="entity" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3PPtPKMmDuS" resolve="ApplicationEntity" />
+    </node>
+    <node concept="PrWs8" id="7W$X1KZaivW" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7W$X1KZa2uu">
+    <property role="EcuMT" value="9161715944134289310" />
+    <property role="3GE5qa" value="Definitions.References" />
+    <property role="TrG5h" value="ImportReference" />
+    <property role="R4oN_" value="References an imported module." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7W$X1KZa2u_" role="1TKVEi">
+      <property role="IQ2ns" value="9161715944134289317" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="vUxQDjKXxR" resolve="Import" />
     </node>
   </node>
 </model>

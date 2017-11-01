@@ -13,6 +13,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_AIVarid = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Annotation = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AnnotationItem = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ApplicationEntity = new ConceptPresentationBuilder().shortDesc("An entity to derive the application from.").create();
   private final ConceptPresentation props_BCContent = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BCLine = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BCNestedComment = new ConceptPresentationBuilder().shortDesc("Nested block comment").create();
@@ -71,6 +72,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ImportHiding = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportItem = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportItems = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ImportReference = new ConceptPresentationBuilder().shortDesc("References an imported module.").create();
+  private final ConceptPresentation props_ImportedEntityApplication = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_IncompleteCommand = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Infix = new ConceptPresentationBuilder().shortDesc("Infix operator.").create();
   private final ConceptPresentation props_InfixAbstract = new ConceptPresentationBuilder().create();
@@ -115,8 +118,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_OperatorReference = new ConceptPresentationBuilder().shortDesc("References an operator.").create();
   private final ConceptPresentation props_PBracket = new ConceptPresentationBuilder().shortDesc("Pattern in round brackets.").create();
   private final ConceptPresentation props_PConstructor = new ConceptPresentationBuilder().shortDesc("Datatype constructor reference.").create();
-  private final ConceptPresentation props_PEOperatorReference = new ConceptPresentationBuilder().shortDesc("Wrapper around OperatorReference to allow default PrimaryExpression transformations right of the node.").create();
-  private final ConceptPresentation props_PEVariableReference = new ConceptPresentationBuilder().shortDesc("Wrapper around VariableReference to allow default PrimaryExpression transformations right of the node.").create();
   private final ConceptPresentation props_PLEBPatternArgument = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PLEBPlaceholder = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PList = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
@@ -169,6 +170,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Annotation;
       case LanguageConceptSwitch.AnnotationItem:
         return props_AnnotationItem;
+      case LanguageConceptSwitch.ApplicationEntity:
+        return props_ApplicationEntity;
       case LanguageConceptSwitch.BCContent:
         return props_BCContent;
       case LanguageConceptSwitch.BCLine:
@@ -285,6 +288,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_ImportItem;
       case LanguageConceptSwitch.ImportItems:
         return props_ImportItems;
+      case LanguageConceptSwitch.ImportReference:
+        return props_ImportReference;
+      case LanguageConceptSwitch.ImportedEntityApplication:
+        return props_ImportedEntityApplication;
       case LanguageConceptSwitch.IncompleteCommand:
         return props_IncompleteCommand;
       case LanguageConceptSwitch.Infix:
@@ -373,10 +380,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_PBracket;
       case LanguageConceptSwitch.PConstructor:
         return props_PConstructor;
-      case LanguageConceptSwitch.PEOperatorReference:
-        return props_PEOperatorReference;
-      case LanguageConceptSwitch.PEVariableReference:
-        return props_PEVariableReference;
       case LanguageConceptSwitch.PLEBPatternArgument:
         return props_PLEBPatternArgument;
       case LanguageConceptSwitch.PLEBPlaceholder:
