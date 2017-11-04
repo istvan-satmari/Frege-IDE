@@ -802,21 +802,6 @@
       <ref role="20lvS9" node="vUxQDjKXAj" resolve="WherePart" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5E$XTHV3XM7">
-    <property role="EcuMT" value="6531617606750690439" />
-    <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms" />
-    <property role="TrG5h" value="Brackets" />
-    <property role="34LRSv" value="(" />
-    <property role="R4oN_" value="Expression inside brackets." />
-    <ref role="1TJDcQ" node="vUxQDjKXzH" resolve="Term" />
-    <node concept="1TJgyj" id="5E$XTHV3XM8" role="1TKVEi">
-      <property role="IQ2ns" value="6531617606750690440" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="vUxQDjKXzn" resolve="Expression" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5E$XTHV3XO2">
     <property role="EcuMT" value="6531617606750690562" />
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms.Lists" />
@@ -1928,6 +1913,8 @@
     <property role="EcuMT" value="5417755601849769391" />
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <property role="TrG5h" value="BracketsApplication" />
+    <property role="R4oN_" value="Expression inside brackets." />
+    <property role="34LRSv" value="(" />
     <ref role="1TJDcQ" node="3PPtPKMmDuS" resolve="ApplicationEntity" />
     <node concept="1TJgyj" id="4GJJ0fK8PQK" role="1TKVEi">
       <property role="IQ2ns" value="5417755601849769392" />

@@ -21,8 +21,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_BinaryExpressions = new ConceptPresentationBuilder().shortDesc("Represents expression constructed from TopExpressions separated by operators.").create();
   private final ConceptPresentation props_BlockComment = new ConceptPresentationBuilder().shortDesc("Multiline nestable comment.").create();
   private final ConceptPresentation props_BooleanValue = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Brackets = new ConceptPresentationBuilder().shortDesc("Expression inside brackets.").create();
-  private final ConceptPresentation props_BracketsApplication = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_BracketsApplication = new ConceptPresentationBuilder().shortDesc("Expression inside brackets.").create();
   private final ConceptPresentation props_CPExprToExpr = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_CPExprToGuards = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Case = new ConceptPresentationBuilder().shortDesc("Case expression.").create();
@@ -186,8 +185,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_BlockComment;
       case LanguageConceptSwitch.BooleanValue:
         return props_BooleanValue;
-      case LanguageConceptSwitch.Brackets:
-        return props_Brackets;
       case LanguageConceptSwitch.BracketsApplication:
         return props_BracketsApplication;
       case LanguageConceptSwitch.CPExprToExpr:
