@@ -1854,19 +1854,13 @@
     <classNode dependClassName="BaseFrege.behavior.ScopeSiblingModules" />
     <classNode dependClassName="BaseFrege.behavior.TreeUtilities" />
     <classNode dependClassName="java.lang.Boolean" />
-    <classNode dependClassName="java.lang.Character" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.Arrays" />
-    <classNode dependClassName="java.util.HashMap" />
-    <classNode dependClassName="java.util.HashSet" />
     <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="java.util.Map" />
-    <classNode dependClassName="java.util.Set" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
@@ -1877,8 +1871,6 @@
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.SetSequence" />
     <classNode dependClassName="jetbrains.mps.lang.scopes.runtime.ScopeUtils" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -1920,12 +1912,35 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
+  <dependency className="BaseFrege.behavior.TransformTextUtilities" file="TransformTextUtilities.java">
+    <classNode dependClassName="BaseFrege.behavior.Trie" />
+    <classNode dependClassName="java.lang.Character" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.HashSet" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Set" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.SetSequence" />
+  </dependency>
   <dependency className="BaseFrege.behavior.TreeUtilities" file="TreeUtilities.java">
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.Trie" file="Trie.java">
+    <classNode dependClassName="java.lang.Character" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IVisitor" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.SetSequence" />
   </dependency>
   <dependency className="BaseFrege.behavior.VariableReference__BehaviorDescriptor" file="VariableReference__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.ReferenceFinderPVarName" />

@@ -301,7 +301,7 @@
     <classNode dependClassName="BaseFrege.behavior.BinaryExpressions__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.NodeOperator__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.OperatorReference__BehaviorDescriptor" />
-    <classNode dependClassName="BaseFrege.behavior.Skeleton__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.TransformTextUtilities" />
     <classNode dependClassName="BaseFrege.behavior.TreeUtilities" />
     <classNode dependClassName="java.lang.Character" />
     <classNode dependClassName="java.lang.Override" />
@@ -680,12 +680,26 @@
   </dependency>
   <dependency className="BaseFrege.editor.ConstructorApplication_SubstituteMenu" file="ConstructorApplication_SubstituteMenu.java">
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.ConstraintsFilteringSubstituteMenuPartDecorator" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.SubstituteMenuItemWrapper" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.WrapperSubstituteMenuPart" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuLookup" />
+    <classNode dependClassName="jetbrains.mps.smodel.action.SNodeFactoryOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.LanguageRegistry" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
   <dependency className="BaseFrege.editor.ConstructorReference_Editor" file="ConstructorReference_Editor.java">
@@ -713,6 +727,35 @@
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
+  <dependency className="BaseFrege.editor.ConstructorReference_TransformationMenu" file="ConstructorReference_TransformationMenu.java">
+    <classNode dependClassName="BaseFrege.behavior.TreeUtilities" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.HashSet" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Set" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.SetSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.GroupMenuPart" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.transformation.DefaultTransformationMenuLookup" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.transformation.IncludeTransformationMenuTransformationMenuPart" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.transformation.MenuLocations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuLookup" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.LanguageRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.transformation.TransformationMenuBase" />
   </dependency>
   <dependency className="BaseFrege.editor.ContextPart_Editor" file="ContextPart_Editor.java">
     <classNode dependClassName="BaseFrege.editor.ContextPart_EditorBuilder_a" />
@@ -1004,6 +1047,7 @@
     <classNode dependClassName="BaseFrege.editor.ConstructorApplication_Editor" />
     <classNode dependClassName="BaseFrege.editor.ConstructorApplication_SubstituteMenu" />
     <classNode dependClassName="BaseFrege.editor.ConstructorReference_Editor" />
+    <classNode dependClassName="BaseFrege.editor.ConstructorReference_TransformationMenu" />
     <classNode dependClassName="BaseFrege.editor.ContextPart_Editor" />
     <classNode dependClassName="BaseFrege.editor.Context_Editor" />
     <classNode dependClassName="BaseFrege.editor.DataConstructor_Editor" />
@@ -1510,7 +1554,7 @@
     <classNode dependClassName="BaseFrege.behavior.FDComplete__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.FDGuards__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.NodeOperator__BehaviorDescriptor" />
-    <classNode dependClassName="BaseFrege.behavior.Skeleton__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.TransformTextUtilities" />
     <classNode dependClassName="java.lang.Character" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -3599,12 +3643,26 @@
   </dependency>
   <dependency className="BaseFrege.editor.OperatorApplication_SubstituteMenu" file="OperatorApplication_SubstituteMenu.java">
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.ConstraintsFilteringSubstituteMenuPartDecorator" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.SubstituteMenuItemWrapper" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.WrapperSubstituteMenuPart" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuLookup" />
+    <classNode dependClassName="jetbrains.mps.smodel.action.SNodeFactoryOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.LanguageRegistry" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
   <dependency className="BaseFrege.editor.OperatorReference_Editor" file="OperatorReference_Editor.java">
@@ -4293,7 +4351,7 @@
   <dependency className="BaseFrege.editor.PatternArgument_OperatorTransformations" file="PatternArgument_OperatorTransformations.java">
     <classNode dependClassName="BaseFrege.behavior.NodeOperator__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.PatternArgument__BehaviorDescriptor" />
-    <classNode dependClassName="BaseFrege.behavior.Skeleton__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.TransformTextUtilities" />
     <classNode dependClassName="java.lang.Character" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -4908,7 +4966,7 @@
     <classNode dependClassName="BaseFrege.behavior.BinaryExpressions__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.NodeOperator__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.OperatorReference__BehaviorDescriptor" />
-    <classNode dependClassName="BaseFrege.behavior.Skeleton__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.TransformTextUtilities" />
     <classNode dependClassName="BaseFrege.behavior.TreeUtilities" />
     <classNode dependClassName="java.lang.Character" />
     <classNode dependClassName="java.lang.Override" />
