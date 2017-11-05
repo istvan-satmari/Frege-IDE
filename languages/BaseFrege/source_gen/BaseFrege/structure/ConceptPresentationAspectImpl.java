@@ -90,6 +90,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_LPLambda = new ConceptPresentationBuilder().shortDesc("Declare a new argument.").create();
   private final ConceptPresentation props_Lambda = new ConceptPresentationBuilder().shortDesc("Lambda function expression.").create();
   private final ConceptPresentation props_LambdaPart = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_LateLoader = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Let = new ConceptPresentationBuilder().shortDesc("Let expression.").create();
   private final ConceptPresentation props_LetDefinition = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LetDefinitions = new ConceptPresentationBuilder().create();
@@ -324,6 +325,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Lambda;
       case LanguageConceptSwitch.LambdaPart:
         return props_LambdaPart;
+      case LanguageConceptSwitch.LateLoader:
+        return props_LateLoader;
       case LanguageConceptSwitch.Let:
         return props_Let;
       case LanguageConceptSwitch.LetDefinition:

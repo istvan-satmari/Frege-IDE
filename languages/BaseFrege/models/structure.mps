@@ -96,6 +96,9 @@
     <node concept="PrWs8" id="5c96$3RGMCI" role="PzmwI">
       <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
     </node>
+    <node concept="PrWs8" id="5PvAQDJbz5u" role="PzmwI">
+      <ref role="PrY4T" node="5PvAQDJbwfH" resolve="LateLoader" />
+    </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKXwK">
     <property role="EcuMT" value="574920793184786480" />
@@ -124,6 +127,11 @@
     <property role="3GE5qa" value="Import" />
     <property role="34LRSv" value="import" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5PvAQDIVr5B" role="1TKVEl">
+      <property role="IQ2nx" value="6728267249744720231" />
+      <property role="TrG5h" value="hidden" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="3PPtPKL4EZD" role="PzmwI">
       <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
     </node>
@@ -2323,6 +2331,16 @@
     <property role="3GE5qa" value="Definitions.Expressions" />
     <property role="TrG5h" value="ImplicitDefinition" />
     <ref role="1TJDcQ" node="4GJJ0fK8Bdp" resolve="BinaryExpressions" />
+  </node>
+  <node concept="PlHQZ" id="5PvAQDJbwfH">
+    <property role="EcuMT" value="6728267249748935661" />
+    <property role="3GE5qa" value="Interfaces" />
+    <property role="TrG5h" value="LateLoader" />
+    <node concept="1TJgyi" id="5PvAQDJbwgX" role="1TKVEl">
+      <property role="IQ2nx" value="6728267249748935741" />
+      <property role="TrG5h" value="lateLoaded" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
 </model>
 

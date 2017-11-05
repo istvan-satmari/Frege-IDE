@@ -129,8 +129,10 @@
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
       </concept>
+      <concept id="1182191800432" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeListFilter" flags="in" index="107P5z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
+      <concept id="1182233249301" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_childNode" flags="nn" index="12_Ws6" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="8998492695583109601" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_CanSubstitute" flags="ig" index="16Na2f" />
       <concept id="8998492695583125082" name="jetbrains.mps.lang.editor.structure.SubstituteFeature_MatchingText" flags="ng" index="16NfWO">
@@ -230,7 +232,9 @@
         <property id="16410578721444372" name="customizeEmptyCell" index="2ru_X1" />
         <child id="16410578721629643" name="emptyCellModel" index="2ruayu" />
       </concept>
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR">
+        <child id="1182233390675" name="filter" index="12AuX0" />
+      </concept>
       <concept id="843003353410421268" name="jetbrains.mps.lang.editor.structure.IOutputConceptTransformationMenuPart" flags="ng" index="1FNN41">
         <child id="843003353410424960" name="outputConceptReference" index="1FNMel" />
       </concept>
@@ -1689,6 +1693,20 @@
           <ref role="1k5W1q" node="7SJSV$AZl6H" resolve="Optional" />
           <node concept="VPxyj" id="7SJSV$B0kVW" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="107P5z" id="5PvAQDIVsAv" role="12AuX0">
+          <node concept="3clFbS" id="5PvAQDIVsAw" role="2VODD2">
+            <node concept="3clFbF" id="5PvAQDIVsLs" role="3cqZAp">
+              <node concept="3fqX7Q" id="5PvAQDIYJDV" role="3clFbG">
+                <node concept="2OqwBi" id="5PvAQDIYJDX" role="3fr31v">
+                  <node concept="12_Ws6" id="5PvAQDIYJDY" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5PvAQDIYJDZ" role="2OqNvi">
+                    <ref role="3TsBF5" to="sc0n:5PvAQDIVr5B" resolve="hidden" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -11870,6 +11888,23 @@
                     <node concept="3TrcHB" id="3PPtPKJXjs4" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="5PvAQDJbOau" role="3cqZAp">
+                <node concept="2OqwBi" id="5PvAQDJbOJK" role="3clFbG">
+                  <node concept="2OqwBi" id="5PvAQDJbOiG" role="2Oq$k0">
+                    <node concept="pncrf" id="5PvAQDJbOas" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="5PvAQDJbOyg" role="2OqNvi">
+                      <node concept="1xMEDy" id="5PvAQDJbOyi" role="1xVPHs">
+                        <node concept="chp4Y" id="5PvAQDJbOCe" role="ri$Ld">
+                          <ref role="cht4Q" to="sc0n:5PvAQDJbwfH" resolve="LateLoader" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="5PvAQDJbOTV" role="2OqNvi">
+                    <ref role="37wK5l" to="yq4j:5PvAQDJbwgi" resolve="update" />
                   </node>
                 </node>
               </node>
