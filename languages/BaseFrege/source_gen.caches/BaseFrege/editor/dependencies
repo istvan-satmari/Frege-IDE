@@ -4995,9 +4995,10 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
   <dependency className="BaseFrege.editor.TopExpression_TransformationMenu" file="TopExpression_TransformationMenu.java">
+    <classNode dependClassName="BaseFrege.behavior.BinExPart__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.BinaryExpressions__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.NameResolver" />
     <classNode dependClassName="BaseFrege.behavior.NodeOperator__BehaviorDescriptor" />
-    <classNode dependClassName="BaseFrege.behavior.OperatorReference__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.TransformTextUtilities" />
     <classNode dependClassName="BaseFrege.behavior.TreeUtilities" />
     <classNode dependClassName="java.lang.Character" />
@@ -5008,9 +5009,9 @@
     <classNode dependClassName="java.util.HashSet" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="java.util.Set" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.selection.SelectionUtil" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.SetSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.ScopeProvider__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.editor.menus.GroupMenuPart" />
     <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
     <classNode dependClassName="jetbrains.mps.lang.editor.menus.SingleItemMenuPart" />
@@ -5025,8 +5026,6 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuLookup" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.selection.SelectionManager" />
-    <classNode dependClassName="jetbrains.mps.smodel.action.SNodeFactoryOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.language.LanguageRegistry" />
     <classNode dependClassName="jetbrains.mps.util.Computable" />

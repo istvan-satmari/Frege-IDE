@@ -5758,103 +5758,109 @@
       <node id="7270108634719663384" at="32,0,33,0" concept="14" trace="REGISTRY" />
       <node id="7270108634719663384" at="34,0,35,0" concept="14" trace="addNewBinexPart_id5PvAQDI$enZ" />
       <node id="7270108634719663384" at="36,0,37,0" concept="14" trace="BH_METHODS" />
-      <node id="3850052603490948683" at="41,167,42,229" concept="10" />
+      <node id="3850052603490948683" at="41,205,42,229" concept="10" />
       <node id="3850052603490948697" at="42,229,43,0" concept="13" />
       <node id="3850052603490971138" at="43,0,44,71" concept="12" />
       <node id="3850052603490948698" at="44,71,45,208" concept="10" />
-      <node id="3850052603491084541" at="47,235,48,236" concept="4" />
-      <node id="3850052603491098957" at="48,236,49,14" concept="1" />
-      <node id="6170685297888345102" at="51,5,52,0" concept="13" />
-      <node id="6170685297888353621" at="52,0,53,24" concept="12" />
-      <node id="6170685297888361995" at="53,24,54,266" concept="4" />
-      <node id="6170685297888346209" at="54,266,55,0" concept="13" />
-      <node id="6170685297888379191" at="55,0,56,17" concept="12" />
-      <node id="3850052603490948715" at="57,25,58,462" concept="4" />
-      <node id="6728267249738592214" at="59,12,60,219" concept="4" />
-      <node id="7270108634719663384" at="64,47,65,20" concept="16" />
-      <node id="7270108634719663384" at="69,114,70,21" concept="4" />
-      <node id="7270108634719663384" at="74,114,75,49" concept="10" />
-      <node id="7270108634719663384" at="76,26,77,56" concept="19" />
-      <node id="7270108634719663384" at="80,13,81,159" concept="4" />
-      <node id="7270108634719663384" at="81,159,82,20" concept="11" />
-      <node id="7270108634719663384" at="83,14,84,58" concept="19" />
-      <node id="7270108634719663384" at="89,128,90,49" concept="10" />
-      <node id="7270108634719663384" at="91,26,92,56" concept="19" />
-      <node id="7270108634719663384" at="95,14,96,58" concept="19" />
-      <node id="7270108634719663384" at="102,48,103,22" concept="11" />
-      <node id="7270108634719663384" at="108,40,109,19" concept="11" />
+      <node id="6728267249743487086" at="46,25,47,230" concept="4" />
+      <node id="3850052603491084541" at="50,237,51,238" concept="4" />
+      <node id="3850052603491098957" at="51,238,52,16" concept="1" />
+      <node id="6728267249743485762" at="55,5,56,0" concept="13" />
+      <node id="6170685297888353621" at="56,0,57,24" concept="12" />
+      <node id="6170685297888361995" at="57,24,58,266" concept="4" />
+      <node id="6170685297888346209" at="58,266,59,0" concept="13" />
+      <node id="6170685297888379191" at="59,0,60,17" concept="12" />
+      <node id="3850052603490948715" at="61,25,62,463" concept="4" />
+      <node id="6728267249738592214" at="63,12,64,219" concept="4" />
+      <node id="7270108634719663384" at="68,47,69,20" concept="16" />
+      <node id="7270108634719663384" at="73,114,74,21" concept="4" />
+      <node id="7270108634719663384" at="78,114,79,49" concept="10" />
+      <node id="7270108634719663384" at="80,26,81,56" concept="19" />
+      <node id="7270108634719663384" at="84,14,85,58" concept="19" />
+      <node id="7270108634719663384" at="90,128,91,49" concept="10" />
+      <node id="7270108634719663384" at="92,26,93,56" concept="19" />
+      <node id="7270108634719663384" at="96,13,97,199" concept="4" />
+      <node id="7270108634719663384" at="97,199,98,20" concept="11" />
+      <node id="7270108634719663384" at="99,14,100,58" concept="19" />
+      <node id="7270108634719663384" at="106,48,107,22" concept="11" />
+      <node id="7270108634719663384" at="112,40,113,19" concept="11" />
       <node id="7270108634719663384" at="38,0,40,0" concept="15" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="6728267249738664387" at="59,10,61,5" concept="0" />
-      <node id="7270108634719663384" at="64,0,67,0" concept="2" trace="BinExPart__BehaviorDescriptor#()V" />
-      <node id="7270108634719663384" at="75,49,78,5" concept="8" />
-      <node id="7270108634719663384" at="90,49,93,5" concept="8" />
-      <node id="3850052603491057136" at="46,240,50,7" concept="8" />
-      <node id="7270108634719663384" at="68,0,72,0" concept="9" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
-      <node id="7270108634719663384" at="93,5,97,5" concept="17" />
-      <node id="6728267249738661412" at="56,17,61,5" concept="8" />
-      <node id="7270108634719663384" at="100,0,105,0" concept="9" trace="getDeclaredMethods#()Ljava/util/List;" />
-      <node id="7270108634719663384" at="106,0,111,0" concept="9" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="3850052603491004427" at="45,208,51,5" concept="6" />
-      <node id="7270108634719663384" at="78,5,85,5" concept="17" />
-      <node id="7270108634719663384" at="88,0,99,0" concept="9" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="7270108634719663384" at="73,0,87,0" concept="9" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <node id="7270108634719663384" at="41,0,63,0" concept="15" trace="addNewBinexPart_id5PvAQDI$enZ#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/openapi/editor/EditorContext;Z)V" />
+      <node id="6728267249738664387" at="63,10,65,5" concept="0" />
+      <node id="7270108634719663384" at="68,0,71,0" concept="2" trace="BinExPart__BehaviorDescriptor#()V" />
+      <node id="7270108634719663384" at="79,49,82,5" concept="8" />
+      <node id="7270108634719663384" at="91,49,94,5" concept="8" />
+      <node id="3850052603491057136" at="49,242,53,9" concept="8" />
+      <node id="7270108634719663384" at="72,0,76,0" concept="9" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="7270108634719663384" at="82,5,86,5" concept="17" />
+      <node id="6728267249738661412" at="60,17,65,5" concept="8" />
+      <node id="7270108634719663384" at="104,0,109,0" concept="9" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="7270108634719663384" at="110,0,115,0" concept="9" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3850052603491004427" at="48,12,54,7" concept="6" />
+      <node id="6728267249743504147" at="48,10,55,5" concept="0" />
+      <node id="7270108634719663384" at="94,5,101,5" concept="17" />
+      <node id="6728267249743486249" at="45,208,55,5" concept="8" />
+      <node id="7270108634719663384" at="77,0,88,0" concept="9" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="7270108634719663384" at="89,0,103,0" concept="9" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="7270108634719663384" at="41,0,67,0" concept="15" trace="addNewBinexPart_id5PvAQDI$enZ#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljetbrains/mps/openapi/editor/EditorContext;ZZ)V" />
       <scope id="7270108634719663384" at="38,63,38,63" />
-      <scope id="6728267249738661414" at="57,25,58,462" />
-      <scope id="6728267249738664388" at="59,12,60,219" />
-      <scope id="7270108634719663384" at="64,47,65,20" />
-      <scope id="7270108634719663384" at="69,114,70,21" />
-      <scope id="7270108634719663384" at="76,26,77,56" />
-      <scope id="7270108634719663384" at="83,14,84,58" />
-      <scope id="7270108634719663384" at="91,26,92,56" />
-      <scope id="7270108634719663384" at="95,14,96,58" />
-      <scope id="7270108634719663384" at="102,48,103,22" />
-      <scope id="7270108634719663384" at="108,40,109,19" />
+      <scope id="6728267249743486251" at="46,25,47,230" />
+      <scope id="6728267249738661414" at="61,25,62,463" />
+      <scope id="6728267249738664388" at="63,12,64,219" />
+      <scope id="7270108634719663384" at="68,47,69,20" />
+      <scope id="7270108634719663384" at="73,114,74,21" />
+      <scope id="7270108634719663384" at="80,26,81,56" />
+      <scope id="7270108634719663384" at="84,14,85,58" />
+      <scope id="7270108634719663384" at="92,26,93,56" />
+      <scope id="7270108634719663384" at="99,14,100,58" />
+      <scope id="7270108634719663384" at="106,48,107,22" />
+      <scope id="7270108634719663384" at="112,40,113,19" />
       <scope id="7270108634719663384" at="38,0,40,0">
         <var name="__thisNode__" id="7270108634719663384" />
       </scope>
-      <scope id="3850052603491057138" at="47,235,49,14" />
-      <scope id="7270108634719663384" at="80,13,82,20" />
-      <scope id="7270108634719663384" at="64,0,67,0" />
-      <scope id="3850052603491004429" at="46,240,50,7" />
-      <scope id="7270108634719663384" at="68,0,72,0">
+      <scope id="3850052603491057138" at="50,237,52,16" />
+      <scope id="7270108634719663384" at="96,13,98,20" />
+      <scope id="7270108634719663384" at="68,0,71,0" />
+      <scope id="3850052603491004429" at="49,242,53,9" />
+      <scope id="7270108634719663384" at="72,0,76,0">
         <var name="constructor" id="7270108634719663384" />
         <var name="node" id="7270108634719663384" />
         <var name="parameters" id="7270108634719663384" />
       </scope>
-      <scope id="7270108634719663384" at="100,0,105,0" />
-      <scope id="7270108634719663384" at="106,0,111,0" />
-      <scope id="3850052603491004427" at="45,208,51,5">
+      <scope id="7270108634719663384" at="104,0,109,0" />
+      <scope id="7270108634719663384" at="110,0,115,0" />
+      <scope id="3850052603491004427" at="48,12,54,7">
         <var name="i" id="3850052603491004430" />
       </scope>
-      <scope id="7270108634719663384" at="89,128,97,5">
+      <scope id="6728267249743504148" at="48,12,54,7" />
+      <scope id="7270108634719663384" at="78,114,86,5">
         <var name="methodIndex" id="7270108634719663384" />
       </scope>
-      <scope id="7270108634719663384" at="74,114,85,5">
-        <var name="methodIndex" id="7270108634719663384" />
-      </scope>
-      <scope id="7270108634719663384" at="88,0,99,0">
-        <var name="concept" id="7270108634719663384" />
-        <var name="method" id="7270108634719663384" />
-        <var name="parameters" id="7270108634719663384" />
-      </scope>
-      <scope id="7270108634719663384" at="73,0,87,0">
+      <scope id="7270108634719663384" at="77,0,88,0">
         <var name="method" id="7270108634719663384" />
         <var name="node" id="7270108634719663384" />
         <var name="parameters" id="7270108634719663384" />
       </scope>
-      <scope id="6728267249738638850" at="41,167,61,5">
+      <scope id="7270108634719663384" at="90,128,101,5">
+        <var name="methodIndex" id="7270108634719663384" />
+      </scope>
+      <scope id="7270108634719663384" at="89,0,103,0">
+        <var name="concept" id="7270108634719663384" />
+        <var name="method" id="7270108634719663384" />
+        <var name="parameters" id="7270108634719663384" />
+      </scope>
+      <scope id="6728267249738638850" at="41,205,65,5">
         <var name="binexs" id="3850052603490948699" />
         <var name="part" id="3850052603490948684" />
       </scope>
-      <scope id="7270108634719663384" at="41,0,63,0">
-        <var name="__thisNode__" id="7270108634719663384" />
+      <scope id="7270108634719663384" at="41,0,67,0">
+        <var name="__thisConcept__" id="7270108634719663384" />
         <var name="editorContext" id="6728267249738648775" />
+        <var name="firstBinexPart" id="6728267249743485230" />
         <var name="node" id="6728267249738646157" />
         <var name="pattern" id="6728267249738647333" />
         <var name="selectOperator" id="6728267249738660690" />
       </scope>
-      <unit id="7270108634719663384" at="30,0,112,0" name="BaseFrege.behavior.BinExPart__BehaviorDescriptor" />
+      <unit id="7270108634719663384" at="30,0,116,0" name="BaseFrege.behavior.BinExPart__BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:f3acc988-19e1-4f05-8291-435175dbbc1f(BaseFrege.behavior)/7440527357469300740">
