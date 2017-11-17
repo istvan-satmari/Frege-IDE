@@ -870,10 +870,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BaseFrege", "Fixity", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L);
     b.class_(false, false, false);
     b.super_("BaseFrege.structure.Definition", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL);
+    b.parent(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53091a40f7add1f5L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786626");
     b.prop("priority", 0x5feee6d035b32d92L, "6912716259988811154");
     b.aggregate("infix", 0x5feee6d035b32dceL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b32dcdL).optional(false).ordered(true).multiple(false).origin("6912716259988811214").done();
-    b.aggregate("operator", 0x3f5c5828a3894e4cL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0xa037b0df0fef9ceL).optional(false).ordered(true).multiple(false).origin("4565621053812461132").done();
+    b.aggregate("operator", 0x3f5c5828a3894e4cL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x4b2fbc03f0258a57L).optional(false).ordered(true).multiple(false).origin("4565621053812461132").done();
     b.alias("fixity");
     return b.create();
   }

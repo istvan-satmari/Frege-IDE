@@ -213,12 +213,6 @@
         <child id="8292124299976650103" name="arg" index="1QrqpD" />
       </concept>
       <concept id="8292124299976650099" name="BaseFrege.structure.PLEBPlaceholder" flags="ng" index="1QrqpH" />
-      <concept id="721555665117472991" name="BaseFrege.structure.FOCharacterOperator" flags="ng" index="3UZ1fi">
-        <property id="721555665117472992" name="value" index="3UZ1fH" />
-      </concept>
-      <concept id="721555665117444559" name="BaseFrege.structure.FOSymbolicOperator" flags="ng" index="3UZob2">
-        <property id="721555665117444560" name="value" index="3UZobt" />
-      </concept>
       <concept id="8562096718746085876" name="BaseFrege.structure.TypeVariable" flags="ng" index="1VHOhI">
         <child id="4565621053812453402" name="value" index="2sPmwM" />
       </concept>
@@ -248,22 +242,22 @@
     <node concept="1kelYC" id="6t243n3yPYC" role="1kelZ8">
       <property role="1EnsH2" value="9" />
       <node concept="1EnsGs" id="6t243n3yPYD" role="1EnsGu" />
-      <node concept="3UZ1fi" id="6t243n3yPYE" role="2sPhp$">
-        <property role="3UZ1fH" value="plus1" />
+      <node concept="2V2zpk" id="4wNA9NzpvM6" role="2sPhp$">
+        <ref role="2dhnt4" node="25MTemGj7mQ" />
       </node>
     </node>
     <node concept="1kelYC" id="6t243n3yPZ6" role="1kelZ8">
       <property role="1EnsH2" value="5" />
       <node concept="1EnsGL" id="6t243n3yPZ7" role="1EnsGu" />
-      <node concept="3UZob2" id="6t243n3yPZ8" role="2sPhp$">
-        <property role="3UZobt" value=":--:" />
+      <node concept="2V2zpk" id="4wNA9NzpvM9" role="2sPhp$">
+        <ref role="2dhnt4" node="25MTemGj9sS" />
       </node>
     </node>
     <node concept="1kelYC" id="6t243n3yQiR" role="1kelZ8">
       <property role="1EnsH2" value="8" />
       <node concept="1EnsGL" id="6t243n3yQiS" role="1EnsGu" />
-      <node concept="3UZob2" id="6t243n3yQiT" role="2sPhp$">
-        <property role="3UZobt" value=":-:" />
+      <node concept="2V2zpk" id="4wNA9NzpvMc" role="2sPhp$">
+        <ref role="2dhnt4" node="1k8bX7TjcC6" />
       </node>
     </node>
     <node concept="14659P" id="3PPtPKL4n7y" role="1kelZ8" />
@@ -1215,7 +1209,7 @@
       </node>
     </node>
     <node concept="14659P" id="4wNA9Nz84dZ" role="1kelZ8" />
-    <node concept="14659P" id="4wNA9Nz2uJe" role="1kelZ8" />
+    <node concept="14659P" id="4wNA9NznrXj" role="1kelZ8" />
     <node concept="X6pxd" id="6j$Bkzr7HoI" role="1kelZ8">
       <node concept="kCsbT" id="6j$Bkzr7HoL" role="X6pIE">
         <node concept="2dhntu" id="6j$Bkzr7HoM" role="kCsbS">

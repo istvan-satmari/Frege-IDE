@@ -216,12 +216,15 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="operator" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="C3uKRKZJBe" resolve="FixityOperator" />
+      <ref role="20lvS9" node="4GJJ0fK9oDn" resolve="OperatorReference" />
     </node>
     <node concept="1TJgyi" id="5ZITH0PGMQi" role="1TKVEl">
       <property role="IQ2nx" value="6912716259988811154" />
       <property role="TrG5h" value="priority" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="4wNA9Nznv9f" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKXzn">

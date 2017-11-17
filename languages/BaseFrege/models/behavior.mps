@@ -17498,5 +17498,64 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="4wNA9Nznv94">
+    <property role="3GE5qa" value="Definitions" />
+    <ref role="13h7C2" to="sc0n:vUxQDjKXz2" resolve="Fixity" />
+    <node concept="13i0hz" id="4wNA9NznypD" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getScope" />
+      <ref role="13i0hy" to="tpcu:52_Geb4QDV$" resolve="getScope" />
+      <node concept="3Tm1VV" id="4wNA9NznypE" role="1B3o_S" />
+      <node concept="3clFbS" id="4wNA9NznypF" role="3clF47">
+        <node concept="3SKdUt" id="4wNA9NznEcf" role="3cqZAp">
+          <node concept="3SKdUq" id="4wNA9NznEch" role="3SKWNk">
+            <property role="3SKdUp" value="Scope provided by imports needs to be empty (we can only set fixity to currently defined operators)" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4wNA9NznEsD" role="3cqZAp">
+          <node concept="2OqwBi" id="4wNA9NznFod" role="3cqZAk">
+            <node concept="2OqwBi" id="4wNA9NznEI6" role="2Oq$k0">
+              <node concept="13iPFW" id="4wNA9NznEyf" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4wNA9NznF17" role="2OqNvi">
+                <node concept="1xMEDy" id="4wNA9NznF19" role="1xVPHs">
+                  <node concept="chp4Y" id="4wNA9NznF6M" role="ri$Ld">
+                    <ref role="cht4Q" to="sc0n:vUxQDjKXwJ" resolve="Skeleton" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="4wNA9NznFHr" role="2OqNvi">
+              <ref role="37wK5l" node="5c96$3RFu09" resolve="getPublicScope" />
+              <node concept="37vLTw" id="4wNA9NznFRD" role="37wK5m">
+                <ref role="3cqZAo" node="4wNA9Nznyq2" resolve="kind" />
+              </node>
+              <node concept="37vLTw" id="4wNA9NznG23" role="37wK5m">
+                <ref role="3cqZAo" node="4wNA9Nznyq4" resolve="child" />
+              </node>
+              <node concept="13iPFW" id="4wNA9NznIm3" role="37wK5m" />
+              <node concept="Xl_RD" id="4wNA9NznIwK" role="37wK5m">
+                <property role="Xl_RC" value="module" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4wNA9Nznyq2" role="3clF46">
+        <property role="TrG5h" value="kind" />
+        <node concept="3bZ5Sz" id="4wNA9Nznyq3" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4wNA9Nznyq4" role="3clF46">
+        <property role="TrG5h" value="child" />
+        <node concept="3Tqbb2" id="4wNA9Nznyq5" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="4wNA9Nznyq6" role="3clF45">
+        <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="4wNA9Nznv95" role="13h7CW">
+      <node concept="3clFbS" id="4wNA9Nznv96" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
