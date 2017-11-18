@@ -2652,7 +2652,7 @@
     </node>
   </node>
   <node concept="3ICXOK" id="cLUB_1V688">
-    <property role="3GE5qa" value="Definitions.Types" />
+    <property role="3GE5qa" value="Definitions.Type" />
     <property role="TrG5h" value="Type_AddTypeVariable" />
     <ref role="aqKnT" to="sc0n:2xkYx_u2yeb" resolve="Type" />
     <node concept="1Qtc8_" id="cLUB_1V6gM" role="IW6Ez">
@@ -10780,6 +10780,100 @@
           <property role="CtIbK" value="RIGHT" />
         </node>
       </node>
+      <node concept="aenpk" id="2kN9n9f9cxJ" role="1Qtc8A">
+        <node concept="27VH4U" id="2kN9n9f9d4j" role="aenpu">
+          <node concept="3clFbS" id="2kN9n9f9d4k" role="2VODD2">
+            <node concept="3SKdUt" id="2kN9n9f9e3F" role="3cqZAp">
+              <node concept="3SKdUq" id="2kN9n9f9e3G" role="3SKWNk">
+                <property role="3SKdUp" value="Transformation menu for TypeData" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="2kN9n9f9e3H" role="3cqZAp">
+              <node concept="3SKdUq" id="2kN9n9f9e3I" role="3SKWNk">
+                <property role="3SKdUp" value="Only applicable if we are the right-most cell" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="2kN9n9f9eFl" role="3cqZAp">
+              <node concept="3cpWsn" id="2kN9n9f9eFm" role="3cpWs9">
+                <property role="TrG5h" value="p" />
+                <node concept="3Tqbb2" id="2kN9n9f9eFn" role="1tU5fm" />
+                <node concept="2OqwBi" id="2kN9n9f9eFo" role="33vP2m">
+                  <node concept="7Obwk" id="2kN9n9f9eFp" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="2kN9n9f9eFq" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="2kN9n9f9eFr" role="3cqZAp">
+              <node concept="3clFbS" id="2kN9n9f9eFs" role="3clFbx">
+                <node concept="3cpWs6" id="2kN9n9f9oeb" role="3cqZAp">
+                  <node concept="3clFbC" id="2kN9n9f9ntx" role="3cqZAk">
+                    <node concept="7Obwk" id="2kN9n9f9nQP" role="3uHU7w" />
+                    <node concept="2OqwBi" id="2kN9n9f9jA6" role="3uHU7B">
+                      <node concept="2OqwBi" id="2kN9n9f9g_Y" role="2Oq$k0">
+                        <node concept="1PxgMI" id="2kN9n9f9g81" role="2Oq$k0">
+                          <node concept="chp4Y" id="2kN9n9f9glT" role="3oSUPX">
+                            <ref role="cht4Q" to="sc0n:7riFpCdpuC5" resolve="TypeData" />
+                          </node>
+                          <node concept="37vLTw" id="2kN9n9f9f9g" role="1m5AlR">
+                            <ref role="3cqZAo" node="2kN9n9f9eFm" resolve="p" />
+                          </node>
+                        </node>
+                        <node concept="3Tsc0h" id="2kN9n9f9hTL" role="2OqNvi">
+                          <ref role="3TtcxE" to="sc0n:7riFpCdpuC6" resolve="simpletypes" />
+                        </node>
+                      </node>
+                      <node concept="1yVyf7" id="2kN9n9f9lvf" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="2kN9n9f9eFv" role="3clFbw">
+                <node concept="2OqwBi" id="2kN9n9f9eFw" role="3uHU7B">
+                  <node concept="37vLTw" id="2kN9n9f9eFx" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2kN9n9f9eFm" resolve="p" />
+                  </node>
+                  <node concept="3x8VRR" id="2kN9n9f9eFy" role="2OqNvi" />
+                </node>
+                <node concept="2OqwBi" id="2kN9n9f9eFz" role="3uHU7w">
+                  <node concept="37vLTw" id="2kN9n9f9eF$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2kN9n9f9eFm" resolve="p" />
+                  </node>
+                  <node concept="1mIQ4w" id="2kN9n9f9eF_" role="2OqNvi">
+                    <node concept="chp4Y" id="2kN9n9f9eFA" role="cj9EA">
+                      <ref role="cht4Q" to="sc0n:7riFpCdpuC5" resolve="TypeData" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="2kN9n9f9e43" role="3cqZAp">
+              <node concept="3clFbT" id="2kN9n9f9e44" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mvV$s" id="2kN9n9f9dbs" role="aenpr">
+          <node concept="A1WHr" id="2kN9n9f9dbz" role="A14EM">
+            <ref role="2ZyFGn" to="sc0n:7riFpCdpuC5" resolve="TypeData" />
+          </node>
+          <node concept="mvVNg" id="2kN9n9f9db_" role="mvV$0">
+            <node concept="3clFbS" id="2kN9n9f9dbA" role="2VODD2">
+              <node concept="3clFbF" id="2kN9n9f9dfr" role="3cqZAp">
+                <node concept="1PxgMI" id="2kN9n9f9dTC" role="3clFbG">
+                  <node concept="chp4Y" id="2kN9n9f9dYf" role="3oSUPX">
+                    <ref role="cht4Q" to="sc0n:7riFpCdpuC5" resolve="TypeData" />
+                  </node>
+                  <node concept="2OqwBi" id="2kN9n9f9dpY" role="1m5AlR">
+                    <node concept="7Obwk" id="2kN9n9f9dfq" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="2kN9n9f9dAV" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="aenpk" id="2kN9n9eCaNx" role="1Qtc8A">
         <node concept="mvV$s" id="2kN9n9eCbhc" role="aenpr">
           <node concept="A1WHu" id="2kN9n9eCbhe" role="A14EM">
@@ -10790,7 +10884,7 @@
           <node concept="3clFbS" id="2kN9n9eCbhh" role="2VODD2">
             <node concept="3SKdUt" id="2kN9n9eCbop" role="3cqZAp">
               <node concept="3SKdUq" id="2kN9n9eCboq" role="3SKWNk">
-                <property role="3SKdUp" value="Transformation menus for TypeData" />
+                <property role="3SKdUp" value="Transformation menus for adding additional arguments inside TypeData" />
               </node>
             </node>
             <node concept="3cpWs8" id="2kN9n9eCbor" role="3cqZAp">
@@ -14441,6 +14535,86 @@
     <property role="3GE5qa" value="Definitions.References" />
     <ref role="aqKnT" to="sc0n:2kN9n9e_e1b" resolve="TypeReference" />
     <node concept="1Qtc8_" id="2kN9n9eCc4t" role="IW6Ez">
+      <node concept="aenpk" id="2kN9n9f90PU" role="1Qtc8A">
+        <node concept="27VH4U" id="2kN9n9f90ZD" role="aenpu">
+          <node concept="3clFbS" id="2kN9n9f90ZE" role="2VODD2">
+            <node concept="3SKdUt" id="2kN9n9f99VD" role="3cqZAp">
+              <node concept="3SKdUq" id="2kN9n9f99VE" role="3SKWNk">
+                <property role="3SKdUp" value="Transformation menu for TypeData" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="2kN9n9f9a_p" role="3cqZAp">
+              <node concept="3SKdUq" id="2kN9n9f9a_r" role="3SKWNk">
+                <property role="3SKdUp" value="Only applicable if we are the right-most cell" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="2kN9n9f9219" role="3cqZAp">
+              <node concept="3clFbS" id="2kN9n9f921b" role="3clFbx">
+                <node concept="3cpWs6" id="2kN9n9f92DD" role="3cqZAp">
+                  <node concept="2OqwBi" id="2kN9n9f96nH" role="3cqZAk">
+                    <node concept="2OqwBi" id="2kN9n9f948C" role="2Oq$k0">
+                      <node concept="1PxgMI" id="2kN9n9f93Ih" role="2Oq$k0">
+                        <node concept="chp4Y" id="2kN9n9f93Sg" role="3oSUPX">
+                          <ref role="cht4Q" to="sc0n:7riFpCdpuC5" resolve="TypeData" />
+                        </node>
+                        <node concept="2OqwBi" id="2kN9n9f931w" role="1m5AlR">
+                          <node concept="7Obwk" id="2kN9n9f92Nc" role="2Oq$k0" />
+                          <node concept="1mfA1w" id="2kN9n9f93k2" role="2OqNvi" />
+                        </node>
+                      </node>
+                      <node concept="3Tsc0h" id="2kN9n9f94wa" role="2OqNvi">
+                        <ref role="3TtcxE" to="sc0n:7riFpCdpuC6" resolve="simpletypes" />
+                      </node>
+                    </node>
+                    <node concept="1v1jN8" id="2kN9n9f98e2" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2YIFZM" id="2kN9n9f928r" role="3clFbw">
+                <ref role="1Pybhc" to="yq4j:7W$X1KZtejq" resolve="TreeUtilities" />
+                <ref role="37wK5l" to="yq4j:7sZOd2Uxqvk" resolve="testKindsUpward" />
+                <node concept="2OqwBi" id="2kN9n9f928s" role="37wK5m">
+                  <node concept="7Obwk" id="2kN9n9f928t" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="2kN9n9f928u" role="2OqNvi" />
+                </node>
+                <node concept="2ShNRf" id="2kN9n9f928v" role="37wK5m">
+                  <node concept="Tc6Ow" id="2kN9n9f928w" role="2ShVmc">
+                    <node concept="3bZ5Sz" id="2kN9n9f928x" role="HW$YZ" />
+                    <node concept="35c_gC" id="2kN9n9f928y" role="HW$Y0">
+                      <ref role="35c_gD" to="sc0n:7riFpCdpuC5" resolve="TypeData" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="2kN9n9f928q" role="3cqZAp">
+              <node concept="3clFbT" id="2kN9n9f98rv" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mvV$s" id="2kN9n9f916M" role="aenpr">
+          <node concept="A1WHr" id="2kN9n9f916T" role="A14EM">
+            <ref role="2ZyFGn" to="sc0n:7riFpCdpuC5" resolve="TypeData" />
+          </node>
+          <node concept="mvVNg" id="2kN9n9f916V" role="mvV$0">
+            <node concept="3clFbS" id="2kN9n9f916W" role="2VODD2">
+              <node concept="3clFbF" id="2kN9n9f91aL" role="3cqZAp">
+                <node concept="1PxgMI" id="2kN9n9f91R6" role="3clFbG">
+                  <node concept="chp4Y" id="2kN9n9f91VH" role="3oSUPX">
+                    <ref role="cht4Q" to="sc0n:7riFpCdpuC5" resolve="TypeData" />
+                  </node>
+                  <node concept="2OqwBi" id="2kN9n9f91li" role="1m5AlR">
+                    <node concept="7Obwk" id="2kN9n9f91aK" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="2kN9n9f91yj" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="aenpk" id="2kN9n9eCc56" role="1Qtc8A">
         <node concept="mvV$s" id="2kN9n9eCcBP" role="aenpr">
           <node concept="A1WHu" id="2kN9n9eCcQZ" role="A14EM">
@@ -14451,7 +14625,7 @@
           <node concept="3clFbS" id="2kN9n9eCc58" role="2VODD2">
             <node concept="3SKdUt" id="2kN9n9eCc59" role="3cqZAp">
               <node concept="3SKdUq" id="2kN9n9eCc5a" role="3SKWNk">
-                <property role="3SKdUp" value="Transformation menu for TypeData" />
+                <property role="3SKdUp" value="Transformation menu for adding additional arguments inside TypeData" />
               </node>
             </node>
             <node concept="3cpWs6" id="2kN9n9eCc5b" role="3cqZAp">
@@ -14785,7 +14959,7 @@
                   <node concept="Tc6Ow" id="2kN9n9eWl6J" role="2ShVmc">
                     <node concept="3bZ5Sz" id="2kN9n9eWl6K" role="HW$YZ" />
                     <node concept="35c_gC" id="2kN9n9eWl6L" role="HW$Y0">
-                      <ref role="35c_gD" to="sc0n:7riFpCdpuBL" resolve="Simpletype" />
+                      <ref role="35c_gD" to="sc0n:2kN9n9eJd0s" resolve="TypeA" />
                     </node>
                   </node>
                 </node>
@@ -14801,8 +14975,8 @@
             <node concept="3clFbS" id="2kN9n9eWl6P" role="2VODD2">
               <node concept="3clFbF" id="2kN9n9eWl6Q" role="3cqZAp">
                 <node concept="1PxgMI" id="2kN9n9eWl6R" role="3clFbG">
-                  <node concept="chp4Y" id="2kN9n9eWlzo" role="3oSUPX">
-                    <ref role="cht4Q" to="sc0n:7riFpCdpuBL" resolve="Simpletype" />
+                  <node concept="chp4Y" id="2kN9n9f7IA0" role="3oSUPX">
+                    <ref role="cht4Q" to="sc0n:2kN9n9eJd0s" resolve="TypeA" />
                   </node>
                   <node concept="2OqwBi" id="2kN9n9eWl6T" role="1m5AlR">
                     <node concept="7Obwk" id="2kN9n9eWl6U" role="2Oq$k0" />
