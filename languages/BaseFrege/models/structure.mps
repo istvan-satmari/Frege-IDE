@@ -1039,6 +1039,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3Xsm2yzyj0p" resolve="FullType" />
     </node>
+    <node concept="PrWs8" id="2kN9n9ePWan" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzy6z5">
     <property role="EcuMT" value="4565621053812402373" />

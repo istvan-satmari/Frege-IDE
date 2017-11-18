@@ -1631,6 +1631,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BaseFrege", "Type", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x2854fa195e0a238bL);
     b.class_(false, false, false);
     b.super_("BaseFrege.structure.Definition", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL);
+    b.parent(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53091a40f7add1f5L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2906222646419661707");
     b.aggregate("name", 0x2854fa195e0a238cL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x253325724e94e0bcL).optional(false).ordered(true).multiple(false).origin("2906222646419661708").done();
     b.aggregate("typeVariables", 0x2854fa195e0a238eL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f4L).optional(true).ordered(true).multiple(true).origin("2906222646419661710").done();

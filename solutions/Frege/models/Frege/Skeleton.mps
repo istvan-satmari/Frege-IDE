@@ -222,6 +222,10 @@
       <concept id="2680527376090456252" name="BaseFrege.structure.TypeName" flags="ng" index="1FDWne">
         <child id="2680527376090456253" name="name" index="1FDWnf" />
       </concept>
+      <concept id="2906222646419661707" name="BaseFrege.structure.Type" flags="ng" index="1QnHAi">
+        <child id="2906222646419661713" name="equalTo" index="1QnHA8" />
+        <child id="2906222646419661708" name="name" index="1QnHAl" />
+      </concept>
       <concept id="8292124299976650100" name="BaseFrege.structure.PLEBPatternArgument" flags="ng" index="1QrqpE">
         <child id="8292124299976650103" name="arg" index="1QrqpD" />
       </concept>
@@ -1116,6 +1120,23 @@
     <property role="MspXn" value="true" />
     <node concept="14659P" id="5PvAQDJnqKf" role="1kelZ8" />
     <node concept="14659P" id="4wNA9Nz9gFF" role="1kelZ8" />
+    <node concept="1QnHAi" id="2kN9n9eR8XV" role="1kelZ8">
+      <node concept="1FDWne" id="2kN9n9eR8XX" role="1QnHAl">
+        <node concept="1YIbBT" id="2kN9n9eR8XZ" role="1FDWnf">
+          <property role="1YIbBV" value="Something" />
+        </node>
+      </node>
+      <node concept="2sPmwL" id="2kN9n9eR8Y1" role="1QnHA8">
+        <node concept="1VHOuR" id="2kN9n9eR8Y3" role="2sPmzG">
+          <node concept="1VHOuv" id="2kN9n9eR92O" role="1VHOuO">
+            <node concept="1FDWkT" id="2kN9n9eR92M" role="3OC6DW">
+              <ref role="1FFbxs" node="2kN9n9eBP32" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14659P" id="2kN9n9eR8Fv" role="1kelZ8" />
     <node concept="1kelTI" id="2kN9n9eBP30" role="1kelZ8">
       <node concept="1VHOhI" id="2kN9n9eBP7$" role="13J2EG">
         <node concept="1YIbBU" id="2kN9n9eBP7_" role="2sPmwM">
@@ -1144,15 +1165,6 @@
       </node>
       <node concept="13J6Mv" id="2kN9n9eFoke" role="3i234W">
         <node concept="1VHOuv" id="2kN9n9eJbIq" role="13J6M$">
-          <node concept="1VH8fz" id="2kN9n9eMong" role="1VHOus">
-            <node concept="1VHOuR" id="2kN9n9eMoni" role="1VH8fw">
-              <node concept="1FzZlI" id="2kN9n9eNJt4" role="1VHOuO">
-                <node concept="1FzZlh" id="2kN9n9eNJt2" role="1FzANs">
-                  <ref role="1FzZlm" node="2kN9n9eBP7$" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="1FzZlI" id="2kN9n9eMon9" role="1VHOus">
             <node concept="1FzZlh" id="2kN9n9eMon7" role="1FzANs">
               <ref role="1FzZlm" node="2kN9n9eBP7$" />
