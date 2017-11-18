@@ -14682,7 +14682,79 @@
         </node>
       </node>
     </node>
-    <node concept="3VyMlK" id="2kN9n9eTlt_" role="3ft7WO" />
+    <node concept="3eGOop" id="2kN9n9f13FG" role="3ft7WO">
+      <node concept="16NfWO" id="2kN9n9f14j_" role="upBLP">
+        <node concept="uGdhv" id="2kN9n9f14nj" role="16NeZM">
+          <node concept="3clFbS" id="2kN9n9f14nl" role="2VODD2">
+            <node concept="3clFbF" id="2kN9n9f14vJ" role="3cqZAp">
+              <node concept="ub8z3" id="2kN9n9f14vI" role="3clFbG" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="ucgPf" id="2kN9n9f13FI" role="3aKz83">
+        <node concept="3clFbS" id="2kN9n9f13FK" role="2VODD2">
+          <node concept="3SKdUt" id="2kN9n9f140o" role="3cqZAp">
+            <node concept="3SKdUq" id="2kN9n9f140p" role="3SKWNk">
+              <property role="3SKdUp" value="Substitute to implicit type" />
+            </node>
+          </node>
+          <node concept="3cpWs6" id="2kN9n9f15jN" role="3cqZAp">
+            <node concept="2ShNRf" id="2kN9n9f15kc" role="3cqZAk">
+              <node concept="2fJWfE" id="2kN9n9f15uC" role="2ShVmc">
+                <node concept="3Tqbb2" id="2kN9n9f15uE" role="3zrR0E">
+                  <ref role="ehGHo" to="sc0n:2kN9n9f12LG" resolve="ImplicitType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="16NL3D" id="2kN9n9f145e" role="upBLP">
+        <node concept="16Na2f" id="2kN9n9f145f" role="16NL3A">
+          <node concept="3clFbS" id="2kN9n9f145g" role="2VODD2">
+            <node concept="3SKdUt" id="2kN9n9f15YH" role="3cqZAp">
+              <node concept="3SKdUq" id="2kN9n9f15YJ" role="3SKWNk">
+                <property role="3SKdUp" value="Only when inside type definition" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="2kN9n9f16eT" role="3cqZAp">
+              <node concept="3clFbS" id="2kN9n9f16eV" role="3clFbx">
+                <node concept="3cpWs6" id="2kN9n9f2zGw" role="3cqZAp">
+                  <node concept="2OqwBi" id="2kN9n9f3SQU" role="3cqZAk">
+                    <node concept="ub8z3" id="2kN9n9f3RV1" role="2Oq$k0" />
+                    <node concept="liA8E" id="2kN9n9f3Tks" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                      <node concept="Xl_RD" id="2kN9n9f3TsU" role="37wK5m">
+                        <property role="Xl_RC" value="!!implicit" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2kN9n9f17RB" role="3clFbw">
+                <node concept="2OqwBi" id="2kN9n9f17aq" role="2Oq$k0">
+                  <node concept="1yR$tW" id="2kN9n9f16Uy" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="2kN9n9f17qT" role="2OqNvi">
+                    <node concept="1xMEDy" id="2kN9n9f17qV" role="1xVPHs">
+                      <node concept="chp4Y" id="2kN9n9f17$h" role="ri$Ld">
+                        <ref role="cht4Q" to="sc0n:2xkYx_u2yeb" resolve="Type" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="2kN9n9f18rr" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="2kN9n9f15Ka" role="3cqZAp">
+              <node concept="3clFbT" id="2kN9n9f16Nf" role="3cqZAk">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="IW6AY" id="2kN9n9eWl6q">
     <property role="3GE5qa" value="Definitions.References" />
@@ -14747,6 +14819,17 @@
   <node concept="3p36aQ" id="2kN9n9eZ9SC">
     <property role="3GE5qa" value="Definitions.Names" />
     <ref role="aqKnT" to="sc0n:7Cxf1w4Aony" resolve="NodeVARID" />
+  </node>
+  <node concept="24kQdi" id="2kN9n9f12MF">
+    <property role="3GE5qa" value="Definitions.Types" />
+    <ref role="1XX52x" to="sc0n:2kN9n9f12LG" resolve="ImplicitType" />
+    <node concept="3F0ifn" id="2kN9n9f12MH" role="2wV5jI">
+      <property role="3F0ifm" value="!!implicit" />
+    </node>
+  </node>
+  <node concept="3p36aQ" id="2kN9n9f12N9">
+    <property role="3GE5qa" value="Definitions.Types" />
+    <ref role="aqKnT" to="sc0n:2kN9n9f12LG" resolve="ImplicitType" />
   </node>
 </model>
 

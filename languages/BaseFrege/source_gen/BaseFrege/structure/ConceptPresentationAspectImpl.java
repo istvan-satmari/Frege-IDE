@@ -63,6 +63,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_IIOperator = new ConceptPresentationBuilder().shortDesc("Import an operator function.").create();
   private final ConceptPresentation props_IfThenElse = new ConceptPresentationBuilder().shortDesc("If expression.").create();
   private final ConceptPresentation props_ImplicitDefinition = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ImplicitType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Import = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportAH = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportAs = new ConceptPresentationBuilder().create();
@@ -273,6 +274,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_IfThenElse;
       case LanguageConceptSwitch.ImplicitDefinition:
         return props_ImplicitDefinition;
+      case LanguageConceptSwitch.ImplicitType:
+        return props_ImplicitType;
       case LanguageConceptSwitch.Import:
         return props_Import;
       case LanguageConceptSwitch.ImportAH:

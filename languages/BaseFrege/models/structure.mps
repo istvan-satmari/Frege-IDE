@@ -2391,5 +2391,11 @@
       <ref role="20lvS9" node="7riFpCdpuBO" resolve="TypeVariable" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2kN9n9f12LG">
+    <property role="EcuMT" value="2680527376097750124" />
+    <property role="3GE5qa" value="Definitions.Types" />
+    <property role="TrG5h" value="ImplicitType" />
+    <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
+  </node>
 </model>
 
