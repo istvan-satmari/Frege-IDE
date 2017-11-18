@@ -148,6 +148,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Tuple = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Type = new ConceptPresentationBuilder().shortDesc("Definition of a type synonym.").create();
   private final ConceptPresentation props_TypeA = new ConceptPresentationBuilder().shortDesc("Represents a type variable.").create();
+  private final ConceptPresentation props_TypeB = new ConceptPresentationBuilder().shortDesc("Represents a type variable that is not a reference.").create();
   private final ConceptPresentation props_TypeData = new ConceptPresentationBuilder().shortDesc("Represents types and algebraic datatypes.").create();
   private final ConceptPresentation props_TypeFunction = new ConceptPresentationBuilder().shortDesc("Complete type signature of a function.").create();
   private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type.").create();
@@ -442,6 +443,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Type;
       case LanguageConceptSwitch.TypeA:
         return props_TypeA;
+      case LanguageConceptSwitch.TypeB:
+        return props_TypeB;
       case LanguageConceptSwitch.TypeData:
         return props_TypeData;
       case LanguageConceptSwitch.TypeFunction:

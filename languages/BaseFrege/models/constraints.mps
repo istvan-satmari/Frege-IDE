@@ -61,6 +61,7 @@
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1212097481299" name="propertyValidator" index="QCWH9" />
       </concept>
+      <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
@@ -95,6 +96,8 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -800,6 +803,72 @@
                 <node concept="2rP1CM" id="2kN9n9eJdq2" role="37wK5m" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2kN9n9eT2Nx">
+    <property role="3GE5qa" value="Definitions.Types" />
+    <ref role="1M2myG" to="sc0n:2kN9n9eJd0s" resolve="TypeA" />
+    <node concept="9S07l" id="2kN9n9eT2Ny" role="9Vyp8">
+      <node concept="3clFbS" id="2kN9n9eT2Nz" role="2VODD2">
+        <node concept="3SKdUt" id="2kN9n9eT4zc" role="3cqZAp">
+          <node concept="3SKdUq" id="2kN9n9eT4ze" role="3SKWNk">
+            <property role="3SKdUp" value="In annotations we must not reference any type variables" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="2kN9n9eT4VL" role="3cqZAp">
+          <node concept="3SKdUq" id="2kN9n9eT4VN" role="3SKWNk">
+            <property role="3SKdUp" value="Consider this example: ff :: Int -&gt; a -&gt; b -&gt; Int, &quot;a&quot; and &quot;b&quot; are not references, but new variables" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2kN9n9eT2UF" role="3cqZAp">
+          <node concept="2OqwBi" id="2kN9n9eT3V3" role="3cqZAk">
+            <node concept="2OqwBi" id="2kN9n9eT3eW" role="2Oq$k0">
+              <node concept="EsrRn" id="2kN9n9eT31X" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="2kN9n9eT3wI" role="2OqNvi">
+                <node concept="1xMEDy" id="2kN9n9eT3wK" role="1xVPHs">
+                  <node concept="chp4Y" id="2kN9n9eT3C_" role="ri$Ld">
+                    <ref role="cht4Q" to="sc0n:vUxQDjKXz0" resolve="Annotation" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="2kN9n9eT4fI" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2kN9n9eTk7O">
+    <property role="3GE5qa" value="Definitions.Types" />
+    <ref role="1M2myG" to="sc0n:2kN9n9eTjPM" resolve="TypeB" />
+    <node concept="9S07l" id="2kN9n9eTkiw" role="9Vyp8">
+      <node concept="3clFbS" id="2kN9n9eTkix" role="2VODD2">
+        <node concept="3SKdUt" id="2kN9n9eTkpD" role="3cqZAp">
+          <node concept="3SKdUq" id="2kN9n9eTkpE" role="3SKWNk">
+            <property role="3SKdUp" value="It is possible to use TypeB only inside annotations" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="2kN9n9eTkpF" role="3cqZAp">
+          <node concept="3SKdUq" id="2kN9n9eTkpG" role="3SKWNk">
+            <property role="3SKdUp" value="Consider this example: ff :: Int -&gt; a -&gt; b -&gt; Int, &quot;a&quot; and &quot;b&quot; are not references, but new variables" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2kN9n9eTkpH" role="3cqZAp">
+          <node concept="2OqwBi" id="2kN9n9eTkpI" role="3cqZAk">
+            <node concept="2OqwBi" id="2kN9n9eTkpJ" role="2Oq$k0">
+              <node concept="EsrRn" id="2kN9n9eTkpK" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="2kN9n9eTkpL" role="2OqNvi">
+                <node concept="1xMEDy" id="2kN9n9eTkpM" role="1xVPHs">
+                  <node concept="chp4Y" id="2kN9n9eTkpN" role="ri$Ld">
+                    <ref role="cht4Q" to="sc0n:vUxQDjKXz0" resolve="Annotation" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="2kN9n9eTkN4" role="2OqNvi" />
           </node>
         </node>
       </node>

@@ -580,7 +580,6 @@
     <property role="3GE5qa" value="Definitions.Types.Declarable" />
     <property role="TrG5h" value="TypeVariable" />
     <property role="R4oN_" value="Type variable." />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3Xsm2yzyj0q" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812453402" />
       <property role="20lmBu" value="aggregation" />
@@ -594,6 +593,7 @@
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="TypeData" />
     <property role="R4oN_" value="Represents types and algebraic datatypes." />
+    <property role="34LRSv" value="&lt;ypeData_Alias&gt;" />
     <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
     <node concept="1TJgyj" id="AfhA7XbMKt" role="1TKVEi">
       <property role="IQ2ns" value="688846654684474397" />
@@ -2373,6 +2373,20 @@
       <property role="IQ2ns" value="2680527376093073444" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7riFpCdpuBO" resolve="TypeVariable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kN9n9eTjPM">
+    <property role="EcuMT" value="2680527376095722866" />
+    <property role="3GE5qa" value="Definitions.Types" />
+    <property role="TrG5h" value="TypeB" />
+    <property role="R4oN_" value="Represents a type variable that is not a reference." />
+    <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
+    <node concept="1TJgyj" id="2kN9n9eTjPN" role="1TKVEi">
+      <property role="IQ2ns" value="2680527376095722867" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tpyeVariable" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7riFpCdpuBO" resolve="TypeVariable" />
     </node>
