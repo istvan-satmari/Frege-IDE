@@ -52,11 +52,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FDGCommonEntity = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGrouped = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGuards = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FOCharacterOperator = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FOSymbolicOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FalseValue = new ConceptPresentationBuilder().shortDesc("False boolean value.").create();
   private final ConceptPresentation props_Fixity = new ConceptPresentationBuilder().shortDesc("Set priority of an operator.").create();
-  private final ConceptPresentation props_FixityOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FullType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunctionApplication = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FunctionDefinition = new ConceptPresentationBuilder().shortDesc("Single function definition pattern, i.e. this represents an incomplete function definition.").create();
@@ -112,7 +109,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ModuleName = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ModuleNameFinal = new ConceptPresentationBuilder().shortDesc("Final part in the module name description.").create();
   private final ConceptPresentation props_ModuleNamePreFinal = new ConceptPresentationBuilder().shortDesc("Represents name of the current module separated by dots.").create();
-  private final ConceptPresentation props_NodeCONID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for constructors.").create();
+  private final ConceptPresentation props_NodeCONID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for constructors and types.").create();
   private final ConceptPresentation props_NodeOperator = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for operators.").create();
   private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for functions and variables.").create();
   private final ConceptPresentation props_OperatorApplication = new ConceptPresentationBuilder().create();
@@ -150,11 +147,15 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_TrueValue = new ConceptPresentationBuilder().shortDesc("True boolean value.").create();
   private final ConceptPresentation props_Tuple = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Type = new ConceptPresentationBuilder().shortDesc("Definition of a type synonym.").create();
+  private final ConceptPresentation props_TypeA = new ConceptPresentationBuilder().shortDesc("Represents a type variable.").create();
   private final ConceptPresentation props_TypeData = new ConceptPresentationBuilder().shortDesc("Represents types and algebraic datatypes.").create();
   private final ConceptPresentation props_TypeFunction = new ConceptPresentationBuilder().shortDesc("Complete type signature of a function.").create();
   private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type.").create();
-  private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("Type of a one or several items.").create();
+  private final ConceptPresentation props_TypeName = new ConceptPresentationBuilder().shortDesc("Type name.").create();
+  private final ConceptPresentation props_TypeReference = new ConceptPresentationBuilder().shortDesc("References a type name.").create();
+  private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("Tuple type.").create();
   private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable.").create();
+  private final ConceptPresentation props_TypeVariableReference = new ConceptPresentationBuilder().shortDesc("References a type variable.").create();
   private final ConceptPresentation props_VariableReference = new ConceptPresentationBuilder().shortDesc("References either a function name or a variable.").create();
   private final ConceptPresentation props_WherePart = new ConceptPresentationBuilder().create();
 
@@ -249,16 +250,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_FDGrouped;
       case LanguageConceptSwitch.FDGuards:
         return props_FDGuards;
-      case LanguageConceptSwitch.FOCharacterOperator:
-        return props_FOCharacterOperator;
-      case LanguageConceptSwitch.FOSymbolicOperator:
-        return props_FOSymbolicOperator;
       case LanguageConceptSwitch.FalseValue:
         return props_FalseValue;
       case LanguageConceptSwitch.Fixity:
         return props_Fixity;
-      case LanguageConceptSwitch.FixityOperator:
-        return props_FixityOperator;
       case LanguageConceptSwitch.FullType:
         return props_FullType;
       case LanguageConceptSwitch.FunctionApplication:
@@ -445,16 +440,24 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Tuple;
       case LanguageConceptSwitch.Type:
         return props_Type;
+      case LanguageConceptSwitch.TypeA:
+        return props_TypeA;
       case LanguageConceptSwitch.TypeData:
         return props_TypeData;
       case LanguageConceptSwitch.TypeFunction:
         return props_TypeFunction;
       case LanguageConceptSwitch.TypeList:
         return props_TypeList;
+      case LanguageConceptSwitch.TypeName:
+        return props_TypeName;
+      case LanguageConceptSwitch.TypeReference:
+        return props_TypeReference;
       case LanguageConceptSwitch.TypeTuple:
         return props_TypeTuple;
       case LanguageConceptSwitch.TypeVariable:
         return props_TypeVariable;
+      case LanguageConceptSwitch.TypeVariableReference:
+        return props_TypeVariableReference;
       case LanguageConceptSwitch.VariableReference:
         return props_VariableReference;
       case LanguageConceptSwitch.WherePart:

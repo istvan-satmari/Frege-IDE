@@ -300,7 +300,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="name" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Cxf1w4Aonx" resolve="NodeCONID" />
+      <ref role="20lvS9" node="2kN9n9e_e2W" resolve="TypeName" />
     </node>
     <node concept="1TJgyj" id="62eaOWzcw7z" role="1TKVEi">
       <property role="IQ2ns" value="6957546093226885603" />
@@ -315,6 +315,9 @@
       <property role="20lbJX" value="1..n" />
       <property role="20kJfa" value="parts" />
       <ref role="20lvS9" node="62eaOWzc$vg" resolve="DataConstructor" />
+    </node>
+    <node concept="PrWs8" id="2kN9n9eCdx2" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKX$7">
@@ -574,10 +577,10 @@
   </node>
   <node concept="1TIwiD" id="7riFpCdpuBO">
     <property role="EcuMT" value="8562096718746085876" />
-    <property role="3GE5qa" value="Definitions.Types" />
+    <property role="3GE5qa" value="Definitions.Types.Declarable" />
     <property role="TrG5h" value="TypeVariable" />
     <property role="R4oN_" value="Type variable." />
-    <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3Xsm2yzyj0q" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812453402" />
       <property role="20lmBu" value="aggregation" />
@@ -597,7 +600,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="dataType" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Cxf1w4AomA" resolve="QCONID" />
+      <ref role="20lvS9" node="2kN9n9e_e1b" resolve="TypeReference" />
     </node>
     <node concept="1TJgyj" id="7riFpCdpuC6" role="1TKVEi">
       <property role="IQ2ns" value="8562096718746085894" />
@@ -625,7 +628,7 @@
     <property role="EcuMT" value="8562096718746103417" />
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="TypeTuple" />
-    <property role="R4oN_" value="Type of a one or several items." />
+    <property role="R4oN_" value="Tuple type." />
     <property role="34LRSv" value="(" />
     <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
     <node concept="1TJgyj" id="7riFpCdpyTU" role="1TKVEi">
@@ -1020,7 +1023,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="name" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Cxf1w4Aonx" resolve="NodeCONID" />
+      <ref role="20lvS9" node="2kN9n9e_e2W" resolve="TypeName" />
     </node>
     <node concept="1TJgyj" id="2xkYx_u2yee" role="1TKVEi">
       <property role="IQ2ns" value="2906222646419661710" />
@@ -1542,7 +1545,7 @@
     <property role="EcuMT" value="8800381220712711649" />
     <property role="3GE5qa" value="Definitions.Names" />
     <property role="TrG5h" value="NodeCONID" />
-    <property role="R4oN_" value="Represents a customizable name for constructors." />
+    <property role="R4oN_" value="Represents a customizable name for constructors and types." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7Cxf1w4Aonz" role="1TKVEl">
       <property role="IQ2nx" value="8800381220712711651" />
@@ -1661,36 +1664,6 @@
     <ref role="1TJDcQ" node="vUxQDjKXyv" resolve="Definition" />
     <node concept="PrWs8" id="7SJSV$AYI1$" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="C3uKRKZJBe">
-    <property role="EcuMT" value="721555665117444558" />
-    <property role="3GE5qa" value="Definitions.Fixity.Operator" />
-    <property role="TrG5h" value="FixityOperator" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="C3uKRKZJBf">
-    <property role="EcuMT" value="721555665117444559" />
-    <property role="3GE5qa" value="Definitions.Fixity.Operator" />
-    <property role="TrG5h" value="FOSymbolicOperator" />
-    <ref role="1TJDcQ" node="C3uKRKZJBe" resolve="FixityOperator" />
-    <node concept="1TJgyi" id="C3uKRKZJBg" role="1TKVEl">
-      <property role="IQ2nx" value="721555665117444560" />
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" node="5G3QggfmaCI" resolve="OPERATOR" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="C3uKRKZQzv">
-    <property role="EcuMT" value="721555665117472991" />
-    <property role="3GE5qa" value="Definitions.Fixity.Operator" />
-    <property role="TrG5h" value="FOCharacterOperator" />
-    <ref role="1TJDcQ" node="C3uKRKZJBe" resolve="FixityOperator" />
-    <node concept="1TJgyi" id="C3uKRKZQzw" role="1TKVEl">
-      <property role="IQ2nx" value="721555665117472992" />
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" node="7Cxf1w4Aom_" resolve="VARID" />
     </node>
   </node>
   <node concept="1TIwiD" id="1A7M7ev83xY">
@@ -2343,6 +2316,62 @@
       <property role="IQ2nx" value="6728267249748935741" />
       <property role="TrG5h" value="lateLoaded" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kN9n9e_e1b">
+    <property role="EcuMT" value="2680527376090456139" />
+    <property role="3GE5qa" value="Definitions.References" />
+    <property role="TrG5h" value="TypeReference" />
+    <property role="R4oN_" value="References a type name." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2kN9n9eBTOI" role="1TKVEi">
+      <property role="IQ2ns" value="2680527376091159854" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2kN9n9e_e2W" resolve="TypeName" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kN9n9e_e2W">
+    <property role="EcuMT" value="2680527376090456252" />
+    <property role="3GE5qa" value="Definitions.Types.Declarable" />
+    <property role="TrG5h" value="TypeName" />
+    <property role="R4oN_" value="Type name." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2kN9n9e_e2X" role="1TKVEi">
+      <property role="IQ2ns" value="2680527376090456253" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="name" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7Cxf1w4Aonx" resolve="NodeCONID" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kN9n9eJd0s">
+    <property role="EcuMT" value="2680527376093073436" />
+    <property role="3GE5qa" value="Definitions.Types" />
+    <property role="TrG5h" value="TypeA" />
+    <property role="R4oN_" value="Represents a type variable." />
+    <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
+    <node concept="1TJgyj" id="2kN9n9eJkAI" role="1TKVEi">
+      <property role="IQ2ns" value="2680527376093104558" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="typeVariable" />
+      <ref role="20lvS9" node="2kN9n9eJd0z" resolve="TypeVariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kN9n9eJd0z">
+    <property role="EcuMT" value="2680527376093073443" />
+    <property role="3GE5qa" value="Definitions.References" />
+    <property role="TrG5h" value="TypeVariableReference" />
+    <property role="R4oN_" value="References a type variable." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2kN9n9eJd0$" role="1TKVEi">
+      <property role="IQ2ns" value="2680527376093073444" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7riFpCdpuBO" resolve="TypeVariable" />
     </node>
   </node>
 </model>
