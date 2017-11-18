@@ -1373,7 +1373,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("BaseFrege.structure.PatternArgument", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895193L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812462072");
-    b.aggregate("name", 0x3f5c5828a3895219L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53091a40f7d3538eL).optional(false).ordered(true).multiple(false).origin("4565621053812462105").done();
+    b.aggregate("constructor", 0x3f5c5828a3895219L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53091a40f7d3538eL).optional(false).ordered(true).multiple(false).origin("4565621053812462105").done();
     b.aggregate("arguments", 0x3f5c5828a389521bL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895193L).optional(true).ordered(true).multiple(true).origin("4565621053812462107").done();
     b.alias("constructor");
     return b.create();

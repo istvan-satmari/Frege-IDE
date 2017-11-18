@@ -1259,7 +1259,7 @@
     <node concept="1TJgyj" id="3Xsm2yzyl8p" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812462105" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="name" />
+      <property role="20kJfa" value="constructor" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5c96$3ROPee" resolve="ConstructorReference" />
     </node>
