@@ -228,6 +228,7 @@
   </dependency>
   <dependency className="BaseFrege.behavior.Data__BehaviorDescriptor" file="Data__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.DCScopeProvider__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.ListScopeDataConstructor" />
     <classNode dependClassName="BaseFrege.behavior.ListScopeTypeVariable" />
     <classNode dependClassName="BaseFrege.behavior.SimpleRoleScopeTypeName" />
     <classNode dependClassName="java.lang.Class" />
@@ -900,6 +901,17 @@
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.scope.Scope" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ListScopeDataConstructor" file="ListScopeDataConstructor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="BaseFrege.behavior.ListScope" />
   </dependency>
   <dependency className="BaseFrege.behavior.ListScopeImports" file="ListScopeImports.java">
     <classNode dependClassName="BaseFrege.behavior.ModuleName__BehaviorDescriptor" />
