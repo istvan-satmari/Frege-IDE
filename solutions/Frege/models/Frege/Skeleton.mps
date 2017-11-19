@@ -129,6 +129,9 @@
       <concept id="6051851628362631587" name="BaseFrege.structure.OperatorApplication" flags="ng" index="2Y4ftu">
         <child id="4428577046454407550" name="operator" index="fa6oy" />
       </concept>
+      <concept id="6051851628362595965" name="BaseFrege.structure.ConstructorApplication" flags="ng" index="2Y5S20">
+        <child id="6051851628362640045" name="constructor" index="2Y4dhg" />
+      </concept>
       <concept id="9161715944134228609" name="BaseFrege.structure.ImportedEntityApplication" flags="ng" index="100WUt">
         <child id="9161715944134228688" name="entity" index="100WVc" />
         <child id="9161715944134324339" name="import" index="1034hJ" />
@@ -207,6 +210,17 @@
       <concept id="2139708830661736698" name="BaseFrege.structure.PatternWrapper" flags="ng" index="1rUzOy">
         <child id="2139708830661736699" name="pattern" index="1rUzOz" />
       </concept>
+      <concept id="1927103277524978627" name="BaseFrege.structure.METConstructorList" flags="ng" index="1$S7BV">
+        <child id="1927103277524981950" name="constructors" index="1$S6E6" />
+      </concept>
+      <concept id="1927103277524978719" name="BaseFrege.structure.METCLConstructor" flags="ng" index="1$S7SB">
+        <child id="1927103277524978720" name="constructor" index="1$S7So" />
+      </concept>
+      <concept id="1927103277524978688" name="BaseFrege.structure.METCLAll" flags="ng" index="1$S7SS" />
+      <concept id="1927103277524159670" name="BaseFrege.structure.METype" flags="ng" index="1$VZUe">
+        <child id="1927103277524978628" name="constructorList" index="1$S7BW" />
+        <child id="1927103277524159671" name="type" index="1$VZUf" />
+      </concept>
       <concept id="2680527376097750124" name="BaseFrege.structure.ImplicitType" flags="ng" index="1EdK$u" />
       <concept id="6912716259988856042" name="BaseFrege.structure.FDAssignment" flags="ng" index="1EnjCU">
         <child id="4429572801646584600" name="pattern" index="2TAmfA" />
@@ -256,6 +270,9 @@
       </concept>
       <concept id="8562096718746085933" name="BaseFrege.structure.TypeFunction" flags="ng" index="1VHOuR">
         <child id="8562096718746085934" name="arguments" index="1VHOuO" />
+      </concept>
+      <concept id="8562096718746050023" name="BaseFrege.structure.LineComment" flags="ng" index="1VHZ1X">
+        <property id="8562096718746050057" name="text" index="1VHZej" />
       </concept>
       <concept id="8800381220712711649" name="BaseFrege.structure.NodeCONID" flags="ng" index="1YIbBT">
         <property id="8800381220712711651" name="value" index="1YIbBV" />
@@ -1482,7 +1499,7 @@
       </node>
     </node>
     <node concept="14659P" id="2kN9n9eUTfj" role="1kelZ8" />
-    <node concept="14659P" id="1EYszxYf_ns" role="1kelZ8" />
+    <node concept="14659P" id="1EYszxYkAwI" role="1kelZ8" />
     <node concept="X6pxd" id="2kN9n9fjdV9" role="1kelZ8">
       <node concept="kCs94" id="2kN9n9fjdVc" role="X6pIE">
         <node concept="2sPgCx" id="2kN9n9fjdVd" role="kCs97">
@@ -2207,6 +2224,31 @@
           <ref role="2dhnt4" node="6j$Bkzr7HoN" />
         </node>
       </node>
+      <node concept="1$VZUe" id="1EYszxYyGRg" role="1VGiaT">
+        <node concept="1FDWkT" id="1EYszxYyGRe" role="1$VZUf">
+          <ref role="1FFbxs" node="2kN9n9eBP32" />
+        </node>
+        <node concept="1$S7BV" id="1EYszxYyGWA" role="1$S7BW">
+          <node concept="1$S7SB" id="1EYszxYyGWG" role="1$S6E6">
+            <node concept="2$Q$Be" id="1EYszxYyGWE" role="1$S7So">
+              <ref role="2$Q$b8" node="2kN9n9eFoke" />
+            </node>
+          </node>
+          <node concept="1$S7SB" id="1EYszxYyGWQ" role="1$S6E6">
+            <node concept="2$Q$Be" id="1EYszxYyGWO" role="1$S7So">
+              <ref role="2$Q$b8" node="2kN9n9eBP36" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1$VZUe" id="1EYszxYyGXf" role="1VGiaT">
+        <node concept="1FDWkT" id="1EYszxYyGXd" role="1$VZUf">
+          <ref role="1FFbxs" node="2kN9n9fl978" />
+        </node>
+        <node concept="1$S7BV" id="1EYszxYyGXz" role="1$S7BW">
+          <node concept="1$S7SS" id="1EYszxYyGXB" role="1$S6E6" />
+        </node>
+      </node>
     </node>
     <node concept="1kelZc" id="6t243n3yRv9" role="1kelZd" />
     <node concept="1kelWt" id="3PPtPKLgiGk" role="1kelZQ">
@@ -2403,6 +2445,51 @@
         </node>
       </node>
     </node>
+    <node concept="14659P" id="1EYszxYkBkU" role="1kelZ8" />
+    <node concept="14659P" id="1EYszxYyH2n" role="1kelZ8" />
+    <node concept="1VHZ1X" id="1EYszxYyGXN" role="1kelZ8">
+      <property role="1VHZej" value="Just a few tests for seeing references of types in action" />
+    </node>
+    <node concept="1QnHAi" id="1EYszxYyqSb" role="1kelZ8">
+      <node concept="1FDWne" id="1EYszxYyqSd" role="1QnHAl">
+        <node concept="1YIbBT" id="1EYszxYyqSf" role="1FDWnf">
+          <property role="1YIbBV" value="ZZ" />
+        </node>
+      </node>
+      <node concept="2sPmwL" id="1EYszxYyqSh" role="1QnHA8">
+        <node concept="1VHOuR" id="1EYszxYyqSj" role="2sPmzG">
+          <node concept="1VHOuv" id="1EYszxYyqTL" role="1VHOuO">
+            <node concept="1FDWkT" id="1EYszxYyGXE" role="3OC6DW">
+              <ref role="1FFbxs" node="2kN9n9fl978" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1EnjCU" id="1EYszxYyqVo" role="1kelZ8">
+      <node concept="1kelYX" id="1EYszxYyqVr" role="1EnjJn">
+        <node concept="2V3sXq" id="1EYszxYyqVs" role="1Enppr">
+          <node concept="2Y5S20" id="1EYszxYyGXJ" role="2V3sXp">
+            <node concept="2$Q$Be" id="1EYszxYyGXH" role="2Y4dhg">
+              <ref role="2$Q$b8" node="2kN9n9fl9qG" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1rUzOy" id="1EYszxYyqVm" role="2TAmfA">
+        <node concept="2sPgCx" id="1EYszxYyqVj" role="1rUzOz">
+          <node concept="1YIbBU" id="1EYszxYyqVk" role="2sPgCy">
+            <property role="1YIbBE" value="fff" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14659P" id="1EYszxYkBqV" role="1kelZ8" />
+    <node concept="14659P" id="1EYszxYkBsb" role="1kelZ8" />
+    <node concept="14659P" id="1EYszxYkBts" role="1kelZ8" />
+    <node concept="14659P" id="1EYszxYkBuI" role="1kelZ8" />
+    <node concept="14659P" id="1EYszxYkBw1" role="1kelZ8" />
+    <node concept="14659P" id="1EYszxYkBxl" role="1kelZ8" />
     <node concept="1kelXq" id="3PPtPKL0815" role="1kelWf">
       <node concept="iP7ZQ" id="3PPtPKL0816" role="iPoTc">
         <property role="iP7ZR" value="Awesome" />

@@ -14798,6 +14798,40 @@
     <property role="3GE5qa" value="Definitions.References" />
     <ref role="aqKnT" to="sc0n:2kN9n9e_e1b" resolve="TypeReference" />
     <node concept="1Qtc8_" id="2kN9n9eCc4t" role="IW6Ez">
+      <node concept="aenpk" id="1EYszxYrQK5" role="1Qtc8A">
+        <node concept="mvV$s" id="1EYszxYrR7R" role="aenpr">
+          <node concept="A1WHu" id="1EYszxYrR7T" role="A14EM">
+            <ref role="A1WHt" node="1EYszxYnxDZ" resolve="TypeReference_AddConstructorListForMEType" />
+          </node>
+        </node>
+        <node concept="27VH4U" id="1EYszxYrR7V" role="aenpu">
+          <node concept="3clFbS" id="1EYszxYrR7W" role="2VODD2">
+            <node concept="3SKdUt" id="1EYszxYrR$n" role="3cqZAp">
+              <node concept="3SKdUq" id="1EYszxYrR$o" role="3SKWNk">
+                <property role="3SKdUp" value="Transformation menu for adding constructor list inside METype" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="1EYszxYrSBP" role="3cqZAp">
+              <node concept="2YIFZM" id="1EYszxYrRNX" role="3cqZAk">
+                <ref role="1Pybhc" to="yq4j:7W$X1KZtejq" resolve="TreeUtilities" />
+                <ref role="37wK5l" to="yq4j:7sZOd2Uxqvk" resolve="testKindsUpward" />
+                <node concept="2OqwBi" id="1EYszxYrRNY" role="37wK5m">
+                  <node concept="7Obwk" id="1EYszxYrRNZ" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="1EYszxYrRO0" role="2OqNvi" />
+                </node>
+                <node concept="2ShNRf" id="1EYszxYrRO1" role="37wK5m">
+                  <node concept="Tc6Ow" id="1EYszxYrRO2" role="2ShVmc">
+                    <node concept="3bZ5Sz" id="1EYszxYrRO3" role="HW$YZ" />
+                    <node concept="35c_gC" id="1EYszxYrRO4" role="HW$Y0">
+                      <ref role="35c_gD" to="sc0n:1EYszxYkoMQ" resolve="METype" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="aenpk" id="1EYszxY521_" role="1Qtc8A">
         <node concept="27VH4U" id="1EYszxY52fa" role="aenpu">
           <node concept="3clFbS" id="1EYszxY52fb" role="2VODD2">
@@ -15808,6 +15842,273 @@
       </node>
       <node concept="3cWJ9i" id="1EYszxYd4QV" role="1Qtc8$">
         <node concept="CtIbL" id="1EYszxYd4QX" role="CtIbM">
+          <property role="CtIbK" value="RIGHT" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1EYszxYkoNW">
+    <property role="3GE5qa" value="Module.ModuleExport" />
+    <ref role="1XX52x" to="sc0n:1EYszxYkoMQ" resolve="METype" />
+    <node concept="3EZMnI" id="1EYszxYnxDF" role="2wV5jI">
+      <node concept="3F1sOY" id="1EYszxYnxDM" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:1EYszxYkoMR" resolve="type" />
+      </node>
+      <node concept="3F1sOY" id="1EYszxYnxDS" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:1EYszxYnwJ4" resolve="constructorList" />
+        <node concept="pkWqt" id="1EYszxYqvju" role="pqm2j">
+          <node concept="3clFbS" id="1EYszxYqvjv" role="2VODD2">
+            <node concept="3clFbF" id="1EYszxYqvqC" role="3cqZAp">
+              <node concept="2OqwBi" id="1EYszxYqwJS" role="3clFbG">
+                <node concept="2OqwBi" id="1EYszxYqvB_" role="2Oq$k0">
+                  <node concept="pncrf" id="1EYszxYqvqB" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="1EYszxYqwjJ" role="2OqNvi">
+                    <ref role="3Tt5mk" to="sc0n:1EYszxYnwJ4" resolve="constructorList" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="1EYszxYqx7n" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="1EYszxYnxDI" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="3p36aQ" id="1EYszxYkzX7">
+    <property role="3GE5qa" value="Module.ModuleExport" />
+    <ref role="aqKnT" to="sc0n:1EYszxYkoMQ" resolve="METype" />
+    <node concept="3N5dw7" id="1EYszxYkzXk" role="3ft7WO">
+      <node concept="3N5aqt" id="1EYszxYkzXl" role="3Na0zg">
+        <node concept="3clFbS" id="1EYszxYkzXm" role="2VODD2">
+          <node concept="3SKdUt" id="1EYszxYkzXn" role="3cqZAp">
+            <node concept="3SKdUq" id="1EYszxYkzXo" role="3SKWNk">
+              <property role="3SKdUp" value="Display context help for referentiable types" />
+            </node>
+          </node>
+          <node concept="3cpWs8" id="1EYszxYkzXp" role="3cqZAp">
+            <node concept="3cpWsn" id="1EYszxYkzXq" role="3cpWs9">
+              <property role="TrG5h" value="node" />
+              <node concept="3Tqbb2" id="1EYszxYkzXr" role="1tU5fm">
+                <ref role="ehGHo" to="sc0n:1EYszxYkoMQ" resolve="METype" />
+              </node>
+              <node concept="2ShNRf" id="1EYszxYkzXs" role="33vP2m">
+                <node concept="2fJWfE" id="1EYszxYkzXt" role="2ShVmc">
+                  <node concept="3Tqbb2" id="1EYszxYkzXu" role="3zrR0E">
+                    <ref role="ehGHo" to="sc0n:1EYszxYkoMQ" resolve="METype" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="1EYszxYkzXv" role="3cqZAp">
+            <node concept="37vLTI" id="1EYszxYkzXw" role="3clFbG">
+              <node concept="3N4pyC" id="1EYszxYkzXx" role="37vLTx" />
+              <node concept="2OqwBi" id="1EYszxYkzXy" role="37vLTJ">
+                <node concept="37vLTw" id="1EYszxYkzXz" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1EYszxYkzXq" resolve="node" />
+                </node>
+                <node concept="3TrEf2" id="1EYszxYk_0R" role="2OqNvi">
+                  <ref role="3Tt5mk" to="sc0n:1EYszxYkoMR" resolve="type" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="1EYszxYkzX_" role="3cqZAp" />
+          <node concept="3cpWs6" id="1EYszxYkzXA" role="3cqZAp">
+            <node concept="37vLTw" id="1EYszxYkzXB" role="3cqZAk">
+              <ref role="3cqZAo" node="1EYszxYkzXq" resolve="node" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2kknPJ" id="1EYszxYkzXC" role="2klrvf">
+        <ref role="2ZyFGn" to="sc0n:2kN9n9e_e1b" resolve="TypeReference" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1EYszxYnwJw">
+    <property role="3GE5qa" value="Module.ModuleExport.METype" />
+    <ref role="1XX52x" to="sc0n:1EYszxYnwJ3" resolve="METConstructorList" />
+    <node concept="3EZMnI" id="1EYszxYnwJy" role="2wV5jI">
+      <node concept="3F0ifn" id="1EYszxYnwJD" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
+        <node concept="11LMrY" id="1EYszxYnwJW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="1EYszxYtf$$" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1EYszxYnxzd" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="sc0n:1EYszxYnxyY" resolve="constructors" />
+        <node concept="2iRfu4" id="1EYszxYnxzf" role="2czzBx" />
+        <node concept="tppnM" id="1EYszxYnxzm" role="sWeuL">
+          <ref role="1k5W1q" node="2eBOBbTAoA6" resolve="Comma" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1EYszxYnwJR" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
+        <node concept="11L4FC" id="1EYszxYnwJY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="1EYszxYnwJ_" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1EYszxYnwKq">
+    <property role="3GE5qa" value="Module.ModuleExport.METype" />
+    <ref role="1XX52x" to="sc0n:1EYszxYnwK0" resolve="METCLAll" />
+    <node concept="3F0ifn" id="1EYszxYnwKs" role="2wV5jI">
+      <property role="3F0ifm" value=".." />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1EYszxYnwKV">
+    <property role="3GE5qa" value="Module.ModuleExport.METype" />
+    <ref role="1XX52x" to="sc0n:1EYszxYnwKv" resolve="METCLConstructor" />
+    <node concept="3F1sOY" id="1EYszxYnwKX" role="2wV5jI">
+      <ref role="1NtTu8" to="sc0n:1EYszxYnwKw" resolve="constructor" />
+    </node>
+  </node>
+  <node concept="3p36aQ" id="1EYszxYnwLp">
+    <property role="3GE5qa" value="Module.ModuleExport.METype" />
+    <ref role="aqKnT" to="sc0n:1EYszxYnwKv" resolve="METCLConstructor" />
+    <node concept="3N5dw7" id="1EYszxYnwLt" role="3ft7WO">
+      <node concept="3N5aqt" id="1EYszxYnwLu" role="3Na0zg">
+        <node concept="3clFbS" id="1EYszxYnwLv" role="2VODD2">
+          <node concept="3SKdUt" id="1EYszxYnwLw" role="3cqZAp">
+            <node concept="3SKdUq" id="1EYszxYnwLx" role="3SKWNk">
+              <property role="3SKdUp" value="Display context help for referentiable constructors" />
+            </node>
+          </node>
+          <node concept="3cpWs8" id="1EYszxYnwLy" role="3cqZAp">
+            <node concept="3cpWsn" id="1EYszxYnwLz" role="3cpWs9">
+              <property role="TrG5h" value="node" />
+              <node concept="3Tqbb2" id="1EYszxYnwL$" role="1tU5fm">
+                <ref role="ehGHo" to="sc0n:1EYszxYnwKv" resolve="METCLConstructor" />
+              </node>
+              <node concept="2ShNRf" id="1EYszxYnwL_" role="33vP2m">
+                <node concept="2fJWfE" id="1EYszxYnwLA" role="2ShVmc">
+                  <node concept="3Tqbb2" id="1EYszxYnwLB" role="3zrR0E">
+                    <ref role="ehGHo" to="sc0n:1EYszxYnwKv" resolve="METCLConstructor" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="1EYszxYnwLC" role="3cqZAp">
+            <node concept="37vLTI" id="1EYszxYnwLD" role="3clFbG">
+              <node concept="3N4pyC" id="1EYszxYnwLE" role="37vLTx" />
+              <node concept="2OqwBi" id="1EYszxYnwLF" role="37vLTJ">
+                <node concept="37vLTw" id="1EYszxYnwLG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1EYszxYnwLz" resolve="node" />
+                </node>
+                <node concept="3TrEf2" id="1EYszxYnxsR" role="2OqNvi">
+                  <ref role="3Tt5mk" to="sc0n:1EYszxYnwKw" resolve="constructor" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="1EYszxYnwLI" role="3cqZAp" />
+          <node concept="3cpWs6" id="1EYszxYnwLJ" role="3cqZAp">
+            <node concept="37vLTw" id="1EYszxYnwLK" role="3cqZAk">
+              <ref role="3cqZAo" node="1EYszxYnwLz" resolve="node" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2kknPJ" id="1EYszxYnwLL" role="2klrvf">
+        <ref role="2ZyFGn" to="sc0n:5c96$3ROPee" resolve="ConstructorReference" />
+      </node>
+    </node>
+  </node>
+  <node concept="3ICXOK" id="1EYszxYnxDZ">
+    <property role="3GE5qa" value="Module.ModuleExport.METype" />
+    <property role="TrG5h" value="TypeReference_AddConstructorListForMEType" />
+    <ref role="aqKnT" to="sc0n:2kN9n9e_e1b" resolve="TypeReference" />
+    <node concept="1Qtc8_" id="1EYszxYnxE0" role="IW6Ez">
+      <node concept="aenpk" id="1EYszxYvG62" role="1Qtc8A">
+        <node concept="IWgqT" id="1EYszxYnxEa" role="aenpr">
+          <node concept="1hCUdq" id="1EYszxYnxEb" role="1hCUd6">
+            <node concept="3clFbS" id="1EYszxYnxEc" role="2VODD2">
+              <node concept="3clFbF" id="1EYszxYnxMM" role="3cqZAp">
+                <node concept="Xl_RD" id="1EYszxYnxML" role="3clFbG">
+                  <property role="Xl_RC" value="(" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="IWg2L" id="1EYszxYnxEd" role="IWgqQ">
+            <node concept="3clFbS" id="1EYszxYnxEe" role="2VODD2">
+              <node concept="3clFbF" id="1EYszxYny3S" role="3cqZAp">
+                <node concept="2OqwBi" id="1EYszxYn_sB" role="3clFbG">
+                  <node concept="1eOMI4" id="1EYszxYn_ih" role="2Oq$k0">
+                    <node concept="37vLTI" id="1EYszxYnzkI" role="1eOMHV">
+                      <node concept="2OqwBi" id="1EYszxYnyN8" role="37vLTJ">
+                        <node concept="1PxgMI" id="1EYszxYnyDJ" role="2Oq$k0">
+                          <node concept="chp4Y" id="1EYszxYnyED" role="3oSUPX">
+                            <ref role="cht4Q" to="sc0n:1EYszxYkoMQ" resolve="METype" />
+                          </node>
+                          <node concept="2OqwBi" id="1EYszxYnyaM" role="1m5AlR">
+                            <node concept="7Obwk" id="1EYszxYny3R" role="2Oq$k0" />
+                            <node concept="1mfA1w" id="1EYszxYnyk8" role="2OqNvi" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="1EYszxYnyYZ" role="2OqNvi">
+                          <ref role="3Tt5mk" to="sc0n:1EYszxYnwJ4" resolve="constructorList" />
+                        </node>
+                      </node>
+                      <node concept="2ShNRf" id="1EYszxYnzMl" role="37vLTx">
+                        <node concept="2fJWfE" id="1EYszxYnzWe" role="2ShVmc">
+                          <node concept="3Tqbb2" id="1EYszxYnzWg" role="3zrR0E">
+                            <ref role="ehGHo" to="sc0n:1EYszxYnwJ3" resolve="METConstructorList" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1OKiuA" id="1EYszxYn_Dy" role="2OqNvi">
+                    <node concept="1Q80Hx" id="1EYszxYn_Is" role="lBI5i" />
+                    <node concept="2B6iha" id="1EYszxYn_TP" role="lGT1i">
+                      <property role="1lyBwo" value="mostRelevant" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="27VH4U" id="1EYszxYvGak" role="aenpu">
+          <node concept="3clFbS" id="1EYszxYvGal" role="2VODD2">
+            <node concept="3SKdUt" id="1EYszxYvIvw" role="3cqZAp">
+              <node concept="3SKdUq" id="1EYszxYvIvy" role="3SKWNk">
+                <property role="3SKdUp" value="Applicable only if the constructors can actually be specified" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="1EYszxYvGwX" role="3cqZAp">
+              <node concept="2OqwBi" id="1EYszxYvHGM" role="3clFbG">
+                <node concept="1PxgMI" id="1EYszxYvHl$" role="2Oq$k0">
+                  <node concept="chp4Y" id="1EYszxYvHtv" role="3oSUPX">
+                    <ref role="cht4Q" to="sc0n:1EYszxYkoMQ" resolve="METype" />
+                  </node>
+                  <node concept="2OqwBi" id="1EYszxYvGH8" role="1m5AlR">
+                    <node concept="7Obwk" id="1EYszxYvGwW" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="1EYszxYvGXt" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="1EYszxYvI2O" role="2OqNvi">
+                  <ref role="37wK5l" to="yq4j:1EYszxYvChz" resolve="canSpecifyConstructors" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cWJ9i" id="1EYszxYnxE4" role="1Qtc8$">
+        <node concept="CtIbL" id="1EYszxYnxE6" role="CtIbM">
           <property role="CtIbK" value="RIGHT" />
         </node>
       </node>

@@ -107,6 +107,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptMEPMReference = createDescriptorForMEPMReference();
   /*package*/ final ConceptDescriptor myConceptMEPMSelf = createDescriptorForMEPMSelf();
   /*package*/ final ConceptDescriptor myConceptMEPModule = createDescriptorForMEPModule();
+  /*package*/ final ConceptDescriptor myConceptMETCLAll = createDescriptorForMETCLAll();
+  /*package*/ final ConceptDescriptor myConceptMETCLConstructor = createDescriptorForMETCLConstructor();
+  /*package*/ final ConceptDescriptor myConceptMETCLItem = createDescriptorForMETCLItem();
+  /*package*/ final ConceptDescriptor myConceptMETConstructorList = createDescriptorForMETConstructorList();
+  /*package*/ final ConceptDescriptor myConceptMEType = createDescriptorForMEType();
   /*package*/ final ConceptDescriptor myConceptMain = createDescriptorForMain();
   /*package*/ final ConceptDescriptor myConceptModule = createDescriptorForModule();
   /*package*/ final ConceptDescriptor myConceptModuleExport = createDescriptorForModuleExport();
@@ -171,7 +176,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAIOperator, myConceptAIVarid, myConceptAnnotation, myConceptAnnotationItem, myConceptApplicationEntity, myConceptBCContent, myConceptBCLine, myConceptBCNestedComment, myConceptBinExPart, myConceptBinaryExpressions, myConceptBlockComment, myConceptBooleanValue, myConceptBracketsApplication, myConceptCPExprToExpr, myConceptCPExprToGuards, myConceptCase, myConceptCasePart, myConceptCharValue, myConceptComment, myConceptConstructorApplication, myConceptConstructorReference, myConceptContext, myConceptContextPart, myConceptDCScopeProvider, myConceptData, myConceptDataConstructor, myConceptDefinition, myConceptDoubleValue, myConceptEmptyExpression, myConceptEmptyLine, myConceptExpression, myConceptFDA, myConceptFDABracket, myConceptFDAVarName, myConceptFDAVarWildcard, myConceptFDAVariable, myConceptFDAssignment, myConceptFDComplete, myConceptFDGCEName, myConceptFDGCEOperator, myConceptFDGCommonEntity, myConceptFDGrouped, myConceptFDGuards, myConceptFalseValue, myConceptFixity, myConceptFullType, myConceptFunctionApplication, myConceptFunctionDefinition, myConceptGenericApplication, myConceptGuard, myConceptIIFunction, myConceptIIOperator, myConceptIfThenElse, myConceptImplicitDefinition, myConceptImplicitType, myConceptImport, myConceptImportAH, myConceptImportAs, myConceptImportHiding, myConceptImportItem, myConceptImportItems, myConceptImportReference, myConceptImportedEntityApplication, myConceptIncompleteCommand, myConceptInfix, myConceptInfixAbstract, myConceptInfixl, myConceptInfixr, myConceptIntegerValue, myConceptLCQArrowAssignment, myConceptLCQGuard, myConceptLCQLet, myConceptLCQualifier, myConceptLDAnnotation, myConceptLDFunDef, myConceptLPExpression, myConceptLPLambda, myConceptLambda, myConceptLambdaPart, myConceptLateLoader, myConceptLet, myConceptLetDefinition, myConceptLetDefinitions, myConceptLineComment, myConceptList, myConceptListComprehension, myConceptListEnumeration, myConceptListRange, myConceptLiteral, myConceptMEFunction, myConceptMEOperator, myConceptMEPMImport, myConceptMEPMReference, myConceptMEPMSelf, myConceptMEPModule, myConceptMain, myConceptModule, myConceptModuleExport, myConceptModuleName, myConceptModuleNameFinal, myConceptModuleNamePreFinal, myConceptNodeCONID, myConceptNodeOperator, myConceptNodeVARID, myConceptOperatorApplication, myConceptOperatorReference, myConceptPBracket, myConceptPConstructor, myConceptPLEBPatternArgument, myConceptPLEBPlaceholder, myConceptPList, myConceptPListBracket, myConceptPListColon, myConceptPListVar, myConceptPLiteral, myConceptPTuple, myConceptPVarName, myConceptPVarOperator, myConceptPVarWildcard, myConceptPVariable, myConceptPattern, myConceptPatternArgument, myConceptPatternArgumentWrapper, myConceptPatternFunction, myConceptPatternFunctionInGroup, myConceptPatternOperator, myConceptPatternOperatorInGroup, myConceptPatternWrapper, myConceptPrimaryExpression, myConceptQCONID, myConceptQVARID, myConceptSimpletype, myConceptSkeleton, myConceptStringValue, myConceptTerm, myConceptTopExpression, myConceptTrueValue, myConceptTuple, myConceptType, myConceptTypeA, myConceptTypeB, myConceptTypeData, myConceptTypeFunction, myConceptTypeList, myConceptTypeName, myConceptTypeReference, myConceptTypeTuple, myConceptTypeVariable, myConceptTypeVariableReference, myConceptVariableReference, myConceptWherePart);
+    return Arrays.asList(myConceptAIOperator, myConceptAIVarid, myConceptAnnotation, myConceptAnnotationItem, myConceptApplicationEntity, myConceptBCContent, myConceptBCLine, myConceptBCNestedComment, myConceptBinExPart, myConceptBinaryExpressions, myConceptBlockComment, myConceptBooleanValue, myConceptBracketsApplication, myConceptCPExprToExpr, myConceptCPExprToGuards, myConceptCase, myConceptCasePart, myConceptCharValue, myConceptComment, myConceptConstructorApplication, myConceptConstructorReference, myConceptContext, myConceptContextPart, myConceptDCScopeProvider, myConceptData, myConceptDataConstructor, myConceptDefinition, myConceptDoubleValue, myConceptEmptyExpression, myConceptEmptyLine, myConceptExpression, myConceptFDA, myConceptFDABracket, myConceptFDAVarName, myConceptFDAVarWildcard, myConceptFDAVariable, myConceptFDAssignment, myConceptFDComplete, myConceptFDGCEName, myConceptFDGCEOperator, myConceptFDGCommonEntity, myConceptFDGrouped, myConceptFDGuards, myConceptFalseValue, myConceptFixity, myConceptFullType, myConceptFunctionApplication, myConceptFunctionDefinition, myConceptGenericApplication, myConceptGuard, myConceptIIFunction, myConceptIIOperator, myConceptIfThenElse, myConceptImplicitDefinition, myConceptImplicitType, myConceptImport, myConceptImportAH, myConceptImportAs, myConceptImportHiding, myConceptImportItem, myConceptImportItems, myConceptImportReference, myConceptImportedEntityApplication, myConceptIncompleteCommand, myConceptInfix, myConceptInfixAbstract, myConceptInfixl, myConceptInfixr, myConceptIntegerValue, myConceptLCQArrowAssignment, myConceptLCQGuard, myConceptLCQLet, myConceptLCQualifier, myConceptLDAnnotation, myConceptLDFunDef, myConceptLPExpression, myConceptLPLambda, myConceptLambda, myConceptLambdaPart, myConceptLateLoader, myConceptLet, myConceptLetDefinition, myConceptLetDefinitions, myConceptLineComment, myConceptList, myConceptListComprehension, myConceptListEnumeration, myConceptListRange, myConceptLiteral, myConceptMEFunction, myConceptMEOperator, myConceptMEPMImport, myConceptMEPMReference, myConceptMEPMSelf, myConceptMEPModule, myConceptMETCLAll, myConceptMETCLConstructor, myConceptMETCLItem, myConceptMETConstructorList, myConceptMEType, myConceptMain, myConceptModule, myConceptModuleExport, myConceptModuleName, myConceptModuleNameFinal, myConceptModuleNamePreFinal, myConceptNodeCONID, myConceptNodeOperator, myConceptNodeVARID, myConceptOperatorApplication, myConceptOperatorReference, myConceptPBracket, myConceptPConstructor, myConceptPLEBPatternArgument, myConceptPLEBPlaceholder, myConceptPList, myConceptPListBracket, myConceptPListColon, myConceptPListVar, myConceptPLiteral, myConceptPTuple, myConceptPVarName, myConceptPVarOperator, myConceptPVarWildcard, myConceptPVariable, myConceptPattern, myConceptPatternArgument, myConceptPatternArgumentWrapper, myConceptPatternFunction, myConceptPatternFunctionInGroup, myConceptPatternOperator, myConceptPatternOperatorInGroup, myConceptPatternWrapper, myConceptPrimaryExpression, myConceptQCONID, myConceptQVARID, myConceptSimpletype, myConceptSkeleton, myConceptStringValue, myConceptTerm, myConceptTopExpression, myConceptTrueValue, myConceptTuple, myConceptType, myConceptTypeA, myConceptTypeB, myConceptTypeData, myConceptTypeFunction, myConceptTypeList, myConceptTypeName, myConceptTypeReference, myConceptTypeTuple, myConceptTypeVariable, myConceptTypeVariableReference, myConceptVariableReference, myConceptWherePart);
   }
 
   @Override
@@ -368,6 +373,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptMEPMSelf;
       case LanguageConceptSwitch.MEPModule:
         return myConceptMEPModule;
+      case LanguageConceptSwitch.METCLAll:
+        return myConceptMETCLAll;
+      case LanguageConceptSwitch.METCLConstructor:
+        return myConceptMETCLConstructor;
+      case LanguageConceptSwitch.METCLItem:
+        return myConceptMETCLItem;
+      case LanguageConceptSwitch.METConstructorList:
+        return myConceptMETConstructorList;
+      case LanguageConceptSwitch.METype:
+        return myConceptMEType;
       case LanguageConceptSwitch.Main:
         return myConceptMain;
       case LanguageConceptSwitch.Module:
@@ -1276,6 +1291,45 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812402374");
     b.aggregate("module", 0x3d75775c3021876fL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3d75775c3021876eL).optional(false).ordered(true).multiple(false).origin("4428577046416951151").done();
     b.alias("module");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMETCLAll() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BaseFrege", "METCLAll", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1abe72387e5e0c00L);
+    b.class_(false, false, false);
+    b.super_("BaseFrege.structure.METCLItem", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1abe72387e5e18c0L);
+    b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/1927103277524978688");
+    b.alias("..");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMETCLConstructor() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BaseFrege", "METCLConstructor", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1abe72387e5e0c1fL);
+    b.class_(false, false, false);
+    b.super_("BaseFrege.structure.METCLItem", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1abe72387e5e18c0L);
+    b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/1927103277524978719");
+    b.aggregate("constructor", 0x1abe72387e5e0c20L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53091a40f7d3538eL).optional(false).ordered(true).multiple(false).origin("1927103277524978720").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMETCLItem() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BaseFrege", "METCLItem", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1abe72387e5e18c0L);
+    b.class_(false, true, false);
+    b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/1927103277524981952");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMETConstructorList() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BaseFrege", "METConstructorList", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1abe72387e5e0bc3L);
+    b.class_(false, false, false);
+    b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/1927103277524978627");
+    b.aggregate("constructors", 0x1abe72387e5e18beL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1abe72387e5e18c0L).optional(false).ordered(true).multiple(true).origin("1927103277524981950").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMEType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BaseFrege", "METype", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1abe72387e518cb6L);
+    b.class_(false, false, false);
+    b.super_("BaseFrege.structure.ModuleExport", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a38868c5L);
+    b.parent(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53091a40f7add1f5L);
+    b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/1927103277524159670");
+    b.aggregate("type", 0x1abe72387e518cb7L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x253325724e94e04bL).optional(false).ordered(true).multiple(false).origin("1927103277524159671").done();
+    b.aggregate("constructorList", 0x1abe72387e5e0bc4L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x1abe72387e5e0bc3L).optional(true).ordered(true).multiple(false).origin("1927103277524978628").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMain() {

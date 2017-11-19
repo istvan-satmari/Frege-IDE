@@ -104,6 +104,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_MEPMReference = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_MEPMSelf = new ConceptPresentationBuilder().shortDesc("Reexport of the current module.").create();
   private final ConceptPresentation props_MEPModule = new ConceptPresentationBuilder().shortDesc("Export a complete module.").create();
+  private final ConceptPresentation props_METCLAll = new ConceptPresentationBuilder().shortDesc("Export all of the constructors for the current datatype.").create();
+  private final ConceptPresentation props_METCLConstructor = new ConceptPresentationBuilder().shortDesc("Export a specific constructor.").create();
+  private final ConceptPresentation props_METCLItem = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_METConstructorList = new ConceptPresentationBuilder().shortDesc("Describes what constructors are to be exported.").create();
+  private final ConceptPresentation props_METype = new ConceptPresentationBuilder().shortDesc("Export a type.").create();
   private final ConceptPresentation props_Main = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Module = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ModuleExport = new ConceptPresentationBuilder().shortDesc("An item from the current module to export to the outside.").create();
@@ -356,6 +361,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_MEPMSelf;
       case LanguageConceptSwitch.MEPModule:
         return props_MEPModule;
+      case LanguageConceptSwitch.METCLAll:
+        return props_METCLAll;
+      case LanguageConceptSwitch.METCLConstructor:
+        return props_METCLConstructor;
+      case LanguageConceptSwitch.METCLItem:
+        return props_METCLItem;
+      case LanguageConceptSwitch.METConstructorList:
+        return props_METConstructorList;
+      case LanguageConceptSwitch.METype:
+        return props_METype;
       case LanguageConceptSwitch.Main:
         return props_Main;
       case LanguageConceptSwitch.Module:

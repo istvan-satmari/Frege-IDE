@@ -2397,5 +2397,72 @@
     <property role="TrG5h" value="ImplicitType" />
     <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
   </node>
+  <node concept="1TIwiD" id="1EYszxYkoMQ">
+    <property role="EcuMT" value="1927103277524159670" />
+    <property role="3GE5qa" value="Module.ModuleExport" />
+    <property role="TrG5h" value="METype" />
+    <property role="R4oN_" value="Export a type." />
+    <ref role="1TJDcQ" node="3Xsm2yzy6z5" resolve="ModuleExport" />
+    <node concept="1TJgyj" id="1EYszxYkoMR" role="1TKVEi">
+      <property role="IQ2ns" value="1927103277524159671" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2kN9n9e_e1b" resolve="TypeReference" />
+    </node>
+    <node concept="1TJgyj" id="1EYszxYnwJ4" role="1TKVEi">
+      <property role="IQ2ns" value="1927103277524978628" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constructorList" />
+      <ref role="20lvS9" node="1EYszxYnwJ3" resolve="METConstructorList" />
+    </node>
+    <node concept="PrWs8" id="1EYszxYvpSg" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1EYszxYnwJ3">
+    <property role="EcuMT" value="1927103277524978627" />
+    <property role="3GE5qa" value="Module.ModuleExport.METype" />
+    <property role="TrG5h" value="METConstructorList" />
+    <property role="R4oN_" value="Describes what constructors are to be exported." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1EYszxYnxyY" role="1TKVEi">
+      <property role="IQ2ns" value="1927103277524981950" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constructors" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="1EYszxYnxz0" resolve="METCLItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1EYszxYnwK0">
+    <property role="EcuMT" value="1927103277524978688" />
+    <property role="3GE5qa" value="Module.ModuleExport.METype" />
+    <property role="TrG5h" value="METCLAll" />
+    <property role="34LRSv" value=".." />
+    <property role="R4oN_" value="Export all of the constructors for the current datatype." />
+    <ref role="1TJDcQ" node="1EYszxYnxz0" resolve="METCLItem" />
+  </node>
+  <node concept="1TIwiD" id="1EYszxYnwKv">
+    <property role="EcuMT" value="1927103277524978719" />
+    <property role="3GE5qa" value="Module.ModuleExport.METype" />
+    <property role="TrG5h" value="METCLConstructor" />
+    <property role="R4oN_" value="Export a specific constructor." />
+    <ref role="1TJDcQ" node="1EYszxYnxz0" resolve="METCLItem" />
+    <node concept="1TJgyj" id="1EYszxYnwKw" role="1TKVEi">
+      <property role="IQ2ns" value="1927103277524978720" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constructor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5c96$3ROPee" resolve="ConstructorReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1EYszxYnxz0">
+    <property role="EcuMT" value="1927103277524981952" />
+    <property role="3GE5qa" value="Module.ModuleExport.METype" />
+    <property role="TrG5h" value="METCLItem" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 

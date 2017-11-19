@@ -151,6 +151,9 @@
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -195,6 +198,7 @@
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
+      <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
@@ -1693,6 +1697,92 @@
     <node concept="1YaCAy" id="3PPtPKKDBKG" role="1YuTPh">
       <property role="TrG5h" value="importNode" />
       <ref role="1YaFvo" to="sc0n:vUxQDjKXxR" resolve="Import" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="1EYszxYtf_Z">
+    <property role="TrG5h" value="check_METConstructorList" />
+    <property role="3GE5qa" value="Module.ModuleExport.METype" />
+    <node concept="3clFbS" id="1EYszxYtfA0" role="18ibNy">
+      <node concept="3cpWs8" id="1EYszxYtuLp" role="3cqZAp">
+        <node concept="3cpWsn" id="1EYszxYtuLs" role="3cpWs9">
+          <property role="TrG5h" value="metcli" />
+          <node concept="3Tqbb2" id="1EYszxYtuLn" role="1tU5fm">
+            <ref role="ehGHo" to="sc0n:1EYszxYnxz0" resolve="METCLItem" />
+          </node>
+          <node concept="2OqwBi" id="1EYszxYtilD" role="33vP2m">
+            <node concept="2OqwBi" id="1EYszxYtgC2" role="2Oq$k0">
+              <node concept="1YBJjd" id="1EYszxYtgwr" role="2Oq$k0">
+                <ref role="1YBMHb" node="1EYszxYtfA2" resolve="constructorList" />
+              </node>
+              <node concept="3Tsc0h" id="1EYszxYtgLx" role="2OqNvi">
+                <ref role="3TtcxE" to="sc0n:1EYszxYnxyY" resolve="constructors" />
+              </node>
+            </node>
+            <node concept="1z4cxt" id="1EYszxYtwKR" role="2OqNvi">
+              <node concept="1bVj0M" id="1EYszxYtwKT" role="23t8la">
+                <node concept="3clFbS" id="1EYszxYtwKU" role="1bW5cS">
+                  <node concept="3clFbF" id="1EYszxYtwKV" role="3cqZAp">
+                    <node concept="2OqwBi" id="1EYszxYtwKW" role="3clFbG">
+                      <node concept="37vLTw" id="1EYszxYtwKX" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1EYszxYtwL0" resolve="it" />
+                      </node>
+                      <node concept="1mIQ4w" id="1EYszxYtwKY" role="2OqNvi">
+                        <node concept="chp4Y" id="1EYszxYtwKZ" role="cj9EA">
+                          <ref role="cht4Q" to="sc0n:1EYszxYnwK0" resolve="METCLAll" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="1EYszxYtwL0" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="1EYszxYtwL1" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="1EYszxYtwW8" role="3cqZAp">
+        <node concept="3clFbS" id="1EYszxYtwWa" role="3clFbx">
+          <node concept="2MkqsV" id="1EYszxYtuqs" role="3cqZAp">
+            <node concept="37vLTw" id="1EYszxYt$oD" role="2OEOjV">
+              <ref role="3cqZAo" node="1EYszxYtuLs" resolve="metcli" />
+            </node>
+            <node concept="Xl_RD" id="1EYszxYtuqu" role="2MkJ7o">
+              <property role="Xl_RC" value="If all constructors are exported, then it has to be the only item in the list." />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="1EYszxYtzow" role="3clFbw">
+          <node concept="2OqwBi" id="1EYszxYtx6B" role="3uHU7B">
+            <node concept="37vLTw" id="1EYszxYtwXW" role="2Oq$k0">
+              <ref role="3cqZAo" node="1EYszxYtuLs" resolve="metcli" />
+            </node>
+            <node concept="3x8VRR" id="1EYszxYtxoN" role="2OqNvi" />
+          </node>
+          <node concept="3eOSWO" id="1EYszxYtucZ" role="3uHU7w">
+            <node concept="3cmrfG" id="1EYszxYtud2" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="1EYszxYtq3p" role="3uHU7B">
+              <node concept="2OqwBi" id="1EYszxYto6Z" role="2Oq$k0">
+                <node concept="1YBJjd" id="1EYszxYtnYs" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1EYszxYtfA2" resolve="constructorList" />
+                </node>
+                <node concept="3Tsc0h" id="1EYszxYtoo0" role="2OqNvi">
+                  <ref role="3TtcxE" to="sc0n:1EYszxYnxyY" resolve="constructors" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="1EYszxYtrMQ" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1EYszxYtfA2" role="1YuTPh">
+      <property role="TrG5h" value="constructorList" />
+      <ref role="1YaFvo" to="sc0n:1EYszxYnwJ3" resolve="METConstructorList" />
     </node>
   </node>
 </model>
