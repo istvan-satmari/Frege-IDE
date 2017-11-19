@@ -2464,5 +2464,72 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="1EYszxY$6kP">
+    <property role="EcuMT" value="1927103277528278325" />
+    <property role="3GE5qa" value="Import.ImportItems" />
+    <property role="TrG5h" value="IIType" />
+    <property role="R4oN_" value="Import a type." />
+    <ref role="1TJDcQ" node="3Xsm2yzyiKA" resolve="ImportItem" />
+    <node concept="1TJgyj" id="1EYszxY$6kQ" role="1TKVEi">
+      <property role="IQ2ns" value="1927103277528278326" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2kN9n9e_e1b" resolve="TypeReference" />
+    </node>
+    <node concept="1TJgyj" id="1EYszxY$6ml" role="1TKVEi">
+      <property role="IQ2ns" value="1927103277528278421" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constructorList" />
+      <ref role="20lvS9" node="1EYszxY$6mt" resolve="IITConstructorList" />
+    </node>
+    <node concept="PrWs8" id="1EYszxY$6mv" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1EYszxY$6mp">
+    <property role="EcuMT" value="1927103277528278425" />
+    <property role="3GE5qa" value="Import.ImportItems.IIType" />
+    <property role="TrG5h" value="IITCLAll" />
+    <property role="34LRSv" value=".." />
+    <property role="R4oN_" value="Import all of the constructors for the current datatype." />
+    <ref role="1TJDcQ" node="1EYszxY$6ms" resolve="IITCLItem" />
+  </node>
+  <node concept="1TIwiD" id="1EYszxY$6mq">
+    <property role="EcuMT" value="1927103277528278426" />
+    <property role="3GE5qa" value="Import.ImportItems.IIType" />
+    <property role="TrG5h" value="IITCLConstructor" />
+    <property role="R4oN_" value="Import a specific constructor." />
+    <ref role="1TJDcQ" node="1EYszxY$6ms" resolve="IITCLItem" />
+    <node concept="1TJgyj" id="1EYszxY$6mr" role="1TKVEi">
+      <property role="IQ2ns" value="1927103277528278427" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constructor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5c96$3ROPee" resolve="ConstructorReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1EYszxY$6ms">
+    <property role="EcuMT" value="1927103277528278428" />
+    <property role="3GE5qa" value="Import.ImportItems.IIType" />
+    <property role="TrG5h" value="IITCLItem" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1EYszxY$6mt">
+    <property role="EcuMT" value="1927103277528278429" />
+    <property role="3GE5qa" value="Import.ImportItems.IIType" />
+    <property role="TrG5h" value="IITConstructorList" />
+    <property role="R4oN_" value="Describes what constructors are to be imported." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1EYszxY$6mu" role="1TKVEi">
+      <property role="IQ2ns" value="1927103277528278430" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constructors" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="1EYszxY$6ms" resolve="IITCLItem" />
+    </node>
+  </node>
 </model>
 

@@ -12,7 +12,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,76,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,80,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/1156512287654379470">
@@ -333,6 +333,54 @@
       </scope>
       <unit id="1927103277526551609" at="24,240,28,5" name="BaseFrege.typesystem.check_METConstructorList_NonTypesystemRule$1" />
       <unit id="1927103277526481279" at="20,0,46,0" name="BaseFrege.typesystem.check_METConstructorList_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/1927103277528296075">
+    <file name="check_IITConstructorList_NonTypesystemRule.java">
+      <node id="1927103277528296989" at="25,39,26,174" concept="6" />
+      <node id="1927103277528296998" at="30,7,31,60" concept="5" />
+      <node id="1927103277528296998" at="31,60,32,278" concept="5" />
+      <node id="1927103277528296075" at="36,50,37,146" concept="6" />
+      <node id="1927103277528296075" at="39,68,40,102" concept="6" />
+      <node id="1927103277528296075" at="42,30,43,17" concept="6" />
+      <node id="1927103277528296075" at="21,0,23,0" concept="1" trace="check_IITConstructorList_NonTypesystemRule#()V" />
+      <node id="1927103277528296987" at="25,0,28,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1927103277528296075" at="36,0,39,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1927103277528296075" at="39,0,42,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1927103277528296075" at="42,0,45,0" concept="4" trace="overrides#()Z" />
+      <node id="1927103277528296998" at="29,249,33,7" concept="0" />
+      <node id="1927103277528296979" at="23,128,28,7" concept="5" />
+      <node id="1927103277528296996" at="28,7,34,5" concept="3" />
+      <node id="1927103277528296075" at="23,0,36,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1927103277528296075" at="21,55,21,55" />
+      <scope id="1927103277528296988" at="25,39,26,174" />
+      <scope id="1927103277528296075" at="36,50,37,146" />
+      <scope id="1927103277528296075" at="39,68,40,102" />
+      <scope id="1927103277528296075" at="42,30,43,17" />
+      <scope id="1927103277528296075" at="21,0,23,0" />
+      <scope id="1927103277528296998" at="30,7,32,278">
+        <var name="_reporter_2309309498" id="1927103277528296998" />
+        <var name="errorTarget" id="1927103277528296998" />
+      </scope>
+      <scope id="1927103277528296987" at="25,0,28,0">
+        <var name="it" id="1927103277528296987" />
+      </scope>
+      <scope id="1927103277528296075" at="36,0,39,0" />
+      <scope id="1927103277528296075" at="39,0,42,0">
+        <var name="argument" id="1927103277528296075" />
+      </scope>
+      <scope id="1927103277528296075" at="42,0,45,0" />
+      <scope id="1927103277528296997" at="29,249,33,7" />
+      <scope id="1927103277528296076" at="23,128,34,5">
+        <var name="iitcli" id="1927103277528296980" />
+      </scope>
+      <scope id="1927103277528296075" at="23,0,36,0">
+        <var name="constructorList" id="1927103277528296075" />
+        <var name="status" id="1927103277528296075" />
+        <var name="typeCheckingContext" id="1927103277528296075" />
+      </scope>
+      <unit id="1927103277528296987" at="24,240,28,5" name="BaseFrege.typesystem.check_IITConstructorList_NonTypesystemRule$1" />
+      <unit id="1927103277528296075" at="20,0,46,0" name="BaseFrege.typesystem.check_IITConstructorList_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/230222862491303696">

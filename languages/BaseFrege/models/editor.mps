@@ -486,6 +486,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -14798,6 +14805,40 @@
     <property role="3GE5qa" value="Definitions.References" />
     <ref role="aqKnT" to="sc0n:2kN9n9e_e1b" resolve="TypeReference" />
     <node concept="1Qtc8_" id="2kN9n9eCc4t" role="IW6Ez">
+      <node concept="aenpk" id="1EYszxY$jNU" role="1Qtc8A">
+        <node concept="27VH4U" id="1EYszxY$kez" role="aenpu">
+          <node concept="3clFbS" id="1EYszxY$ke$" role="2VODD2">
+            <node concept="3SKdUt" id="1EYszxY$klP" role="3cqZAp">
+              <node concept="3SKdUq" id="1EYszxY$klQ" role="3SKWNk">
+                <property role="3SKdUp" value="Transformation menu for adding constructor list inside IIType" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="1EYszxY$klR" role="3cqZAp">
+              <node concept="2YIFZM" id="1EYszxY$klS" role="3cqZAk">
+                <ref role="1Pybhc" to="yq4j:7W$X1KZtejq" resolve="TreeUtilities" />
+                <ref role="37wK5l" to="yq4j:7sZOd2Uxqvk" resolve="testKindsUpward" />
+                <node concept="2OqwBi" id="1EYszxY$klT" role="37wK5m">
+                  <node concept="7Obwk" id="1EYszxY$klU" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="1EYszxY$klV" role="2OqNvi" />
+                </node>
+                <node concept="2ShNRf" id="1EYszxY$klW" role="37wK5m">
+                  <node concept="Tc6Ow" id="1EYszxY$klX" role="2ShVmc">
+                    <node concept="3bZ5Sz" id="1EYszxY$klY" role="HW$YZ" />
+                    <node concept="35c_gC" id="1EYszxY$klZ" role="HW$Y0">
+                      <ref role="35c_gD" to="sc0n:1EYszxY$6kP" resolve="IIType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mvV$s" id="1EYszxY$klG" role="aenpr">
+          <node concept="A1WHu" id="1EYszxY$klN" role="A14EM">
+            <ref role="A1WHt" node="1EYszxY$ebc" resolve="TypeReference_AddConstructorListForIIType" />
+          </node>
+        </node>
+      </node>
       <node concept="aenpk" id="1EYszxYrQK5" role="1Qtc8A">
         <node concept="mvV$s" id="1EYszxYrR7R" role="aenpr">
           <node concept="A1WHu" id="1EYszxYrR7T" role="A14EM">
@@ -16109,6 +16150,284 @@
       </node>
       <node concept="3cWJ9i" id="1EYszxYnxE4" role="1Qtc8$">
         <node concept="CtIbL" id="1EYszxYnxE6" role="CtIbM">
+          <property role="CtIbK" value="RIGHT" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1EYszxY$6lh">
+    <property role="3GE5qa" value="Import.ImportItems" />
+    <ref role="1XX52x" to="sc0n:1EYszxY$6kP" resolve="IIType" />
+    <node concept="3EZMnI" id="1EYszxY$6lj" role="2wV5jI">
+      <node concept="3F1sOY" id="1EYszxY$6mx" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:1EYszxY$6kQ" resolve="type" />
+      </node>
+      <node concept="3F1sOY" id="1EYszxY$6mB" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:1EYszxY$6ml" resolve="constructorList" />
+        <node concept="pkWqt" id="1EYszxY$6y4" role="pqm2j">
+          <node concept="3clFbS" id="1EYszxY$6y5" role="2VODD2">
+            <node concept="3clFbF" id="1EYszxY$6De" role="3cqZAp">
+              <node concept="2OqwBi" id="1EYszxY$7DS" role="3clFbG">
+                <node concept="2OqwBi" id="1EYszxY$6RL" role="2Oq$k0">
+                  <node concept="pncrf" id="1EYszxY$6Dd" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="1EYszxY$7gd" role="2OqNvi">
+                    <ref role="3Tt5mk" to="sc0n:1EYszxY$6ml" resolve="constructorList" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="1EYszxY$81H" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="1EYszxY$6lm" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="3p36aQ" id="1EYszxY$8sp">
+    <property role="3GE5qa" value="Import.ImportItems" />
+    <ref role="aqKnT" to="sc0n:1EYszxY$6kP" resolve="IIType" />
+    <node concept="3N5dw7" id="1EYszxY$8z$" role="3ft7WO">
+      <node concept="3N5aqt" id="1EYszxY$8z_" role="3Na0zg">
+        <node concept="3clFbS" id="1EYszxY$8zA" role="2VODD2">
+          <node concept="3SKdUt" id="1EYszxY$8zB" role="3cqZAp">
+            <node concept="3SKdUq" id="1EYszxY$8zC" role="3SKWNk">
+              <property role="3SKdUp" value="Display context help for referentiable types" />
+            </node>
+          </node>
+          <node concept="3cpWs8" id="1EYszxY$8zD" role="3cqZAp">
+            <node concept="3cpWsn" id="1EYszxY$8zE" role="3cpWs9">
+              <property role="TrG5h" value="node" />
+              <node concept="3Tqbb2" id="1EYszxY$8zF" role="1tU5fm">
+                <ref role="ehGHo" to="sc0n:1EYszxY$6kP" resolve="IIType" />
+              </node>
+              <node concept="2ShNRf" id="1EYszxY$8zG" role="33vP2m">
+                <node concept="2fJWfE" id="1EYszxY$8zH" role="2ShVmc">
+                  <node concept="3Tqbb2" id="1EYszxY$8zI" role="3zrR0E">
+                    <ref role="ehGHo" to="sc0n:1EYszxY$6kP" resolve="IIType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="1EYszxY$8zJ" role="3cqZAp">
+            <node concept="37vLTI" id="1EYszxY$8zK" role="3clFbG">
+              <node concept="3N4pyC" id="1EYszxY$8zL" role="37vLTx" />
+              <node concept="2OqwBi" id="1EYszxY$8zM" role="37vLTJ">
+                <node concept="37vLTw" id="1EYszxY$8zN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1EYszxY$8zE" resolve="node" />
+                </node>
+                <node concept="3TrEf2" id="1EYszxY$9xQ" role="2OqNvi">
+                  <ref role="3Tt5mk" to="sc0n:1EYszxY$6kQ" resolve="type" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="1EYszxY$8zP" role="3cqZAp" />
+          <node concept="3cpWs6" id="1EYszxY$8zQ" role="3cqZAp">
+            <node concept="37vLTw" id="1EYszxY$8zR" role="3cqZAk">
+              <ref role="3cqZAo" node="1EYszxY$8zE" resolve="node" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2kknPJ" id="1EYszxY$8zS" role="2klrvf">
+        <ref role="2ZyFGn" to="sc0n:2kN9n9e_e1b" resolve="TypeReference" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1EYszxY$aD7">
+    <property role="3GE5qa" value="Import.ImportItems.IIType" />
+    <ref role="1XX52x" to="sc0n:1EYszxY$6mt" resolve="IITConstructorList" />
+    <node concept="3EZMnI" id="1EYszxY$aD9" role="2wV5jI">
+      <node concept="3F0ifn" id="1EYszxY$aDg" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
+        <node concept="11LMrY" id="1EYszxY$aD_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="1EYszxY$aDE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1EYszxY$aDu" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="sc0n:1EYszxY$6mu" resolve="constructors" />
+        <node concept="2iRfu4" id="1EYszxY$aDw" role="2czzBx" />
+        <node concept="tppnM" id="1EYszxY$aDK" role="sWeuL">
+          <ref role="1k5W1q" node="2eBOBbTAoA6" resolve="Comma" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1EYszxY$aDm" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
+        <node concept="11L4FC" id="1EYszxY$aDI" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="1EYszxY$aDc" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1EYszxY$d99">
+    <property role="3GE5qa" value="Import.ImportItems.IIType" />
+    <ref role="1XX52x" to="sc0n:1EYszxY$6mp" resolve="IITCLAll" />
+    <node concept="3F0ifn" id="1EYszxY$e3u" role="2wV5jI">
+      <property role="3F0ifm" value=".." />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1EYszxY$d9$">
+    <property role="3GE5qa" value="Import.ImportItems.IIType" />
+    <ref role="1XX52x" to="sc0n:1EYszxY$6mq" resolve="IITCLConstructor" />
+    <node concept="3F1sOY" id="1EYszxY$d9A" role="2wV5jI">
+      <ref role="1NtTu8" to="sc0n:1EYszxY$6mr" resolve="constructor" />
+    </node>
+  </node>
+  <node concept="3p36aQ" id="1EYszxY$da5">
+    <property role="3GE5qa" value="Import.ImportItems.IIType" />
+    <ref role="aqKnT" to="sc0n:1EYszxY$6mq" resolve="IITCLConstructor" />
+    <node concept="3N5dw7" id="1EYszxY$da9" role="3ft7WO">
+      <node concept="3N5aqt" id="1EYszxY$daa" role="3Na0zg">
+        <node concept="3clFbS" id="1EYszxY$dab" role="2VODD2">
+          <node concept="3SKdUt" id="1EYszxY$dac" role="3cqZAp">
+            <node concept="3SKdUq" id="1EYszxY$dad" role="3SKWNk">
+              <property role="3SKdUp" value="Display context help for referentiable constructors" />
+            </node>
+          </node>
+          <node concept="3cpWs8" id="1EYszxY$dae" role="3cqZAp">
+            <node concept="3cpWsn" id="1EYszxY$daf" role="3cpWs9">
+              <property role="TrG5h" value="node" />
+              <node concept="3Tqbb2" id="1EYszxY$dag" role="1tU5fm">
+                <ref role="ehGHo" to="sc0n:1EYszxY$6mq" resolve="IITCLConstructor" />
+              </node>
+              <node concept="2ShNRf" id="1EYszxY$dah" role="33vP2m">
+                <node concept="2fJWfE" id="1EYszxY$dai" role="2ShVmc">
+                  <node concept="3Tqbb2" id="1EYszxY$daj" role="3zrR0E">
+                    <ref role="ehGHo" to="sc0n:1EYszxY$6mq" resolve="IITCLConstructor" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="1EYszxY$dak" role="3cqZAp">
+            <node concept="37vLTI" id="1EYszxY$dal" role="3clFbG">
+              <node concept="3N4pyC" id="1EYszxY$dam" role="37vLTx" />
+              <node concept="2OqwBi" id="1EYszxY$dan" role="37vLTJ">
+                <node concept="37vLTw" id="1EYszxY$dao" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1EYszxY$daf" resolve="node" />
+                </node>
+                <node concept="3TrEf2" id="1EYszxY$dRy" role="2OqNvi">
+                  <ref role="3Tt5mk" to="sc0n:1EYszxY$6mr" resolve="constructor" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="1EYszxY$daq" role="3cqZAp" />
+          <node concept="3cpWs6" id="1EYszxY$dar" role="3cqZAp">
+            <node concept="37vLTw" id="1EYszxY$das" role="3cqZAk">
+              <ref role="3cqZAo" node="1EYszxY$daf" resolve="node" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2kknPJ" id="1EYszxY$dat" role="2klrvf">
+        <ref role="2ZyFGn" to="sc0n:5c96$3ROPee" resolve="ConstructorReference" />
+      </node>
+    </node>
+  </node>
+  <node concept="3ICXOK" id="1EYszxY$ebc">
+    <property role="3GE5qa" value="Import.ImportItems.IIType" />
+    <property role="TrG5h" value="TypeReference_AddConstructorListForIIType" />
+    <ref role="aqKnT" to="sc0n:2kN9n9e_e1b" resolve="TypeReference" />
+    <node concept="1Qtc8_" id="1EYszxY$exM" role="IW6Ez">
+      <node concept="aenpk" id="1EYszxY$exN" role="1Qtc8A">
+        <node concept="IWgqT" id="1EYszxY$exO" role="aenpr">
+          <node concept="1hCUdq" id="1EYszxY$exP" role="1hCUd6">
+            <node concept="3clFbS" id="1EYszxY$exQ" role="2VODD2">
+              <node concept="3clFbF" id="1EYszxY$exR" role="3cqZAp">
+                <node concept="Xl_RD" id="1EYszxY$exS" role="3clFbG">
+                  <property role="Xl_RC" value="(" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="IWg2L" id="1EYszxY$exT" role="IWgqQ">
+            <node concept="3clFbS" id="1EYszxY$exU" role="2VODD2">
+              <node concept="3clFbF" id="1EYszxY$exV" role="3cqZAp">
+                <node concept="2OqwBi" id="1EYszxY$exW" role="3clFbG">
+                  <node concept="1eOMI4" id="1EYszxY$exX" role="2Oq$k0">
+                    <node concept="37vLTI" id="1EYszxY$exY" role="1eOMHV">
+                      <node concept="2OqwBi" id="1EYszxY$exZ" role="37vLTJ">
+                        <node concept="1PxgMI" id="1EYszxY$ey0" role="2Oq$k0">
+                          <node concept="chp4Y" id="1EYszxY$iTr" role="3oSUPX">
+                            <ref role="cht4Q" to="sc0n:1EYszxY$6kP" resolve="IIType" />
+                          </node>
+                          <node concept="2OqwBi" id="1EYszxY$ey2" role="1m5AlR">
+                            <node concept="7Obwk" id="1EYszxY$ey3" role="2Oq$k0" />
+                            <node concept="1mfA1w" id="1EYszxY$ey4" role="2OqNvi" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="1EYszxY$jhh" role="2OqNvi">
+                          <ref role="3Tt5mk" to="sc0n:1EYszxY$6ml" resolve="constructorList" />
+                        </node>
+                      </node>
+                      <node concept="2ShNRf" id="1EYszxY$ey6" role="37vLTx">
+                        <node concept="2fJWfE" id="1EYszxY$ey7" role="2ShVmc">
+                          <node concept="3Tqbb2" id="1EYszxY$ey8" role="3zrR0E">
+                            <ref role="ehGHo" to="sc0n:1EYszxY$6mt" resolve="IITConstructorList" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1OKiuA" id="1EYszxY$ey9" role="2OqNvi">
+                    <node concept="1Q80Hx" id="1EYszxY$eya" role="lBI5i" />
+                    <node concept="2B6iha" id="1EYszxY$eyb" role="lGT1i">
+                      <property role="1lyBwo" value="mostRelevant" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="27VH4U" id="1EYszxY$eyc" role="aenpu">
+          <node concept="3clFbS" id="1EYszxY$eyd" role="2VODD2">
+            <node concept="3SKdUt" id="1EYszxY$eye" role="3cqZAp">
+              <node concept="3SKdUq" id="1EYszxY$eyf" role="3SKWNk">
+                <property role="3SKdUp" value="Applicable only if the constructors can actually be specified" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="1EYszxY$iKx" role="3cqZAp">
+              <node concept="3SKdUq" id="1EYszxY$iKz" role="3SKWNk">
+                <property role="3SKdUp" value="TODO" />
+              </node>
+            </node>
+            <node concept="1X3_iC" id="1EYszxY$ic8" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="1EYszxY$eyg" role="8Wnug">
+                <node concept="1eOMI4" id="1EYszxY$i1D" role="3clFbG">
+                  <node concept="1PxgMI" id="1EYszxY$eyi" role="1eOMHV">
+                    <node concept="chp4Y" id="1EYszxY$eXu" role="3oSUPX">
+                      <ref role="cht4Q" to="sc0n:1EYszxY$6kP" resolve="IIType" />
+                    </node>
+                    <node concept="2OqwBi" id="1EYszxY$eyk" role="1m5AlR">
+                      <node concept="7Obwk" id="1EYszxY$eyl" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="1EYszxY$eym" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1EYszxY$ixL" role="3cqZAp">
+              <node concept="3clFbT" id="1EYszxY$ixK" role="3clFbG">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cWJ9i" id="1EYszxY$eyo" role="1Qtc8$">
+        <node concept="CtIbL" id="1EYszxY$eyp" role="CtIbM">
           <property role="CtIbK" value="RIGHT" />
         </node>
       </node>

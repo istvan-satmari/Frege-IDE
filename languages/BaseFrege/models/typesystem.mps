@@ -1785,5 +1785,91 @@
       <ref role="1YaFvo" to="sc0n:1EYszxYnwJ3" resolve="METConstructorList" />
     </node>
   </node>
+  <node concept="18kY7G" id="1EYszxY$aEb">
+    <property role="TrG5h" value="check_IITConstructorList" />
+    <property role="3GE5qa" value="Import.ImportItems.IIType" />
+    <node concept="3clFbS" id="1EYszxY$aEc" role="18ibNy">
+      <node concept="3cpWs8" id="1EYszxY$aSj" role="3cqZAp">
+        <node concept="3cpWsn" id="1EYszxY$aSk" role="3cpWs9">
+          <property role="TrG5h" value="iitcli" />
+          <node concept="3Tqbb2" id="1EYszxY$aSl" role="1tU5fm">
+            <ref role="ehGHo" to="sc0n:1EYszxY$6ms" resolve="IITCLItem" />
+          </node>
+          <node concept="2OqwBi" id="1EYszxY$aSm" role="33vP2m">
+            <node concept="2OqwBi" id="1EYszxY$aSn" role="2Oq$k0">
+              <node concept="1YBJjd" id="1EYszxY$aSo" role="2Oq$k0">
+                <ref role="1YBMHb" node="1EYszxY$aEe" resolve="constructorList" />
+              </node>
+              <node concept="3Tsc0h" id="1EYszxY$aSp" role="2OqNvi">
+                <ref role="3TtcxE" to="sc0n:1EYszxY$6mu" resolve="constructors" />
+              </node>
+            </node>
+            <node concept="1z4cxt" id="1EYszxY$aSq" role="2OqNvi">
+              <node concept="1bVj0M" id="1EYszxY$aSr" role="23t8la">
+                <node concept="3clFbS" id="1EYszxY$aSs" role="1bW5cS">
+                  <node concept="3clFbF" id="1EYszxY$aSt" role="3cqZAp">
+                    <node concept="2OqwBi" id="1EYszxY$aSu" role="3clFbG">
+                      <node concept="37vLTw" id="1EYszxY$aSv" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1EYszxY$aSy" resolve="it" />
+                      </node>
+                      <node concept="1mIQ4w" id="1EYszxY$bVf" role="2OqNvi">
+                        <node concept="chp4Y" id="1EYszxY$cax" role="cj9EA">
+                          <ref role="cht4Q" to="sc0n:1EYszxY$6mp" resolve="IITCLAll" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="1EYszxY$aSy" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="1EYszxY$aSz" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="1EYszxY$aS$" role="3cqZAp">
+        <node concept="3clFbS" id="1EYszxY$aS_" role="3clFbx">
+          <node concept="2MkqsV" id="1EYszxY$aSA" role="3cqZAp">
+            <node concept="37vLTw" id="1EYszxY$aSB" role="2OEOjV">
+              <ref role="3cqZAo" node="1EYszxY$aSk" resolve="iitcli" />
+            </node>
+            <node concept="Xl_RD" id="1EYszxY$aSC" role="2MkJ7o">
+              <property role="Xl_RC" value="If all constructors are imported, then it has to be the only item in the list." />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="1EYszxY$aSD" role="3clFbw">
+          <node concept="2OqwBi" id="1EYszxY$aSE" role="3uHU7B">
+            <node concept="37vLTw" id="1EYszxY$aSF" role="2Oq$k0">
+              <ref role="3cqZAo" node="1EYszxY$aSk" resolve="iitcli" />
+            </node>
+            <node concept="3x8VRR" id="1EYszxY$aSG" role="2OqNvi" />
+          </node>
+          <node concept="3eOSWO" id="1EYszxY$aSH" role="3uHU7w">
+            <node concept="3cmrfG" id="1EYszxY$aSI" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="1EYszxY$aSJ" role="3uHU7B">
+              <node concept="2OqwBi" id="1EYszxY$aSK" role="2Oq$k0">
+                <node concept="1YBJjd" id="1EYszxY$aSL" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1EYszxY$aEe" resolve="constructorList" />
+                </node>
+                <node concept="3Tsc0h" id="1EYszxY$c$u" role="2OqNvi">
+                  <ref role="3TtcxE" to="sc0n:1EYszxY$6mu" resolve="constructors" />
+                </node>
+              </node>
+              <node concept="34oBXx" id="1EYszxY$aSN" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1EYszxY$aEe" role="1YuTPh">
+      <property role="TrG5h" value="constructorList" />
+      <ref role="1YaFvo" to="sc0n:1EYszxY$6mt" resolve="IITConstructorList" />
+    </node>
+  </node>
 </model>
 
