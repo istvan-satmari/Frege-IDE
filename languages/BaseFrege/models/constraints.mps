@@ -874,5 +874,30 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5krVkwdxYh">
+    <property role="3GE5qa" value="Definitions.Types" />
+    <ref role="1M2myG" to="sc0n:5krVkwdv5B" resolve="ImportedTypeReferenceUsage" />
+    <node concept="9S07l" id="5krVkwdxYx" role="9Vyp8">
+      <node concept="3clFbS" id="5krVkwdxYy" role="2VODD2">
+        <node concept="3SKdUt" id="5krVkwdxYC" role="3cqZAp">
+          <node concept="3SKdUq" id="5krVkwdxYD" role="3SKWNk">
+            <property role="3SKdUp" value="Cannot be applied recursively" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5krVkwdxYE" role="3cqZAp">
+          <node concept="3fqX7Q" id="5krVkwdxYF" role="3cqZAk">
+            <node concept="2OqwBi" id="5krVkwdxYG" role="3fr31v">
+              <node concept="nLn13" id="5krVkwdxYH" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="5krVkwdxYI" role="2OqNvi">
+                <node concept="chp4Y" id="5krVkwdyam" role="cj9EA">
+                  <ref role="cht4Q" to="sc0n:5krVkwdv5B" resolve="ImportedTypeReferenceUsage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

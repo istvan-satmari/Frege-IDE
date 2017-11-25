@@ -5,6 +5,7 @@
     <classNode dependClassName="BaseFrege.constraints.ImportReference_Constraints" />
     <classNode dependClassName="BaseFrege.constraints.Import_Constraints" />
     <classNode dependClassName="BaseFrege.constraints.ImportedEntityApplication_Constraints" />
+    <classNode dependClassName="BaseFrege.constraints.ImportedTypeReferenceUsage_Constraints" />
     <classNode dependClassName="BaseFrege.constraints.MEPMImport_Constraints" />
     <classNode dependClassName="BaseFrege.constraints.MEPMSelf_Constraints" />
     <classNode dependClassName="BaseFrege.constraints.ModuleNameFinal_Constraints" />
@@ -99,6 +100,22 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
   <dependency className="BaseFrege.constraints.ImportedEntityApplication_Constraints" file="ImportedEntityApplication_Constraints.java">
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.CheckingNodeContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintContext_CanBeChild" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintFunction" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="BaseFrege.constraints.ImportedTypeReferenceUsage_Constraints" file="ImportedTypeReferenceUsage_Constraints.java">
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />

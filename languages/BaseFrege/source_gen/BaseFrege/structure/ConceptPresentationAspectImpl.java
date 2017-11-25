@@ -78,6 +78,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ImportItems = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportReference = new ConceptPresentationBuilder().shortDesc("References an imported module.").create();
   private final ConceptPresentation props_ImportedEntityApplication = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_ImportedTypeReferenceUsage = new ConceptPresentationBuilder().shortDesc("Represents imported types and algebraic datatypes.").create();
   private final ConceptPresentation props_IncompleteCommand = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Infix = new ConceptPresentationBuilder().shortDesc("Infix operator.").create();
   private final ConceptPresentation props_InfixAbstract = new ConceptPresentationBuilder().create();
@@ -161,11 +162,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Type = new ConceptPresentationBuilder().shortDesc("Definition of a type synonym.").create();
   private final ConceptPresentation props_TypeA = new ConceptPresentationBuilder().shortDesc("Represents a type variable.").create();
   private final ConceptPresentation props_TypeB = new ConceptPresentationBuilder().shortDesc("Represents a type variable that is not a reference.").create();
-  private final ConceptPresentation props_TypeData = new ConceptPresentationBuilder().shortDesc("Represents types and algebraic datatypes.").create();
   private final ConceptPresentation props_TypeFunction = new ConceptPresentationBuilder().shortDesc("Complete type signature of a function.").create();
   private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type.").create();
   private final ConceptPresentation props_TypeName = new ConceptPresentationBuilder().shortDesc("Type name.").create();
   private final ConceptPresentation props_TypeReference = new ConceptPresentationBuilder().shortDesc("References a type name.").create();
+  private final ConceptPresentation props_TypeReferenceUsage = new ConceptPresentationBuilder().shortDesc("Represents types and algebraic datatypes.").create();
   private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("Tuple type.").create();
   private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable.").create();
   private final ConceptPresentation props_TypeVariableReference = new ConceptPresentationBuilder().shortDesc("References a type variable.").create();
@@ -315,6 +316,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_ImportReference;
       case LanguageConceptSwitch.ImportedEntityApplication:
         return props_ImportedEntityApplication;
+      case LanguageConceptSwitch.ImportedTypeReferenceUsage:
+        return props_ImportedTypeReferenceUsage;
       case LanguageConceptSwitch.IncompleteCommand:
         return props_IncompleteCommand;
       case LanguageConceptSwitch.Infix:
@@ -481,8 +484,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_TypeA;
       case LanguageConceptSwitch.TypeB:
         return props_TypeB;
-      case LanguageConceptSwitch.TypeData:
-        return props_TypeData;
       case LanguageConceptSwitch.TypeFunction:
         return props_TypeFunction;
       case LanguageConceptSwitch.TypeList:
@@ -491,6 +492,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_TypeName;
       case LanguageConceptSwitch.TypeReference:
         return props_TypeReference;
+      case LanguageConceptSwitch.TypeReferenceUsage:
+        return props_TypeReferenceUsage;
       case LanguageConceptSwitch.TypeTuple:
         return props_TypeTuple;
       case LanguageConceptSwitch.TypeVariable:
