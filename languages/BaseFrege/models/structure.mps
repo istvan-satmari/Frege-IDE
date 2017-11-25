@@ -2531,5 +2531,19 @@
       <ref role="20lvS9" node="1EYszxY$6ms" resolve="IITCLItem" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5krVkw73Wi">
+    <property role="EcuMT" value="95824315800108818" />
+    <property role="3GE5qa" value="Import.ImportItems" />
+    <property role="TrG5h" value="IIConstructor" />
+    <property role="R4oN_" value="Import a constructor without its datatype." />
+    <ref role="1TJDcQ" node="3Xsm2yzyiKA" resolve="ImportItem" />
+    <node concept="1TJgyj" id="5krVkw73Wj" role="1TKVEi">
+      <property role="IQ2ns" value="95824315800108819" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constructor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5c96$3ROPee" resolve="ConstructorReference" />
+    </node>
+  </node>
 </model>
 
