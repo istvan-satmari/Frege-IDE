@@ -590,24 +590,10 @@
   </node>
   <node concept="1TIwiD" id="7riFpCdpuC5">
     <property role="EcuMT" value="8562096718746085893" />
-    <property role="3GE5qa" value="Definitions.Types" />
-    <property role="TrG5h" value="TypeReferenceUsage" />
+    <property role="3GE5qa" value="Definitions.Types.TypeReference" />
+    <property role="TrG5h" value="LocalTypeReferenceUsage" />
     <property role="R4oN_" value="Represents types and algebraic datatypes." />
-    <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
-    <node concept="1TJgyj" id="AfhA7XbMKt" role="1TKVEi">
-      <property role="IQ2ns" value="688846654684474397" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="dataType" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2kN9n9e_e1b" resolve="TypeReference" />
-    </node>
-    <node concept="1TJgyj" id="7riFpCdpuC6" role="1TKVEi">
-      <property role="IQ2ns" value="8562096718746085894" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="simpletypes" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7riFpCdpuBL" resolve="Simpletype" />
-    </node>
+    <ref role="1TJDcQ" node="5krVkwveGb" resolve="TypeReferenceUsage" />
   </node>
   <node concept="1TIwiD" id="7riFpCdpuCH">
     <property role="EcuMT" value="8562096718746085933" />
@@ -2546,10 +2532,10 @@
   </node>
   <node concept="1TIwiD" id="5krVkwdv5B">
     <property role="EcuMT" value="95824315801792871" />
-    <property role="3GE5qa" value="Definitions.Types" />
+    <property role="3GE5qa" value="Definitions.Types.TypeReference" />
     <property role="TrG5h" value="ImportedTypeReferenceUsage" />
     <property role="R4oN_" value="Represents imported types and algebraic datatypes." />
-    <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
+    <ref role="1TJDcQ" node="5krVkwveGb" resolve="TypeReferenceUsage" />
     <node concept="1TJgyj" id="5krVkwdv5I" role="1TKVEi">
       <property role="IQ2ns" value="95824315801792878" />
       <property role="20lmBu" value="aggregation" />
@@ -2557,15 +2543,30 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7W$X1KZa2uu" resolve="ImportReference" />
     </node>
-    <node concept="1TJgyj" id="5krVkwdv5E" role="1TKVEi">
-      <property role="IQ2ns" value="95824315801792874" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="typeReference" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7riFpCdpuC5" resolve="TypeReferenceUsage" />
-    </node>
     <node concept="PrWs8" id="5krVkwdyre" role="PzmwI">
       <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5krVkwveGb">
+    <property role="EcuMT" value="95824315806444299" />
+    <property role="3GE5qa" value="Definitions.Types.TypeReference" />
+    <property role="TrG5h" value="TypeReferenceUsage" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
+    <node concept="1TJgyj" id="5krVkwveGc" role="1TKVEi">
+      <property role="IQ2ns" value="95824315806444300" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dataType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2kN9n9e_e1b" resolve="TypeReference" />
+    </node>
+    <node concept="1TJgyj" id="5krVkwveGd" role="1TKVEi">
+      <property role="IQ2ns" value="95824315806444301" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="simpletypes" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7riFpCdpuBL" resolve="Simpletype" />
     </node>
   </node>
 </model>

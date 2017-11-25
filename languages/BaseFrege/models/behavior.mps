@@ -19750,81 +19750,106 @@
       <node concept="3clFbS" id="5krVkw79eX" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="5krVkwdyrD">
-    <property role="3GE5qa" value="Definitions.Types" />
+  <node concept="13h7C7" id="5krVkwIn$X">
+    <property role="3GE5qa" value="Definitions.Types.TypeReference" />
     <ref role="13h7C2" to="sc0n:5krVkwdv5B" resolve="ImportedTypeReferenceUsage" />
-    <node concept="13i0hz" id="5krVkwdyrO" role="13h7CS">
+    <node concept="13i0hz" id="5krVkwIn_D" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getScope" />
       <ref role="13i0hy" to="tpcu:52_Geb4QDV$" resolve="getScope" />
-      <node concept="3Tm1VV" id="5krVkwdyrP" role="1B3o_S" />
-      <node concept="3clFbS" id="5krVkwdyrQ" role="3clF47">
-        <node concept="3clFbJ" id="5krVkwdyrR" role="3cqZAp">
-          <node concept="3clFbS" id="5krVkwdyrS" role="3clFbx">
-            <node concept="3SKdUt" id="5krVkwdyrT" role="3cqZAp">
-              <node concept="3SKdUq" id="5krVkwdyrU" role="3SKWNk">
-                <property role="3SKdUp" value="For referencing imports, provide the scope of imports themselves (by delegating to parent)" />
+      <node concept="3Tm1VV" id="5krVkwIn_E" role="1B3o_S" />
+      <node concept="3clFbS" id="5krVkwIn_F" role="3clF47">
+        <node concept="3SKdUt" id="5krVkwM8Rw" role="3cqZAp">
+          <node concept="3SKdUq" id="5krVkwM8Ry" role="3SKWNk">
+            <property role="3SKdUp" value="Workaround since &quot;come from&quot; is not working properly here for some unknown reasons" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5krVkwKSi0" role="3cqZAp">
+          <node concept="3clFbS" id="5krVkwKSi2" role="3clFbx">
+            <node concept="3SKdUt" id="5krVkwM98U" role="3cqZAp">
+              <node concept="3SKdUq" id="5krVkwM98W" role="3SKWNk">
+                <property role="3SKdUp" value="For dataType we provide only the scope from the given import" />
               </node>
             </node>
-            <node concept="3cpWs6" id="5krVkwdyrV" role="3cqZAp">
-              <node concept="iy90A" id="5krVkwdyrW" role="3cqZAk" />
-            </node>
-          </node>
-          <node concept="iy1fb" id="5krVkwdyrX" role="3clFbw">
-            <ref role="iy1sa" to="sc0n:5krVkwdv5I" resolve="import" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="5krVkwdyrY" role="3cqZAp" />
-        <node concept="3SKdUt" id="5krVkwdyrZ" role="3cqZAp">
-          <node concept="3SKdUq" id="5krVkwdys0" role="3SKWNk">
-            <property role="3SKdUp" value="Otherwise we provide only the scope of the imported modules" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="5krVkwdys1" role="3cqZAp">
-          <node concept="3SKdUq" id="5krVkwdys2" role="3SKWNk">
-            <property role="3SKdUp" value="('come from' does not work here since the node may not even be created yet - we are using wrapper substitution)" />
-          </node>
-        </node>
-        <node concept="3cpWs6" id="5krVkwdys3" role="3cqZAp">
-          <node concept="2OqwBi" id="5krVkwdys4" role="3cqZAk">
-            <node concept="2OqwBi" id="5krVkwdys5" role="2Oq$k0">
-              <node concept="2OqwBi" id="5krVkwdys6" role="2Oq$k0">
-                <node concept="13iPFW" id="5krVkwdys7" role="2Oq$k0" />
-                <node concept="3TrEf2" id="5krVkwdys8" role="2OqNvi">
-                  <ref role="3Tt5mk" to="sc0n:5krVkwdv5I" resolve="import" />
+            <node concept="3cpWs6" id="5krVkwJCKd" role="3cqZAp">
+              <node concept="2OqwBi" id="5krVkwJCKe" role="3cqZAk">
+                <node concept="2OqwBi" id="5krVkwJCKf" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5krVkwJCKg" role="2Oq$k0">
+                    <node concept="13iPFW" id="5krVkwJCKh" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5krVkwJCKi" role="2OqNvi">
+                      <ref role="3Tt5mk" to="sc0n:5krVkwdv5I" resolve="import" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="5krVkwJCKj" role="2OqNvi">
+                    <ref role="3Tt5mk" to="sc0n:7W$X1KZa2u_" resolve="ref" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="5krVkwJCKk" role="2OqNvi">
+                  <ref role="37wK5l" node="3PPtPKM32fW" resolve="getWholeImportedScope" />
+                  <node concept="37vLTw" id="5krVkwJCKl" role="37wK5m">
+                    <ref role="3cqZAo" node="5krVkwInA2" resolve="kind" />
+                  </node>
+                  <node concept="37vLTw" id="5krVkwJCKm" role="37wK5m">
+                    <ref role="3cqZAo" node="5krVkwInA4" resolve="child" />
+                  </node>
                 </node>
               </node>
-              <node concept="3TrEf2" id="5krVkwdys9" role="2OqNvi">
-                <ref role="3Tt5mk" to="sc0n:7W$X1KZa2u_" resolve="ref" />
-              </node>
             </node>
-            <node concept="2qgKlT" id="5krVkwdysa" role="2OqNvi">
-              <ref role="37wK5l" node="3PPtPKM32fW" resolve="getWholeImportedScope" />
-              <node concept="37vLTw" id="5krVkwdysb" role="37wK5m">
-                <ref role="3cqZAo" node="5krVkwdysd" resolve="kind" />
-              </node>
-              <node concept="37vLTw" id="5krVkwdysc" role="37wK5m">
-                <ref role="3cqZAo" node="5krVkwdysf" resolve="child" />
+          </node>
+          <node concept="2OqwBi" id="5krVkwKSAe" role="3clFbw">
+            <node concept="37vLTw" id="5krVkwKSre" role="2Oq$k0">
+              <ref role="3cqZAo" node="5krVkwInA2" resolve="kind" />
+            </node>
+            <node concept="2Zo12i" id="5krVkwKUaS" role="2OqNvi">
+              <node concept="chp4Y" id="5krVkwKUdn" role="2Zo12j">
+                <ref role="cht4Q" to="sc0n:2kN9n9e_e2W" resolve="TypeName" />
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5krVkwKRZ1" role="3cqZAp" />
+        <node concept="3SKdUt" id="5krVkwM9A2" role="3cqZAp">
+          <node concept="3SKdUq" id="5krVkwM9A4" role="3SKWNk">
+            <property role="3SKdUp" value="Defaultly delegate scope creation to parent" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5krVkwIn_K" role="3cqZAp">
+          <node concept="iy90A" id="5krVkwIn_L" role="3cqZAk" />
+        </node>
       </node>
-      <node concept="37vLTG" id="5krVkwdysd" role="3clF46">
+      <node concept="37vLTG" id="5krVkwInA2" role="3clF46">
         <property role="TrG5h" value="kind" />
-        <node concept="3bZ5Sz" id="5krVkwdyse" role="1tU5fm" />
+        <node concept="3bZ5Sz" id="5krVkwInA3" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="5krVkwdysf" role="3clF46">
+      <node concept="37vLTG" id="5krVkwInA4" role="3clF46">
         <property role="TrG5h" value="child" />
-        <node concept="3Tqbb2" id="5krVkwdysg" role="1tU5fm" />
+        <node concept="3Tqbb2" id="5krVkwInA5" role="1tU5fm" />
       </node>
-      <node concept="3uibUv" id="5krVkwdysh" role="3clF45">
+      <node concept="3uibUv" id="5krVkwInA6" role="3clF45">
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
       </node>
     </node>
-    <node concept="13hLZK" id="5krVkwdyrE" role="13h7CW">
-      <node concept="3clFbS" id="5krVkwdyrF" role="2VODD2" />
+    <node concept="13hLZK" id="5krVkwIn$Y" role="13h7CW">
+      <node concept="3clFbS" id="5krVkwIn$Z" role="2VODD2">
+        <node concept="3clFbF" id="5krVkwM9L4" role="3cqZAp">
+          <node concept="37vLTI" id="5krVkwMaTv" role="3clFbG">
+            <node concept="2ShNRf" id="5krVkwMaWh" role="37vLTx">
+              <node concept="2fJWfE" id="5krVkwMb7k" role="2ShVmc">
+                <node concept="3Tqbb2" id="5krVkwMb7m" role="3zrR0E">
+                  <ref role="ehGHo" to="sc0n:7W$X1KZa2uu" resolve="ImportReference" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5krVkwMahP" role="37vLTJ">
+              <node concept="13iPFW" id="5krVkwM9L3" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5krVkwMaxd" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:5krVkwdv5I" resolve="import" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

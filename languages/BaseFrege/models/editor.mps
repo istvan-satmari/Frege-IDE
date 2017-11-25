@@ -912,14 +912,14 @@
     </node>
   </node>
   <node concept="24kQdi" id="7riFpCdpuCg">
-    <property role="3GE5qa" value="Definitions.Types.TypeData" />
-    <ref role="1XX52x" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+    <property role="3GE5qa" value="Definitions.Types.TypeReference" />
+    <ref role="1XX52x" to="sc0n:7riFpCdpuC5" resolve="LocalTypeReferenceUsage" />
     <node concept="3EZMnI" id="2kN9n9eC5$7" role="2wV5jI">
       <node concept="3F1sOY" id="2kN9n9eC5$e" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:AfhA7XbMKt" resolve="dataType" />
+        <ref role="1NtTu8" to="sc0n:5krVkwveGc" resolve="dataType" />
       </node>
       <node concept="3F2HdR" id="2kN9n9eC5$k" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:7riFpCdpuC6" resolve="simpletypes" />
+        <ref role="1NtTu8" to="sc0n:5krVkwveGd" resolve="simpletypes" />
         <node concept="2iRfu4" id="2kN9n9eC5$m" role="2czzBx" />
         <node concept="pkWqt" id="2kN9n9eFokE" role="pqm2j">
           <node concept="3clFbS" id="2kN9n9eFokF" role="2VODD2">
@@ -927,8 +927,8 @@
               <node concept="2OqwBi" id="2kN9n9eFqOk" role="3clFbG">
                 <node concept="2OqwBi" id="2kN9n9eFoCL" role="2Oq$k0">
                   <node concept="pncrf" id="2kN9n9eForN" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="2kN9n9eFoYf" role="2OqNvi">
-                    <ref role="3TtcxE" to="sc0n:7riFpCdpuC6" resolve="simpletypes" />
+                  <node concept="3Tsc0h" id="5krVkw$1up" role="2OqNvi">
+                    <ref role="3TtcxE" to="sc0n:5krVkwveGd" resolve="simpletypes" />
                   </node>
                 </node>
                 <node concept="3GX2aA" id="2kN9n9eFsCA" role="2OqNvi" />
@@ -10914,42 +10914,44 @@
           </node>
         </node>
       </node>
-      <node concept="3cWJ9i" id="3lI8B75MzT9" role="1Qtc8$">
-        <node concept="CtIbL" id="3lI8B75MzTb" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
-        </node>
-      </node>
       <node concept="aenpk" id="1EYszxYaPrM" role="1Qtc8A">
         <node concept="27VH4U" id="1EYszxYaQdG" role="aenpu">
           <node concept="3clFbS" id="1EYszxYaQdH" role="2VODD2">
             <node concept="3SKdUt" id="1EYszxYb4Tk" role="3cqZAp">
               <node concept="3SKdUq" id="1EYszxYb4Tl" role="3SKWNk">
-                <property role="3SKdUp" value="Transformation menu for TypeData" />
+                <property role="3SKdUp" value="Transformation menu for TypeReferenceUsage" />
               </node>
             </node>
             <node concept="3SKdUt" id="1EYszxYb4Tm" role="3cqZAp">
               <node concept="3SKdUq" id="1EYszxYb4Tn" role="3SKWNk">
-                <property role="3SKdUp" value="Only applicable if we are the right-most cell in TypeData" />
+                <property role="3SKdUp" value="Only applicable if we are the right-most cell in TypeReferenceUsage" />
               </node>
             </node>
             <node concept="3clFbJ" id="1EYszxYaSg1" role="3cqZAp">
               <node concept="3clFbS" id="1EYszxYaSg3" role="3clFbx">
-                <node concept="3cpWs6" id="1EYszxYaUs5" role="3cqZAp">
-                  <node concept="3clFbC" id="1EYszxYb2VO" role="3cqZAk">
+                <node concept="3clFbJ" id="5krVkwi5xb" role="3cqZAp">
+                  <node concept="3clFbS" id="5krVkwi5xd" role="3clFbx">
+                    <node concept="3cpWs6" id="5krVkwlbnW" role="3cqZAp">
+                      <node concept="3clFbT" id="5krVkwlbo8" role="3cqZAk">
+                        <property role="3clFbU" value="true" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbC" id="1EYszxYb2VO" role="3clFbw">
                     <node concept="7Obwk" id="1EYszxYb3fB" role="3uHU7w" />
                     <node concept="2OqwBi" id="1EYszxYaXCW" role="3uHU7B">
                       <node concept="2OqwBi" id="1EYszxYaVtk" role="2Oq$k0">
                         <node concept="1PxgMI" id="1EYszxYaUUK" role="2Oq$k0">
-                          <node concept="chp4Y" id="1EYszxYaV6o" role="3oSUPX">
-                            <ref role="cht4Q" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                          <node concept="chp4Y" id="5krVkwBgzo" role="3oSUPX">
+                            <ref role="cht4Q" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                           </node>
                           <node concept="2OqwBi" id="1EYszxYb6Iw" role="1m5AlR">
                             <node concept="7Obwk" id="1EYszxYb6wF" role="2Oq$k0" />
                             <node concept="1mfA1w" id="1EYszxYb75x" role="2OqNvi" />
                           </node>
                         </node>
-                        <node concept="3Tsc0h" id="1EYszxYaVPA" role="2OqNvi">
-                          <ref role="3TtcxE" to="sc0n:7riFpCdpuC6" resolve="simpletypes" />
+                        <node concept="3Tsc0h" id="5krVkwyqCV" role="2OqNvi">
+                          <ref role="3TtcxE" to="sc0n:5krVkwveGd" resolve="simpletypes" />
                         </node>
                       </node>
                       <node concept="1yVyf7" id="1EYszxYb15u" role="2OqNvi" />
@@ -10968,7 +10970,7 @@
                   <node concept="Tc6Ow" id="1EYszxYb5Xo" role="2ShVmc">
                     <node concept="3bZ5Sz" id="1EYszxYb5Xp" role="HW$YZ" />
                     <node concept="35c_gC" id="1EYszxYb5Xq" role="HW$Y0">
-                      <ref role="35c_gD" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                      <ref role="35c_gD" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                     </node>
                   </node>
                 </node>
@@ -10983,14 +10985,14 @@
         </node>
         <node concept="mvV$s" id="1EYszxYaQkP" role="aenpr">
           <node concept="A1WHr" id="1EYszxYaQkW" role="A14EM">
-            <ref role="2ZyFGn" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+            <ref role="2ZyFGn" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
           </node>
           <node concept="mvVNg" id="1EYszxYaQkY" role="mvV$0">
             <node concept="3clFbS" id="1EYszxYaQkZ" role="2VODD2">
               <node concept="3clFbF" id="1EYszxYaQoO" role="3cqZAp">
                 <node concept="1PxgMI" id="1EYszxYaR59" role="3clFbG">
-                  <node concept="chp4Y" id="1EYszxYaR9K" role="3oSUPX">
-                    <ref role="cht4Q" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                  <node concept="chp4Y" id="5krVkwBgWn" role="3oSUPX">
+                    <ref role="cht4Q" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                   </node>
                   <node concept="2OqwBi" id="1EYszxYaQzl" role="1m5AlR">
                     <node concept="7Obwk" id="1EYszxYaQoN" role="2Oq$k0" />
@@ -11005,19 +11007,19 @@
       <node concept="aenpk" id="2kN9n9eCaNx" role="1Qtc8A">
         <node concept="mvV$s" id="2kN9n9eCbhc" role="aenpr">
           <node concept="A1WHu" id="2kN9n9eCbhe" role="A14EM">
-            <ref role="A1WHt" node="2kN9n9eC5_9" resolve="Simpletype_AddSimpletypeForTypeData" />
+            <ref role="A1WHt" node="2kN9n9eC5_9" resolve="Simpletype_AddSimpletypeForTypeReferenceUsage" />
           </node>
         </node>
         <node concept="27VH4U" id="2kN9n9eCbhg" role="aenpu">
           <node concept="3clFbS" id="2kN9n9eCbhh" role="2VODD2">
             <node concept="3SKdUt" id="1EYszxYb5Db" role="3cqZAp">
               <node concept="3SKdUq" id="1EYszxYb5Dc" role="3SKWNk">
-                <property role="3SKdUp" value="Transformation menu for adding additional arguments inside TypeData" />
+                <property role="3SKdUp" value="Transformation menu for adding additional arguments inside TypeReferenceUsage" />
               </node>
             </node>
             <node concept="3SKdUt" id="1EYszxYb5Dd" role="3cqZAp">
               <node concept="3SKdUq" id="1EYszxYb5De" role="3SKWNk">
-                <property role="3SKdUp" value="Must not be ambiguous =&gt; if we are already inside a TypeData / DataConstructor, then this does not apply" />
+                <property role="3SKdUp" value="Must not be ambiguous - if we are already inside a TypeReferenceUsage / DataConstructor, this does not apply" />
               </node>
             </node>
             <node concept="3SKdUt" id="1EYszxYb5Df" role="3cqZAp">
@@ -11048,27 +11050,27 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="1Wc70l" id="1EYszxYb5Dv" role="3clFbw">
+                  <node concept="1Wc70l" id="5krVkwjG8T" role="3clFbw">
+                    <node concept="3fqX7Q" id="5krVkwjGuh" role="3uHU7w">
+                      <node concept="2OqwBi" id="5krVkwjGM0" role="3fr31v">
+                        <node concept="37vLTw" id="5krVkwjGuo" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1EYszxYb5Dk" resolve="sp" />
+                        </node>
+                        <node concept="1mIQ4w" id="5krVkwjHaI" role="2OqNvi">
+                          <node concept="chp4Y" id="5krVkwjHs7" role="cj9EA">
+                            <ref role="cht4Q" to="sc0n:62eaOWzc$vg" resolve="DataConstructor" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
                     <node concept="3fqX7Q" id="1EYszxYb5Dw" role="3uHU7B">
                       <node concept="2OqwBi" id="1EYszxYb5Dx" role="3fr31v">
                         <node concept="37vLTw" id="1EYszxYb5Dy" role="2Oq$k0">
                           <ref role="3cqZAo" node="1EYszxYb5Dk" resolve="sp" />
                         </node>
                         <node concept="1mIQ4w" id="1EYszxYb5Dz" role="2OqNvi">
-                          <node concept="chp4Y" id="1EYszxYb5D$" role="cj9EA">
-                            <ref role="cht4Q" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3fqX7Q" id="1EYszxYb5D_" role="3uHU7w">
-                      <node concept="2OqwBi" id="1EYszxYb5DA" role="3fr31v">
-                        <node concept="37vLTw" id="1EYszxYb5DB" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1EYszxYb5Dk" resolve="sp" />
-                        </node>
-                        <node concept="1mIQ4w" id="1EYszxYb5DC" role="2OqNvi">
-                          <node concept="chp4Y" id="1EYszxYb5DD" role="cj9EA">
-                            <ref role="cht4Q" to="sc0n:62eaOWzc$vg" resolve="DataConstructor" />
+                          <node concept="chp4Y" id="5krVkwBh2P" role="cj9EA">
+                            <ref role="cht4Q" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                           </node>
                         </node>
                       </node>
@@ -11087,7 +11089,7 @@
                   <node concept="Tc6Ow" id="1EYszxYb5DJ" role="2ShVmc">
                     <node concept="3bZ5Sz" id="1EYszxYb5DK" role="HW$YZ" />
                     <node concept="35c_gC" id="1EYszxYb5DL" role="HW$Y0">
-                      <ref role="35c_gD" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                      <ref role="35c_gD" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                     </node>
                   </node>
                 </node>
@@ -11272,8 +11274,8 @@
             </node>
             <node concept="3clFbF" id="7sZOd2U$rDK" role="3cqZAp">
               <node concept="2YIFZM" id="7sZOd2U$rRp" role="3clFbG">
-                <ref role="37wK5l" to="yq4j:7sZOd2Uxqvk" resolve="testKindsUpward" />
                 <ref role="1Pybhc" to="yq4j:7W$X1KZtejq" resolve="TreeUtilities" />
+                <ref role="37wK5l" to="yq4j:7sZOd2Uxqvk" resolve="testKindsUpward" />
                 <node concept="2OqwBi" id="7sZOd2U$sfG" role="37wK5m">
                   <node concept="7Obwk" id="7sZOd2U$s42" role="2Oq$k0" />
                   <node concept="1mfA1w" id="7sZOd2U$s_t" role="2OqNvi" />
@@ -11447,6 +11449,11 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3cWJ9i" id="3lI8B75MzT9" role="1Qtc8$">
+        <node concept="CtIbL" id="3lI8B75MzTb" role="CtIbM">
+          <property role="CtIbK" value="RIGHT" />
         </node>
       </node>
     </node>
@@ -14490,8 +14497,8 @@
     </node>
   </node>
   <node concept="3p36aQ" id="2kN9n9eBXRQ">
-    <property role="3GE5qa" value="Definitions.Types.TypeData" />
-    <ref role="aqKnT" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+    <property role="3GE5qa" value="Definitions.Types.TypeReference" />
+    <ref role="aqKnT" to="sc0n:7riFpCdpuC5" resolve="LocalTypeReferenceUsage" />
     <node concept="3N5dw7" id="2kN9n9eBXS0" role="3ft7WO">
       <node concept="3N5aqt" id="2kN9n9eBXS1" role="3Na0zg">
         <node concept="3clFbS" id="2kN9n9eBXS2" role="2VODD2">
@@ -14499,12 +14506,12 @@
             <node concept="3cpWsn" id="2kN9n9eBY9y" role="3cpWs9">
               <property role="TrG5h" value="td" />
               <node concept="3Tqbb2" id="2kN9n9eBY9z" role="1tU5fm">
-                <ref role="ehGHo" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                <ref role="ehGHo" to="sc0n:7riFpCdpuC5" resolve="LocalTypeReferenceUsage" />
               </node>
               <node concept="2ShNRf" id="2kN9n9eBY9$" role="33vP2m">
                 <node concept="2fJWfE" id="2kN9n9eBY9_" role="2ShVmc">
                   <node concept="3Tqbb2" id="2kN9n9eBY9A" role="3zrR0E">
-                    <ref role="ehGHo" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                    <ref role="ehGHo" to="sc0n:7riFpCdpuC5" resolve="LocalTypeReferenceUsage" />
                   </node>
                 </node>
               </node>
@@ -14517,8 +14524,8 @@
                 <node concept="37vLTw" id="2kN9n9eBY9F" role="2Oq$k0">
                   <ref role="3cqZAo" node="2kN9n9eBY9y" resolve="td" />
                 </node>
-                <node concept="3TrEf2" id="2kN9n9eBYNX" role="2OqNvi">
-                  <ref role="3Tt5mk" to="sc0n:AfhA7XbMKt" resolve="dataType" />
+                <node concept="3TrEf2" id="5krVkwvfex" role="2OqNvi">
+                  <ref role="3Tt5mk" to="sc0n:5krVkwveGc" resolve="dataType" />
                 </node>
               </node>
             </node>
@@ -14536,8 +14543,8 @@
     </node>
   </node>
   <node concept="3ICXOK" id="2kN9n9eC5$w">
-    <property role="3GE5qa" value="Definitions.Types.TypeData" />
-    <property role="TrG5h" value="TypeReference_AddSimpletypeForTypeData" />
+    <property role="3GE5qa" value="Definitions.Types.TypeReference" />
+    <property role="TrG5h" value="TypeReference_AddSimpletypeForTypeReferenceUsage" />
     <ref role="aqKnT" to="sc0n:2kN9n9e_e1b" resolve="TypeReference" />
     <node concept="1Qtc8_" id="2kN9n9eC5$x" role="IW6Ez">
       <node concept="3cWJ9i" id="2kN9n9eC5$y" role="1Qtc8$">
@@ -14550,7 +14557,7 @@
           <node concept="3clFbS" id="2kN9n9eC5$A" role="2VODD2">
             <node concept="3SKdUt" id="2kN9n9eC5$B" role="3cqZAp">
               <node concept="3SKdUq" id="2kN9n9eC5$C" role="3SKWNk">
-                <property role="3SKdUp" value="Adds a new Simpletype right of the referenced data name in TypeData" />
+                <property role="3SKdUp" value="Adds a new Simpletype right of the referenced data name in TypeReferenceUsage" />
               </node>
             </node>
             <node concept="3clFbF" id="2kN9n9eC5$D" role="3cqZAp">
@@ -14566,11 +14573,11 @@
               <node concept="3cpWsn" id="2kN9n9eC5$I" role="3cpWs9">
                 <property role="TrG5h" value="td" />
                 <node concept="3Tqbb2" id="2kN9n9eC5$J" role="1tU5fm">
-                  <ref role="ehGHo" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                  <ref role="ehGHo" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                 </node>
                 <node concept="1PxgMI" id="2kN9n9eC5$K" role="33vP2m">
-                  <node concept="chp4Y" id="2kN9n9eC78s" role="3oSUPX">
-                    <ref role="cht4Q" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                  <node concept="chp4Y" id="5krVkwBbuW" role="3oSUPX">
+                    <ref role="cht4Q" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                   </node>
                   <node concept="2OqwBi" id="2kN9n9eC5$M" role="1m5AlR">
                     <node concept="7Obwk" id="2kN9n9eC5$N" role="2Oq$k0" />
@@ -14600,8 +14607,8 @@
                   <node concept="37vLTw" id="2kN9n9eC5$Y" role="2Oq$k0">
                     <ref role="3cqZAo" node="2kN9n9eC5$I" resolve="td" />
                   </node>
-                  <node concept="3Tsc0h" id="2kN9n9eC7oZ" role="2OqNvi">
-                    <ref role="3TtcxE" to="sc0n:7riFpCdpuC6" resolve="simpletypes" />
+                  <node concept="3Tsc0h" id="5krVkwyrtQ" role="2OqNvi">
+                    <ref role="3TtcxE" to="sc0n:5krVkwveGd" resolve="simpletypes" />
                   </node>
                 </node>
                 <node concept="1sK_Qi" id="2kN9n9eC5_0" role="2OqNvi">
@@ -14633,8 +14640,8 @@
     </node>
   </node>
   <node concept="3ICXOK" id="2kN9n9eC5_9">
-    <property role="3GE5qa" value="Definitions.Types.TypeData" />
-    <property role="TrG5h" value="Simpletype_AddSimpletypeForTypeData" />
+    <property role="3GE5qa" value="Definitions.Types.TypeReference" />
+    <property role="TrG5h" value="Simpletype_AddSimpletypeForTypeReferenceUsage" />
     <ref role="aqKnT" to="sc0n:7riFpCdpuBL" resolve="Simpletype" />
     <node concept="1Qtc8_" id="2kN9n9eC5_a" role="IW6Ez">
       <node concept="IWgqT" id="2kN9n9eC5_b" role="1Qtc8A">
@@ -14661,11 +14668,11 @@
               <node concept="3cpWsn" id="2kN9n9eC5_n" role="3cpWs9">
                 <property role="TrG5h" value="td" />
                 <node concept="3Tqbb2" id="2kN9n9eC5_o" role="1tU5fm">
-                  <ref role="ehGHo" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                  <ref role="ehGHo" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                 </node>
                 <node concept="1PxgMI" id="2kN9n9eC5_p" role="33vP2m">
-                  <node concept="chp4Y" id="2kN9n9eC8qs" role="3oSUPX">
-                    <ref role="cht4Q" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                  <node concept="chp4Y" id="5krVkwBeDQ" role="3oSUPX">
+                    <ref role="cht4Q" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                   </node>
                   <node concept="2OqwBi" id="2kN9n9eC5_r" role="1m5AlR">
                     <node concept="7Obwk" id="2kN9n9eC5_s" role="2Oq$k0" />
@@ -14710,8 +14717,8 @@
                           <node concept="37vLTw" id="2kN9n9eC5_K" role="2Oq$k0">
                             <ref role="3cqZAo" node="2kN9n9eC5_n" resolve="td" />
                           </node>
-                          <node concept="3Tsc0h" id="2kN9n9eC9wP" role="2OqNvi">
-                            <ref role="3TtcxE" to="sc0n:7riFpCdpuC6" resolve="simpletypes" />
+                          <node concept="3Tsc0h" id="5krVkwypiS" role="2OqNvi">
+                            <ref role="3TtcxE" to="sc0n:5krVkwveGd" resolve="simpletypes" />
                           </node>
                         </node>
                         <node concept="1sK_Qi" id="2kN9n9eC5_M" role="2OqNvi">
@@ -14754,8 +14761,8 @@
                         <node concept="37vLTw" id="2kN9n9eC5A3" role="2Oq$k0">
                           <ref role="3cqZAo" node="2kN9n9eC5_n" resolve="td" />
                         </node>
-                        <node concept="3Tsc0h" id="2kN9n9eC9g_" role="2OqNvi">
-                          <ref role="3TtcxE" to="sc0n:7riFpCdpuC6" resolve="simpletypes" />
+                        <node concept="3Tsc0h" id="5krVkwyp14" role="2OqNvi">
+                          <ref role="3TtcxE" to="sc0n:5krVkwveGd" resolve="simpletypes" />
                         </node>
                       </node>
                     </node>
@@ -14775,8 +14782,8 @@
                     <node concept="37vLTw" id="2kN9n9eC5Ab" role="2Oq$k0">
                       <ref role="3cqZAo" node="2kN9n9eC5_n" resolve="td" />
                     </node>
-                    <node concept="3Tsc0h" id="2kN9n9eC8WQ" role="2OqNvi">
-                      <ref role="3TtcxE" to="sc0n:7riFpCdpuC6" resolve="simpletypes" />
+                    <node concept="3Tsc0h" id="5krVkwyoFx" role="2OqNvi">
+                      <ref role="3TtcxE" to="sc0n:5krVkwveGd" resolve="simpletypes" />
                     </node>
                   </node>
                   <node concept="34oBXx" id="2kN9n9eC5Ad" role="2OqNvi" />
@@ -14878,12 +14885,12 @@
           <node concept="3clFbS" id="1EYszxY52fb" role="2VODD2">
             <node concept="3SKdUt" id="1EYszxY53i2" role="3cqZAp">
               <node concept="3SKdUq" id="1EYszxY53i3" role="3SKWNk">
-                <property role="3SKdUp" value="Transformation menu for TypeData" />
+                <property role="3SKdUp" value="Transformation menu for TypeReferenceUsage" />
               </node>
             </node>
             <node concept="3SKdUt" id="1EYszxY56AU" role="3cqZAp">
               <node concept="3SKdUq" id="1EYszxY56AW" role="3SKWNk">
-                <property role="3SKdUp" value="Only applicable if we are the right-most cell in TypeData" />
+                <property role="3SKdUp" value="Only applicable if we are the right-most cell in TypeReferenceUsage" />
               </node>
             </node>
             <node concept="3clFbJ" id="1EYszxY53ih" role="3cqZAp">
@@ -14892,16 +14899,16 @@
                   <node concept="2OqwBi" id="1EYszxY53ik" role="3cqZAk">
                     <node concept="2OqwBi" id="1EYszxY53il" role="2Oq$k0">
                       <node concept="1PxgMI" id="1EYszxY53im" role="2Oq$k0">
-                        <node concept="chp4Y" id="1EYszxY53in" role="3oSUPX">
-                          <ref role="cht4Q" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                        <node concept="chp4Y" id="5krVkwBcA7" role="3oSUPX">
+                          <ref role="cht4Q" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                         </node>
                         <node concept="2OqwBi" id="1EYszxY53io" role="1m5AlR">
                           <node concept="7Obwk" id="1EYszxY53ip" role="2Oq$k0" />
                           <node concept="1mfA1w" id="1EYszxY53iq" role="2OqNvi" />
                         </node>
                       </node>
-                      <node concept="3Tsc0h" id="1EYszxY53ir" role="2OqNvi">
-                        <ref role="3TtcxE" to="sc0n:7riFpCdpuC6" resolve="simpletypes" />
+                      <node concept="3Tsc0h" id="5krVkw$2gn" role="2OqNvi">
+                        <ref role="3TtcxE" to="sc0n:5krVkwveGd" resolve="simpletypes" />
                       </node>
                     </node>
                     <node concept="1v1jN8" id="1EYszxY53is" role="2OqNvi" />
@@ -14919,7 +14926,7 @@
                   <node concept="Tc6Ow" id="1EYszxY53ia" role="2ShVmc">
                     <node concept="3bZ5Sz" id="1EYszxY53ib" role="HW$YZ" />
                     <node concept="35c_gC" id="1EYszxY53ic" role="HW$Y0">
-                      <ref role="35c_gD" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                      <ref role="35c_gD" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                     </node>
                   </node>
                 </node>
@@ -14934,14 +14941,14 @@
         </node>
         <node concept="mvV$s" id="1EYszxY52mj" role="aenpr">
           <node concept="A1WHr" id="1EYszxY52mq" role="A14EM">
-            <ref role="2ZyFGn" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+            <ref role="2ZyFGn" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
           </node>
           <node concept="mvVNg" id="1EYszxY52mG" role="mvV$0">
             <node concept="3clFbS" id="1EYszxY52mH" role="2VODD2">
               <node concept="3clFbF" id="1EYszxY52qy" role="3cqZAp">
                 <node concept="1PxgMI" id="1EYszxY536R" role="3clFbG">
-                  <node concept="chp4Y" id="1EYszxY53bu" role="3oSUPX">
-                    <ref role="cht4Q" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                  <node concept="chp4Y" id="5krVkwBcpd" role="3oSUPX">
+                    <ref role="cht4Q" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                   </node>
                   <node concept="2OqwBi" id="1EYszxY52_3" role="1m5AlR">
                     <node concept="7Obwk" id="1EYszxY52qx" role="2Oq$k0" />
@@ -14956,19 +14963,19 @@
       <node concept="aenpk" id="2kN9n9eCc56" role="1Qtc8A">
         <node concept="mvV$s" id="2kN9n9eCcBP" role="aenpr">
           <node concept="A1WHu" id="2kN9n9eCcQZ" role="A14EM">
-            <ref role="A1WHt" node="2kN9n9eC5$w" resolve="TypeReference_AddSimpletypeForTypeData" />
+            <ref role="A1WHt" node="2kN9n9eC5$w" resolve="TypeReference_AddSimpletypeForTypeReferenceUsage" />
           </node>
         </node>
         <node concept="27VH4U" id="2kN9n9eCc57" role="aenpu">
           <node concept="3clFbS" id="2kN9n9eCc58" role="2VODD2">
             <node concept="3SKdUt" id="2kN9n9eCc59" role="3cqZAp">
               <node concept="3SKdUq" id="2kN9n9eCc5a" role="3SKWNk">
-                <property role="3SKdUp" value="Transformation menu for adding additional arguments inside TypeData" />
+                <property role="3SKdUp" value="Transformation menu for adding additional arguments inside TypeReferenceUsage" />
               </node>
             </node>
             <node concept="3SKdUt" id="1EYszxYaN9v" role="3cqZAp">
               <node concept="3SKdUq" id="1EYszxYaN9x" role="3SKWNk">
-                <property role="3SKdUp" value="Must not be ambiguous =&gt; if we are already inside a TypeData / DataConstructor, then this does not apply" />
+                <property role="3SKdUp" value="Must not be ambiguous =&gt; if we are already inside a TypeRU / DataConstructor, then this does not apply" />
               </node>
             </node>
             <node concept="3SKdUt" id="1EYszxYaNLF" role="3cqZAp">
@@ -15006,8 +15013,8 @@
                           <ref role="3cqZAo" node="1EYszxY6O$w" resolve="sp" />
                         </node>
                         <node concept="1mIQ4w" id="1EYszxY6Txj" role="2OqNvi">
-                          <node concept="chp4Y" id="1EYszxY6Txk" role="cj9EA">
-                            <ref role="cht4Q" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                          <node concept="chp4Y" id="5krVkwBc4m" role="cj9EA">
+                            <ref role="cht4Q" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                           </node>
                         </node>
                       </node>
@@ -15038,7 +15045,7 @@
                   <node concept="Tc6Ow" id="2kN9n9eCc5h" role="2ShVmc">
                     <node concept="3bZ5Sz" id="2kN9n9eCc5i" role="HW$YZ" />
                     <node concept="35c_gC" id="2kN9n9eCc5j" role="HW$Y0">
-                      <ref role="35c_gD" to="sc0n:7riFpCdpuC5" resolve="TypeReferenceUsage" />
+                      <ref role="35c_gD" to="sc0n:5krVkwveGb" resolve="TypeReferenceUsage" />
                     </node>
                   </node>
                 </node>
@@ -16493,7 +16500,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5krVkwdv6a">
-    <property role="3GE5qa" value="Definitions.Types" />
+    <property role="3GE5qa" value="Definitions.Types.TypeReference" />
     <ref role="1XX52x" to="sc0n:5krVkwdv5B" resolve="ImportedTypeReferenceUsage" />
     <node concept="3EZMnI" id="5krVkwdv6c" role="2wV5jI">
       <node concept="3F1sOY" id="5krVkwdv6d" role="3EZMnx">
@@ -16509,13 +16516,32 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5krVkwdv6$" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5krVkwdv5E" resolve="typeReference" />
+        <ref role="1NtTu8" to="sc0n:5krVkwveGc" resolve="dataType" />
+      </node>
+      <node concept="3F2HdR" id="5krVkwpH4a" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:5krVkwveGd" resolve="simpletypes" />
+        <node concept="2iRfu4" id="5krVkwpH4b" role="2czzBx" />
+        <node concept="pkWqt" id="5krVkwpH4c" role="pqm2j">
+          <node concept="3clFbS" id="5krVkwpH4d" role="2VODD2">
+            <node concept="3clFbF" id="5krVkwpH4e" role="3cqZAp">
+              <node concept="2OqwBi" id="5krVkwpH4f" role="3clFbG">
+                <node concept="2OqwBi" id="5krVkwpH4g" role="2Oq$k0">
+                  <node concept="pncrf" id="5krVkwpH4h" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="5krVkwvgwv" role="2OqNvi">
+                    <ref role="3TtcxE" to="sc0n:5krVkwveGd" resolve="simpletypes" />
+                  </node>
+                </node>
+                <node concept="3GX2aA" id="5krVkwpH4j" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2iRfu4" id="5krVkwdv6i" role="2iSdaV" />
     </node>
   </node>
   <node concept="3p36aQ" id="5krVkwdvfr">
-    <property role="3GE5qa" value="Definitions.Types" />
+    <property role="3GE5qa" value="Definitions.Types.TypeReference" />
     <ref role="aqKnT" to="sc0n:5krVkwdv5B" resolve="ImportedTypeReferenceUsage" />
     <node concept="3N5dw7" id="5krVkwdvf_" role="3ft7WO">
       <node concept="3N5aqt" id="5krVkwdvfA" role="3Na0zg">
@@ -16542,7 +16568,7 @@
                 <node concept="37vLTw" id="5krVkwdvfM" role="2Oq$k0">
                   <ref role="3cqZAo" node="5krVkwdvfD" resolve="itru" />
                 </node>
-                <node concept="3TrEf2" id="5krVkwdxnC" role="2OqNvi">
+                <node concept="3TrEf2" id="5krVkwveyp" role="2OqNvi">
                   <ref role="3Tt5mk" to="sc0n:5krVkwdv5I" resolve="import" />
                 </node>
               </node>
@@ -16565,8 +16591,8 @@
               <node concept="2OqwBi" id="5krVkwdvfV" role="3clFbG">
                 <node concept="2OqwBi" id="5krVkwdvfW" role="2Oq$k0">
                   <node concept="uqdCJ" id="5krVkwdvfX" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="5krVkwdxC2" role="2OqNvi">
-                    <ref role="3Tt5mk" to="sc0n:5krVkwdv5E" resolve="typeReference" />
+                  <node concept="3TrEf2" id="5krVkwvha7" role="2OqNvi">
+                    <ref role="3Tt5mk" to="sc0n:5krVkwveGc" resolve="dataType" />
                   </node>
                 </node>
                 <node concept="1OKiuA" id="5krVkwdvfZ" role="2OqNvi">

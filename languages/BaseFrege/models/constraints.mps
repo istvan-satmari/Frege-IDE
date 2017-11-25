@@ -875,7 +875,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5krVkwdxYh">
-    <property role="3GE5qa" value="Definitions.Types" />
+    <property role="3GE5qa" value="Definitions.Types.TypeReference" />
     <ref role="1M2myG" to="sc0n:5krVkwdv5B" resolve="ImportedTypeReferenceUsage" />
     <node concept="9S07l" id="5krVkwdxYx" role="9Vyp8">
       <node concept="3clFbS" id="5krVkwdxYy" role="2VODD2">

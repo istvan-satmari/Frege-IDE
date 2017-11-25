@@ -105,6 +105,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ListEnumeration = new ConceptPresentationBuilder().shortDesc("List of items.").create();
   private final ConceptPresentation props_ListRange = new ConceptPresentationBuilder().shortDesc("List defined as a range of items.").create();
   private final ConceptPresentation props_Literal = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_LocalTypeReferenceUsage = new ConceptPresentationBuilder().shortDesc("Represents types and algebraic datatypes.").create();
   private final ConceptPresentation props_MEFunction = new ConceptPresentationBuilder().shortDesc("Export a function.").create();
   private final ConceptPresentation props_MEOperator = new ConceptPresentationBuilder().shortDesc("Export an operator function.").create();
   private final ConceptPresentation props_MEPMImport = new ConceptPresentationBuilder().shortDesc("Reexport of an imported module.").create();
@@ -166,7 +167,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type.").create();
   private final ConceptPresentation props_TypeName = new ConceptPresentationBuilder().shortDesc("Type name.").create();
   private final ConceptPresentation props_TypeReference = new ConceptPresentationBuilder().shortDesc("References a type name.").create();
-  private final ConceptPresentation props_TypeReferenceUsage = new ConceptPresentationBuilder().shortDesc("Represents types and algebraic datatypes.").create();
+  private final ConceptPresentation props_TypeReferenceUsage = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("Tuple type.").create();
   private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable.").create();
   private final ConceptPresentation props_TypeVariableReference = new ConceptPresentationBuilder().shortDesc("References a type variable.").create();
@@ -370,6 +371,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_ListRange;
       case LanguageConceptSwitch.Literal:
         return props_Literal;
+      case LanguageConceptSwitch.LocalTypeReferenceUsage:
+        return props_LocalTypeReferenceUsage;
       case LanguageConceptSwitch.MEFunction:
         return props_MEFunction;
       case LanguageConceptSwitch.MEOperator:
