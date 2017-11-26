@@ -376,10 +376,12 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
         if (true) {
           switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0a0d1a4, menuId.getFqName())) {
             case 0:
-              return Arrays.asList(new TransformationMenu[]{new Expression_BracketsToTuple()});
+              return Arrays.asList(new TransformationMenu[]{new Expression_AddWhereClause()});
             case 1:
-              return Arrays.asList(new TransformationMenu[]{new Expression_ListEnumerationToComprehension()});
+              return Arrays.asList(new TransformationMenu[]{new Expression_BracketsToTuple()});
             case 2:
+              return Arrays.asList(new TransformationMenu[]{new Expression_ListEnumerationToComprehension()});
+            case 3:
               return Arrays.asList(new TransformationMenu[]{new Expression_ListEnumerationToRange()});
             default:
           }
@@ -655,7 +657,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   private static String[] stringSwitchCases_xbvbvu_a0a0a0a1a4 = new String[]{"BaseFrege.editor.Annotation_AddItem"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0b1a4 = new String[]{"BaseFrege.editor.BinaryExpression_AddAnnotation"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0c1a4 = new String[]{"BaseFrege.editor.ConstructorReference_AddPatternArgumentForPConstructor"};
-  private static String[] stringSwitchCases_xbvbvu_a0a0a0d1a4 = new String[]{"BaseFrege.editor.Expression_BracketsToTuple", "BaseFrege.editor.Expression_ListEnumerationToComprehension", "BaseFrege.editor.Expression_ListEnumerationToRange"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a0d1a4 = new String[]{"BaseFrege.editor.Expression_AddWhereClause", "BaseFrege.editor.Expression_BracketsToTuple", "BaseFrege.editor.Expression_ListEnumerationToComprehension", "BaseFrege.editor.Expression_ListEnumerationToRange"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0e1a4 = new String[]{"BaseFrege.editor.FDABracket_TransformWhenInsideBracketst"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0f1a4 = new String[]{"BaseFrege.editor.Import_AddAHI", "BaseFrege.editor.Import_AddItems"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0g1a4 = new String[]{"BaseFrege.editor.Module_AddExport"};

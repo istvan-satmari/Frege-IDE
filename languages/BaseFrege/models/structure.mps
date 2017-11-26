@@ -1081,13 +1081,6 @@
     <property role="3GE5qa" value="Definitions.Types" />
     <property role="TrG5h" value="FullType" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="3Xsm2yzyj3V" role="1TKVEi">
-      <property role="IQ2ns" value="4565621053812453627" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="context" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="1G9BWv90qXT" resolve="Context" />
-    </node>
     <node concept="1TJgyj" id="3Xsm2yzyj34" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812453572" />
       <property role="20lmBu" value="aggregation" />
