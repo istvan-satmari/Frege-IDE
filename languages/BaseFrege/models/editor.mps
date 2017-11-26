@@ -63,6 +63,7 @@
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1233148810477" name="jetbrains.mps.lang.editor.structure.InlineStyleDeclaration" flags="ng" index="tppnM" />
       <concept id="1177327274449" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_pattern" flags="nn" index="ub8z3" />
       <concept id="1177327570013" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_Substitute" flags="in" index="ucgPf" />
@@ -17266,6 +17267,9 @@
           <ref role="1NtTu8" to="sc0n:5ZITH0PGZwl" resolve="then" />
         </node>
         <node concept="2iRfu4" id="LX2T030a22" role="2iSdaV" />
+        <node concept="pVoyu" id="LX2T03e8ca" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3EZMnI" id="LX2T030a2D" role="3EZMnx">
         <node concept="VPM3Z" id="LX2T030a2F" role="3F10Kt">
@@ -17281,8 +17285,11 @@
           <ref role="1NtTu8" to="sc0n:5ZITH0PGZwo" resolve="else" />
         </node>
         <node concept="2iRfu4" id="LX2T030a2I" role="2iSdaV" />
+        <node concept="pVoyu" id="LX2T03e8cd" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
-      <node concept="2iRkQZ" id="LX2T030a1o" role="2iSdaV" />
+      <node concept="l2Vlx" id="LX2T03e8c7" role="2iSdaV" />
     </node>
   </node>
 </model>
