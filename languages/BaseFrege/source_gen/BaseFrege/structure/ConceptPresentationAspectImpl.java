@@ -85,9 +85,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Infixl = new ConceptPresentationBuilder().shortDesc("Left associative operator.").create();
   private final ConceptPresentation props_Infixr = new ConceptPresentationBuilder().shortDesc("Right associative operator.").create();
   private final ConceptPresentation props_IntegerValue = new ConceptPresentationBuilder().shortDesc("Integer value.").create();
-  private final ConceptPresentation props_LCQArrowAssignment = new ConceptPresentationBuilder().shortDesc("expr <- expr").create();
-  private final ConceptPresentation props_LCQGuard = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LCQLet = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_LCQArrowAssignment = new ConceptPresentationBuilder().shortDesc("Arrow assignment for the current list comprehension.").create();
+  private final ConceptPresentation props_LCQGuard = new ConceptPresentationBuilder().shortDesc("Guard for the current list comprehension.").create();
+  private final ConceptPresentation props_LCQLet = new ConceptPresentationBuilder().shortDesc("Let expression for the current list comprehension.").create();
   private final ConceptPresentation props_LCQualifier = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LDAnnotation = new ConceptPresentationBuilder().shortDesc("Annotation.").create();
   private final ConceptPresentation props_LDFunDef = new ConceptPresentationBuilder().shortDesc("Function definition.").create();

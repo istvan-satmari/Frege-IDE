@@ -876,7 +876,8 @@
     <property role="EcuMT" value="6531617606750690783" />
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms.Lists.ListComprehension" />
     <property role="TrG5h" value="LCQLet" />
-    <property role="34LRSv" value="let" />
+    <property role="34LRSv" value="l" />
+    <property role="R4oN_" value="Let expression for the current list comprehension." />
     <ref role="1TJDcQ" node="5E$XTHV3XRl" resolve="LCQualifier" />
     <node concept="1TJgyj" id="5E$XTHV3XRR" role="1TKVEi">
       <property role="IQ2ns" value="6531617606750690807" />
@@ -890,8 +891,8 @@
     <property role="EcuMT" value="6531617606750690855" />
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms.Lists.ListComprehension" />
     <property role="TrG5h" value="LCQArrowAssignment" />
-    <property role="R4oN_" value="expr &lt;- expr" />
-    <property role="34LRSv" value="&lt;-" />
+    <property role="R4oN_" value="Arrow assignment for the current list comprehension." />
+    <property role="34LRSv" value="-" />
     <ref role="1TJDcQ" node="5E$XTHV3XRl" resolve="LCQualifier" />
     <node concept="1TJgyj" id="5E$XTHV3XSC" role="1TKVEi">
       <property role="IQ2ns" value="6531617606750690856" />
@@ -912,6 +913,8 @@
     <property role="EcuMT" value="6531617606750690897" />
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms.Lists.ListComprehension" />
     <property role="TrG5h" value="LCQGuard" />
+    <property role="34LRSv" value="g" />
+    <property role="R4oN_" value="Guard for the current list comprehension." />
     <ref role="1TJDcQ" node="5E$XTHV3XRl" resolve="LCQualifier" />
     <node concept="1TJgyj" id="5E$XTHV3XTi" role="1TKVEi">
       <property role="IQ2ns" value="6531617606750690898" />

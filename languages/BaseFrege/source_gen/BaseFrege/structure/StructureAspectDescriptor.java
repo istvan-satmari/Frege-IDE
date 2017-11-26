@@ -1168,7 +1168,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690855");
     b.aggregate("pattern", 0x5aa4f79b7b0fde28L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895193L).optional(false).ordered(true).multiple(false).origin("6531617606750690856").done();
     b.aggregate("expression", 0x5aa4f79b7b0fde2aL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8d7L).optional(false).ordered(true).multiple(false).origin("6531617606750690858").done();
-    b.alias("<-");
+    b.alias("-");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLCQGuard() {
@@ -1177,6 +1177,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("BaseFrege.structure.LCQualifier", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fddd5L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690897");
     b.aggregate("condition", 0x5aa4f79b7b0fde52L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8d7L).optional(false).ordered(true).multiple(false).origin("6531617606750690898").done();
+    b.alias("g");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLCQLet() {
@@ -1185,7 +1186,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("BaseFrege.structure.LCQualifier", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fddd5L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690783");
     b.aggregate("letDef", 0x5aa4f79b7b0fddf7L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x66fa4fc65829ede2L).optional(false).ordered(true).multiple(false).origin("6531617606750690807").done();
-    b.alias("let");
+    b.alias("l");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLCQualifier() {
