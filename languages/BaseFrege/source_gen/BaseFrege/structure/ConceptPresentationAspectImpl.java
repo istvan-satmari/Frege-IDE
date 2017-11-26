@@ -89,15 +89,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_LCQGuard = new ConceptPresentationBuilder().shortDesc("Guard for the current list comprehension.").create();
   private final ConceptPresentation props_LCQLet = new ConceptPresentationBuilder().shortDesc("Let expression for the current list comprehension.").create();
   private final ConceptPresentation props_LCQualifier = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LDAnnotation = new ConceptPresentationBuilder().shortDesc("Annotation.").create();
-  private final ConceptPresentation props_LDFunDef = new ConceptPresentationBuilder().shortDesc("Function definition.").create();
   private final ConceptPresentation props_LPExpression = new ConceptPresentationBuilder().shortDesc("Define the lambda's body.").create();
   private final ConceptPresentation props_LPLambda = new ConceptPresentationBuilder().shortDesc("Declare a new argument.").create();
   private final ConceptPresentation props_Lambda = new ConceptPresentationBuilder().shortDesc("Lambda function expression.").create();
   private final ConceptPresentation props_LambdaPart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LateLoader = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Let = new ConceptPresentationBuilder().shortDesc("Let expression.").create();
-  private final ConceptPresentation props_LetDefinition = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LetDefinitions = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_LineComment = new ConceptPresentationBuilder().shortDesc("Line comment.").create();
   private final ConceptPresentation props_List = new ConceptPresentationBuilder().create();
@@ -339,10 +336,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_LCQLet;
       case LanguageConceptSwitch.LCQualifier:
         return props_LCQualifier;
-      case LanguageConceptSwitch.LDAnnotation:
-        return props_LDAnnotation;
-      case LanguageConceptSwitch.LDFunDef:
-        return props_LDFunDef;
       case LanguageConceptSwitch.LPExpression:
         return props_LPExpression;
       case LanguageConceptSwitch.LPLambda:
@@ -355,8 +348,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_LateLoader;
       case LanguageConceptSwitch.Let:
         return props_Let;
-      case LanguageConceptSwitch.LetDefinition:
-        return props_LetDefinition;
       case LanguageConceptSwitch.LetDefinitions:
         return props_LetDefinitions;
       case LanguageConceptSwitch.LineComment:

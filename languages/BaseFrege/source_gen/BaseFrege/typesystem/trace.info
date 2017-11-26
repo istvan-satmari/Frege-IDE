@@ -12,7 +12,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,80,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,84,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/1156512287654379470">
@@ -871,6 +871,81 @@
         <var name="typeCheckingContext" id="888526103032017743" />
       </scope>
       <unit id="888526103032017743" at="16,0,35,0" name="BaseFrege.typesystem.check_IncompleteCommand_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/899888213699281790">
+    <file name="check_LetDefinitions_NonTypesystemRule.java">
+      <node id="899888213699281826" at="27,127,28,39" concept="7" />
+      <node id="899888213699281828" at="28,39,29,498" concept="5" />
+      <node id="899888213699281838" at="29,498,30,0" concept="8" />
+      <node id="899888213699281857" at="34,59,35,77" concept="6" />
+      <node id="899888213699281849" at="38,11,39,64" concept="5" />
+      <node id="899888213699281849" at="39,64,40,235" concept="5" />
+      <node id="899888213699281869" at="44,7,45,0" concept="8" />
+      <node id="899888213699289112" at="45,0,46,52" concept="7" />
+      <node id="899888213699336764" at="48,39,49,245" concept="6" />
+      <node id="899888213699323906" at="52,7,53,60" concept="5" />
+      <node id="899888213699323906" at="53,60,54,251" concept="5" />
+      <node id="899888213699281790" at="58,50,59,142" concept="6" />
+      <node id="899888213699281790" at="61,68,62,102" concept="6" />
+      <node id="899888213699281790" at="64,30,65,17" concept="6" />
+      <node id="899888213699281790" at="25,0,27,0" concept="1" trace="check_LetDefinitions_NonTypesystemRule#()V" />
+      <node id="899888213699281855" at="34,0,37,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="899888213699336762" at="48,0,51,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="899888213699281790" at="58,0,61,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="899888213699281790" at="61,0,64,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="899888213699281790" at="64,0,67,0" concept="4" trace="overrides#()Z" />
+      <node id="899888213699281849" at="37,13,41,11" concept="0" />
+      <node id="899888213699323906" at="51,10,55,7" concept="0" />
+      <node id="899888213699281847" at="32,41,42,9" concept="3" />
+      <node id="899888213699292091" at="46,52,56,5" concept="3" />
+      <node id="899888213699281845" at="32,0,44,0" concept="4" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="899888213699281839" at="30,0,44,7" concept="2" />
+      <node id="899888213699281790" at="27,0,58,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="899888213699281790" at="25,51,25,51" />
+      <scope id="899888213699281856" at="34,59,35,77" />
+      <scope id="899888213699336763" at="48,39,49,245" />
+      <scope id="899888213699281790" at="58,50,59,142" />
+      <scope id="899888213699281790" at="61,68,62,102" />
+      <scope id="899888213699281790" at="64,30,65,17" />
+      <scope id="899888213699281790" at="25,0,27,0" />
+      <scope id="899888213699281849" at="38,11,40,235">
+        <var name="_reporter_2309309498" id="899888213699281849" />
+        <var name="errorTarget" id="899888213699281849" />
+      </scope>
+      <scope id="899888213699323906" at="52,7,54,251">
+        <var name="_reporter_2309309498" id="899888213699323906" />
+        <var name="errorTarget" id="899888213699323906" />
+      </scope>
+      <scope id="899888213699281855" at="34,0,37,0">
+        <var name="allowed" id="899888213699281855" />
+      </scope>
+      <scope id="899888213699336762" at="48,0,51,0">
+        <var name="it" id="899888213699336762" />
+      </scope>
+      <scope id="899888213699281790" at="58,0,61,0" />
+      <scope id="899888213699281790" at="61,0,64,0">
+        <var name="argument" id="899888213699281790" />
+      </scope>
+      <scope id="899888213699281790" at="64,0,67,0" />
+      <scope id="899888213699281848" at="37,13,41,11" />
+      <scope id="899888213699292093" at="51,10,55,7" />
+      <scope id="899888213699281846" at="32,41,42,9" />
+      <scope id="899888213699281845" at="32,0,44,0">
+        <var name="it" id="899888213699281845" />
+      </scope>
+      <scope id="899888213699281791" at="27,127,56,5">
+        <var name="allowedConcepts" id="899888213699281829" />
+      </scope>
+      <scope id="899888213699281790" at="27,0,58,0">
+        <var name="letDefinitions" id="899888213699281790" />
+        <var name="status" id="899888213699281790" />
+        <var name="typeCheckingContext" id="899888213699281790" />
+      </scope>
+      <unit id="899888213699281855" at="33,59,37,9" name="BaseFrege.typesystem.check_LetDefinitions_NonTypesystemRule$1$1" />
+      <unit id="899888213699336762" at="47,219,51,5" name="BaseFrege.typesystem.check_LetDefinitions_NonTypesystemRule$2" />
+      <unit id="899888213699281845" at="31,218,44,5" name="BaseFrege.typesystem.check_LetDefinitions_NonTypesystemRule$1" />
+      <unit id="899888213699281790" at="24,0,68,0" name="BaseFrege.typesystem.check_LetDefinitions_NonTypesystemRule" />
     </file>
   </root>
 </debug-info>

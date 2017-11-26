@@ -141,6 +141,9 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -1869,6 +1872,166 @@
     <node concept="1YaCAy" id="1EYszxY$aEe" role="1YuTPh">
       <property role="TrG5h" value="constructorList" />
       <ref role="1YaFvo" to="sc0n:1EYszxY$6mt" resolve="IITConstructorList" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="LX2T036OdY">
+    <property role="TrG5h" value="check_LetDefinitions" />
+    <property role="3GE5qa" value="Definitions.Expressions.Let" />
+    <node concept="3clFbS" id="LX2T036OdZ" role="18ibNy">
+      <node concept="3SKdUt" id="LX2T036Oey" role="3cqZAp">
+        <node concept="3SKdUq" id="LX2T036Oez" role="3SKWNk">
+          <property role="3SKdUp" value="Check definitions concept types" />
+        </node>
+      </node>
+      <node concept="3cpWs8" id="LX2T036Oe$" role="3cqZAp">
+        <node concept="3cpWsn" id="LX2T036Oe_" role="3cpWs9">
+          <property role="TrG5h" value="allowedConcepts" />
+          <node concept="_YKpA" id="LX2T036OeA" role="1tU5fm">
+            <node concept="3bZ5Sz" id="LX2T036OeB" role="_ZDj9" />
+          </node>
+          <node concept="2ShNRf" id="LX2T036OeC" role="33vP2m">
+            <node concept="Tc6Ow" id="LX2T036OeD" role="2ShVmc">
+              <node concept="3bZ5Sz" id="LX2T036OeE" role="HW$YZ" />
+              <node concept="35c_gC" id="LX2T036OeF" role="HW$Y0">
+                <ref role="35c_gD" to="sc0n:3PT0fU4S3xI" resolve="FDComplete" />
+              </node>
+              <node concept="35c_gC" id="LX2T036OeG" role="HW$Y0">
+                <ref role="35c_gD" to="sc0n:vUxQDjKXz0" resolve="Annotation" />
+              </node>
+              <node concept="35c_gC" id="LX2T036OeH" role="HW$Y0">
+                <ref role="35c_gD" to="sc0n:10cKsLk59eT" resolve="EmptyLine" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="LX2T036OeI" role="3cqZAp" />
+      <node concept="3clFbF" id="LX2T036OeJ" role="3cqZAp">
+        <node concept="2OqwBi" id="LX2T036OeK" role="3clFbG">
+          <node concept="2OqwBi" id="LX2T036OeL" role="2Oq$k0">
+            <node concept="1YBJjd" id="LX2T036Pb2" role="2Oq$k0">
+              <ref role="1YBMHb" node="LX2T036Oe1" resolve="letDefinitions" />
+            </node>
+            <node concept="3Tsc0h" id="LX2T036PJL" role="2OqNvi">
+              <ref role="3TtcxE" to="sc0n:6rUjWpoauRz" resolve="letDefs" />
+            </node>
+          </node>
+          <node concept="2es0OD" id="LX2T036OeO" role="2OqNvi">
+            <node concept="1bVj0M" id="LX2T036OeP" role="23t8la">
+              <node concept="3clFbS" id="LX2T036OeQ" role="1bW5cS">
+                <node concept="3clFbJ" id="LX2T036OeR" role="3cqZAp">
+                  <node concept="3clFbS" id="LX2T036OeS" role="3clFbx">
+                    <node concept="2MkqsV" id="LX2T036OeT" role="3cqZAp">
+                      <node concept="Xl_RD" id="LX2T036OeU" role="2MkJ7o">
+                        <property role="Xl_RC" value="Illegal definition inside the group." />
+                      </node>
+                      <node concept="37vLTw" id="LX2T036OeV" role="2OEOjV">
+                        <ref role="3cqZAo" node="LX2T036Ofb" resolve="it" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="LX2T036OeW" role="3clFbw">
+                    <node concept="37vLTw" id="LX2T036OeX" role="2Oq$k0">
+                      <ref role="3cqZAo" node="LX2T036Oe_" resolve="allowedConcepts" />
+                    </node>
+                    <node concept="2HxqBE" id="LX2T036OeY" role="2OqNvi">
+                      <node concept="1bVj0M" id="LX2T036OeZ" role="23t8la">
+                        <node concept="3clFbS" id="LX2T036Of0" role="1bW5cS">
+                          <node concept="3clFbF" id="LX2T036Of1" role="3cqZAp">
+                            <node concept="3fqX7Q" id="LX2T036Of2" role="3clFbG">
+                              <node concept="2OqwBi" id="LX2T036Of3" role="3fr31v">
+                                <node concept="2OqwBi" id="LX2T036Of4" role="2Oq$k0">
+                                  <node concept="37vLTw" id="LX2T036Of5" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="LX2T036Ofb" resolve="it" />
+                                  </node>
+                                  <node concept="2yIwOk" id="LX2T036Of6" role="2OqNvi" />
+                                </node>
+                                <node concept="liA8E" id="LX2T036Of7" role="2OqNvi">
+                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isSubConceptOf" />
+                                  <node concept="37vLTw" id="LX2T036Of8" role="37wK5m">
+                                    <ref role="3cqZAo" node="LX2T036Of9" resolve="allowed" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Rh6nW" id="LX2T036Of9" role="1bW2Oz">
+                          <property role="TrG5h" value="allowed" />
+                          <node concept="2jxLKc" id="LX2T036Ofa" role="1tU5fm" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="Rh6nW" id="LX2T036Ofb" role="1bW2Oz">
+                <property role="TrG5h" value="it" />
+                <node concept="2jxLKc" id="LX2T036Ofc" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="LX2T036Ofd" role="3cqZAp" />
+      <node concept="3SKdUt" id="LX2T036Q0o" role="3cqZAp">
+        <node concept="3SKdUq" id="LX2T036Q0q" role="3SKWNk">
+          <property role="3SKdUp" value="There must be at least 1 function definition" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="LX2T036QIV" role="3cqZAp">
+        <node concept="3clFbS" id="LX2T036QIX" role="3clFbx">
+          <node concept="2MkqsV" id="LX2T036Yw2" role="3cqZAp">
+            <node concept="Xl_RD" id="LX2T036Ywh" role="2MkJ7o">
+              <property role="Xl_RC" value="Must contain at least 1 function definition." />
+            </node>
+            <node concept="1YBJjd" id="LX2T036Yws" role="2OEOjV">
+              <ref role="1YBMHb" node="LX2T036Oe1" resolve="letDefinitions" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="LX2T036ZCC" role="3clFbw">
+          <node concept="2OqwBi" id="LX2T036ZCE" role="3fr31v">
+            <node concept="2OqwBi" id="LX2T036ZCF" role="2Oq$k0">
+              <node concept="1YBJjd" id="LX2T036ZCG" role="2Oq$k0">
+                <ref role="1YBMHb" node="LX2T036Oe1" resolve="letDefinitions" />
+              </node>
+              <node concept="3Tsc0h" id="LX2T036ZCH" role="2OqNvi">
+                <ref role="3TtcxE" to="sc0n:6rUjWpoauRz" resolve="letDefs" />
+              </node>
+            </node>
+            <node concept="2HwmR7" id="LX2T0371CS" role="2OqNvi">
+              <node concept="1bVj0M" id="LX2T0371CU" role="23t8la">
+                <node concept="3clFbS" id="LX2T0371CV" role="1bW5cS">
+                  <node concept="3clFbF" id="LX2T0371CW" role="3cqZAp">
+                    <node concept="2OqwBi" id="LX2T0371RY" role="3clFbG">
+                      <node concept="2OqwBi" id="LX2T0371RZ" role="2Oq$k0">
+                        <node concept="37vLTw" id="LX2T0371S0" role="2Oq$k0">
+                          <ref role="3cqZAo" node="LX2T0371D3" resolve="it" />
+                        </node>
+                        <node concept="2yIwOk" id="LX2T0371S1" role="2OqNvi" />
+                      </node>
+                      <node concept="2Zo12i" id="LX2T0371S2" role="2OqNvi">
+                        <node concept="chp4Y" id="LX2T0372fY" role="2Zo12j">
+                          <ref role="cht4Q" to="sc0n:4nqjXk6i7v7" resolve="FunctionDefinition" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="LX2T0371D3" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="LX2T0371D4" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="LX2T036Oe1" role="1YuTPh">
+      <property role="TrG5h" value="letDefinitions" />
+      <ref role="1YaFvo" to="sc0n:6rUjWpoauRw" resolve="LetDefinitions" />
     </node>
   </node>
 </model>

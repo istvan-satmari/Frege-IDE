@@ -889,7 +889,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="letDef" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6rUjWpoauRy" resolve="LetDefinition" />
+      <ref role="20lvS9" node="4nqjXk6i7v7" resolve="FunctionDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="5E$XTHV3XSB">
@@ -1376,43 +1376,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="letDefs" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="6rUjWpoauRy" resolve="LetDefinition" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6rUjWpoauRx">
-    <property role="EcuMT" value="7420331049347575265" />
-    <property role="3GE5qa" value="Definitions.Expressions.Let" />
-    <property role="TrG5h" value="LDFunDef" />
-    <property role="R4oN_" value="Function definition." />
-    <ref role="1TJDcQ" node="6rUjWpoauRy" resolve="LetDefinition" />
-    <node concept="1TJgyj" id="6rUjWpoauR_" role="1TKVEi">
-      <property role="IQ2ns" value="7420331049347575269" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="representingNode" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4nqjXk6i7v7" resolve="FunctionDefinition" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6rUjWpoauRy">
-    <property role="EcuMT" value="7420331049347575266" />
-    <property role="3GE5qa" value="Definitions.Expressions.Let" />
-    <property role="TrG5h" value="LetDefinition" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="6rUjWpoazfj">
-    <property role="EcuMT" value="7420331049347593171" />
-    <property role="3GE5qa" value="Definitions.Expressions.Let" />
-    <property role="TrG5h" value="LDAnnotation" />
-    <property role="R4oN_" value="Annotation." />
-    <ref role="1TJDcQ" node="6rUjWpoauRy" resolve="LetDefinition" />
-    <node concept="1TJgyj" id="6rUjWpoazfk" role="1TKVEi">
-      <property role="IQ2ns" value="7420331049347593172" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="representingNode" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="vUxQDjKXz0" resolve="Annotation" />
+      <ref role="20lvS9" node="vUxQDjKXyv" resolve="Definition" />
     </node>
   </node>
   <node concept="1TIwiD" id="3lPLyUBVjs8">
