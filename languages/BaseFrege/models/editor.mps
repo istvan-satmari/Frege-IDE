@@ -98,6 +98,7 @@
         <child id="1638911550608610281" name="executeFunction" index="IWgqQ" />
         <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
       </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -264,6 +265,12 @@
         <child id="3604384757217586546" name="selectionStart" index="3dN3m$" />
       </concept>
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
+      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
+        <property id="1088613081987" name="vertical" index="1QpmdY" />
+        <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
+        <child id="1088612958265" name="ifTrueCellModel" index="1QoS34" />
+        <child id="1088612973955" name="ifFalseCellModel" index="1QoVPY" />
+      </concept>
       <concept id="7980428675268276156" name="jetbrains.mps.lang.editor.structure.TransformationMenuSection" flags="ng" index="1Qtc8_">
         <child id="7980428675268276157" name="locations" index="1Qtc8$" />
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
@@ -1077,26 +1084,28 @@
   <node concept="24kQdi" id="5ZITH0PGZwI">
     <property role="3GE5qa" value="Definitions.Expressions.IfThenElse" />
     <ref role="1XX52x" to="sc0n:vUxQDjKXAk" resolve="IfThenElse" />
-    <node concept="3EZMnI" id="5ZITH0PGZwK" role="2wV5jI">
-      <node concept="3F0ifn" id="5ZITH0PGZwR" role="3EZMnx">
-        <property role="3F0ifm" value="if" />
+    <node concept="1QoScp" id="LX2T030a3g" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="PMmxH" id="LX2T030aaw" role="1QoS34">
+        <ref role="PMmxG" node="LX2T030a0C" resolve="IfThenElse_Editor1" />
       </node>
-      <node concept="3F1sOY" id="5ZITH0PGZwX" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5ZITH0PGZwj" resolve="condition" />
+      <node concept="pkWqt" id="LX2T030a3j" role="3e4ffs">
+        <node concept="3clFbS" id="LX2T030a3l" role="2VODD2">
+          <node concept="3clFbF" id="LX2T030ahI" role="3cqZAp">
+            <node concept="3fqX7Q" id="LX2T030aXG" role="3clFbG">
+              <node concept="2OqwBi" id="LX2T030aXI" role="3fr31v">
+                <node concept="pncrf" id="LX2T030aXJ" role="2Oq$k0" />
+                <node concept="3TrcHB" id="LX2T030aXK" role="2OqNvi">
+                  <ref role="3TsBF5" to="sc0n:LX2T0302z5" resolve="_useMultiline" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
-      <node concept="3F0ifn" id="5ZITH0PGZx5" role="3EZMnx">
-        <property role="3F0ifm" value="then" />
+      <node concept="PMmxH" id="LX2T030aa$" role="1QoVPY">
+        <ref role="PMmxG" node="LX2T030a1a" resolve="IfThenElse_Editor2" />
       </node>
-      <node concept="3F1sOY" id="5ZITH0PGZxf" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5ZITH0PGZwl" resolve="then" />
-      </node>
-      <node concept="3F0ifn" id="5ZITH0PGZxr" role="3EZMnx">
-        <property role="3F0ifm" value="else" />
-      </node>
-      <node concept="3F1sOY" id="5ZITH0PGZxD" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5ZITH0PGZwo" resolve="else" />
-      </node>
-      <node concept="2iRfu4" id="5ZITH0PGZwN" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="5ZITH0PGZyQ">
@@ -1633,7 +1642,7 @@
                 <node concept="2OqwBi" id="5PvAQDIYJDX" role="3fr31v">
                   <node concept="12_Ws6" id="5PvAQDIYJDY" role="2Oq$k0" />
                   <node concept="3TrcHB" id="5PvAQDIYJDZ" role="2OqNvi">
-                    <ref role="3TsBF5" to="sc0n:5PvAQDIVr5B" resolve="hidden" />
+                    <ref role="3TsBF5" to="sc0n:5PvAQDIVr5B" resolve="_hidden" />
                   </node>
                 </node>
               </node>
@@ -8264,7 +8273,7 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="2iRfu4" id="4GJJ0fK8PR8" role="2iSdaV" />
+      <node concept="l2Vlx" id="LX2T033UvA" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="4GJJ0fK9oD2">
@@ -17072,6 +17081,82 @@
           <property role="CtIbK" value="RIGHT" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="LX2T030a0C">
+    <property role="3GE5qa" value="Definitions.Expressions.IfThenElse" />
+    <property role="TrG5h" value="IfThenElse_Editor1" />
+    <ref role="1XX52x" to="sc0n:vUxQDjKXAk" resolve="IfThenElse" />
+    <node concept="3EZMnI" id="LX2T030a0U" role="2wV5jI">
+      <node concept="3F0ifn" id="LX2T030a0V" role="3EZMnx">
+        <property role="3F0ifm" value="if" />
+      </node>
+      <node concept="3F1sOY" id="LX2T030a0W" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:5ZITH0PGZwj" resolve="condition" />
+      </node>
+      <node concept="3F0ifn" id="LX2T030a0X" role="3EZMnx">
+        <property role="3F0ifm" value="then" />
+      </node>
+      <node concept="3F1sOY" id="LX2T030a0Y" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:5ZITH0PGZwl" resolve="then" />
+      </node>
+      <node concept="3F0ifn" id="LX2T030a0Z" role="3EZMnx">
+        <property role="3F0ifm" value="else" />
+      </node>
+      <node concept="3F1sOY" id="LX2T030a10" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:5ZITH0PGZwo" resolve="else" />
+      </node>
+      <node concept="2iRfu4" id="LX2T030a11" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="LX2T030a1a">
+    <property role="3GE5qa" value="Definitions.Expressions.IfThenElse" />
+    <property role="TrG5h" value="IfThenElse_Editor2" />
+    <ref role="1XX52x" to="sc0n:vUxQDjKXAk" resolve="IfThenElse" />
+    <node concept="3EZMnI" id="LX2T030a1l" role="2wV5jI">
+      <node concept="3EZMnI" id="LX2T030a1s" role="3EZMnx">
+        <node concept="VPM3Z" id="LX2T030a1u" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="LX2T030a1A" role="3EZMnx">
+          <property role="3F0ifm" value="if" />
+        </node>
+        <node concept="3F1sOY" id="LX2T030a1G" role="3EZMnx">
+          <ref role="1NtTu8" to="sc0n:5ZITH0PGZwj" resolve="condition" />
+        </node>
+        <node concept="2iRfu4" id="LX2T030a1x" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="LX2T030a1X" role="3EZMnx">
+        <node concept="VPM3Z" id="LX2T030a1Z" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="LX2T030a21" role="3EZMnx">
+          <property role="3F0ifm" value=" " />
+        </node>
+        <node concept="3F0ifn" id="LX2T030a2f" role="3EZMnx">
+          <property role="3F0ifm" value="then" />
+        </node>
+        <node concept="3F1sOY" id="LX2T030a2n" role="3EZMnx">
+          <ref role="1NtTu8" to="sc0n:5ZITH0PGZwl" resolve="then" />
+        </node>
+        <node concept="2iRfu4" id="LX2T030a22" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="LX2T030a2D" role="3EZMnx">
+        <node concept="VPM3Z" id="LX2T030a2F" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="LX2T030a2H" role="3EZMnx">
+          <property role="3F0ifm" value=" " />
+        </node>
+        <node concept="3F0ifn" id="LX2T030a31" role="3EZMnx">
+          <property role="3F0ifm" value="else" />
+        </node>
+        <node concept="3F1sOY" id="LX2T030a39" role="3EZMnx">
+          <ref role="1NtTu8" to="sc0n:5ZITH0PGZwo" resolve="else" />
+        </node>
+        <node concept="2iRfu4" id="LX2T030a2I" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="LX2T030a1o" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -129,7 +129,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5PvAQDIVr5B" role="1TKVEl">
       <property role="IQ2nx" value="6728267249744720231" />
-      <property role="TrG5h" value="hidden" />
+      <property role="TrG5h" value="_hidden" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="PrWs8" id="3PPtPKL4EZD" role="PzmwI">
@@ -476,6 +476,11 @@
     <property role="34LRSv" value="if" />
     <property role="R4oN_" value="If expression." />
     <ref role="1TJDcQ" node="5ZITH0PGXRI" resolve="TopExpression" />
+    <node concept="1TJgyi" id="LX2T0302z5" role="1TKVEl">
+      <property role="IQ2nx" value="899888213697505477" />
+      <property role="TrG5h" value="_useMultiline" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="5ZITH0PGZwj" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988862995" />
       <property role="20lmBu" value="aggregation" />

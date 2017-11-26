@@ -1022,6 +1022,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("BaseFrege.structure.TopExpression", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5feee6d035b3ddeeL);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786836");
+    b.prop("_useMultiline", 0xc7d0b90030028c5L, "899888213697505477");
     b.aggregate("condition", 0x5feee6d035b3f813L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8d7L).optional(false).ordered(true).multiple(false).origin("6912716259988862995").done();
     b.aggregate("then", 0x5feee6d035b3f815L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8d7L).optional(false).ordered(true).multiple(false).origin("6912716259988862997").done();
     b.aggregate("else", 0x5feee6d035b3f818L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8d7L).optional(false).ordered(true).multiple(false).origin("6912716259988863000").done();
@@ -1047,7 +1048,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.parent(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53091a40f7add1f5L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/574920793184786551");
-    b.prop("hidden", 0x5d5f9b6a6eedb167L, "6728267249744720231");
+    b.prop("_hidden", 0x5d5f9b6a6eedb167L, "6728267249744720231");
     b.associate("module", 0x3d75775c30a5a46eL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d830L).optional(false).origin("4428577046425609326").done();
     b.aggregate("ah", 0x76d2ad9a0d6513caL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3d75775c30a60966L).optional(true).ordered(true).multiple(false).origin("8562096718746031050").done();
     b.aggregate("items", 0x3f5c5828a388ab5cL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a389112dL).optional(true).ordered(true).multiple(false).origin("4565621053812419420").done();
