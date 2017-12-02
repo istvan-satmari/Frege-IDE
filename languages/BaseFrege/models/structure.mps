@@ -1378,6 +1378,9 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="vUxQDjKXyv" resolve="Definition" />
     </node>
+    <node concept="PrWs8" id="LX2T03m0ty" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3lPLyUBVjs8">
     <property role="EcuMT" value="3852202959973463816" />
