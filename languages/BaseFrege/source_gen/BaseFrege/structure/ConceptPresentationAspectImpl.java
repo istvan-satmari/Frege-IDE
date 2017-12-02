@@ -9,8 +9,8 @@ import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private final ConceptPresentation props_AIOperator = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AIVarid = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_AIOperator = new ConceptPresentationBuilder().shortDesc("References an operator for annotation.").create();
+  private final ConceptPresentation props_AIVariable = new ConceptPresentationBuilder().shortDesc("References a variable for annotation.").create();
   private final ConceptPresentation props_Annotation = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AnnotationItem = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ApplicationEntity = new ConceptPresentationBuilder().shortDesc("An entity to derive the application from.").create();
@@ -178,8 +178,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     switch (structureDescriptor.internalIndex(c)) {
       case LanguageConceptSwitch.AIOperator:
         return props_AIOperator;
-      case LanguageConceptSwitch.AIVarid:
-        return props_AIVarid;
+      case LanguageConceptSwitch.AIVariable:
+        return props_AIVariable;
       case LanguageConceptSwitch.Annotation:
         return props_Annotation;
       case LanguageConceptSwitch.AnnotationItem:

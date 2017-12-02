@@ -141,9 +141,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
-        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
-      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -833,22 +830,17 @@
                           <ref role="3cqZAo" node="30ixEdPjQUD" resolve="reserved" />
                         </node>
                         <node concept="3JPx81" id="30ixEdPk0ho" role="2OqNvi">
-                          <node concept="2OqwBi" id="30ixEdPk44S" role="25WWJ7">
-                            <node concept="2OqwBi" id="30ixEdPk3b6" role="2Oq$k0">
-                              <node concept="1PxgMI" id="30ixEdPk2JV" role="2Oq$k0">
-                                <node concept="chp4Y" id="30ixEdPk2ST" role="3oSUPX">
-                                  <ref role="cht4Q" to="sc0n:3Xsm2yzykUU" resolve="AIVarid" />
-                                </node>
-                                <node concept="37vLTw" id="30ixEdPk0m4" role="1m5AlR">
-                                  <ref role="3cqZAo" node="30ixEdPjY5E" resolve="it" />
-                                </node>
+                          <node concept="2OqwBi" id="30ixEdPk3b6" role="25WWJ7">
+                            <node concept="1PxgMI" id="30ixEdPk2JV" role="2Oq$k0">
+                              <node concept="chp4Y" id="30ixEdPk2ST" role="3oSUPX">
+                                <ref role="cht4Q" to="sc0n:3Xsm2yzykUU" resolve="AIVariable" />
                               </node>
-                              <node concept="3TrEf2" id="30ixEdPk3uL" role="2OqNvi">
-                                <ref role="3Tt5mk" to="sc0n:3Xsm2yzykUV" resolve="value" />
+                              <node concept="37vLTw" id="30ixEdPk0m4" role="1m5AlR">
+                                <ref role="3cqZAo" node="30ixEdPjY5E" resolve="it" />
                               </node>
                             </node>
-                            <node concept="3TrcHB" id="30ixEdPk4qm" role="2OqNvi">
-                              <ref role="3TsBF5" to="sc0n:7Cxf1w4AonM" resolve="value" />
+                            <node concept="2qgKlT" id="5d6A1kNI9eY" role="2OqNvi">
+                              <ref role="37wK5l" to="yq4j:5d6A1kNI6ji" resolve="getName" />
                             </node>
                           </node>
                         </node>
@@ -861,7 +853,7 @@
                     </node>
                     <node concept="1mIQ4w" id="30ixEdPk1qi" role="2OqNvi">
                       <node concept="chp4Y" id="30ixEdPk1x5" role="cj9EA">
-                        <ref role="cht4Q" to="sc0n:3Xsm2yzykUU" resolve="AIVarid" />
+                        <ref role="cht4Q" to="sc0n:3Xsm2yzykUU" resolve="AIVariable" />
                       </node>
                     </node>
                   </node>
@@ -1968,61 +1960,6 @@
               <node concept="Rh6nW" id="LX2T036Ofb" role="1bW2Oz">
                 <property role="TrG5h" value="it" />
                 <node concept="2jxLKc" id="LX2T036Ofc" role="1tU5fm" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="LX2T036Ofd" role="3cqZAp" />
-      <node concept="3SKdUt" id="LX2T036Q0o" role="3cqZAp">
-        <node concept="3SKdUq" id="LX2T036Q0q" role="3SKWNk">
-          <property role="3SKdUp" value="There must be at least 1 function definition" />
-        </node>
-      </node>
-      <node concept="3clFbJ" id="LX2T036QIV" role="3cqZAp">
-        <node concept="3clFbS" id="LX2T036QIX" role="3clFbx">
-          <node concept="2MkqsV" id="LX2T036Yw2" role="3cqZAp">
-            <node concept="Xl_RD" id="LX2T036Ywh" role="2MkJ7o">
-              <property role="Xl_RC" value="Must contain at least 1 function definition." />
-            </node>
-            <node concept="1YBJjd" id="LX2T036Yws" role="2OEOjV">
-              <ref role="1YBMHb" node="LX2T036Oe1" resolve="letDefinitions" />
-            </node>
-          </node>
-        </node>
-        <node concept="3fqX7Q" id="LX2T036ZCC" role="3clFbw">
-          <node concept="2OqwBi" id="LX2T036ZCE" role="3fr31v">
-            <node concept="2OqwBi" id="LX2T036ZCF" role="2Oq$k0">
-              <node concept="1YBJjd" id="LX2T036ZCG" role="2Oq$k0">
-                <ref role="1YBMHb" node="LX2T036Oe1" resolve="letDefinitions" />
-              </node>
-              <node concept="3Tsc0h" id="LX2T036ZCH" role="2OqNvi">
-                <ref role="3TtcxE" to="sc0n:6rUjWpoauRz" resolve="letDefs" />
-              </node>
-            </node>
-            <node concept="2HwmR7" id="LX2T0371CS" role="2OqNvi">
-              <node concept="1bVj0M" id="LX2T0371CU" role="23t8la">
-                <node concept="3clFbS" id="LX2T0371CV" role="1bW5cS">
-                  <node concept="3clFbF" id="LX2T0371CW" role="3cqZAp">
-                    <node concept="2OqwBi" id="LX2T0371RY" role="3clFbG">
-                      <node concept="2OqwBi" id="LX2T0371RZ" role="2Oq$k0">
-                        <node concept="37vLTw" id="LX2T0371S0" role="2Oq$k0">
-                          <ref role="3cqZAo" node="LX2T0371D3" resolve="it" />
-                        </node>
-                        <node concept="2yIwOk" id="LX2T0371S1" role="2OqNvi" />
-                      </node>
-                      <node concept="2Zo12i" id="LX2T0371S2" role="2OqNvi">
-                        <node concept="chp4Y" id="LX2T0372fY" role="2Zo12j">
-                          <ref role="cht4Q" to="sc0n:4nqjXk6i7v7" resolve="FunctionDefinition" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="Rh6nW" id="LX2T0371D3" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="LX2T0371D4" role="1tU5fm" />
-                </node>
               </node>
             </node>
           </node>

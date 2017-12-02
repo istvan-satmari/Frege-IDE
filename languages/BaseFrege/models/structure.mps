@@ -1105,20 +1105,22 @@
   <node concept="1TIwiD" id="3Xsm2yzykUU">
     <property role="EcuMT" value="4565621053812461242" />
     <property role="3GE5qa" value="Definitions.Annotation" />
-    <property role="TrG5h" value="AIVarid" />
+    <property role="TrG5h" value="AIVariable" />
+    <property role="R4oN_" value="References a variable for annotation." />
     <ref role="1TJDcQ" node="3Xsm2yzykUT" resolve="AnnotationItem" />
     <node concept="1TJgyj" id="3Xsm2yzykUV" role="1TKVEi">
       <property role="IQ2ns" value="4565621053812461243" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Cxf1w4Aony" resolve="NodeVARID" />
+      <ref role="20lvS9" node="4GJJ0fK9oCL" resolve="VariableReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="3Xsm2yzykVa">
     <property role="EcuMT" value="4565621053812461258" />
     <property role="3GE5qa" value="Definitions.Annotation" />
     <property role="TrG5h" value="AIOperator" />
+    <property role="R4oN_" value="References an operator for annotation." />
     <ref role="1TJDcQ" node="3Xsm2yzykUT" resolve="AnnotationItem" />
     <node concept="1TJgyj" id="13DUwHFVzGx" role="1TKVEi">
       <property role="IQ2ns" value="1218762508956744481" />
