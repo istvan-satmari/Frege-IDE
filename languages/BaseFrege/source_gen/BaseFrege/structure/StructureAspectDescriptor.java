@@ -1777,7 +1777,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("BaseFrege.structure.Simpletype", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f1L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/2680527376095722866");
-    b.aggregate("tpyeVariable", 0x253325724ee53d73L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f4L).optional(false).ordered(true).multiple(false).origin("2680527376095722867").done();
+    b.aggregate("typeVariable", 0x253325724ee53d73L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x76d2ad9a0d65e9f4L).optional(false).ordered(true).multiple(false).origin("2680527376095722867").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTypeFunction() {

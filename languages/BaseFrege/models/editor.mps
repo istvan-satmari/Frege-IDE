@@ -15167,7 +15167,7 @@
     <property role="3GE5qa" value="Definitions.Types" />
     <ref role="1XX52x" to="sc0n:2kN9n9eTjPM" resolve="TypeB" />
     <node concept="3F1sOY" id="2kN9n9eTjQg" role="2wV5jI">
-      <ref role="1NtTu8" to="sc0n:2kN9n9eTjPN" resolve="tpyeVariable" />
+      <ref role="1NtTu8" to="sc0n:2kN9n9eTjPN" resolve="typeVariable" />
     </node>
   </node>
   <node concept="3p36aQ" id="2kN9n9eTlpM">
@@ -15216,7 +15216,7 @@
                       <ref role="3cqZAo" node="2kN9n9eTrUp" resolve="tb" />
                     </node>
                     <node concept="3TrEf2" id="2kN9n9eTsLC" role="2OqNvi">
-                      <ref role="3Tt5mk" to="sc0n:2kN9n9eTjPN" resolve="tpyeVariable" />
+                      <ref role="3Tt5mk" to="sc0n:2kN9n9eTjPN" resolve="typeVariable" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="2kN9n9eTtqp" role="2OqNvi">
@@ -15241,7 +15241,7 @@
           <node concept="3clFbS" id="2kN9n9eTlxd" role="2VODD2">
             <node concept="3SKdUt" id="2kN9n9eTkpD" role="3cqZAp">
               <node concept="3SKdUq" id="2kN9n9eTkpE" role="3SKWNk">
-                <property role="3SKdUp" value="It is possible to use TypeB only inside annotations" />
+                <property role="3SKdUp" value="It is possible to use TypeB only inside annotations (or expression annotations)" />
               </node>
             </node>
             <node concept="3clFbJ" id="2kN9n9eUUlU" role="3cqZAp">
@@ -15252,18 +15252,33 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="2kN9n9eUXm9" role="3clFbw">
-                <node concept="2OqwBi" id="2kN9n9eUWj$" role="2Oq$k0">
-                  <node concept="1yR$tW" id="2kN9n9eUW6l" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="2kN9n9eUWFs" role="2OqNvi">
-                    <node concept="1xMEDy" id="2kN9n9eUWFu" role="1xVPHs">
-                      <node concept="chp4Y" id="2kN9n9eUWWd" role="ri$Ld">
-                        <ref role="cht4Q" to="sc0n:vUxQDjKXz0" resolve="Annotation" />
+              <node concept="1Wc70l" id="5d6A1kO2lvL" role="3clFbw">
+                <node concept="2OqwBi" id="5d6A1kO2n8c" role="3uHU7w">
+                  <node concept="2OqwBi" id="5d6A1kO2m77" role="2Oq$k0">
+                    <node concept="1yR$tW" id="5d6A1kO2lJw" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="5d6A1kO2mvl" role="2OqNvi">
+                      <node concept="1xMEDy" id="5d6A1kO2mvn" role="1xVPHs">
+                        <node concept="chp4Y" id="5d6A1kO2mKj" role="ri$Ld">
+                          <ref role="cht4Q" to="sc0n:vUxQDjKXzn" resolve="Expression" />
+                        </node>
                       </node>
                     </node>
                   </node>
+                  <node concept="3w_OXm" id="5d6A1kO2nwW" role="2OqNvi" />
                 </node>
-                <node concept="3w_OXm" id="2kN9n9eUYFi" role="2OqNvi" />
+                <node concept="2OqwBi" id="2kN9n9eUXm9" role="3uHU7B">
+                  <node concept="2OqwBi" id="2kN9n9eUWj$" role="2Oq$k0">
+                    <node concept="1yR$tW" id="2kN9n9eUW6l" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="2kN9n9eUWFs" role="2OqNvi">
+                      <node concept="1xMEDy" id="2kN9n9eUWFu" role="1xVPHs">
+                        <node concept="chp4Y" id="2kN9n9eUWWd" role="ri$Ld">
+                          <ref role="cht4Q" to="sc0n:vUxQDjKXz0" resolve="Annotation" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3w_OXm" id="2kN9n9eUYFi" role="2OqNvi" />
+                </node>
               </node>
             </node>
             <node concept="3cpWs6" id="2kN9n9eTmtJ" role="3cqZAp">

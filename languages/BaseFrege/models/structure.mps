@@ -2341,7 +2341,7 @@
     <node concept="1TJgyj" id="2kN9n9eTjPN" role="1TKVEi">
       <property role="IQ2ns" value="2680527376095722867" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tpyeVariable" />
+      <property role="20kJfa" value="typeVariable" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7riFpCdpuBO" resolve="TypeVariable" />
     </node>
