@@ -186,6 +186,9 @@
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
+        <property id="1238091709220" name="labelName" index="1413C4" />
+      </concept>
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
       <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="7580468736840446506" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_model" flags="nn" index="1rpKSd" />
@@ -17475,6 +17478,95 @@
       <node concept="2kknPJ" id="5d6A1kNErdu" role="2klrvf">
         <ref role="2ZyFGn" to="sc0n:4GJJ0fK9oCL" resolve="VariableReference" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5d6A1kOe3bh">
+    <property role="3GE5qa" value="TypeNodes" />
+    <ref role="1XX52x" to="sc0n:5d6A1kOatbK" resolve="ListTypeNode" />
+    <node concept="3EZMnI" id="5d6A1kOe3bj" role="2wV5jI">
+      <node concept="3F0ifn" id="5d6A1kOe3bt" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11LMrY" id="5d6A1kOe3bG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="5d6A1kOe3cl" role="3F10Kt">
+          <property role="1413C4" value="listBrackets" />
+        </node>
+        <node concept="VechU" id="5d6A1kOgeiP" role="3F10Kt">
+          <property role="Vb096" value="DARK_MAGENTA" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5d6A1kOe3bX" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:5d6A1kOatbL" resolve="itemsType" />
+      </node>
+      <node concept="3F0ifn" id="5d6A1kOe3bA" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="5d6A1kOe3bJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="5d6A1kOe3cw" role="3F10Kt">
+          <property role="1413C4" value="listBrackets" />
+        </node>
+        <node concept="VechU" id="5d6A1kOgeoh" role="3F10Kt">
+          <property role="Vb096" value="DARK_MAGENTA" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5d6A1kOe3bm" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5d6A1kOhZyk">
+    <property role="3GE5qa" value="TypeNodes" />
+    <ref role="1XX52x" to="sc0n:5d6A1kOhZxM" resolve="FunctionTypeNode" />
+    <node concept="3EZMnI" id="5d6A1kOhZym" role="2wV5jI">
+      <node concept="3F1sOY" id="5d6A1kOhZyw" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:5d6A1kOhZxQ" resolve="currentArgumentType" />
+      </node>
+      <node concept="3F0ifn" id="5d6A1kOi1XW" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+        <node concept="VechU" id="5d6A1kOi1Yo" role="3F10Kt">
+          <property role="Vb096" value="DARK_MAGENTA" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5d6A1kOi1Y9" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:5d6A1kOhZxN" resolve="nextArgument" />
+      </node>
+      <node concept="2iRfu4" id="5d6A1kOhZyp" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5d6A1kOnZ1H">
+    <property role="3GE5qa" value="TypeNodes" />
+    <ref role="1XX52x" to="sc0n:5d6A1kOnZ1g" resolve="TupleTypeNode" />
+    <node concept="3EZMnI" id="5d6A1kOnZ1J" role="2wV5jI">
+      <node concept="3F0ifn" id="5d6A1kOnZ1T" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11LMrY" id="5d6A1kOnZ2h" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="5d6A1kOnZ2i" role="3F10Kt">
+          <property role="1413C4" value="listBrackets" />
+        </node>
+        <node concept="VechU" id="5d6A1kOnZ2j" role="3F10Kt">
+          <property role="Vb096" value="DARK_MAGENTA" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5d6A1kOnZ2F" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="sc0n:5d6A1kOnZ1h" resolve="items" />
+        <node concept="2iRfu4" id="5d6A1kOnZ2H" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="5d6A1kOnZ29" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="5d6A1kOnZ2z" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="5d6A1kOnZ2r" role="3F10Kt">
+          <property role="1413C4" value="listBrackets" />
+        </node>
+        <node concept="VechU" id="5d6A1kOnZ2s" role="3F10Kt">
+          <property role="Vb096" value="DARK_MAGENTA" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="5d6A1kOnZ1M" role="2iSdaV" />
     </node>
   </node>
 </model>
