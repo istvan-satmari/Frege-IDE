@@ -1,0 +1,329 @@
+Editor akcie transformacie a substitucie pre function-definition - pravu stranu (t.j. expression)
+Vychadza z povodneho dokumentu Editor.txt, pricom ale pridava vlastnu analyzu a postup prace
+-------------------------------------------------------------------------------------------------
+- este prejst tieto dokumenty a pozriet, ci nieco netreba z jednotlivych TODO:
+	- Analysis.txt
+	- Co chceme implementovat.txt
+	- Editor.txt
+
+
+
+
+
+- typovy system
+	- funkcie a aplikacie funkcii
+		f x y = x + y
+		- potom f je funkcia prijimajuca 2 argumenty
+		- "x + y" obmedzuje moznosti typu pre x, kde argument x musi byt rovnakeho typu
+		
+		FDGrouped
+		- FDGCEName - PVarName - NodeVarid (= f)
+		- Definition (= matchers)
+			- FDAssignment
+				- PatternWrapper
+					- PatternFunctionInGroup
+						- PVarName - NodeVarid (= x)
+						- PVarName - NodeVarid (= y)
+				- Expression
+					- BinaryExpressions
+						- FunctionApplication - VariableReference => PVarName - NodeVarid (= x)
+						- BinExPart
+							- OperatorReference => NodeOperator (= +)
+							- FunctionApplication - VariableReference => PVarName - NodeVarid (= y)
+							
+							
+		- pokial sa dotazujem na typ samotnej funkcie (= f), tak vratim typ:
+			- funkcia prijimajuca argumenty typeof(1. argument), typeof(2. argument)
+			- vracajuca typ typeof(Expression) (teda pravej casti definicie)
+			
+		- zostava ziskat typ jednotlivych argumentov a operatorov
+			- operator
+				- (je vlastne funkcia)
+				- predpokladajme, ze uz mame urceny typ funkcie plus x y = !!implicit
+				- potom operator +:
+				x + y = plus x y
+				- mal by byt odvodeny podobnou schemou, t.j. typeof(operatoru plus) :==: typeof(pravej strany vyrazu)
+				- cize vrati funkciu prijimajucu 2 argumenty typu Int vracajucu Int
+			
+			- vyrazu z jednotlivych operatorov
+				g x y z = x [+ y] [* z]
+				- prejdeme operatory a berieme podla priority (fixity asi moze byt iba v ramci toho isteho modulu?)
+					- najprv ale bude treba prerozdelit na jednoduchsie casti, lebo [* z] je problematicky; treba to mat oddelene na [*] a [z]
+				- ziska typeof(*), dostane funkciu
+				- overi, ze ako aplikacia funkcie operatory [y] a [z] pasuju podla typov
+				- ziska vysledny typ a pokracuje dalej, az dokym nevyhodnoti tip celeho vyrazu
+				
+			- argumenty
+				g x y z = x + y * z
+				- zatial uvazujeme stale bez anotacie
+				- na pravej strane je aplikacia operatoru, podla toho sa urci tip argumentov
+				- nalavo mozno ziskat tip argumentov len za specialnych okolnosti (napr. v (x:xs) je jasne, ze xs je typu zoznam)
+				- pozor, nestaci
+					f (x:xs) = 1 + f xs
+					- mozno by mal vraciat cely PatternFunction funkcny typ...
+					- btw, toto nefunguje: (f x, g y) = (x + 1, y + 1), cize nejake starosti odpadaju
+				
+				
+				
+		- currying
+			f x y = x + y
+			g = f 1
+			- na pravej strane je jednoducho aplikacia funkcie, vieme typeof(f)
+			- overime, ze ide o aplikaciu funkcie (when concrete)
+			- ziskame a vratime novy typ s 1 argumentom menej
+		
+	
+		
+		
+		-----------------------------------
+		- PatternFunction, PatternFunctionInGroup, PatternOperator, PatternOperatorInGroup, PatternWrapper
+		
+		
+		https://confluence.jetbrains.com/display/MPSD33/Typesystem
+		- typ "any", alebo null
+		- typ Any (akykolvek typ ide dosadit do any, t.j. any je supertyp vsetkych typov)
+		
+		
+		
+		- pozor na typ 
+		- zatial vynechane:
+			PVarOperator
+			PVarName 
+			PVarWildcard
+			PConstructor
+			PListColon
+			PListVar
+			-- celkovo, jaka je navaznost na PatternFunction, PatternFunctionInGroup, ...atd, ktore prehlasuju, ze ide o typ funkcie? jak to dat dokopy?
+		
+		
+		
+		
+		
+		
+		- vsetky matchers musia obsahovat rovnaky pocet argumentov
+		- typy funkcii na najvyssej urovni musia byt rovnake (brane inferenciou podla vsetkych matcherov)
+		
+		
+	
+	
+	
+	
+	
+	TODO:
+		- vsetky aplikacie
+		- lambdy
+		- BinaryExpressions
+			- pozor - musi prejst algoritmom pre ziskanie priority operatorov!
+		
+		- Anotacie, patterny, referencie a dalsie
+			- Pattern tiez musi vraciat typ, ktory prijima
+		- Wildcard v patterne
+	
+		kontrola:
+		- PatternArgument musi vraciat typ
+		- Guards musi vraciat typ
+		- ImplicitDefinition asi nemusi mat ziaden typ
+	
+		- pozor, currying plati aj na konstruktory
+			data MaybeS a = JustS a | NothingSf
+			ff = JustS
+			gg = ff 1
+			
+			- pokial ale chapem spravne, tak na urovni patternov musi byt konstruktor pouzity so vsetkymi argumentami, t.j. nemozem mat:
+			f (Just) = ...
+	
+
+	---------------------------
+	- vytvorit inferenciu pri definicii funkcie
+		f x y = x + y
+		- f musi vraciat typ funkcie
+		- vytvorit koncept typu funkcie
+	
+	
+
+
+
+
+	- nemame tu polymorfizmus (zmienit sa do diplomky), cize situacia je jednoduchsia
+		
+	ff "a" "b" = false
+	ff 0 1 = false 		-- error!
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+- textgen
+	
+	ff x = if x > 0
+			then 1
+			else 0
+			
+	ff x = if { x > 0 } then { 1 } else { 0 }
+	  - je OK
+	
+	
+- dvojbodka na pravej strane definicie funkcie
+	f (x:xs) = x:x:xs
+	
+	
+	
+		
+- where
+	- do "case" tiez treba upravit pridavanie where casti
+	- v ramci case treba vediet nejak rozhodnut, ze ci ide o "pattern -> expression" alebo "expression to guards"
+
+	
+	- chcelo by to vediet v ramci function-definition forcenut hodenie na novy riadok, jak na to?
+	
+	- opravit LCQLet - povodne jedina polozka letDef bola typu LetDefinition, co mohla byt bud anotacia alebo function-definition
+		- cize treba povolit nieco z toho, ale zaroven musi ist editovat plynule, t.j. musi ist pouzit akoby slo o Definition
+	
+	- specialne spravit pre guards
+	- ostatni tiez musia zakladat scope
+
+
+STIHNUT POTIALTO
+--------------------------------------------------------
+
+	
+- konkretne priklady Frege programov
+	
+
+- upravit lambdu ako koncept aj po strankach transformacie
+	- pozor, neviem, co sa ocakava, ci to je pattern, alebo co...?
+	f x = \[] -> x + 1
+	- moze lambda nemat ziadnu premennu vo vyraze za "\"?
+	- taktiez scoping (lambda zaklada nove premenne, ktore mozu byt tiez referencovane)
+	
+
+
+- poriesit guards
+	- zaprve, pripomenme, ze podporujeme iba boolean guardov a ziadne pattern guardy ani nic podobne
+		- vid https://www.haskell.org/onlinereport/haskell2010/haskellch10.html pre kompletny reference
+	- jak teda moze vyzewrat guard podla gramatiky?
+		infixexp ::= 	lexp qop infixexp			-- operator
+						lexp
+		- je vlastne akykolvek expression, bez udania typu (anotacie)
+		- staci, ze je typu boolean
+	- otherwise musi byt samostatny koncept
+
+
+- poriesit case
+	head xs = case xs of
+		[] -> error "No head for empty lists!"
+		(x : _) -> x
+	- nalavo je PatternArgument
+	- napravo expression
+	strcmp s1 s2 = case (s1, s2) of
+		([], []) -> true
+		(s1:ss1, s2:ss2)
+			| toUpper s1 == toUpper s2 		= strcmp ss1 ss2
+			| otherwise						= false
+		_ -> false
+	- pokial sa napravo prida |, tak sa musia pouzit guardi
+	- cize incomplete-command pattern
+		- bud sa napise -> alebo |
+		- o tomto sa zmienit v diplomovke, pretoze tu to urobim inak, nez je to pri function definition
+			- tu vytvorim specialnu bunku v editore, kam sa bude toto zadavat, cize specialny koncept
+			- vyjadrime sa, ze existuju rozlicne pristupy a tu demonstrujeme ten druhy
+
+
+- opravit akcie a indentaciu pre let a scoping (let tiez poskytuje scope)
+	shortLinesOnly input =
+		let allLines = lines input
+			shortLines = filter (\line -> length line < 10) allLines
+			result = unlines shortLines
+		in  result
+	- analogicky s where, musi byt owrappovane definicia anotacie a function-definition
+	- vyriesit indentaciu
+
+
+- list-comprehension, akcie transformacie a scopes
+	- volime jednoduchy pristup, ze uzivatel musi sam korektne zvolit, co z 3 moznosti mieni zadefinovat (guard, assignment, let)
+	- po napisani ciarky sa musi pridat novy "comprehension"
+	- poriesit scopes
+	[ [ x, y, z ] | x <- [ 1, 2 ], y <- [ 3, 4 ], z <- [ 5, 6 ] ]
+	[ (c, z) | c <- str, isIn c ['A'..'Z'], let z = min a b]
+	- ked bude cas; menej prioritne
+
+
+- umoznit, aby sa dali referencovat nielen nodes z toho isteho modelu, ale aj z ineho
+	- musi ist pristupit k tymto nodes cez dependenciu
+	- napr. skeletonNode.model.module.dependencies
+
+
+- skontrolovat, ci sa korektne pouzivaju operatory
+	ff x y = Exemplar.(+) x y
+	ff x y = x `Exemplar.+` y
+		- ma to byt takto?
+	- ma ta zatvorka tam byt?
+
+
+- pri pisani () do prazdneho riadku vytvorime pattern
+	- na to, aby sme nieco pridali do zatvorky, musime najprv stlacit medzeru
+	- hodilo by sa ujednotit s principom pre export / import v hlavicke modulu
+
+
+- umoznit definovanie operatorov v tomto duchu: (***) a b = a * b
+	- upravit teda akcie transformacie
+	- slovne operatory neriesim (napr. `op`)
+	(***) a b = a * b
+	infixr 9 ***
+
+
+- premenne nesmu byt z rezervovanych slov
+	- 'if', 'then', 'else', 'let', 'in', 'case', 'of', ...
+
+
+- opravit vizualne nedobre spravene medzery dane editorom
+	
+
+- vizualne parovat zatvorky (aby sa vyznacili k sebe patriace)
+
+
+- kontrola, ci pocet argumentov sedi
+	- pri aplikacii konstruktoru
+		- konstruktor vzdy ocakava vsetky argumenty, t.j. ziadny currying tu nefunguje
+	- pri aplikacii funkcie (mensi, alebo zhodny pocet)
+		- pozor, toto je komplikovanejsie, pretoze aplikacia uzatvorkovaneho vyrazu moze fungovat ako funkcia
+	- aplikacia datatypov, napr. type Super = Maybe Int
+
+
+- neumoznit referencovat uz naloadovane kniznice
+	- (to prida tie iste funkcie do scopeu viackrat)
+	- neumoznit loadovat cokolvek viackrat
+	- pozor ale na reimport: "By default, every module implicitly imports Prelude"
+		- if you import declaration for the prelude, this turns off the implicit one
+		- thus, if you wanted (for example) to write a module that redefines zip: import Prelude hiding (zip)
+
+
+- neumoznit exportovat/importovat tu istu vec viackrat
+	- pozor, ze mozem importovat konstruktor viacerymi roznymi sposobmi
+	import mymodule.Exemplar (BinaryTree(Node), Node)
+
+
+- kontrola, ze nie su duplicitne mena
+	- premennych v patterne funkcii
+	- premennych v ramci lambdy
+		- tento priklad je zle (2x ta ista premenna "x"):
+		f x = \x -> x + 1
+	- mena funkcii
+	- konstruktory
+	- datatypy
+
+
+- list-range: polozky v range-i [1..9] musia byt nejakeho ordinalneho typu
+	- typy na zaciatku a konci sa musia zhodovat
+	- typy musia byt vsade rovnake
+	
+	
+- zmena zakladnych farieb a celkovo spravit to vizualne zaujimavejsie

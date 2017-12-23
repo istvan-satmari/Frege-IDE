@@ -1,0 +1,198 @@
+Väčšie, zatiaľ nenaimplementované, celky, podľa priority
+--------------------------------------------------------
+- (ku každému z nasledujúcich troch celkov by sa hodilo mať nejaký príklad)
+
+TRANSFORMÁCIE, EDITOR
+---------------------
+- akcie transformácie pravej strany definície funkcie
+	- určite dôležité, pretože predstavuje "jadro" celého IDE, čiže určité pohodlie pre užívateľa je nutné
+	- zároveň je však poriadne pracné
+	... = ((x == y) && !(x /= y)) || (yesno [(x, y) | x <- [1..10], y <- [1..15], x == y]) && (if true then true else false)
+	- jediné, čo by dávalo zmysel, je ignorovať niektoré "stavebné bloky" funkcie, ale to to IDE bude vyzerať dosť necelistvo
+
+- akcie transformácie pre vytvorenie patternov vo funkciách
+	- pravú stranu tu neriešim
+	f (x:xs) = ...
+	f [1, 2, 3] = ...
+
+- akcie transformácie pre postupné budovanie definition -> "function-definition" / "function-annotation"
+	f		-- môže byť oba
+	f x		-- function-definition, napr. f x = x*2
+	f,		-- function-annotation, napr.: f, g :: Int -> Int
+	
+	
+	
+	
+
+TYPOVÁ KONTROLA
+---------------
+- samotná typová kontrola funkcie
+	- pozostáva z veľkého množstva "stavebných blokov" a musí to celé prebublať správne nahor, aby sa určil typ funkcie
+	equals x y = (x == y) && !(x != y)
+		x 						- argument, určí sa typ na čo najvšeobecnejší, pokiaľ nie je vytvorená anotácia
+		y 						- dtto
+		(x == y)				- bool, pokiaľ platí, že x aj y majú inštanciu triedy Eq
+		(x != y)				- dtto
+		!(x != y)				- bool
+		(x == y) && !(x != y)	- bool
+		
+	- zákernejší príklad:
+	f :: Int -> Int -> ListOfStrings
+	f x y = (g x y) :-&& (h x y)
+		x						- argument; Int typ (odvodený z anotácie funkcie)
+		y						- dtto
+		(g x y)					- zaprvé, je funkcia g nadefinovaná? ak áno, je schopná prijímať argumenty typu Int, Int? jaký má return type?
+		(h x y)					- dtto
+		(g x y) :-&& (h x y)	- je operátor :-&& nadefinovaný? prijíma argumenty typu type(g x y), type(h x y)? jaký má return type?
+		(g x y) :-&& (h x y)	- je toto typu ListOfStrings? (kontrola voči anotácii funkcie)
+	
+	- currying:
+	f x y = x + y
+	g = f 1
+	h :: Int -> Int
+	h x = g x
+	
+	- jednotlivé bloky, ktoré prispievajú do typovej kontroly:
+		- if
+		- guards
+		- case
+		- lambda
+		- let (referencovanie)
+		- termy
+			- list
+			- tuple
+			- literal (char, string, int, double, boolean)
+			- premenná
+			- aplikácia funkcie / operátoru (binary expression)
+			- aplikácia konštruktoru
+			
+	- príklad pre aplikáciu konštruktoru:
+		data BinaryTree = Node Int (BinaryTree) (BinaryTree) | Null			-- definícia datatypu; uzol v binárnom strome môže byť len typu "Int" a jeho synovia musia byť typu "BinaryTree"
+			
+		g = Node 1 Null Null												-- použitie vo funkcii; OK
+		g = Node "abc" Null Null											-- použitie vo funkcii; chyba - prvý argument je nesprávneho typu - očakával "Int", dostal "String"
+		
+		data A = A (BinaryTree)												-- definícia nového vlastného datatypu
+		h = A Null															-- použitie vo funkcii; OK
+		h = A "abc"															-- použitie vo funkcii; chyba - prvý argument je nesprávneho typu - očakával "BinaryTree", dostal "String"
+		
+	- príklad pre list, pokiaľ uvažujeme list comprehension:
+		[ [ x, y, z ] | x <- [ 1, 2 ], y <- [ 3, 4 ], z <- [ 5, 6 ], x + y > 5 ]
+		- má vlastné typové kontroly
+		- "x + y > 5" ako boolean expression
+		- "y <- [ 3, 4 ]" ako pattern, t.j. napravo od "<-" musí byť list, naľavo "niečo rozumné", pravdepodobne pattern
+			- vyhovuje aj napr. (a, b) <- [1..20]
+
+- funkcia oproti svojej anotácii
+	f :: Int -> String
+
+	- môže sa kontrolovať na týchto úrovniach:
+	a) použitie danej funkcie
+		g = "Hello, " ++ (f 1) ++ "!"
+	
+	b) definícia danej funkcie
+		f 1 = "John"
+		f 2 = "Jane"
+		f x = "Unknown"
+	
+	- obsahuje veľa podpoložiek, základ je však skontrolovať oproti non-custom typom, čo zahŕňa podľa gramatiky:
+		- typeFunction: f :: (a -> b -> c) -> (a -> b)
+		- typeList: f :: [a] -> a
+		- typeTuple: f :: (a, b, c) -> (c, b, a)
+	- je to avšak o čosi komplikovanejšie, napr. aj jednoduché "f :: a -> b -> a" musí skontrolovať, že prvý argument funkcie a jej return type sú zhodné
+	
+	- ďalšie podpoložky:
+		- vlastné datatypy: f :: a -> Maybe a
+		- vlastné typy: f :: String -> Int -> ListOfStrings
+		- kontext (triedy + inštancie): f :: (Eq a) => a -> a -> Bool
+		
+		- príklad pre vlastný typ:
+		type ListOfStrings = [String]
+		
+		f :: ListOfStrings -> Int
+		f x = 1										-- OK, premenná "x" matchuje čokoľvek
+		f 1 = 0										-- chyba, prvý očakávaný argument je "[String]", avšak dostal "Int"	
+
+- trieda + inštancia
+	- pár príkladov:
+	class YesNo a where
+		yesno :: a -> Bool
+		
+	instance YesNo Int where		-- inštancia pre ľubovoľný typ, napr. aj podivnosti tvaru [a -> b -> (a, b -> c)] -> Maybe (a -> b)
+		yesno 0 = false
+		yesno _ = true
+		
+	instance YesNo [a] where
+		yesno [] = false
+		yesno _  = true
+	
+	f :: (YesNo a) => a -> a -> Bool
+	f x y = (yesno x) && (yesno y)
+	
+	
+	instance (Eq m) => Eq (Maybe m) where
+		Just x  == Just y  	= x == y
+		Nothing == Nothing 	= true
+		_       == _       	= false
+		
+	f :: (Eq a) => a -> a -> Int
+	f a b = if a == b then 1 else 0
+	data AB = A | B
+	g = f A A					-- chyba, datatyp "AB" nie je porovnateľný (nebola vytvorená inštancia triedy Eq), avšak očakával prvé dva argumenty porovnateľné
+	h = f 1 0					-- OK	
+	i = f (Just 7) (Nothing)	-- OK, vytvorili sme inštanciu
+		
+	- pokiaľ mi je známe, uplatňuje sa výlučne pri anotáciách (nie len funkcií, anotovať možno ľubovoľné položky v definícii, viď príklad: "f = (\a -> a*a :: Int) 7")
+	- použitie danej funkcie či operátoru z nejakej triedy sa potom riadi, či existuje pre argument inštancia
+		f :: (YesNo a) => a -> a -> Bool
+		f x y = (yesno x) && (yesno y)
+		
+		g = f (\x -> x*2) (\y -> y*2)	-- chyba, prvý argument "f" je "(\x -> x*2)", čo je dedukovaný typ (Int -> Int), avšak očakával nejakú inštanciu triedy YesNo
+										-- YesNo má však iba tieto inštancie: "Int", "[a]"		
+	- vyzerá byť netriviálne náročné (nehovoriac o pracnosti)
+		
+- detekcia redefinition
+	- asi nebudem implementovať
+	(a : b : c : _) = [1, 2, 3, 4, 5, 6, 7]
+	a = 10										-- chyba, "a" už je definované
+	
+	a (1, 2) = 1
+	a [1] = 0									-- chyba, "a" už je definované a prvý argument má byť "tuple", nie "list"
+	
+	a (1, 2) = 1
+	a (0, 1) = 2								-- OK
+	
+	- pozor, polymorfizmus na úrovni "trieda + inštancia" už ale funguje
+	
+- detekcia zhodných patternov tej istej funkcie
+	- asi nebudem implementovať
+	f a [b, c] = 1
+	f i [j, k] = 2		-- chyba, pattern už bol použitý (akurát s inými názvami premenných)
+	
+	f a [b, c] = 1
+	f a [b] = 1			-- OK
+	
+	
+	
+REFERENCOVANIE, KONTEXTOVÁ NÁPOVEDA
+-----------------------------------
+- zatiaľ najmenej prebádaná časť (určite tu nie je vypísané všetko)
+
+- referencovanie vecí z let, where
+	- tu ide hlavne o ohraničenie scope
+	f x y = let				-- t.j. vracia (x+y)-2*(x+y) = -(x+y)
+		a = x+y
+		b = 2*a				-- dovidí na "a"
+		in
+		a-b					-- dovidí na položky z "let" a na všetko okolo funkcie "f"
+
+- referencovanie typov na úrovni "typovania" + tried na úrovni "kontextu"
+	f :: (Eq a) => Int -> String -> (a -> a)
+	f :: (CustomClass a) => a -> Maybe a
+	f :: ListOfStrings -> Int
+
+- referencovanie naimportovaných položiek
+	- kombinácia module + import
+	module MyBigModule (module Data.Set, f) where ...
+	import MyBigModule ...
+	- t.j. možno sa odkazovať len na "Data.Set" (samostatný balík) a "f" (jediná funkcia)

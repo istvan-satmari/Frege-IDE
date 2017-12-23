@@ -1,0 +1,324 @@
+// Inferencia pre literal, kde je to priamociare
+inference rule typeof_MoneyLiteral {
+	// Declare "moneyLiteral" being a substitute term for the "MoneyLiteral" concept node
+	applicable for concept = MoneyLiteral as moneyLiteral
+	applicable always
+	overrides false
+
+	do {
+		// We simply declare that the type of a "moneyLiteral" is "Money" and that is all
+		typeof(moneyLiteral) :==: <Money>;
+	}
+}
+
+
+
+// Inferencia pre deklaraciu typu
+rule typeof_Variable {
+	applicable for concept = Variable as var
+	overrides false
+
+	do {
+		// we declare that the type of "var" is ".type" (as a child of the Variable concept)
+		typeof(var) :==: typeof(var.type);
+
+		// we want to ensure the type of "var" is ">=" the type of its expression (e.g. "double >= int")
+		infer typeof(var) :>=: typeof(var.expr);
+	}
+}
+
+----------------------------------------------
+
+
+// Inferencia typu kolekcie
+rule typeof_ForEachStatement {
+  // We have our "foreach" node
+  applicable for concept = ForEachStatement as forEachStatement
+  applicable always
+  overrides false
+ 
+  do {
+    // The "ForEachVariable" is "x"
+    node<ForEachVariable> variable = forEachStatement.variable;
+
+	// The "Expression" is "collection-of-x". You could consider something like this: databaseObject.GetPeople().GetAge(), which could return ages of all people in an array.
+    node<Expression> inputSequence = forEachStatement.inputSequence;
+
+    if (inputSequence.isNotNull && variable.isNotNull) {
+        var elementType;
+        // So the type of "x" is derived from the type of the "collection-of-x".
+		// It is a declarative approach, i.e. we declare the type of "x" is as if part of an "x[]" ("%(elementType)%[]"),
+		// or part of an "sequence of x" ("sequence<%(elementType)%>").
+        infer <join( sequence<%(elementType)%> | %(elementType)%[] )> :>=: typeof(inputSequence);
+        typeof(variable) :==: elementType;
+    }
+  }
+
+
+
+------------------------------------------
+// Ked uz mame odniekial vypocitany typ "expression.left", ulozime is ho ako "leftType"
+when concrete (typeof(expression.left) as leftType) {
+	// Dtto pre "expression.right"
+	when concrete (typeof(expression.right) as rightType) {
+		// Ziskaj typ operacie "expression" na operandoch "leftType" a "rightType" (vid nizsie pre definovanie pravidiel pre operacie)
+		node<> opType = operation type(expression, leftType, rightType);
+		if (opType.isNotNull) {
+			typeof(expression) :==: opType;
+		} else {
+			error "Operator '" + expression.operator + "' cannot be applied to '" + leftType + "', '" + rightType + "'" -> expression;
+		}
+	}
+}
+
+It may seem that one just may write typeof(some expression), and then analyze this type.
+The problem is, however, that one can't just inspect a result of "typeof" expression because it may be a type variable at that moment.
+Although a type variable usually will become a concrete type at some moment, it can't be guaranteed that it is concrete in some given
+point of your typesystem code.
+
+
+
+// Definovanie pravidiel pre operacie
+overloaded operations rules MoneyLang_Operations
+
+operation concepts: PlusExpression
+left operand type: <Money> is exact: true
+right operand type: <Money> is exact: true
+is applicable:
+<no isApplicable>
+operation type:
+(operation, leftOperandType, rightOperandType)->node<> {
+  return <Money>;
+}
+
+
+
+
+// Replacement pravidlo pre umoznenie priradenia null do cohokolvek, co nie je primitivny typ
+replacement rule any_type_supertypeof_nulltype
+ 
+// The concept is called "NullType". This is applicable for any concept that extends the "BaseConcept" (so pretty much anything)
+applicable for  concept = NullType as nullType <: concept = BaseConcept as baseConcept
+ 
+custom condition: ()->boolean {
+  !(baseConcept.isInstanceOf(RuntimeTypeVariable));
+}
+ 
+rule {
+  // The only exception are primitive types, to which this rule is not applicable.
+  if (baseConcept.isInstanceOf(PrimitiveType) || baseConcept.isInstanceOf(PrimitiveTypeDescriptor)) {
+    error "null type is not a subtype of primitive type" -> equationInfo.getNodeWithError();
+  }
+}
+
+
+
+
+// Subtyping, kde urcime, ze float je abstraktnejsi, nez long
+// Analogiou je supertyping rule
+subtyping rule long_extends_float {
+  weak = false
+  // We apply this to "LongType"
+  applicable for concept = LongType as longType
+
+  rule {
+	// Pravidlo hovori, ze ked pracujeme s :<=:, tak Long sa moze povazovat za Float
+	// Pre :=>: vsak pravidlo nemame, museli by sme urcit supertyping rule
+    return <float>;
+  }
+}
+
+
+// Dodatky
+isSubtype(<int> :< exprType);
+isStrongSubtype(<int> :<< exprType);
+
+
+
+----------------------
+typeof(integerLiteral) :==: <    >;
+- to napravo je "quotation"
+- do neho treba umiestnin koncept "...", ktory je novy a dedi od Type a nastavit nejaky alias
+- aby mohol dedit od type, treba do used languages urcit mps.baseLanguage a je nutne zaciarknut "extends"
+	- used languages - alt enter na cely jazyk, nie na editor ani typesystem
+- pokial stale nevidime medzi dotupnymi, je mozne, ze treba skompilovat (ctrl + f9)
+- (treba zaroven pridat hlavny jazyk do dependencies v ramci typesystem)
+
+- treba upozornit, ze quotation je len analogia tohto zapisu:
+node<IntValue> v = new node<IntValue>;
+v.value = "7";
+
+- analogia pre quotation (akoby sme priamo pouzivali editor daneho nodeu):
+<7>
+	- v quotation je mozne pridavat tzv. antiquotation, aby sme vyuzili veci z run-timeu:
+	<%(1+6)%>
+
+----------------------
+double :>=: int
+- t.j. double je abstraktnejsi, nez int
+
+
+----------------------
+- pravidla staci nastavit a ono uz si samo checkuje, pokial najde nejake nezrovnalosti
+
+
+----------------------
+inference rules: dedukcia typu pre nejaky koncept
+
+
+
+Kovarianca a kontravariancia
+---------------------------------------------------------
+Covariance
+Enables you to use a more derived type than originally specified.
+You can assign an instance of IEnumerable<Derived> to a variable of type IEnumerable<Base>.
+
+Contravariance
+Enables you to use a more generic (less derived) type than originally specified.
+You can assign an instance of IEnumerable<Base> to a variable of type IEnumerable<Derived>.
+
+Invariance
+Means that you can use only the type originally specified; so an invariant generic type parameter is neither covariant nor contravariant.
+You cannot assign an instance of IEnumerable<Base> to a variable of type IEnumerable<Derived> or vice versa.
+
+Niektore generiky su kovariantne, niektore kontravariantne, ine invariantne.
+
+
+
+
+Prikladovy projekt
+---------------------------------------------------------
+- Majme jednoduchy projekt, kde statements su len Expression
+- Druhy expression:
+	- literaly
+		- Bool
+		- String
+		- Int
+		- Double
+	- zlozene typy
+		- Tuple
+	- zlozene vyrazy
+		- Plus (a + b)
+			- ma byt aplikovatelny len na string, int a double
+		- Not (!a)
+			- ma byt aplikovatelny len na Bool
+		- Equals (a == b)
+
+- Najprv vyriesime zakladne typy pre literaly
+	- alt + enter na sucasny jazyk -> used languages -> mps.baseLanguage - extends
+	- nove koncepty:
+		- BoolType, extends Type, vytvorit alias alebo editor
+		- StringType, extends Type, vytvorit alias alebo editor
+		- IntType, extends Type, vytvorit alias alebo editor
+		- DoubleType, extends Type, vytvorit alias alebo editor
+	- alt + enter na typesystem -> used languages -> sucasny jazyk
+	- skompilovat
+	- pre koncepty, ktore su literalmi:
+		- BoolValue -> typesystem -> inference rule:
+			typeof(boolValue) :==: <TAbool>;
+			- to napravo je quotation
+			- namiesto toho, aby sme museli vytvarat node<> a potom priradzovat, mozno rovno pouzit takto
+			- (vidime, co by sme videli, keby sme realne pouzivali editor)
+
+			iny sposob by bol:
+			node<BoolType> boolType = new initialized node<BoolType>()
+			typeof(boolValue) :==: boolType;
+		- StringValue -> typesystem -> inference rule:
+			typeof(stringValue) :==: <TAstring>;
+		- IntValue -> typesystem -> inference rule:
+			typeof(intValue) :==: <TAint>;
+		- DoubleValue -> typesystem -> inference rule:
+			typeof(doubleValue) :==: <TAdouble>;
+
+- Zlozeny typ tuple
+	- vytvorit koncept pre tuple typ: TupleType
+		- extends Type
+		- children items: Type[1..n]
+	- Tuple -> typesystem -> inference rule:
+		node<TupleType> tupleType = new initialized node<TupleType>();
+		tupleType.items.clear;
+
+		// Gather the types of the items
+		foreach item in tuple.items {
+		  tupleType.items.add(typeof(item) : Type);
+		}
+
+		typeof(tuple) :==: tupleType;
+
+- Not expression
+	- jednoduchy, staci urcit typ argumentu ako Bool a rovnako aj vystupny typ
+	// Requirest so that the former expression was boolean
+	typeof(notExpression.expression) :==: <TAbool>;
+
+	// Resulting type of the current expression is Bool
+	typeof(notExpression) :==: <TAbool>;
+
+- Plus expression
+	- typ celeho vyrazu musi byt najabstraktnejsi z typov oboch argumentov
+	- zaroven sa potrebujeme uistit, ze boli pouzite operandy len typov Bool/Int/Double
+		- na toto potrebujeme "when concrete", kedze typ nemusi v danu chvilu existovat
+
+	when concrete (typeof(plusExpression.left) as leftType) {
+	  when concrete (typeof(plusExpression.right) as rightType) {
+		// Applicable only for certain argument types
+		list<concept<>> applicableConcepts = new arraylist<concept<>>{concept/IntType/, concept/DoubleType/, concept/StringType/};
+
+		if (!applicableConcepts.any({~it => leftType.concept.isSubConceptOf(it); }) || !applicableConcepts.any({~it => rightType.concept.isSubConceptOf(it); })) {
+		  error "Plus expression not applicable for the given type(s)." -> plusExpression;
+		}
+
+		// Result is the most abstract type of the both arguments
+		infer typeof(plusExpression) :>=: leftType;
+		infer typeof(plusExpression) :>=: rightType;
+	  }
+	}
+	- na leftType/rightType funguje aj "isInstanceOf" funkcia
+	- tento kusok kodu riesi aj to, ked su oba operandy nezlicitelnych typov,
+	ako napr. string + int
+		- je to vdaka poslednym dvom riadkom ("infer"), pretoze v pripade string + int
+		bude platit, ze nepojde ziskat ziaden typ, ktory by bol abstraktneji nez oba
+		- zatial ale neriesi scitanie int + double
+
+- Vztah int a double
+	- v tejto chvili nie je mozne scitat int + double
+	- musime vytvorit subtyping rule:
+
+	subtyping rule IntSubtypeOfDouble {
+	  weak = false
+	  applicable for concept = IntType as intType
+
+	  supertypes {
+		// Double is more abstract than int
+		return <TAdouble>;
+	  }
+	}
+
+- Equals
+	- skript je jednoduchy
+	// The both types need to be comparable
+	typeof(equalsExpression.left) :~: typeof(equalsExpression.right) ;
+
+	// Resulting type of the current expression is Bool
+	typeof(equalsExpression) :==: <TAbool>;
+
+	- prvy riadok zabezpecuje porovnanie typov ako int == double a pod.
+	- (pokial by sme pouzili ":==:", tak by fungovalo na presnu zhodu typov)
+	- neriesi vsak porovnanie dvoch tupleov (nie-primitivnych typov)
+
+- Porovnanie tuple-ov
+	- InequationReplacementRule
+	
+	replacement rule TupleTypeSubtypeOfTupleType
+	applicable for  concept = TupleType as tupleSubType <: concept = TupleType as tupleSuperType
+	custom condition: true
+	rule {
+		// The amount of items must be the same
+		if (tupleSubType.items.size != tupleSuperType.items.size) {
+		  error "Number of items in the tuples needs to be the same." -> equationInfo.getNodeWithError();
+		}
+
+		// Compare subtype for each item
+		foreach (node<> subItemType : tupleSubType.items; node<> superItemType : tupleSuperType.items) {
+		  infer subItemType :<=: superItemType;
+		}
+	}
