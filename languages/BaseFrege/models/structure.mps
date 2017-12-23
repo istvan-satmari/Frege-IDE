@@ -2589,15 +2589,16 @@
     <node concept="1TJgyj" id="5d6A1kOhZxQ" role="1TKVEi">
       <property role="IQ2ns" value="6000650770356631670" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="currentArgumentType" />
+      <property role="20kJfa" value="returns" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
     </node>
     <node concept="1TJgyj" id="5d6A1kOhZxN" role="1TKVEi">
       <property role="IQ2ns" value="6000650770356631667" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="nextArgument" />
-      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
     </node>
   </node>
   <node concept="1TIwiD" id="5d6A1kOnZ1g">
@@ -2612,6 +2613,13 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3EDs8MV_anO">
+    <property role="EcuMT" value="4227033475008734708" />
+    <property role="3GE5qa" value="TypeNodes" />
+    <property role="TrG5h" value="AnyTypeNode" />
+    <property role="34LRSv" value="Any" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
   </node>
 </model>
 

@@ -13,6 +13,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_AIVariable = new ConceptPresentationBuilder().shortDesc("References a variable for annotation.").create();
   private final ConceptPresentation props_Annotation = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AnnotationItem = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_AnyTypeNode = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ApplicationEntity = new ConceptPresentationBuilder().shortDesc("An entity to derive the application from.").create();
   private final ConceptPresentation props_BCContent = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BCLine = new ConceptPresentationBuilder().create();
@@ -191,6 +192,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Annotation;
       case LanguageConceptSwitch.AnnotationItem:
         return props_AnnotationItem;
+      case LanguageConceptSwitch.AnyTypeNode:
+        return props_AnyTypeNode;
       case LanguageConceptSwitch.ApplicationEntity:
         return props_ApplicationEntity;
       case LanguageConceptSwitch.BCContent:
