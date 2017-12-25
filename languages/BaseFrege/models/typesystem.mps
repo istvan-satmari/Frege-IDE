@@ -12,11 +12,15 @@
     <import index="yq4j" ref="r:f3acc988-19e1-4f05-8291-435175dbbc1f(BaseFrege.behavior)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -61,6 +65,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
@@ -164,6 +169,7 @@
       <concept id="1201607707634" name="jetbrains.mps.lang.typesystem.structure.InequationReplacementRule" flags="ig" index="35pCF_">
         <child id="1201607798918" name="supertypeNode" index="35pZ6h" />
       </concept>
+      <concept id="1201618299781" name="jetbrains.mps.lang.typesystem.structure.ErrorInfoExpression" flags="nn" index="3622Ei" />
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
@@ -286,12 +292,18 @@
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
+      <concept id="1227026094155" name="jetbrains.mps.baseLanguage.collections.structure.RemoveLastElementOperation" flags="nn" index="2Kt5_m" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
+      <concept id="1225711141656" name="jetbrains.mps.baseLanguage.collections.structure.ListElementAccessExpression" flags="nn" index="1y4W85">
+        <child id="1225711182005" name="list" index="1y566C" />
+        <child id="1225711191269" name="index" index="1y58nS" />
+      </concept>
+      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
@@ -3208,7 +3220,64 @@
     <node concept="3clFbS" id="3EDs8MV_anU" role="2sgrp5">
       <node concept="3SKdUt" id="3EDs8MV_aqk" role="3cqZAp">
         <node concept="3SKdUq" id="3EDs8MV_aql" role="3SKWNk">
-          <property role="3SKdUp" value="Any is a supertype of all types, i.e. anything can be assigned to Any" />
+          <property role="3SKdUp" value="Any is a supertype of all types, i.e. anything can be assigned to Any, except Any itself" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="$yyAqvkiEh" role="3cqZAp">
+        <node concept="3clFbS" id="$yyAqvkiEj" role="3clFbx">
+          <node concept="3clFbJ" id="$yyAqvkj1x" role="3cqZAp">
+            <node concept="3clFbS" id="$yyAqvkj1z" role="3clFbx">
+              <node concept="2MkqsV" id="$yyAqvkn9o" role="3cqZAp">
+                <node concept="Xl_RD" id="$yyAqvknSj" role="2MkJ7o">
+                  <property role="Xl_RC" value="The any type is not a subtype of another any type." />
+                </node>
+                <node concept="2OqwBi" id="$yyAqvknIP" role="2OEOjV">
+                  <node concept="3622Ei" id="$yyAqvkn9J" role="2Oq$k0" />
+                  <node concept="liA8E" id="$yyAqvknQx" role="2OqNvi">
+                    <ref role="37wK5l" to="u78q:~EquationInfo.getNodeWithError():org.jetbrains.mps.openapi.model.SNode" resolve="getNodeWithError" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="$yyAqvkmpn" role="3clFbw">
+              <node concept="2OqwBi" id="$yyAqvkmpp" role="3fr31v">
+                <node concept="2OqwBi" id="$yyAqvkmpq" role="2Oq$k0">
+                  <node concept="1PxgMI" id="$yyAqvkmpr" role="2Oq$k0">
+                    <node concept="chp4Y" id="$yyAqvkmps" role="3oSUPX">
+                      <ref role="cht4Q" to="sc0n:3EDs8MV_anO" resolve="AnyTypeNode" />
+                    </node>
+                    <node concept="1YBJjd" id="$yyAqvkmpt" role="1m5AlR">
+                      <ref role="1YBMHb" node="3EDs8MV_apy" resolve="baseConcept" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="$yyAqvkmpu" role="2OqNvi">
+                    <ref role="3TsBF5" to="sc0n:$yyAqvkfS0" resolve="equivalenceClass" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="$yyAqvkmpv" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="2OqwBi" id="$yyAqvkmJf" role="37wK5m">
+                    <node concept="1YBJjd" id="$yyAqvkm$F" role="2Oq$k0">
+                      <ref role="1YBMHb" node="3EDs8MV_apK" resolve="anyTypeNode" />
+                    </node>
+                    <node concept="3TrcHB" id="$yyAqvkn5C" role="2OqNvi">
+                      <ref role="3TsBF5" to="sc0n:$yyAqvkfS0" resolve="equivalenceClass" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="$yyAqvkiMr" role="3clFbw">
+          <node concept="1YBJjd" id="$yyAqvkiEE" role="2Oq$k0">
+            <ref role="1YBMHb" node="3EDs8MV_apy" resolve="baseConcept" />
+          </node>
+          <node concept="1mIQ4w" id="$yyAqvkiUi" role="2OqNvi">
+            <node concept="chp4Y" id="$yyAqvkiWh" role="cj9EA">
+              <ref role="cht4Q" to="sc0n:3EDs8MV_anO" resolve="AnyTypeNode" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -4266,6 +4335,587 @@
     <node concept="1YaCAy" id="3EDs8MVGW8k" role="1YuTPh">
       <property role="TrG5h" value="pListVar" />
       <ref role="1YaFvo" to="sc0n:3Xsm2yzylar" resolve="PListVar" />
+    </node>
+  </node>
+  <node concept="35pCF_" id="$yyAqvkeV$">
+    <property role="3GE5qa" value="TypeNodes" />
+    <property role="TrG5h" value="Null_subtypeOf_AllTypes" />
+    <node concept="1YaCAy" id="$yyAqvkf43" role="35pZ6h">
+      <property role="TrG5h" value="baseConcept" />
+      <ref role="1YaFvo" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="3clFbS" id="$yyAqvkeVA" role="2sgrp5">
+      <node concept="3SKdUt" id="$yyAqvkf4Z" role="3cqZAp">
+        <node concept="3SKdUq" id="$yyAqvkf50" role="3SKWNk">
+          <property role="3SKdUp" value="Null is a subtype of all types, i.e. null can be assigned to anything" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="$yyAqvkf3B" role="1YuTPh">
+      <property role="TrG5h" value="nullTypeNode" />
+      <ref role="1YaFvo" to="sc0n:$yyAqvkeVz" resolve="NullTypeNode" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="$yyAqvkoG0">
+    <property role="TrG5h" value="typeof_FullType" />
+    <property role="3GE5qa" value="Definitions.Types" />
+    <node concept="3clFbS" id="$yyAqvkoG1" role="18ibNy">
+      <node concept="3SKdUt" id="$yyAqvkp0$" role="3cqZAp">
+        <node concept="3SKdUq" id="$yyAqvkp0A" role="3SKWNk">
+          <property role="3SKdUp" value="Type is inferred by the child" />
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="$yyAqvkp3d" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="$yyAqvkp3k" role="1ZfhK$">
+          <node concept="1Z2H0r" id="$yyAqvkp3l" role="mwGJk">
+            <node concept="1YBJjd" id="$yyAqvkp3m" role="1Z2MuG">
+              <ref role="1YBMHb" node="$yyAqvkoG3" resolve="fullType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="$yyAqvkp3f" role="1ZfhKB">
+          <node concept="1Z2H0r" id="$yyAqvkp3g" role="mwGJk">
+            <node concept="2OqwBi" id="$yyAqvkp3h" role="1Z2MuG">
+              <node concept="1YBJjd" id="$yyAqvkp3i" role="2Oq$k0">
+                <ref role="1YBMHb" node="$yyAqvkoG3" resolve="fullType" />
+              </node>
+              <node concept="3TrEf2" id="$yyAqvkp3j" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:3Xsm2yzyj34" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="$yyAqvkoG3" role="1YuTPh">
+      <property role="TrG5h" value="fullType" />
+      <ref role="1YaFvo" to="sc0n:3Xsm2yzyj0p" resolve="FullType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="$yyAqvkp6J">
+    <property role="TrG5h" value="typeof_TypeFunction" />
+    <property role="3GE5qa" value="Definitions.Types" />
+    <node concept="3clFbS" id="$yyAqvkp6K" role="18ibNy">
+      <node concept="3clFbJ" id="$yyAqvkvXE" role="3cqZAp">
+        <node concept="3clFbS" id="$yyAqvkvXG" role="3clFbx">
+          <node concept="3SKdUt" id="$yyAqvkEnW" role="3cqZAp">
+            <node concept="3SKdUq" id="$yyAqvkEnY" role="3SKWNk">
+              <property role="3SKdUp" value="A constant function is simply the type of its result" />
+            </node>
+          </node>
+          <node concept="1Z5TYs" id="$yyAqvkEwo" role="3cqZAp">
+            <node concept="mw_s8" id="$yyAqvkEwI" role="1ZfhKB">
+              <node concept="1Z2H0r" id="$yyAqvkEwE" role="mwGJk">
+                <node concept="1y4W85" id="$yyAqvkH4I" role="1Z2MuG">
+                  <node concept="3cmrfG" id="$yyAqvkHpA" role="1y58nS">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="2OqwBi" id="$yyAqvkECa" role="1y566C">
+                    <node concept="1YBJjd" id="$yyAqvkEwZ" role="2Oq$k0">
+                      <ref role="1YBMHb" node="$yyAqvkp6M" resolve="typeFunction" />
+                    </node>
+                    <node concept="3Tsc0h" id="$yyAqvkF5k" role="2OqNvi">
+                      <ref role="3TtcxE" to="sc0n:7riFpCdpuCI" resolve="arguments" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="$yyAqvkEwr" role="1ZfhK$">
+              <node concept="1Z2H0r" id="$yyAqvkEo5" role="mwGJk">
+                <node concept="1YBJjd" id="$yyAqvkEpT" role="1Z2MuG">
+                  <ref role="1YBMHb" node="$yyAqvkp6M" resolve="typeFunction" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="$yyAqvlPUl" role="3cqZAp" />
+        </node>
+        <node concept="3clFbC" id="$yyAqvkA7s" role="3clFbw">
+          <node concept="3cmrfG" id="$yyAqvkArn" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="$yyAqvky58" role="3uHU7B">
+            <node concept="2OqwBi" id="$yyAqvkw7o" role="2Oq$k0">
+              <node concept="1YBJjd" id="$yyAqvkvYP" role="2Oq$k0">
+                <ref role="1YBMHb" node="$yyAqvkp6M" resolve="typeFunction" />
+              </node>
+              <node concept="3Tsc0h" id="$yyAqvkwpJ" role="2OqNvi">
+                <ref role="3TtcxE" to="sc0n:7riFpCdpuCI" resolve="arguments" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="$yyAqvkzHj" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="9aQIb" id="$yyAqvkHIe" role="9aQIa">
+          <node concept="3clFbS" id="$yyAqvkHIf" role="9aQI4">
+            <node concept="3SKdUt" id="$yyAqvkI1D" role="3cqZAp">
+              <node concept="3SKdUq" id="$yyAqvkI1E" role="3SKWNk">
+                <property role="3SKdUp" value="Otherwise the result is a function type" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="$yyAqvkInz" role="3cqZAp">
+              <node concept="3cpWsn" id="$yyAqvkInA" role="3cpWs9">
+                <property role="TrG5h" value="functionType" />
+                <node concept="3Tqbb2" id="$yyAqvkInx" role="1tU5fm">
+                  <ref role="ehGHo" to="sc0n:5d6A1kOhZxM" resolve="FunctionTypeNode" />
+                </node>
+                <node concept="2ShNRf" id="$yyAqvkInT" role="33vP2m">
+                  <node concept="2fJWfE" id="$yyAqvkMdq" role="2ShVmc">
+                    <node concept="3Tqbb2" id="$yyAqvkMds" role="3zrR0E">
+                      <ref role="ehGHo" to="sc0n:5d6A1kOhZxM" resolve="FunctionTypeNode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="$yyAqvkMdX" role="3cqZAp">
+              <node concept="2OqwBi" id="$yyAqvkOIy" role="3clFbG">
+                <node concept="2OqwBi" id="$yyAqvkMmY" role="2Oq$k0">
+                  <node concept="37vLTw" id="$yyAqvkMdV" role="2Oq$k0">
+                    <ref role="3cqZAo" node="$yyAqvkInA" resolve="functionType" />
+                  </node>
+                  <node concept="3Tsc0h" id="$yyAqvkMM6" role="2OqNvi">
+                    <ref role="3TtcxE" to="sc0n:5d6A1kOhZxN" resolve="arguments" />
+                  </node>
+                </node>
+                <node concept="2Kehj3" id="$yyAqvkQUA" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="$yyAqvkTFE" role="3cqZAp" />
+            <node concept="3SKdUt" id="$yyAqvkTGb" role="3cqZAp">
+              <node concept="3SKdUq" id="$yyAqvkTGd" role="3SKWNk">
+                <property role="3SKdUp" value="Gather the types of the arguments" />
+              </node>
+            </node>
+            <node concept="2Gpval" id="$yyAqvkTGM" role="3cqZAp">
+              <node concept="2GrKxI" id="$yyAqvkTGO" role="2Gsz3X">
+                <property role="TrG5h" value="argument" />
+              </node>
+              <node concept="3clFbS" id="$yyAqvkTGS" role="2LFqv$">
+                <node concept="3clFbF" id="$yyAqvkULn" role="3cqZAp">
+                  <node concept="2OqwBi" id="$yyAqvkX4q" role="3clFbG">
+                    <node concept="2OqwBi" id="$yyAqvkUUg" role="2Oq$k0">
+                      <node concept="37vLTw" id="$yyAqvkULm" role="2Oq$k0">
+                        <ref role="3cqZAo" node="$yyAqvkInA" resolve="functionType" />
+                      </node>
+                      <node concept="3Tsc0h" id="$yyAqvkV7Y" role="2OqNvi">
+                        <ref role="3TtcxE" to="sc0n:5d6A1kOhZxN" resolve="arguments" />
+                      </node>
+                    </node>
+                    <node concept="TSZUe" id="$yyAqvkZgu" role="2OqNvi">
+                      <node concept="1PxgMI" id="$yyAqvl05o" role="25WWJ7">
+                        <node concept="chp4Y" id="$yyAqvl0FL" role="3oSUPX">
+                          <ref role="cht4Q" to="tpee:fz3vP1H" resolve="Type" />
+                        </node>
+                        <node concept="1Z2H0r" id="$yyAqvkZtI" role="1m5AlR">
+                          <node concept="2GrUjf" id="$yyAqvkZIy" role="1Z2MuG">
+                            <ref role="2Gs0qQ" node="$yyAqvkTGO" resolve="argument" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="$yyAqvkUhA" role="2GsD0m">
+                <node concept="1YBJjd" id="$yyAqvkU8P" role="2Oq$k0">
+                  <ref role="1YBMHb" node="$yyAqvkp6M" resolve="typeFunction" />
+                </node>
+                <node concept="3Tsc0h" id="$yyAqvkUJf" role="2OqNvi">
+                  <ref role="3TtcxE" to="sc0n:7riFpCdpuCI" resolve="arguments" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="$yyAqvlm4r" role="3cqZAp">
+              <node concept="2OqwBi" id="$yyAqvloqc" role="3clFbG">
+                <node concept="2OqwBi" id="$yyAqvlmdZ" role="2Oq$k0">
+                  <node concept="37vLTw" id="$yyAqvlm4p" role="2Oq$k0">
+                    <ref role="3cqZAo" node="$yyAqvkInA" resolve="functionType" />
+                  </node>
+                  <node concept="3Tsc0h" id="$yyAqvlmrF" role="2OqNvi">
+                    <ref role="3TtcxE" to="sc0n:5d6A1kOhZxN" resolve="arguments" />
+                  </node>
+                </node>
+                <node concept="2Kt5_m" id="$yyAqvlt0l" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="$yyAqvl1eE" role="3cqZAp" />
+            <node concept="3SKdUt" id="$yyAqvl1fL" role="3cqZAp">
+              <node concept="3SKdUq" id="$yyAqvl1fN" role="3SKWNk">
+                <property role="3SKdUp" value="Set the resulting type of the function" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="$yyAqvl1h0" role="3cqZAp">
+              <node concept="37vLTI" id="$yyAqvl2qd" role="3clFbG">
+                <node concept="1PxgMI" id="$yyAqvlC$l" role="37vLTx">
+                  <node concept="chp4Y" id="$yyAqvlD7Y" role="3oSUPX">
+                    <ref role="cht4Q" to="tpee:fz3vP1H" resolve="Type" />
+                  </node>
+                  <node concept="1Z2H0r" id="$yyAqvl2uD" role="1m5AlR">
+                    <node concept="2OqwBi" id="$yyAqvlzAQ" role="1Z2MuG">
+                      <node concept="2OqwBi" id="$yyAqvlwWC" role="2Oq$k0">
+                        <node concept="1YBJjd" id="$yyAqvlwLM" role="2Oq$k0">
+                          <ref role="1YBMHb" node="$yyAqvkp6M" resolve="typeFunction" />
+                        </node>
+                        <node concept="3Tsc0h" id="$yyAqvlxG8" role="2OqNvi">
+                          <ref role="3TtcxE" to="sc0n:7riFpCdpuCI" resolve="arguments" />
+                        </node>
+                      </node>
+                      <node concept="1yVyf7" id="$yyAqvl_Qy" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="$yyAqvl1qt" role="37vLTJ">
+                  <node concept="37vLTw" id="$yyAqvl1gY" role="2Oq$k0">
+                    <ref role="3cqZAo" node="$yyAqvkInA" resolve="functionType" />
+                  </node>
+                  <node concept="3TrEf2" id="$yyAqvl1Cb" role="2OqNvi">
+                    <ref role="3Tt5mk" to="sc0n:5d6A1kOhZxQ" resolve="returns" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="$yyAqvlDHV" role="3cqZAp" />
+            <node concept="3SKdUt" id="$yyAqvlDJI" role="3cqZAp">
+              <node concept="3SKdUq" id="$yyAqvlDJK" role="3SKWNk">
+                <property role="3SKdUp" value="Set the resulting type of the current node" />
+              </node>
+            </node>
+            <node concept="1Z5TYs" id="$yyAqvlG7Y" role="3cqZAp">
+              <node concept="mw_s8" id="$yyAqvlGTy" role="1ZfhKB">
+                <node concept="37vLTw" id="$yyAqvlGTw" role="mwGJk">
+                  <ref role="3cqZAo" node="$yyAqvkInA" resolve="functionType" />
+                </node>
+              </node>
+              <node concept="mw_s8" id="$yyAqvlG81" role="1ZfhK$">
+                <node concept="1Z2H0r" id="$yyAqvlFgp" role="mwGJk">
+                  <node concept="1YBJjd" id="$yyAqvlG1v" role="1Z2MuG">
+                    <ref role="1YBMHb" node="$yyAqvkp6M" resolve="typeFunction" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="$yyAqvkp6M" role="1YuTPh">
+      <property role="TrG5h" value="typeFunction" />
+      <ref role="1YaFvo" to="sc0n:7riFpCdpuCH" resolve="TypeFunction" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="$yyAqvlU4m">
+    <property role="TrG5h" value="typeof_TypeTuple" />
+    <property role="3GE5qa" value="Definitions.Types" />
+    <node concept="3clFbS" id="$yyAqvlU4n" role="18ibNy">
+      <node concept="3SKdUt" id="$yyAqvlU4w" role="3cqZAp">
+        <node concept="3SKdUq" id="$yyAqvlU4x" role="3SKWNk">
+          <property role="3SKdUp" value="Tuple type is defined by its items' types" />
+        </node>
+      </node>
+      <node concept="3cpWs8" id="$yyAqvlU4y" role="3cqZAp">
+        <node concept="3cpWsn" id="$yyAqvlU4z" role="3cpWs9">
+          <property role="TrG5h" value="tupleType" />
+          <node concept="3Tqbb2" id="$yyAqvlU4$" role="1tU5fm">
+            <ref role="ehGHo" to="sc0n:5d6A1kOnZ1g" resolve="TupleTypeNode" />
+          </node>
+          <node concept="2ShNRf" id="$yyAqvlU4_" role="33vP2m">
+            <node concept="2fJWfE" id="$yyAqvlU4A" role="2ShVmc">
+              <node concept="3Tqbb2" id="$yyAqvlU4B" role="3zrR0E">
+                <ref role="ehGHo" to="sc0n:5d6A1kOnZ1g" resolve="TupleTypeNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbF" id="$yyAqvlU4C" role="3cqZAp">
+        <node concept="2OqwBi" id="$yyAqvlU4D" role="3clFbG">
+          <node concept="2OqwBi" id="$yyAqvlU4E" role="2Oq$k0">
+            <node concept="37vLTw" id="$yyAqvlU4F" role="2Oq$k0">
+              <ref role="3cqZAo" node="$yyAqvlU4z" resolve="tupleType" />
+            </node>
+            <node concept="3Tsc0h" id="$yyAqvlU4G" role="2OqNvi">
+              <ref role="3TtcxE" to="sc0n:5d6A1kOnZ1h" resolve="items" />
+            </node>
+          </node>
+          <node concept="2Kehj3" id="$yyAqvlU4H" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="$yyAqvlU4I" role="3cqZAp" />
+      <node concept="3SKdUt" id="$yyAqvlU4J" role="3cqZAp">
+        <node concept="3SKdUq" id="$yyAqvlU4K" role="3SKWNk">
+          <property role="3SKdUp" value="Gather the types of the items" />
+        </node>
+      </node>
+      <node concept="2Gpval" id="$yyAqvlU4X" role="3cqZAp">
+        <node concept="2GrKxI" id="$yyAqvlU4Y" role="2Gsz3X">
+          <property role="TrG5h" value="item" />
+        </node>
+        <node concept="2OqwBi" id="$yyAqvlU4Z" role="2GsD0m">
+          <node concept="1YBJjd" id="$yyAqvm0Ed" role="2Oq$k0">
+            <ref role="1YBMHb" node="$yyAqvlU4p" resolve="typeTuple" />
+          </node>
+          <node concept="3Tsc0h" id="$yyAqvm0R8" role="2OqNvi">
+            <ref role="3TtcxE" to="sc0n:7riFpCdpyTU" resolve="types" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="$yyAqvlU52" role="2LFqv$">
+          <node concept="3clFbF" id="$yyAqvlU53" role="3cqZAp">
+            <node concept="2OqwBi" id="$yyAqvlU54" role="3clFbG">
+              <node concept="2OqwBi" id="$yyAqvlU55" role="2Oq$k0">
+                <node concept="37vLTw" id="$yyAqvlU56" role="2Oq$k0">
+                  <ref role="3cqZAo" node="$yyAqvlU4z" resolve="tupleType" />
+                </node>
+                <node concept="3Tsc0h" id="$yyAqvlU57" role="2OqNvi">
+                  <ref role="3TtcxE" to="sc0n:5d6A1kOnZ1h" resolve="items" />
+                </node>
+              </node>
+              <node concept="TSZUe" id="$yyAqvlU58" role="2OqNvi">
+                <node concept="1PxgMI" id="$yyAqvlU59" role="25WWJ7">
+                  <node concept="chp4Y" id="$yyAqvlU5a" role="3oSUPX">
+                    <ref role="cht4Q" to="tpee:fz3vP1H" resolve="Type" />
+                  </node>
+                  <node concept="1Z2H0r" id="$yyAqvlU5b" role="1m5AlR">
+                    <node concept="2GrUjf" id="$yyAqvlU5c" role="1Z2MuG">
+                      <ref role="2Gs0qQ" node="$yyAqvlU4Y" resolve="item" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="$yyAqvlU5d" role="3cqZAp" />
+      <node concept="3SKdUt" id="$yyAqvlU5e" role="3cqZAp">
+        <node concept="3SKdUq" id="$yyAqvlU5f" role="3SKWNk">
+          <property role="3SKdUp" value="Set the resulting type of the current node" />
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="$yyAqvlU5g" role="3cqZAp">
+        <node concept="mw_s8" id="$yyAqvlU5h" role="1ZfhK$">
+          <node concept="1Z2H0r" id="$yyAqvlU5i" role="mwGJk">
+            <node concept="1YBJjd" id="$yyAqvm19h" role="1Z2MuG">
+              <ref role="1YBMHb" node="$yyAqvlU4p" resolve="typeTuple" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="$yyAqvlU5k" role="1ZfhKB">
+          <node concept="37vLTw" id="$yyAqvlU5l" role="mwGJk">
+            <ref role="3cqZAo" node="$yyAqvlU4z" resolve="tupleType" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="$yyAqvlU4p" role="1YuTPh">
+      <property role="TrG5h" value="typeTuple" />
+      <ref role="1YaFvo" to="sc0n:7riFpCdpyTT" resolve="TypeTuple" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="$yyAqvm4ye">
+    <property role="TrG5h" value="typeof_TypeList" />
+    <property role="3GE5qa" value="Definitions.Types" />
+    <node concept="3clFbS" id="$yyAqvm4yf" role="18ibNy">
+      <node concept="1Z5TYs" id="$yyAqvm4E$" role="3cqZAp">
+        <node concept="mw_s8" id="$yyAqvm4EB" role="1ZfhK$">
+          <node concept="1Z2H0r" id="$yyAqvm4yl" role="mwGJk">
+            <node concept="1YBJjd" id="$yyAqvm4$5" role="1Z2MuG">
+              <ref role="1YBMHb" node="$yyAqvm4yh" resolve="typeList" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="$yyAqvm50e" role="1ZfhKB">
+          <node concept="2c44tf" id="$yyAqvm50R" role="mwGJk">
+            <node concept="1BrOF_" id="$yyAqvm51e" role="2c44tc">
+              <node concept="1BrOF_" id="$yyAqvm5Lu" role="1BrOF$">
+                <node concept="2c44te" id="$yyAqvm51y" role="lGtFl">
+                  <node concept="1Z2H0r" id="$yyAqvm5kL" role="2c44t1">
+                    <node concept="2OqwBi" id="$yyAqvm5kM" role="1Z2MuG">
+                      <node concept="1YBJjd" id="$yyAqvm5kN" role="2Oq$k0">
+                        <ref role="1YBMHb" node="$yyAqvm4yh" resolve="typeList" />
+                      </node>
+                      <node concept="3TrEf2" id="$yyAqvm5vR" role="2OqNvi">
+                        <ref role="3Tt5mk" to="sc0n:7riFpCdpyUj" resolve="type" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="$yyAqvm4yh" role="1YuTPh">
+      <property role="TrG5h" value="typeList" />
+      <ref role="1YaFvo" to="sc0n:7riFpCdpyUi" resolve="TypeList" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="$yyAqvqvi4">
+    <property role="TrG5h" value="typeof_TypeB" />
+    <property role="3GE5qa" value="Definitions.Types" />
+    <node concept="3clFbS" id="$yyAqvqvi5" role="18ibNy">
+      <node concept="3SKdUt" id="$yyAqvrz3U" role="3cqZAp">
+        <node concept="3SKdUq" id="$yyAqvrz3W" role="3SKWNk">
+          <property role="3SKdUp" value="A type variable is &quot;any type&quot;" />
+        </node>
+      </node>
+      <node concept="3cpWs8" id="$yyAqvrt3g" role="3cqZAp">
+        <node concept="3cpWsn" id="$yyAqvrt3j" role="3cpWs9">
+          <property role="TrG5h" value="anyType" />
+          <node concept="3Tqbb2" id="$yyAqvrt3e" role="1tU5fm">
+            <ref role="ehGHo" to="sc0n:3EDs8MV_anO" resolve="AnyTypeNode" />
+          </node>
+          <node concept="2ShNRf" id="$yyAqvrt3L" role="33vP2m">
+            <node concept="2fJWfE" id="$yyAqvrt8n" role="2ShVmc">
+              <node concept="3Tqbb2" id="$yyAqvrt8p" role="3zrR0E">
+                <ref role="ehGHo" to="sc0n:3EDs8MV_anO" resolve="AnyTypeNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbF" id="$yyAqvrt9d" role="3cqZAp">
+        <node concept="37vLTI" id="$yyAqvru0o" role="3clFbG">
+          <node concept="2OqwBi" id="$yyAqvrynP" role="37vLTx">
+            <node concept="2OqwBi" id="$yyAqvrxPF" role="2Oq$k0">
+              <node concept="2OqwBi" id="$yyAqvrugo" role="2Oq$k0">
+                <node concept="1YBJjd" id="$yyAqvru6U" role="2Oq$k0">
+                  <ref role="1YBMHb" node="$yyAqvqvi7" resolve="typeB" />
+                </node>
+                <node concept="3TrEf2" id="$yyAqvruxC" role="2OqNvi">
+                  <ref role="3Tt5mk" to="sc0n:2kN9n9eTjPN" resolve="typeVariable" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="$yyAqvry4O" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:3Xsm2yzyj0q" resolve="value" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="$yyAqvryCS" role="2OqNvi">
+              <ref role="3TsBF5" to="sc0n:7Cxf1w4AonM" resolve="value" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="$yyAqvrtij" role="37vLTJ">
+            <node concept="37vLTw" id="$yyAqvrt9b" role="2Oq$k0">
+              <ref role="3cqZAo" node="$yyAqvrt3j" resolve="anyType" />
+            </node>
+            <node concept="3TrcHB" id="$yyAqvrtvZ" role="2OqNvi">
+              <ref role="3TsBF5" to="sc0n:$yyAqvkfS0" resolve="equivalenceClass" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="$yyAqvrz4n" role="3cqZAp" />
+      <node concept="3SKdUt" id="$yyAqvrz5g" role="3cqZAp">
+        <node concept="3SKdUq" id="$yyAqvrz5i" role="3SKWNk">
+          <property role="3SKdUp" value="Set the resulting type of the current node" />
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="$yyAqvrt1h" role="3cqZAp">
+        <node concept="mw_s8" id="$yyAqvrt1_" role="1ZfhKB">
+          <node concept="37vLTw" id="$yyAqvrz2S" role="mwGJk">
+            <ref role="3cqZAo" node="$yyAqvrt3j" resolve="anyType" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="$yyAqvrt1k" role="1ZfhK$">
+          <node concept="1Z2H0r" id="$yyAqvrsUy" role="mwGJk">
+            <node concept="1YBJjd" id="$yyAqvrsUM" role="1Z2MuG">
+              <ref role="1YBMHb" node="$yyAqvqvi7" resolve="typeB" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="$yyAqvqvi7" role="1YuTPh">
+      <property role="TrG5h" value="typeB" />
+      <ref role="1YaFvo" to="sc0n:2kN9n9eTjPM" resolve="TypeB" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="$yyAqvrzeZ">
+    <property role="TrG5h" value="typeof_TypeA" />
+    <property role="3GE5qa" value="Definitions.Types" />
+    <node concept="3clFbS" id="$yyAqvrzf0" role="18ibNy">
+      <node concept="3SKdUt" id="$yyAqvrzIj" role="3cqZAp">
+        <node concept="3SKdUq" id="$yyAqvrzIk" role="3SKWNk">
+          <property role="3SKdUp" value="A type variable is &quot;any type&quot;" />
+        </node>
+      </node>
+      <node concept="3cpWs8" id="$yyAqvrzIl" role="3cqZAp">
+        <node concept="3cpWsn" id="$yyAqvrzIm" role="3cpWs9">
+          <property role="TrG5h" value="anyType" />
+          <node concept="3Tqbb2" id="$yyAqvrzIn" role="1tU5fm">
+            <ref role="ehGHo" to="sc0n:3EDs8MV_anO" resolve="AnyTypeNode" />
+          </node>
+          <node concept="2ShNRf" id="$yyAqvrzIo" role="33vP2m">
+            <node concept="2fJWfE" id="$yyAqvrzIp" role="2ShVmc">
+              <node concept="3Tqbb2" id="$yyAqvrzIq" role="3zrR0E">
+                <ref role="ehGHo" to="sc0n:3EDs8MV_anO" resolve="AnyTypeNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbF" id="$yyAqvrzIr" role="3cqZAp">
+        <node concept="37vLTI" id="$yyAqvrzIs" role="3clFbG">
+          <node concept="2OqwBi" id="$yyAqvr_ad" role="37vLTx">
+            <node concept="2OqwBi" id="$yyAqvrzIt" role="2Oq$k0">
+              <node concept="2OqwBi" id="$yyAqvrzIu" role="2Oq$k0">
+                <node concept="2OqwBi" id="$yyAqvrzIv" role="2Oq$k0">
+                  <node concept="1YBJjd" id="$yyAqvrzZ3" role="2Oq$k0">
+                    <ref role="1YBMHb" node="$yyAqvrzf2" resolve="typeA" />
+                  </node>
+                  <node concept="3TrEf2" id="$yyAqvr$hr" role="2OqNvi">
+                    <ref role="3Tt5mk" to="sc0n:2kN9n9eJkAI" resolve="typeVariable" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="$yyAqvr$zn" role="2OqNvi">
+                  <ref role="3Tt5mk" to="sc0n:2kN9n9eJd0$" resolve="ref" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="$yyAqvr$Ns" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:3Xsm2yzyj0q" resolve="value" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="$yyAqvr_sR" role="2OqNvi">
+              <ref role="3TsBF5" to="sc0n:7Cxf1w4AonM" resolve="value" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="$yyAqvrzI$" role="37vLTJ">
+            <node concept="37vLTw" id="$yyAqvrzI_" role="2Oq$k0">
+              <ref role="3cqZAo" node="$yyAqvrzIm" resolve="anyType" />
+            </node>
+            <node concept="3TrcHB" id="$yyAqvrzIA" role="2OqNvi">
+              <ref role="3TsBF5" to="sc0n:$yyAqvkfS0" resolve="equivalenceClass" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="$yyAqvrzIB" role="3cqZAp" />
+      <node concept="3SKdUt" id="$yyAqvrzIC" role="3cqZAp">
+        <node concept="3SKdUq" id="$yyAqvrzID" role="3SKWNk">
+          <property role="3SKdUp" value="Set the resulting type of the current node" />
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="$yyAqvrzIE" role="3cqZAp">
+        <node concept="mw_s8" id="$yyAqvrzIF" role="1ZfhKB">
+          <node concept="37vLTw" id="$yyAqvrzIG" role="mwGJk">
+            <ref role="3cqZAo" node="$yyAqvrzIm" resolve="anyType" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="$yyAqvrzIH" role="1ZfhK$">
+          <node concept="1Z2H0r" id="$yyAqvrzII" role="mwGJk">
+            <node concept="1YBJjd" id="$yyAqvr_AH" role="1Z2MuG">
+              <ref role="1YBMHb" node="$yyAqvrzf2" resolve="typeA" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="$yyAqvrzf2" role="1YuTPh">
+      <property role="TrG5h" value="typeA" />
+      <ref role="1YaFvo" to="sc0n:2kN9n9eJd0s" resolve="TypeA" />
     </node>
   </node>
 </model>

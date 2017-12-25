@@ -273,7 +273,7 @@ Prikladovy projekt
 	  }
 	}
 	- na leftType/rightType funguje aj "isInstanceOf" funkcia
-	- tento kusok kodu riesi aj to, ked su oba operandy nezlicitelnych typov,
+	- tento kusok kodu riesi aj to, ked su oba operandy nezlucitelnych typov,
 	ako napr. string + int
 		- je to vdaka poslednym dvom riadkom ("infer"), pretoze v pripade string + int
 		bude platit, ze nepojde ziskat ziaden typ, ktory by bol abstraktneji nez oba
@@ -307,7 +307,7 @@ Prikladovy projekt
 
 - Porovnanie tuple-ov
 	- InequationReplacementRule
-	
+
 	replacement rule TupleTypeSubtypeOfTupleType
 	applicable for  concept = TupleType as tupleSubType <: concept = TupleType as tupleSuperType
 	custom condition: true
@@ -321,4 +321,26 @@ Prikladovy projekt
 		foreach (node<> subItemType : tupleSubType.items; node<> superItemType : tupleSuperType.items) {
 		  infer subItemType :<=: superItemType;
 		}
+	}
+
+- Priklad: pokial by sme chceli vytvorit typ null alebo any, jak na to?
+	- any: ako nadtyp akehokolvek typu (cokolvek ide dosadit do "any")
+	- musime vytvorit replacement rule voci baseConcept:
+	
+	replacement rule Any_supertypeOf_AllTypes
+	applicable for  concept = BaseConcept as baseConcept <: concept = AnyTypeNode as anyTypeNode
+	custom condition: true
+	rule {
+	  // Any is a supertype of all types, i.e. anything can be assigned to Any
+	}
+	
+	- pokial by slo o null, tam je to opacne: null mozno dosadit kamkolvek, cize null je podtyp kazdeho typu
+	- akurat by sme museli urcit, ze neplati pre primitivne typy
+	
+	replacement rule  any_type_supertypeof_nulltype
+	applicable for  concept = NullType as nullType <: concept = BaseConcept as baseConcept
+	rule {
+	   if (baseConcept.isInstanceOf(PrimitiveType)) {
+		  error "null type is not a subtype of primitive type" -> equationInfo.getNodeWithError();
+	   }
 	}

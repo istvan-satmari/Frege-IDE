@@ -8,6 +8,67 @@ Vychadza z povodneho dokumentu Editor.txt, pricom ale pridava vlastnu analyzu a 
 
 
 
+	
+- typovy system poziadavky:
+	- chceme kontrolu deklaracie funkcie voci jej definicii a pravdepodobne nic viac
+		- list comprehension nebudeme uvazovat
+		
+	- chceme:
+		- odvodenie typu literalov
+		- zakladne komplexne typy: 
+			- tuple
+			- list
+			- list tuplov a pod. zlozene typy
+			- funkcie a currying funkcii
+			- pouzitie operatorov (v najjednoduchsej podobe, t.j. 1 + 2, ale kaslem na (+) 1 2 a pod.)
+	
+		
+			
+		- vyriesme pre operatory
+			- pre !!implicit, cize musime vediet napisat deklarovat typ
+				- vediet odvodit ten, t.j. typ anotacie (musi vratit typ funkcie)
+				- potom uvidime, co dalej
+	
+	
+			-  typ anotacie sa musi zhofdovat s typom expression...? asi
+				f = 1 + 7 :: Int
+				f = 1 + 7 :: Double
+				...toto nema byt porovnatelne? nicmenej typ anotacie moze byt o nieco abtraktnejsi,
+				nez typ expression, takze toto je ok
+				...pokial je expression !!implicit, musi byt jej typ nieco, od coho je akykolvek iny typ
+				abstraktnejsi - toto splna typ null, cize ten vytvorit
+				- tu FDAssignment nema typ (statement nema typ)
+				- jak je to s TypeFunction?
+					g :: Int -> Int
+					- nicmenej pokial mam h :: Int, tak dava zmysel, any typ "h" bola funkcia...?
+					- problem je totiz v samotnej anotacii inych casti:
+						f = 1 + 7 :: Int
+						- tak "1 + 7" nemoze odvodit ako konstantnu funkciu, alebo moze...?
+						- aj ked asi skutocne nemusim definovat konstantne funkcie, je to asi zbytocne:
+							pokial robim currying, tak ma zaujima len vysledok:
+							g x = x
+							g :: Int -> Int
+							f = 1 + (g 7)
+							- (g 7) je proste Int
+				
+				
+				- musel som zrusit implicitne typy, pretoze literalom nema co jednoznacne odpovedat
+					...niektore typy su core, t.j. su priamo v jazyku a nemozu byt len "implicitne"
+					- ako potomci Simpletype konceptu, podobaju sa dost TypeA
+				
+				
+				- anyType musi byt s premennou typu string, napr.:
+					ff :: a -> b -> a -> Int
+					- len typy "a" a "a" sa zhoduju
+					- zatial som urcil len replacement rule, ale ten asi nebude stacit... jak to poriesit?
+						- prip. nemusim vobec riesit...?
+	
+	
+				- pozor, zatial riesim len typ pre Expression, ale nemam z toho ziskanu lavu cast
+					- t.j. ziskam typ pre "1 + 7 :: Double", ale uz nemam typ pre "f"
+	
+	
+	
 
 
 - typovy system

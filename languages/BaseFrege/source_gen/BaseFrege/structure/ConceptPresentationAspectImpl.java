@@ -35,6 +35,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ConstructorReference = new ConceptPresentationBuilder().shortDesc("References a datatype constructor.").create();
   private final ConceptPresentation props_Context = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ContextPart = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_CoreBoolType = new ConceptPresentationBuilder().shortDesc("Represents boolean type.").create();
+  private final ConceptPresentation props_CoreCharType = new ConceptPresentationBuilder().shortDesc("Represent character type.").create();
+  private final ConceptPresentation props_CoreIntType = new ConceptPresentationBuilder().shortDesc("Represent integral type.").create();
+  private final ConceptPresentation props_CoreType = new ConceptPresentationBuilder().shortDesc("Represents a core implicit type in the base Frege language.").create();
   private final ConceptPresentation props_DCScopeProvider = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Data = new ConceptPresentationBuilder().shortDesc("Define a new algebraic datatype.").create();
   private final ConceptPresentation props_DataConstructor = new ConceptPresentationBuilder().create();
@@ -74,7 +78,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_IIType = new ConceptPresentationBuilder().shortDesc("Import a type.").create();
   private final ConceptPresentation props_IfThenElse = new ConceptPresentationBuilder().shortDesc("If expression.").create();
   private final ConceptPresentation props_ImplicitDefinition = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImplicitType = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Import = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportAH = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportAs = new ConceptPresentationBuilder().create();
@@ -130,6 +133,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_NodeCONID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for constructors and types.").create();
   private final ConceptPresentation props_NodeOperator = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for operators.").create();
   private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for functions and variables.").create();
+  private final ConceptPresentation props_NullTypeNode = new ConceptPresentationBuilder().shortDesc("Hidden special type for implicit function definitions.").create();
   private final ConceptPresentation props_OperatorApplication = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_OperatorReference = new ConceptPresentationBuilder().shortDesc("References an operator.").create();
   private final ConceptPresentation props_PBracket = new ConceptPresentationBuilder().shortDesc("Pattern in round brackets.").create();
@@ -236,6 +240,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Context;
       case LanguageConceptSwitch.ContextPart:
         return props_ContextPart;
+      case LanguageConceptSwitch.CoreBoolType:
+        return props_CoreBoolType;
+      case LanguageConceptSwitch.CoreCharType:
+        return props_CoreCharType;
+      case LanguageConceptSwitch.CoreIntType:
+        return props_CoreIntType;
+      case LanguageConceptSwitch.CoreType:
+        return props_CoreType;
       case LanguageConceptSwitch.DCScopeProvider:
         return props_DCScopeProvider;
       case LanguageConceptSwitch.Data:
@@ -314,8 +326,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_IfThenElse;
       case LanguageConceptSwitch.ImplicitDefinition:
         return props_ImplicitDefinition;
-      case LanguageConceptSwitch.ImplicitType:
-        return props_ImplicitType;
       case LanguageConceptSwitch.Import:
         return props_Import;
       case LanguageConceptSwitch.ImportAH:
@@ -426,6 +436,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_NodeOperator;
       case LanguageConceptSwitch.NodeVARID:
         return props_NodeVARID;
+      case LanguageConceptSwitch.NullTypeNode:
+        return props_NullTypeNode;
       case LanguageConceptSwitch.OperatorApplication:
         return props_OperatorApplication;
       case LanguageConceptSwitch.OperatorReference:

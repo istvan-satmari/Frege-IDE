@@ -2347,12 +2347,6 @@
       <ref role="20lvS9" node="7riFpCdpuBO" resolve="TypeVariable" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2kN9n9f12LG">
-    <property role="EcuMT" value="2680527376097750124" />
-    <property role="3GE5qa" value="Definitions.Types" />
-    <property role="TrG5h" value="ImplicitType" />
-    <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
-  </node>
   <node concept="1TIwiD" id="1EYszxYkoMQ">
     <property role="EcuMT" value="1927103277524159670" />
     <property role="3GE5qa" value="Module.ModuleExport" />
@@ -2620,6 +2614,52 @@
     <property role="TrG5h" value="AnyTypeNode" />
     <property role="34LRSv" value="Any" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+    <node concept="1TJgyi" id="$yyAqvkfS0" role="1TKVEl">
+      <property role="IQ2nx" value="658240668913696256" />
+      <property role="TrG5h" value="equivalenceClass" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="$yyAqvkeVz">
+    <property role="EcuMT" value="658240668913692387" />
+    <property role="3GE5qa" value="TypeNodes" />
+    <property role="TrG5h" value="NullTypeNode" />
+    <property role="34LRSv" value="Null" />
+    <property role="R4oN_" value="Hidden special type for implicit function definitions." />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="$yyAqvtYQn">
+    <property role="EcuMT" value="658240668916247959" />
+    <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
+    <property role="TrG5h" value="CoreIntType" />
+    <property role="34LRSv" value="Int" />
+    <property role="R4oN_" value="Represent integral type." />
+    <ref role="1TJDcQ" node="$yyAqvtZ0o" resolve="CoreType" />
+  </node>
+  <node concept="1TIwiD" id="$yyAqvtZ0o">
+    <property role="EcuMT" value="658240668916248600" />
+    <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
+    <property role="TrG5h" value="CoreType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="Represents a core implicit type in the base Frege language." />
+    <ref role="1TJDcQ" node="7riFpCdpuBL" resolve="Simpletype" />
+  </node>
+  <node concept="1TIwiD" id="$yyAqvtZ0T">
+    <property role="EcuMT" value="658240668916248633" />
+    <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
+    <property role="TrG5h" value="CoreCharType" />
+    <property role="34LRSv" value="Char" />
+    <property role="R4oN_" value="Represent character type." />
+    <ref role="1TJDcQ" node="$yyAqvtZ0o" resolve="CoreType" />
+  </node>
+  <node concept="1TIwiD" id="$yyAqvtZ1o">
+    <property role="EcuMT" value="658240668916248664" />
+    <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
+    <property role="TrG5h" value="CoreBoolType" />
+    <property role="34LRSv" value="Bool" />
+    <property role="R4oN_" value="Represents boolean type." />
+    <ref role="1TJDcQ" node="$yyAqvtZ0o" resolve="CoreType" />
   </node>
 </model>
 
