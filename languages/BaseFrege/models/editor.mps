@@ -720,7 +720,7 @@
         <ref role="1NtTu8" to="sc0n:5ZITH0PGMRe" resolve="infix" />
       </node>
       <node concept="3F0A7n" id="5ZITH0PGMQB" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5ZITH0PGMQi" resolve="priority" />
+        <ref role="1NtTu8" to="sc0n:5ZITH0PGMQi" resolve="precedence" />
       </node>
       <node concept="3F1sOY" id="6SrRM0IrBki" role="3EZMnx">
         <ref role="1NtTu8" to="sc0n:3Xsm2yzykTc" resolve="operator" />
@@ -1081,9 +1081,8 @@
         <node concept="3F0ifn" id="LX2T036KqY" role="3EZMnx">
           <property role="3F0ifm" value="  " />
         </node>
-        <node concept="3F2HdR" id="LX2T036Krs" role="3EZMnx">
+        <node concept="3F1sOY" id="2LraaixhJj_" role="3EZMnx">
           <ref role="1NtTu8" to="sc0n:5ZITH0PGXOL" resolve="guards" />
-          <node concept="2iRkQZ" id="LX2T036Kry" role="2czzBx" />
         </node>
         <node concept="2iRfu4" id="LX2T036KqZ" role="2iSdaV" />
       </node>
@@ -17434,10 +17433,22 @@
     <property role="3GE5qa" value="TypeNodes" />
     <ref role="1XX52x" to="sc0n:5d6A1kOhZxM" resolve="FunctionTypeNode" />
     <node concept="3EZMnI" id="3EDs8MV$Ey8" role="2wV5jI">
+      <node concept="3F0ifn" id="7ugXStWCSpy" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="11LMrY" id="7ugXStWEtPO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F2HdR" id="3EDs8MV$Eyf" role="3EZMnx">
         <property role="2czwfO" value="," />
         <ref role="1NtTu8" to="sc0n:5d6A1kOhZxN" resolve="arguments" />
         <node concept="2iRfu4" id="3EDs8MV$Eyh" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="7ugXStWCSpK" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="11L4FC" id="7ugXStWEtPQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="3EDs8MV$Eyo" role="3EZMnx">
         <property role="3F0ifm" value="-&gt;" />
@@ -17528,6 +17539,17 @@
     <node concept="3F0ifn" id="$yyAqvtZ1O" role="2wV5jI">
       <property role="3F0ifm" value="Bool" />
       <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2LraaixhIiV">
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.FDG" />
+    <ref role="1XX52x" to="sc0n:2LraaixhIiv" resolve="FDGGuards" />
+    <node concept="3EZMnI" id="2LraaixhIiX" role="2wV5jI">
+      <node concept="3F2HdR" id="2LraaixhIj4" role="3EZMnx">
+        <ref role="1NtTu8" to="sc0n:2LraaixhIiw" resolve="guards" />
+        <node concept="2iRkQZ" id="2LraaixhIj6" role="2czzBx" />
+      </node>
+      <node concept="2iRkQZ" id="2LraaixhIj0" role="2iSdaV" />
     </node>
   </node>
 </model>

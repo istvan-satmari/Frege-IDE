@@ -58,6 +58,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FDGCEName = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGCEOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGCommonEntity = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FDGGuards = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FDGTDNNodeReference = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_FDGTypedDefinitionNode = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGrouped = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGuards = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FalseValue = new ConceptPresentationBuilder().shortDesc("False boolean value.").create();
@@ -180,6 +183,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("Tuple type.").create();
   private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable.").create();
   private final ConceptPresentation props_TypeVariableReference = new ConceptPresentationBuilder().shortDesc("References a type variable.").create();
+  private final ConceptPresentation props_TypeWrapper = new ConceptPresentationBuilder().shortDesc("Wrapper around a given type.").create();
   private final ConceptPresentation props_VariableReference = new ConceptPresentationBuilder().shortDesc("References either a function name or a variable.").create();
   private final ConceptPresentation props_WherePart = new ConceptPresentationBuilder().create();
 
@@ -286,6 +290,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_FDGCEOperator;
       case LanguageConceptSwitch.FDGCommonEntity:
         return props_FDGCommonEntity;
+      case LanguageConceptSwitch.FDGGuards:
+        return props_FDGGuards;
+      case LanguageConceptSwitch.FDGTDNNodeReference:
+        return props_FDGTDNNodeReference;
+      case LanguageConceptSwitch.FDGTypedDefinitionNode:
+        return props_FDGTypedDefinitionNode;
       case LanguageConceptSwitch.FDGrouped:
         return props_FDGrouped;
       case LanguageConceptSwitch.FDGuards:
@@ -530,6 +540,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_TypeVariable;
       case LanguageConceptSwitch.TypeVariableReference:
         return props_TypeVariableReference;
+      case LanguageConceptSwitch.TypeWrapper:
+        return props_TypeWrapper;
       case LanguageConceptSwitch.VariableReference:
         return props_VariableReference;
       case LanguageConceptSwitch.WherePart:

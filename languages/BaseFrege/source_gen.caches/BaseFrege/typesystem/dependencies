@@ -59,11 +59,17 @@
     <classNode dependClassName="BaseFrege.typesystem.check_PatternFunction_NonTypesystemRule" />
     <classNode dependClassName="BaseFrege.typesystem.check_PatternWrapper_NonTypesystemRule" />
     <classNode dependClassName="BaseFrege.typesystem.check_Type_NonTypesystemRule" />
+    <classNode dependClassName="BaseFrege.typesystem.typeof_BinaryExpressions_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_BooleanValue_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_Case_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_CharValue_InferenceRule" />
+    <classNode dependClassName="BaseFrege.typesystem.typeof_CoreBoolType_InferenceRule" />
+    <classNode dependClassName="BaseFrege.typesystem.typeof_CoreCharType_InferenceRule" />
+    <classNode dependClassName="BaseFrege.typesystem.typeof_CoreIntType_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_DoubleValue_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_Expression_InferenceRule" />
+    <classNode dependClassName="BaseFrege.typesystem.typeof_FDGGuards_InferenceRule" />
+    <classNode dependClassName="BaseFrege.typesystem.typeof_FDGTypedDefinitionNode_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_FullType_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_FunctionApplication_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_GenericApplication_InferenceRule" />
@@ -90,7 +96,9 @@
     <classNode dependClassName="BaseFrege.typesystem.typeof_TypeB_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_TypeFunction_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_TypeList_InferenceRule" />
+    <classNode dependClassName="BaseFrege.typesystem.typeof_TypeReferenceUsage_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_TypeTuple_InferenceRule" />
+    <classNode dependClassName="BaseFrege.typesystem.typeof_TypeWrapper_InferenceRule" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.InequationReplacementRule_Runtime" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
@@ -395,6 +403,29 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime" />
   </dependency>
+  <dependency className="BaseFrege.typesystem.typeof_BinaryExpressions_InferenceRule" file="typeof_BinaryExpressions_InferenceRule.java">
+    <classNode dependClassName="BaseFrege.behavior.ExpressionEvaluator" />
+    <classNode dependClassName="BaseFrege.behavior.OperatorReference__BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
+    <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
+    <classNode dependClassName="jetbrains.mps.errors.messageTargets.NodeMessageTarget" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
   <dependency className="BaseFrege.typesystem.typeof_BooleanValue_InferenceRule" file="typeof_BooleanValue_InferenceRule.java">
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
@@ -432,6 +463,42 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
+  <dependency className="BaseFrege.typesystem.typeof_CoreBoolType_InferenceRule" file="typeof_CoreBoolType_InferenceRule.java">
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
+  <dependency className="BaseFrege.typesystem.typeof_CoreCharType_InferenceRule" file="typeof_CoreCharType_InferenceRule.java">
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
+  <dependency className="BaseFrege.typesystem.typeof_CoreIntType_InferenceRule" file="typeof_CoreIntType_InferenceRule.java">
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
   <dependency className="BaseFrege.typesystem.typeof_DoubleValue_InferenceRule" file="typeof_DoubleValue_InferenceRule.java">
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
@@ -446,6 +513,35 @@
   </dependency>
   <dependency className="BaseFrege.typesystem.typeof_Expression_InferenceRule" file="typeof_Expression_InferenceRule.java">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
+  <dependency className="BaseFrege.typesystem.typeof_FDGGuards_InferenceRule" file="typeof_FDGGuards_InferenceRule.java">
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
+  <dependency className="BaseFrege.typesystem.typeof_FDGTypedDefinitionNode_InferenceRule" file="typeof_FDGTypedDefinitionNode_InferenceRule.java">
+    <classNode dependClassName="BaseFrege.behavior.TypeWaiter" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
@@ -640,7 +736,6 @@
   </dependency>
   <dependency className="BaseFrege.typesystem.typeof_PatternFunctionInGroup_InferenceRule" file="typeof_PatternFunctionInGroup_InferenceRule.java">
     <classNode dependClassName="BaseFrege.behavior.PatternWrapper__BehaviorDescriptor" />
-    <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -657,7 +752,6 @@
   </dependency>
   <dependency className="BaseFrege.typesystem.typeof_PatternFunction_InferenceRule" file="typeof_PatternFunction_InferenceRule.java">
     <classNode dependClassName="BaseFrege.behavior.PatternWrapper__BehaviorDescriptor" />
-    <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -674,7 +768,6 @@
   </dependency>
   <dependency className="BaseFrege.typesystem.typeof_PatternOperatorInGroup_InferenceRule" file="typeof_PatternOperatorInGroup_InferenceRule.java">
     <classNode dependClassName="BaseFrege.behavior.PatternWrapper__BehaviorDescriptor" />
-    <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -691,7 +784,6 @@
   </dependency>
   <dependency className="BaseFrege.typesystem.typeof_PatternOperator_InferenceRule" file="typeof_PatternOperator_InferenceRule.java">
     <classNode dependClassName="BaseFrege.behavior.PatternWrapper__BehaviorDescriptor" />
-    <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -801,12 +893,32 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
+  <dependency className="BaseFrege.typesystem.typeof_TypeReferenceUsage_InferenceRule" file="typeof_TypeReferenceUsage_InferenceRule.java">
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
   <dependency className="BaseFrege.typesystem.typeof_TypeTuple_InferenceRule" file="typeof_TypeTuple_InferenceRule.java">
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.action.SNodeFactoryOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
+  <dependency className="BaseFrege.typesystem.typeof_TypeWrapper_InferenceRule" file="typeof_TypeWrapper_InferenceRule.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />

@@ -344,3 +344,26 @@ Prikladovy projekt
 		  error "null type is not a subtype of primitive type" -> equationInfo.getNodeWithError();
 	   }
 	}
+	
+- Meet a Join
+	- join: nadtyp vsetkych uvedenych typov
+	- meet: podtyp vsetkych uvedenych typov
+	
+- Priklad: neda sa pouzit typeof() na node typu Type
+	- vezmime priklad: tupleAt, ktory vracia polozku tuple-u na danom indexe
+	- pochopitelne, typom tohto konceptu je typ vybranej polozky
+	- normalne by slo o primitivne pouzitie typeof(), ale skusme cez "when concrete":
+	
+	when concrete (typeof(tupleAt.tuple) as tupleType) {
+	  // Casting, pre jednoduchsiu pracu
+	  node<TupleType> tt = tupleType : TupleType; 
+	   
+	  // HolderType - vracia typ svojho potomka
+	  node<HolderType> holder = new node<HolderType>(); 
+	  holder.type = tt.items.get(tupleAt.at); 
+	   
+	  // Pokial by sme tu pouzili typeof(tt.items.get(tupleAt.at)), tak by to nefungovalo!
+	  // Museli by sme pouzit priamo tt.items.get(tupleAt.at)!
+	  // Pokial teda potrebujeme vyuzit typeof(), je nutne zabalit do ineho node-u
+	  typeof(tupleAt) :==: typeof(holder); 
+	}

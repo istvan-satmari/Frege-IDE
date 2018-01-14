@@ -21,7 +21,6 @@ Vychadza z povodneho dokumentu Editor.txt, pricom ale pridava vlastnu analyzu a 
 			- list tuplov a pod. zlozene typy
 			- funkcie a currying funkcii
 			- pouzitie operatorov (v najjednoduchsej podobe, t.j. 1 + 2, ale kaslem na (+) 1 2 a pod.)
-	
 		
 			
 		- vyriesme pre operatory
@@ -29,8 +28,7 @@ Vychadza z povodneho dokumentu Editor.txt, pricom ale pridava vlastnu analyzu a 
 				- vediet odvodit ten, t.j. typ anotacie (musi vratit typ funkcie)
 				- potom uvidime, co dalej
 	
-	
-			-  typ anotacie sa musi zhofdovat s typom expression...? asi
+			-  typ anotacie sa musi zhodovat s typom expression...? asi
 				f = 1 + 7 :: Int
 				f = 1 + 7 :: Double
 				...toto nema byt porovnatelne? nicmenej typ anotacie moze byt o nieco abtraktnejsi,
@@ -50,24 +48,171 @@ Vychadza z povodneho dokumentu Editor.txt, pricom ale pridava vlastnu analyzu a 
 							g :: Int -> Int
 							f = 1 + (g 7)
 							- (g 7) je proste Int
+								
+				x + y :: Int -> Int -> Int
+				f x y = x + y
+					- na odvodenie typu Expression potrebujem:
+						- ziskat typ operatoru, ktory by uz mal existovat
+							- neziskavam priamo typ, ale pravu stranu definicie operatoru
+								- to je uz zhruba pripravene
+							- zostava z referencie operatoru ziskat specialny typovany node
+								- vseobecne budeme tieto funkcie pomenovavat: node<> getTypedDefinitionNode() (pokial ide o definiciu)
+
+						- ziskat prioritu operatoru
+							- ziskat nejaky node, ktory ale musi byt v tom istom module, ako definicia
+							operatoru; pozor na importovane operatory
+						
+						- f = 1 + 2 * 3 - 4 / 5 * 6 + 7
+							- musi prejst jednotlivymi polozkami a ziskat vysledny typ podla poradia
+							operatorov (infix -> postfix algoritmus)
+							- algoritmus, zhruba:
+								- sweepujem operatory zlava doprava
+								- ukladam si do stacku polozky, ktorymi som presiel
+								- mam 1 * 2 + 3, presiel som 1 * 2, narazil som na +
+								- kedze + ma nizsiu precedenciu, nez *, vyhodnotim vsetko, co mam v 
+								stacku (pozor, az dokym nenarazim na operator s nizsou precedenciou) 
+								a necham zagregovany prvok v stacku
+									- nech + < * < / co sa tyka precedencie, potom:
+									1 + 2 * 3 / 4 * 5
+									- tak na stacku mam: 1,+,2,*,3,/,4; prislo *, cize vyprazdnim az do 
+									rovnakej precedencie
+										1,+,2,*,(3/4),*,5
+								- na konci sa tiez vyprazdnuje stack:
+									1,+,2,*,(3/4),*,5
+									(1,+,(2,*,((3/4),*,5)))
+									- problem je, ze funguje iba pokial su vsetky operatory pravo 
+									asociativne
+								- poriesit vyprazdnovanie zasobnika (z hladiska asociativity):
+									1 + 2 * (3 / 4) * 5 +-+ 6 +-+ 7 -+- 8 + 9
+									- okrem 1 +, lebo dojdem az potial
+									2 * (3 / 4) * 5 +-+ 6 +-+ 7 -+- 8 
+									- v tomto momente potrebujem druhy stack, lebo mozem prechadzat
+									len z konca prvky
+									- idem od konca, nech +-+ je pravo asociativny
+									2 * (3 / 4) * 5 +-+ 6 +-+ 7 +-+ 8 
+									2 * (3 / 4) * 5 +-+ 6 +-+ (7 +-+ 8)	--  okamzite prevediem
+									2 * (3 / 4) * 5 +-+ (6 +-+ (7 +-+ 8))
+									2 * (3 / 4) * (5 +-+ (6 +-+ (7 +-+ 8)))
+									2 * x * y 							-- zjednodusenie
+									- * je ale lavo asociativny, cize musim hodit do sekundarneho zasobnika
+									2 * x
+									y
+									...
+									y * x * 2 -- pozor na to, ze mam v tejto chvili prehodene argumenty
+									- hadzem do druheho zasobnika, dokym som narazil na ten isty operator,
+									co posledne
+									
+									1 + 2 * (3 / 4) * 5 +-+ 6 +-+ 7 +-+ 8
+									- podobne, tiez si drzim posledne:
+										- precedencia
+										- ci bol lavo alebo pravo asociativny, alebo vobec
+										ak narazim na dalsi smerom dolava, co ma rovnaku precedenciu
+										a dojde k zmene asociativity, prip. je niektory z tychto dvoch
+										neasociativny, vyhlasim chybu
+										
+										8 +-+ 7 +-+ 6 +-+ 5 * - chyba, doslo k zmene asociativity
+										- pokial uvazujeme rovnaku precedenciu pre +-+ a *
+										
+										8 +-+ 7 +-+ 6 +-+ 5 *
+										8 +-+ 7 +-+ 6 +-+ 5
+											- vyprazdnim stack
+											((5 +-+ 6) +-+ 7) +-+ 8
+											- pretoze bol lavo asociativny
+											
+										8 +-+ 7 +-+ 6
+											- pretoze je pravo-asociativny, tak okamzize prevediem 
+											a do stacku ukladam takto:
+												8, stack: -
+												8 +-+ 7, stack: -
+												+-+ 6, stack: (8 +-+ 7)
+												- ale stale kontrolujem oproti poslednej precedencii 
+												a asociativite												
+										
+										
+									1 + 2 * 3 * 5 +-+ 6 +-+ 7 +-+ 8 /
+									1 + 2 * 3 * 5 +-+ 6
+									- / zatial nevyriesene, niekde lezi, ale do stacku som ho nepridal
+									8 +-+ 7
+									(7 +-+ 8)
+									+-+
+
+								
+									+
+									2 * 1
+				
+				- novy oeprator
+				// TODO: Som na inom operatore, cize prevediem, co mam v sucasnom stacku (spravne uzatvorkujem a tak), 
+				// TODO: Nakoniec by mi tam mal zostat iba jeden prvok a tento novy operator vlozim na konci cyklu.
+
+				- pravo asociativne vyhodnocujeme hned:
+				// TODO: Chod zlava doprava. Uplne prvy prvok je len typovany a nic ine.  
+				// TODO: Dalsi hned za nim je operator... takto pokracuje az po posledny prvok, ktory je operand. 
+				// TODO: Ziskame celkovy typ, ulozime ako typovany node (stack musi obsahovat len tento 1), na konci 
+				// TODO: tohto cyklu vlozim sucasny operator.
 				
 				
-				- musel som zrusit implicitne typy, pretoze literalom nema co jednoznacne odpovedat
-					...niektore typy su core, t.j. su priamo v jazyku a nemozu byt len "implicitne"
-					- ako potomci Simpletype konceptu, podobaju sa dost TypeA
+				- spisat si to potom
 				
 				
-				- anyType musi byt s premennou typu string, napr.:
-					ff :: a -> b -> a -> Int
-					- len typy "a" a "a" sa zhoduju
-					- zatial som urcil len replacement rule, ale ten asi nebude stacit... jak to poriesit?
-						- prip. nemusim vobec riesit...?
-	
-	
-				- pozor, zatial riesim len typ pre Expression, ale nemam z toho ziskanu lavu cast
-					- t.j. ziskam typ pre "1 + 7 :: Double", ale uz nemam typ pre "f"
-	
-	
+				---------------
+				- sucasny plan: zistit, ci to funguje na urovni operatorov
+					f = "1" + "2" by nemalo prejst, ale pre integery ano
+					- oddebugovat si to podrobne, jak sa odvadzaju typy
+					
+				
+				
+				
+				g = f "a" "b" -- tu by mohol vyhodit chybu
+					- ziskat typ "f"
+					- vratit typ ako aplikaciu funkcie s argumentami danych typov
+				
+				
+				
+				-----------------------------------------------
+				
+			
+			- musel som zrusit implicitne typy, pretoze literalom nema co jednoznacne odpovedat
+				...niektore typy su core, t.j. su priamo v jazyku a nemozu byt len "implicitne"
+				- ako potomci Simpletype konceptu, podobaju sa dost TypeA
+			
+			
+					
+			
+
+			
+			
+			- vynechane, na neskor:
+				- f :: a -> b -> a -> Int - nie je vyrieseny supertyping pre "a" a "b" a ze ide o rozlicne skupiny
+				- type MyListType a = [a]; f :: Int -> MyListType Int; tak nemam zabezpecenu substituciu "a" za Int, cize celkovo referencie inych typov nie su vobec poriesene
+
+				
+				
+				
+				
+				
+			- TypeReferenceUsage
+				- niektore typy, ako napr. type String = [Char], su referencovane
+				- stacilo by sa normalne pozriet na pravu stranu definicie typu a ten prevziat
+				- nestaci vsak pre toto:
+					type ListFunction a = a -> [a]
+					- pokial pouzijem ako, ListFunction Int tak je to nieco ine, nez ListFunction Char
+					- jak poriesit?	
+				
+			
+			- anyType musi byt s premennou typu string, napr.:
+				ff :: a -> b -> a -> Int
+				- len typy "a" a "a" sa zhoduju
+				- zatial som urcil len replacement rule, ale ten asi nebude stacit... jak to poriesit?
+					- prip. nemusim vobec riesit...?
+				- pravdepodobne sa da replacovat v typesystemu... proste klasicke programovanie...
+								
+				
+					
+
+			- pozor, zatial riesim len typ pre Expression, ale nemam z toho ziskanu lavu cast
+				- t.j. ziskam typ pre "1 + 7 :: Double", ale uz nemam typ pre "f"
+
+
 	
 
 

@@ -779,7 +779,38 @@ expression transformacie celkom
 					lavo asociativne */-+
 					((a + (((b * c) / d) - e)) + ((f * d) - g))
 					((a + (((b * c) / d) - e)) + ((f * d) - g))
-					
+		
+		- predpokladajme, ze + je lavo asociativny, * pravo a maju rovnaku precedenciu
+			1 + 2 + 3 = (1 + 2) + 3		-- lava asociativita
+			1 * 2 * 3 = 1 * (2 * 3)		-- prava asociativita
+			
+			1 + 2 * 3 + 4 * 5 * 6 * 7 + 8 + 9 * 10 + 11
+			
+			(1 + 2) * 3 + 4 * 5 * 6 * 7 + 8 + 9 * 10 + 11
+			- idem zlava; * ma rovnaku precedenciu, ako +, lenze + je lavo asociativny,
+			takze vykonam
+			
+			((1 + 2) * 3) + 4 * 5 * 6 * 7 + 8 + 9 * 10 + 11
+			- narazim na +, co je ale iny operator, a som pravo asociativny, lenze je iba jeden
+			prvok, tak vykonam
+			
+			((((((((1 + 2) * 3) + 4) * (5 * (6 * 7))) + 8) + 9) * 10) + 11)
+			
+			overme:
+			infixl 7 +-+
+			infixr 7 -+-
+			
+			a +-+ b = (a - b) + 10
+			a -+- b = (a * b) - 7
+
+			1 +-+ 2 -+- 3 +-+ 4 -+- 5 -+- 6 -+- 7 +-+ 8 +-+ 9 -+- 10 +-+ 11
+			((((((((1 +-+ 2) -+- 3) +-+ 4) -+- (5 -+- (6 -+- 7))) +-+ 8) +-+ 9) -+- 10) +-+ 11)
+			- tak je to jasne:
+				invalid expression, right-associative operator -+- found on same level as left-associative operator +-+
+				- pozor, chyba vyskoci len v pripade, ze je ich precedencia rovnaka
+
+
+				
 - aplikacia lambda funkcii
 	- treba si uvedomit, ze skoro vsetko je aplikacia funkcie
 	- bezna premenna referencovana zlava je tiez aplikacia funkcie

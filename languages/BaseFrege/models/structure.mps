@@ -221,7 +221,7 @@
     </node>
     <node concept="1TJgyi" id="5ZITH0PGMQi" role="1TKVEl">
       <property role="IQ2nx" value="6912716259988811154" />
-      <property role="TrG5h" value="priority" />
+      <property role="TrG5h" value="precedence" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="PrWs8" id="4wNA9Nznv9f" role="PzmwI">
@@ -724,8 +724,8 @@
       <property role="IQ2ns" value="6912716259988856113" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="guards" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="vUxQDjKX$A" resolve="Guard" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2LraaixhIiv" resolve="FDGGuards" />
     </node>
     <node concept="1TJgyj" id="5E$XTHV44xJ" role="1TKVEi">
       <property role="IQ2ns" value="6531617606750718063" />
@@ -1923,7 +1923,7 @@
     <node concept="1TJgyj" id="1lrXqCCgAS0" role="1TKVEi">
       <property role="IQ2ns" value="1539093808845843968" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="commonEntity" />
+      <property role="20kJfa" value="scommonEntity" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4QVy75p6$CO" resolve="FDGCommonEntity" />
     </node>
@@ -2660,6 +2660,59 @@
     <property role="34LRSv" value="Bool" />
     <property role="R4oN_" value="Represents boolean type." />
     <ref role="1TJDcQ" node="$yyAqvtZ0o" resolve="CoreType" />
+  </node>
+  <node concept="1TIwiD" id="2LraaixhIiv">
+    <property role="EcuMT" value="3196193048095024287" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.FDG" />
+    <property role="TrG5h" value="FDGGuards" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2LraaixhIiw" role="1TKVEi">
+      <property role="IQ2ns" value="3196193048095024288" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="guards" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="vUxQDjKX$A" resolve="Guard" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2LraaixngK5">
+    <property role="EcuMT" value="3196193048096476165" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.FDG" />
+    <property role="TrG5h" value="FDGTypedDefinitionNode" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2Lraaixn_5S" role="1TKVEi">
+      <property role="IQ2ns" value="3196193048096559480" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="typedDefinitionNodes" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="2Lraaixn_5Y" resolve="FDGTDNNodeReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2Lraaixn_5Y">
+    <property role="EcuMT" value="3196193048096559486" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.FDG" />
+    <property role="TrG5h" value="FDGTDNNodeReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2Lraaixn_5Z" role="1TKVEi">
+      <property role="IQ2ns" value="3196193048096559487" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="ref" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wEfMO5sGAB">
+    <property role="EcuMT" value="7505881191563839911" />
+    <property role="3GE5qa" value="TypeNodes" />
+    <property role="TrG5h" value="TypeWrapper" />
+    <property role="R4oN_" value="Wrapper around a given type." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6wEfMO5sGAC" role="1TKVEi">
+      <property role="IQ2ns" value="7505881191563839912" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
   </node>
 </model>
 
