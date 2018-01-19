@@ -154,6 +154,91 @@ Vychadza z povodneho dokumentu Editor.txt, pricom ale pridava vlastnu analyzu a 
 				- spisat si to potom
 				
 				
+				- BTW, tusim som prinutil aby deklaracia bola uplne zhodna definicii, lebo mi robilo substitucie za prapodivne nodes
+					- zistil som, ze to asi bude tym, ze nepouzivam "when concrete", potom substituuje za podivne typy...
+				
+				
+				
+				- mozno by sa dalo poouzit pattern "najprv skontruuj strom a az na konci odvod typ?" ...skusime
+					- co som zrusil a moze sa zist neskor:
+					// Return the operators' return type 
+					node<TypeWrapper> resultingType = new node<TypeWrapper>(); 
+					resultingType.type = ftn.returns.copy; 
+					resultingTypeNode = resultingType;
+
+					// Ked chcem zistit typ operatoru:
+					// final node<OperatorReference> operator -- ako vstupny argument
+					when concrete (typeof(node : OperatorReference.getTypedDefinitionNode()) as nodeType) { 
+					  operatorTypes[node] = nodeType; 
+					  waitForSubexpressions(i + 1); 
+					}
+					
+					// Potom niekde inde som ziskal typ operatoru:
+					protected node<> evaluateSimpleExpression(final node<> typedNode, final node<OperatorReference> operator, final node<> secondOperand) { 
+					  // Resulting type 
+					  node<> resultingTypeNode = typedNode; 
+					   
+					  // Evaluate the operator's type 
+					  node<Type> operatorType = operatorTypes[operator] : Type; 
+					   
+					  if (operatorType.isInstanceOf(FunctionTypeNode)) { 
+						node<FunctionTypeNode> ftn = operatorType : FunctionTypeNode; 
+						if (ftn.arguments.size == 2) { 
+						  // Check the arguments' types 
+						  infer ftn.arguments.get(0) :>=: typeof(typedNode); 
+						  infer ftn.arguments.get(1) :>=: typeof(secondOperand); 
+						   
+						  // Return the operators' return type 
+						  node<TypeWrapper> resultingType = new node<TypeWrapper>(); 
+						  resultingType.type = ftn.returns.copy; 
+						  resultingTypeNode = resultingType; 
+						} else { 
+						  error "Illegal operator type, operator must accept exactly 2 arguments." -> operator; 
+						} 
+					  } else { 
+						error "Illegal operator type, operator is not a function." -> operator; 
+					  } 
+					   
+					  // Return the result 
+					  return resultingTypeNode; 
+					}
+				
+				
+					protected void waitForNode(final node<> node, final int i) { 
+					  if (i % 2 == 0) { 
+						// Operand 
+						when concrete (typeof(node) as nodeType) { 
+						  waitForSubexpressions(i + 1); 
+						} 
+					  } else { 
+						// Operator 
+						when concrete (typeof(node : OperatorReference.getTypedDefinitionNode()) as nodeType) { 
+						  operatorTypes[node] = nodeType; 
+						  waitForSubexpressions(i + 1); 
+						} 
+					  } 
+					}
+				
+				
+				
+					// parsedExpressionNode = evaluateSimpleExpression(parsedExpressionNode, operator : OperatorReference, secondOperand);
+				
+				
+				
+				
+				---------------------------------
+				- vyskusat infixr/infixl a otestovat
+					- chyba: Int -> Char -> Char ... ocakava zlava char a sprava int
+					- chyba: priklad ff x = 'a' +-+ 'a' +-+ 1 nefunguje, mal by vyhodit chybu (sprava ocakava int... aj tak pusti)
+				
+				- spisat si to a utriedit tento poznamkovy blok
+				
+				
+				
+				
+				
+				
+				
 				---------------
 				- sucasny plan: zistit, ci to funguje na urovni operatorov
 					f = "1" + "2" by nemalo prejst, ale pre integery ano

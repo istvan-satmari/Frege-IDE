@@ -45,6 +45,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Definition = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DoubleTypeNode = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_DoubleValue = new ConceptPresentationBuilder().shortDesc("Double value.").create();
+  private final ConceptPresentation props_EPBinaryExpression = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_EPFinalOperand = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_EPNode = new ConceptPresentationBuilder().shortDesc("Represents a parsed expression.").create();
   private final ConceptPresentation props_EmptyExpression = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_EmptyLine = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Expression = new ConceptPresentationBuilder().create();
@@ -264,6 +267,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_DoubleTypeNode;
       case LanguageConceptSwitch.DoubleValue:
         return props_DoubleValue;
+      case LanguageConceptSwitch.EPBinaryExpression:
+        return props_EPBinaryExpression;
+      case LanguageConceptSwitch.EPFinalOperand:
+        return props_EPFinalOperand;
+      case LanguageConceptSwitch.EPNode:
+        return props_EPNode;
       case LanguageConceptSwitch.EmptyExpression:
         return props_EmptyExpression;
       case LanguageConceptSwitch.EmptyLine:
