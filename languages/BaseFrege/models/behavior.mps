@@ -22313,8 +22313,13 @@
                         <node concept="3clFbF" id="6wEfMO5hCvb" role="3cqZAp">
                           <node concept="1rXfSq" id="6wEfMO5hCv9" role="3clFbG">
                             <ref role="37wK5l" node="6wEfMO5h_ZN" resolve="handlePostponedItems" />
-                            <node concept="37vLTw" id="6wEfMO5hELA" role="37wK5m">
-                              <ref role="3cqZAo" node="69o01iEq_5g" resolve="lastPrecedence" />
+                            <node concept="2OqwBi" id="58hJgqvccaT" role="37wK5m">
+                              <node concept="37vLTw" id="58hJgqvcbWi" role="2Oq$k0">
+                                <ref role="3cqZAo" node="69o01iEqAAq" resolve="fixity" />
+                              </node>
+                              <node concept="2qgKlT" id="58hJgqvccql" role="2OqNvi">
+                                <ref role="37wK5l" node="69o01iEq2ny" resolve="getPrecedence" />
+                              </node>
                             </node>
                           </node>
                         </node>

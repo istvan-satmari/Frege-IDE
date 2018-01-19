@@ -407,6 +407,7 @@
   </dependency>
   <dependency className="BaseFrege.typesystem.typeof_BinaryExpressions_InferenceRule" file="typeof_BinaryExpressions_InferenceRule.java">
     <classNode dependClassName="BaseFrege.behavior.ExpressionParser" />
+    <classNode dependClassName="BaseFrege.behavior.TreeUtilities" />
     <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="jetbrains.mps.errors.IErrorReporter" />
     <classNode dependClassName="jetbrains.mps.errors.messageTargets.MessageTarget" />
