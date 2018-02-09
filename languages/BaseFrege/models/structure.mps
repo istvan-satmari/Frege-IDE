@@ -1138,6 +1138,13 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7Z1En8HCBzj" role="1TKVEi">
+      <property role="IQ2ns" value="9205825421178992851" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="_typeFilledByParent" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7Z1En8HCBzi" resolve="TypeCarrier" />
+    </node>
     <node concept="PrWs8" id="5c96$3RKYgj" role="PzmwI">
       <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
     </node>
@@ -1708,19 +1715,6 @@
       <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
     </node>
   </node>
-  <node concept="1TIwiD" id="50lglqqQR7q">
-    <property role="EcuMT" value="5770590337766224346" />
-    <property role="3GE5qa" value="Definitions.Patterns" />
-    <property role="TrG5h" value="PatternArgumentWrapper" />
-    <property role="R4oN_" value="Wrapper of a simple pattern." />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="50lglqqQR7r" role="1TKVEi">
-      <property role="IQ2ns" value="5770590337766224347" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="pattern" />
-      <ref role="20lvS9" node="3Xsm2yzyl6j" resolve="PatternArgument" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="LkFsxSSFbS">
     <property role="EcuMT" value="888526103032017656" />
     <property role="3GE5qa" value="Definitions" />
@@ -2001,6 +1995,13 @@
     <property role="3GE5qa" value="Definitions.Patterns.Operator" />
     <property role="TrG5h" value="PVarOperator" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4yhUL22ezre" role="1TKVEi">
+      <property role="IQ2ns" value="5229219098490713806" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="_typeFilledByParent" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7Z1En8HCBzi" resolve="TypeCarrier" />
+    </node>
     <node concept="1TJgyj" id="25MTemGdTeZ" role="1TKVEi">
       <property role="IQ2ns" value="2410240425684603839" />
       <property role="20lmBu" value="aggregation" />
@@ -2677,21 +2678,21 @@
   </node>
   <node concept="1TIwiD" id="2LraaixngK5">
     <property role="EcuMT" value="3196193048096476165" />
-    <property role="3GE5qa" value="Definitions.FunctionDefinition.FDG" />
-    <property role="TrG5h" value="FDGTypedDefinitionNode" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.AuxilliaryTypedNodes" />
+    <property role="TrG5h" value="TypedNodesGrouped" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2Lraaixn_5S" role="1TKVEi">
       <property role="IQ2ns" value="3196193048096559480" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="typedDefinitionNodes" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="2Lraaixn_5Y" resolve="FDGTDNNodeReference" />
+      <ref role="20lvS9" node="2Lraaixn_5Y" resolve="TypedNodeReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="2Lraaixn_5Y">
     <property role="EcuMT" value="3196193048096559486" />
-    <property role="3GE5qa" value="Definitions.FunctionDefinition.FDG" />
-    <property role="TrG5h" value="FDGTDNNodeReference" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.AuxilliaryTypedNodes" />
+    <property role="TrG5h" value="TypedNodeReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2Lraaixn_5Z" role="1TKVEi">
       <property role="IQ2ns" value="3196193048096559487" />
@@ -2763,6 +2764,41 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4X24Jn8NuYt">
+    <property role="EcuMT" value="5711148124304437149" />
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.AuxilliaryTypedNodes" />
+    <property role="TrG5h" value="TypedFunctionNode" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4X24Jn8NuZ8" role="1TKVEi">
+      <property role="IQ2ns" value="5711148124304437192" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2Lraaixn_5Y" resolve="TypedNodeReference" />
+    </node>
+    <node concept="1TJgyj" id="4X24Jn8NuYA" role="1TKVEi">
+      <property role="IQ2ns" value="5711148124304437158" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="return" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2Lraaixn_5Y" resolve="TypedNodeReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4X24Jn8P8hj">
+    <property role="EcuMT" value="5711148124304868435" />
+    <property role="3GE5qa" value="TypeNodes" />
+    <property role="TrG5h" value="UndecidableTypeNode" />
+    <property role="34LRSv" value="Undecidable" />
+    <property role="R4oN_" value="Represents a placeholder type (mostly) for variables when the type is not simply decidable." />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="7Z1En8HCBzi">
+    <property role="EcuMT" value="9205825421178992850" />
+    <property role="3GE5qa" value="TypeNodes" />
+    <property role="TrG5h" value="TypeCarrier" />
+    <property role="R4oN_" value="A concept with no editor only to carry a type inferred from outside." />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
   </node>
 </model>
 

@@ -634,13 +634,98 @@
 			}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 
 	- malo by to fungovat takto:
-	myFunction2 l1 = "s" + l1 + l2_1 + l2_2                                                           
-	   where                                                                                          
-		  l2_1 l2_1_a1 = "s" + l2_1 + l2_1_a1 + l1 + l2_2 + l3_21_1 + l3_21_2                         
-			 where                                                                                    
+	myFunction2 l1 = "s" + l1 + l2_1 + l2_2
+	   where
+		  l2_1 l2_1_a1 = "s" + l2_1 + l2_1_a1 + l1 + l2_2 + l3_21_1 + l3_21_2
+			 where
 				l3_21_1 l3_21_1_a1 = "s" + l3_21_1 + l3_21_1_a1 + l1 + l2_1 + l2_1_a1 + l2_2 + l3_21_2
 				l3_21_2 l3_21_2_a1 = "s" + l3_21_2 + l3_21_2_a1 + l1 + l2_1 + l2_1_a1 + l2_2 + l3_21_1
-		  l2_2 l2_2_a1 = "s" + l2_2 + l2_2_a1 + l1 + l2_1 + l3_22_1 + l3_22_2                         
-			 where                                                                                    
+		  l2_2 l2_2_a1 = "s" + l2_2 + l2_2_a1 + l1 + l2_1 + l3_22_1 + l3_22_2
+			 where
 				l3_22_1 l3_22_1_a1 = "s" + l3_22_1 + l3_22_1_a1 + l1 + l2_2 + l2_2_a1 + l2_1 + l3_22_2
 				l3_22_2 l3_22_2_a1 = "s" + l3_22_2 + l3_22_2_a1 + l1 + l2_2 + l2_2_a1 + l2_1 + l3_22_1
+			
+- Typesystem
+	- Vseobecny princip pre typesystem je popisany v subore Typesystem.txt
+	- Odvodenie typu literalov je asi jasne
+	- Typ funkcie:
+		ff x = 1 + 1 :: Int
+		- cely obal je Expression = BinaryExpresdsions + FullType, tie by sa mali zhodovat 
+		- (t.j. "1 + 1" a ":: Int")
+		- dolezite je, ze mame par implicitnych operatorov, ako napr. +, tie musia mat teda dany typ
+		
+		Najpr sme chceli vyriesit jednoduchy priklad, napr. skontrolovat, ze ff = "a" + 1 jaksi nedava zmysel
+		- dovod je, ze + akceptuje iba Int a Int ako argumenty, teda cheli sme vyriesit pre odvodenie typu vyrazu podla pouzitych operatorov
+		- operator je funkcia, cize zavedeny typ FunctionTypeNode, ktory prijima 0..n argumentov nejakeho typu a vracia nejaky typ
+		- pozor na to, ze som sa rozhodol, ze pri curryingu pokial mam konstantnu funkciu, tak nesmie byt typu FunctionTypeNode s 0 argumentami, ale rovno vysledok
+			- robi to totiz bordel:
+				f = 1 + 7 :: Int
+				- potom 1 + 7 ma chapat ako konstantnu funkciu? to nedava zmysel
+				- cize aj pri curryingu je lepsie rovno vratit:
+					g x = x
+					g :: Int -> Int
+					f = g 7
+					- (g 7) je proste Int, a nie konstantna funkcia, ktora vracia Int, lebo...
+						f = (g 7) + 1
+						- tu by bol problem, kedze + je operator, ktory prijima ako argument Int a nie konstantnu funkciu, ktora vracia Int
+					
+		Ziskavanie typu operatoru:
+		- "+" je vlastne OperatorReference node
+		- na vyhodnotenie vyrazu je velmi dolezite poznat tieto veci:
+			- precedencia (priorita) operatoru
+			- asociativita (lava/prava/bez)
+			- typ (ze je funkcia prijimajuca 2 argumenty typu...)
+		- prve dve veci riesi fixity, ktory musi byt v tom istom modulu, ako definicia daneho operatoru
+		- cize pozrie sa na sucasny modul a ak najde fixity s odpovedajucim operatorom, tak ho vrati a ak nie, vrati nejaky defaultny
+		- fixity uz pozna precedenciu a aj asociativitu
+		- s typom je vacsi problem, takze tam sa ziska jednoducho prava strana definicie odkazovaneho operatoru v podobe jedneho node-u
+		- na takyto node jednoducho funguje typeof(returnedNode), kedze uz nesie sam o sebe typ
+		- (ide o funkciu getTypedDefinitionNode())
+			
+- Vyhodnocovanie typu vyrazu podla pouzitych operatorov
+	- jaky je vysledok vyrazu...?
+	f = 1 + 2 * 3 - 4 / 5 * 6 + 7
+	- zavisi od precedencie a asocitivity operatorov
+	- niektore operatory su zakerne tym, ze mozu byt typu ako: Int -> Char -> String
+	- t.j. uplne menia sposob vyhodnocovania, cize na vyhodnotenie typu musime skoro akoby vyhodnotit cely vyraz
+	
+	- algoritmus:
+	- vychadza z prevodu infix -> postfix vyrazu, t.j. takyto algoritmus by bol 2-priechodovy s pouzitim zasobnika
+	- pripomenme, ze nemoze byt pouzitych viacero infixovych operatorov s tou istou precedenciou a ani operatory s rozlicnou asociativitou (lava + prava) s tou istou precedenciou - taky vyraz sa neda vyhodnotit
+	
+	prvy, hlavny, priechod:
+	- prechadzam polozky zlava doprava
+	- vsetko ukladam na zasobnik
+	- pokial narazim na operator s nizsou precedenciou, nez bol posledny doteraz, pauznem sucasny priechod a idem na sekundarny priechod
+	- napr. nech precedencia operatorov: + 1, - 2, * 3, / 4
+	- potom: 1 + 2 - 7 * 9 / 5 |tu to pauzne, - neda do zasobnika a vyhodnoti lavu stranu az do operatora s rovnakou precedenciou, ako je -| - 3
+	- cize ide vyhodnocovat: 1 + 2 - | 7 * 9 / 5 | - 3
+	
+	sekundarny priechod:
+	- vyhodnocujem 7 * 9 / 5, ale na stacku mam 1 + 2 - 7 * 9 / 5, cize mussim si davat pozor, na ake polozky narazam
+	- idem sprava dolava, lebo viem, ze operatory napravo maju vyssiu alebo rovnu precedenciu, ako operatory nalavo
+	- takze by som ich mohol hned vyhodnocovat, ale narazame na problem, predstavme si, ze vyhodnocujeme vyraz: 1 * 2 * 3 / 4 / 5 / 6
+	- nemozeme najprv vyhodnotit 5 / 6, lebo / je lavo asociativny
+	- cize musime ukladat opat polozky do dalsieho stacku, az dokym i nebudeme isti, ze moezeme vyhodnotit
+	- nicmenej, pre polozky pravo asociativne vyhodnocujeme okamzite, t.j. pokial by bolo / pravo asociativne, tak postupujeme:
+		1 * 2 * 3 / 4 / 5 / 6 |
+		1 * 2 * 3 / 4 / 5 / | 6
+		1 * 2 * 3 / 4 / 5 | / 6
+		1 * 2 * 3 / 4 / | 5 / 6
+		1 * 2 * 3 / 4 | / (5 / 6 -- vyhodnotim)
+		1 * 2 * 3 / | 4 / (5 / 6)
+		1 * 2 * 3 | / (4 / (5 / 6) -- vyhodnotim)
+	- ked narazim na operator s nizsou precedenciou, tak musim vyhodnotit polozky na druhom stacku (lavo asociativne)
+	- ked narazim na operator s rovnakou precedenciou, tak sa ubezpecim, ze ma rovnako asociativitu, ako predchadzajuci, lebo ak nema, je vyraz nevyhodnotitelny
+	- zaroven kontrolujem, ze nemozem narazit na 2 operatory s rovnakou precedenciou, ak je jeden z nich infixovy (bez asociativity)
+	- (pochopitelne, nevyhodnocujeme realny vyraz, ale iba typ vyrazu)
+		
+	vyhodnocovanie vyrazu:
+	- ak uz viem, ze mam vyhodnotit vyraz typu (((1 / 2) / 3) / 4), co musim urobit?
+	- bohuzial, "when concrete" vytvara vlakna, takze je nutne zvolit pristup "najprv vytvorim strom, jak sa realne maju vyhodnocovat vyrazy"
+	a az potom ten strom nechat sam seba vyhodnotit zopar trikmi, jak su popisane v Typesystem.txt
+	- ide o uzly v ramci ExpressionParse -> EPNode, EPBinaryExpression, EPFinalOperand
+	- pripomienka pouzitych trikov:
+		- :>=: vobec nefunguje, pretoze vytvoreny strom ma fakeove nodes, takze nema co podciarknut (strom nie je realne viditelny)
+		- musime jednotlive nodes referencovat (skutocne casti expression), pretoze inak by sme ich premiestnili do stromu, ktory je iba docasny a realne neexistuje
+		- musime pouzivat error "string" -> referencedNode, lebo ako som uz pisal, :>=: nefunguje podla ocakavani

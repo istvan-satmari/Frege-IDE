@@ -367,3 +367,30 @@ Prikladovy projekt
 	  // Pokial teda potrebujeme vyuzit typeof(), je nutne zabalit do ineho node-u
 	  typeof(tupleAt) :==: typeof(holder); 
 	}
+	
+- Reportovanie nespravneho typu:
+	- niekedy nejde reportovat typ klasickym sposobom:
+		leftOperandType :<=: supposedLeftOperandType;
+	- dovod moze byt napr. ze node, v ktorom vyhodnocujem typ, nie je realne v modeli, t.j. bol vytvoreny len abstraktne sposobom napr.:
+		node<EPBinaryExpression> root = new initialized node<EPBinaryExpression>(); 
+		root.leftOperand = getOperand(leftOperand); 
+		root.rightOperand = getOperand(rightOperand); 
+		root.operator = operator; 
+		return root;
+	- v takom pripade funguje toto:
+	if (!isSubtype(leftOperandType :< supposedLeftOperandType)) { 
+	  error "The result of the subexpression should be " + supposedLeftOperandType + " but " + leftOperandType + " found." -> epBinaryExpression.leftOperand.getResponsibleNode();
+	}
+	- staci mat node, ktory nema node, ktory kontroluje, ako child, ale ako reference
+	- v takom pripade error "error string" -> node.reference skutocne podciarkne referencovany node, ako chybny
+	- umoznit mat v node referenciu je vlastne jeden z mala sposobov, ako node-u priradit existujuci node z modelu, inak by sme museli robit node.copy (pokial by slo o child)
+	
+- Ked vracia divny typ, napr. w87, a14 a pod.:
+	- pravdepodobne typ nebol zatial vypocitany
+	- treba pouzit "when concrete" blok
+
+- "when concrete" vytvara vlakna
+	- pozor, blok kodu ohraniceny "when concrete" existuje v samostatnom vlakne, cize okolie funkcie dobehne okamzite
+	- to moze byt problem, cize pokial potrebujeme nieco zlozite, ako napr. vyhodnotit vyraz "1 + 2 * 3 / 4", tak najlepsi sposob je najprv:
+		- zostavit strom fakeovych node-ov: (1 + (2 * (3 / 4)))
+		- potom nechat "when concrete" bloky pre jednotlive uzly v tomto strome

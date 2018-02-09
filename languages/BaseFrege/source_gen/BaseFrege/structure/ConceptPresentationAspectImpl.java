@@ -62,8 +62,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_FDGCEOperator = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGCommonEntity = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGGuards = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FDGTDNNodeReference = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FDGTypedDefinitionNode = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGrouped = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FDGuards = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_FalseValue = new ConceptPresentationBuilder().shortDesc("False boolean value.").create();
@@ -158,7 +156,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_PVariable = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Pattern = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PatternArgument = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PatternArgumentWrapper = new ConceptPresentationBuilder().shortDesc("Wrapper of a simple pattern.").create();
   private final ConceptPresentation props_PatternFunction = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_PatternFunctionInGroup = new ConceptPresentationBuilder().shortDesc("A derivative of PatternFunction targeted for grouped function definition.").create();
   private final ConceptPresentation props_PatternOperator = new ConceptPresentationBuilder().create();
@@ -178,6 +175,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Type = new ConceptPresentationBuilder().shortDesc("Definition of a type synonym.").create();
   private final ConceptPresentation props_TypeA = new ConceptPresentationBuilder().shortDesc("Represents a type variable.").create();
   private final ConceptPresentation props_TypeB = new ConceptPresentationBuilder().shortDesc("Represents a type variable that is not a reference.").create();
+  private final ConceptPresentation props_TypeCarrier = new ConceptPresentationBuilder().shortDesc("A concept with no editor only to carry a type inferred from outside.").create();
   private final ConceptPresentation props_TypeFunction = new ConceptPresentationBuilder().shortDesc("Complete type signature of a function.").create();
   private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type.").create();
   private final ConceptPresentation props_TypeName = new ConceptPresentationBuilder().shortDesc("Type name.").create();
@@ -187,6 +185,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable.").create();
   private final ConceptPresentation props_TypeVariableReference = new ConceptPresentationBuilder().shortDesc("References a type variable.").create();
   private final ConceptPresentation props_TypeWrapper = new ConceptPresentationBuilder().shortDesc("Wrapper around a given type.").create();
+  private final ConceptPresentation props_TypedFunctionNode = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TypedNodeReference = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_TypedNodesGrouped = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_UndecidableTypeNode = new ConceptPresentationBuilder().shortDesc("Represents a placeholder type (mostly) for variables when the type is not simply decidable.").create();
   private final ConceptPresentation props_VariableReference = new ConceptPresentationBuilder().shortDesc("References either a function name or a variable.").create();
   private final ConceptPresentation props_WherePart = new ConceptPresentationBuilder().create();
 
@@ -301,10 +303,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_FDGCommonEntity;
       case LanguageConceptSwitch.FDGGuards:
         return props_FDGGuards;
-      case LanguageConceptSwitch.FDGTDNNodeReference:
-        return props_FDGTDNNodeReference;
-      case LanguageConceptSwitch.FDGTypedDefinitionNode:
-        return props_FDGTypedDefinitionNode;
       case LanguageConceptSwitch.FDGrouped:
         return props_FDGrouped;
       case LanguageConceptSwitch.FDGuards:
@@ -493,8 +491,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Pattern;
       case LanguageConceptSwitch.PatternArgument:
         return props_PatternArgument;
-      case LanguageConceptSwitch.PatternArgumentWrapper:
-        return props_PatternArgumentWrapper;
       case LanguageConceptSwitch.PatternFunction:
         return props_PatternFunction;
       case LanguageConceptSwitch.PatternFunctionInGroup:
@@ -533,6 +529,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_TypeA;
       case LanguageConceptSwitch.TypeB:
         return props_TypeB;
+      case LanguageConceptSwitch.TypeCarrier:
+        return props_TypeCarrier;
       case LanguageConceptSwitch.TypeFunction:
         return props_TypeFunction;
       case LanguageConceptSwitch.TypeList:
@@ -551,6 +549,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_TypeVariableReference;
       case LanguageConceptSwitch.TypeWrapper:
         return props_TypeWrapper;
+      case LanguageConceptSwitch.TypedFunctionNode:
+        return props_TypedFunctionNode;
+      case LanguageConceptSwitch.TypedNodeReference:
+        return props_TypedNodeReference;
+      case LanguageConceptSwitch.TypedNodesGrouped:
+        return props_TypedNodesGrouped;
+      case LanguageConceptSwitch.UndecidableTypeNode:
+        return props_UndecidableTypeNode;
       case LanguageConceptSwitch.VariableReference:
         return props_VariableReference;
       case LanguageConceptSwitch.WherePart:

@@ -5237,13 +5237,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="50lglqqQR7_">
-    <property role="3GE5qa" value="Definitions.Patterns" />
-    <ref role="1XX52x" to="sc0n:50lglqqQR7q" resolve="PatternArgumentWrapper" />
-    <node concept="3F1sOY" id="50lglqqQR7B" role="2wV5jI">
-      <ref role="1NtTu8" to="sc0n:50lglqqQR7r" resolve="pattern" />
-    </node>
-  </node>
   <node concept="3p36aQ" id="50lglqqSCFt">
     <property role="3GE5qa" value="Definitions.Patterns" />
     <ref role="aqKnT" to="sc0n:3Xsm2yzyl6k" resolve="PatternFunction" />
@@ -17550,6 +17543,16 @@
         <node concept="2iRkQZ" id="2LraaixhIj6" role="2czzBx" />
       </node>
       <node concept="2iRkQZ" id="2LraaixhIj0" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4X24Jn8P8hH">
+    <property role="3GE5qa" value="TypeNodes" />
+    <ref role="1XX52x" to="sc0n:4X24Jn8P8hj" resolve="UndecidableTypeNode" />
+    <node concept="3F0ifn" id="4X24Jn8P8hJ" role="2wV5jI">
+      <property role="3F0ifm" value="undecidable" />
+      <node concept="VechU" id="4X24Jn8P8hM" role="3F10Kt">
+        <property role="Vb096" value="DARK_MAGENTA" />
+      </node>
     </node>
   </node>
 </model>

@@ -1,308 +1,351 @@
 Editor akcie transformacie a substitucie pre function-definition - pravu stranu (t.j. expression)
 Vychadza z povodneho dokumentu Editor.txt, pricom ale pridava vlastnu analyzu a postup prace
 -------------------------------------------------------------------------------------------------
-- este prejst tieto dokumenty a pozriet, ci nieco netreba z jednotlivych TODO:
-	- Analysis.txt
-	- Co chceme implementovat.txt
-	- Editor.txt
+- todo:
+	- typovy system
+		- kontrola typu argumentu (ff x)
+		- deklaracia funkcie
+			ff :: Int -> Int
+			ff x = 1 + x
 
+		a + b = !!implicit :: Int -> Int
+		- currying len na konci, pokial zvysi cas
+
+	- textgen
+	- stretnutie: 2. 2. 2018, 10:00
+
+
+
+
+
+
+---------------------------------------------
+- typ nesmie checkovat anotacia funkcie - ta len umoznuej ziskat typ; kontrolu si musi urobit samotna definicia funkcie!
+	=> cize vediet ziskat pozadovanu anotaciu pre sucasnu funkciu
+	- porovnanie typu definicie voci deklaracie tym padom musi byt opatrne a asi nemoze byt jednoduche "isSubtypeOf" - niektore veci sa totiz musia nahradit
+	- ak napr. nie je jasny typ argumentov, tak ich len prinutit byt danym typom
+	
+f x = x + 1
+	- ked kontrolujem pouzitie x + 1, ziskavam typ "x", ktory ziskam z lavej strany - ten je v tej chvili neznamy
+	- cize kontrola prejde a urcim, ze typ "x" je podla typu "+" (vyberiem konkretnejsi z danych dvoch typov)
+	- "x" je function application, cize ziskat tento typ
+		- je nejasny, cize take nieco tam hodit (unavailable)
+		- samozrejme caka na vyhodnotenie typu referencovanej funkcie
+		
+- poriesit, ci typy konstantnych funkcii su naozaj funkcie?
+	- mali by asi byt
+	- ked pouzivame "functionApplication", tak tam sa odvodi typ - pokial ide o konstantnu funkciu, tak typ "functionApplication" musi byt jej returnType
+
+- na to, aby sa dalo pochopit odvadzanie typu argumentu sa treba pozriet, ako by sa riesilo pri beznom spracovani jazyka (napr. bisonom)
+	- chceme vyhodnotit f x = x + x
+	- mame +: vieme, ze ide o a -> a -> a (predpokladajme)
+	- mame anotaciu, este nevieme, ci bola vyhodnotena: f :: Int -> Int
+	- volame f 'a'
+	- vieme, ze definicia funkcie f musela predchadzat jej volaniu, cize viemee sa pozriet na typ f x = x + x
+	- do semantickych tabuliek sme si museli ulozit... co?
+		- podla stromu, vieme typ +, takze zadefinujeme typ x ako vseobecny typ "a"
+		- vyssie v strome mame f x, cize pozrieme sa na typ x a vidime, ze je to vseobecny typ "a"
+		- f je teda funkcia typu: f :: a -> a
+		- cize deklarovany typ (anotacia), ked na nu narazime, tak moze byt jedine vseobecnejsia
+		- ked na nu narazime, prepiseme na f :: Int -> Int
+		- lenze volanie mohlo byt aj pred anotaciou... cize musi sa asi zmenit poradie vyhodnocovania a najprv asi musime spracovat anotaciu funkcie f
+		- s anotaciou spracovavanou prvou pri spracovani f x = x + x:
+		- okamzite piseme do semantickych tabuliek, ze typ x je Int
+		- pri spracovani x + x kontrolujeme typ + voci argumentom Int a Int a zistime, ze vyhovuje
+		- vysledny typ f je teda Int, co tiez sme si uz zapisali do tabuliek vdaka anotacii a zistujeme, ze sedi
+	- preco to tak dobre nefunguje v pripade MPS:
+		- nemame velmi staticke struktury niekde bokom, do ktorych by sme si ukladali data na spracovanie
+		- tzn. my potrebujeme pri spracovani si uchovavat niekde nejake docasne vypocty, ale to nejde, lebo tieto struktury nemame
+		- cize vkuse sa musi nieco vypocitat znovu a znovu - tj. node odkazuje na iny node atd.
+			- pretoze nie je presne urcene poradie vypoctov! 
+			- vypocitava sa stylom, akym funguje angular: pokial zmenim nieco v editore konkretneho nodeu, tak prepocitam len ten
+			- co vedie na deklarativny sposob programovania, ale moze byt pomaly, lebo sa uz raz vypocitane veci vypocitavaju znovu
+	
+- co v pripade tohto:
+	f (x:xs) = x + 1
+	f :: [Int] -> Int
+	- ak mam semanticke tabulky:
+		- viem, ze argument (x:xs) je typu [Int] a viem, ze (x:xs) je zoznam
+		- cize viem, ze jednotlive polozky zoznamu musia byt typu Int
+		- ked som bol na urovni (x:xs), ulozil som si do semantickych tabuliek len placeholder types
+		- ked vyjdem z tejto urovne, upravim placeholder types podla [Int], tzn. ono mi to vratilo nejaku strukturu, napr.:
+			items: x
+			list: xs
+			- pokial by bola substruktura, tak je ju nutne upravit chytro rekurzivne
+	- bez tabuliek:
+		- nemozeme vojst do (x:xs) a upravit typ neskor
+		- cize typ musi dedukovat uz samotne "x"
+			f ((x:xs):ys) = x + 1
+			f :: [[Int]] -> Int
+			- predpokladam, ze by bolo nieco v style, ze bublam nahor, dokym nie som v strukture "PatternFunction"
+			- tam si ziskam typ argumentu pre seba, co je [[Int]]
+			- a bublam spat dole a rozbalujem: 
+				- vojdem do prveho listu, tak zostane [Int]
+				- vojdem do druheho listu na svoju uroven "x", zostane Int
+			- cize musi to vediet rozbalovat
+			- otazka, ci sa tymto budem otravovat a nedam len jednoduche premenne?
+	- inak tu sa asi neda inspirovat BaseLanguage, t.j. tou Javou, pretoze Java nema rozbalovanie typov, pokial viem 
+		- (vsetky argumenty su presne pomenovaneho typu, nie je tam nic stylu (x:xs) a pod. ...nie?)
+		
+Len pre referenciu:
+- asi by som mal vlozit typovany node rovno do nejakej metodym ktora vracia typ pre tieto premenne, lebo inak sa neda odvodit, ked chyba anotacia
+	- predpokladajme, ze nemame anotaciu pre "f"
+	f x = x + 1
+	g = f "a" -- postupujem tak, ze najprv odvodim typ argumentu (moze byt aj undecidable), a potom toto vsuniem ako argument metody pre f, ktora vracia typ (getTypedNodeWithHelp(...))
+	- problem tohto je, ze typ f by uz v tom case bol odvodeny, cize ta metoda by musela robit nieco ako kopiu seba (resp. celej definicie, kde je f), vytvorit skratka node, ktory este typ nema a pokusit sa mu typ argumentov dopasovat do nejakej casti a az potom cakat na odvodenie
+	- toto je ale velmi pracne, pretoze tu by to potom chcelo vyhodit chybu pri zlom napasovani argumentov na spravnom mieste, co sa nestane (reportoval by chybu asi vnutri kopii nodeu, ktora by ale v modeli realne neexistovala)
+	- skratka, najvacsi problem je ten, ze jak uz raz povieme, ze typ "x" je undecidable, uz to nevieme zmenit
+	- toto je ale problem, pretoze postup je tento:
+		- chceme odvodit typ pravej strany x + 1
+		- pozrieme sa na typ x => v tomto bode sa uz musime rozhodnut! => x je undecidable
+		- cize undecidable vyhovuje pre x + 1 (predpokladame)
+		- nicmenej pri kontrole typov argumentov pri x + 1 vieme povedat, ze x je restriktivnejsi a je typu Int, toto vsak uz nedokazeme zmenit
+		- cize jediny sposob je vytvarat docasne kopie sluziace pre rozny ucel, ktore uz spoliehaju na typ povodnych node-ov, toto je uz vsak narocne
+- musim duplikovat kod kvoli tomu, ze nejde do behaviour pridat casti z typesystemu, ako "error" a typeof() a pod., takze sa neda dodrziavat DRY
+- otazka, ci skutocne bude prinuteny cakat, dokym nebude vyplnene "_typeFilledByParent"? (malo by, pretoze tento node nenesie ziaden typ, dokym mu ho niekto nenainferuje cez typeof(...) :==: ...)
+- poriesit typ functionApplication
+	- ziskam typ aplikovanej funkcie (pozor na rekurziu - pokial sa teda chcem tymto zaoberat)
+	- rozoberiem podla pouzitych argumentov - kontrola argumentov a potom vysekam a vratim vysledny typ - pokial ide o currying, tak sa vrati typ funkcie
+	- na to, aby sme mohli vratit typ pre "f", potrebujeme odvodit typ pravej strany definicie funkcie
+	- potrebujeme sa dotazat nejakeho node-u vyssie, napr. FDComplete, nech vrati typovanu pravu stranu
+	- problemy robia tieto veci:
+		- rekurzia: f (x:xs) = (f xs) ++ x
+			- na pravej strane musim zistit, ci pri functionApplication, ktory chcem pouzit, ci nie je sucasny
+			- ak je, vratim UndecidableTypeNode
+			- zvysok musi poriesit operator - pokial je nejaky z nodeov undecidable, tak proste vrati returnType
+				- (BTW, ked mame f (x:xs) = f xs, tak tak ci tak nevieme povedat nic)
+			- treba vyriesit aj pre operator
+			- kazdopadne, nebudem sa zaoberat rekurziou vobec, ani ju detegovat; je to jednoduche na prevedenie, ale uz by to bolo vela prace
+	
+	
+Doladit f x = x + 1:
+- otestovat, oddebuggovat, preco nejde jednoduchy priklad, az to bude
+
+- 2 mozne problemy:
+	- skutocne bude potrebne vyhodnotit typ PatternFunction? pretoze na to, aby sa dedukoval typ pre "f" premennu, musi prebehnut tento algoritmus
+	(t.j. pre PatternFunction); otazka teda je, ze ci tento algoritmus prebehne sam od seba
+
+- je nutne poriesit subtyping pre typ funkcii voci funkciam
+
+
+
+
+
+- pozor, ze ked mam node v inom modeli, ktory pouzivam, tak nevie vyhodnotit typ? preco? (napr. pouzivanie +, co je implicitny operator z ineho fileu)
+
+	
+	
+- zrejme este blbne vyhodnocovanie v pripade "ff = 1", t.j. ked mam bez patternov
+	
+	
+	
+	
+	
+	
+
+	
+	FDGrouped
+	- FDGCEName - PVarName - NodeVarid (= f)
+	- Definition (= matchers)
+		- FDAssignment
+			- PatternWrapper
+				- PatternFunctionInGroup
+					- PVarName - NodeVarid (= x)
+					- PVarName - NodeVarid (= y)
+			- Expression
+				- BinaryExpressions
+					- FunctionApplication - VariableReference => PVarName - NodeVarid (= x)
+					- BinExPart
+						- OperatorReference => NodeOperator (= +)
+						- FunctionApplication - VariableReference => PVarName - NodeVarid (= y)
+							
+						
+					
+	FDGrouped
+	- FDGCEOperator - PVarOperator - NodeOperator (= +-+)
+	- Definition (= matchers)
+		- FDAssignment
+			- PatternWrapper
+				- PatternOperatorInGroup
+					- PVarName - NodeVarid (= x)
+					- PVarName - NodeVarid (= y)
+			- Expression
+				- BinaryExpressions
+					- FunctionApplication - VariableReference => PVarName - NodeVarid (= x)
+					- BinExPart
+						- OperatorReference => NodeOperator (= +)
+						- FunctionApplication - VariableReference => PVarName - NodeVarid (= y)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+- typy argumentov
+	- podobne, ako typ operatoru, ziskat typovany node k premennym (aj funkcii)
+
+	f :: Int -> Int
+	f x = x + 1
+	- typ funkcie je rovnako odvodeny, ako typ operatoru
+	- zaroven treba pridat kontrolu voci deklaracii funkcie
+	- typ argumentu este nutne forcnut oproti tomu, jak je pouzity
+		- napr. + :: Int -> Int -> Int
+		- tzn. "x + 1" nuti prvy argument byt daneho typu
+		- typeof_EPBinaryExpressions
+		infer ftn.arguments.get(0) :>=: leftOperandType;
+		infer ftn.arguments.get(1) :>=: rightOperandType;
+			- neviem, ze ci toto bude fungovat, lebo je pouzity when concrete blok, cize toto neforcuje
+			- cize by tam malo byt nieco na sposob, ze argument vzdy bude mat nejaky, aspon defaultny typ a ak je defaultny, nahradi sa tymto...?
+	
+	
+	
+	
+	- pozor, typ deklaracie voci definicii si stale nemusia odpovedat - pozor na funkcie
+		ff x = x + 1
+		a -+- b = 1
+		- typ expression nemoze byt to iste, co typ definicie celkovej
+			a -+- b = 1
+			- typ expression je "Int", ale typ definicie je "a -> b -> Int"
+	
+	
+	
+	- teraz sa vediet dostat z VariableReference na jeho TypedDefinitionNode
+	
+	
+	
+	- bude treba opravit v EPBinaryExpression typ uzlu OperatorReference, pretoze ziskavame iba typ jeho Expression, ale nie typ celeho operatoru
+		
+		node<FunctionTypeNode> functionType = new initialized node<FunctionTypeNode>();
+		functionType.arguments.clear;
+		foreach argument in typeFunction.arguments {
+		  functionType.arguments.add(typeof(argument) : Type);
+		}
+		functionType.arguments.removeLast;
+		functionType.returns = typeof(typeFunction.arguments.last) : Type;
+		typeof(typeFunction) :==: functionType;
+	
+						
+						
+	
+	
+
+	- pozor, typy su zhodne v ramci AuxilliaryTypedNodes, tam som nepouzil :>=: a mal som, ale bolo pouzite :==:; skusit opravit
+	
+	- potom sa este vratit k anotaciam a skontrolovat
+	
+	- PConstructor - typ nie je odvodeny, pretoze konstruktory som zatial vobec neriesil (a asi ani nebudem...?)
+	
+	- mame definovane, kedy moze byt list[] podtypom ineho list-u[]?
+		- v takom pripade pozor na undecidable typ!
+		
+	- este do FDGrouped a FDGuards hodit getTypedWholeDefinitionNode() - mal by vraciat typovany node pre celu funkciu (tzn. vratit FunctionTypeNode), ale kedze ide skupinu, tak to musi nejako urovnat
 
 
 	
+
+
+- kontrola deklaracie funkcie voci definicii (realne, nielen FullType na expression)
+- par drobnosti:
+	- () uzatvorkovany vyraz a pod.
+	- currying?
+- kontrola typu: a -> b -> Int -> a? alebo aspon to urovnat
+
+
+
+
+
+
+
 - typovy system poziadavky:
 	- chceme kontrolu deklaracie funkcie voci jej definicii a pravdepodobne nic viac
 		- list comprehension nebudeme uvazovat
-		
+
 	- chceme:
-		- odvodenie typu literalov
-		- zakladne komplexne typy: 
+		- zakladne komplexne typy:
 			- tuple
 			- list
 			- list tuplov a pod. zlozene typy
 			- funkcie a currying funkcii
 			- pouzitie operatorov (v najjednoduchsej podobe, t.j. 1 + 2, ale kaslem na (+) 1 2 a pod.)
+
+
+
+
+	Pripomienky:
+		(-+-) :: Int -> Char -> Char
+		- bohuzial nepropaguje zmeny okamzite, cize aj po tom, co raz podciarkol "-+-" a typ uz je spravne, stale bude podicarknuty, az dokym nevynutim zmenu niekde inde... digest cycle problem?
+
+		zaroven GetTypedDefinitionNode tiez nebude dobre fungovat na (a, b, c) = (1, 2, 3)!!
+		- OK, toto nazveme limitaciou, lebo sa mi to fakt nechce osetrovat - je to uz fakt vela prace, cize to funguje len na klasicke definicie funkcii
 		
-			
-		- vyriesme pre operatory
-			- pre !!implicit, cize musime vediet napisat deklarovat typ
-				- vediet odvodit ten, t.j. typ anotacie (musi vratit typ funkcie)
-				- potom uvidime, co dalej
-	
-			-  typ anotacie sa musi zhodovat s typom expression...? asi
-				f = 1 + 7 :: Int
-				f = 1 + 7 :: Double
-				...toto nema byt porovnatelne? nicmenej typ anotacie moze byt o nieco abtraktnejsi,
-				nez typ expression, takze toto je ok
-				...pokial je expression !!implicit, musi byt jej typ nieco, od coho je akykolvek iny typ
-				abstraktnejsi - toto splna typ null, cize ten vytvorit
-				- tu FDAssignment nema typ (statement nema typ)
-				- jak je to s TypeFunction?
-					g :: Int -> Int
-					- nicmenej pokial mam h :: Int, tak dava zmysel, any typ "h" bola funkcia...?
-					- problem je totiz v samotnej anotacii inych casti:
-						f = 1 + 7 :: Int
-						- tak "1 + 7" nemoze odvodit ako konstantnu funkciu, alebo moze...?
-						- aj ked asi skutocne nemusim definovat konstantne funkcie, je to asi zbytocne:
-							pokial robim currying, tak ma zaujima len vysledok:
-							g x = x
-							g :: Int -> Int
-							f = 1 + (g 7)
-							- (g 7) je proste Int
-								
-				x + y :: Int -> Int -> Int
-				f x y = x + y
-					- na odvodenie typu Expression potrebujem:
-						- ziskat typ operatoru, ktory by uz mal existovat
-							- neziskavam priamo typ, ale pravu stranu definicie operatoru
-								- to je uz zhruba pripravene
-							- zostava z referencie operatoru ziskat specialny typovany node
-								- vseobecne budeme tieto funkcie pomenovavat: node<> getTypedDefinitionNode() (pokial ide o definiciu)
-
-						- ziskat prioritu operatoru
-							- ziskat nejaky node, ktory ale musi byt v tom istom module, ako definicia
-							operatoru; pozor na importovane operatory
-						
-						- f = 1 + 2 * 3 - 4 / 5 * 6 + 7
-							- musi prejst jednotlivymi polozkami a ziskat vysledny typ podla poradia
-							operatorov (infix -> postfix algoritmus)
-							- algoritmus, zhruba:
-								- sweepujem operatory zlava doprava
-								- ukladam si do stacku polozky, ktorymi som presiel
-								- mam 1 * 2 + 3, presiel som 1 * 2, narazil som na +
-								- kedze + ma nizsiu precedenciu, nez *, vyhodnotim vsetko, co mam v 
-								stacku (pozor, az dokym nenarazim na operator s nizsou precedenciou) 
-								a necham zagregovany prvok v stacku
-									- nech + < * < / co sa tyka precedencie, potom:
-									1 + 2 * 3 / 4 * 5
-									- tak na stacku mam: 1,+,2,*,3,/,4; prislo *, cize vyprazdnim az do 
-									rovnakej precedencie
-										1,+,2,*,(3/4),*,5
-								- na konci sa tiez vyprazdnuje stack:
-									1,+,2,*,(3/4),*,5
-									(1,+,(2,*,((3/4),*,5)))
-									- problem je, ze funguje iba pokial su vsetky operatory pravo 
-									asociativne
-								- poriesit vyprazdnovanie zasobnika (z hladiska asociativity):
-									1 + 2 * (3 / 4) * 5 +-+ 6 +-+ 7 -+- 8 + 9
-									- okrem 1 +, lebo dojdem az potial
-									2 * (3 / 4) * 5 +-+ 6 +-+ 7 -+- 8 
-									- v tomto momente potrebujem druhy stack, lebo mozem prechadzat
-									len z konca prvky
-									- idem od konca, nech +-+ je pravo asociativny
-									2 * (3 / 4) * 5 +-+ 6 +-+ 7 +-+ 8 
-									2 * (3 / 4) * 5 +-+ 6 +-+ (7 +-+ 8)	--  okamzite prevediem
-									2 * (3 / 4) * 5 +-+ (6 +-+ (7 +-+ 8))
-									2 * (3 / 4) * (5 +-+ (6 +-+ (7 +-+ 8)))
-									2 * x * y 							-- zjednodusenie
-									- * je ale lavo asociativny, cize musim hodit do sekundarneho zasobnika
-									2 * x
-									y
-									...
-									y * x * 2 -- pozor na to, ze mam v tejto chvili prehodene argumenty
-									- hadzem do druheho zasobnika, dokym som narazil na ten isty operator,
-									co posledne
-									
-									1 + 2 * (3 / 4) * 5 +-+ 6 +-+ 7 +-+ 8
-									- podobne, tiez si drzim posledne:
-										- precedencia
-										- ci bol lavo alebo pravo asociativny, alebo vobec
-										ak narazim na dalsi smerom dolava, co ma rovnaku precedenciu
-										a dojde k zmene asociativity, prip. je niektory z tychto dvoch
-										neasociativny, vyhlasim chybu
-										
-										8 +-+ 7 +-+ 6 +-+ 5 * - chyba, doslo k zmene asociativity
-										- pokial uvazujeme rovnaku precedenciu pre +-+ a *
-										
-										8 +-+ 7 +-+ 6 +-+ 5 *
-										8 +-+ 7 +-+ 6 +-+ 5
-											- vyprazdnim stack
-											((5 +-+ 6) +-+ 7) +-+ 8
-											- pretoze bol lavo asociativny
-											
-										8 +-+ 7 +-+ 6
-											- pretoze je pravo-asociativny, tak okamzize prevediem 
-											a do stacku ukladam takto:
-												8, stack: -
-												8 +-+ 7, stack: -
-												+-+ 6, stack: (8 +-+ 7)
-												- ale stale kontrolujem oproti poslednej precedencii 
-												a asociativite												
-										
-										
-									1 + 2 * 3 * 5 +-+ 6 +-+ 7 +-+ 8 /
-									1 + 2 * 3 * 5 +-+ 6
-									- / zatial nevyriesene, niekde lezi, ale do stacku som ho nepridal
-									8 +-+ 7
-									(7 +-+ 8)
-									+-+
-
-								
-									+
-									2 * 1
-				
-				- novy oeprator
-				// TODO: Som na inom operatore, cize prevediem, co mam v sucasnom stacku (spravne uzatvorkujem a tak), 
-				// TODO: Nakoniec by mi tam mal zostat iba jeden prvok a tento novy operator vlozim na konci cyklu.
-
-				- pravo asociativne vyhodnocujeme hned:
-				// TODO: Chod zlava doprava. Uplne prvy prvok je len typovany a nic ine.  
-				// TODO: Dalsi hned za nim je operator... takto pokracuje az po posledny prvok, ktory je operand. 
-				// TODO: Ziskame celkovy typ, ulozime ako typovany node (stack musi obsahovat len tento 1), na konci 
-				// TODO: tohto cyklu vlozim sucasny operator.
-				
-				
-				- spisat si to potom
-				
-				
-				- BTW, tusim som prinutil aby deklaracia bola uplne zhodna definicii, lebo mi robilo substitucie za prapodivne nodes
-					- zistil som, ze to asi bude tym, ze nepouzivam "when concrete", potom substituuje za podivne typy...
-				
-				
-				
-				- mozno by sa dalo pouzit pattern "najprv skontruuj strom a az na konci odvod typ?" ...skusime
-					- co som zrusil a moze sa zist neskor:
-					// Return the operators' return type 
-					node<TypeWrapper> resultingType = new node<TypeWrapper>(); 
-					resultingType.type = ftn.returns.copy; 
-					resultingTypeNode = resultingType;
-
-					// Ked chcem zistit typ operatoru:
-					// final node<OperatorReference> operator -- ako vstupny argument
-					when concrete (typeof(node : OperatorReference.getTypedDefinitionNode()) as nodeType) { 
-					  operatorTypes[node] = nodeType; 
-					  waitForSubexpressions(i + 1); 
-					}
-					
-					// Potom niekde inde som ziskal typ operatoru:
-					protected node<> evaluateSimpleExpression(final node<> typedNode, final node<OperatorReference> operator, final node<> secondOperand) { 
-					  // Resulting type 
-					  node<> resultingTypeNode = typedNode; 
-					   
-					  // Evaluate the operator's type 
-					  node<Type> operatorType = operatorTypes[operator] : Type; 
-					   
-					  if (operatorType.isInstanceOf(FunctionTypeNode)) { 
-						node<FunctionTypeNode> ftn = operatorType : FunctionTypeNode; 
-						if (ftn.arguments.size == 2) { 
-						  // Check the arguments' types 
-						  infer ftn.arguments.get(0) :>=: typeof(typedNode); 
-						  infer ftn.arguments.get(1) :>=: typeof(secondOperand); 
-						   
-						  // Return the operators' return type 
-						  node<TypeWrapper> resultingType = new node<TypeWrapper>(); 
-						  resultingType.type = ftn.returns.copy; 
-						  resultingTypeNode = resultingType; 
-						} else { 
-						  error "Illegal operator type, operator must accept exactly 2 arguments." -> operator; 
-						} 
-					  } else { 
-						error "Illegal operator type, operator is not a function." -> operator; 
-					  } 
-					   
-					  // Return the result 
-					  return resultingTypeNode; 
-					}
-				
-				
-					protected void waitForNode(final node<> node, final int i) { 
-					  if (i % 2 == 0) { 
-						// Operand 
-						when concrete (typeof(node) as nodeType) { 
-						  waitForSubexpressions(i + 1); 
-						} 
-					  } else { 
-						// Operator 
-						when concrete (typeof(node : OperatorReference.getTypedDefinitionNode()) as nodeType) { 
-						  operatorTypes[node] = nodeType; 
-						  waitForSubexpressions(i + 1); 
-						} 
-					  } 
-					}
-				
-					// parsedExpressionNode = evaluateSimpleExpression(parsedExpressionNode, operator : OperatorReference, secondOperand);
-				
-					- zda sa, ze to nejak vyslo, ale bolo nutne pouzit zopar trikov:
-						- :>=: vobec nefunguje, pretoze vytvoreny strom ma fakeove nodes, takze nema co podciarknut (strom nie je realne viditelny)
-						- musime jednotlive nodes referencovat (skutocne casti expression), pretoze inak by sme ich premiestnili do stromu, ktory je iba docasny a realne neexistuje
-						- musime pouzivat error "string" -> referencedNode, lebo ako som uz pisal, :>=: nefunguje podla ocakavani
 
 
-						
-				
-				
-				---------------------------------
-				- vyskusat infixr/infixl a otestovat
-					- este otestovat voci operatorom s rozlicnymi precedenciami, ci zachovava dobre prioritu operatorov
-					
-				
-				- spisat si to a utriedit tento poznamkovy blok
-				
-				
-				
-				
-				
-				
-				
-				---------------
-				- sucasny plan: zistit, ci to funguje na urovni operatorov
-					f = "1" + "2" by nemalo prejst, ale pre integery ano
-					- oddebugovat si to podrobne, jak sa odvadzaju typy
-					
-				
-				
-				
+
 				g = f "a" "b" -- tu by mohol vyhodit chybu
 					- ziskat typ "f"
 					- vratit typ ako aplikaciu funkcie s argumentami danych typov
-				
-				
-				
+
+
+
 				-----------------------------------------------
-				
-			
+
+
 			- musel som zrusit implicitne typy, pretoze literalom nema co jednoznacne odpovedat
 				...niektore typy su core, t.j. su priamo v jazyku a nemozu byt len "implicitne"
 				- ako potomci Simpletype konceptu, podobaju sa dost TypeA
-			
-			
-					
-			
 
-			
-			
+
+
+
+
+
+
 			- vynechane, na neskor:
 				- f :: a -> b -> a -> Int - nie je vyrieseny supertyping pre "a" a "b" a ze ide o rozlicne skupiny
 				- type MyListType a = [a]; f :: Int -> MyListType Int; tak nemam zabezpecenu substituciu "a" za Int, cize celkovo referencie inych typov nie su vobec poriesene
 
-				
-				
-				
-				
-				
+
+
+
+
+
 			- TypeReferenceUsage
 				- niektore typy, ako napr. type String = [Char], su referencovane
 				- stacilo by sa normalne pozriet na pravu stranu definicie typu a ten prevziat
 				- nestaci vsak pre toto:
 					type ListFunction a = a -> [a]
 					- pokial pouzijem ako, ListFunction Int tak je to nieco ine, nez ListFunction Char
-					- jak poriesit?	
-				
-			
+					- jak poriesit?
+
+
 			- anyType musi byt s premennou typu string, napr.:
 				ff :: a -> b -> a -> Int
 				- len typy "a" a "a" sa zhoduju
 				- zatial som urcil len replacement rule, ale ten asi nebude stacit... jak to poriesit?
 					- prip. nemusim vobec riesit...?
 				- pravdepodobne sa da replacovat v typesystemu... proste klasicke programovanie...
-								
-				
-					
+
+
+
 
 			- pozor, zatial riesim len typ pre Expression, ale nemam z toho ziskanu lavu cast
 				- t.j. ziskam typ pre "1 + 7 :: Double", ale uz nemam typ pre "f"
 
 
-	
+
+
+
+
+
 
 
 - typovy system
@@ -310,27 +353,14 @@ Vychadza z povodneho dokumentu Editor.txt, pricom ale pridava vlastnu analyzu a 
 		f x y = x + y
 		- potom f je funkcia prijimajuca 2 argumenty
 		- "x + y" obmedzuje moznosti typu pre x, kde argument x musi byt rovnakeho typu
+
 		
-		FDGrouped
-		- FDGCEName - PVarName - NodeVarid (= f)
-		- Definition (= matchers)
-			- FDAssignment
-				- PatternWrapper
-					- PatternFunctionInGroup
-						- PVarName - NodeVarid (= x)
-						- PVarName - NodeVarid (= y)
-				- Expression
-					- BinaryExpressions
-						- FunctionApplication - VariableReference => PVarName - NodeVarid (= x)
-						- BinExPart
-							- OperatorReference => NodeOperator (= +)
-							- FunctionApplication - VariableReference => PVarName - NodeVarid (= y)
-							
-							
+
+
 		- pokial sa dotazujem na typ samotnej funkcie (= f), tak vratim typ:
 			- funkcia prijimajuca argumenty typeof(1. argument), typeof(2. argument)
 			- vracajuca typ typeof(Expression) (teda pravej casti definicie)
-			
+
 		- zostava ziskat typ jednotlivych argumentov a operatorov
 			- operator
 				- (je vlastne funkcia)
@@ -339,7 +369,7 @@ Vychadza z povodneho dokumentu Editor.txt, pricom ale pridava vlastnu analyzu a 
 				x + y = plus x y
 				- mal by byt odvodeny podobnou schemou, t.j. typeof(operatoru plus) :==: typeof(pravej strany vyrazu)
 				- cize vrati funkciu prijimajucu 2 argumenty typu Int vracajucu Int
-			
+
 			- vyrazu z jednotlivych operatorov
 				g x y z = x [+ y] [* z]
 				- prejdeme operatory a berieme podla priority (fixity asi moze byt iba v ramci toho isteho modulu?)
@@ -347,7 +377,7 @@ Vychadza z povodneho dokumentu Editor.txt, pricom ale pridava vlastnu analyzu a 
 				- ziska typeof(*), dostane funkciu
 				- overi, ze ako aplikacia funkcie operatory [y] a [z] pasuju podla typov
 				- ziska vysledny typ a pokracuje dalej, az dokym nevyhodnoti tip celeho vyrazu
-				
+
 			- argumenty
 				g x y z = x + y * z
 				- zatial uvazujeme stale bez anotacie
@@ -357,131 +387,156 @@ Vychadza z povodneho dokumentu Editor.txt, pricom ale pridava vlastnu analyzu a 
 					f (x:xs) = 1 + f xs
 					- mozno by mal vraciat cely PatternFunction funkcny typ...
 					- btw, toto nefunguje: (f x, g y) = (x + 1, y + 1), cize nejake starosti odpadaju
-				
-				
-				
+
+
+
 		- currying
 			f x y = x + y
 			g = f 1
 			- na pravej strane je jednoducho aplikacia funkcie, vieme typeof(f)
 			- overime, ze ide o aplikaciu funkcie (when concrete)
 			- ziskame a vratime novy typ s 1 argumentom menej
-		
-	
-		
-		
+
+
+
+
 		-----------------------------------
 		- PatternFunction, PatternFunctionInGroup, PatternOperator, PatternOperatorInGroup, PatternWrapper
-		
-		
+
+
 		https://confluence.jetbrains.com/display/MPSD33/Typesystem
 		- typ "any", alebo null
 		- typ Any (akykolvek typ ide dosadit do any, t.j. any je supertyp vsetkych typov)
-		
-		
-		
-		- pozor na typ 
+
+
+
+		- pozor na typ
 		- zatial vynechane:
 			PVarOperator
-			PVarName 
+			PVarName
 			PVarWildcard
 			PConstructor
 			PListColon
 			PListVar
 			-- celkovo, jaka je navaznost na PatternFunction, PatternFunctionInGroup, ...atd, ktore prehlasuju, ze ide o typ funkcie? jak to dat dokopy?
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
 		- vsetky matchers musia obsahovat rovnaky pocet argumentov
 		- typy funkcii na najvyssej urovni musia byt rovnake (brane inferenciou podla vsetkych matcherov)
-		
-		
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	TODO:
 		- vsetky aplikacie
 		- lambdy
 		- BinaryExpressions
 			- pozor - musi prejst algoritmom pre ziskanie priority operatorov!
-		
+
 		- Anotacie, patterny, referencie a dalsie
 			- Pattern tiez musi vraciat typ, ktory prijima
 		- Wildcard v patterne
-	
+
 		kontrola:
 		- PatternArgument musi vraciat typ
 		- Guards musi vraciat typ
 		- ImplicitDefinition asi nemusi mat ziaden typ
-	
+
 		- pozor, currying plati aj na konstruktory
 			data MaybeS a = JustS a | NothingSf
 			ff = JustS
 			gg = ff 1
-			
+
 			- pokial ale chapem spravne, tak na urovni patternov musi byt konstruktor pouzity so vsetkymi argumentami, t.j. nemozem mat:
 			f (Just) = ...
-	
+
 
 	---------------------------
 	- vytvorit inferenciu pri definicii funkcie
 		f x y = x + y
 		- f musi vraciat typ funkcie
 		- vytvorit koncept typu funkcie
-	
-	
+
+
 
 
 
 
 	- nemame tu polymorfizmus (zmienit sa do diplomky), cize situacia je jednoduchsia
-		
+
 	ff "a" "b" = false
 	ff 0 1 = false 		-- error!
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------
+
+
+
+
+
+
+
 - textgen
-	
+
 	ff x = if x > 0
 			then 1
 			else 0
-			
+
 	ff x = if { x > 0 } then { 1 } else { 0 }
 	  - je OK
-	
-	
+
+
 - dvojbodka na pravej strane definicie funkcie
 	f (x:xs) = x:x:xs
-	
-	
-	
-		
+
+
+
+
 - where
 	- do "case" tiez treba upravit pridavanie where casti
 	- v ramci case treba vediet nejak rozhodnut, ze ci ide o "pattern -> expression" alebo "expression to guards"
 
-	
+
 	- chcelo by to vediet v ramci function-definition forcenut hodenie na novy riadok, jak na to?
-	
+
 	- opravit LCQLet - povodne jedina polozka letDef bola typu LetDefinition, co mohla byt bud anotacia alebo function-definition
 		- cize treba povolit nieco z toho, ale zaroven musi ist editovat plynule, t.j. musi ist pouzit akoby slo o Definition
-	
+
 	- specialne spravit pre guards
 	- ostatni tiez musia zakladat scope
 
@@ -489,16 +544,16 @@ Vychadza z povodneho dokumentu Editor.txt, pricom ale pridava vlastnu analyzu a 
 STIHNUT POTIALTO
 --------------------------------------------------------
 
-	
+
 - konkretne priklady Frege programov
-	
+
 
 - upravit lambdu ako koncept aj po strankach transformacie
 	- pozor, neviem, co sa ocakava, ci to je pattern, alebo co...?
 	f x = \[] -> x + 1
 	- moze lambda nemat ziadnu premennu vo vyraze za "\"?
 	- taktiez scoping (lambda zaklada nove premenne, ktore mozu byt tiez referencovane)
-	
+
 
 
 - poriesit guards
@@ -580,7 +635,7 @@ STIHNUT POTIALTO
 
 
 - opravit vizualne nedobre spravene medzery dane editorom
-	
+
 
 - vizualne parovat zatvorky (aby sa vyznacili k sebe patriace)
 
@@ -619,6 +674,6 @@ STIHNUT POTIALTO
 - list-range: polozky v range-i [1..9] musia byt nejakeho ordinalneho typu
 	- typy na zaciatku a konci sa musia zhodovat
 	- typy musia byt vsade rovnake
-	
-	
+
+
 - zmena zakladnych farieb a celkovo spravit to vizualne zaujimavejsie
