@@ -17425,31 +17425,16 @@
   <node concept="24kQdi" id="5d6A1kOhZyk">
     <property role="3GE5qa" value="TypeNodes" />
     <ref role="1XX52x" to="sc0n:5d6A1kOhZxM" resolve="FunctionTypeNode" />
-    <node concept="3EZMnI" id="3EDs8MV$Ey8" role="2wV5jI">
-      <node concept="3F0ifn" id="7ugXStWCSpy" role="3EZMnx">
-        <property role="3F0ifm" value="[" />
-        <node concept="11LMrY" id="7ugXStWEtPO" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F2HdR" id="3EDs8MV$Eyf" role="3EZMnx">
-        <property role="2czwfO" value="," />
+    <node concept="3EZMnI" id="1Cwralefcmz" role="2wV5jI">
+      <node concept="3F2HdR" id="1CwralefcmE" role="3EZMnx">
+        <property role="2czwfO" value=" -&gt; " />
         <ref role="1NtTu8" to="sc0n:5d6A1kOhZxN" resolve="arguments" />
-        <node concept="2iRfu4" id="3EDs8MV$Eyh" role="2czzBx" />
-      </node>
-      <node concept="3F0ifn" id="7ugXStWCSpK" role="3EZMnx">
-        <property role="3F0ifm" value="]" />
-        <node concept="11L4FC" id="7ugXStWEtPQ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+        <node concept="2iRfu4" id="1CwralefcmG" role="2czzBx" />
+        <node concept="VechU" id="1CwralefcmL" role="3F10Kt">
+          <property role="Vb096" value="DARK_MAGENTA" />
         </node>
       </node>
-      <node concept="3F0ifn" id="3EDs8MV$Eyo" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;" />
-      </node>
-      <node concept="3F1sOY" id="3EDs8MV$Eyy" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:5d6A1kOhZxQ" resolve="returns" />
-      </node>
-      <node concept="2iRfu4" id="3EDs8MV$Eyb" role="2iSdaV" />
+      <node concept="2iRfu4" id="1CwralefcmA" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="5d6A1kOnZ1H">

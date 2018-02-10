@@ -116,33 +116,53 @@ Len pre referenciu:
 				- (BTW, ked mame f (x:xs) = f xs, tak tak ci tak nevieme povedat nic)
 			- treba vyriesit aj pre operator
 			- kazdopadne, nebudem sa zaoberat rekurziou vobec, ani ju detegovat; je to jednoduche na prevedenie, ale uz by to bolo vela prace
-	
-	
-Doladit f x = x + 1:
-- otestovat, oddebuggovat, preco nejde jednoduchy priklad, az to bude
-
-- 2 mozne problemy:
-	- skutocne bude potrebne vyhodnotit typ PatternFunction? pretoze na to, aby sa dedukoval typ pre "f" premennu, musi prebehnut tento algoritmus
-	(t.j. pre PatternFunction); otazka teda je, ze ci tento algoritmus prebehne sam od seba
-
-- je nutne poriesit subtyping pre typ funkcii voci funkciam
-
-
-
-
-
-- pozor, ze ked mam node v inom modeli, ktory pouzivam, tak nevie vyhodnotit typ? preco? (napr. pouzivanie +, co je implicitny operator z ineho fileu)
-
-	
-	
-- zrejme este blbne vyhodnocovanie v pripade "ff = 1", t.j. ked mam bez patternov
-	
-	
-	
-	
-	
-	
-
+- pozor, ze ked mam node v inom modeli, ktory pouzivam, tak nevie vyhodnotit typ? preco? (napr. pouzivanie +, co je implicitny operator z ineho fileu)	
+	- vyskusat na niecom jednoduchsom, vytvorit vlastne nove koncepty pre toto
+	- zrejme to nejde v momente, ked uz mame pouzity when concrete blok
+		- ono normalne by slo bez when concrete, ale iba smerom dovnutra stromu, ale ja velmi casto potrebujem ziskat typ nejakeho surodenca, na ktory
+		musim pockat a tym padom uz ked tam hadzem when concrete, tak uz musim skoro vsade, pretoze su tie veci rozlicne prepletene
+		- pokial by som bol v Jave, tak tam je to jednoduchsie, lebo:
+			int i = 7;
+			int k = i + 9;
+			- tak i + 9 uz je zostaveny strom - myslim, ze uz ho mam v podobe stromu => rekurzivne chcem vediet typ 9, co je Int a i, co sa odkaze
+			rekurzivne na int i = 7, co vrati typ int, pretoze ten to o sebe okamzite vie, cize na nic nemusi cakat a ide to pekne podla tvaru stromu
+				- pokial chcem vediet typ siblingov na nejakej urovni stromu, zacina byt mensi problem
+			- u mna je situacia horsia:
+				- tu je to v pohode: 
+					f = 2 + 1
+				- tu sa jednotlive funkcie odkazuju na seba (co moze byt zase ale aj v Jave, akurat ze tu potrebujem anotaciu k odvodeniu typu):
+					g x = (if x > 0 then h x else 0)
+					h x = g (- x)
+				- problem je aj s operatormi
+					f = 1 + 2 * 3 / 4 - 5
+					- kazdy moze mat inu precedenciu a inu anotaciu
+					- cize pokial sa niekto dotazuje na typ f v strome, tak f sa moze rekurzivne odvolat na typ 1 + 2 * 3 / 4 - 5
+					- tento vyraz sa vsak rekurzivne odvolava na typ jednotlivych operatorov, ale v mojom pripade nebolo a som musel pouzit "when concrete"
+				- dalej typy jednotlivych argumentov nie su pekne v strome
+					f x y = x + y
+					g = f 1 2
+					- pre odvodenie typu g potrebujem vediet typ f (realne f 1 2, ale tu si zjednodusujeme)
+					- pre odvodenie typu f potrebujem vediet typ x + y
+					- pre odvodenie typu x + y potrebujem vediet typ + (povedzme, ze uz mam) a typ x a typ y
+					- x a y su na zlej strane stromu, cize ich typ este nie je v tejto chvili odvodeny (slo by riesit zmenou struktury stromu - co sa mi samozrejme uz o tomto case nechce)
+					- problem je este s vecami, ako je anotacia, ktore urcuju typ x a y
+						- nevieme, kde presne anotacia je v strome, cize ju treba vyhladat
+						- tym padom sa musi cakat na odvodenie jej typu uz nutne cez when concrete
+						- do x a y navyse informaciu o type vsuva f, ktore potom naopak caka spatne na x a y, co uz je uplne horor a neda sa uz nijak pouzit when concrete
+							- x a y si nemozu ziskavat anotaciu len tak sami, pretoze nevedia, kde presne su, napr. porovnaj f [[x], y]
+				- problem je, ze ked uz niekto na cese v tomto strome pouzije when concrete, musia aj vsetci nad nim
+					napr. f = 1 + 2
+					- tak ak + ma when concrete na lavy a pravy argument, tak na odvodenie typu f potrebujeme aj tu pockat na odvodenie typu +,
+					cize tiez pouzit when concrete
+	- cize tiez sa nebudem zaoberat, lebo typovy system je skor iba na ukazku, cize ma velmi vela limitacii a toto je tiez iba jedna z ukazok
+		- skratka, pouzity operator musi byt definovany na rovnakej urovni, aby slo odvodit typ
+		
+	Definition (= matchers)
+	- FDAssignment
+		- PatternWrapper
+			- PVarName - NodeVarid (= ff)
+		- Expression
+			- BinaryExpressions
 	
 	FDGrouped
 	- FDGCEName - PVarName - NodeVarid (= f)
@@ -158,9 +178,7 @@ Doladit f x = x + 1:
 					- BinExPart
 						- OperatorReference => NodeOperator (= +)
 						- FunctionApplication - VariableReference => PVarName - NodeVarid (= y)
-							
 						
-					
 	FDGrouped
 	- FDGCEOperator - PVarOperator - NodeOperator (= +-+)
 	- Definition (= matchers)
@@ -176,6 +194,62 @@ Doladit f x = x + 1:
 						- OperatorReference => NodeOperator (= +)
 						- FunctionApplication - VariableReference => PVarName - NodeVarid (= y)
 	
+
+
+
+
+- currying nefunguje dobre vo FunctionApplication	               
+	ff x y = 1 ++ 2
+	gg = ff 1
+	- tak typ gg odvodi ako konstantna funkcia s resultom funkcie prijimajucej 1 argument s resultom typu Int
+	- cize ked potom mame, hh = gg 1, tak typ hh by mal byt Int
+	ff2 x y = 1
+	gg2 x = ff 1 x
+	- tak potom system odvodi:
+	function ff :: a -> b -> Int
+	function gg :: a -> Int
+	- cize opravit PatternFunction, PatternFunctionInGroup, PatternOperator a PatternOperatorInGroup	
+	- pozor, ze operatory nei su nutne funkcie prijimajuce 2 argumenty:
+	ff x y = 1 + 2
+	a +-+ b = ff
+	- sytem odvodi:
+	function ff :: a -> b -> Int
+	function +-+ :: a -> b -> c -> d -> Int
+	- pozor, ze u anotacii to tak striktne musi fungovat, t.j. ak mam f :: Int, tak je jasne, ze f je typu Int a nie konstantna funkcia do Int
+		- je to kvoli takymto veciam:
+		ff :: [(Int -> Int)] -> [Int] -> Int
+		- tak (Int -> Int) je funkciou, ale v pripade [Int] nedava zmysel ocakavat ako vstupny argument zoznam konstantnych funkcii
+		- cize moze byt problem s aplikaciou funkcie, ak aplikujeme konstantnu, ktora vlastne ani nie je funkciou, ale rovno ssvojim resulting type
+			- tak je nastavene, ze aplikacia funkcie sa rozvinie iba ak su pouzite nejake argumenty, inak sa len propaguje vyssie aplikovana entita
+			- naopak pri patternFunction, patternFunctionInGroup, patternOperator, patternOperatorInGroup je ako result merge na funkcne typy, napr.:
+				ff x y = 1 + 2
+				a +-+ b = ff
+				(+-+) :: a -> b -> c -> d -> Int
+	
+	
+	
+	
+
+- otestovat aplikaciu funkcie
+	- z nejakeho dovodu tam pouziva FunctionApplication a nie GenericApplication a tym padom to nevyuzije...?
+		
+
+- taktiez blbne aj toto, ked mame bez argumentov
+	hh = 1
+	hh :: Int -> Int 
+		- nenajde chybu
+	
+	
+- typ pre genericku typovu premennu napr. v tomto: ff :: a -> a -> b
+	- nebudeme ich medzi sebou rozlisovat, to je vela prace, ide len o urcenie subtyping a supertyping
+	
+		
+- potom poriesit rozne vynimky	
+	
+- opravit tie vlastne priklady, lebo sa zmenili koncepty
+
+- porozmyslat, jak by sa dalo ziskat typy argumentov, ktore su undecidable, prip. aspon nejaku inu kontrolu a prip. spisat, preco to nejde
+	- ale fakt to uz neriesit
 	
 	
 	

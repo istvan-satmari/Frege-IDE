@@ -211,10 +211,6 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myInferenceRules.add(inferenceRule);
     }
     {
-      InferenceRule_Runtime inferenceRule = new typeof_TypedFunctionNode_InferenceRule();
-      this.myInferenceRules.add(inferenceRule);
-    }
-    {
       InferenceRule_Runtime inferenceRule = new typeof_VariableReference_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
@@ -295,11 +291,19 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myInequationReplacementRules.add(eliminationRule);
     }
     {
+      InequationReplacementRule_Runtime eliminationRule = new Function_subtypeOf_Function_InequationReplacementRule();
+      this.myInequationReplacementRules.add(eliminationRule);
+    }
+    {
       InequationReplacementRule_Runtime eliminationRule = new Null_subtypeOf_AllTypes_InequationReplacementRule();
       this.myInequationReplacementRules.add(eliminationRule);
     }
     {
       InequationReplacementRule_Runtime eliminationRule = new Undecidable_subtypeOf_AllTypes_InequationReplacementRule();
+      this.myInequationReplacementRules.add(eliminationRule);
+    }
+    {
+      InequationReplacementRule_Runtime eliminationRule = new Undecidable_supertypeOf_AllTypes_InequationReplacementRule();
       this.myInequationReplacementRules.add(eliminationRule);
     }
   }
