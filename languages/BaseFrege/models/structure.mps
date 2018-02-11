@@ -342,6 +342,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3lPLyUBVjs8" resolve="LambdaPart" />
     </node>
+    <node concept="PrWs8" id="6WSZEqaewTo" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="vUxQDjKX$8">
     <property role="EcuMT" value="574920793184786696" />
@@ -524,6 +527,9 @@
       <property role="20kJfa" value="in" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="vUxQDjKXzn" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6WSZEqafNaU" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="7riFpCdplRA">
@@ -1404,7 +1410,7 @@
     <property role="EcuMT" value="3852202959973463817" />
     <property role="3GE5qa" value="Definitions.Expressions.Lambda" />
     <property role="TrG5h" value="LPExpression" />
-    <property role="34LRSv" value="-&gt;" />
+    <property role="34LRSv" value="-" />
     <property role="R4oN_" value="Define the lambda's body." />
     <ref role="1TJDcQ" node="3lPLyUBVjs8" resolve="LambdaPart" />
     <node concept="1TJgyj" id="3lPLyUBVjsa" role="1TKVEi">
@@ -1428,6 +1434,9 @@
       <property role="20kJfa" value="lambda" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="vUxQDjKX$7" resolve="Lambda" />
+    </node>
+    <node concept="PrWs8" id="6WSZEqafrh5" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="5fWvJRHUZTX">

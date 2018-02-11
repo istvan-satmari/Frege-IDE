@@ -227,12 +227,42 @@ Len pre referenciu:
 	- nebudeme ich medzi sebou rozlisovat, to je vela prace, ide len o urcenie subtyping a supertyping
 	- staci nastavit, ze ide o undecidable
 	
+- dalsie veci, ktore z hladiska typoveho systemu nepodporujem:
+	- list comprehension (ten nie je podporovany ani z hladiska referencii a plynuleho editovania)
+	- case, guards
+	- lambda, let
+	
+	
+	
+	
+	
+	
+	
+	
+- lambda a let
+	- opravit scope
+	- otestovat scope
+	
+	
+	
+- test komplikovanejsich konstruktov, co sa tyka typov
+	- otestovat, ze sa fungovanie doterajsich veci nezmenilo
+	- bracket application
+	- list enumeration
+	- list range
+	- tuple
+	- kontrola tychto veci aj v patternoch funkcii
+	- kontrola tychto veci aj v patternoch funkcii voci anotaciam
+	
+
+	
+- textgen
 
 
+
 	
 	
-	
-- test anotacie 
+- vymysliet vyhovorku
 	chyba je v tomto napr.:
 	ff :: Int -> Int
 	ff x = 1
@@ -241,29 +271,19 @@ Len pre referenciu:
 	gg = ff 1
 		
 		
+- porozmyslat, jak by sa dalo ziskat typy argumentov, ktore su undecidable, prip. aspon nejaku inu kontrolu a prip. spisat, preco to nejde
+	- ale fakt to uz neriesit		
+		
 
-- test komplikovanejsich konstruktov, aplikacia v zatvorke, zoznam, tuple
+		
 
-
-- taktiez blbne aj toto, ked mame bez argumentov
-	
-	
 	
 	
 - potom poriesit rozne vynimky (exceptions, ktore v kuse vyhadzuje MPS)
 	
 - opravit tie vlastne priklady, lebo sa zmenili koncepty
 
-
-
-
-
-- porozmyslat, jak by sa dalo ziskat typy argumentov, ktore su undecidable, prip. aspon nejaku inu kontrolu a prip. spisat, preco to nejde
-	- ale fakt to uz neriesit
-	
-	
-	
-	
+- par vizualnych veci opravit
 	
 	
 	
