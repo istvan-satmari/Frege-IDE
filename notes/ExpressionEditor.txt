@@ -237,11 +237,8 @@ Len pre referenciu:
 	
 	
 	
-	
-	
-- lambda
-	- opravit scope
-	- otestovat scope
+- list enumeration
+- list range
 	
 	
 - Typova referencia (string)...? myslim, ze nemam poriesene v anotaciach
@@ -250,15 +247,36 @@ Len pre referenciu:
 - test komplikovanejsich konstruktov, co sa tyka typov
 	- otestovat, ze sa fungovanie doterajsich veci nezmenilo
 	- bracket application
-	- list enumeration
-	- list range
 	- tuple
 	- kontrola tychto veci aj v patternoch funkcii
 	- kontrola tychto veci aj v patternoch funkcii voci anotaciam
 	
 
 	
+- potom poriesit rozne vynimky (exceptions, ktore v kuse vyhadzuje MPS)
+	- 
+
+
+	
+- opravit tie vlastne priklady, lebo sa zmenili koncepty
+
+- par vizualnych veci opravit
+	
+	
+	
+
+	
+	
+	
 - textgen
+
+
+
+
+
+
+
+
 
 
 
@@ -280,14 +298,7 @@ Len pre referenciu:
 		
 
 	
-	
-- potom poriesit rozne vynimky (exceptions, ktore v kuse vyhadzuje MPS)
-	
-- opravit tie vlastne priklady, lebo sa zmenili koncepty
 
-- par vizualnych veci opravit
-	
-	
 	
 	
 	

@@ -2025,17 +2025,19 @@
       <node id="3077332069120223487" at="32,58,33,0" concept="14" />
       <node id="3077332069120191349" at="34,79,35,88" concept="5" />
       <node id="3077332069120200616" at="36,12,37,33" concept="5" />
-      <node id="3077332069120114510" at="41,42,42,32" concept="5" />
-      <node id="3077332069120124391" at="42,32,43,0" concept="14" />
-      <node id="3077332069120205666" at="44,52,45,34" concept="5" />
-      <node id="3077332069120123337" at="45,34,46,56" concept="5" />
-      <node id="3077332069120136671" at="47,12,48,38" concept="5" />
+      <node id="8014435528146894406" at="41,46,42,72" concept="12" />
+      <node id="3077332069120114510" at="45,42,46,32" concept="5" />
+      <node id="3077332069120124391" at="46,32,47,0" concept="14" />
+      <node id="3077332069120205666" at="48,52,49,34" concept="5" />
+      <node id="3077332069120123337" at="49,34,50,56" concept="5" />
+      <node id="3077332069120136671" at="51,12,52,38" concept="5" />
       <node id="3077332069120199435" at="36,10,38,5" concept="1" />
-      <node id="3077332069120136188" at="47,10,49,5" concept="1" />
+      <node id="3077332069120136188" at="51,10,53,5" concept="1" />
+      <node id="8014435528146889483" at="41,0,44,0" concept="10" trace="getOriginalNode#(I)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3077332069120063978" at="15,0,19,0" concept="3" trace="TypeWaiter#()V" />
       <node id="3077332069120170263" at="33,0,38,5" concept="9" />
-      <node id="3077332069120125295" at="43,0,49,5" concept="9" />
-      <node id="3077332069120048789" at="41,0,51,0" concept="10" trace="waitFor#(Ljava/util/List;)V" />
+      <node id="3077332069120125295" at="47,0,53,5" concept="9" />
+      <node id="3077332069120048789" at="45,0,55,0" concept="10" trace="waitFor#(Ljava/util/List;)V" />
       <node id="3077332069120052601" at="23,0,40,0" concept="10" trace="nodeWaited#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="3077332069120051953" at="20,0,21,0">
         <var name="node" id="3077332069120052110" />
@@ -2045,19 +2047,23 @@
       </scope>
       <scope id="3077332069120170265" at="34,79,35,88" />
       <scope id="3077332069120199436" at="36,12,37,33" />
-      <scope id="3077332069120136189" at="47,12,48,38" />
+      <scope id="8014435528146889486" at="41,46,42,72" />
+      <scope id="3077332069120136189" at="51,12,52,38" />
       <scope id="3077332069120063981" at="15,23,17,31" />
-      <scope id="3077332069120125297" at="44,52,46,56" />
+      <scope id="3077332069120125297" at="48,52,50,56" />
+      <scope id="8014435528146889483" at="41,0,44,0">
+        <var name="index" id="8014435528146891752" />
+      </scope>
       <scope id="3077332069120063978" at="15,0,19,0" />
-      <scope id="3077332069120048792" at="41,42,49,5" />
-      <scope id="3077332069120048789" at="41,0,51,0">
+      <scope id="3077332069120048792" at="45,42,53,5" />
+      <scope id="3077332069120048789" at="45,0,55,0">
         <var name="nodes" id="3077332069120048894" />
       </scope>
       <scope id="3077332069120052604" at="23,45,38,5" />
       <scope id="3077332069120052601" at="23,0,40,0">
         <var name="nodeType" id="3077332069120061545" />
       </scope>
-      <unit id="3077332069120045566" at="10,0,52,0" name="BaseFrege.behavior.TypeWaiter" />
+      <unit id="3077332069120045566" at="10,0,56,0" name="BaseFrege.behavior.TypeWaiter" />
     </file>
   </root>
   <root nodeRef="r:f3acc988-19e1-4f05-8291-435175dbbc1f(BaseFrege.behavior)/3463979100011830932">
