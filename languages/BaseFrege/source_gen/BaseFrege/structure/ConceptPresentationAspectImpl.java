@@ -13,7 +13,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_AIVariable = new ConceptPresentationBuilder().shortDesc("References a variable for annotation.").create();
   private final ConceptPresentation props_Annotation = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_AnnotationItem = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AnyTypeNode = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ApplicationEntity = new ConceptPresentationBuilder().shortDesc("An entity to derive the application from.").create();
   private final ConceptPresentation props_BCContent = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BCLine = new ConceptPresentationBuilder().create();
@@ -137,7 +136,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_NodeCONID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for constructors and types.").create();
   private final ConceptPresentation props_NodeOperator = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for operators.").create();
   private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for functions and variables.").create();
-  private final ConceptPresentation props_NullTypeNode = new ConceptPresentationBuilder().shortDesc("Hidden special type for implicit function definitions.").create();
   private final ConceptPresentation props_OperatorApplication = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_OperatorReference = new ConceptPresentationBuilder().shortDesc("References an operator.").create();
   private final ConceptPresentation props_PBracket = new ConceptPresentationBuilder().shortDesc("Pattern in round brackets.").create();
@@ -204,8 +202,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Annotation;
       case LanguageConceptSwitch.AnnotationItem:
         return props_AnnotationItem;
-      case LanguageConceptSwitch.AnyTypeNode:
-        return props_AnyTypeNode;
       case LanguageConceptSwitch.ApplicationEntity:
         return props_ApplicationEntity;
       case LanguageConceptSwitch.BCContent:
@@ -452,8 +448,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_NodeOperator;
       case LanguageConceptSwitch.NodeVARID:
         return props_NodeVARID;
-      case LanguageConceptSwitch.NullTypeNode:
-        return props_NullTypeNode;
       case LanguageConceptSwitch.OperatorApplication:
         return props_OperatorApplication;
       case LanguageConceptSwitch.OperatorReference:

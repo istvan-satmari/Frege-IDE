@@ -17473,28 +17473,6 @@
       <node concept="2iRfu4" id="5d6A1kOnZ1M" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="$yyAqvkfSr">
-    <property role="3GE5qa" value="TypeNodes" />
-    <ref role="1XX52x" to="sc0n:3EDs8MV_anO" resolve="AnyTypeNode" />
-    <node concept="3EZMnI" id="$yyAqvkfSt" role="2wV5jI">
-      <node concept="3F0ifn" id="$yyAqvkfS$" role="3EZMnx">
-        <property role="3F0ifm" value="any" />
-        <node concept="VechU" id="$yyAqvkiD9" role="3F10Kt">
-          <property role="Vb096" value="DARK_MAGENTA" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="$yyAqvkiDI" role="3EZMnx">
-        <property role="3F0ifm" value="=" />
-        <node concept="VechU" id="$yyAqvkiDO" role="3F10Kt">
-          <property role="Vb096" value="DARK_MAGENTA" />
-        </node>
-      </node>
-      <node concept="3F0A7n" id="$yyAqvkfT4" role="3EZMnx">
-        <ref role="1NtTu8" to="sc0n:$yyAqvkfS0" resolve="equivalenceClass" />
-      </node>
-      <node concept="2iRfu4" id="$yyAqvkfSw" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="$yyAqvtZ0j">
     <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
     <ref role="1XX52x" to="sc0n:$yyAqvtYQn" resolve="CoreIntType" />

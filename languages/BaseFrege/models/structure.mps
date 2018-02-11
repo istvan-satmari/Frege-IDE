@@ -2605,26 +2605,6 @@
       <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3EDs8MV_anO">
-    <property role="EcuMT" value="4227033475008734708" />
-    <property role="3GE5qa" value="TypeNodes" />
-    <property role="TrG5h" value="AnyTypeNode" />
-    <property role="34LRSv" value="Any" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
-    <node concept="1TJgyi" id="$yyAqvkfS0" role="1TKVEl">
-      <property role="IQ2nx" value="658240668913696256" />
-      <property role="TrG5h" value="equivalenceClass" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="$yyAqvkeVz">
-    <property role="EcuMT" value="658240668913692387" />
-    <property role="3GE5qa" value="TypeNodes" />
-    <property role="TrG5h" value="NullTypeNode" />
-    <property role="34LRSv" value="Null" />
-    <property role="R4oN_" value="Hidden special type for implicit function definitions." />
-    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
-  </node>
   <node concept="1TIwiD" id="$yyAqvtYQn">
     <property role="EcuMT" value="658240668916247959" />
     <property role="3GE5qa" value="Definitions.Types.CoreTypes" />

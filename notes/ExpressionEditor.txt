@@ -195,10 +195,7 @@ Len pre referenciu:
 						- FunctionApplication - VariableReference => PVarName - NodeVarid (= y)
 	
 
-
-
-
-- currying nefunguje dobre vo FunctionApplication	               
+- currying nefunguje (nefungoval) dobre vo FunctionApplication
 	ff x y = 1 ++ 2
 	gg = ff 1
 	- tak typ gg odvodi ako konstantna funkcia s resultom funkcie prijimajucej 1 argument s resultom typu Int
@@ -226,30 +223,45 @@ Len pre referenciu:
 				a +-+ b = ff
 				(+-+) :: a -> b -> c -> d -> Int
 	
-	
-	
-	
-
-- otestovat aplikaciu funkcie
-	- z nejakeho dovodu tam pouziva FunctionApplication a nie GenericApplication a tym padom to nevyuzije...?
-		
-
-- taktiez blbne aj toto, ked mame bez argumentov
-	hh = 1
-	hh :: Int -> Int 
-		- nenajde chybu
-	
-	
 - typ pre genericku typovu premennu napr. v tomto: ff :: a -> a -> b
 	- nebudeme ich medzi sebou rozlisovat, to je vela prace, ide len o urcenie subtyping a supertyping
+	- staci nastavit, ze ide o undecidable
 	
+
+
+	
+	
+	
+- test anotacie 
+	chyba je v tomto napr.:
+	ff :: Int -> Int
+	ff x = 1
+	
+	gg :: a			-- toto prejde, lebo "a" je subtyp "Int"; nebudem to riesit, ale je treba vymysliet vyhovorku
+	gg = ff 1
 		
-- potom poriesit rozne vynimky	
+		
+
+- test komplikovanejsich konstruktov, aplikacia v zatvorke, zoznam, tuple
+
+
+- taktiez blbne aj toto, ked mame bez argumentov
+	
+	
+	
+	
+- potom poriesit rozne vynimky (exceptions, ktore v kuse vyhadzuje MPS)
 	
 - opravit tie vlastne priklady, lebo sa zmenili koncepty
 
+
+
+
+
 - porozmyslat, jak by sa dalo ziskat typy argumentov, ktore su undecidable, prip. aspon nejaku inu kontrolu a prip. spisat, preco to nejde
 	- ale fakt to uz neriesit
+	
+	
 	
 	
 	

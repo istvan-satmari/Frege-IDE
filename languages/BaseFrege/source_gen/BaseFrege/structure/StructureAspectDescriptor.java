@@ -18,7 +18,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAIVariable = createDescriptorForAIVariable();
   /*package*/ final ConceptDescriptor myConceptAnnotation = createDescriptorForAnnotation();
   /*package*/ final ConceptDescriptor myConceptAnnotationItem = createDescriptorForAnnotationItem();
-  /*package*/ final ConceptDescriptor myConceptAnyTypeNode = createDescriptorForAnyTypeNode();
   /*package*/ final ConceptDescriptor myConceptApplicationEntity = createDescriptorForApplicationEntity();
   /*package*/ final ConceptDescriptor myConceptBCContent = createDescriptorForBCContent();
   /*package*/ final ConceptDescriptor myConceptBCLine = createDescriptorForBCLine();
@@ -142,7 +141,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptNodeCONID = createDescriptorForNodeCONID();
   /*package*/ final ConceptDescriptor myConceptNodeOperator = createDescriptorForNodeOperator();
   /*package*/ final ConceptDescriptor myConceptNodeVARID = createDescriptorForNodeVARID();
-  /*package*/ final ConceptDescriptor myConceptNullTypeNode = createDescriptorForNullTypeNode();
   /*package*/ final ConceptDescriptor myConceptOperatorApplication = createDescriptorForOperatorApplication();
   /*package*/ final ConceptDescriptor myConceptOperatorReference = createDescriptorForOperatorReference();
   /*package*/ final ConceptDescriptor myConceptPBracket = createDescriptorForPBracket();
@@ -203,7 +201,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAIOperator, myConceptAIVariable, myConceptAnnotation, myConceptAnnotationItem, myConceptAnyTypeNode, myConceptApplicationEntity, myConceptBCContent, myConceptBCLine, myConceptBCNestedComment, myConceptBinExPart, myConceptBinaryExpressions, myConceptBlockComment, myConceptBoolTypeNode, myConceptBooleanValue, myConceptBracketsApplication, myConceptCPExprToExpr, myConceptCPExprToGuards, myConceptCase, myConceptCasePart, myConceptCharTypeNode, myConceptCharValue, myConceptComment, myConceptConstructorApplication, myConceptConstructorReference, myConceptContext, myConceptContextPart, myConceptCoreBoolType, myConceptCoreCharType, myConceptCoreIntType, myConceptCoreType, myConceptDCScopeProvider, myConceptData, myConceptDataConstructor, myConceptDefinition, myConceptDoubleTypeNode, myConceptDoubleValue, myConceptEPBinaryExpression, myConceptEPFinalOperand, myConceptEPNode, myConceptEmptyExpression, myConceptEmptyLine, myConceptExpression, myConceptFDA, myConceptFDABracket, myConceptFDAVarName, myConceptFDAVarWildcard, myConceptFDAVariable, myConceptFDAssignment, myConceptFDComplete, myConceptFDGCEName, myConceptFDGCEOperator, myConceptFDGCommonEntity, myConceptFDGGuards, myConceptFDGrouped, myConceptFDGuards, myConceptFalseValue, myConceptFixity, myConceptFullType, myConceptFunctionApplication, myConceptFunctionDefinition, myConceptFunctionTypeNode, myConceptGenericApplication, myConceptGuard, myConceptIIConstructor, myConceptIIFunction, myConceptIIOperator, myConceptIITCLAll, myConceptIITCLConstructor, myConceptIITCLItem, myConceptIITConstructorList, myConceptIIType, myConceptIfThenElse, myConceptImplicitDefinition, myConceptImport, myConceptImportAH, myConceptImportAs, myConceptImportHiding, myConceptImportItem, myConceptImportItems, myConceptImportReference, myConceptImportedEntityApplication, myConceptImportedTypeReferenceUsage, myConceptIncompleteCommand, myConceptInfix, myConceptInfixAbstract, myConceptInfixl, myConceptInfixr, myConceptIntTypeNode, myConceptIntegerValue, myConceptLCQArrowAssignment, myConceptLCQGuard, myConceptLCQLet, myConceptLCQualifier, myConceptLPExpression, myConceptLPLambda, myConceptLambda, myConceptLambdaPart, myConceptLateLoader, myConceptLet, myConceptLetDefinitions, myConceptLineComment, myConceptList, myConceptListComprehension, myConceptListEnumeration, myConceptListRange, myConceptListTypeNode, myConceptLiteral, myConceptLocalTypeReferenceUsage, myConceptMEFunction, myConceptMEOperator, myConceptMEPMImport, myConceptMEPMReference, myConceptMEPMSelf, myConceptMEPModule, myConceptMETCLAll, myConceptMETCLConstructor, myConceptMETCLItem, myConceptMETConstructorList, myConceptMEType, myConceptMain, myConceptModule, myConceptModuleExport, myConceptModuleName, myConceptModuleNameFinal, myConceptModuleNamePreFinal, myConceptNodeCONID, myConceptNodeOperator, myConceptNodeVARID, myConceptNullTypeNode, myConceptOperatorApplication, myConceptOperatorReference, myConceptPBracket, myConceptPConstructor, myConceptPLEBPatternArgument, myConceptPLEBPlaceholder, myConceptPList, myConceptPListBracket, myConceptPListColon, myConceptPListVar, myConceptPLiteral, myConceptPTuple, myConceptPVarName, myConceptPVarOperator, myConceptPVarWildcard, myConceptPVariable, myConceptPattern, myConceptPatternArgument, myConceptPatternFunction, myConceptPatternFunctionInGroup, myConceptPatternOperator, myConceptPatternOperatorInGroup, myConceptPatternWrapper, myConceptPrimaryExpression, myConceptQCONID, myConceptQVARID, myConceptSimpletype, myConceptSkeleton, myConceptStringValue, myConceptTerm, myConceptTopExpression, myConceptTrueValue, myConceptTuple, myConceptTupleTypeNode, myConceptType, myConceptTypeA, myConceptTypeB, myConceptTypeCarrier, myConceptTypeFunction, myConceptTypeList, myConceptTypeName, myConceptTypeReference, myConceptTypeReferenceUsage, myConceptTypeTuple, myConceptTypeVariable, myConceptTypeVariableReference, myConceptTypeWrapper, myConceptTypedNodeReference, myConceptTypedNodesGrouped, myConceptUndecidableTypeNode, myConceptVariableReference, myConceptWherePart);
+    return Arrays.asList(myConceptAIOperator, myConceptAIVariable, myConceptAnnotation, myConceptAnnotationItem, myConceptApplicationEntity, myConceptBCContent, myConceptBCLine, myConceptBCNestedComment, myConceptBinExPart, myConceptBinaryExpressions, myConceptBlockComment, myConceptBoolTypeNode, myConceptBooleanValue, myConceptBracketsApplication, myConceptCPExprToExpr, myConceptCPExprToGuards, myConceptCase, myConceptCasePart, myConceptCharTypeNode, myConceptCharValue, myConceptComment, myConceptConstructorApplication, myConceptConstructorReference, myConceptContext, myConceptContextPart, myConceptCoreBoolType, myConceptCoreCharType, myConceptCoreIntType, myConceptCoreType, myConceptDCScopeProvider, myConceptData, myConceptDataConstructor, myConceptDefinition, myConceptDoubleTypeNode, myConceptDoubleValue, myConceptEPBinaryExpression, myConceptEPFinalOperand, myConceptEPNode, myConceptEmptyExpression, myConceptEmptyLine, myConceptExpression, myConceptFDA, myConceptFDABracket, myConceptFDAVarName, myConceptFDAVarWildcard, myConceptFDAVariable, myConceptFDAssignment, myConceptFDComplete, myConceptFDGCEName, myConceptFDGCEOperator, myConceptFDGCommonEntity, myConceptFDGGuards, myConceptFDGrouped, myConceptFDGuards, myConceptFalseValue, myConceptFixity, myConceptFullType, myConceptFunctionApplication, myConceptFunctionDefinition, myConceptFunctionTypeNode, myConceptGenericApplication, myConceptGuard, myConceptIIConstructor, myConceptIIFunction, myConceptIIOperator, myConceptIITCLAll, myConceptIITCLConstructor, myConceptIITCLItem, myConceptIITConstructorList, myConceptIIType, myConceptIfThenElse, myConceptImplicitDefinition, myConceptImport, myConceptImportAH, myConceptImportAs, myConceptImportHiding, myConceptImportItem, myConceptImportItems, myConceptImportReference, myConceptImportedEntityApplication, myConceptImportedTypeReferenceUsage, myConceptIncompleteCommand, myConceptInfix, myConceptInfixAbstract, myConceptInfixl, myConceptInfixr, myConceptIntTypeNode, myConceptIntegerValue, myConceptLCQArrowAssignment, myConceptLCQGuard, myConceptLCQLet, myConceptLCQualifier, myConceptLPExpression, myConceptLPLambda, myConceptLambda, myConceptLambdaPart, myConceptLateLoader, myConceptLet, myConceptLetDefinitions, myConceptLineComment, myConceptList, myConceptListComprehension, myConceptListEnumeration, myConceptListRange, myConceptListTypeNode, myConceptLiteral, myConceptLocalTypeReferenceUsage, myConceptMEFunction, myConceptMEOperator, myConceptMEPMImport, myConceptMEPMReference, myConceptMEPMSelf, myConceptMEPModule, myConceptMETCLAll, myConceptMETCLConstructor, myConceptMETCLItem, myConceptMETConstructorList, myConceptMEType, myConceptMain, myConceptModule, myConceptModuleExport, myConceptModuleName, myConceptModuleNameFinal, myConceptModuleNamePreFinal, myConceptNodeCONID, myConceptNodeOperator, myConceptNodeVARID, myConceptOperatorApplication, myConceptOperatorReference, myConceptPBracket, myConceptPConstructor, myConceptPLEBPatternArgument, myConceptPLEBPlaceholder, myConceptPList, myConceptPListBracket, myConceptPListColon, myConceptPListVar, myConceptPLiteral, myConceptPTuple, myConceptPVarName, myConceptPVarOperator, myConceptPVarWildcard, myConceptPVariable, myConceptPattern, myConceptPatternArgument, myConceptPatternFunction, myConceptPatternFunctionInGroup, myConceptPatternOperator, myConceptPatternOperatorInGroup, myConceptPatternWrapper, myConceptPrimaryExpression, myConceptQCONID, myConceptQVARID, myConceptSimpletype, myConceptSkeleton, myConceptStringValue, myConceptTerm, myConceptTopExpression, myConceptTrueValue, myConceptTuple, myConceptTupleTypeNode, myConceptType, myConceptTypeA, myConceptTypeB, myConceptTypeCarrier, myConceptTypeFunction, myConceptTypeList, myConceptTypeName, myConceptTypeReference, myConceptTypeReferenceUsage, myConceptTypeTuple, myConceptTypeVariable, myConceptTypeVariableReference, myConceptTypeWrapper, myConceptTypedNodeReference, myConceptTypedNodesGrouped, myConceptUndecidableTypeNode, myConceptVariableReference, myConceptWherePart);
   }
 
   @Override
@@ -218,8 +216,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptAnnotation;
       case LanguageConceptSwitch.AnnotationItem:
         return myConceptAnnotationItem;
-      case LanguageConceptSwitch.AnyTypeNode:
-        return myConceptAnyTypeNode;
       case LanguageConceptSwitch.ApplicationEntity:
         return myConceptApplicationEntity;
       case LanguageConceptSwitch.BCContent:
@@ -466,8 +462,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptNodeOperator;
       case LanguageConceptSwitch.NodeVARID:
         return myConceptNodeVARID;
-      case LanguageConceptSwitch.NullTypeNode:
-        return myConceptNullTypeNode;
       case LanguageConceptSwitch.OperatorApplication:
         return myConceptOperatorApplication;
       case LanguageConceptSwitch.OperatorReference:
@@ -612,16 +606,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BaseFrege", "AnnotationItem", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3894eb9L);
     b.class_(false, true, false);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4565621053812461241");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForAnyTypeNode() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BaseFrege", "AnyTypeNode", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3aa9708cbb94a5f4L);
-    b.class_(false, false, false);
-    b.super_("jetbrains.mps.baseLanguage.structure.Type", 0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL);
-    b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/4227033475008734708");
-    b.prop("equivalenceClass", 0x9228a669f50fe00L, "658240668913696256");
-    b.kind(ConceptKind.INTERFACE, StaticScope.GLOBAL);
-    b.alias("Any");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForApplicationEntity() {
@@ -1637,15 +1621,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/8800381220712711650");
     b.prop("value", 0x7a213c18049985f2L, "8800381220712711666");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForNullTypeNode() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BaseFrege", "NullTypeNode", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x9228a669f50eee3L);
-    b.class_(false, false, false);
-    b.super_("jetbrains.mps.baseLanguage.structure.Type", 0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL);
-    b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/658240668913692387");
-    b.kind(ConceptKind.INTERFACE, StaticScope.GLOBAL);
-    b.alias("Null");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForOperatorApplication() {
