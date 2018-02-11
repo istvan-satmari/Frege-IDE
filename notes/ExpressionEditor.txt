@@ -239,10 +239,12 @@ Len pre referenciu:
 	
 	
 	
-- lambda a let
+- lambda
 	- opravit scope
 	- otestovat scope
 	
+	
+- Typova referencia (string)...? myslim, ze nemam poriesene v anotaciach
 	
 	
 - test komplikovanejsich konstruktov, co sa tyka typov

@@ -1356,7 +1356,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BaseFrege", "LPLambda", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3575c62ea7ed3719L);
     b.class_(false, false, false);
     b.super_("BaseFrege.structure.LambdaPart", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3575c62ea7ed3708L);
-    b.parent(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53091a40f7add1f5L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/3852202959973463833");
     b.aggregate("lambda", 0x3575c62ea7ed371aL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d907L).optional(false).ordered(true).multiple(false).origin("3852202959973463834").done();
     b.alias("\\");
@@ -1376,6 +1375,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForLambdaPart() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BaseFrege", "LambdaPart", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3575c62ea7ed3708L);
     b.class_(false, true, false);
+    b.parent(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53091a40f7add1f5L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/3852202959973463816");
     return b.create();
   }
