@@ -237,7 +237,6 @@ Len pre referenciu:
 	
 	
 	
-- list enumeration
 - list range
 	
 	
@@ -254,7 +253,7 @@ Len pre referenciu:
 
 	
 - potom poriesit rozne vynimky (exceptions, ktore v kuse vyhadzuje MPS)
-	- 
+	- jedna z vynimiek, ked mame typewaiter a pouzivame inference rules s typovou premennou, tak nevie vyhodit chybu ku korektnemu nodeu
 
 
 	
