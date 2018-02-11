@@ -234,40 +234,33 @@ Len pre referenciu:
 	
 	
 
-	
-	
-- Typova referencia (string)...? myslim, ze nemam poriesene v anotaciach
-	
-	
-- test komplikovanejsich konstruktov, co sa tyka typov
-	- otestovat, ze sa fungovanie doterajsich veci nezmenilo
-	- kontrola tychto veci aj v patternoch funkcii
-	- kontrola tychto veci aj v patternoch funkcii voci anotaciam
-	- list enumeration a range pre patterny a anotacie
-	- tuple pre patterny a anotacie
 
+	
+Tuple blbne
+	- po zadani tuplu nejde pisat pravu stranu definicie funkcie
+
+
+	
+Pattern type testy
+	- list zatvorka (x:xs)
+	- tuple
+	- anotacie?
+	
+	
+	
+	
+
+- Typova referencia (string)...? myslim, ze nemam poriesene v anotaciach
 	
 - potom poriesit rozne vynimky (exceptions, ktore v kuse vyhadzuje MPS)
 	- jedna z vynimiek, ked mame typewaiter a pouzivame inference rules s typovou premennou, tak nevie vyhodit chybu ku korektnemu nodeu
 
-
 	
-- opravit tie vlastne priklady, lebo sa zmenili koncepty
-
 - par vizualnych veci opravit
-	
-	
-	
-
-	
-	
 	
 - textgen
 
-
-
-
-
+- opravit tie vlastne priklady, lebo sa zmenili koncepty
 
 
 
@@ -293,6 +286,15 @@ Len pre referenciu:
 
 	
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
