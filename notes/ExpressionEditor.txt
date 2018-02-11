@@ -233,11 +233,7 @@ Len pre referenciu:
 	- lambda, let
 	
 	
-	
-	
-	
-	
-- list range
+
 	
 	
 - Typova referencia (string)...? myslim, ze nemam poriesene v anotaciach
@@ -245,11 +241,10 @@ Len pre referenciu:
 	
 - test komplikovanejsich konstruktov, co sa tyka typov
 	- otestovat, ze sa fungovanie doterajsich veci nezmenilo
-	- bracket application
-	- tuple
 	- kontrola tychto veci aj v patternoch funkcii
 	- kontrola tychto veci aj v patternoch funkcii voci anotaciam
-	
+	- list enumeration a range pre patterny a anotacie
+	- tuple pre patterny a anotacie
 
 	
 - potom poriesit rozne vynimky (exceptions, ktore v kuse vyhadzuje MPS)
