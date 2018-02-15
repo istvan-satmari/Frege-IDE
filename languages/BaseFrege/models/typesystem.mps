@@ -270,6 +270,12 @@
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -10467,6 +10473,18 @@
     <node concept="3clFbS" id="4X24Jn8VU19" role="18ibNy">
       <node concept="nvevp" id="7Z1En8HDeFF" role="3cqZAp">
         <node concept="3clFbS" id="7Z1En8HDeFG" role="nvhr_">
+          <node concept="2xdQw9" id="2tm$uKyXenF" role="3cqZAp">
+            <property role="2xdLsb" value="info" />
+            <node concept="3cpWs3" id="2tm$uKyXfTx" role="9lYJi">
+              <node concept="2X3wrD" id="2tm$uKyXfUU" role="3uHU7w">
+                <ref role="2X3Bk0" node="7Z1En8HDeI4" resolve="typeFromParent" />
+              </node>
+              <node concept="Xl_RD" id="2tm$uKyXenH" role="3uHU7B">
+                <property role="Xl_RC" value="Type from parent filled as " />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="2tm$uKyXdlV" role="3cqZAp" />
           <node concept="3clFbJ" id="7Z1En8HDeFK" role="3cqZAp">
             <node concept="2OqwBi" id="7Z1En8HDeFL" role="3clFbw">
               <node concept="2X3wrD" id="7Z1En8HDeFM" role="2Oq$k0">
@@ -10544,7 +10562,13 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="7Z1En8HDhMm" role="3cqZAp" />
+              <node concept="2xdQw9" id="2tm$uKyXw1z" role="3cqZAp">
+                <property role="2xdLsb" value="info" />
+                <node concept="Xl_RD" id="2tm$uKyXw1_" role="9lYJi">
+                  <property role="Xl_RC" value="Type from parent is undecidable" />
+                </node>
+              </node>
+              <node concept="3clFbH" id="2tm$uKyXw$h" role="3cqZAp" />
             </node>
             <node concept="3eNFk2" id="7Z1En8HDeFZ" role="3eNLev">
               <node concept="2OqwBi" id="7Z1En8HDeG0" role="3eO9$A">
@@ -10642,6 +10666,32 @@
                     </node>
                   </node>
                 </node>
+                <node concept="2xdQw9" id="2tm$uKyXwKp" role="3cqZAp">
+                  <property role="2xdLsb" value="info" />
+                  <node concept="3cpWs3" id="2tm$uKyXxSc" role="9lYJi">
+                    <node concept="2OqwBi" id="2tm$uKyXy5S" role="3uHU7w">
+                      <node concept="37vLTw" id="2tm$uKyXxSs" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7Z1En8HDeG8" resolve="ltn" />
+                      </node>
+                      <node concept="3TrEf2" id="2tm$uKyXyqy" role="2OqNvi">
+                        <ref role="3Tt5mk" to="sc0n:5d6A1kOatbL" resolve="itemsType" />
+                      </node>
+                    </node>
+                    <node concept="3cpWs3" id="2tm$uKyXxnn" role="3uHU7B">
+                      <node concept="3cpWs3" id="2tm$uKyXx7C" role="3uHU7B">
+                        <node concept="Xl_RD" id="2tm$uKyXwKq" role="3uHU7B">
+                          <property role="Xl_RC" value="Type from parent is " />
+                        </node>
+                        <node concept="37vLTw" id="2tm$uKyXx7J" role="3uHU7w">
+                          <ref role="3cqZAo" node="7Z1En8HDeG8" resolve="ltn" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="2tm$uKyXxnq" role="3uHU7w">
+                        <property role="Xl_RC" value=" with items type " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbH" id="7Z1En8HDeGn" role="3cqZAp" />
               </node>
             </node>
@@ -10668,6 +10718,13 @@
                   </node>
                   <node concept="1YBJjd" id="7Z1En8HDovM" role="2OEOjV">
                     <ref role="1YBMHb" node="4X24Jn8VU1b" resolve="pListColon" />
+                  </node>
+                </node>
+                <node concept="3clFbH" id="2tm$uKyXyxl" role="3cqZAp" />
+                <node concept="2xdQw9" id="2tm$uKyXyxG" role="3cqZAp">
+                  <property role="2xdLsb" value="info" />
+                  <node concept="Xl_RD" id="2tm$uKyXyxN" role="9lYJi">
+                    <property role="Xl_RC" value="Type from parent is illegal" />
                   </node>
                 </node>
               </node>
@@ -10709,6 +10766,27 @@
                       <node concept="3clFbS" id="7Z1En8HDeHe" role="3clF47">
                         <node concept="nvevp" id="7Z1En8HDeHf" role="3cqZAp">
                           <node concept="3clFbS" id="7Z1En8HDeHg" role="nvhr_">
+                            <node concept="2xdQw9" id="2tm$uKyXg4$" role="3cqZAp">
+                              <property role="2xdLsb" value="info" />
+                              <node concept="3cpWs3" id="2tm$uKyXhXB" role="9lYJi">
+                                <node concept="2X3wrD" id="2tm$uKyXig_" role="3uHU7w">
+                                  <ref role="2X3Bk0" node="7Z1En8HDeHm" resolve="nodeType" />
+                                </node>
+                                <node concept="3cpWs3" id="2tm$uKyXhaV" role="3uHU7B">
+                                  <node concept="3cpWs3" id="2tm$uKyXg4_" role="3uHU7B">
+                                    <node concept="Xl_RD" id="2tm$uKyXg4B" role="3uHU7B">
+                                      <property role="Xl_RC" value="Subitem waited which was " />
+                                    </node>
+                                    <node concept="37vLTw" id="2tm$uKyXgPu" role="3uHU7w">
+                                      <ref role="3cqZAo" node="7Z1En8HDeHc" resolve="node" />
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="2tm$uKyXhef" role="3uHU7w">
+                                    <property role="Xl_RC" value=" and the type " />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                             <node concept="3clFbF" id="7Z1En8HDeHh" role="3cqZAp">
                               <node concept="1rXfSq" id="7Z1En8HDeHi" role="3clFbG">
                                 <ref role="37wK5l" to="yq4j:2EOSjpzOoPT" resolve="nodeWaited" />
@@ -10746,6 +10824,13 @@
                         </node>
                       </node>
                       <node concept="3clFbS" id="7Z1En8HDeHv" role="3clF47">
+                        <node concept="2xdQw9" id="2tm$uKyXiy0" role="3cqZAp">
+                          <property role="2xdLsb" value="info" />
+                          <node concept="Xl_RD" id="2tm$uKyXiy2" role="9lYJi">
+                            <property role="Xl_RC" value="All subitems waited" />
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="2tm$uKyXioZ" role="3cqZAp" />
                         <node concept="3SKdUt" id="7Z1En8HDBUF" role="3cqZAp">
                           <node concept="3SKdUq" id="7Z1En8HDBUH" role="3SKWNk">
                             <property role="3SKdUp" value="Get the tail type" />
@@ -10763,6 +10848,19 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbH" id="2tm$uKyXiBw" role="3cqZAp" />
+                        <node concept="2xdQw9" id="2tm$uKyXiHC" role="3cqZAp">
+                          <property role="2xdLsb" value="info" />
+                          <node concept="3cpWs3" id="2tm$uKyXj4w" role="9lYJi">
+                            <node concept="37vLTw" id="2tm$uKyXjfl" role="3uHU7w">
+                              <ref role="3cqZAo" node="7Z1En8HD_sW" resolve="tailType" />
+                            </node>
+                            <node concept="Xl_RD" id="2tm$uKyXiHD" role="3uHU7B">
+                              <property role="Xl_RC" value="The tailtype inferred as " />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="2tm$uKyXiC_" role="3cqZAp" />
                         <node concept="3clFbH" id="7Z1En8HD$WN" role="3cqZAp" />
                         <node concept="3SKdUt" id="14lC3mYUe9U" role="3cqZAp">
                           <node concept="3SKdUq" id="14lC3mYUe9V" role="3SKWNk">
@@ -10816,7 +10914,7 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbH" id="14lC3mYUhIF" role="3cqZAp" />
+                        <node concept="3clFbH" id="2tm$uKyXjoO" role="3cqZAp" />
                         <node concept="3SKdUt" id="4X24Jn8VVP1" role="3cqZAp">
                           <node concept="3SKdUq" id="4X24Jn8VVP3" role="3SKWNk">
                             <property role="3SKdUp" value="Check the tail" />
@@ -10848,6 +10946,53 @@
                                         </node>
                                       </node>
                                     </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbH" id="2tm$uKyXjOn" role="3cqZAp" />
+                            <node concept="2xdQw9" id="2tm$uKyXjVr" role="3cqZAp">
+                              <property role="2xdLsb" value="info" />
+                              <node concept="3cpWs3" id="2tm$uKyXmHL" role="9lYJi">
+                                <node concept="1Z2H0r" id="2tm$uKyXmLy" role="3uHU7w">
+                                  <node concept="2OqwBi" id="2tm$uKyXnl2" role="1Z2MuG">
+                                    <node concept="1YBJjd" id="2tm$uKyXmYx" role="2Oq$k0">
+                                      <ref role="1YBMHb" node="4X24Jn8VU1b" resolve="pListColon" />
+                                    </node>
+                                    <node concept="3TrEf2" id="2tm$uKyXox6" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="sc0n:3Xsm2yzyl9m" resolve="tail" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3cpWs3" id="2tm$uKyXl_T" role="3uHU7B">
+                                  <node concept="3cpWs3" id="2tm$uKyXlcU" role="3uHU7B">
+                                    <node concept="3cpWs3" id="2tm$uKyXkzR" role="3uHU7B">
+                                      <node concept="3cpWs3" id="2tm$uKyXkg6" role="3uHU7B">
+                                        <node concept="Xl_RD" id="2tm$uKyXjVt" role="3uHU7B">
+                                          <property role="Xl_RC" value="Element type " />
+                                        </node>
+                                        <node concept="2X3wrD" id="2tm$uKyXkju" role="3uHU7w">
+                                          <ref role="2X3Bk0" node="14lC3mZ1GRb" resolve="et" />
+                                        </node>
+                                      </node>
+                                      <node concept="Xl_RD" id="2tm$uKyXkBb" role="3uHU7w">
+                                        <property role="Xl_RC" value=" in list is " />
+                                      </node>
+                                    </node>
+                                    <node concept="2c44tf" id="2tm$uKyXlqO" role="3uHU7w">
+                                      <node concept="1BrOF_" id="2tm$uKyXlPQ" role="2c44tc">
+                                        <node concept="33vP2l" id="2tm$uKyXlPR" role="1BrOF$">
+                                          <node concept="2c44te" id="2tm$uKyXlPS" role="lGtFl">
+                                            <node concept="1Z$b5t" id="2tm$uKyXlPT" role="2c44t1">
+                                              <ref role="1Z$eMM" node="14lC3mYUe9W" resolve="elementType" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="2tm$uKyXlKR" role="3uHU7w">
+                                    <property role="Xl_RC" value=" and type of tail is " />
                                   </node>
                                 </node>
                               </node>
@@ -10886,6 +11031,20 @@
                                   </node>
                                 </node>
                               </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="2tm$uKyXqmv" role="3cqZAp" />
+                        <node concept="2xdQw9" id="2tm$uKyXqgP" role="3cqZAp">
+                          <property role="2xdLsb" value="info" />
+                          <node concept="3cpWs3" id="2tm$uKyXqH_" role="9lYJi">
+                            <node concept="1Z2H0r" id="2tm$uKyXqKX" role="3uHU7w">
+                              <node concept="1YBJjd" id="2tm$uKyXqWD" role="1Z2MuG">
+                                <ref role="1YBMHb" node="4X24Jn8VU1b" resolve="pListColon" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="2tm$uKyXqgR" role="3uHU7B">
+                              <property role="Xl_RC" value="Resulting type of the pListColon " />
                             </node>
                           </node>
                         </node>

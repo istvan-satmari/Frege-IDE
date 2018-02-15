@@ -236,39 +236,41 @@ Len pre referenciu:
 
 
 	
-Tuple blbne
-	- po zadani tuplu nejde pisat pravu stranu definicie funkcie
-
 
 	
-Pattern type testy
-	- list zatvorka (x:xs)
-	- tuple
-	- anotacie?
 	
 	
+Dokoncit:
+---
+Pattern type testy (PListColon)
+	- list zatvorka (x:xs) a anotacie k nej, zatial nefunguje spravne
+	- chyba vyzera byt v nespravnom konstrukte (strom je zly) - checknut cez alt + x
+		- ked narazi na prvy problem, konci, preto nepokracuje
+		- chyba: 
+			- zistit, cim sa moze koncit pTupleList, na jake koncepty
+			- PVarList treba konvertovat - jak pri odstraneni posledneho argumentu, tak pri pridani noveho
 	
 	
 
 - Typova referencia (string)...? myslim, ze nemam poriesene v anotaciach
 	
 - potom poriesit rozne vynimky (exceptions, ktore v kuse vyhadzuje MPS)
-	- jedna z vynimiek, ked mame typewaiter a pouzivame inference rules s typovou premennou, tak nevie vyhodit chybu ku korektnemu nodeu
-
-	
-- par vizualnych veci opravit
+	- jedna z vynimiek, ked mame typewaiter a pouzivame inference rules s typovou premennou, tak nevie vyhodit chybu ku korektnemu nodeu => pouzit GetOriginalNode()
 	
 - textgen
-
-- opravit tie vlastne priklady, lebo sa zmenili koncepty
-
-
-
-
-
+	
 
 	
-	
+- par vizualnych veci opravit (parovanie zatvoriek, medzery, farebne odlisovanie)
+
+- vytvorit priklady, aj niekolko vlastnych pre rozlicne ukazky
+
+
+
+
+
+Vyhovorky:
+---
 - vymysliet vyhovorku
 	chyba je v tomto napr.:
 	ff :: Int -> Int
