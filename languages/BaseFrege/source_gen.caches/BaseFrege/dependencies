@@ -8,6 +8,7 @@
     <classNode dependClassName="BaseFrege.intentions.IntentionsDescriptor" />
     <classNode dependClassName="BaseFrege.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="BaseFrege.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="BaseFrege.textGen.TextGenAspectDescriptor" />
     <classNode dependClassName="BaseFrege.typesystem.TypesystemDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
@@ -26,6 +27,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenAspectDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
   </dependency>

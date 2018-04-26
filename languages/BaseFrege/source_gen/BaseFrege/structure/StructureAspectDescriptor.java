@@ -1333,7 +1333,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("BaseFrege.structure.LCQualifier", 0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5aa4f79b7b0fddd5L);
     b.origin("r:510a4f4e-9bcb-4fe8-a8a3-6e4488a35835(BaseFrege.structure)/6531617606750690783");
-    b.aggregate("letDef", 0x5aa4f79b7b0fddf7L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x45da4fd5064877c7L).optional(false).ordered(true).multiple(false).origin("6531617606750690807").done();
+    b.aggregate("letDef", 0x5aa4f79b7b0fddf7L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d89fL).optional(false).ordered(true).multiple(false).origin("6531617606750690807").done();
     b.alias("l");
     return b.create();
   }
