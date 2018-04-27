@@ -24345,5 +24345,71 @@
       <node concept="3clFbS" id="6WSZEqafE$A" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="UWyF1CtuZS">
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.Parts" />
+    <ref role="13h7C2" to="sc0n:vUxQDjKX$A" resolve="Guard" />
+    <node concept="13i0hz" id="UWyF1Ctv03" role="13h7CS">
+      <property role="TrG5h" value="SetToOtherwise" />
+      <node concept="3Tm1VV" id="UWyF1Ctv04" role="1B3o_S" />
+      <node concept="3cqZAl" id="UWyF1Ct_xh" role="3clF45" />
+      <node concept="3clFbS" id="UWyF1Ctv06" role="3clF47">
+        <node concept="3clFbF" id="UWyF1CtG59" role="3cqZAp">
+          <node concept="37vLTI" id="UWyF1CtHbL" role="3clFbG">
+            <node concept="2OqwBi" id="UWyF1CtGBl" role="37vLTJ">
+              <node concept="2OqwBi" id="UWyF1CtGcv" role="2Oq$k0">
+                <node concept="13iPFW" id="UWyF1CtG57" role="2Oq$k0" />
+                <node concept="3TrEf2" id="UWyF1CtGnu" role="2OqNvi">
+                  <ref role="3Tt5mk" to="sc0n:5ZITH0PGXP1" resolve="condition" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="UWyF1CtGNX" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:5ZITH0PGR2b" resolve="expression" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="UWyF1CtHOM" role="37vLTx">
+              <node concept="2fJWfE" id="UWyF1CtHXz" role="2ShVmc">
+                <node concept="3Tqbb2" id="UWyF1CtHX_" role="3zrR0E">
+                  <ref role="ehGHo" to="sc0n:UWyF1CqkPk" resolve="Otherwise" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="UWyF1CtuZT" role="13h7CW">
+      <node concept="3clFbS" id="UWyF1CtuZU" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="UWyF1Cwd4Y">
+    <property role="3GE5qa" value="Definitions.Expressions.Guards" />
+    <ref role="13h7C2" to="sc0n:UWyF1CqkPk" resolve="Otherwise" />
+    <node concept="13hLZK" id="UWyF1Cwd4Z" role="13h7CW">
+      <node concept="3clFbS" id="UWyF1Cwd50" role="2VODD2">
+        <node concept="3SKdUt" id="UWyF1CwdXV" role="3cqZAp">
+          <node concept="3SKdUq" id="UWyF1CwdXX" role="3SKWNk">
+            <property role="3SKdUp" value="Boolean could be considered a &quot;true&quot; literal" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="UWyF1Cwdb3" role="3cqZAp">
+          <node concept="37vLTI" id="UWyF1CwdRB" role="3clFbG">
+            <node concept="2ShNRf" id="UWyF1CwegM" role="37vLTx">
+              <node concept="2fJWfE" id="UWyF1Cwet7" role="2ShVmc">
+                <node concept="3Tqbb2" id="UWyF1Cwet9" role="3zrR0E">
+                  <ref role="ehGHo" to="sc0n:1A7M7ev83xY" resolve="TrueValue" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="UWyF1CwdiD" role="37vLTJ">
+              <node concept="13iPFW" id="UWyF1Cwdb2" role="2Oq$k0" />
+              <node concept="3TrEf2" id="UWyF1Cwdtu" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:4GJJ0fK8Bdq" resolve="firstTopExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

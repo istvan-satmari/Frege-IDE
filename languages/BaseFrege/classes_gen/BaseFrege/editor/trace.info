@@ -17,7 +17,64 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1153952380246:jetbrains.mps.baseLanguage.structure.TryStatement" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="20,0,704,0" name="BaseFrege.editor.EditorAspectDescriptorImpl" />
+      <unit at="20,0,708,0" name="BaseFrege.editor.EditorAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/1061876102423203191">
+    <file name="Otherwise_Editor.java">
+      <node id="1061876102423203191" at="11,79,12,75" concept="9" />
+      <node id="1061876102423203191" at="11,0,14,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="1061876102423203191" at="11,79,12,75" />
+      <scope id="1061876102423203191" at="11,0,14,0">
+        <var name="editorContext" id="1061876102423203191" />
+        <var name="node" id="1061876102423203191" />
+      </scope>
+      <unit id="1061876102423203191" at="10,0,15,0" name="BaseFrege.editor.Otherwise_Editor" />
+    </file>
+    <file name="Otherwise_EditorBuilder_a.java">
+      <node id="1061876102423203191" at="16,89,17,19" concept="13" />
+      <node id="1061876102423203191" at="17,19,18,18" concept="3" />
+      <node id="1061876102423203191" at="23,26,24,18" concept="9" />
+      <node id="1061876102423203191" at="27,39,28,37" concept="9" />
+      <node id="1061876102423203202" at="31,48,32,102" concept="8" />
+      <node id="1061876102423203202" at="32,102,33,46" concept="3" />
+      <node id="1061876102423203202" at="33,46,34,28" concept="3" />
+      <node id="1061876102423203202" at="34,28,35,65" concept="3" />
+      <node id="1061876102423203202" at="35,65,36,34" concept="3" />
+      <node id="1061876102423203202" at="36,34,37,22" concept="9" />
+      <node id="1061876102423203191" at="13,0,15,0" concept="4" trace="myNode" />
+      <node id="1061876102423203191" at="27,0,30,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="1061876102423203191" at="16,0,20,0" concept="2" trace="Otherwise_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1061876102423203191" at="21,0,26,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1061876102423203202" at="31,0,39,0" concept="7" trace="createConstant_pk3yoc_a#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="1061876102423203191" at="23,26,24,18" />
+      <scope id="1061876102423203191" at="27,39,28,37" />
+      <scope id="1061876102423203191" at="16,89,18,18" />
+      <scope id="1061876102423203191" at="27,0,30,0" />
+      <scope id="1061876102423203191" at="16,0,20,0">
+        <var name="context" id="1061876102423203191" />
+        <var name="node" id="1061876102423203191" />
+      </scope>
+      <scope id="1061876102423203191" at="21,0,26,0" />
+      <scope id="1061876102423203202" at="31,48,37,22">
+        <var name="editorCell" id="1061876102423203202" />
+      </scope>
+      <scope id="1061876102423203202" at="31,0,39,0" />
+      <unit id="1061876102423203191" at="12,0,40,0" name="BaseFrege.editor.Otherwise_EditorBuilder_a" />
+    </file>
+  </root>
+  <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/1061876102426634722">
+    <file name="Otherwise_SubstituteMenu.java">
+      <node id="1061876102426634722" at="16,118,17,140" concept="8" />
+      <node id="1061876102426634722" at="17,140,18,18" concept="9" />
+      <node id="1061876102426634722" at="14,0,20,0" concept="7" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/substitute/SubstituteMenuContext;)Ljava/util/List;" />
+      <scope id="1061876102426634722" at="16,118,18,18">
+        <var name="result" id="1061876102426634722" />
+      </scope>
+      <scope id="1061876102426634722" at="14,0,20,0">
+        <var name="_context" id="1061876102426634722" />
+      </scope>
+      <unit id="1061876102426634722" at="13,0,21,0" name="BaseFrege.editor.Otherwise_SubstituteMenu" />
     </file>
   </root>
   <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/109989384086114398">

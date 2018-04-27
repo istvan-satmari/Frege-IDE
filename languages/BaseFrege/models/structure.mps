@@ -2764,5 +2764,13 @@
     <property role="R4oN_" value="A concept with no editor only to carry a type inferred from outside." />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
   </node>
+  <node concept="1TIwiD" id="UWyF1CqkPk">
+    <property role="EcuMT" value="1061876102423203156" />
+    <property role="3GE5qa" value="Definitions.Expressions.Guards" />
+    <property role="TrG5h" value="Otherwise" />
+    <property role="34LRSv" value="otherwise" />
+    <property role="R4oN_" value="Represents a guard always evaluating to true." />
+    <ref role="1TJDcQ" node="4GJJ0fK8Bdp" resolve="BinaryExpressions" />
+  </node>
 </model>
 

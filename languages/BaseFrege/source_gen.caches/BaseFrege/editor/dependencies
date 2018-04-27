@@ -1319,6 +1319,8 @@
     <classNode dependClassName="BaseFrege.editor.OperatorApplication_Editor" />
     <classNode dependClassName="BaseFrege.editor.OperatorApplication_SubstituteMenu" />
     <classNode dependClassName="BaseFrege.editor.OperatorReference_Editor" />
+    <classNode dependClassName="BaseFrege.editor.Otherwise_Editor" />
+    <classNode dependClassName="BaseFrege.editor.Otherwise_SubstituteMenu" />
     <classNode dependClassName="BaseFrege.editor.PBracket_Editor" />
     <classNode dependClassName="BaseFrege.editor.PConstructor_Editor" />
     <classNode dependClassName="BaseFrege.editor.PConstructor_SubstituteMenu" />
@@ -4515,6 +4517,32 @@
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
+  <dependency className="BaseFrege.editor.Otherwise_Editor" file="Otherwise_Editor.java">
+    <classNode dependClassName="BaseFrege.editor.Otherwise_EditorBuilder_a" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="BaseFrege.editor.Otherwise_EditorBuilder_a" file="Otherwise_EditorBuilder_a.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
+  <dependency className="BaseFrege.editor.Otherwise_SubstituteMenu" file="Otherwise_SubstituteMenu.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
   <dependency className="BaseFrege.editor.PBracket_Editor" file="PBracket_Editor.java">
     <classNode dependClassName="BaseFrege.editor.PBracket_EditorBuilder_a" />

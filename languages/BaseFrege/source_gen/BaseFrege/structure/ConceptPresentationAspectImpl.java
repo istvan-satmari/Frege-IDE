@@ -138,6 +138,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for functions and variables.").create();
   private final ConceptPresentation props_OperatorApplication = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_OperatorReference = new ConceptPresentationBuilder().shortDesc("References an operator.").create();
+  private final ConceptPresentation props_Otherwise = new ConceptPresentationBuilder().shortDesc("Represents a guard always evaluating to true.").create();
   private final ConceptPresentation props_PBracket = new ConceptPresentationBuilder().shortDesc("Pattern in round brackets.").create();
   private final ConceptPresentation props_PConstructor = new ConceptPresentationBuilder().shortDesc("Datatype constructor reference.").create();
   private final ConceptPresentation props_PLEBPatternArgument = new ConceptPresentationBuilder().create();
@@ -452,6 +453,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_OperatorApplication;
       case LanguageConceptSwitch.OperatorReference:
         return props_OperatorReference;
+      case LanguageConceptSwitch.Otherwise:
+        return props_Otherwise;
       case LanguageConceptSwitch.PBracket:
         return props_PBracket;
       case LanguageConceptSwitch.PConstructor:

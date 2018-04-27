@@ -1332,7 +1332,7 @@
   </node>
   <node concept="2S6QgY" id="1Q7PHwq2pDi">
     <property role="3GE5qa" value="Definitions.FunctionDefinition" />
-    <property role="TrG5h" value="AddNewMatcherBinaryExpressions" />
+    <property role="TrG5h" value="AddNewMatcher" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="sc0n:4GJJ0fK8Bdp" resolve="BinaryExpressions" />
     <node concept="2S6ZIM" id="1Q7PHwq2pDj" role="2ZfVej">
@@ -1711,6 +1711,155 @@
               <node concept="2B6iha" id="LX2T03jJJ$" role="lGT1i">
                 <property role="1lyBwo" value="mostRelevant" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="UWyF1Coj8J">
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.FDG" />
+    <property role="2ZfUl0" value="true" />
+    <property role="TrG5h" value="AddNewGuard" />
+    <ref role="2ZfgGC" to="sc0n:vUxQDjKX$A" resolve="Guard" />
+    <node concept="2S6ZIM" id="UWyF1Coj8K" role="2ZfVej">
+      <node concept="3clFbS" id="UWyF1Coj8L" role="2VODD2">
+        <node concept="3clFbF" id="UWyF1CokJN" role="3cqZAp">
+          <node concept="Xl_RD" id="UWyF1CokJM" role="3clFbG">
+            <property role="Xl_RC" value="Insert New Guard." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="UWyF1Coj8M" role="2ZfgGD">
+      <node concept="3clFbS" id="UWyF1Coj8N" role="2VODD2">
+        <node concept="3SKdUt" id="UWyF1Coquj" role="3cqZAp">
+          <node concept="3SKdUq" id="UWyF1Coqul" role="3SKWNk">
+            <property role="3SKdUp" value="Find the currently selected guard" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="UWyF1ComAo" role="3cqZAp">
+          <node concept="3cpWsn" id="UWyF1ComAp" role="3cpWs9">
+            <property role="TrG5h" value="surroundingFDGGuards" />
+            <node concept="3Tqbb2" id="UWyF1ComAq" role="1tU5fm">
+              <ref role="ehGHo" to="sc0n:2LraaixhIiv" resolve="FDGGuards" />
+            </node>
+            <node concept="2OqwBi" id="UWyF1ComAr" role="33vP2m">
+              <node concept="2Sf5sV" id="UWyF1ComAs" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="UWyF1ComAt" role="2OqNvi">
+                <node concept="1xMEDy" id="UWyF1ComAu" role="1xVPHs">
+                  <node concept="chp4Y" id="UWyF1CopEm" role="ri$Ld">
+                    <ref role="cht4Q" to="sc0n:2LraaixhIiv" resolve="FDGGuards" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="UWyF1ComAw" role="3cqZAp">
+          <node concept="3cpWsn" id="UWyF1ComAx" role="3cpWs9">
+            <property role="TrG5h" value="guards" />
+            <node concept="_YKpA" id="UWyF1ComAy" role="1tU5fm">
+              <node concept="3Tqbb2" id="UWyF1ComAz" role="_ZDj9">
+                <ref role="ehGHo" to="sc0n:vUxQDjKX$A" resolve="Guard" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="UWyF1ComA$" role="33vP2m">
+              <node concept="3Tsc0h" id="UWyF1Costn" role="2OqNvi">
+                <ref role="3TtcxE" to="sc0n:2LraaixhIiw" resolve="guards" />
+              </node>
+              <node concept="37vLTw" id="UWyF1ComAA" role="2Oq$k0">
+                <ref role="3cqZAo" node="UWyF1ComAp" resolve="surroundingFDGGuards" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="UWyF1ComAJ" role="3cqZAp">
+          <node concept="3cpWsn" id="UWyF1ComAK" role="3cpWs9">
+            <property role="TrG5h" value="nodeIndex" />
+            <node concept="10Oyi0" id="UWyF1ComAL" role="1tU5fm" />
+            <node concept="2OqwBi" id="UWyF1ComAM" role="33vP2m">
+              <node concept="2OqwBi" id="UWyF1ComAN" role="2Oq$k0">
+                <node concept="1z4cxt" id="UWyF1ComAO" role="2OqNvi">
+                  <node concept="1bVj0M" id="UWyF1ComAP" role="23t8la">
+                    <node concept="3clFbS" id="UWyF1ComAQ" role="1bW5cS">
+                      <node concept="3clFbF" id="UWyF1ComAR" role="3cqZAp">
+                        <node concept="3clFbC" id="UWyF1ComAS" role="3clFbG">
+                          <node concept="37vLTw" id="UWyF1ComAT" role="3uHU7B">
+                            <ref role="3cqZAo" node="UWyF1ComAV" resolve="it" />
+                          </node>
+                          <node concept="2Sf5sV" id="UWyF1Cq3cw" role="3uHU7w" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="UWyF1ComAV" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="UWyF1ComAW" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="UWyF1ComAX" role="2Oq$k0">
+                  <ref role="3cqZAo" node="UWyF1ComAx" resolve="guards" />
+                </node>
+              </node>
+              <node concept="2bSWHS" id="UWyF1ComAY" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="UWyF1Cp6Hk" role="3cqZAp" />
+        <node concept="3SKdUt" id="UWyF1CoBQy" role="3cqZAp">
+          <node concept="3SKdUq" id="UWyF1CoBQ$" role="3SKWNk">
+            <property role="3SKdUp" value="Insert at the appropriate position right below the current guard" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="UWyF1ComAZ" role="3cqZAp">
+          <node concept="2OqwBi" id="UWyF1ComB0" role="3clFbG">
+            <node concept="37vLTw" id="UWyF1ComB1" role="2Oq$k0">
+              <ref role="3cqZAo" node="UWyF1ComAx" resolve="guards" />
+            </node>
+            <node concept="1sK_Qi" id="UWyF1ComB2" role="2OqNvi">
+              <node concept="3cpWs3" id="UWyF1ComB3" role="1sKJu8">
+                <node concept="3cmrfG" id="UWyF1ComB4" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="37vLTw" id="UWyF1ComB5" role="3uHU7B">
+                  <ref role="3cqZAo" node="UWyF1ComAK" resolve="nodeIndex" />
+                </node>
+              </node>
+              <node concept="2ShNRf" id="UWyF1CozgK" role="1sKFgg">
+                <node concept="2fJWfE" id="UWyF1CoAXf" role="2ShVmc">
+                  <node concept="3Tqbb2" id="UWyF1CoAXh" role="3zrR0E">
+                    <ref role="ehGHo" to="sc0n:vUxQDjKX$A" resolve="Guard" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="UWyF1CtanR">
+    <property role="3GE5qa" value="Definitions.FunctionDefinition.Parts" />
+    <property role="TrG5h" value="SetGuardToOtherwise" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="sc0n:vUxQDjKX$A" resolve="Guard" />
+    <node concept="2S6ZIM" id="UWyF1CtanS" role="2ZfVej">
+      <node concept="3clFbS" id="UWyF1CtanT" role="2VODD2">
+        <node concept="3clFbF" id="UWyF1CtdyC" role="3cqZAp">
+          <node concept="Xl_RD" id="UWyF1CtdyB" role="3clFbG">
+            <property role="Xl_RC" value="Set Guard To Otherwise." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="UWyF1CtanU" role="2ZfgGD">
+      <node concept="3clFbS" id="UWyF1CtanV" role="2VODD2">
+        <node concept="3clFbF" id="UWyF1CBqDT" role="3cqZAp">
+          <node concept="2OqwBi" id="UWyF1CBqWl" role="3clFbG">
+            <node concept="2Sf5sV" id="UWyF1CBqDR" role="2Oq$k0" />
+            <node concept="2qgKlT" id="UWyF1CBr6c" role="2OqNvi">
+              <ref role="37wK5l" to="yq4j:UWyF1Ctv03" resolve="SetToOtherwise" />
             </node>
           </node>
         </node>

@@ -758,9 +758,6 @@
               <node concept="Xl_RD" id="cLUB_1YkYr" role="3g7hyw">
                 <property role="Xl_RC" value=".." />
               </node>
-              <node concept="Xl_RD" id="cLUB_1Yl0_" role="3g7hyw">
-                <property role="Xl_RC" value=":" />
-              </node>
               <node concept="Xl_RD" id="cLUB_1Yl32" role="3g7hyw">
                 <property role="Xl_RC" value="::" />
               </node>
