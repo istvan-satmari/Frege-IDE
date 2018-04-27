@@ -24411,5 +24411,12 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="3Tk5n120QH5">
+    <property role="3GE5qa" value="Definitions.Expressions" />
+    <ref role="13h7C2" to="sc0n:6ZRRdP8XeEF" resolve="EmptyExpression" />
+    <node concept="13hLZK" id="3Tk5n120QH6" role="13h7CW">
+      <node concept="3clFbS" id="3Tk5n120QH7" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
