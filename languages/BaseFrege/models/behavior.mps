@@ -24415,7 +24415,60 @@
     <property role="3GE5qa" value="Definitions.Expressions" />
     <ref role="13h7C2" to="sc0n:6ZRRdP8XeEF" resolve="EmptyExpression" />
     <node concept="13hLZK" id="3Tk5n120QH6" role="13h7CW">
-      <node concept="3clFbS" id="3Tk5n120QH7" role="2VODD2" />
+      <node concept="3clFbS" id="3Tk5n120QH7" role="2VODD2">
+        <node concept="3SKdUt" id="3Tk5n122eiO" role="3cqZAp">
+          <node concept="3SKdUq" id="3Tk5n122eiQ" role="3SKWNk">
+            <property role="3SKdUp" value="Workaround for empty expression that still has to have a TopExpression assigned" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3Tk5n126D5v" role="3cqZAp">
+          <node concept="3cpWsn" id="3Tk5n126D5y" role="3cpWs9">
+            <property role="TrG5h" value="binExp" />
+            <node concept="3Tqbb2" id="3Tk5n126D5t" role="1tU5fm">
+              <ref role="ehGHo" to="sc0n:4GJJ0fK8Bdp" resolve="BinaryExpressions" />
+            </node>
+            <node concept="2ShNRf" id="3Tk5n126Ei$" role="33vP2m">
+              <node concept="2fJWfE" id="3Tk5n126Eta" role="2ShVmc">
+                <node concept="3Tqbb2" id="3Tk5n126Etc" role="3zrR0E">
+                  <ref role="ehGHo" to="sc0n:4GJJ0fK8Bdp" resolve="BinaryExpressions" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3Tk5n126ECf" role="3cqZAp">
+          <node concept="37vLTI" id="3Tk5n126G4a" role="3clFbG">
+            <node concept="2OqwBi" id="3Tk5n126ELR" role="37vLTJ">
+              <node concept="37vLTw" id="3Tk5n126ECd" role="2Oq$k0">
+                <ref role="3cqZAo" node="3Tk5n126D5y" resolve="binExp" />
+              </node>
+              <node concept="3TrEf2" id="3Tk5n127F2W" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:4GJJ0fK8Bdq" resolve="firstTopExpression" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="3Tk5n12263D" role="37vLTx">
+              <node concept="2fJWfE" id="3Tk5n122e1G" role="2ShVmc">
+                <node concept="3Tqbb2" id="3Tk5n122e1I" role="3zrR0E">
+                  <ref role="ehGHo" to="sc0n:vUxQDjKX$9" resolve="StringValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3Tk5n1224Lk" role="3cqZAp">
+          <node concept="37vLTI" id="3Tk5n126HOv" role="3clFbG">
+            <node concept="37vLTw" id="3Tk5n126HOV" role="37vLTx">
+              <ref role="3cqZAo" node="3Tk5n126D5y" resolve="binExp" />
+            </node>
+            <node concept="2OqwBi" id="3Tk5n1224T$" role="37vLTJ">
+              <node concept="13iPFW" id="3Tk5n1224Lj" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3Tk5n12255U" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:5ZITH0PGR2b" resolve="expression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

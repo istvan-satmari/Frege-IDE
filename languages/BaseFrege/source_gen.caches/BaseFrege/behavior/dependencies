@@ -63,6 +63,7 @@
     <classNode dependClassName="BaseFrege.behavior.EPBinaryExpression__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.EPFinalOperand__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.EPNode__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.EmptyExpression__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.Expression__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.FDAVarName__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.FDAssignment__BehaviorDescriptor" />
@@ -451,6 +452,25 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.selection.SelectionManager" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.EmptyExpression__BehaviorDescriptor" file="EmptyExpression__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.action.SNodeFactoryOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="BaseFrege.behavior.ExpressionParser" file="ExpressionParser.java">
     <classNode dependClassName="BaseFrege.behavior.EPNode__BehaviorDescriptor" />

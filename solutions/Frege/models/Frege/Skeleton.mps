@@ -271,7 +271,6 @@
         <child id="4429572801646596615" name="pattern" index="2TApbT" />
         <child id="6912716259988856113" name="guards" index="1EnjJx" />
       </concept>
-      <concept id="6912716259988856302" name="BaseFrege.structure.TopExpression" flags="ng" index="1EnjGY" />
       <concept id="6912716259988811212" name="BaseFrege.structure.Infixr" flags="ng" index="1EnsGs" />
       <concept id="6912716259988811232" name="BaseFrege.structure.Infixl" flags="ng" index="1EnsGK" />
       <concept id="2680527376093073443" name="BaseFrege.structure.TypeVariableReference" flags="ng" index="1FzZlh">
@@ -9824,10 +9823,10 @@
         </node>
         <node concept="1kelYX" id="UWyF1Cl5f0" role="1EnjJn">
           <node concept="2V3sXq" id="UWyF1Cl5f1" role="1Enppr">
-            <node concept="xEMEp" id="UWyF1Cl5fV" role="2V3sXp">
-              <node concept="B0NpQ" id="UWyF1Cl5fW" role="xEMEu">
-                <node concept="2V3sXq" id="UWyF1Cl5fX" role="1Enppr">
-                  <node concept="1EnjGY" id="UWyF1Cl5fY" role="2V3sXp" />
+            <node concept="xEMEp" id="3Tk5n129caH" role="2V3sXp">
+              <node concept="B0NpQ" id="3Tk5n129caI" role="xEMEu">
+                <node concept="2V3sXq" id="3Tk5n129caJ" role="1Enppr">
+                  <node concept="1kelTz" id="3Tk5n129caL" role="2V3sXp" />
                 </node>
               </node>
             </node>
@@ -9984,10 +9983,10 @@
         </node>
         <node concept="1kelYX" id="UWyF1Cnj_r" role="1EnjJn">
           <node concept="2V3sXq" id="UWyF1Cnj_s" role="1Enppr">
-            <node concept="xEMEp" id="UWyF1CnjP8" role="2V3sXp">
-              <node concept="B0NpQ" id="UWyF1CnjP9" role="xEMEu">
-                <node concept="2V3sXq" id="UWyF1CnjPa" role="1Enppr">
-                  <node concept="1EnjGY" id="UWyF1CnjPb" role="2V3sXp" />
+            <node concept="xEMEp" id="3Tk5n129dm8" role="2V3sXp">
+              <node concept="B0NpQ" id="3Tk5n129dm9" role="xEMEu">
+                <node concept="2V3sXq" id="3Tk5n129dma" role="1Enppr">
+                  <node concept="1kelTz" id="3Tk5n129dmc" role="2V3sXp" />
                 </node>
               </node>
             </node>
@@ -10009,10 +10008,10 @@
         </node>
         <node concept="1kelYX" id="UWyF1Cnlyj" role="1EnjJn">
           <node concept="2V3sXq" id="UWyF1Cnlyk" role="1Enppr">
-            <node concept="xEMEp" id="UWyF1CnlK8" role="2V3sXp">
-              <node concept="B0NpQ" id="UWyF1CnlK9" role="xEMEu">
-                <node concept="2V3sXq" id="UWyF1CnlKa" role="1Enppr">
-                  <node concept="1EnjGY" id="UWyF1CnlKb" role="2V3sXp" />
+            <node concept="xEMEp" id="3Tk5n129i2m" role="2V3sXp">
+              <node concept="B0NpQ" id="3Tk5n129i2n" role="xEMEu">
+                <node concept="2V3sXq" id="3Tk5n129i2o" role="1Enppr">
+                  <node concept="1kelTz" id="3Tk5n129i2q" role="2V3sXp" />
                 </node>
               </node>
             </node>
@@ -10258,10 +10257,10 @@
             </node>
             <node concept="1kelYX" id="UWyF1Co5sa" role="1EnjI5">
               <node concept="2V3sXq" id="UWyF1Co5sb" role="1Enppr">
-                <node concept="xEMEp" id="UWyF1Co7tB" role="2V3sXp">
-                  <node concept="B0NpQ" id="UWyF1Co7tC" role="xEMEu">
-                    <node concept="2V3sXq" id="UWyF1Co7tD" role="1Enppr">
-                      <node concept="1EnjGY" id="UWyF1Co7tE" role="2V3sXp" />
+                <node concept="xEMEp" id="3Tk5n129kgw" role="2V3sXp">
+                  <node concept="B0NpQ" id="3Tk5n129kgx" role="xEMEu">
+                    <node concept="2V3sXq" id="3Tk5n129kgy" role="1Enppr">
+                      <node concept="1kelTz" id="3Tk5n129kg$" role="2V3sXp" />
                     </node>
                   </node>
                 </node>
@@ -10376,10 +10375,10 @@
             </node>
             <node concept="1kelYX" id="3Tk5n11V076" role="1EnjI5">
               <node concept="2V3sXq" id="3Tk5n11V077" role="1Enppr">
-                <node concept="xEMEp" id="3Tk5n11V4nH" role="2V3sXp">
-                  <node concept="B0NpQ" id="3Tk5n11V4nI" role="xEMEu">
-                    <node concept="2V3sXq" id="3Tk5n11V4nJ" role="1Enppr">
-                      <node concept="1EnjGY" id="3Tk5n11V4nK" role="2V3sXp" />
+                <node concept="xEMEp" id="3Tk5n129myT" role="2V3sXp">
+                  <node concept="B0NpQ" id="3Tk5n129myU" role="xEMEu">
+                    <node concept="2V3sXq" id="3Tk5n129myV" role="1Enppr">
+                      <node concept="1kelTz" id="3Tk5n129myX" role="2V3sXp" />
                     </node>
                   </node>
                 </node>
@@ -10417,10 +10416,10 @@
         </node>
         <node concept="1kelYX" id="3Tk5n11Vh$i" role="1EnjJn">
           <node concept="2V3sXq" id="3Tk5n11Vh$j" role="1Enppr">
-            <node concept="xEMEp" id="3Tk5n11Vise" role="2V3sXp">
-              <node concept="B0NpQ" id="3Tk5n11Visf" role="xEMEu">
-                <node concept="2V3sXq" id="3Tk5n11Visg" role="1Enppr">
-                  <node concept="1EnjGY" id="3Tk5n11Vish" role="2V3sXp" />
+            <node concept="xEMEp" id="3Tk5n129nQR" role="2V3sXp">
+              <node concept="B0NpQ" id="3Tk5n129nQS" role="xEMEu">
+                <node concept="2V3sXq" id="3Tk5n129nQT" role="1Enppr">
+                  <node concept="1kelTz" id="3Tk5n129nQV" role="2V3sXp" />
                 </node>
               </node>
             </node>
