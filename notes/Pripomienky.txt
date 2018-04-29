@@ -741,3 +741,6 @@
 		in e+f
 		
 	- a aj ta, co pouzivam v editore, ktora sa tazko kopiruje pre textgen
+	
+- List comprehension sa nesprava ocakavane; neposkytuje ani scope
+	- a to je spravne; list comprehension velmi nepodporujeme
