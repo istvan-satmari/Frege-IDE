@@ -1580,12 +1580,12 @@
   <node concept="Az7Fb" id="7Cxf1w4A_m1">
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms.Literals.Primitives" />
     <property role="TrG5h" value="BIGINTEGER" />
-    <property role="FLfZY" value="^[0-9]+$" />
+    <property role="FLfZY" value="^-?[0-9]+$" />
   </node>
   <node concept="Az7Fb" id="7Cxf1w4A_m2">
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Terms.Literals.Primitives" />
     <property role="TrG5h" value="DOUBLE" />
-    <property role="FLfZY" value="^[0-9]+(\\.[0-9]+)?(E(\\+|\\-)?[0-9]+)?$" />
+    <property role="FLfZY" value="^-?[0-9]+(\\.[0-9]+)?(E(\\+|\\-)?[0-9]+)?$" />
   </node>
   <node concept="1TIwiD" id="1NZxxHzeFNo">
     <property role="EcuMT" value="2089536204310232280" />
