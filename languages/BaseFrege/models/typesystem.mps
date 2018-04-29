@@ -547,9 +547,6 @@
       <node concept="3clFbJ" id="mSTsZCjcRl" role="3cqZAp">
         <node concept="22lmx$" id="mSTsZCjk_0" role="3clFbw">
           <node concept="3eOSWO" id="mSTsZCjmf3" role="3uHU7w">
-            <node concept="3cmrfG" id="mSTsZCjmf6" role="3uHU7w">
-              <property role="3cmrfH" value="9" />
-            </node>
             <node concept="2OqwBi" id="mSTsZCjkU4" role="3uHU7B">
               <node concept="1YBJjd" id="mSTsZCjkG4" role="2Oq$k0">
                 <ref role="1YBMHb" node="mSTsZCjcRh" resolve="fixity" />
@@ -557,6 +554,9 @@
               <node concept="3TrcHB" id="mSTsZCjlbw" role="2OqNvi">
                 <ref role="3TsBF5" to="sc0n:5ZITH0PGMQi" resolve="precedence" />
               </node>
+            </node>
+            <node concept="3cmrfG" id="2JeROgEikok" role="3uHU7w">
+              <property role="3cmrfH" value="16" />
             </node>
           </node>
           <node concept="3eOVzh" id="mSTsZCjiVC" role="3uHU7B">
@@ -568,15 +568,15 @@
                 <ref role="3TsBF5" to="sc0n:5ZITH0PGMQi" resolve="precedence" />
               </node>
             </node>
-            <node concept="3cmrfG" id="mSTsZCjiVF" role="3uHU7w">
-              <property role="3cmrfH" value="0" />
+            <node concept="3cmrfG" id="2JeROgEiltF" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
             </node>
           </node>
         </node>
         <node concept="3clFbS" id="mSTsZCjcRn" role="3clFbx">
           <node concept="2MkqsV" id="mSTsZCjmmm" role="3cqZAp">
             <node concept="Xl_RD" id="mSTsZCjmy$" role="2MkJ7o">
-              <property role="Xl_RC" value="The priority of the operator must be in range 0 to 9." />
+              <property role="Xl_RC" value="The priority of the operator must be in range 1 to 16." />
             </node>
             <node concept="1YBJjd" id="mSTsZCjmmy" role="2OEOjV">
               <ref role="1YBMHb" node="mSTsZCjcRh" resolve="fixity" />

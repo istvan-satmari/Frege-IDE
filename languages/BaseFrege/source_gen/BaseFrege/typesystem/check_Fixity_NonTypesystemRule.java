@@ -18,10 +18,10 @@ public class check_Fixity_NonTypesystemRule extends AbstractNonTypesystemRule_Ru
   public check_Fixity_NonTypesystemRule() {
   }
   public void applyRule(final SNode fixity, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (SPropertyOperations.getInteger(fixity, MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, 0x5feee6d035b32d92L, "precedence")) < 0 || SPropertyOperations.getInteger(fixity, MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, 0x5feee6d035b32d92L, "precedence")) > 9) {
+    if (SPropertyOperations.getInteger(fixity, MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, 0x5feee6d035b32d92L, "precedence")) < 1 || SPropertyOperations.getInteger(fixity, MetaAdapterFactory.getProperty(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8c2L, 0x5feee6d035b32d92L, "precedence")) > 16) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fixity, "The priority of the operator must be in range 0 to 9.", "r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)", "412332047022777750", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fixity, "The priority of the operator must be in range 1 to 16.", "r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)", "412332047022777750", null, errorTarget);
       }
     }
   }

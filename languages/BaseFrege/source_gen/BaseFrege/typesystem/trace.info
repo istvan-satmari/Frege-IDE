@@ -1157,7 +1157,7 @@
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/412332047022738894">
     <file name="check_Fixity_NonTypesystemRule.java">
       <node id="412332047022777750" at="22,7,23,60" concept="7" />
-      <node id="412332047022777750" at="23,60,24,252" concept="7" />
+      <node id="412332047022777750" at="23,60,24,253" concept="7" />
       <node id="412332047022738894" at="28,50,29,133" concept="8" />
       <node id="412332047022738894" at="31,68,32,102" concept="8" />
       <node id="412332047022738894" at="34,30,35,17" concept="8" />
@@ -1165,7 +1165,7 @@
       <node id="412332047022738894" at="28,0,31,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="412332047022738894" at="31,0,34,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="412332047022738894" at="34,0,37,0" concept="6" trace="overrides#()Z" />
-      <node id="412332047022777750" at="21,357,25,7" concept="0" />
+      <node id="412332047022777750" at="21,358,25,7" concept="0" />
       <node id="412332047022738901" at="20,119,26,5" concept="5" />
       <node id="412332047022738894" at="20,0,28,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="412332047022738894" at="18,43,18,43" />
@@ -1173,7 +1173,7 @@
       <scope id="412332047022738894" at="31,68,32,102" />
       <scope id="412332047022738894" at="34,30,35,17" />
       <scope id="412332047022738894" at="18,0,20,0" />
-      <scope id="412332047022777750" at="22,7,24,252">
+      <scope id="412332047022777750" at="22,7,24,253">
         <var name="_reporter_2309309498" id="412332047022777750" />
         <var name="errorTarget" id="412332047022777750" />
       </scope>
@@ -1182,7 +1182,7 @@
         <var name="argument" id="412332047022738894" />
       </scope>
       <scope id="412332047022738894" at="34,0,37,0" />
-      <scope id="412332047022738903" at="21,357,25,7" />
+      <scope id="412332047022738903" at="21,358,25,7" />
       <scope id="412332047022738895" at="20,119,26,5" />
       <scope id="412332047022738894" at="20,0,28,0">
         <var name="fixity" id="412332047022738894" />

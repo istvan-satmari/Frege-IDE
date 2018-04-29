@@ -1,25 +1,9 @@
 Editor akcie transformacie a substitucie pre function-definition - pravu stranu (t.j. expression)
 Vychadza z povodneho dokumentu Editor.txt, pricom ale pridava vlastnu analyzu a postup prace
 -------------------------------------------------------------------------------------------------
-- todo:
-	- typovy system
-		- kontrola typu argumentu (ff x)
-		- deklaracia funkcie
-			ff :: Int -> Int
-			ff x = 1 + x
-
-		a + b = !!implicit :: Int -> Int
-		- currying len na konci, pokial zvysi cas
-
-	- textgen
-	- stretnutie: 2. 2. 2018, 10:00
 
 
 
-
-
-
----------------------------------------------
 - typ nesmie checkovat anotacia funkcie - ta len umoznuej ziskat typ; kontrolu si musi urobit samotna definicia funkcie!
 	=> cize vediet ziskat pozadovanu anotaciu pre sucasnu funkciu
 	- porovnanie typu definicie voci deklaracie tym padom musi byt opatrne a asi nemoze byt jednoduche "isSubtypeOf" - niektore veci sa totiz musia nahradit

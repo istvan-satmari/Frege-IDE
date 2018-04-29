@@ -729,3 +729,15 @@
 		- :>=: vobec nefunguje, pretoze vytvoreny strom ma fakeove nodes, takze nema co podciarknut (strom nie je realne viditelny)
 		- musime jednotlive nodes referencovat (skutocne casti expression), pretoze inak by sme ich premiestnili do stromu, ktory je iba docasny a realne neexistuje
 		- musime pouzivat error "string" -> referencedNode, lebo ako som uz pisal, :>=: nefunguje podla ocakavani
+		
+- Pripomenme, ze takato indentacia let-u je v poriadku:		
+			
+	ff = 9 + let 
+	  y = 1+2
+	  z = 4+6
+	  in let 
+		f = y+z
+		e = 3
+		in e+f
+		
+	- a aj ta, co pouzivam v editore, ktora sa tazko kopiruje pre textgen
