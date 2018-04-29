@@ -158,8 +158,8 @@
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/1297414153607488319">
     <file name="check_FDGrouped_NonTypesystemRule.java">
       <node id="2410240425681049554" at="27,122,28,36" concept="9" />
-      <node id="1297414153608862971" at="28,36,29,507" concept="7" />
-      <node id="1297414153608862082" at="29,507,30,0" concept="10" />
+      <node id="1297414153608862971" at="28,36,29,632" concept="7" />
+      <node id="1297414153608862082" at="29,632,30,0" concept="10" />
       <node id="1297414153609118172" at="34,59,35,77" concept="8" />
       <node id="1297414153607522899" at="38,11,39,64" concept="7" />
       <node id="1297414153607522899" at="39,64,40,244" concept="7" />
