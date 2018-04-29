@@ -744,3 +744,18 @@
 	
 - List comprehension sa nesprava ocakavane; neposkytuje ani scope
 	- a to je spravne; list comprehension velmi nepodporujeme
+	
+	
+- Niektore operatory blbnu - namiesto napisania operatoru napisem expression typu operator... 
+	- napr. v tomto pripade to blbne:
+	a * b = 0
+	a *** b = 0
+	- cize v tejto chvili mam 2 referencovatelne operatory zacinajuce "*"
+	- a napisem:
+		ff = 1 **
+		- a dostanem:
+		ff = 1 * (*)
+	- zaroven ani nejde v tomto pripade pripisat ** na koniec operatoru:
+		ff = 1 * 2
+	- na vsetkych ostatnych operatoroch to uz ale bez problemov ide
+	- cize zrejme nejaka chyba vnutri MPS...?

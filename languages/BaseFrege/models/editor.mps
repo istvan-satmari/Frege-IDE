@@ -2186,21 +2186,55 @@
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <ref role="1XX52x" to="sc0n:5fWvJRHV8Az" resolve="OperatorApplication" />
     <node concept="3EZMnI" id="3PPtPKMnh60" role="2wV5jI">
-      <node concept="3F0ifn" id="3PPtPKMnh61" role="3EZMnx">
+      <node concept="3F0ifn" id="6WhInY3wipl" role="3EZMnx">
         <property role="3F0ifm" value="(" />
         <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
-        <node concept="11LMrY" id="3PPtPKMnh62" role="3F10Kt">
+        <node concept="11LMrY" id="6WhInY3wip$" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="6WhInY3JWwJ" role="pqm2j">
+          <node concept="3clFbS" id="6WhInY3JWwK" role="2VODD2">
+            <node concept="3clFbF" id="6WhInY3JWBT" role="3cqZAp">
+              <node concept="3fqX7Q" id="6WhInY3JY$g" role="3clFbG">
+                <node concept="2OqwBi" id="6WhInY3JY$i" role="3fr31v">
+                  <node concept="35c_gC" id="6WhInY3JY$j" role="2Oq$k0">
+                    <ref role="35c_gD" to="sc0n:4GJJ0fK8PQJ" resolve="BracketsApplication" />
+                  </node>
+                  <node concept="2qgKlT" id="6WhInY3JY$k" role="2OqNvi">
+                    <ref role="37wK5l" to="yq4j:6WhInY3JvZq" resolve="isExpressionLonely" />
+                    <node concept="pncrf" id="6WhInY3JY$l" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3F1sOY" id="3PPtPKMnh63" role="3EZMnx">
         <ref role="1NtTu8" to="sc0n:3PPtPKMnh5Y" resolve="operator" />
       </node>
-      <node concept="3F0ifn" id="3PPtPKMnh64" role="3EZMnx">
+      <node concept="3F0ifn" id="6WhInY3wipt" role="3EZMnx">
         <property role="3F0ifm" value=")" />
         <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
-        <node concept="11L4FC" id="3PPtPKMnh65" role="3F10Kt">
+        <node concept="11L4FC" id="6WhInY3wipy" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="6WhInY3JYZ4" role="pqm2j">
+          <node concept="3clFbS" id="6WhInY3JYZ5" role="2VODD2">
+            <node concept="3clFbF" id="6WhInY3JZ6s" role="3cqZAp">
+              <node concept="3fqX7Q" id="6WhInY3JZ6u" role="3clFbG">
+                <node concept="2OqwBi" id="6WhInY3JZ6v" role="3fr31v">
+                  <node concept="35c_gC" id="6WhInY3JZ6w" role="2Oq$k0">
+                    <ref role="35c_gD" to="sc0n:4GJJ0fK8PQJ" resolve="BracketsApplication" />
+                  </node>
+                  <node concept="2qgKlT" id="6WhInY3JZ6x" role="2OqNvi">
+                    <ref role="37wK5l" to="yq4j:6WhInY3JvZq" resolve="isExpressionLonely" />
+                    <node concept="pncrf" id="6WhInY3JZ6y" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2iRfu4" id="3PPtPKMnh66" role="2iSdaV" />
@@ -8783,7 +8817,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="Sma_Zjy1Dr" role="3cqZAp" />
+              <node concept="3clFbH" id="6WhInY3wKVQ" role="3cqZAp" />
               <node concept="3cpWs6" id="Sma_Zjy1Ds" role="3cqZAp">
                 <node concept="37vLTw" id="Sma_Zjy1Dt" role="3cqZAk">
                   <ref role="3cqZAo" node="Sma_Zjy1Di" resolve="textUtilities" />
@@ -10663,7 +10697,7 @@
                 <property role="3SKdUp" value="Transformation to add operator to binary epxressions, e.g. [1, 2] to [1, 2] ++ [3, 4, 5]" />
               </node>
             </node>
-            <node concept="3clFbF" id="7sZOd2U$mqX" role="3cqZAp">
+            <node concept="3clFbF" id="6WhInY3HBy7" role="3cqZAp">
               <node concept="2YIFZM" id="7sZOd2U$mOH" role="3clFbG">
                 <ref role="37wK5l" to="yq4j:7sZOd2Uxqvk" resolve="testKindsUpward" />
                 <ref role="1Pybhc" to="yq4j:7W$X1KZtejq" resolve="TreeUtilities" />
@@ -13339,6 +13373,7 @@
         <ref role="2ZyFGn" to="sc0n:4GJJ0fK9oDn" resolve="OperatorReference" />
       </node>
     </node>
+    <node concept="3VyMlK" id="6WhInY3rYeR" role="3ft7WO" />
   </node>
   <node concept="IW6AY" id="7sZOd2URli5">
     <property role="3GE5qa" value="Definitions.References" />

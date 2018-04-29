@@ -62,6 +62,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -109,6 +112,9 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -3133,9 +3139,33 @@
     <ref role="WuzLi" to="sc0n:5fWvJRHV8Az" resolve="OperatorApplication" />
     <node concept="11bSqf" id="1UIqa7boUzX" role="11c4hB">
       <node concept="3clFbS" id="1UIqa7boUzY" role="2VODD2">
-        <node concept="lc7rE" id="1UIqa7boU$i" role="3cqZAp">
-          <node concept="la8eA" id="1UIqa7boU$C" role="lcghm">
-            <property role="lacIc" value="(" />
+        <node concept="3cpWs8" id="2PVWAU2rVzj" role="3cqZAp">
+          <node concept="3cpWsn" id="2PVWAU2rVzm" role="3cpWs9">
+            <property role="TrG5h" value="putToBrackets" />
+            <node concept="10P_77" id="2PVWAU2rVzh" role="1tU5fm" />
+            <node concept="3fqX7Q" id="2PVWAU2rXvU" role="33vP2m">
+              <node concept="2OqwBi" id="2PVWAU2rXvW" role="3fr31v">
+                <node concept="35c_gC" id="2PVWAU2rXvX" role="2Oq$k0">
+                  <ref role="35c_gD" to="sc0n:4GJJ0fK8PQJ" resolve="BracketsApplication" />
+                </node>
+                <node concept="2qgKlT" id="2PVWAU2rXvY" role="2OqNvi">
+                  <ref role="37wK5l" to="yq4j:6WhInY3JvZq" resolve="isExpressionLonely" />
+                  <node concept="117lpO" id="2PVWAU2rXvZ" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2PVWAU2rX0Y" role="3cqZAp">
+          <node concept="3clFbS" id="2PVWAU2rX10" role="3clFbx">
+            <node concept="lc7rE" id="1UIqa7boU$i" role="3cqZAp">
+              <node concept="la8eA" id="1UIqa7boU$C" role="lcghm">
+                <property role="lacIc" value="(" />
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="2PVWAU2rXcK" role="3clFbw">
+            <ref role="3cqZAo" node="2PVWAU2rVzm" resolve="putToBrackets" />
           </node>
         </node>
         <node concept="lc7rE" id="1UIqa7boUAb" role="3cqZAp">
@@ -3148,9 +3178,16 @@
             </node>
           </node>
         </node>
-        <node concept="lc7rE" id="1UIqa7boU_j" role="3cqZAp">
-          <node concept="la8eA" id="1UIqa7boU_H" role="lcghm">
-            <property role="lacIc" value=")" />
+        <node concept="3clFbJ" id="2PVWAU2rXNG" role="3cqZAp">
+          <node concept="3clFbS" id="2PVWAU2rXNH" role="3clFbx">
+            <node concept="lc7rE" id="2PVWAU2rXNI" role="3cqZAp">
+              <node concept="la8eA" id="2PVWAU2rYnM" role="lcghm">
+                <property role="lacIc" value=")" />
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="2PVWAU2rXNK" role="3clFbw">
+            <ref role="3cqZAo" node="2PVWAU2rVzm" resolve="putToBrackets" />
           </node>
         </node>
       </node>
