@@ -84,7 +84,6 @@ public class Separators_StyleSheet {
     @Override
     public void apply(Style style, EditorCell editorCell) {
       new VerticalBarStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
-      style.set(StyleAttributes.FONT_STYLE, MPSFonts.PLAIN);
     }
 
   }

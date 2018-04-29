@@ -32,8 +32,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_Comment = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ConstructorApplication = new ConceptPresentationBuilder().shortDesc("Application of a datatype's constructor.").create();
   private final ConceptPresentation props_ConstructorReference = new ConceptPresentationBuilder().shortDesc("References a datatype constructor.").create();
-  private final ConceptPresentation props_Context = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ContextPart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_CoreBoolType = new ConceptPresentationBuilder().shortDesc("Represents boolean type.").create();
   private final ConceptPresentation props_CoreCharType = new ConceptPresentationBuilder().shortDesc("Represent character type.").create();
   private final ConceptPresentation props_CoreIntType = new ConceptPresentationBuilder().shortDesc("Represent integral type.").create();
@@ -241,10 +239,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_ConstructorApplication;
       case LanguageConceptSwitch.ConstructorReference:
         return props_ConstructorReference;
-      case LanguageConceptSwitch.Context:
-        return props_Context;
-      case LanguageConceptSwitch.ContextPart:
-        return props_ContextPart;
       case LanguageConceptSwitch.CoreBoolType:
         return props_CoreBoolType;
       case LanguageConceptSwitch.CoreCharType:
