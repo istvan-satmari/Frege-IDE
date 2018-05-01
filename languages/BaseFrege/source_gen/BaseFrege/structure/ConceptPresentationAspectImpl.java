@@ -132,6 +132,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ModuleName = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ModuleNameFinal = new ConceptPresentationBuilder().shortDesc("Final part in the module name description.").create();
   private final ConceptPresentation props_ModuleNamePreFinal = new ConceptPresentationBuilder().shortDesc("Represents name of the current module separated by dots.").create();
+  private final ConceptPresentation props_NegativeExpression = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_NodeCONID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for constructors and types.").create();
   private final ConceptPresentation props_NodeOperator = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for operators.").create();
   private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for functions and variables.").create();
@@ -440,6 +441,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_ModuleNameFinal;
       case LanguageConceptSwitch.ModuleNamePreFinal:
         return props_ModuleNamePreFinal;
+      case LanguageConceptSwitch.NegativeExpression:
+        return props_NegativeExpression;
       case LanguageConceptSwitch.NodeCONID:
         return props_NodeCONID;
       case LanguageConceptSwitch.NodeOperator:

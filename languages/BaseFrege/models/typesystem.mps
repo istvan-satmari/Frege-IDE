@@ -12020,5 +12020,52 @@
       <ref role="1YaFvo" to="sc0n:4rrDQaAgc1b" resolve="CoreDoubleType" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4rrDQaA_G69">
+    <property role="TrG5h" value="typeof_NegativeExpression" />
+    <property role="3GE5qa" value="Definitions.Expressions.Negatives" />
+    <node concept="3clFbS" id="4rrDQaA_G6a" role="18ibNy">
+      <node concept="3SKdUt" id="4rrDQaA_GDo" role="3cqZAp">
+        <node concept="3SKdUq" id="4rrDQaA_GDq" role="3SKWNk">
+          <property role="3SKdUp" value="Here, the type of the whole concept is the type of the expression, since '-' operator does not change its type" />
+        </node>
+      </node>
+      <node concept="nvevp" id="4rrDQaA_G9I" role="3cqZAp">
+        <node concept="3clFbS" id="4rrDQaA_G9J" role="nvhr_">
+          <node concept="1Z5TYs" id="4rrDQaA_G9K" role="3cqZAp">
+            <node concept="mw_s8" id="4rrDQaA_G9L" role="1ZfhKB">
+              <node concept="2X3wrD" id="4rrDQaA_G9M" role="mwGJk">
+                <ref role="2X3Bk0" node="4rrDQaA_G9U" resolve="expressionType" />
+              </node>
+            </node>
+            <node concept="mw_s8" id="4rrDQaA_G9N" role="1ZfhK$">
+              <node concept="1Z2H0r" id="4rrDQaA_G9O" role="mwGJk">
+                <node concept="1YBJjd" id="4rrDQaA_G_G" role="1Z2MuG">
+                  <ref role="1YBMHb" node="4rrDQaA_G6c" resolve="negativeExpression" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Z2H0r" id="4rrDQaA_G9Q" role="nvjzm">
+          <node concept="2OqwBi" id="4rrDQaA_G9R" role="1Z2MuG">
+            <node concept="1YBJjd" id="4rrDQaA_GfL" role="2Oq$k0">
+              <ref role="1YBMHb" node="4rrDQaA_G6c" resolve="negativeExpression" />
+            </node>
+            <node concept="3TrEf2" id="4rrDQaA_Gyc" role="2OqNvi">
+              <ref role="3Tt5mk" to="sc0n:4rrDQaAwSCW" resolve="expression" />
+            </node>
+          </node>
+        </node>
+        <node concept="2X1qdy" id="4rrDQaA_G9U" role="2X0Ygz">
+          <property role="TrG5h" value="expressionType" />
+          <node concept="2jxLKc" id="4rrDQaA_G9V" role="1tU5fm" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4rrDQaA_G6c" role="1YuTPh">
+      <property role="TrG5h" value="negativeExpression" />
+      <ref role="1YaFvo" to="sc0n:4rrDQaAwSCV" resolve="NegativeExpression" />
+    </node>
+  </node>
 </model>
 

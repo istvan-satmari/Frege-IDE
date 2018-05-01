@@ -14,7 +14,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="11,0,315,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
+      <unit at="11,0,319,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/1156512287654379470">
@@ -3402,6 +3402,54 @@
         <var name="typeCheckingContext" id="5105858644692484227" />
       </scope>
       <unit id="5105858644692484227" at="16,0,42,0" name="BaseFrege.typesystem.typeof_CoreDoubleType_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/5105858644698120585">
+    <file name="typeof_NegativeExpression_InferenceRule.java">
+      <node id="5105858644698122840" at="18,131,19,118" concept="9" />
+      <node id="5105858644698120814" at="20,5,21,339" concept="7" />
+      <node id="5105858644698120816" at="24,11,25,66" concept="7" />
+      <node id="5105858644698120816" at="25,66,26,192" concept="7" />
+      <node id="5105858644698120816" at="26,192,27,284" concept="2" />
+      <node id="5105858644698120585" at="33,50,34,146" concept="8" />
+      <node id="5105858644698120585" at="36,68,37,102" concept="8" />
+      <node id="5105858644698120585" at="39,30,40,17" concept="8" />
+      <node id="5105858644698120585" at="16,0,18,0" concept="1" trace="typeof_NegativeExpression_InferenceRule#()V" />
+      <node id="5105858644698120585" at="33,0,36,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5105858644698120585" at="36,0,39,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5105858644698120585" at="39,0,42,0" concept="6" trace="overrides#()Z" />
+      <node id="5105858644698120816" at="23,27,28,11" concept="0" />
+      <node id="5105858644698120814" at="23,0,30,0" concept="6" trace="run#()V" />
+      <node id="5105858644698120814" at="21,339,30,110" concept="2" />
+      <node id="5105858644698120814" at="19,118,31,5" concept="0" />
+      <node id="5105858644698120585" at="18,0,33,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5105858644698120585" at="16,52,16,52" />
+      <scope id="5105858644698120585" at="33,50,34,146" />
+      <scope id="5105858644698120585" at="36,68,37,102" />
+      <scope id="5105858644698120585" at="39,30,40,17" />
+      <scope id="5105858644698120585" at="16,0,18,0" />
+      <scope id="5105858644698120816" at="24,11,27,284">
+        <var name="_info_12389875345" id="5105858644698120816" />
+        <var name="_nodeToCheck_1029348928467" id="5105858644698120816" />
+      </scope>
+      <scope id="5105858644698120585" at="33,0,36,0" />
+      <scope id="5105858644698120585" at="36,0,39,0">
+        <var name="argument" id="5105858644698120585" />
+      </scope>
+      <scope id="5105858644698120585" at="39,0,42,0" />
+      <scope id="5105858644698120815" at="23,27,28,11" />
+      <scope id="5105858644698120814" at="23,0,30,0" />
+      <scope id="5105858644698120814" at="20,5,30,110">
+        <var name="expressionType" id="5105858644698120814" />
+      </scope>
+      <scope id="5105858644698120586" at="18,131,31,5" />
+      <scope id="5105858644698120585" at="18,0,33,0">
+        <var name="negativeExpression" id="5105858644698120585" />
+        <var name="status" id="5105858644698120585" />
+        <var name="typeCheckingContext" id="5105858644698120585" />
+      </scope>
+      <unit id="5105858644698120814" at="22,59,30,7" name="BaseFrege.typesystem.typeof_NegativeExpression_InferenceRule$1" />
+      <unit id="5105858644698120585" at="15,0,43,0" name="BaseFrege.typesystem.typeof_NegativeExpression_InferenceRule" />
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/5229219098490715177">

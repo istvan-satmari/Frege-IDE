@@ -3706,5 +3706,74 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="4rrDQaA_GGp">
+    <property role="3GE5qa" value="Definitions.Expressions.Negatives" />
+    <ref role="WuzLi" to="sc0n:4rrDQaAwSCV" resolve="NegativeExpression" />
+    <node concept="11bSqf" id="4rrDQaA_GGq" role="11c4hB">
+      <node concept="3clFbS" id="4rrDQaA_GGr" role="2VODD2">
+        <node concept="3cpWs8" id="4rrDQaA_GSN" role="3cqZAp">
+          <node concept="3cpWsn" id="4rrDQaA_GSO" role="3cpWs9">
+            <property role="TrG5h" value="putToBrackets" />
+            <node concept="10P_77" id="4rrDQaA_GSP" role="1tU5fm" />
+            <node concept="3fqX7Q" id="4rrDQaA_GSQ" role="33vP2m">
+              <node concept="2OqwBi" id="4rrDQaA_GSR" role="3fr31v">
+                <node concept="35c_gC" id="4rrDQaA_GSS" role="2Oq$k0">
+                  <ref role="35c_gD" to="sc0n:4GJJ0fK8PQJ" resolve="BracketsApplication" />
+                </node>
+                <node concept="2qgKlT" id="4rrDQaA_GST" role="2OqNvi">
+                  <ref role="37wK5l" to="yq4j:6WhInY3JvZq" resolve="isExpressionLonely" />
+                  <node concept="117lpO" id="4rrDQaA_GSU" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4rrDQaA_GSV" role="3cqZAp">
+          <node concept="3clFbS" id="4rrDQaA_GSW" role="3clFbx">
+            <node concept="lc7rE" id="4rrDQaA_GSX" role="3cqZAp">
+              <node concept="la8eA" id="4rrDQaA_GSY" role="lcghm">
+                <property role="lacIc" value="(" />
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="4rrDQaA_GSZ" role="3clFbw">
+            <ref role="3cqZAo" node="4rrDQaA_GSO" resolve="putToBrackets" />
+          </node>
+        </node>
+        <node concept="lc7rE" id="4rrDQaA_GT0" role="3cqZAp">
+          <node concept="l9hG8" id="4rrDQaA_GT1" role="lcghm">
+            <node concept="2OqwBi" id="4rrDQaA_GT2" role="lb14g">
+              <node concept="117lpO" id="4rrDQaA_GT3" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4rrDQaA_GT4" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:3PPtPKMnh5Y" resolve="operator" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="4rrDQaA_HhH" role="3cqZAp">
+          <node concept="l9hG8" id="4rrDQaA_HtZ" role="lcghm">
+            <node concept="2OqwBi" id="4rrDQaA_HMd" role="lb14g">
+              <node concept="117lpO" id="4rrDQaA_H_Y" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4rrDQaA_I2h" role="2OqNvi">
+                <ref role="3Tt5mk" to="sc0n:4rrDQaAwSCW" resolve="expression" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4rrDQaA_GT5" role="3cqZAp">
+          <node concept="3clFbS" id="4rrDQaA_GT6" role="3clFbx">
+            <node concept="lc7rE" id="4rrDQaA_GT7" role="3cqZAp">
+              <node concept="la8eA" id="4rrDQaA_GT8" role="lcghm">
+                <property role="lacIc" value=")" />
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="4rrDQaA_GT9" role="3clFbw">
+            <ref role="3cqZAo" node="4rrDQaA_GSO" resolve="putToBrackets" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
