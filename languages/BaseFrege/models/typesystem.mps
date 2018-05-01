@@ -3286,31 +3286,47 @@
                               <property role="3SKdUp" value="Check, however, that no arguments are provided" />
                             </node>
                           </node>
-                          <node concept="3clFbJ" id="14lC3mYPkGG" role="3cqZAp">
-                            <node concept="3clFbS" id="14lC3mYPkGI" role="3clFbx">
-                              <node concept="2MkqsV" id="14lC3mYPt3T" role="3cqZAp">
-                                <node concept="Xl_RD" id="14lC3mYPt7x" role="2MkJ7o">
-                                  <property role="Xl_RC" value="Cannot provide function arguments here." />
+                          <node concept="3clFbJ" id="3TFGrrL1WTU" role="3cqZAp">
+                            <node concept="3clFbS" id="3TFGrrL1WTW" role="3clFbx">
+                              <node concept="3clFbJ" id="14lC3mYPkGG" role="3cqZAp">
+                                <node concept="3clFbS" id="14lC3mYPkGI" role="3clFbx">
+                                  <node concept="2MkqsV" id="14lC3mYPt3T" role="3cqZAp">
+                                    <node concept="Xl_RD" id="14lC3mYPt7x" role="2MkJ7o">
+                                      <property role="Xl_RC" value="Cannot provide function arguments here." />
+                                    </node>
+                                    <node concept="1YBJjd" id="14lC3mYPtfj" role="2OEOjV">
+                                      <ref role="1YBMHb" node="LcFT$PTVl8" resolve="genericApplication" />
+                                    </node>
+                                  </node>
                                 </node>
-                                <node concept="1YBJjd" id="14lC3mYPtfj" role="2OEOjV">
-                                  <ref role="1YBMHb" node="LcFT$PTVl8" resolve="genericApplication" />
+                                <node concept="3eOSWO" id="14lC3mYPsFE" role="3clFbw">
+                                  <node concept="3cmrfG" id="14lC3mYPsIY" role="3uHU7w">
+                                    <property role="3cmrfH" value="0" />
+                                  </node>
+                                  <node concept="2OqwBi" id="14lC3mYPnk3" role="3uHU7B">
+                                    <node concept="2OqwBi" id="14lC3mYPl0m" role="2Oq$k0">
+                                      <node concept="1YBJjd" id="14lC3mYPkNK" role="2Oq$k0">
+                                        <ref role="1YBMHb" node="LcFT$PTVl8" resolve="genericApplication" />
+                                      </node>
+                                      <node concept="3Tsc0h" id="14lC3mYPlk9" role="2OqNvi">
+                                        <ref role="3TtcxE" to="sc0n:1Q7PHwqaUkx" resolve="arguments" />
+                                      </node>
+                                    </node>
+                                    <node concept="34oBXx" id="14lC3mYPq0s" role="2OqNvi" />
+                                  </node>
                                 </node>
                               </node>
                             </node>
-                            <node concept="3eOSWO" id="14lC3mYPsFE" role="3clFbw">
-                              <node concept="3cmrfG" id="14lC3mYPsIY" role="3uHU7w">
-                                <property role="3cmrfH" value="0" />
-                              </node>
-                              <node concept="2OqwBi" id="14lC3mYPnk3" role="3uHU7B">
-                                <node concept="2OqwBi" id="14lC3mYPl0m" role="2Oq$k0">
-                                  <node concept="1YBJjd" id="14lC3mYPkNK" role="2Oq$k0">
-                                    <ref role="1YBMHb" node="LcFT$PTVl8" resolve="genericApplication" />
-                                  </node>
-                                  <node concept="3Tsc0h" id="14lC3mYPlk9" role="2OqNvi">
-                                    <ref role="3TtcxE" to="sc0n:1Q7PHwqaUkx" resolve="arguments" />
+                            <node concept="3fqX7Q" id="3TFGrrL1Y33" role="3clFbw">
+                              <node concept="2OqwBi" id="3TFGrrL1Y35" role="3fr31v">
+                                <node concept="37vLTw" id="3TFGrrL1Z3c" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4yhUL22fmzT" resolve="aentityType" />
+                                </node>
+                                <node concept="1mIQ4w" id="3TFGrrL1Y37" role="2OqNvi">
+                                  <node concept="chp4Y" id="3TFGrrL1Y38" role="cj9EA">
+                                    <ref role="cht4Q" to="sc0n:4X24Jn8P8hj" resolve="UndecidableTypeNode" />
                                   </node>
                                 </node>
-                                <node concept="34oBXx" id="14lC3mYPq0s" role="2OqNvi" />
                               </node>
                             </node>
                           </node>
@@ -9110,101 +9126,167 @@
     <property role="TrG5h" value="typeof_TypeTuple" />
     <property role="3GE5qa" value="Definitions.Types" />
     <node concept="3clFbS" id="$yyAqvlU4n" role="18ibNy">
-      <node concept="3SKdUt" id="$yyAqvlU4w" role="3cqZAp">
-        <node concept="3SKdUq" id="$yyAqvlU4x" role="3SKWNk">
-          <property role="3SKdUp" value="Tuple type is defined by its items' types" />
+      <node concept="3SKdUt" id="3TFGrrL3aop" role="3cqZAp">
+        <node concept="3SKdUq" id="3TFGrrL3aor" role="3SKWNk">
+          <property role="3SKdUp" value="Use the tuple type only if there is more than 1 item provided" />
         </node>
       </node>
-      <node concept="3cpWs8" id="$yyAqvlU4y" role="3cqZAp">
-        <node concept="3cpWsn" id="$yyAqvlU4z" role="3cpWs9">
-          <property role="TrG5h" value="tupleType" />
-          <node concept="3Tqbb2" id="$yyAqvlU4$" role="1tU5fm">
-            <ref role="ehGHo" to="sc0n:5d6A1kOnZ1g" resolve="TupleTypeNode" />
+      <node concept="3clFbJ" id="3TFGrrL3apT" role="3cqZAp">
+        <node concept="3clFbS" id="3TFGrrL3apV" role="3clFbx">
+          <node concept="3SKdUt" id="$yyAqvlU4w" role="3cqZAp">
+            <node concept="3SKdUq" id="$yyAqvlU4x" role="3SKWNk">
+              <property role="3SKdUp" value="Tuple type is defined by its items' types" />
+            </node>
           </node>
-          <node concept="2ShNRf" id="$yyAqvlU4_" role="33vP2m">
-            <node concept="2fJWfE" id="$yyAqvlU4A" role="2ShVmc">
-              <node concept="3Tqbb2" id="$yyAqvlU4B" role="3zrR0E">
+          <node concept="3cpWs8" id="$yyAqvlU4y" role="3cqZAp">
+            <node concept="3cpWsn" id="$yyAqvlU4z" role="3cpWs9">
+              <property role="TrG5h" value="tupleType" />
+              <node concept="3Tqbb2" id="$yyAqvlU4$" role="1tU5fm">
                 <ref role="ehGHo" to="sc0n:5d6A1kOnZ1g" resolve="TupleTypeNode" />
+              </node>
+              <node concept="2ShNRf" id="$yyAqvlU4_" role="33vP2m">
+                <node concept="2fJWfE" id="$yyAqvlU4A" role="2ShVmc">
+                  <node concept="3Tqbb2" id="$yyAqvlU4B" role="3zrR0E">
+                    <ref role="ehGHo" to="sc0n:5d6A1kOnZ1g" resolve="TupleTypeNode" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="3clFbF" id="$yyAqvlU4C" role="3cqZAp">
-        <node concept="2OqwBi" id="$yyAqvlU4D" role="3clFbG">
-          <node concept="2OqwBi" id="$yyAqvlU4E" role="2Oq$k0">
-            <node concept="37vLTw" id="$yyAqvlU4F" role="2Oq$k0">
-              <ref role="3cqZAo" node="$yyAqvlU4z" resolve="tupleType" />
-            </node>
-            <node concept="3Tsc0h" id="$yyAqvlU4G" role="2OqNvi">
-              <ref role="3TtcxE" to="sc0n:5d6A1kOnZ1h" resolve="items" />
-            </node>
-          </node>
-          <node concept="2Kehj3" id="$yyAqvlU4H" role="2OqNvi" />
-        </node>
-      </node>
-      <node concept="3clFbH" id="$yyAqvlU4I" role="3cqZAp" />
-      <node concept="3SKdUt" id="$yyAqvlU4J" role="3cqZAp">
-        <node concept="3SKdUq" id="$yyAqvlU4K" role="3SKWNk">
-          <property role="3SKdUp" value="Gather the types of the items" />
-        </node>
-      </node>
-      <node concept="2Gpval" id="$yyAqvlU4X" role="3cqZAp">
-        <node concept="2GrKxI" id="$yyAqvlU4Y" role="2Gsz3X">
-          <property role="TrG5h" value="item" />
-        </node>
-        <node concept="2OqwBi" id="$yyAqvlU4Z" role="2GsD0m">
-          <node concept="1YBJjd" id="$yyAqvm0Ed" role="2Oq$k0">
-            <ref role="1YBMHb" node="$yyAqvlU4p" resolve="typeTuple" />
-          </node>
-          <node concept="3Tsc0h" id="$yyAqvm0R8" role="2OqNvi">
-            <ref role="3TtcxE" to="sc0n:7riFpCdpyTU" resolve="types" />
-          </node>
-        </node>
-        <node concept="3clFbS" id="$yyAqvlU52" role="2LFqv$">
-          <node concept="3clFbF" id="$yyAqvlU53" role="3cqZAp">
-            <node concept="2OqwBi" id="$yyAqvlU54" role="3clFbG">
-              <node concept="2OqwBi" id="$yyAqvlU55" role="2Oq$k0">
-                <node concept="37vLTw" id="$yyAqvlU56" role="2Oq$k0">
+          <node concept="3clFbF" id="$yyAqvlU4C" role="3cqZAp">
+            <node concept="2OqwBi" id="$yyAqvlU4D" role="3clFbG">
+              <node concept="2OqwBi" id="$yyAqvlU4E" role="2Oq$k0">
+                <node concept="37vLTw" id="$yyAqvlU4F" role="2Oq$k0">
                   <ref role="3cqZAo" node="$yyAqvlU4z" resolve="tupleType" />
                 </node>
-                <node concept="3Tsc0h" id="$yyAqvlU57" role="2OqNvi">
+                <node concept="3Tsc0h" id="$yyAqvlU4G" role="2OqNvi">
                   <ref role="3TtcxE" to="sc0n:5d6A1kOnZ1h" resolve="items" />
                 </node>
               </node>
-              <node concept="TSZUe" id="$yyAqvlU58" role="2OqNvi">
-                <node concept="1PxgMI" id="$yyAqvlU59" role="25WWJ7">
-                  <node concept="chp4Y" id="$yyAqvlU5a" role="3oSUPX">
-                    <ref role="cht4Q" to="tpee:fz3vP1H" resolve="Type" />
+              <node concept="2Kehj3" id="$yyAqvlU4H" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="$yyAqvlU4I" role="3cqZAp" />
+          <node concept="3SKdUt" id="$yyAqvlU4J" role="3cqZAp">
+            <node concept="3SKdUq" id="$yyAqvlU4K" role="3SKWNk">
+              <property role="3SKdUp" value="Gather the types of the items" />
+            </node>
+          </node>
+          <node concept="2Gpval" id="$yyAqvlU4X" role="3cqZAp">
+            <node concept="2GrKxI" id="$yyAqvlU4Y" role="2Gsz3X">
+              <property role="TrG5h" value="item" />
+            </node>
+            <node concept="2OqwBi" id="$yyAqvlU4Z" role="2GsD0m">
+              <node concept="1YBJjd" id="$yyAqvm0Ed" role="2Oq$k0">
+                <ref role="1YBMHb" node="$yyAqvlU4p" resolve="typeTuple" />
+              </node>
+              <node concept="3Tsc0h" id="$yyAqvm0R8" role="2OqNvi">
+                <ref role="3TtcxE" to="sc0n:7riFpCdpyTU" resolve="types" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="$yyAqvlU52" role="2LFqv$">
+              <node concept="3clFbF" id="$yyAqvlU53" role="3cqZAp">
+                <node concept="2OqwBi" id="$yyAqvlU54" role="3clFbG">
+                  <node concept="2OqwBi" id="$yyAqvlU55" role="2Oq$k0">
+                    <node concept="37vLTw" id="$yyAqvlU56" role="2Oq$k0">
+                      <ref role="3cqZAo" node="$yyAqvlU4z" resolve="tupleType" />
+                    </node>
+                    <node concept="3Tsc0h" id="$yyAqvlU57" role="2OqNvi">
+                      <ref role="3TtcxE" to="sc0n:5d6A1kOnZ1h" resolve="items" />
+                    </node>
                   </node>
-                  <node concept="1Z2H0r" id="$yyAqvlU5b" role="1m5AlR">
-                    <node concept="2GrUjf" id="$yyAqvlU5c" role="1Z2MuG">
-                      <ref role="2Gs0qQ" node="$yyAqvlU4Y" resolve="item" />
+                  <node concept="TSZUe" id="$yyAqvlU58" role="2OqNvi">
+                    <node concept="1PxgMI" id="$yyAqvlU59" role="25WWJ7">
+                      <node concept="chp4Y" id="$yyAqvlU5a" role="3oSUPX">
+                        <ref role="cht4Q" to="tpee:fz3vP1H" resolve="Type" />
+                      </node>
+                      <node concept="1Z2H0r" id="$yyAqvlU5b" role="1m5AlR">
+                        <node concept="2GrUjf" id="$yyAqvlU5c" role="1Z2MuG">
+                          <ref role="2Gs0qQ" node="$yyAqvlU4Y" resolve="item" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="$yyAqvlU5d" role="3cqZAp" />
-      <node concept="3SKdUt" id="$yyAqvlU5e" role="3cqZAp">
-        <node concept="3SKdUq" id="$yyAqvlU5f" role="3SKWNk">
-          <property role="3SKdUp" value="Set the resulting type of the current node" />
-        </node>
-      </node>
-      <node concept="1Z5TYs" id="$yyAqvlU5g" role="3cqZAp">
-        <node concept="mw_s8" id="$yyAqvlU5h" role="1ZfhK$">
-          <node concept="1Z2H0r" id="$yyAqvlU5i" role="mwGJk">
-            <node concept="1YBJjd" id="$yyAqvm19h" role="1Z2MuG">
-              <ref role="1YBMHb" node="$yyAqvlU4p" resolve="typeTuple" />
+          <node concept="3clFbH" id="$yyAqvlU5d" role="3cqZAp" />
+          <node concept="3SKdUt" id="$yyAqvlU5e" role="3cqZAp">
+            <node concept="3SKdUq" id="$yyAqvlU5f" role="3SKWNk">
+              <property role="3SKdUp" value="Set the resulting type of the current node" />
             </node>
           </node>
+          <node concept="1Z5TYs" id="$yyAqvlU5g" role="3cqZAp">
+            <node concept="mw_s8" id="$yyAqvlU5h" role="1ZfhK$">
+              <node concept="1Z2H0r" id="$yyAqvlU5i" role="mwGJk">
+                <node concept="1YBJjd" id="$yyAqvm19h" role="1Z2MuG">
+                  <ref role="1YBMHb" node="$yyAqvlU4p" resolve="typeTuple" />
+                </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="$yyAqvlU5k" role="1ZfhKB">
+              <node concept="37vLTw" id="$yyAqvlU5l" role="mwGJk">
+                <ref role="3cqZAo" node="$yyAqvlU4z" resolve="tupleType" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="3TFGrrL3nGQ" role="3cqZAp" />
         </node>
-        <node concept="mw_s8" id="$yyAqvlU5k" role="1ZfhKB">
-          <node concept="37vLTw" id="$yyAqvlU5l" role="mwGJk">
-            <ref role="3cqZAo" node="$yyAqvlU4z" resolve="tupleType" />
+        <node concept="3eOSWO" id="3TFGrrL3jSc" role="3clFbw">
+          <node concept="3cmrfG" id="3TFGrrL3jSf" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="3TFGrrL3fKA" role="3uHU7B">
+            <node concept="2OqwBi" id="3TFGrrL3a$a" role="2Oq$k0">
+              <node concept="1YBJjd" id="3TFGrrL3aqP" role="2Oq$k0">
+                <ref role="1YBMHb" node="$yyAqvlU4p" resolve="typeTuple" />
+              </node>
+              <node concept="3Tsc0h" id="3TFGrrL3aMd" role="2OqNvi">
+                <ref role="3TtcxE" to="sc0n:7riFpCdpyTU" resolve="types" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="3TFGrrL3hu3" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="9aQIb" id="3TFGrrL3n$d" role="9aQIa">
+          <node concept="3clFbS" id="3TFGrrL3n$e" role="9aQI4">
+            <node concept="3SKdUt" id="3TFGrrL3nIb" role="3cqZAp">
+              <node concept="3SKdUq" id="3TFGrrL3nIc" role="3SKWNk">
+                <property role="3SKdUp" value="Otherwise the type of the current expression is the type of the first argument" />
+              </node>
+            </node>
+            <node concept="1Z5TYs" id="3TFGrrL3nRn" role="3cqZAp">
+              <node concept="mw_s8" id="3TFGrrL3nRq" role="1ZfhK$">
+                <node concept="1Z2H0r" id="3TFGrrL3nIj" role="mwGJk">
+                  <node concept="1YBJjd" id="3TFGrrL3nK7" role="1Z2MuG">
+                    <ref role="1YBMHb" node="$yyAqvlU4p" resolve="typeTuple" />
+                  </node>
+                </node>
+              </node>
+              <node concept="mw_s8" id="3TFGrrL3swS" role="1ZfhKB">
+                <node concept="1eOMI4" id="3TFGrrL3DBn" role="mwGJk">
+                  <node concept="1PxgMI" id="3TFGrrL3Blz" role="1eOMHV">
+                    <node concept="chp4Y" id="3TFGrrL3BMb" role="3oSUPX">
+                      <ref role="cht4Q" to="tpee:fz3vP1H" resolve="Type" />
+                    </node>
+                    <node concept="1Z2H0r" id="3TFGrrL3swQ" role="1m5AlR">
+                      <node concept="2OqwBi" id="3TFGrrL3vfE" role="1Z2MuG">
+                        <node concept="2OqwBi" id="3TFGrrL3sDJ" role="2Oq$k0">
+                          <node concept="1YBJjd" id="3TFGrrL3sx9" role="2Oq$k0">
+                            <ref role="1YBMHb" node="$yyAqvlU4p" resolve="typeTuple" />
+                          </node>
+                          <node concept="3Tsc0h" id="3TFGrrL3tdW" role="2OqNvi">
+                            <ref role="3TtcxE" to="sc0n:7riFpCdpyTU" resolve="types" />
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="3TFGrrL3zKe" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
