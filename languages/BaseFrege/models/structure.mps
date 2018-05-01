@@ -880,6 +880,9 @@
     <node concept="PrWs8" id="4GJJ0fKcamP" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+    <node concept="PrWs8" id="7rSwndWypuA" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5E$XTHV3XRl">
     <property role="EcuMT" value="6531617606750690773" />
@@ -888,6 +891,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7rSwndWz0iV" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5E$XTHV3XRv">
     <property role="EcuMT" value="6531617606750690783" />
@@ -901,7 +907,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="letDef" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="vUxQDjKXyv" resolve="Definition" />
+      <ref role="20lvS9" node="5ZITH0PGXNE" resolve="FDAssignment" />
     </node>
   </node>
   <node concept="1TIwiD" id="5E$XTHV3XSB">
