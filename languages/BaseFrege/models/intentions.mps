@@ -1866,5 +1866,127 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="3TFGrrKHv67">
+    <property role="3GE5qa" value="Definitions.Expressions.Case" />
+    <property role="2ZfUl0" value="true" />
+    <property role="TrG5h" value="AddNewCase" />
+    <ref role="2ZfgGC" to="sc0n:5ZITH0PGZxT" resolve="CasePart" />
+    <node concept="2S6ZIM" id="3TFGrrKHv68" role="2ZfVej">
+      <node concept="3clFbS" id="3TFGrrKHv69" role="2VODD2">
+        <node concept="3clFbF" id="3TFGrrKHD15" role="3cqZAp">
+          <node concept="Xl_RD" id="3TFGrrKHD14" role="3clFbG">
+            <property role="Xl_RC" value="Insert New Case." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3TFGrrKHv6a" role="2ZfgGD">
+      <node concept="3clFbS" id="3TFGrrKHv6b" role="2VODD2">
+        <node concept="3SKdUt" id="3TFGrrKHDmL" role="3cqZAp">
+          <node concept="3SKdUq" id="3TFGrrKHDmM" role="3SKWNk">
+            <property role="3SKdUp" value="Find the currently selected guard" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3TFGrrKHDmN" role="3cqZAp">
+          <node concept="3cpWsn" id="3TFGrrKHDmO" role="3cpWs9">
+            <property role="TrG5h" value="surroundingCase" />
+            <node concept="3Tqbb2" id="3TFGrrKHDmP" role="1tU5fm">
+              <ref role="ehGHo" to="sc0n:vUxQDjKX$V" resolve="Case" />
+            </node>
+            <node concept="2OqwBi" id="3TFGrrKHDmQ" role="33vP2m">
+              <node concept="2Sf5sV" id="3TFGrrKHDmR" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="3TFGrrKHDmS" role="2OqNvi">
+                <node concept="1xMEDy" id="3TFGrrKHDmT" role="1xVPHs">
+                  <node concept="chp4Y" id="3TFGrrKHGSh" role="ri$Ld">
+                    <ref role="cht4Q" to="sc0n:vUxQDjKX$V" resolve="Case" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3TFGrrKHDmV" role="3cqZAp">
+          <node concept="3cpWsn" id="3TFGrrKHDmW" role="3cpWs9">
+            <property role="TrG5h" value="caseParts" />
+            <node concept="_YKpA" id="3TFGrrKHDmX" role="1tU5fm">
+              <node concept="3Tqbb2" id="3TFGrrKHDmY" role="_ZDj9">
+                <ref role="ehGHo" to="sc0n:5ZITH0PGZxT" resolve="CasePart" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3TFGrrKHDmZ" role="33vP2m">
+              <node concept="3Tsc0h" id="3TFGrrKHJMi" role="2OqNvi">
+                <ref role="3TtcxE" to="sc0n:5ZITH0PGZxU" resolve="cases" />
+              </node>
+              <node concept="37vLTw" id="3TFGrrKHDn1" role="2Oq$k0">
+                <ref role="3cqZAo" node="3TFGrrKHDmO" resolve="surroundingCase" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3TFGrrKHDn2" role="3cqZAp">
+          <node concept="3cpWsn" id="3TFGrrKHDn3" role="3cpWs9">
+            <property role="TrG5h" value="nodeIndex" />
+            <node concept="10Oyi0" id="3TFGrrKHDn4" role="1tU5fm" />
+            <node concept="2OqwBi" id="3TFGrrKHDn5" role="33vP2m">
+              <node concept="2OqwBi" id="3TFGrrKHDn6" role="2Oq$k0">
+                <node concept="1z4cxt" id="3TFGrrKHDn7" role="2OqNvi">
+                  <node concept="1bVj0M" id="3TFGrrKHDn8" role="23t8la">
+                    <node concept="3clFbS" id="3TFGrrKHDn9" role="1bW5cS">
+                      <node concept="3clFbF" id="3TFGrrKHDna" role="3cqZAp">
+                        <node concept="3clFbC" id="3TFGrrKHDnb" role="3clFbG">
+                          <node concept="37vLTw" id="3TFGrrKHDnc" role="3uHU7B">
+                            <ref role="3cqZAo" node="3TFGrrKHDne" resolve="it" />
+                          </node>
+                          <node concept="2Sf5sV" id="3TFGrrKHDnd" role="3uHU7w" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="3TFGrrKHDne" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="3TFGrrKHDnf" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="3TFGrrKHDng" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3TFGrrKHDmW" resolve="caseParts" />
+                </node>
+              </node>
+              <node concept="2bSWHS" id="3TFGrrKHDnh" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3TFGrrKHDni" role="3cqZAp" />
+        <node concept="3SKdUt" id="3TFGrrKHDnj" role="3cqZAp">
+          <node concept="3SKdUq" id="3TFGrrKHDnk" role="3SKWNk">
+            <property role="3SKdUp" value="Insert at the appropriate position right below the current guard" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3TFGrrKHDnl" role="3cqZAp">
+          <node concept="2OqwBi" id="3TFGrrKHDnm" role="3clFbG">
+            <node concept="37vLTw" id="3TFGrrKHDnn" role="2Oq$k0">
+              <ref role="3cqZAo" node="3TFGrrKHDmW" resolve="caseParts" />
+            </node>
+            <node concept="1sK_Qi" id="3TFGrrKHDno" role="2OqNvi">
+              <node concept="3cpWs3" id="3TFGrrKHDnp" role="1sKJu8">
+                <node concept="3cmrfG" id="3TFGrrKHDnq" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="37vLTw" id="3TFGrrKHDnr" role="3uHU7B">
+                  <ref role="3cqZAo" node="3TFGrrKHDn3" resolve="nodeIndex" />
+                </node>
+              </node>
+              <node concept="2ShNRf" id="3TFGrrKHDns" role="1sKFgg">
+                <node concept="2fJWfE" id="3TFGrrKHDnt" role="2ShVmc">
+                  <node concept="3Tqbb2" id="3TFGrrKHDnu" role="3zrR0E">
+                    <ref role="ehGHo" to="sc0n:5ZITH0PGZxT" resolve="CasePart" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

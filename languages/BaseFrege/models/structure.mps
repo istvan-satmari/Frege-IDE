@@ -763,7 +763,8 @@
     <property role="EcuMT" value="6912716259988863144" />
     <property role="3GE5qa" value="Definitions.Expressions.Case" />
     <property role="TrG5h" value="CPExprToExpr" />
-    <property role="34LRSv" value="-&gt;" />
+    <property role="34LRSv" value="-" />
+    <property role="R4oN_" value="Add a simple case (-&gt;)." />
     <ref role="1TJDcQ" node="5ZITH0PGZxT" resolve="CasePart" />
     <node concept="1TJgyj" id="5ZITH0PGZyD" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988863145" />
@@ -791,6 +792,7 @@
     <property role="3GE5qa" value="Definitions.Expressions.Case" />
     <property role="TrG5h" value="CPExprToGuards" />
     <property role="34LRSv" value="|" />
+    <property role="R4oN_" value="Add a case of guards." />
     <ref role="1TJDcQ" node="5ZITH0PGZxT" resolve="CasePart" />
     <node concept="1TJgyj" id="5ZITH0PGZzj" role="1TKVEi">
       <property role="IQ2ns" value="6912716259988863187" />

@@ -745,7 +745,6 @@
 - List comprehension sa nesprava ocakavane; neposkytuje ani scope
 	- a to je spravne; list comprehension velmi nepodporujeme
 	
-	
 - Niektore operatory blbnu - namiesto napisania operatoru napisem expression typu operator... 
 	- napr. v tomto pripade to blbne:
 	a * b = 0
@@ -759,3 +758,10 @@
 		ff = 1 * 2
 	- na vsetkych ostatnych operatoroch to uz ale bez problemov ide
 	- cize zrejme nejaka chyba vnutri MPS...?
+	
+- Pridavanie zapornych cisel a premennych
+	- napr.:
+	f x = -x
+	- tak ide len tak, ze najprv stlacime "-", co vytvori aplikaciu operatoru "(-)", a potom treba stlacit medzernik a pridat argument
+	- totizto "-" je stale operator, cize to tak nejak zhruba odpoveda specifikacii, ale v tomto programe to ma specialne postavenie,
+	lebo podla specifikacie by malo takto ist aplikovat lubovolny operator, cim som sa nechcel zaoberat, cize je to trochu "hack"

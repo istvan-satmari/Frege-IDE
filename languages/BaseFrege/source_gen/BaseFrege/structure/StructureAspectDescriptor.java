@@ -699,7 +699,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("pattern", 0x5feee6d035b3f8a9L).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3f5c5828a3895193L).optional(false).ordered(true).multiple(false).origin("6912716259988863145").done();
     b.aggregate("expression", 0x5feee6d035b3f8abL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d8d7L).optional(false).ordered(true).multiple(false).origin("6912716259988863147").done();
     b.aggregate("where", 0x3575c62ea7ed36dbL).target(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7fa876a53c3d993L).optional(true).ordered(true).multiple(false).origin("3852202959973463771").done();
-    b.alias("->");
+    b.alias("-");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForCPExprToGuards() {

@@ -23,8 +23,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_BoolTypeNode = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BooleanValue = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_BracketsApplication = new ConceptPresentationBuilder().shortDesc("Expression inside brackets.").create();
-  private final ConceptPresentation props_CPExprToExpr = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_CPExprToGuards = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_CPExprToExpr = new ConceptPresentationBuilder().shortDesc("Add a simple case (->).").create();
+  private final ConceptPresentation props_CPExprToGuards = new ConceptPresentationBuilder().shortDesc("Add a case of guards.").create();
   private final ConceptPresentation props_Case = new ConceptPresentationBuilder().shortDesc("Case expression.").create();
   private final ConceptPresentation props_CasePart = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_CharTypeNode = new ConceptPresentationBuilder().create();
