@@ -3291,6 +3291,26 @@
         <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
       </node>
     </node>
+    <node concept="13i0hz" id="4rrDQaAlayP" role="13h7CS">
+      <property role="TrG5h" value="isInBrackets" />
+      <node concept="3Tm1VV" id="4rrDQaAljPP" role="1B3o_S" />
+      <node concept="10P_77" id="4rrDQaAlhlu" role="3clF45" />
+      <node concept="3clFbS" id="4rrDQaAlayS" role="3clF47">
+        <node concept="3cpWs6" id="4rrDQaAliMU" role="3cqZAp">
+          <node concept="2OqwBi" id="4rrDQaAli8a" role="3cqZAk">
+            <node concept="2OqwBi" id="4rrDQaAlhy1" role="2Oq$k0">
+              <node concept="13iPFW" id="4rrDQaAlhmc" role="2Oq$k0" />
+              <node concept="1mfA1w" id="4rrDQaAlhLp" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="4rrDQaAliwx" role="2OqNvi">
+              <node concept="chp4Y" id="4rrDQaAliDA" role="cj9EA">
+                <ref role="cht4Q" to="sc0n:7mwfunXaybd" resolve="PBracket" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="50lglqqPBfd">
     <property role="3GE5qa" value="Definitions.Patterns.Expression" />

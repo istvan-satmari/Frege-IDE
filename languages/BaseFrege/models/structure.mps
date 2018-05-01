@@ -2585,7 +2585,7 @@
     <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
     <property role="TrG5h" value="CoreIntType" />
     <property role="34LRSv" value="Int" />
-    <property role="R4oN_" value="Represent integral type." />
+    <property role="R4oN_" value="Represents integer type." />
     <ref role="1TJDcQ" node="$yyAqvtZ0o" resolve="CoreType" />
   </node>
   <node concept="1TIwiD" id="$yyAqvtZ0o">
@@ -2602,7 +2602,7 @@
     <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
     <property role="TrG5h" value="CoreCharType" />
     <property role="34LRSv" value="Char" />
-    <property role="R4oN_" value="Represent character type." />
+    <property role="R4oN_" value="Represents character type." />
     <ref role="1TJDcQ" node="$yyAqvtZ0o" resolve="CoreType" />
   </node>
   <node concept="1TIwiD" id="$yyAqvtZ1o">
@@ -2737,6 +2737,14 @@
     <property role="34LRSv" value="otherwise" />
     <property role="R4oN_" value="Represents a guard always evaluating to true." />
     <ref role="1TJDcQ" node="4GJJ0fK8Bdp" resolve="BinaryExpressions" />
+  </node>
+  <node concept="1TIwiD" id="4rrDQaAgc1b">
+    <property role="EcuMT" value="5105858644692484171" />
+    <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
+    <property role="TrG5h" value="CoreDoubleType" />
+    <property role="34LRSv" value="Double" />
+    <property role="R4oN_" value="Represents floating-point numeric type." />
+    <ref role="1TJDcQ" node="$yyAqvtZ0o" resolve="CoreType" />
   </node>
 </model>
 

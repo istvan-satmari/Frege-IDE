@@ -33,8 +33,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_ConstructorApplication = new ConceptPresentationBuilder().shortDesc("Application of a datatype's constructor.").create();
   private final ConceptPresentation props_ConstructorReference = new ConceptPresentationBuilder().shortDesc("References a datatype constructor.").create();
   private final ConceptPresentation props_CoreBoolType = new ConceptPresentationBuilder().shortDesc("Represents boolean type.").create();
-  private final ConceptPresentation props_CoreCharType = new ConceptPresentationBuilder().shortDesc("Represent character type.").create();
-  private final ConceptPresentation props_CoreIntType = new ConceptPresentationBuilder().shortDesc("Represent integral type.").create();
+  private final ConceptPresentation props_CoreCharType = new ConceptPresentationBuilder().shortDesc("Represents character type.").create();
+  private final ConceptPresentation props_CoreDoubleType = new ConceptPresentationBuilder().shortDesc("Represents floating-point numeric type.").create();
+  private final ConceptPresentation props_CoreIntType = new ConceptPresentationBuilder().shortDesc("Represents integer type.").create();
   private final ConceptPresentation props_CoreType = new ConceptPresentationBuilder().shortDesc("Represents a core implicit type in the base Frege language.").create();
   private final ConceptPresentation props_DCScopeProvider = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Data = new ConceptPresentationBuilder().shortDesc("Define a new algebraic datatype.").create();
@@ -243,6 +244,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_CoreBoolType;
       case LanguageConceptSwitch.CoreCharType:
         return props_CoreCharType;
+      case LanguageConceptSwitch.CoreDoubleType:
+        return props_CoreDoubleType;
       case LanguageConceptSwitch.CoreIntType:
         return props_CoreIntType;
       case LanguageConceptSwitch.CoreType:

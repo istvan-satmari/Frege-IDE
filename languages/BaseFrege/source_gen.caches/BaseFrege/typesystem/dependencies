@@ -93,6 +93,7 @@
     <classNode dependClassName="BaseFrege.typesystem.typeof_CharValue_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_CoreBoolType_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_CoreCharType_InferenceRule" />
+    <classNode dependClassName="BaseFrege.typesystem.typeof_CoreDoubleType_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_CoreIntType_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_DoubleValue_InferenceRule" />
     <classNode dependClassName="BaseFrege.typesystem.typeof_EPBinaryExpression_InferenceRule" />
@@ -534,6 +535,18 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
   <dependency className="BaseFrege.typesystem.typeof_CoreCharType_InferenceRule" file="typeof_CoreCharType_InferenceRule.java">
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
+  <dependency className="BaseFrege.typesystem.typeof_CoreDoubleType_InferenceRule" file="typeof_CoreDoubleType_InferenceRule.java">
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />

@@ -11996,5 +11996,29 @@
       <ref role="1YaFvo" to="sc0n:vUxQDjKX$3" resolve="Tuple" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4rrDQaAgc23">
+    <property role="TrG5h" value="typeof_CoreDoubleType" />
+    <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
+    <node concept="3clFbS" id="4rrDQaAgc24" role="18ibNy">
+      <node concept="1Z5TYs" id="4rrDQaAgc34" role="3cqZAp">
+        <node concept="mw_s8" id="4rrDQaAgc35" role="1ZfhKB">
+          <node concept="2c44tf" id="4rrDQaAgc36" role="mwGJk">
+            <node concept="1BmVfL" id="4rrDQaAgcRl" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4rrDQaAgc38" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4rrDQaAgc39" role="mwGJk">
+            <node concept="1YBJjd" id="4rrDQaAgcQR" role="1Z2MuG">
+              <ref role="1YBMHb" node="4rrDQaAgc26" resolve="coreDoubleType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4rrDQaAgc26" role="1YuTPh">
+      <property role="TrG5h" value="coreDoubleType" />
+      <ref role="1YaFvo" to="sc0n:4rrDQaAgc1b" resolve="CoreDoubleType" />
+    </node>
+  </node>
 </model>
 

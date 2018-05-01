@@ -1644,7 +1644,6 @@
         <ref role="1NtTu8" to="sc0n:62eaOWzc$vh" resolve="name" />
       </node>
       <node concept="3F2HdR" id="1G9BWv90mzw" role="3EZMnx">
-        <property role="2czwfO" value=" " />
         <ref role="1NtTu8" to="sc0n:62eaOWzc$vF" resolve="types" />
         <node concept="pkWqt" id="cLUB_22Ct1" role="pqm2j">
           <node concept="3clFbS" id="cLUB_22Ct2" role="2VODD2">
@@ -1662,6 +1661,9 @@
           </node>
         </node>
         <node concept="l2Vlx" id="LX2T036IpO" role="2czzBx" />
+        <node concept="tppnM" id="4rrDQaAeIb8" role="sWeuL">
+          <ref role="1k5W1q" node="30ixEdPz3dY" resolve="Space" />
+        </node>
       </node>
       <node concept="l2Vlx" id="LX2T036Ig7" role="2iSdaV" />
     </node>
@@ -2047,6 +2049,23 @@
         <node concept="11LMrY" id="1A7M7ev3Jcg" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="3mYdg7" id="4rrDQaArl22" role="3F10Kt">
+          <property role="1413C4" value="bracket" />
+        </node>
+        <node concept="pkWqt" id="4rrDQaAlj1_" role="pqm2j">
+          <node concept="3clFbS" id="4rrDQaAlj1A" role="2VODD2">
+            <node concept="3clFbF" id="4rrDQaAljc9" role="3cqZAp">
+              <node concept="3fqX7Q" id="4rrDQaAlleR" role="3clFbG">
+                <node concept="2OqwBi" id="4rrDQaAlleT" role="3fr31v">
+                  <node concept="pncrf" id="4rrDQaAlleU" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="4rrDQaAlleV" role="2OqNvi">
+                    <ref role="37wK5l" to="yq4j:4rrDQaAlayP" resolve="isInBrackets" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F1sOY" id="3Xsm2yzyl8J" role="3EZMnx">
         <ref role="1NtTu8" to="sc0n:3Xsm2yzyl8p" resolve="constructor" />
@@ -2076,6 +2095,23 @@
         <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
         <node concept="11L4FC" id="1A7M7ev3Jce" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3mYdg7" id="4rrDQaArlpQ" role="3F10Kt">
+          <property role="1413C4" value="bracket" />
+        </node>
+        <node concept="pkWqt" id="4rrDQaAlly8" role="pqm2j">
+          <node concept="3clFbS" id="4rrDQaAlly9" role="2VODD2">
+            <node concept="3clFbF" id="4rrDQaAllDw" role="3cqZAp">
+              <node concept="3fqX7Q" id="4rrDQaAllDx" role="3clFbG">
+                <node concept="2OqwBi" id="4rrDQaAllDy" role="3fr31v">
+                  <node concept="pncrf" id="4rrDQaAllDz" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="4rrDQaAllD$" role="2OqNvi">
+                    <ref role="37wK5l" to="yq4j:4rrDQaAlayP" resolve="isInBrackets" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2iRfu4" id="3Xsm2yzyl8F" role="2iSdaV" />
@@ -13180,7 +13216,6 @@
         <ref role="1NtTu8" to="sc0n:3PPtPKMmXQ$" resolve="aentity" />
       </node>
       <node concept="3F2HdR" id="3PPtPKMmYli" role="3EZMnx">
-        <property role="2czwfO" value=" " />
         <ref role="1NtTu8" to="sc0n:1Q7PHwqaUkx" resolve="arguments" />
         <node concept="pkWqt" id="3PPtPKMmYlk" role="pqm2j">
           <node concept="3clFbS" id="3PPtPKMmYll" role="2VODD2">
@@ -13198,6 +13233,9 @@
           </node>
         </node>
         <node concept="l2Vlx" id="LX2T036IHI" role="2czzBx" />
+        <node concept="tppnM" id="4rrDQaAaX$R" role="sWeuL">
+          <ref role="1k5W1q" node="30ixEdPz3dY" resolve="Space" />
+        </node>
       </node>
       <node concept="l2Vlx" id="LX2T036IzR" role="2iSdaV" />
     </node>
@@ -18041,6 +18079,14 @@
       <node concept="VechU" id="2PVWAU2SqqN" role="3F10Kt">
         <property role="Vb096" value="gray" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4rrDQaAgc1_">
+    <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
+    <ref role="1XX52x" to="sc0n:4rrDQaAgc1b" resolve="CoreDoubleType" />
+    <node concept="3F0ifn" id="4rrDQaAgc1B" role="2wV5jI">
+      <property role="3F0ifm" value="Double" />
+      <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
     </node>
   </node>
 </model>
