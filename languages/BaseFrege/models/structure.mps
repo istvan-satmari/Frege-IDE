@@ -758,6 +758,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3TFGrrKJ9O4" role="PzmwI">
+      <ref role="PrY4T" node="5c96$3RFt7P" resolve="DCScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5ZITH0PGZyC">
     <property role="EcuMT" value="6912716259988863144" />
