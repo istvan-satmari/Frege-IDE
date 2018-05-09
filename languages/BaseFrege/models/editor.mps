@@ -2314,15 +2314,35 @@
         </node>
         <node concept="pkWqt" id="6WhInY3JWwJ" role="pqm2j">
           <node concept="3clFbS" id="6WhInY3JWwK" role="2VODD2">
+            <node concept="3SKdUt" id="7PUNFmy$3FI" role="3cqZAp">
+              <node concept="3SKdUq" id="7PUNFmy$3FK" role="3SKWNk">
+                <property role="3SKdUp" value="Must not be a single expression in a bracket application; also ImportedEntityApplication handles brackets for us" />
+              </node>
+            </node>
             <node concept="3clFbF" id="6WhInY3JWBT" role="3cqZAp">
-              <node concept="3fqX7Q" id="6WhInY3JY$g" role="3clFbG">
-                <node concept="2OqwBi" id="6WhInY3JY$i" role="3fr31v">
-                  <node concept="35c_gC" id="6WhInY3JY$j" role="2Oq$k0">
-                    <ref role="35c_gD" to="sc0n:4GJJ0fK8PQJ" resolve="BracketsApplication" />
+              <node concept="1Wc70l" id="7PUNFmyzZFc" role="3clFbG">
+                <node concept="3fqX7Q" id="6WhInY3JY$g" role="3uHU7B">
+                  <node concept="2OqwBi" id="6WhInY3JY$i" role="3fr31v">
+                    <node concept="35c_gC" id="6WhInY3JY$j" role="2Oq$k0">
+                      <ref role="35c_gD" to="sc0n:4GJJ0fK8PQJ" resolve="BracketsApplication" />
+                    </node>
+                    <node concept="2qgKlT" id="6WhInY3JY$k" role="2OqNvi">
+                      <ref role="37wK5l" to="yq4j:6WhInY3JvZq" resolve="isExpressionLonely" />
+                      <node concept="pncrf" id="6WhInY3JY$l" role="37wK5m" />
+                    </node>
                   </node>
-                  <node concept="2qgKlT" id="6WhInY3JY$k" role="2OqNvi">
-                    <ref role="37wK5l" to="yq4j:6WhInY3JvZq" resolve="isExpressionLonely" />
-                    <node concept="pncrf" id="6WhInY3JY$l" role="37wK5m" />
+                </node>
+                <node concept="3fqX7Q" id="7PUNFmy$0vS" role="3uHU7w">
+                  <node concept="2OqwBi" id="7PUNFmy$1ZI" role="3fr31v">
+                    <node concept="2OqwBi" id="7PUNFmy$18x" role="2Oq$k0">
+                      <node concept="pncrf" id="7PUNFmy$0RC" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="7PUNFmy$1$u" role="2OqNvi" />
+                    </node>
+                    <node concept="1mIQ4w" id="7PUNFmy$2vz" role="2OqNvi">
+                      <node concept="chp4Y" id="7PUNFmy$2Tp" role="cj9EA">
+                        <ref role="cht4Q" to="sc0n:7W$X1KZ9NE1" resolve="ImportedEntityApplication" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2341,15 +2361,35 @@
         </node>
         <node concept="pkWqt" id="6WhInY3JYZ4" role="pqm2j">
           <node concept="3clFbS" id="6WhInY3JYZ5" role="2VODD2">
-            <node concept="3clFbF" id="6WhInY3JZ6s" role="3cqZAp">
-              <node concept="3fqX7Q" id="6WhInY3JZ6u" role="3clFbG">
-                <node concept="2OqwBi" id="6WhInY3JZ6v" role="3fr31v">
-                  <node concept="35c_gC" id="6WhInY3JZ6w" role="2Oq$k0">
-                    <ref role="35c_gD" to="sc0n:4GJJ0fK8PQJ" resolve="BracketsApplication" />
+            <node concept="3SKdUt" id="7PUNFmy$45W" role="3cqZAp">
+              <node concept="3SKdUq" id="7PUNFmy$45X" role="3SKWNk">
+                <property role="3SKdUp" value="Must not be a single expression in a bracket application; also ImportedEntityApplication handles brackets for us" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="7PUNFmy$45Y" role="3cqZAp">
+              <node concept="1Wc70l" id="7PUNFmy$45Z" role="3clFbG">
+                <node concept="3fqX7Q" id="7PUNFmy$460" role="3uHU7B">
+                  <node concept="2OqwBi" id="7PUNFmy$461" role="3fr31v">
+                    <node concept="35c_gC" id="7PUNFmy$462" role="2Oq$k0">
+                      <ref role="35c_gD" to="sc0n:4GJJ0fK8PQJ" resolve="BracketsApplication" />
+                    </node>
+                    <node concept="2qgKlT" id="7PUNFmy$463" role="2OqNvi">
+                      <ref role="37wK5l" to="yq4j:6WhInY3JvZq" resolve="isExpressionLonely" />
+                      <node concept="pncrf" id="7PUNFmy$464" role="37wK5m" />
+                    </node>
                   </node>
-                  <node concept="2qgKlT" id="6WhInY3JZ6x" role="2OqNvi">
-                    <ref role="37wK5l" to="yq4j:6WhInY3JvZq" resolve="isExpressionLonely" />
-                    <node concept="pncrf" id="6WhInY3JZ6y" role="37wK5m" />
+                </node>
+                <node concept="3fqX7Q" id="7PUNFmy$465" role="3uHU7w">
+                  <node concept="2OqwBi" id="7PUNFmy$466" role="3fr31v">
+                    <node concept="2OqwBi" id="7PUNFmy$467" role="2Oq$k0">
+                      <node concept="pncrf" id="7PUNFmy$468" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="7PUNFmy$469" role="2OqNvi" />
+                    </node>
+                    <node concept="1mIQ4w" id="7PUNFmy$46a" role="2OqNvi">
+                      <node concept="chp4Y" id="7PUNFmy$46b" role="cj9EA">
+                        <ref role="cht4Q" to="sc0n:7W$X1KZ9NE1" resolve="ImportedEntityApplication" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -13408,6 +13448,37 @@
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <ref role="1XX52x" to="sc0n:7W$X1KZ9NE1" resolve="ImportedEntityApplication" />
     <node concept="3EZMnI" id="7W$X1KZdpKY" role="2wV5jI">
+      <node concept="3F0ifn" id="7PUNFmyzRT0" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
+        <node concept="11LMrY" id="7PUNFmyzRTs" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="7PUNFmyzRTw" role="pqm2j">
+          <node concept="3clFbS" id="7PUNFmyzRTx" role="2VODD2">
+            <node concept="3SKdUt" id="7PUNFmyzUX7" role="3cqZAp">
+              <node concept="3SKdUq" id="7PUNFmyzUX9" role="3SKWNk">
+                <property role="3SKdUp" value="Special case when referencing an operator with a qualified name" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="7PUNFmyzS0E" role="3cqZAp">
+              <node concept="2OqwBi" id="7PUNFmyzT_4" role="3clFbG">
+                <node concept="2OqwBi" id="7PUNFmyzSgL" role="2Oq$k0">
+                  <node concept="pncrf" id="7PUNFmyzS0D" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7PUNFmyzSGf" role="2OqNvi">
+                    <ref role="3Tt5mk" to="sc0n:7W$X1KZ9NFg" resolve="entity" />
+                  </node>
+                </node>
+                <node concept="1mIQ4w" id="7PUNFmyzU0h" role="2OqNvi">
+                  <node concept="chp4Y" id="7PUNFmyzUj4" role="cj9EA">
+                    <ref role="cht4Q" to="sc0n:5fWvJRHV8Az" resolve="OperatorApplication" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3F1sOY" id="7W$X1KZdpL5" role="3EZMnx">
         <ref role="1NtTu8" to="sc0n:7W$X1KZab1N" resolve="import" />
       </node>
@@ -13423,6 +13494,37 @@
       </node>
       <node concept="3F1sOY" id="7W$X1KZdpLj" role="3EZMnx">
         <ref role="1NtTu8" to="sc0n:7W$X1KZ9NFg" resolve="entity" />
+      </node>
+      <node concept="3F0ifn" id="7PUNFmyzRTg" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
+        <node concept="11L4FC" id="7PUNFmyzRTu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="7PUNFmyzVeW" role="pqm2j">
+          <node concept="3clFbS" id="7PUNFmyzVeX" role="2VODD2">
+            <node concept="3SKdUt" id="7PUNFmyzVm5" role="3cqZAp">
+              <node concept="3SKdUq" id="7PUNFmyzVm6" role="3SKWNk">
+                <property role="3SKdUp" value="Special case when referencing an operator with a qualified name" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="7PUNFmyzVm7" role="3cqZAp">
+              <node concept="2OqwBi" id="7PUNFmyzVm8" role="3clFbG">
+                <node concept="2OqwBi" id="7PUNFmyzVm9" role="2Oq$k0">
+                  <node concept="pncrf" id="7PUNFmyzVma" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7PUNFmyzVmb" role="2OqNvi">
+                    <ref role="3Tt5mk" to="sc0n:7W$X1KZ9NFg" resolve="entity" />
+                  </node>
+                </node>
+                <node concept="1mIQ4w" id="7PUNFmyzVmc" role="2OqNvi">
+                  <node concept="chp4Y" id="7PUNFmyzVmd" role="cj9EA">
+                    <ref role="cht4Q" to="sc0n:5fWvJRHV8Az" resolve="OperatorApplication" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2iRfu4" id="7W$X1KZdpL1" role="2iSdaV" />
     </node>

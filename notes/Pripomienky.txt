@@ -765,3 +765,7 @@
 	- tak ide len tak, ze najprv stlacime "-", co vytvori aplikaciu operatoru "(-)", a potom treba stlacit medzernik a pridat argument
 	- totizto "-" je stale operator, cize to tak nejak zhruba odpoveda specifikacii, ale v tomto programe to ma specialne postavenie,
 	lebo podla specifikacie by malo takto ist aplikovat lubovolny operator, cim som sa nechcel zaoberat, cize je to trochu "hack"
+	
+- Operator sa referencuje trosku inak, nejak takto: (Math.**)
+	- povodne bolo: Math.(**)
+	- a taketo operatory sa daju pouzit len ako aplikacia funkcie, ale nie ako klasicky operator
