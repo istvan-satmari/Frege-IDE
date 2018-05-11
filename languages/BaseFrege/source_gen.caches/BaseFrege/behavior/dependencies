@@ -75,6 +75,7 @@
     <classNode dependClassName="BaseFrege.behavior.FDGrouped__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.FDGuards__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.Fixity__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.FunctionTypeNode__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.Guard__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.IIConstructor__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.IIFunction__BehaviorDescriptor" />
@@ -96,6 +97,7 @@
     <classNode dependClassName="BaseFrege.behavior.Let__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.ListComprehension__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.ListEnumeration__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.ListTypeNode__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.MEFunction__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.MEOperator__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.MEPModule__BehaviorDescriptor" />
@@ -135,6 +137,7 @@
     <classNode dependClassName="BaseFrege.behavior.Pattern__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.Skeleton__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.StringValue__BehaviorDescriptor" />
+    <classNode dependClassName="BaseFrege.behavior.TupleTypeNode__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.TypeReference__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.Type__BehaviorDescriptor" />
     <classNode dependClassName="BaseFrege.behavior.TypedNodeReference__BehaviorDescriptor" />
@@ -878,6 +881,30 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
+  <dependency className="BaseFrege.behavior.FunctionTypeNode__BehaviorDescriptor" file="FunctionTypeNode__BehaviorDescriptor.java">
+    <classNode dependClassName="BaseFrege.behavior.TextJoin" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
+  </dependency>
   <dependency className="BaseFrege.behavior.Guard__BehaviorDescriptor" file="Guard__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
@@ -1546,6 +1573,30 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="BaseFrege.behavior.ListScope" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.ListTypeNode__BehaviorDescriptor" file="ListTypeNode__BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="BaseFrege.behavior.MEFunction__BehaviorDescriptor" file="MEFunction__BehaviorDescriptor.java">
     <classNode dependClassName="BaseFrege.behavior.ListScopePVarName" />
@@ -2792,6 +2843,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
+  <dependency className="BaseFrege.behavior.TextJoin" file="TextJoin.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.StringBuilder" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
   <dependency className="BaseFrege.behavior.TransformTextUtilities" file="TransformTextUtilities.java">
     <classNode dependClassName="BaseFrege.behavior.NameResolver" />
     <classNode dependClassName="BaseFrege.behavior.Trie" />
@@ -2837,6 +2896,30 @@
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.SetSequence" />
+  </dependency>
+  <dependency className="BaseFrege.behavior.TupleTypeNode__BehaviorDescriptor" file="TupleTypeNode__BehaviorDescriptor.java">
+    <classNode dependClassName="BaseFrege.behavior.TextJoin" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SMethodBuilder" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.SModifiersImpl" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SConstructor" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.SMethod" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.language.ConceptRegistry" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
   <dependency className="BaseFrege.behavior.TypeReference__BehaviorDescriptor" file="TypeReference__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Boolean" />
