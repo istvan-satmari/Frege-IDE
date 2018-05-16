@@ -71,7 +71,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myInferenceRules.add(inferenceRule);
     }
     {
-      InferenceRule_Runtime inferenceRule = new typeof_FDGTypedDefinitionNode_InferenceRule();
+      InferenceRule_Runtime inferenceRule = new typeof_FDGrouped_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
     {
