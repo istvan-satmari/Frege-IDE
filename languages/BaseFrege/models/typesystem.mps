@@ -10298,23 +10298,89 @@
     <property role="TrG5h" value="typeof_OperatorApplication" />
     <property role="3GE5qa" value="Definitions.Expressions.Primary.Application" />
     <node concept="3clFbS" id="4yhUL22floe" role="18ibNy">
-      <node concept="1Z5TYs" id="37VBCzVymAX" role="3cqZAp">
-        <node concept="mw_s8" id="37VBCzVymAY" role="1ZfhKB">
-          <node concept="1Z2H0r" id="37VBCzVymC1" role="mwGJk">
-            <node concept="2OqwBi" id="37VBCzVymLy" role="1Z2MuG">
-              <node concept="1YBJjd" id="37VBCzVymCh" role="2Oq$k0">
-                <ref role="1YBMHb" node="4yhUL22flog" resolve="operatorApplication" />
+      <node concept="3SKdUt" id="2kvNs0doaPT" role="3cqZAp">
+        <node concept="3SKdUq" id="2kvNs0doaPV" role="3SKWNk">
+          <property role="3SKdUp" value="Type depends on the behaviour of the OperatorApplication concept, which may also serve as a negation concept" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="2kvNs0dnjeX" role="3cqZAp">
+        <node concept="3clFbS" id="2kvNs0dnjeZ" role="3clFbx">
+          <node concept="3SKdUt" id="2kvNs0doaRh" role="3cqZAp">
+            <node concept="3SKdUq" id="2kvNs0doaRj" role="3SKWNk">
+              <property role="3SKdUp" value="Negation operator application, e.g. (- 7)" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="2kvNs0dnlCW" role="3cqZAp">
+            <node concept="3SKdUq" id="2kvNs0dnlCX" role="3SKWNk">
+              <property role="3SKdUp" value="Here, the type of the whole concept is the type of the expression, since '-' operator does not change its type" />
+            </node>
+          </node>
+          <node concept="1Z5TYs" id="2kvNs0dnjMj" role="3cqZAp">
+            <property role="3wDh2S" value="false" />
+            <node concept="mw_s8" id="2kvNs0dnjMk" role="1ZfhK$">
+              <node concept="1Z2H0r" id="2kvNs0dnjMl" role="mwGJk">
+                <node concept="1YBJjd" id="2kvNs0dnjPS" role="1Z2MuG">
+                  <ref role="1YBMHb" node="4yhUL22flog" resolve="operatorApplication" />
+                </node>
               </node>
-              <node concept="3TrEf2" id="37VBCzVyn2S" role="2OqNvi">
-                <ref role="3Tt5mk" to="sc0n:3PPtPKMnh5Y" resolve="operator" />
+            </node>
+            <node concept="mw_s8" id="2kvNs0dnjMn" role="1ZfhKB">
+              <node concept="1Z2H0r" id="2kvNs0dnjMo" role="mwGJk">
+                <node concept="2OqwBi" id="2kvNs0dnjMp" role="1Z2MuG">
+                  <node concept="1PxgMI" id="2kvNs0dnksA" role="2Oq$k0">
+                    <node concept="chp4Y" id="2kvNs0dnk_J" role="3oSUPX">
+                      <ref role="cht4Q" to="sc0n:4rrDQaAwSCV" resolve="NegativeExpression" />
+                    </node>
+                    <node concept="1YBJjd" id="2kvNs0dnjTM" role="1m5AlR">
+                      <ref role="1YBMHb" node="4yhUL22flog" resolve="operatorApplication" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="2kvNs0dnkXN" role="2OqNvi">
+                    <ref role="3Tt5mk" to="sc0n:4rrDQaAwSCW" resolve="expression" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="2kvNs0doaRz" role="3cqZAp" />
         </node>
-        <node concept="mw_s8" id="37VBCzVymB0" role="1ZfhK$">
-          <node concept="1Z2H0r" id="37VBCzVymB1" role="mwGJk">
-            <node concept="1YBJjd" id="37VBCzVymB2" role="1Z2MuG">
-              <ref role="1YBMHb" node="4yhUL22flog" resolve="operatorApplication" />
+        <node concept="2OqwBi" id="2kvNs0dnjqo" role="3clFbw">
+          <node concept="1YBJjd" id="2kvNs0dnjfv" role="2Oq$k0">
+            <ref role="1YBMHb" node="4yhUL22flog" resolve="operatorApplication" />
+          </node>
+          <node concept="1mIQ4w" id="2kvNs0dnjFc" role="2OqNvi">
+            <node concept="chp4Y" id="2kvNs0dnjHD" role="cj9EA">
+              <ref role="cht4Q" to="sc0n:4rrDQaAwSCV" resolve="NegativeExpression" />
+            </node>
+          </node>
+        </node>
+        <node concept="9aQIb" id="2kvNs0dnl0N" role="9aQIa">
+          <node concept="3clFbS" id="2kvNs0dnl0O" role="9aQI4">
+            <node concept="3SKdUt" id="2kvNs0doaQN" role="3cqZAp">
+              <node concept="3SKdUq" id="2kvNs0doaQP" role="3SKWNk">
+                <property role="3SKdUp" value="Normal operator application" />
+              </node>
+            </node>
+            <node concept="1Z5TYs" id="37VBCzVymAX" role="3cqZAp">
+              <node concept="mw_s8" id="37VBCzVymAY" role="1ZfhKB">
+                <node concept="1Z2H0r" id="37VBCzVymC1" role="mwGJk">
+                  <node concept="2OqwBi" id="37VBCzVymLy" role="1Z2MuG">
+                    <node concept="1YBJjd" id="37VBCzVymCh" role="2Oq$k0">
+                      <ref role="1YBMHb" node="4yhUL22flog" resolve="operatorApplication" />
+                    </node>
+                    <node concept="3TrEf2" id="37VBCzVyn2S" role="2OqNvi">
+                      <ref role="3Tt5mk" to="sc0n:3PPtPKMnh5Y" resolve="operator" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="mw_s8" id="37VBCzVymB0" role="1ZfhK$">
+                <node concept="1Z2H0r" id="37VBCzVymB1" role="mwGJk">
+                  <node concept="1YBJjd" id="37VBCzVymB2" role="1Z2MuG">
+                    <ref role="1YBMHb" node="4yhUL22flog" resolve="operatorApplication" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -11053,42 +11119,6 @@
     <node concept="1YaCAy" id="4rrDQaAgc26" role="1YuTPh">
       <property role="TrG5h" value="coreDoubleType" />
       <ref role="1YaFvo" to="sc0n:4rrDQaAgc1b" resolve="CoreDoubleType" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="4rrDQaA_G69">
-    <property role="TrG5h" value="typeof_NegativeExpression" />
-    <property role="3GE5qa" value="Definitions.Expressions.Negatives" />
-    <node concept="3clFbS" id="4rrDQaA_G6a" role="18ibNy">
-      <node concept="3SKdUt" id="4rrDQaA_GDo" role="3cqZAp">
-        <node concept="3SKdUq" id="4rrDQaA_GDq" role="3SKWNk">
-          <property role="3SKdUp" value="Here, the type of the whole concept is the type of the expression, since '-' operator does not change its type" />
-        </node>
-      </node>
-      <node concept="1Z5TYs" id="37VBCzVyg7q" role="3cqZAp">
-        <node concept="mw_s8" id="37VBCzVyg7r" role="1ZfhKB">
-          <node concept="1Z2H0r" id="37VBCzVyg8o" role="mwGJk">
-            <node concept="2OqwBi" id="37VBCzVygiy" role="1Z2MuG">
-              <node concept="1YBJjd" id="37VBCzVyg8B" role="2Oq$k0">
-                <ref role="1YBMHb" node="4rrDQaA_G6c" resolve="negativeExpression" />
-              </node>
-              <node concept="3TrEf2" id="37VBCzVyg_y" role="2OqNvi">
-                <ref role="3Tt5mk" to="sc0n:4rrDQaAwSCW" resolve="expression" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="37VBCzVyg7t" role="1ZfhK$">
-          <node concept="1Z2H0r" id="37VBCzVyg7u" role="mwGJk">
-            <node concept="1YBJjd" id="37VBCzVyg7v" role="1Z2MuG">
-              <ref role="1YBMHb" node="4rrDQaA_G6c" resolve="negativeExpression" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="4rrDQaA_G6c" role="1YuTPh">
-      <property role="TrG5h" value="negativeExpression" />
-      <ref role="1YaFvo" to="sc0n:4rrDQaAwSCV" resolve="NegativeExpression" />
     </node>
   </node>
   <node concept="1YbPZF" id="2kvNs0cMzK4">
