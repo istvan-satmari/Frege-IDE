@@ -769,3 +769,73 @@
 - Operator sa referencuje trosku inak, nejak takto: (Math.**)
 	- povodne bolo: Math.(**)
 	- a taketo operatory sa daju pouzit len ako aplikacia funkcie, ale nie ako klasicky operator
+	
+- Zmeny pre opravu typesystemu
+	// Trigger the type evaluation of the operator (we need to have _typeFilledByParent actually filled) 
+	var tv; 
+	tv :==: typeof(pVarOperator.ancestor<concept = FDComplete>);
+
+	Zmeny:
+	- vyrazne pomohol trigger (vid vyssie)
+	- zrusil som umely uzol pre FDGrouped, kde v behaviouru vracia getDefinitionNode - namiesto toho vraciam samotny FDGrouped a tentoraz uz ma definovany typovy system
+	- tam, kde sa dalo, som odstranil "when concrete" (napr. ak mam BracketExpression, tak staci urcit typeof(be) :==: typeof(be.expression))
+	- ponechal som "when concrete", kde potrebujem zistit, aky je skutocny typ (napr. FunctionTypeNode) a dalej s nim pracovat (orezat, pridat nejaky argument, dekomponovat a pod.)
+	- je mozne vo "when concrete" v inspectore nastavit "skip errors" na true, co by malo potlacit niektore chyby, asi (napr. suvisiace s EPBinaryExpression)
+	- Ked mam napr. list [x, y] kde x a y su rozneho typu, tak nevie odvodit typ celeho listu a hlasi "when concrete is never concrete" namiesto chyby - tu som opravil tym, ze typovej premennej nastavujem typ odteraz cez :==: a nie cez :>=:
+	- problem s tym, ze ked chyba anotacia, tak typ "ff []" tak hadze na "[]" ze "when concrete block will never be concrete" - opravil som tak, ze specialne pre prazdny list sa odvodzoval typ manualne cez _typeFilledByParent (musel pockat, cize "when concrete")
+	- case nevnucoval _typeFilledByParent svojim patternom, tak uz som to napravil (je teraz zhodny s typom vyrazu v ramci "case expression", co by malo odpovedat specifikacii)
+	- z nejakych bizarnych dovodov ak mam koncept A, ktory ma inferring type definovany, potom B ktory dedi od A a tiez ma inferring nadefinovany, tak to cele zblbne pre koncept A, tzn. je nutne mat type inferring nadefinovany len v koncepte A a rozhodovat sa podla "isInstanceOf"
+	- pridal som trigger aj na PVarName, aby slo ziskat typ aj referencovanych funkcii
+
+	Zname chyby:
+	- mam napr. toto:
+		take n _                           
+		   | n <= 0 = []                   
+		take _ [] = []                     
+		take n (x:xs) = x : take (n - 1) xs
+		- tak pokial nie je pokytnuta anotacia pre "take", tak moze vyhodit chybu pri odvodzovani typu
+		- suvisi s tym, ze prvy pattern sa pokusi odhadnut, lenze to je Undecidable a Undecidable ako argumenty
+		- dalsie patterny uz ale tvrdia nieco ine (druhy argument je zrazu [Undecidable]), co vyhodi chybu
+		- skratka, nemozno po tom, co uz raz je odvodeny typ, ho odvodit znovu (prepisat), cize to je zdroj mnohych problemov s typovym systemom
+	- v tomto pripade nevie odvodit typ:
+		describeList xs = let                              
+							what [] = "empty."            
+							what [x] = "a singleton list."
+							what ys = "a longer list."    
+							what :: [a] -> String
+						  in what xs
+		- problem je v tom, ze sa nevie, co je typ String
+		- cize nevie ani odvodit, co je typ "what xs"
+		- suvisi aj s tym, preco zobrazuje "when concrete block is never concrete" pri argumentoch (x:xs) a [] funkcie firstCharToName:
+		firstCharToName :: [Char]-> String          
+		firstCharToName [] = "No input provided."   
+		firstCharToName (x:xs) = case x of          
+									'a' -> "Albert" 
+									'b' -> "Broseph"
+									'c' -> "Cecil"  
+									_ -> "No name"  
+		- ak anotaciu funkcie zmenime na [Char] -> [Char], uz to ide
+		- problem totiz je, ze anotacia existuje, cize jej typ by mal byt teoreticky znamy, ale nie je, pretoze sa nevie, co je String
+	- cokolvek, co obsahuje konstruktor, tiez ma problem s odvodzovanim typu (a samozrejme aj vtedy, ked ma konstruktor argumenty, napr. Circle x y, tak nie je jasne, co je x a y)
+	- lambdy tiez nevedia vyhodnocovat svoj typ, cize funkcie, ktore ich vyuzivaju, tiez nedokoncia type evaluation
+	- Int vs. Double: nie je implicitna konverzia z Double na Int a vstavane operatory nie su polymorfne, cize nieco take: 7 * 7 / 1 nefunguje, pretoze:
+		- / pozaduje Int -> Int -> Int
+		- lenze * je typu Double -> Double -> Double
+		- cize vysledok lavej casti je 
+
+	Tazko upravit
+	(su v patternoch a dekomponuju typ od parenta smerom k detom)
+	-------------
+	- PTuple
+	- PListVar
+	- PListBracket
+
+	Prakticky nejde upravit 
+	(osekavaju, ci merguju funkcne typy)
+	-----------------------
+	- GenericApplication
+	- EPBinaryExpression
+	- PatternOperator
+	- PatternOperatorInGroup
+	- PatternFunction
+	- PatternFunctionInGroup

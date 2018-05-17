@@ -14,7 +14,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="11,0,315,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
+      <unit at="11,0,311,0" name="BaseFrege.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/1156512287654379470">
@@ -3113,46 +3113,6 @@
         <var name="typeCheckingContext" id="4428577046410812133" />
       </scope>
       <unit id="4428577046410812133" at="19,0,43,0" name="BaseFrege.typesystem.check_ModuleNameFinal_NonTypesystemRule" />
-    </file>
-  </root>
-  <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/4428577046425664553">
-    <file name="check_Import_NonTypesystemRule.java">
-      <node id="4428577046425682489" at="25,9,26,62" concept="7" />
-      <node id="4428577046425682489" at="26,62,27,410" concept="7" />
-      <node id="4428577046425664553" at="32,50,33,133" concept="8" />
-      <node id="4428577046425664553" at="35,68,36,102" concept="8" />
-      <node id="4428577046425664553" at="38,30,39,17" concept="8" />
-      <node id="4428577046425664553" at="20,0,22,0" concept="1" trace="check_Import_NonTypesystemRule#()V" />
-      <node id="4428577046425664553" at="32,0,35,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="4428577046425664553" at="35,0,38,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="4428577046425664553" at="38,0,41,0" concept="6" trace="overrides#()Z" />
-      <node id="4428577046425682489" at="24,557,28,9" concept="0" />
-      <node id="4428577046426915210" at="23,515,29,7" concept="5" />
-      <node id="4428577046425664566" at="22,123,30,5" concept="5" />
-      <node id="4428577046425664553" at="22,0,32,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="4428577046425664553" at="20,43,20,43" />
-      <scope id="4428577046425664553" at="32,50,33,133" />
-      <scope id="4428577046425664553" at="35,68,36,102" />
-      <scope id="4428577046425664553" at="38,30,39,17" />
-      <scope id="4428577046425664553" at="20,0,22,0" />
-      <scope id="4428577046425682489" at="25,9,27,410">
-        <var name="_reporter_2309309498" id="4428577046425682489" />
-        <var name="errorTarget" id="4428577046425682489" />
-      </scope>
-      <scope id="4428577046425664553" at="32,0,35,0" />
-      <scope id="4428577046425664553" at="35,0,38,0">
-        <var name="argument" id="4428577046425664553" />
-      </scope>
-      <scope id="4428577046425664553" at="38,0,41,0" />
-      <scope id="4428577046426915212" at="24,557,28,9" />
-      <scope id="4428577046425664568" at="23,515,29,7" />
-      <scope id="4428577046425664554" at="22,123,30,5" />
-      <scope id="4428577046425664553" at="22,0,32,0">
-        <var name="importNode" id="4428577046425664553" />
-        <var name="status" id="4428577046425664553" />
-        <var name="typeCheckingContext" id="4428577046425664553" />
-      </scope>
-      <unit id="4428577046425664553" at="19,0,42,0" name="BaseFrege.typesystem.check_Import_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/5105858644692484227">

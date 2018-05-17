@@ -81,7 +81,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_IfThenElse = new ConceptPresentationBuilder().shortDesc("If expression.").create();
   private final ConceptPresentation props_ImplicitDefinition = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Import = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImportAH = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportAs = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportHiding = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ImportItem = new ConceptPresentationBuilder().create();
@@ -126,7 +125,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_METCLItem = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_METConstructorList = new ConceptPresentationBuilder().shortDesc("Describes what constructors are to be exported.").create();
   private final ConceptPresentation props_METype = new ConceptPresentationBuilder().shortDesc("Export a type.").create();
-  private final ConceptPresentation props_Main = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Module = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_ModuleExport = new ConceptPresentationBuilder().shortDesc("An item from the current module to export to the outside.").create();
   private final ConceptPresentation props_ModuleName = new ConceptPresentationBuilder().create();
@@ -337,8 +335,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_ImplicitDefinition;
       case LanguageConceptSwitch.Import:
         return props_Import;
-      case LanguageConceptSwitch.ImportAH:
-        return props_ImportAH;
       case LanguageConceptSwitch.ImportAs:
         return props_ImportAs;
       case LanguageConceptSwitch.ImportHiding:
@@ -427,8 +423,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_METConstructorList;
       case LanguageConceptSwitch.METype:
         return props_METype;
-      case LanguageConceptSwitch.Main:
-        return props_Main;
       case LanguageConceptSwitch.Module:
         return props_Module;
       case LanguageConceptSwitch.ModuleExport:
