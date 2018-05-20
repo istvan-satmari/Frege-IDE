@@ -8774,11 +8774,7 @@
               </node>
             </node>
           </node>
-          <node concept="1VHOuv" id="6e2uF0HSFbl" role="1VHOuO">
-            <node concept="1FDWkT" id="6e2uF0HSFbj" role="xa8iT">
-              <ref role="1FFbxs" node="5krVkwOSoJ" />
-            </node>
-          </node>
+          <node concept="yVqHU" id="7yGekHqpKXc" role="1VHOuO" />
         </node>
       </node>
     </node>
