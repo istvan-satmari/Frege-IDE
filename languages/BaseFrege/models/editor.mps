@@ -18246,5 +18246,13 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7yGekHqgp9$">
+    <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
+    <ref role="1XX52x" to="sc0n:7yGekHqgp8L" resolve="CoreString" />
+    <node concept="3F0ifn" id="7yGekHqgp9A" role="2wV5jI">
+      <property role="3F0ifm" value="String" />
+      <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />
+    </node>
+  </node>
 </model>
 

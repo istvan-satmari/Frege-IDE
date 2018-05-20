@@ -2727,5 +2727,20 @@
       <ref role="20lvS9" node="4GJJ0fK8P_O" resolve="PrimaryExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7yGekHqgp8L">
+    <property role="EcuMT" value="8695387976345162289" />
+    <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
+    <property role="TrG5h" value="CoreStringType" />
+    <property role="34LRSv" value="String" />
+    <property role="R4oN_" value="Represents string type." />
+    <ref role="1TJDcQ" node="$yyAqvtZ0o" resolve="CoreType" />
+  </node>
+  <node concept="1TIwiD" id="7yGekHqgxbO">
+    <property role="EcuMT" value="8695387976345195252" />
+    <property role="3GE5qa" value="TypeNodes" />
+    <property role="TrG5h" value="StringTypeNode" />
+    <property role="34LRSv" value="String" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+  </node>
 </model>
 

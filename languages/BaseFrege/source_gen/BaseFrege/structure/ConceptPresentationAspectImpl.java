@@ -36,6 +36,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_CoreCharType = new ConceptPresentationBuilder().shortDesc("Represents character type.").create();
   private final ConceptPresentation props_CoreDoubleType = new ConceptPresentationBuilder().shortDesc("Represents floating-point numeric type.").create();
   private final ConceptPresentation props_CoreIntType = new ConceptPresentationBuilder().shortDesc("Represents integer type.").create();
+  private final ConceptPresentation props_CoreStringType = new ConceptPresentationBuilder().shortDesc("Represents string type.").create();
   private final ConceptPresentation props_CoreType = new ConceptPresentationBuilder().shortDesc("Represents a core implicit type in the base Frege language.").create();
   private final ConceptPresentation props_DCScopeProvider = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Data = new ConceptPresentationBuilder().shortDesc("Define a new algebraic datatype.").create();
@@ -163,6 +164,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_QVARID = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Simpletype = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Skeleton = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_StringTypeNode = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_StringValue = new ConceptPresentationBuilder().shortDesc("String literal.").create();
   private final ConceptPresentation props_Term = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_TopExpression = new ConceptPresentationBuilder().shortDesc("Expression that cannot be annotated.").create();
@@ -245,6 +247,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_CoreDoubleType;
       case LanguageConceptSwitch.CoreIntType:
         return props_CoreIntType;
+      case LanguageConceptSwitch.CoreStringType:
+        return props_CoreStringType;
       case LanguageConceptSwitch.CoreType:
         return props_CoreType;
       case LanguageConceptSwitch.DCScopeProvider:
@@ -499,6 +503,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_Simpletype;
       case LanguageConceptSwitch.Skeleton:
         return props_Skeleton;
+      case LanguageConceptSwitch.StringTypeNode:
+        return props_StringTypeNode;
       case LanguageConceptSwitch.StringValue:
         return props_StringValue;
       case LanguageConceptSwitch.Term:

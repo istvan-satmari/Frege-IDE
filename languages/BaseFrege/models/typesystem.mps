@@ -189,6 +189,7 @@
     </language>
     <language id="90eaf9a4-a968-473c-8aed-fef10c04a5df" name="BaseFrege">
       <concept id="5711148124304868435" name="BaseFrege.structure.UndecidableTypeNode" flags="ig" index="27_DqA" />
+      <concept id="8695387976345195252" name="BaseFrege.structure.StringTypeNode" flags="ig" index="yVyIZ" />
       <concept id="6000650770353823728" name="BaseFrege.structure.BoolTypeNode" flags="ig" index="1BmSv_" />
       <concept id="6000650770353826789" name="BaseFrege.structure.IntTypeNode" flags="ig" index="1BmVfK" />
       <concept id="6000650770353826788" name="BaseFrege.structure.DoubleTypeNode" flags="ig" index="1BmVfL" />
@@ -2081,20 +2082,8 @@
           </node>
         </node>
         <node concept="mw_s8" id="2qudrxf2xpS" role="1ZfhKB">
-          <node concept="2c44tf" id="2qudrxf2xpO" role="mwGJk">
-            <node concept="1BrOF_" id="2qudrxf2xuE" role="2c44tc">
-              <node concept="33vP2l" id="2qudrxf2xx6" role="1BrOF$">
-                <node concept="2c44te" id="2qudrxf2xyk" role="lGtFl">
-                  <node concept="2ShNRf" id="2qudrxf2xyu" role="2c44t1">
-                    <node concept="2fJWfE" id="2qudrxf2DCS" role="2ShVmc">
-                      <node concept="3Tqbb2" id="2qudrxf2DCU" role="3zrR0E">
-                        <ref role="ehGHo" to="sc0n:5d6A1kO7iJz" resolve="CharTypeNode" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
+          <node concept="2c44tf" id="7yGekHqlxgq" role="mwGJk">
+            <node concept="yVyIZ" id="7yGekHqlxgL" role="2c44tc" />
           </node>
         </node>
       </node>
@@ -11171,6 +11160,31 @@
     <node concept="1YaCAy" id="2kvNs0cMzK7" role="1YuTPh">
       <property role="TrG5h" value="fdGrouped" />
       <ref role="1YaFvo" to="sc0n:1lrXqCCgARB" resolve="FDGrouped" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="7yGekHqgvKi">
+    <property role="TrG5h" value="typeof_CoreString" />
+    <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
+    <node concept="3clFbS" id="7yGekHqgvKj" role="18ibNy">
+      <node concept="1ZoDhX" id="7yGekHqgxes" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="7yGekHqgxex" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7yGekHqgxey" role="mwGJk">
+            <node concept="1YBJjd" id="7yGekHqgxez" role="1Z2MuG">
+              <ref role="1YBMHb" node="7yGekHqgvKl" resolve="coreStringType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7yGekHqgxeu" role="1ZfhKB">
+          <node concept="2c44tf" id="7yGekHqgxev" role="mwGJk">
+            <node concept="yVyIZ" id="7yGekHqlxbS" role="2c44tc" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7yGekHqgvKl" role="1YuTPh">
+      <property role="TrG5h" value="coreStringType" />
+      <ref role="1YaFvo" to="sc0n:7yGekHqgp8L" resolve="CoreStringType" />
     </node>
   </node>
 </model>

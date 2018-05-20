@@ -923,6 +923,25 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
+  <dependency className="BaseFrege.editor.CoreStringType_Editor" file="CoreStringType_Editor.java">
+    <classNode dependClassName="BaseFrege.editor.CoreStringType_EditorBuilder_a" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="BaseFrege.editor.CoreStringType_EditorBuilder_a" file="CoreStringType_EditorBuilder_a.java">
+    <classNode dependClassName="BaseFrege.editor.Common_StyleSheet.PlainStyleClass" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
   <dependency className="BaseFrege.editor.DataConstructor_Editor" file="DataConstructor_Editor.java">
     <classNode dependClassName="BaseFrege.editor.DataConstructor_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
@@ -1156,6 +1175,7 @@
     <classNode dependClassName="BaseFrege.editor.CoreCharType_Editor" />
     <classNode dependClassName="BaseFrege.editor.CoreDoubleType_Editor" />
     <classNode dependClassName="BaseFrege.editor.CoreIntType_Editor" />
+    <classNode dependClassName="BaseFrege.editor.CoreStringType_Editor" />
     <classNode dependClassName="BaseFrege.editor.DataConstructor_Editor" />
     <classNode dependClassName="BaseFrege.editor.DataConstructor_TransformationMenu" />
     <classNode dependClassName="BaseFrege.editor.Data_Editor" />

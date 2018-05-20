@@ -3846,5 +3846,18 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="7yGekHqlxd_">
+    <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
+    <ref role="WuzLi" to="sc0n:7yGekHqgp8L" resolve="CoreStringType" />
+    <node concept="11bSqf" id="7yGekHqlxdA" role="11c4hB">
+      <node concept="3clFbS" id="7yGekHqlxdB" role="2VODD2">
+        <node concept="lc7rE" id="7yGekHqlxdY" role="3cqZAp">
+          <node concept="la8eA" id="7yGekHqlxe5" role="lcghm">
+            <property role="lacIc" value="String" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
