@@ -5,7 +5,7 @@ Projectional IDE for the Frege language built on top of the JetBrains MPS tool.
 
 
 Master Thesis:
-https://github.com/istvan-satmari/Frege-IDE-Thesis/commits/master
+https://github.com/istvan-satmari/Frege-IDE-Thesis
 
 
 JetBrains MPS:
