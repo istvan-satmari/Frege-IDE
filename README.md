@@ -1,9 +1,18 @@
 # Frege-IDE
 Frege IDE over MPS
+Projectional IDE for the Frege language built on top of the JetBrains MPS tool.
 
-This is a (long) work in progress.
-Some files in the repository are notes created by *myself for myself* (i.e. probably not very readable for an 'outsider').
-In case you have any questions, contact me on istvan.satmari@gmail.com
+
+Master Thesis:
+https://github.com/istvan-satmari/Frege-IDE-Thesis/commits/master
+
+
+JetBrains MPS:
+https://www.jetbrains.com/mps/
+
+
+Frege project:
+https://github.com/Frege/frege
 
 Frege sample sources:
 https://github.com/y-taka-23/learn-you-a-frege
