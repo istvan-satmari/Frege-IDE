@@ -1279,69 +1279,78 @@
       <node id="1500676598349248270" at="43,138,44,78" concept="3" />
       <node id="1500676598349248270" at="45,5,46,18" concept="9" />
       <node id="1500676598349255227" at="51,72,52,103" concept="10" />
-      <node id="1500676598349248969" at="52,103,53,222" concept="9" />
-      <node id="1500676598349248271" at="57,92,58,171" concept="9" />
-      <node id="1500676598349248271" at="62,86,63,109" concept="9" />
-      <node id="1500676598349248271" at="67,0,68,0" concept="4" trace="_context" />
-      <node id="1500676598349248271" at="69,57,70,29" concept="3" />
-      <node id="1500676598349258786" at="75,52,76,22" concept="9" />
-      <node id="1500676598349278923" at="80,54,81,232" concept="8" />
-      <node id="1500676598349278476" at="81,232,82,0" concept="11" />
-      <node id="1500676598349260150" at="82,0,83,184" concept="8" />
-      <node id="1500676598349287907" at="83,184,84,410" concept="3" />
-      <node id="1500676598349921761" at="84,410,85,387" concept="3" />
-      <node id="1500676598349309828" at="85,387,86,0" concept="11" />
-      <node id="1500676598349348323" at="86,0,87,66" concept="3" />
-      <node id="1500676598349260172" at="87,66,88,266" concept="3" />
+      <node id="8621353487692415784" at="52,103,53,67" concept="8" />
+      <node id="8621353487692460019" at="55,389,56,22" concept="9" />
+      <node id="8621353487692415064" at="58,7,59,0" concept="11" />
+      <node id="8621353487692463593" at="59,0,60,19" concept="9" />
+      <node id="1500676598349248271" at="64,92,65,171" concept="9" />
+      <node id="1500676598349248271" at="69,86,70,109" concept="9" />
+      <node id="1500676598349248271" at="74,0,75,0" concept="4" trace="_context" />
+      <node id="1500676598349248271" at="76,57,77,29" concept="3" />
+      <node id="1500676598349258786" at="82,52,83,22" concept="9" />
+      <node id="1500676598349278923" at="87,54,88,232" concept="8" />
+      <node id="1500676598349278476" at="88,232,89,0" concept="11" />
+      <node id="1500676598349260150" at="89,0,90,184" concept="8" />
+      <node id="1500676598349287907" at="90,184,91,410" concept="3" />
+      <node id="1500676598349921761" at="91,410,92,387" concept="3" />
+      <node id="1500676598349309828" at="92,387,93,0" concept="11" />
+      <node id="1500676598349348323" at="93,0,94,66" concept="3" />
+      <node id="1500676598349260172" at="94,66,95,266" concept="3" />
       <node id="1500676598349248270" at="42,156,45,5" concept="6" />
-      <node id="1500676598349248271" at="69,0,72,0" concept="2" trace="Item#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)V" />
+      <node id="8621353487692426831" at="54,182,57,9" concept="6" />
+      <node id="1500676598349248271" at="76,0,79,0" concept="2" trace="Item#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)V" />
       <node id="1500676598349248270" at="34,0,38,0" concept="7" trace="isApplicableToLocation#(Ljava/lang/String;)Z" />
-      <node id="1500676598349248271" at="56,0,60,0" concept="7" trace="getParts#()Ljava/util/List;" />
-      <node id="1500676598349248271" at="61,0,65,0" concept="7" trace="createItem#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuItem;" />
-      <node id="1500676598349248271" at="50,0,55,0" concept="7" trace="isApplicable#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Z" />
-      <node id="1500676598349248271" at="73,0,78,0" concept="7" trace="getLabelText#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="1500676598349248271" at="63,0,67,0" concept="7" trace="getParts#()Ljava/util/List;" />
+      <node id="1500676598349248271" at="68,0,72,0" concept="7" trace="createItem#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuItem;" />
+      <node id="8621353487692422067" at="53,67,58,7" concept="6" />
+      <node id="1500676598349248271" at="80,0,85,0" concept="7" trace="getLabelText#(Ljava/lang/String;)Ljava/lang/String;" />
       <node id="1500676598349248270" at="39,0,48,0" concept="7" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Ljava/util/List;" />
-      <node id="1500676598349248271" at="79,0,90,0" concept="7" trace="execute#(Ljava/lang/String;)V" />
+      <node id="1500676598349248271" at="86,0,97,0" concept="7" trace="execute#(Ljava/lang/String;)V" />
+      <node id="1500676598349248271" at="50,0,62,0" concept="7" trace="isApplicable#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Z" />
       <scope id="1500676598349248270" at="35,67,36,63" />
       <scope id="1500676598349248270" at="43,138,44,78" />
-      <scope id="1500676598349248271" at="57,92,58,171" />
-      <scope id="1500676598349248271" at="62,86,63,109" />
-      <scope id="1500676598349248271" at="69,57,70,29" />
-      <scope id="1500676598349257448" at="75,52,76,22" />
-      <scope id="1500676598349248284" at="51,72,53,222" />
-      <scope id="1500676598349248271" at="69,0,72,0">
+      <scope id="8621353487692426833" at="55,389,56,22" />
+      <scope id="1500676598349248271" at="64,92,65,171" />
+      <scope id="1500676598349248271" at="69,86,70,109" />
+      <scope id="1500676598349248271" at="76,57,77,29" />
+      <scope id="1500676598349257448" at="82,52,83,22" />
+      <scope id="8621353487692422069" at="54,182,57,9" />
+      <scope id="1500676598349248271" at="76,0,79,0">
         <var name="context" id="1500676598349248271" />
       </scope>
       <scope id="1500676598349248270" at="34,0,38,0">
         <var name="location" id="1500676598349248270" />
       </scope>
-      <scope id="1500676598349248271" at="56,0,60,0" />
-      <scope id="1500676598349248271" at="61,0,65,0">
+      <scope id="1500676598349248271" at="63,0,67,0" />
+      <scope id="1500676598349248271" at="68,0,72,0">
         <var name="context" id="1500676598349248271" />
       </scope>
       <scope id="1500676598349248270" at="41,124,46,18">
         <var name="result" id="1500676598349248270" />
       </scope>
-      <scope id="1500676598349248271" at="50,0,55,0">
-        <var name="_context" id="1500676598349248271" />
-      </scope>
-      <scope id="1500676598349248271" at="73,0,78,0">
+      <scope id="1500676598349248271" at="80,0,85,0">
         <var name="pattern" id="1500676598349248271" />
       </scope>
-      <scope id="1500676598349257450" at="80,54,88,266">
+      <scope id="1500676598349257450" at="87,54,95,266">
         <var name="originalList" id="1500676598349278926" />
         <var name="range" id="1500676598349260151" />
       </scope>
       <scope id="1500676598349248270" at="39,0,48,0">
         <var name="_context" id="1500676598349248270" />
       </scope>
-      <scope id="1500676598349248271" at="79,0,90,0">
+      <scope id="1500676598349248284" at="51,72,60,19">
+        <var name="parent" id="8621353487692415787" />
+      </scope>
+      <scope id="1500676598349248271" at="86,0,97,0">
         <var name="pattern" id="1500676598349248271" />
       </scope>
-      <unit id="1500676598349248271" at="66,0,93,0" name="BaseFrege.editor.Expression_ListEnumerationToRange$TMP_Group_lj8ao0_a0$TMP_Action_lj8ao0_a0a$Item" />
-      <unit id="1500676598349248271" at="60,0,94,0" name="BaseFrege.editor.Expression_ListEnumerationToRange$TMP_Group_lj8ao0_a0$TMP_Action_lj8ao0_a0a" />
-      <unit id="1500676598349248271" at="49,0,95,0" name="BaseFrege.editor.Expression_ListEnumerationToRange$TMP_Group_lj8ao0_a0" />
-      <unit id="1500676598349248270" at="32,0,96,0" name="BaseFrege.editor.Expression_ListEnumerationToRange" />
+      <scope id="1500676598349248271" at="50,0,62,0">
+        <var name="_context" id="1500676598349248271" />
+      </scope>
+      <unit id="1500676598349248271" at="73,0,100,0" name="BaseFrege.editor.Expression_ListEnumerationToRange$TMP_Group_lj8ao0_a0$TMP_Action_lj8ao0_a0a$Item" />
+      <unit id="1500676598349248271" at="67,0,101,0" name="BaseFrege.editor.Expression_ListEnumerationToRange$TMP_Group_lj8ao0_a0$TMP_Action_lj8ao0_a0a" />
+      <unit id="1500676598349248271" at="49,0,102,0" name="BaseFrege.editor.Expression_ListEnumerationToRange$TMP_Group_lj8ao0_a0" />
+      <unit id="1500676598349248270" at="32,0,103,0" name="BaseFrege.editor.Expression_ListEnumerationToRange" />
     </file>
   </root>
   <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/1500676598350196631">
