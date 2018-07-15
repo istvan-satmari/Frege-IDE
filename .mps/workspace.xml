@@ -23,40 +23,7 @@
     </breakpoint>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65abf65e-8e03-479e-b0f7-6bf6b438b46f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.mps/migration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/migration.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/BaseFrege.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/BaseFrege.mpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/classes_gen/BaseFrege/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/classes_gen/BaseFrege/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/classes_gen/BaseFrege/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/classes_gen/BaseFrege/structure/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/classes_gen/BaseFrege/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/classes_gen/BaseFrege/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/classes_gen/BaseFrege/typesystem/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/classes_gen/BaseFrege/typesystem/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/models/behavior.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/models/behavior.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/models/constraints.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/models/constraints.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/models/editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/models/editor.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/models/intentions.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/models/intentions.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/models/structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/models/structure.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/models/textGen.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/models/textGen.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/models/typesystem.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/models/typesystem.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen.caches/BaseFrege/editor/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/Language.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/behavior/BehaviorAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/behavior/BehaviorAspectDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/constraints/ConstraintsAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/constraints/ConstraintsAspectDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/BCContent_SubstituteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/BCContent_SubstituteMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/Definition_SubstituteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/Definition_SubstituteMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/EmptyLine_SubstituteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/EmptyLine_SubstituteMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/PVarOperator_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/PVarOperator_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/VariableReference_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/VariableReference_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/structure/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/typesystem/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/BaseFrege/source_gen/BaseFrege/typesystem/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Frege/Frege.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Frege/Frege.msd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/Frege/models/Frege/Skeleton.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/Frege/models/Frege/Skeleton.mps" afterDir="false" />
-    </list>
+    <list default="true" id="65abf65e-8e03-479e-b0f7-6bf6b438b46f" name="Default" comment="" />
     <ignored path="Frege IDE.iws" />
     <ignored path=".mps/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,7 +39,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="abdadea3-b46c-4afe-8526-dbbb490a8138/r:63457c81-b300-4a5e-afe2-af6cf69b4049(TempModuleabdadea3-b46c-4afe-8526-dbbb490a8138/TempModel_84823753060911)">
+            <model ref="cd73e4b6-9cef-44ab-a60b-9b4fb7e5cb44/r:4bd4f9ee-5ee9-41ee-a5da-537dc551a097(TempModulecd73e4b6-9cef-44ab-a60b-9b4fb7e5cb44/TempModel_86253925753827)">
               <persistence version="9" />
               <languages>
                 <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
@@ -106,13 +73,13 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="6kEHX$r_0Ah">
-                <node concept="3balQm" id="6kEHX$r_0Ai" role="aymYE" />
-                <node concept="2Clz$F" id="6kEHX$r_0Aj" role="aymYO">
+              <node concept="aymSD" id="2YN7gudeewe">
+                <node concept="3balQm" id="2YN7gudeewf" role="aymYE" />
+                <node concept="2Clz$F" id="2YN7gudeewg" role="aymYO">
                   <property role="TrG5h" value="CommandHolder" />
                 </node>
-                <node concept="2_V_lH" id="6kEHX$r_0Ak" role="1PhJh3">
-                  <ref role="2_V_lI" node="6kEHX$r_0Aj" resolve="CommandHolder" />
+                <node concept="2_V_lH" id="2YN7gudeewh" role="1PhJh3">
+                  <ref role="2_V_lI" node="2YN7gudeewg" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -138,7 +105,41 @@
     </search_options>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="CurriedFunctions" pinned="false" current-in-tab="true">
+        <entry file="mps://node://Frege/Frege.Skeleton/CurriedFunctions">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="205" />
+                    <property name="caretXRelative" value="160" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_text">
+                      <node node_reference="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/4497884052144655534" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/4497884052144655534" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -195,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -265,7 +266,6 @@
     </navigator>
     <panes>
       <pane id="Favorites" />
-      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -281,54 +281,12 @@
               <option name="myItemId" value="Frege" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f1b490a5-dd82-45c3-b498-54b8cc98db89" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f1b490a5-dd82-45c3-b498-54b8cc98db89" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frege" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton) in IdeaFile[file://D:/Miscellaneous/Google Drive/Private/In Progress/Frege/Release/Frege-IDE/solutions/Frege/models/Frege/Skeleton.mps]" />
+              <option name="myItemId" value="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton) in IdeaFile[file://D:/Miscellaneous/Google Drive/Private/In Progress/Frege/Release/aFrege-IDE/solutions/Frege/models/Frege/Skeleton.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Examples" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="f1b490a5-dd82-45c3-b498-54b8cc98db89" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frege" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton) in IdeaFile[file://D:/Miscellaneous/Google Drive/Private/In Progress/Frege/Release/Frege-IDE/solutions/Frege/models/Frege/Skeleton.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,6 +305,48 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f1b490a5-dd82-45c3-b498-54b8cc98db89" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f1b490a5-dd82-45c3-b498-54b8cc98db89" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frege" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton) in IdeaFile[file://D:/Miscellaneous/Google Drive/Private/In Progress/Frege/Release/aFrege-IDE/solutions/Frege/models/Frege/Skeleton.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="f1b490a5-dd82-45c3-b498-54b8cc98db89" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frege" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <SELECTED>
             <PATH_ELEMENT>
@@ -362,7 +362,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton) in IdeaFile[file://D:/Miscellaneous/Google Drive/Private/In Progress/Frege/Release/Frege-IDE/solutions/Frege/models/Frege/Skeleton.mps]" />
+              <option name="myItemId" value="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton) in IdeaFile[file://D:/Miscellaneous/Google Drive/Private/In Progress/Frege/Release/aFrege-IDE/solutions/Frege/models/Frege/Skeleton.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -370,12 +370,13 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="1061876102421828387" />
+              <option name="myItemId" value="4497884052144655508" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
+      <pane id="FileSystem" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,7 +415,8 @@
     <configuration>C:\Users\Satmari\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Bookmarks" order="7" />
       <window_info anchor="bottom" id="Model Checker" order="24" sideWeight="0.48020834" weight="0.17494825" />
@@ -429,12 +431,10 @@
       <window_info anchor="bottom" id="Inspector" order="13" sideWeight="0.5630208" side_tool="true" weight="0.19358177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Usages" order="14" sideWeight="0.46666667" weight="0.26086956" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.43697917" visible="true" weight="0.1933816" />
+      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.43697917" weight="0.1933816" />
       <window_info anchor="right" id="Context Actions" order="6" />
       <window_info anchor="bottom" id="Version Control" order="16" weight="0.32919255" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="RefactoringView" order="17" />
       <window_info anchor="bottom" id="Node Explorer" order="18" sideWeight="0.42447916" weight="0.21635611" />
       <window_info anchor="bottom" id="Typechecker State" order="19" />
@@ -446,10 +446,12 @@
       <window_info anchor="bottom" id="Cell Explorer" order="22" />
       <window_info anchor="bottom" id="Dependencies Viewer" order="23" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -1246,37 +1248,6 @@
             <restoreAlways />
           </memento>
           <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/7888031788526779478" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://Frege/Frege.Skeleton/CurriedFunctions">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="155" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/4497884052144700776" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/4497884052144700776" saveSessionState="false" viewPositionX="0" viewPositionY="-12">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2261,13 +2232,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/languages/BaseFrege/generator/source_gen/BaseFrege/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/BaseFrege/generator/source_gen/BaseFrege/Generator.java" />
     <entry file="mps://node://Frege/Frege.Skeleton/Guards">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
@@ -2370,6 +2335,37 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:5eba7a7f-3c32-439d-a42a-75f845216a7d(BaseFrege.intentions)/1297414153606450286" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Frege/Frege.Skeleton/CurriedFunctions">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="205" />
+                <property name="caretXRelative" value="160" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_text">
+                  <node node_reference="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/4497884052144655534" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:7a4e6355-360a-45c6-8b0c-a7faa2e9c302(Frege.Skeleton)/4497884052144655534" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
         </state>
       </provider>
     </entry>
