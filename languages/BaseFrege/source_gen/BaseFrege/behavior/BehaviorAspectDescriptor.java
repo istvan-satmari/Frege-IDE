@@ -110,8 +110,8 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
 
   @Nullable
   public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
-    SAbstractConcept cncpt = concept;
-    switch (index_846f5o_a0rd.index(cncpt)) {
+    SAbstractConcept cncpt_a0rd = concept;
+    switch (index_846f5o_a0rd.index(cncpt_a0rd)) {
       case 0:
         return myAIVariable__BehaviorDescriptor;
       case 1:

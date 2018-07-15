@@ -4,189 +4,189 @@ package BaseFrege.structure;
 
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase;
 import jetbrains.mps.smodel.runtime.ConceptPresentation;
-import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private final ConceptPresentation props_AIOperator = new ConceptPresentationBuilder().shortDesc("References an operator for annotation.").create();
-  private final ConceptPresentation props_AIVariable = new ConceptPresentationBuilder().shortDesc("References a variable for annotation.").create();
-  private final ConceptPresentation props_Annotation = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_AnnotationItem = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ApplicationEntity = new ConceptPresentationBuilder().shortDesc("An entity to derive the application from.").create();
-  private final ConceptPresentation props_BCContent = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_BCLine = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_BCNestedComment = new ConceptPresentationBuilder().shortDesc("Nested block comment").create();
-  private final ConceptPresentation props_BinExPart = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_BinaryExpressions = new ConceptPresentationBuilder().shortDesc("Represents expression constructed from TopExpressions separated by operators.").create();
-  private final ConceptPresentation props_BlockComment = new ConceptPresentationBuilder().shortDesc("Multiline nestable comment.").create();
-  private final ConceptPresentation props_BoolTypeNode = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_BooleanValue = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_BracketsApplication = new ConceptPresentationBuilder().shortDesc("Expression inside brackets.").create();
-  private final ConceptPresentation props_CPExprToExpr = new ConceptPresentationBuilder().shortDesc("Add a simple case (->).").create();
-  private final ConceptPresentation props_CPExprToGuards = new ConceptPresentationBuilder().shortDesc("Add a case of guards.").create();
-  private final ConceptPresentation props_Case = new ConceptPresentationBuilder().shortDesc("Case expression.").create();
-  private final ConceptPresentation props_CasePart = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_CharTypeNode = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_CharValue = new ConceptPresentationBuilder().shortDesc("Character literal.").create();
-  private final ConceptPresentation props_Comment = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ConstructorApplication = new ConceptPresentationBuilder().shortDesc("Application of a datatype's constructor.").create();
-  private final ConceptPresentation props_ConstructorReference = new ConceptPresentationBuilder().shortDesc("References a datatype constructor.").create();
-  private final ConceptPresentation props_CoreBoolType = new ConceptPresentationBuilder().shortDesc("Represents boolean type.").create();
-  private final ConceptPresentation props_CoreCharType = new ConceptPresentationBuilder().shortDesc("Represents character type.").create();
-  private final ConceptPresentation props_CoreDoubleType = new ConceptPresentationBuilder().shortDesc("Represents floating-point numeric type.").create();
-  private final ConceptPresentation props_CoreIntType = new ConceptPresentationBuilder().shortDesc("Represents integer type.").create();
-  private final ConceptPresentation props_CoreStringType = new ConceptPresentationBuilder().shortDesc("Represents string type.").create();
-  private final ConceptPresentation props_CoreType = new ConceptPresentationBuilder().shortDesc("Represents a core implicit type in the base Frege language.").create();
-  private final ConceptPresentation props_DCScopeProvider = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Data = new ConceptPresentationBuilder().shortDesc("Define a new algebraic datatype.").create();
-  private final ConceptPresentation props_DataConstructor = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Definition = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DoubleTypeNode = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_DoubleValue = new ConceptPresentationBuilder().shortDesc("Double value.").create();
-  private final ConceptPresentation props_EPBinaryExpression = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_EPFinalOperand = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_EPNode = new ConceptPresentationBuilder().shortDesc("Represents a parsed expression.").create();
-  private final ConceptPresentation props_EmptyExpression = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_EmptyLine = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Expression = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FDA = new ConceptPresentationBuilder().shortDesc("Represents either a function definition or annotation.").create();
-  private final ConceptPresentation props_FDABracket = new ConceptPresentationBuilder().shortDesc("Brackets to hold either operator or become a function definition pattern.").create();
-  private final ConceptPresentation props_FDAVarName = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FDAVarWildcard = new ConceptPresentationBuilder().shortDesc("Non-referentiable variable.").create();
-  private final ConceptPresentation props_FDAVariable = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FDAssignment = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FDComplete = new ConceptPresentationBuilder().shortDesc("Complete function definition.").create();
-  private final ConceptPresentation props_FDGCEName = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FDGCEOperator = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FDGCommonEntity = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FDGGuards = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FDGrouped = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FDGuards = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FalseValue = new ConceptPresentationBuilder().shortDesc("False boolean value.").create();
-  private final ConceptPresentation props_Fixity = new ConceptPresentationBuilder().shortDesc("Set priority of an operator.").create();
-  private final ConceptPresentation props_FullType = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FunctionApplication = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_FunctionDefinition = new ConceptPresentationBuilder().shortDesc("Single function definition pattern, i.e. this represents an incomplete function definition.").create();
-  private final ConceptPresentation props_FunctionTypeNode = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_GenericApplication = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Guard = new ConceptPresentationBuilder().shortDesc("Adds a new guard.").create();
-  private final ConceptPresentation props_IIConstructor = new ConceptPresentationBuilder().shortDesc("Import a constructor without its datatype.").create();
-  private final ConceptPresentation props_IIFunction = new ConceptPresentationBuilder().shortDesc("Import a function.").create();
-  private final ConceptPresentation props_IIOperator = new ConceptPresentationBuilder().shortDesc("Import an operator function.").create();
-  private final ConceptPresentation props_IITCLAll = new ConceptPresentationBuilder().shortDesc("Import all of the constructors for the current datatype.").create();
-  private final ConceptPresentation props_IITCLConstructor = new ConceptPresentationBuilder().shortDesc("Import a specific constructor.").create();
-  private final ConceptPresentation props_IITCLItem = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IITConstructorList = new ConceptPresentationBuilder().shortDesc("Describes what constructors are to be imported.").create();
-  private final ConceptPresentation props_IIType = new ConceptPresentationBuilder().shortDesc("Import a type.").create();
-  private final ConceptPresentation props_IfThenElse = new ConceptPresentationBuilder().shortDesc("If expression.").create();
-  private final ConceptPresentation props_ImplicitDefinition = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Import = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImportAs = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImportHiding = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImportItem = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImportItems = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImportReference = new ConceptPresentationBuilder().shortDesc("References an imported module.").create();
-  private final ConceptPresentation props_ImportedEntityApplication = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ImportedTypeReferenceUsage = new ConceptPresentationBuilder().shortDesc("Represents imported types and algebraic datatypes.").create();
-  private final ConceptPresentation props_IncompleteCommand = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Infix = new ConceptPresentationBuilder().shortDesc("Infix operator.").create();
-  private final ConceptPresentation props_InfixAbstract = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Infixl = new ConceptPresentationBuilder().shortDesc("Left associative operator.").create();
-  private final ConceptPresentation props_Infixr = new ConceptPresentationBuilder().shortDesc("Right associative operator.").create();
-  private final ConceptPresentation props_IntTypeNode = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_IntegerValue = new ConceptPresentationBuilder().shortDesc("Integer value.").create();
-  private final ConceptPresentation props_LCQArrowAssignment = new ConceptPresentationBuilder().shortDesc("Arrow assignment for the current list comprehension.").create();
-  private final ConceptPresentation props_LCQGuard = new ConceptPresentationBuilder().shortDesc("Guard for the current list comprehension.").create();
-  private final ConceptPresentation props_LCQLet = new ConceptPresentationBuilder().shortDesc("Let expression for the current list comprehension.").create();
-  private final ConceptPresentation props_LCQualifier = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LPExpression = new ConceptPresentationBuilder().shortDesc("Define the lambda's body.").create();
-  private final ConceptPresentation props_LPLambda = new ConceptPresentationBuilder().shortDesc("Declare a new argument.").create();
-  private final ConceptPresentation props_Lambda = new ConceptPresentationBuilder().shortDesc("Lambda function expression.").create();
-  private final ConceptPresentation props_LambdaPart = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LateLoader = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Let = new ConceptPresentationBuilder().shortDesc("Let expression.").create();
-  private final ConceptPresentation props_LetDefinitions = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LineComment = new ConceptPresentationBuilder().shortDesc("Line comment.").create();
-  private final ConceptPresentation props_List = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ListComprehension = new ConceptPresentationBuilder().shortDesc("List defined via patterns and guards.").create();
-  private final ConceptPresentation props_ListEnumeration = new ConceptPresentationBuilder().shortDesc("List of items.").create();
-  private final ConceptPresentation props_ListRange = new ConceptPresentationBuilder().shortDesc("List defined as a range of items.").create();
-  private final ConceptPresentation props_ListTypeNode = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Literal = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_LocalTypeReferenceUsage = new ConceptPresentationBuilder().shortDesc("Represents types and algebraic datatypes.").create();
-  private final ConceptPresentation props_MEFunction = new ConceptPresentationBuilder().shortDesc("Export a function.").create();
-  private final ConceptPresentation props_MEOperator = new ConceptPresentationBuilder().shortDesc("Export an operator function.").create();
-  private final ConceptPresentation props_MEPMImport = new ConceptPresentationBuilder().shortDesc("Reexport of an imported module.").create();
-  private final ConceptPresentation props_MEPMReference = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_MEPMSelf = new ConceptPresentationBuilder().shortDesc("Reexport of the current module.").create();
-  private final ConceptPresentation props_MEPModule = new ConceptPresentationBuilder().shortDesc("Export a complete module.").create();
-  private final ConceptPresentation props_METCLAll = new ConceptPresentationBuilder().shortDesc("Export all of the constructors for the current datatype.").create();
-  private final ConceptPresentation props_METCLConstructor = new ConceptPresentationBuilder().shortDesc("Export a specific constructor.").create();
-  private final ConceptPresentation props_METCLItem = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_METConstructorList = new ConceptPresentationBuilder().shortDesc("Describes what constructors are to be exported.").create();
-  private final ConceptPresentation props_METype = new ConceptPresentationBuilder().shortDesc("Export a type.").create();
-  private final ConceptPresentation props_Module = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ModuleExport = new ConceptPresentationBuilder().shortDesc("An item from the current module to export to the outside.").create();
-  private final ConceptPresentation props_ModuleName = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_ModuleNameFinal = new ConceptPresentationBuilder().shortDesc("Final part in the module name description.").create();
-  private final ConceptPresentation props_ModuleNamePreFinal = new ConceptPresentationBuilder().shortDesc("Represents name of the current module separated by dots.").create();
-  private final ConceptPresentation props_NegativeExpression = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_NodeCONID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for constructors and types.").create();
-  private final ConceptPresentation props_NodeOperator = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for operators.").create();
-  private final ConceptPresentation props_NodeVARID = new ConceptPresentationBuilder().shortDesc("Represents a customizable name for functions and variables.").create();
-  private final ConceptPresentation props_OperatorApplication = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_OperatorReference = new ConceptPresentationBuilder().shortDesc("References an operator.").create();
-  private final ConceptPresentation props_Otherwise = new ConceptPresentationBuilder().shortDesc("Represents a guard always evaluating to true.").create();
-  private final ConceptPresentation props_PBracket = new ConceptPresentationBuilder().shortDesc("Pattern in round brackets.").create();
-  private final ConceptPresentation props_PConstructor = new ConceptPresentationBuilder().shortDesc("Datatype constructor reference.").create();
-  private final ConceptPresentation props_PLEBPatternArgument = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PLEBPlaceholder = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PList = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
-  private final ConceptPresentation props_PListBracket = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
-  private final ConceptPresentation props_PListColon = new ConceptPresentationBuilder().shortDesc("List pattern.").create();
-  private final ConceptPresentation props_PListVar = new ConceptPresentationBuilder().shortDesc("Variable for referencing list.").create();
-  private final ConceptPresentation props_PLiteral = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PTuple = new ConceptPresentationBuilder().shortDesc("Tuple pattern.").create();
-  private final ConceptPresentation props_PVarName = new ConceptPresentationBuilder().shortDesc("Referentiable variable.").create();
-  private final ConceptPresentation props_PVarOperator = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PVarWildcard = new ConceptPresentationBuilder().shortDesc("Non-referentiable variable.").create();
-  private final ConceptPresentation props_PVariable = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Pattern = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PatternArgument = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PatternFunction = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PatternFunctionInGroup = new ConceptPresentationBuilder().shortDesc("A derivative of PatternFunction targeted for grouped function definition.").create();
-  private final ConceptPresentation props_PatternOperator = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_PatternOperatorInGroup = new ConceptPresentationBuilder().shortDesc("A derivative of PatternOperator targeted for grouped operator definition.").create();
-  private final ConceptPresentation props_PatternWrapper = new ConceptPresentationBuilder().shortDesc("Wrapper of pattern for function definiton.").create();
-  private final ConceptPresentation props_PrimaryExpression = new ConceptPresentationBuilder().shortDesc("Represents an expression that is either a function call or may be used as an argument to it.").create();
-  private final ConceptPresentation props_QCONID = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_QVARID = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Simpletype = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Skeleton = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_StringTypeNode = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_StringValue = new ConceptPresentationBuilder().shortDesc("String literal.").create();
-  private final ConceptPresentation props_Term = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TopExpression = new ConceptPresentationBuilder().shortDesc("Expression that cannot be annotated.").create();
-  private final ConceptPresentation props_TrueValue = new ConceptPresentationBuilder().shortDesc("True boolean value.").create();
-  private final ConceptPresentation props_Tuple = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TupleTypeNode = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_Type = new ConceptPresentationBuilder().shortDesc("Definition of a type synonym.").create();
-  private final ConceptPresentation props_TypeA = new ConceptPresentationBuilder().shortDesc("Represents a type variable.").create();
-  private final ConceptPresentation props_TypeB = new ConceptPresentationBuilder().shortDesc("Represents a type variable that is not a reference.").create();
-  private final ConceptPresentation props_TypeCarrier = new ConceptPresentationBuilder().shortDesc("A concept with no editor only to carry a type inferred from outside.").create();
-  private final ConceptPresentation props_TypeFunction = new ConceptPresentationBuilder().shortDesc("Complete type signature of a function.").create();
-  private final ConceptPresentation props_TypeList = new ConceptPresentationBuilder().shortDesc("List type.").create();
-  private final ConceptPresentation props_TypeName = new ConceptPresentationBuilder().shortDesc("Type name.").create();
-  private final ConceptPresentation props_TypeReference = new ConceptPresentationBuilder().shortDesc("References a type name.").create();
-  private final ConceptPresentation props_TypeReferenceUsage = new ConceptPresentationBuilder().create();
-  private final ConceptPresentation props_TypeTuple = new ConceptPresentationBuilder().shortDesc("Tuple type.").create();
-  private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable.").create();
-  private final ConceptPresentation props_TypeVariableReference = new ConceptPresentationBuilder().shortDesc("References a type variable.").create();
-  private final ConceptPresentation props_TypeWrapper = new ConceptPresentationBuilder().shortDesc("Wrapper around a given type.").create();
-  private final ConceptPresentation props_UnknownTypeNode = new ConceptPresentationBuilder().shortDesc("Represents a placeholder type (mostly) for variables when the type is not simply decidable.").create();
-  private final ConceptPresentation props_VariableReference = new ConceptPresentationBuilder().shortDesc("References either a function name or a variable.").create();
-  private final ConceptPresentation props_WherePart = new ConceptPresentationBuilder().create();
+  private ConceptPresentation props_AIOperator;
+  private ConceptPresentation props_AIVariable;
+  private ConceptPresentation props_Annotation;
+  private ConceptPresentation props_AnnotationItem;
+  private ConceptPresentation props_ApplicationEntity;
+  private ConceptPresentation props_BCContent;
+  private ConceptPresentation props_BCLine;
+  private ConceptPresentation props_BCNestedComment;
+  private ConceptPresentation props_BinExPart;
+  private ConceptPresentation props_BinaryExpressions;
+  private ConceptPresentation props_BlockComment;
+  private ConceptPresentation props_BoolTypeNode;
+  private ConceptPresentation props_BooleanValue;
+  private ConceptPresentation props_BracketsApplication;
+  private ConceptPresentation props_CPExprToExpr;
+  private ConceptPresentation props_CPExprToGuards;
+  private ConceptPresentation props_Case;
+  private ConceptPresentation props_CasePart;
+  private ConceptPresentation props_CharTypeNode;
+  private ConceptPresentation props_CharValue;
+  private ConceptPresentation props_Comment;
+  private ConceptPresentation props_ConstructorApplication;
+  private ConceptPresentation props_ConstructorReference;
+  private ConceptPresentation props_CoreBoolType;
+  private ConceptPresentation props_CoreCharType;
+  private ConceptPresentation props_CoreDoubleType;
+  private ConceptPresentation props_CoreIntType;
+  private ConceptPresentation props_CoreStringType;
+  private ConceptPresentation props_CoreType;
+  private ConceptPresentation props_DCScopeProvider;
+  private ConceptPresentation props_Data;
+  private ConceptPresentation props_DataConstructor;
+  private ConceptPresentation props_Definition;
+  private ConceptPresentation props_DoubleTypeNode;
+  private ConceptPresentation props_DoubleValue;
+  private ConceptPresentation props_EPBinaryExpression;
+  private ConceptPresentation props_EPFinalOperand;
+  private ConceptPresentation props_EPNode;
+  private ConceptPresentation props_EmptyExpression;
+  private ConceptPresentation props_EmptyLine;
+  private ConceptPresentation props_Expression;
+  private ConceptPresentation props_FDA;
+  private ConceptPresentation props_FDABracket;
+  private ConceptPresentation props_FDAVarName;
+  private ConceptPresentation props_FDAVarWildcard;
+  private ConceptPresentation props_FDAVariable;
+  private ConceptPresentation props_FDAssignment;
+  private ConceptPresentation props_FDComplete;
+  private ConceptPresentation props_FDGCEName;
+  private ConceptPresentation props_FDGCEOperator;
+  private ConceptPresentation props_FDGCommonEntity;
+  private ConceptPresentation props_FDGGuards;
+  private ConceptPresentation props_FDGrouped;
+  private ConceptPresentation props_FDGuards;
+  private ConceptPresentation props_FalseValue;
+  private ConceptPresentation props_Fixity;
+  private ConceptPresentation props_FullType;
+  private ConceptPresentation props_FunctionApplication;
+  private ConceptPresentation props_FunctionDefinition;
+  private ConceptPresentation props_FunctionTypeNode;
+  private ConceptPresentation props_GenericApplication;
+  private ConceptPresentation props_Guard;
+  private ConceptPresentation props_IIConstructor;
+  private ConceptPresentation props_IIFunction;
+  private ConceptPresentation props_IIOperator;
+  private ConceptPresentation props_IITCLAll;
+  private ConceptPresentation props_IITCLConstructor;
+  private ConceptPresentation props_IITCLItem;
+  private ConceptPresentation props_IITConstructorList;
+  private ConceptPresentation props_IIType;
+  private ConceptPresentation props_IfThenElse;
+  private ConceptPresentation props_ImplicitDefinition;
+  private ConceptPresentation props_Import;
+  private ConceptPresentation props_ImportAs;
+  private ConceptPresentation props_ImportHiding;
+  private ConceptPresentation props_ImportItem;
+  private ConceptPresentation props_ImportItems;
+  private ConceptPresentation props_ImportReference;
+  private ConceptPresentation props_ImportedEntityApplication;
+  private ConceptPresentation props_ImportedTypeReferenceUsage;
+  private ConceptPresentation props_IncompleteCommand;
+  private ConceptPresentation props_Infix;
+  private ConceptPresentation props_InfixAbstract;
+  private ConceptPresentation props_Infixl;
+  private ConceptPresentation props_Infixr;
+  private ConceptPresentation props_IntTypeNode;
+  private ConceptPresentation props_IntegerValue;
+  private ConceptPresentation props_LCQArrowAssignment;
+  private ConceptPresentation props_LCQGuard;
+  private ConceptPresentation props_LCQLet;
+  private ConceptPresentation props_LCQualifier;
+  private ConceptPresentation props_LPExpression;
+  private ConceptPresentation props_LPLambda;
+  private ConceptPresentation props_Lambda;
+  private ConceptPresentation props_LambdaPart;
+  private ConceptPresentation props_LateLoader;
+  private ConceptPresentation props_Let;
+  private ConceptPresentation props_LetDefinitions;
+  private ConceptPresentation props_LineComment;
+  private ConceptPresentation props_List;
+  private ConceptPresentation props_ListComprehension;
+  private ConceptPresentation props_ListEnumeration;
+  private ConceptPresentation props_ListRange;
+  private ConceptPresentation props_ListTypeNode;
+  private ConceptPresentation props_Literal;
+  private ConceptPresentation props_LocalTypeReferenceUsage;
+  private ConceptPresentation props_MEFunction;
+  private ConceptPresentation props_MEOperator;
+  private ConceptPresentation props_MEPMImport;
+  private ConceptPresentation props_MEPMReference;
+  private ConceptPresentation props_MEPMSelf;
+  private ConceptPresentation props_MEPModule;
+  private ConceptPresentation props_METCLAll;
+  private ConceptPresentation props_METCLConstructor;
+  private ConceptPresentation props_METCLItem;
+  private ConceptPresentation props_METConstructorList;
+  private ConceptPresentation props_METype;
+  private ConceptPresentation props_Module;
+  private ConceptPresentation props_ModuleExport;
+  private ConceptPresentation props_ModuleName;
+  private ConceptPresentation props_ModuleNameFinal;
+  private ConceptPresentation props_ModuleNamePreFinal;
+  private ConceptPresentation props_NegativeExpression;
+  private ConceptPresentation props_NodeCONID;
+  private ConceptPresentation props_NodeOperator;
+  private ConceptPresentation props_NodeVARID;
+  private ConceptPresentation props_OperatorApplication;
+  private ConceptPresentation props_OperatorReference;
+  private ConceptPresentation props_Otherwise;
+  private ConceptPresentation props_PBracket;
+  private ConceptPresentation props_PConstructor;
+  private ConceptPresentation props_PLEBPatternArgument;
+  private ConceptPresentation props_PLEBPlaceholder;
+  private ConceptPresentation props_PList;
+  private ConceptPresentation props_PListBracket;
+  private ConceptPresentation props_PListColon;
+  private ConceptPresentation props_PListVar;
+  private ConceptPresentation props_PLiteral;
+  private ConceptPresentation props_PTuple;
+  private ConceptPresentation props_PVarName;
+  private ConceptPresentation props_PVarOperator;
+  private ConceptPresentation props_PVarWildcard;
+  private ConceptPresentation props_PVariable;
+  private ConceptPresentation props_Pattern;
+  private ConceptPresentation props_PatternArgument;
+  private ConceptPresentation props_PatternFunction;
+  private ConceptPresentation props_PatternFunctionInGroup;
+  private ConceptPresentation props_PatternOperator;
+  private ConceptPresentation props_PatternOperatorInGroup;
+  private ConceptPresentation props_PatternWrapper;
+  private ConceptPresentation props_PrimaryExpression;
+  private ConceptPresentation props_QCONID;
+  private ConceptPresentation props_QVARID;
+  private ConceptPresentation props_Simpletype;
+  private ConceptPresentation props_Skeleton;
+  private ConceptPresentation props_StringTypeNode;
+  private ConceptPresentation props_StringValue;
+  private ConceptPresentation props_Term;
+  private ConceptPresentation props_TopExpression;
+  private ConceptPresentation props_TrueValue;
+  private ConceptPresentation props_Tuple;
+  private ConceptPresentation props_TupleTypeNode;
+  private ConceptPresentation props_Type;
+  private ConceptPresentation props_TypeA;
+  private ConceptPresentation props_TypeB;
+  private ConceptPresentation props_TypeCarrier;
+  private ConceptPresentation props_TypeFunction;
+  private ConceptPresentation props_TypeList;
+  private ConceptPresentation props_TypeName;
+  private ConceptPresentation props_TypeReference;
+  private ConceptPresentation props_TypeReferenceUsage;
+  private ConceptPresentation props_TypeTuple;
+  private ConceptPresentation props_TypeVariable;
+  private ConceptPresentation props_TypeVariableReference;
+  private ConceptPresentation props_TypeWrapper;
+  private ConceptPresentation props_UnknownTypeNode;
+  private ConceptPresentation props_VariableReference;
+  private ConceptPresentation props_WherePart;
 
   @Override
   @Nullable
@@ -194,360 +194,1317 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case LanguageConceptSwitch.AIOperator:
+        if (props_AIOperator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("References an operator for annotation.");
+          cpb.rawPresentation("AIOperator");
+          props_AIOperator = cpb.create();
+        }
         return props_AIOperator;
       case LanguageConceptSwitch.AIVariable:
+        if (props_AIVariable == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("References a variable for annotation.");
+          cpb.rawPresentation("AIVariable");
+          props_AIVariable = cpb.create();
+        }
         return props_AIVariable;
       case LanguageConceptSwitch.Annotation:
+        if (props_Annotation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("::");
+          props_Annotation = cpb.create();
+        }
         return props_Annotation;
       case LanguageConceptSwitch.AnnotationItem:
+        if (props_AnnotationItem == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AnnotationItem = cpb.create();
+        }
         return props_AnnotationItem;
       case LanguageConceptSwitch.ApplicationEntity:
+        if (props_ApplicationEntity == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("An entity to derive the application from.");
+          props_ApplicationEntity = cpb.create();
+        }
         return props_ApplicationEntity;
       case LanguageConceptSwitch.BCContent:
+        if (props_BCContent == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_BCContent = cpb.create();
+        }
         return props_BCContent;
       case LanguageConceptSwitch.BCLine:
+        if (props_BCLine == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("BCLine");
+          props_BCLine = cpb.create();
+        }
         return props_BCLine;
       case LanguageConceptSwitch.BCNestedComment:
+        if (props_BCNestedComment == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Nested block comment");
+          cpb.rawPresentation("{-");
+          props_BCNestedComment = cpb.create();
+        }
         return props_BCNestedComment;
       case LanguageConceptSwitch.BinExPart:
+        if (props_BinExPart == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("BinExPart");
+          props_BinExPart = cpb.create();
+        }
         return props_BinExPart;
       case LanguageConceptSwitch.BinaryExpressions:
+        if (props_BinaryExpressions == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents expression constructed from TopExpressions separated by operators.");
+          cpb.rawPresentation("BinaryExpressions");
+          props_BinaryExpressions = cpb.create();
+        }
         return props_BinaryExpressions;
       case LanguageConceptSwitch.BlockComment:
+        if (props_BlockComment == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Multiline nestable comment.");
+          cpb.rawPresentation("{-");
+          props_BlockComment = cpb.create();
+        }
         return props_BlockComment;
       case LanguageConceptSwitch.BoolTypeNode:
+        if (props_BoolTypeNode == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Bool");
+          props_BoolTypeNode = cpb.create();
+        }
         return props_BoolTypeNode;
       case LanguageConceptSwitch.BooleanValue:
+        if (props_BooleanValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_BooleanValue = cpb.create();
+        }
         return props_BooleanValue;
       case LanguageConceptSwitch.BracketsApplication:
+        if (props_BracketsApplication == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Expression inside brackets.");
+          cpb.rawPresentation("(");
+          props_BracketsApplication = cpb.create();
+        }
         return props_BracketsApplication;
       case LanguageConceptSwitch.CPExprToExpr:
+        if (props_CPExprToExpr == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Add a simple case (->).");
+          cpb.rawPresentation("-");
+          props_CPExprToExpr = cpb.create();
+        }
         return props_CPExprToExpr;
       case LanguageConceptSwitch.CPExprToGuards:
+        if (props_CPExprToGuards == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Add a case of guards.");
+          cpb.rawPresentation("|");
+          props_CPExprToGuards = cpb.create();
+        }
         return props_CPExprToGuards;
       case LanguageConceptSwitch.Case:
+        if (props_Case == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Case expression.");
+          cpb.rawPresentation("case");
+          props_Case = cpb.create();
+        }
         return props_Case;
       case LanguageConceptSwitch.CasePart:
+        if (props_CasePart == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_CasePart = cpb.create();
+        }
         return props_CasePart;
       case LanguageConceptSwitch.CharTypeNode:
+        if (props_CharTypeNode == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Char");
+          props_CharTypeNode = cpb.create();
+        }
         return props_CharTypeNode;
       case LanguageConceptSwitch.CharValue:
+        if (props_CharValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Character literal.");
+          cpb.rawPresentation("'");
+          props_CharValue = cpb.create();
+        }
         return props_CharValue;
       case LanguageConceptSwitch.Comment:
+        if (props_Comment == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Comment = cpb.create();
+        }
         return props_Comment;
       case LanguageConceptSwitch.ConstructorApplication:
+        if (props_ConstructorApplication == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Application of a datatype's constructor.");
+          cpb.rawPresentation("ConstructorApplication");
+          props_ConstructorApplication = cpb.create();
+        }
         return props_ConstructorApplication;
       case LanguageConceptSwitch.ConstructorReference:
+        if (props_ConstructorReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("References a datatype constructor.");
+          cpb.presentationByReference(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x53091a40f7d3538eL, 0x53091a40f7d35888L, "ref", "", "");
+          props_ConstructorReference = cpb.create();
+        }
         return props_ConstructorReference;
       case LanguageConceptSwitch.CoreBoolType:
+        if (props_CoreBoolType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents boolean type.");
+          cpb.rawPresentation("Bool");
+          props_CoreBoolType = cpb.create();
+        }
         return props_CoreBoolType;
       case LanguageConceptSwitch.CoreCharType:
+        if (props_CoreCharType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents character type.");
+          cpb.rawPresentation("Char");
+          props_CoreCharType = cpb.create();
+        }
         return props_CoreCharType;
       case LanguageConceptSwitch.CoreDoubleType:
+        if (props_CoreDoubleType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents floating-point numeric type.");
+          cpb.rawPresentation("Double");
+          props_CoreDoubleType = cpb.create();
+        }
         return props_CoreDoubleType;
       case LanguageConceptSwitch.CoreIntType:
+        if (props_CoreIntType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents integer type.");
+          cpb.rawPresentation("Int");
+          props_CoreIntType = cpb.create();
+        }
         return props_CoreIntType;
       case LanguageConceptSwitch.CoreStringType:
+        if (props_CoreStringType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents string type.");
+          cpb.rawPresentation("String");
+          props_CoreStringType = cpb.create();
+        }
         return props_CoreStringType;
       case LanguageConceptSwitch.CoreType:
+        if (props_CoreType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents a core implicit type in the base Frege language.");
+          props_CoreType = cpb.create();
+        }
         return props_CoreType;
       case LanguageConceptSwitch.DCScopeProvider:
+        if (props_DCScopeProvider == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_DCScopeProvider = cpb.create();
+        }
         return props_DCScopeProvider;
       case LanguageConceptSwitch.Data:
+        if (props_Data == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Define a new algebraic datatype.");
+          cpb.rawPresentation("data");
+          props_Data = cpb.create();
+        }
         return props_Data;
       case LanguageConceptSwitch.DataConstructor:
+        if (props_DataConstructor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("|");
+          props_DataConstructor = cpb.create();
+        }
         return props_DataConstructor;
       case LanguageConceptSwitch.Definition:
+        if (props_Definition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Definition = cpb.create();
+        }
         return props_Definition;
       case LanguageConceptSwitch.DoubleTypeNode:
+        if (props_DoubleTypeNode == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Double");
+          props_DoubleTypeNode = cpb.create();
+        }
         return props_DoubleTypeNode;
       case LanguageConceptSwitch.DoubleValue:
+        if (props_DoubleValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Double value.");
+          cpb.rawPresentation("double");
+          props_DoubleValue = cpb.create();
+        }
         return props_DoubleValue;
       case LanguageConceptSwitch.EPBinaryExpression:
+        if (props_EPBinaryExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5211bd069df9eb70L, 0x5211bd069eb85c6eL, "operator", "", "");
+          props_EPBinaryExpression = cpb.create();
+        }
         return props_EPBinaryExpression;
       case LanguageConceptSwitch.EPFinalOperand:
+        if (props_EPFinalOperand == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x5211bd069df9ed7dL, 0x5211bd069eb85893L, "replaces", "", "");
+          props_EPFinalOperand = cpb.create();
+        }
         return props_EPFinalOperand;
       case LanguageConceptSwitch.EPNode:
+        if (props_EPNode == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents a parsed expression.");
+          props_EPNode = cpb.create();
+        }
         return props_EPNode;
       case LanguageConceptSwitch.EmptyExpression:
+        if (props_EmptyExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("EmptyExpression");
+          props_EmptyExpression = cpb.create();
+        }
         return props_EmptyExpression;
       case LanguageConceptSwitch.EmptyLine:
+        if (props_EmptyLine == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("EmptyLine");
+          props_EmptyLine = cpb.create();
+        }
         return props_EmptyLine;
       case LanguageConceptSwitch.Expression:
+        if (props_Expression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Expression");
+          props_Expression = cpb.create();
+        }
         return props_Expression;
       case LanguageConceptSwitch.FDA:
+        if (props_FDA == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents either a function definition or annotation.");
+          props_FDA = cpb.create();
+        }
         return props_FDA;
       case LanguageConceptSwitch.FDABracket:
+        if (props_FDABracket == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Brackets to hold either operator or become a function definition pattern.");
+          cpb.rawPresentation("(");
+          props_FDABracket = cpb.create();
+        }
         return props_FDABracket;
       case LanguageConceptSwitch.FDAVarName:
+        if (props_FDAVarName == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("FDAVarName");
+          props_FDAVarName = cpb.create();
+        }
         return props_FDAVarName;
       case LanguageConceptSwitch.FDAVarWildcard:
+        if (props_FDAVarWildcard == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Non-referentiable variable.");
+          cpb.rawPresentation("_");
+          props_FDAVarWildcard = cpb.create();
+        }
         return props_FDAVarWildcard;
       case LanguageConceptSwitch.FDAVariable:
+        if (props_FDAVariable == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_FDAVariable = cpb.create();
+        }
         return props_FDAVariable;
       case LanguageConceptSwitch.FDAssignment:
+        if (props_FDAssignment == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("=");
+          props_FDAssignment = cpb.create();
+        }
         return props_FDAssignment;
       case LanguageConceptSwitch.FDComplete:
+        if (props_FDComplete == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Complete function definition.");
+          props_FDComplete = cpb.create();
+        }
         return props_FDComplete;
       case LanguageConceptSwitch.FDGCEName:
+        if (props_FDGCEName == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("FDGCEName");
+          props_FDGCEName = cpb.create();
+        }
         return props_FDGCEName;
       case LanguageConceptSwitch.FDGCEOperator:
+        if (props_FDGCEOperator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("FDGCEOperator");
+          props_FDGCEOperator = cpb.create();
+        }
         return props_FDGCEOperator;
       case LanguageConceptSwitch.FDGCommonEntity:
+        if (props_FDGCommonEntity == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_FDGCommonEntity = cpb.create();
+        }
         return props_FDGCommonEntity;
       case LanguageConceptSwitch.FDGGuards:
+        if (props_FDGGuards == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("FDGGuards");
+          props_FDGGuards = cpb.create();
+        }
         return props_FDGGuards;
       case LanguageConceptSwitch.FDGrouped:
+        if (props_FDGrouped == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("FDGrouped");
+          props_FDGrouped = cpb.create();
+        }
         return props_FDGrouped;
       case LanguageConceptSwitch.FDGuards:
+        if (props_FDGuards == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("|");
+          props_FDGuards = cpb.create();
+        }
         return props_FDGuards;
       case LanguageConceptSwitch.FalseValue:
+        if (props_FalseValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("False boolean value.");
+          cpb.rawPresentation("false");
+          props_FalseValue = cpb.create();
+        }
         return props_FalseValue;
       case LanguageConceptSwitch.Fixity:
+        if (props_Fixity == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Set priority of an operator.");
+          cpb.rawPresentation("fixity");
+          props_Fixity = cpb.create();
+        }
         return props_Fixity;
       case LanguageConceptSwitch.FullType:
+        if (props_FullType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("FullType");
+          props_FullType = cpb.create();
+        }
         return props_FullType;
       case LanguageConceptSwitch.FunctionApplication:
+        if (props_FunctionApplication == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("FunctionApplication");
+          props_FunctionApplication = cpb.create();
+        }
         return props_FunctionApplication;
       case LanguageConceptSwitch.FunctionDefinition:
+        if (props_FunctionDefinition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Single function definition pattern, i.e. this represents an incomplete function definition.");
+          cpb.rawPresentation("fundef");
+          props_FunctionDefinition = cpb.create();
+        }
         return props_FunctionDefinition;
       case LanguageConceptSwitch.FunctionTypeNode:
+        if (props_FunctionTypeNode == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Function");
+          props_FunctionTypeNode = cpb.create();
+        }
         return props_FunctionTypeNode;
       case LanguageConceptSwitch.GenericApplication:
+        if (props_GenericApplication == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("GenericApplication");
+          props_GenericApplication = cpb.create();
+        }
         return props_GenericApplication;
       case LanguageConceptSwitch.Guard:
+        if (props_Guard == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Adds a new guard.");
+          cpb.rawPresentation("|");
+          props_Guard = cpb.create();
+        }
         return props_Guard;
       case LanguageConceptSwitch.IIConstructor:
+        if (props_IIConstructor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Import a constructor without its datatype.");
+          cpb.rawPresentation("IIConstructor");
+          props_IIConstructor = cpb.create();
+        }
         return props_IIConstructor;
       case LanguageConceptSwitch.IIFunction:
+        if (props_IIFunction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Import a function.");
+          cpb.rawPresentation("IIFunction");
+          props_IIFunction = cpb.create();
+        }
         return props_IIFunction;
       case LanguageConceptSwitch.IIOperator:
+        if (props_IIOperator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Import an operator function.");
+          cpb.rawPresentation("IIOperator");
+          props_IIOperator = cpb.create();
+        }
         return props_IIOperator;
       case LanguageConceptSwitch.IITCLAll:
+        if (props_IITCLAll == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Import all of the constructors for the current datatype.");
+          cpb.rawPresentation("..");
+          props_IITCLAll = cpb.create();
+        }
         return props_IITCLAll;
       case LanguageConceptSwitch.IITCLConstructor:
+        if (props_IITCLConstructor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Import a specific constructor.");
+          cpb.rawPresentation("IITCLConstructor");
+          props_IITCLConstructor = cpb.create();
+        }
         return props_IITCLConstructor;
       case LanguageConceptSwitch.IITCLItem:
+        if (props_IITCLItem == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IITCLItem = cpb.create();
+        }
         return props_IITCLItem;
       case LanguageConceptSwitch.IITConstructorList:
+        if (props_IITConstructorList == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Describes what constructors are to be imported.");
+          cpb.rawPresentation("IITConstructorList");
+          props_IITConstructorList = cpb.create();
+        }
         return props_IITConstructorList;
       case LanguageConceptSwitch.IIType:
+        if (props_IIType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Import a type.");
+          cpb.rawPresentation("IIType");
+          props_IIType = cpb.create();
+        }
         return props_IIType;
       case LanguageConceptSwitch.IfThenElse:
+        if (props_IfThenElse == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("If expression.");
+          cpb.rawPresentation("if");
+          props_IfThenElse = cpb.create();
+        }
         return props_IfThenElse;
       case LanguageConceptSwitch.ImplicitDefinition:
+        if (props_ImplicitDefinition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ImplicitDefinition");
+          props_ImplicitDefinition = cpb.create();
+        }
         return props_ImplicitDefinition;
       case LanguageConceptSwitch.Import:
+        if (props_Import == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("import");
+          props_Import = cpb.create();
+        }
         return props_Import;
       case LanguageConceptSwitch.ImportAs:
+        if (props_ImportAs == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ImportAs");
+          props_ImportAs = cpb.create();
+        }
         return props_ImportAs;
       case LanguageConceptSwitch.ImportHiding:
+        if (props_ImportHiding == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ImportHiding");
+          props_ImportHiding = cpb.create();
+        }
         return props_ImportHiding;
       case LanguageConceptSwitch.ImportItem:
+        if (props_ImportItem == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ImportItem = cpb.create();
+        }
         return props_ImportItem;
       case LanguageConceptSwitch.ImportItems:
+        if (props_ImportItems == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ImportItems");
+          props_ImportItems = cpb.create();
+        }
         return props_ImportItems;
       case LanguageConceptSwitch.ImportReference:
+        if (props_ImportReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("References an imported module.");
+          cpb.presentationByReference(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x7f24f41c3f28279eL, 0x7f24f41c3f2827a5L, "ref", "", "");
+          props_ImportReference = cpb.create();
+        }
         return props_ImportReference;
       case LanguageConceptSwitch.ImportedEntityApplication:
+        if (props_ImportedEntityApplication == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ImportedEntityApplication");
+          props_ImportedEntityApplication = cpb.create();
+        }
         return props_ImportedEntityApplication;
       case LanguageConceptSwitch.ImportedTypeReferenceUsage:
+        if (props_ImportedTypeReferenceUsage == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents imported types and algebraic datatypes.");
+          cpb.rawPresentation("ImportedTypeReferenceUsage");
+          props_ImportedTypeReferenceUsage = cpb.create();
+        }
         return props_ImportedTypeReferenceUsage;
       case LanguageConceptSwitch.IncompleteCommand:
+        if (props_IncompleteCommand == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IncompleteCommand = cpb.create();
+        }
         return props_IncompleteCommand;
       case LanguageConceptSwitch.Infix:
+        if (props_Infix == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Infix operator.");
+          cpb.rawPresentation("infix");
+          props_Infix = cpb.create();
+        }
         return props_Infix;
       case LanguageConceptSwitch.InfixAbstract:
+        if (props_InfixAbstract == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_InfixAbstract = cpb.create();
+        }
         return props_InfixAbstract;
       case LanguageConceptSwitch.Infixl:
+        if (props_Infixl == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Left associative operator.");
+          cpb.rawPresentation("infixl");
+          props_Infixl = cpb.create();
+        }
         return props_Infixl;
       case LanguageConceptSwitch.Infixr:
+        if (props_Infixr == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Right associative operator.");
+          cpb.rawPresentation("infixr");
+          props_Infixr = cpb.create();
+        }
         return props_Infixr;
       case LanguageConceptSwitch.IntTypeNode:
+        if (props_IntTypeNode == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Int");
+          props_IntTypeNode = cpb.create();
+        }
         return props_IntTypeNode;
       case LanguageConceptSwitch.IntegerValue:
+        if (props_IntegerValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Integer value.");
+          cpb.rawPresentation("integer");
+          props_IntegerValue = cpb.create();
+        }
         return props_IntegerValue;
       case LanguageConceptSwitch.LCQArrowAssignment:
+        if (props_LCQArrowAssignment == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Arrow assignment for the current list comprehension.");
+          cpb.rawPresentation("-");
+          props_LCQArrowAssignment = cpb.create();
+        }
         return props_LCQArrowAssignment;
       case LanguageConceptSwitch.LCQGuard:
+        if (props_LCQGuard == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Guard for the current list comprehension.");
+          cpb.rawPresentation("g");
+          props_LCQGuard = cpb.create();
+        }
         return props_LCQGuard;
       case LanguageConceptSwitch.LCQLet:
+        if (props_LCQLet == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Let expression for the current list comprehension.");
+          cpb.rawPresentation("l");
+          props_LCQLet = cpb.create();
+        }
         return props_LCQLet;
       case LanguageConceptSwitch.LCQualifier:
+        if (props_LCQualifier == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_LCQualifier = cpb.create();
+        }
         return props_LCQualifier;
       case LanguageConceptSwitch.LPExpression:
+        if (props_LPExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Define the lambda's body.");
+          cpb.rawPresentation("-");
+          props_LPExpression = cpb.create();
+        }
         return props_LPExpression;
       case LanguageConceptSwitch.LPLambda:
+        if (props_LPLambda == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Declare a new argument.");
+          cpb.rawPresentation("\\");
+          props_LPLambda = cpb.create();
+        }
         return props_LPLambda;
       case LanguageConceptSwitch.Lambda:
+        if (props_Lambda == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Lambda function expression.");
+          cpb.rawPresentation("\\");
+          props_Lambda = cpb.create();
+        }
         return props_Lambda;
       case LanguageConceptSwitch.LambdaPart:
+        if (props_LambdaPart == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_LambdaPart = cpb.create();
+        }
         return props_LambdaPart;
       case LanguageConceptSwitch.LateLoader:
+        if (props_LateLoader == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_LateLoader = cpb.create();
+        }
         return props_LateLoader;
       case LanguageConceptSwitch.Let:
+        if (props_Let == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Let expression.");
+          cpb.rawPresentation("let");
+          props_Let = cpb.create();
+        }
         return props_Let;
       case LanguageConceptSwitch.LetDefinitions:
+        if (props_LetDefinitions == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("LetDefinitions");
+          props_LetDefinitions = cpb.create();
+        }
         return props_LetDefinitions;
       case LanguageConceptSwitch.LineComment:
+        if (props_LineComment == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Line comment.");
+          cpb.rawPresentation("--");
+          props_LineComment = cpb.create();
+        }
         return props_LineComment;
       case LanguageConceptSwitch.List:
+        if (props_List == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_List = cpb.create();
+        }
         return props_List;
       case LanguageConceptSwitch.ListComprehension:
+        if (props_ListComprehension == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("List defined via patterns and guards.");
+          cpb.rawPresentation("ListComprehension");
+          props_ListComprehension = cpb.create();
+        }
         return props_ListComprehension;
       case LanguageConceptSwitch.ListEnumeration:
+        if (props_ListEnumeration == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("List of items.");
+          cpb.rawPresentation("[");
+          props_ListEnumeration = cpb.create();
+        }
         return props_ListEnumeration;
       case LanguageConceptSwitch.ListRange:
+        if (props_ListRange == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("List defined as a range of items.");
+          cpb.rawPresentation("ListRange");
+          props_ListRange = cpb.create();
+        }
         return props_ListRange;
       case LanguageConceptSwitch.ListTypeNode:
+        if (props_ListTypeNode == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("List");
+          props_ListTypeNode = cpb.create();
+        }
         return props_ListTypeNode;
       case LanguageConceptSwitch.Literal:
+        if (props_Literal == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Literal = cpb.create();
+        }
         return props_Literal;
       case LanguageConceptSwitch.LocalTypeReferenceUsage:
+        if (props_LocalTypeReferenceUsage == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents types and algebraic datatypes.");
+          cpb.rawPresentation("LocalTypeReferenceUsage");
+          props_LocalTypeReferenceUsage = cpb.create();
+        }
         return props_LocalTypeReferenceUsage;
       case LanguageConceptSwitch.MEFunction:
+        if (props_MEFunction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Export a function.");
+          cpb.rawPresentation("MEFunction");
+          props_MEFunction = cpb.create();
+        }
         return props_MEFunction;
       case LanguageConceptSwitch.MEOperator:
+        if (props_MEOperator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Export an operator function.");
+          cpb.rawPresentation("MEOperator");
+          props_MEOperator = cpb.create();
+        }
         return props_MEOperator;
       case LanguageConceptSwitch.MEPMImport:
+        if (props_MEPMImport == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Reexport of an imported module.");
+          cpb.presentationByReference(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3d75775c30218792L, 0x3d75775c30f54b60L, "import", "", "");
+          props_MEPMImport = cpb.create();
+        }
         return props_MEPMImport;
       case LanguageConceptSwitch.MEPMReference:
+        if (props_MEPMReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_MEPMReference = cpb.create();
+        }
         return props_MEPMReference;
       case LanguageConceptSwitch.MEPMSelf:
+        if (props_MEPMSelf == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Reexport of the current module.");
+          cpb.presentationByReference(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x3d75775c3021876dL, 0x3d75775c302187c5L, "module", "", "");
+          props_MEPMSelf = cpb.create();
+        }
         return props_MEPMSelf;
       case LanguageConceptSwitch.MEPModule:
+        if (props_MEPModule == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Export a complete module.");
+          cpb.rawPresentation("module");
+          props_MEPModule = cpb.create();
+        }
         return props_MEPModule;
       case LanguageConceptSwitch.METCLAll:
+        if (props_METCLAll == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Export all of the constructors for the current datatype.");
+          cpb.rawPresentation("..");
+          props_METCLAll = cpb.create();
+        }
         return props_METCLAll;
       case LanguageConceptSwitch.METCLConstructor:
+        if (props_METCLConstructor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Export a specific constructor.");
+          cpb.rawPresentation("METCLConstructor");
+          props_METCLConstructor = cpb.create();
+        }
         return props_METCLConstructor;
       case LanguageConceptSwitch.METCLItem:
+        if (props_METCLItem == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_METCLItem = cpb.create();
+        }
         return props_METCLItem;
       case LanguageConceptSwitch.METConstructorList:
+        if (props_METConstructorList == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Describes what constructors are to be exported.");
+          cpb.rawPresentation("METConstructorList");
+          props_METConstructorList = cpb.create();
+        }
         return props_METConstructorList;
       case LanguageConceptSwitch.METype:
+        if (props_METype == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Export a type.");
+          cpb.rawPresentation("METype");
+          props_METype = cpb.create();
+        }
         return props_METype;
       case LanguageConceptSwitch.Module:
+        if (props_Module == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("module");
+          props_Module = cpb.create();
+        }
         return props_Module;
       case LanguageConceptSwitch.ModuleExport:
+        if (props_ModuleExport == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("An item from the current module to export to the outside.");
+          props_ModuleExport = cpb.create();
+        }
         return props_ModuleExport;
       case LanguageConceptSwitch.ModuleName:
+        if (props_ModuleName == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ModuleName = cpb.create();
+        }
         return props_ModuleName;
       case LanguageConceptSwitch.ModuleNameFinal:
+        if (props_ModuleNameFinal == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Final part in the module name description.");
+          cpb.rawPresentation("ModuleNameFinal");
+          props_ModuleNameFinal = cpb.create();
+        }
         return props_ModuleNameFinal;
       case LanguageConceptSwitch.ModuleNamePreFinal:
+        if (props_ModuleNamePreFinal == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents name of the current module separated by dots.");
+          cpb.rawPresentation("ModuleNamePreFinal");
+          props_ModuleNamePreFinal = cpb.create();
+        }
         return props_ModuleNamePreFinal;
       case LanguageConceptSwitch.NegativeExpression:
+        if (props_NegativeExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("NegativeExpression");
+          props_NegativeExpression = cpb.create();
+        }
         return props_NegativeExpression;
       case LanguageConceptSwitch.NodeCONID:
+        if (props_NodeCONID == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents a customizable name for constructors and types.");
+          cpb.rawPresentation("NodeCONID");
+          props_NodeCONID = cpb.create();
+        }
         return props_NodeCONID;
       case LanguageConceptSwitch.NodeOperator:
+        if (props_NodeOperator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents a customizable name for operators.");
+          cpb.rawPresentation("NodeOperator");
+          props_NodeOperator = cpb.create();
+        }
         return props_NodeOperator;
       case LanguageConceptSwitch.NodeVARID:
+        if (props_NodeVARID == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents a customizable name for functions and variables.");
+          cpb.rawPresentation("NodeVARID");
+          props_NodeVARID = cpb.create();
+        }
         return props_NodeVARID;
       case LanguageConceptSwitch.OperatorApplication:
+        if (props_OperatorApplication == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("OperatorApplication");
+          props_OperatorApplication = cpb.create();
+        }
         return props_OperatorApplication;
       case LanguageConceptSwitch.OperatorReference:
+        if (props_OperatorReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("References an operator.");
+          cpb.presentationByReference(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x4b2fbc03f0258a57L, 0x2172e4e5ac3793a1L, "ref", "", "");
+          props_OperatorReference = cpb.create();
+        }
         return props_OperatorReference;
       case LanguageConceptSwitch.Otherwise:
+        if (props_Otherwise == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents a guard always evaluating to true.");
+          cpb.rawPresentation("otherwise");
+          props_Otherwise = cpb.create();
+        }
         return props_Otherwise;
       case LanguageConceptSwitch.PBracket:
+        if (props_PBracket == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Pattern in round brackets.");
+          cpb.rawPresentation("(");
+          props_PBracket = cpb.create();
+        }
         return props_PBracket;
       case LanguageConceptSwitch.PConstructor:
+        if (props_PConstructor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Datatype constructor reference.");
+          cpb.rawPresentation("constructor");
+          props_PConstructor = cpb.create();
+        }
         return props_PConstructor;
       case LanguageConceptSwitch.PLEBPatternArgument:
+        if (props_PLEBPatternArgument == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("PLEBPatternArgument");
+          props_PLEBPatternArgument = cpb.create();
+        }
         return props_PLEBPatternArgument;
       case LanguageConceptSwitch.PLEBPlaceholder:
+        if (props_PLEBPlaceholder == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("PLEBPlaceholder");
+          props_PLEBPlaceholder = cpb.create();
+        }
         return props_PLEBPlaceholder;
       case LanguageConceptSwitch.PList:
+        if (props_PList == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("List pattern.");
+          props_PList = cpb.create();
+        }
         return props_PList;
       case LanguageConceptSwitch.PListBracket:
+        if (props_PListBracket == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("List pattern.");
+          cpb.rawPresentation("[");
+          props_PListBracket = cpb.create();
+        }
         return props_PListBracket;
       case LanguageConceptSwitch.PListColon:
+        if (props_PListColon == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("List pattern.");
+          cpb.rawPresentation(":");
+          props_PListColon = cpb.create();
+        }
         return props_PListColon;
       case LanguageConceptSwitch.PListVar:
+        if (props_PListVar == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Variable for referencing list.");
+          cpb.rawPresentation("var");
+          props_PListVar = cpb.create();
+        }
         return props_PListVar;
       case LanguageConceptSwitch.PLiteral:
+        if (props_PLiteral == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("PLiteral");
+          props_PLiteral = cpb.create();
+        }
         return props_PLiteral;
       case LanguageConceptSwitch.PTuple:
+        if (props_PTuple == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Tuple pattern.");
+          cpb.rawPresentation("tuple");
+          props_PTuple = cpb.create();
+        }
         return props_PTuple;
       case LanguageConceptSwitch.PVarName:
+        if (props_PVarName == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Referentiable variable.");
+          cpb.rawPresentation("var");
+          props_PVarName = cpb.create();
+        }
         return props_PVarName;
       case LanguageConceptSwitch.PVarOperator:
+        if (props_PVarOperator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("PVarOperator");
+          props_PVarOperator = cpb.create();
+        }
         return props_PVarOperator;
       case LanguageConceptSwitch.PVarWildcard:
+        if (props_PVarWildcard == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Non-referentiable variable.");
+          cpb.rawPresentation("_");
+          props_PVarWildcard = cpb.create();
+        }
         return props_PVarWildcard;
       case LanguageConceptSwitch.PVariable:
+        if (props_PVariable == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_PVariable = cpb.create();
+        }
         return props_PVariable;
       case LanguageConceptSwitch.Pattern:
+        if (props_Pattern == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Pattern = cpb.create();
+        }
         return props_Pattern;
       case LanguageConceptSwitch.PatternArgument:
+        if (props_PatternArgument == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_PatternArgument = cpb.create();
+        }
         return props_PatternArgument;
       case LanguageConceptSwitch.PatternFunction:
+        if (props_PatternFunction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("PatternFunction");
+          props_PatternFunction = cpb.create();
+        }
         return props_PatternFunction;
       case LanguageConceptSwitch.PatternFunctionInGroup:
+        if (props_PatternFunctionInGroup == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("A derivative of PatternFunction targeted for grouped function definition.");
+          cpb.rawPresentation("PatternFunctionInGroup");
+          props_PatternFunctionInGroup = cpb.create();
+        }
         return props_PatternFunctionInGroup;
       case LanguageConceptSwitch.PatternOperator:
+        if (props_PatternOperator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("PatternOperator");
+          props_PatternOperator = cpb.create();
+        }
         return props_PatternOperator;
       case LanguageConceptSwitch.PatternOperatorInGroup:
+        if (props_PatternOperatorInGroup == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("A derivative of PatternOperator targeted for grouped operator definition.");
+          cpb.rawPresentation("PatternOperatorInGroup");
+          props_PatternOperatorInGroup = cpb.create();
+        }
         return props_PatternOperatorInGroup;
       case LanguageConceptSwitch.PatternWrapper:
+        if (props_PatternWrapper == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Wrapper of pattern for function definiton.");
+          cpb.rawPresentation("PatternWrapper");
+          props_PatternWrapper = cpb.create();
+        }
         return props_PatternWrapper;
       case LanguageConceptSwitch.PrimaryExpression:
+        if (props_PrimaryExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents an expression that is either a function call or may be used as an argument to it.");
+          props_PrimaryExpression = cpb.create();
+        }
         return props_PrimaryExpression;
       case LanguageConceptSwitch.QCONID:
+        if (props_QCONID == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("QCONID");
+          props_QCONID = cpb.create();
+        }
         return props_QCONID;
       case LanguageConceptSwitch.QVARID:
+        if (props_QVARID == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("QVARID");
+          props_QVARID = cpb.create();
+        }
         return props_QVARID;
       case LanguageConceptSwitch.Simpletype:
+        if (props_Simpletype == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Simpletype = cpb.create();
+        }
         return props_Simpletype;
       case LanguageConceptSwitch.Skeleton:
+        if (props_Skeleton == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Skeleton = cpb.create();
+        }
         return props_Skeleton;
       case LanguageConceptSwitch.StringTypeNode:
+        if (props_StringTypeNode == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("String");
+          props_StringTypeNode = cpb.create();
+        }
         return props_StringTypeNode;
       case LanguageConceptSwitch.StringValue:
+        if (props_StringValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("String literal.");
+          cpb.rawPresentation("\"");
+          props_StringValue = cpb.create();
+        }
         return props_StringValue;
       case LanguageConceptSwitch.Term:
+        if (props_Term == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Term = cpb.create();
+        }
         return props_Term;
       case LanguageConceptSwitch.TopExpression:
+        if (props_TopExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Expression that cannot be annotated.");
+          props_TopExpression = cpb.create();
+        }
         return props_TopExpression;
       case LanguageConceptSwitch.TrueValue:
+        if (props_TrueValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("True boolean value.");
+          cpb.rawPresentation("true");
+          props_TrueValue = cpb.create();
+        }
         return props_TrueValue;
       case LanguageConceptSwitch.Tuple:
+        if (props_Tuple == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation(",");
+          props_Tuple = cpb.create();
+        }
         return props_Tuple;
       case LanguageConceptSwitch.TupleTypeNode:
+        if (props_TupleTypeNode == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Tuple");
+          props_TupleTypeNode = cpb.create();
+        }
         return props_TupleTypeNode;
       case LanguageConceptSwitch.Type:
+        if (props_Type == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Definition of a type synonym.");
+          cpb.rawPresentation("type");
+          props_Type = cpb.create();
+        }
         return props_Type;
       case LanguageConceptSwitch.TypeA:
+        if (props_TypeA == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents a type variable.");
+          cpb.rawPresentation("TypeA");
+          props_TypeA = cpb.create();
+        }
         return props_TypeA;
       case LanguageConceptSwitch.TypeB:
+        if (props_TypeB == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents a type variable that is not a reference.");
+          cpb.rawPresentation("TypeB");
+          props_TypeB = cpb.create();
+        }
         return props_TypeB;
       case LanguageConceptSwitch.TypeCarrier:
+        if (props_TypeCarrier == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("A concept with no editor only to carry a type inferred from outside.");
+          cpb.rawPresentation("TypeCarrier");
+          props_TypeCarrier = cpb.create();
+        }
         return props_TypeCarrier;
       case LanguageConceptSwitch.TypeFunction:
+        if (props_TypeFunction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Complete type signature of a function.");
+          cpb.rawPresentation("TypeFunction");
+          props_TypeFunction = cpb.create();
+        }
         return props_TypeFunction;
       case LanguageConceptSwitch.TypeList:
+        if (props_TypeList == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("List type.");
+          cpb.rawPresentation("[");
+          props_TypeList = cpb.create();
+        }
         return props_TypeList;
       case LanguageConceptSwitch.TypeName:
+        if (props_TypeName == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Type name.");
+          cpb.rawPresentation("TypeName");
+          props_TypeName = cpb.create();
+        }
         return props_TypeName;
       case LanguageConceptSwitch.TypeReference:
+        if (props_TypeReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("References a type name.");
+          cpb.presentationByReference(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x253325724e94e04bL, 0x253325724e9f9d2eL, "ref", "", "");
+          props_TypeReference = cpb.create();
+        }
         return props_TypeReference;
       case LanguageConceptSwitch.TypeReferenceUsage:
+        if (props_TypeReferenceUsage == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_TypeReferenceUsage = cpb.create();
+        }
         return props_TypeReferenceUsage;
       case LanguageConceptSwitch.TypeTuple:
+        if (props_TypeTuple == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Tuple type.");
+          cpb.rawPresentation("(");
+          props_TypeTuple = cpb.create();
+        }
         return props_TypeTuple;
       case LanguageConceptSwitch.TypeVariable:
+        if (props_TypeVariable == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Type variable.");
+          cpb.rawPresentation("TypeVariable");
+          props_TypeVariable = cpb.create();
+        }
         return props_TypeVariable;
       case LanguageConceptSwitch.TypeVariableReference:
+        if (props_TypeVariableReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("References a type variable.");
+          cpb.presentationByReference(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x253325724ebcd023L, 0x253325724ebcd024L, "ref", "", "");
+          props_TypeVariableReference = cpb.create();
+        }
         return props_TypeVariableReference;
       case LanguageConceptSwitch.TypeWrapper:
+        if (props_TypeWrapper == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Wrapper around a given type.");
+          cpb.rawPresentation("TypeWrapper");
+          props_TypeWrapper = cpb.create();
+        }
         return props_TypeWrapper;
       case LanguageConceptSwitch.UnknownTypeNode:
+        if (props_UnknownTypeNode == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Represents a placeholder type (mostly) for variables when the type is not simply decidable.");
+          cpb.rawPresentation("Unknown");
+          props_UnknownTypeNode = cpb.create();
+        }
         return props_UnknownTypeNode;
       case LanguageConceptSwitch.VariableReference:
+        if (props_VariableReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("References either a function name or a variable.");
+          cpb.presentationByReference(0x90eaf9a4a968473cL, 0x8aedfef10c04a5dfL, 0x4b2fbc03f0258a31L, 0x2172e4e5ac379379L, "ref", "", "");
+          props_VariableReference = cpb.create();
+        }
         return props_VariableReference;
       case LanguageConceptSwitch.WherePart:
+        if (props_WherePart == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("where");
+          props_WherePart = cpb.create();
+        }
         return props_WherePart;
     }
     return null;

@@ -47,7 +47,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -1112,7 +1111,6 @@
                 <ref role="ehGHo" to="sc0n:vUxQDjKXyv" resolve="Definition" />
               </node>
             </node>
-            <node concept="10Nm6u" id="5d6A1kNTr4I" role="33vP2m" />
           </node>
         </node>
         <node concept="3cpWs8" id="5d6A1kNTsMJ" role="3cqZAp">

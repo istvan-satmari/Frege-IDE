@@ -1,0 +1,2247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="17,0,269,0" name="BaseFrege.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1061876102424104231">
+    <file name="Otherwise_TextGen.java">
+      <node id="1061876102424104231" at="11,54,12,55" concept="5" />
+      <node id="1061876102424104253" at="12,55,13,28" concept="1" />
+      <node id="1061876102424104231" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1061876102424104231" at="11,54,13,28">
+        <var name="tgs" id="1061876102424104231" />
+      </scope>
+      <scope id="1061876102424104231" at="10,0,15,0">
+        <var name="ctx" id="1061876102424104231" />
+      </scope>
+      <unit id="1061876102424104231" at="9,0,16,0" name="BaseFrege.textGen.Otherwise_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1148231301344001466">
+    <file name="Skeleton_TextGen.java">
+      <node id="1148231301344001466" at="16,54,17,55" concept="5" />
+      <node id="7490587407195728583" at="17,55,18,43" concept="7" />
+      <node id="7490587407195710150" at="18,43,19,25" concept="1" />
+      <node id="7490587407195717273" at="19,25,20,20" concept="1" />
+      <node id="7490587407195717356" at="20,20,21,418" concept="1" />
+      <node id="7490587407195725232" at="21,418,22,20" concept="1" />
+      <node id="7490587407195725788" at="22,20,23,24" concept="1" />
+      <node id="7490587407195729301" at="23,24,24,0" concept="8" />
+      <node id="7490587407195731039" at="24,0,25,34" concept="7" />
+      <node id="7490587407195819611" at="26,227,27,20" concept="1" />
+      <node id="7490587407195815478" at="27,20,28,24" concept="1" />
+      <node id="7490587407195819037" at="29,5,30,0" concept="8" />
+      <node id="7490587407195821309" at="30,0,31,38" concept="7" />
+      <node id="4491238300282623117" at="32,240,33,20" concept="1" />
+      <node id="4491238300282561233" at="33,20,34,33" concept="1" />
+      <node id="7490587407195951034" at="25,34,29,5" concept="2" />
+      <node id="4491238300282557023" at="31,38,35,5" concept="2" />
+      <node id="1148231301344001466" at="15,0,37,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7490587407195951040" at="26,227,28,24" />
+      <scope id="4491238300282557029" at="32,240,34,33" />
+      <scope id="7490587407195951034" at="25,34,29,5">
+        <var name="i" id="7490587407195951036" />
+      </scope>
+      <scope id="4491238300282557023" at="31,38,35,5">
+        <var name="definition" id="4491238300282557025" />
+      </scope>
+      <scope id="1148231301344001466" at="16,54,35,5">
+        <var name="tgs" id="1148231301344001466" />
+      </scope>
+      <scope id="1148231301344001466" at="15,0,37,0">
+        <var name="ctx" id="1148231301344001466" />
+      </scope>
+      <unit id="1148231301344001466" at="14,0,38,0" name="BaseFrege.textGen.Skeleton_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="7490587407195675306" at="262,58,263,405" concept="6" />
+      <node id="7490587407195706073" at="265,63,266,17" concept="6" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393448574">
+    <file name="TypeReference_TextGen.java">
+      <node id="1299309654393448574" at="13,54,14,55" concept="5" />
+      <node id="1299309654393448596" at="14,55,15,197" concept="1" />
+      <node id="1299309654393448574" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393448574" at="13,54,15,197">
+        <var name="tgs" id="1299309654393448574" />
+      </scope>
+      <scope id="1299309654393448574" at="12,0,17,0">
+        <var name="ctx" id="1299309654393448574" />
+      </scope>
+      <unit id="1299309654393448574" at="11,0,18,0" name="BaseFrege.textGen.TypeReference_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393450193">
+    <file name="TypeName_TextGen.java">
+      <node id="1299309654393450193" at="13,54,14,55" concept="5" />
+      <node id="1299309654393450218" at="14,55,15,200" concept="1" />
+      <node id="1299309654393450193" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393450193" at="13,54,15,200">
+        <var name="tgs" id="1299309654393450193" />
+      </scope>
+      <scope id="1299309654393450193" at="12,0,17,0">
+        <var name="ctx" id="1299309654393450193" />
+      </scope>
+      <unit id="1299309654393450193" at="11,0,18,0" name="BaseFrege.textGen.TypeName_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393452541">
+    <file name="NodeCONID_TextGen.java">
+      <node id="1299309654393452541" at="13,54,14,55" concept="5" />
+      <node id="1299309654393452566" at="14,55,15,194" concept="1" />
+      <node id="1299309654393452541" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393452541" at="13,54,15,194">
+        <var name="tgs" id="1299309654393452541" />
+      </scope>
+      <scope id="1299309654393452541" at="12,0,17,0">
+        <var name="ctx" id="1299309654393452541" />
+      </scope>
+      <unit id="1299309654393452541" at="11,0,18,0" name="BaseFrege.textGen.NodeCONID_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393454050">
+    <file name="IITConstructorList_TextGen.java">
+      <node id="1299309654393454050" at="15,54,16,55" concept="5" />
+      <node id="1299309654393454075" at="16,55,17,20" concept="1" />
+      <node id="1299309654393454242" at="18,5,19,225" concept="5" />
+      <node id="1299309654393454242" at="19,225,20,70" concept="5" />
+      <node id="1299309654393454242" at="21,37,22,29" concept="1" />
+      <node id="1299309654393454242" at="23,31,24,26" concept="1" />
+      <node id="1299309654393454156" at="27,5,28,20" concept="1" />
+      <node id="1299309654393454242" at="22,29,25,9" concept="3" />
+      <node id="1299309654393454242" at="20,70,26,7" concept="2" />
+      <node id="1299309654393454242" at="17,20,27,5" concept="0" />
+      <node id="1299309654393454050" at="14,0,30,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393454242" at="23,31,24,26" />
+      <scope id="1299309654393454242" at="21,37,25,9" />
+      <scope id="1299309654393454242" at="20,70,26,7">
+        <var name="item" id="1299309654393454242" />
+      </scope>
+      <scope id="1299309654393454242" at="18,5,26,7">
+        <var name="collection" id="1299309654393454242" />
+        <var name="lastItem" id="1299309654393454242" />
+      </scope>
+      <scope id="1299309654393454050" at="15,54,28,20">
+        <var name="tgs" id="1299309654393454050" />
+      </scope>
+      <scope id="1299309654393454050" at="14,0,30,0">
+        <var name="ctx" id="1299309654393454050" />
+      </scope>
+      <unit id="1299309654393454050" at="13,0,31,0" name="BaseFrege.textGen.IITConstructorList_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393456195">
+    <file name="IITCLConstructor_TextGen.java">
+      <node id="1299309654393456195" at="13,54,14,55" concept="5" />
+      <node id="1299309654393456217" at="14,55,15,207" concept="1" />
+      <node id="1299309654393456195" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393456195" at="13,54,15,207">
+        <var name="tgs" id="1299309654393456195" />
+      </scope>
+      <scope id="1299309654393456195" at="12,0,17,0">
+        <var name="ctx" id="1299309654393456195" />
+      </scope>
+      <unit id="1299309654393456195" at="11,0,18,0" name="BaseFrege.textGen.IITCLConstructor_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393457971">
+    <file name="ConstructorReference_TextGen.java">
+      <node id="1299309654393457971" at="14,54,15,55" concept="5" />
+      <node id="1299309654393458068" at="15,55,16,507" concept="1" />
+      <node id="1299309654393457971" at="13,0,18,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393457971" at="14,54,16,507">
+        <var name="tgs" id="1299309654393457971" />
+      </scope>
+      <scope id="1299309654393457971" at="13,0,18,0">
+        <var name="ctx" id="1299309654393457971" />
+      </scope>
+      <unit id="1299309654393457971" at="12,0,19,0" name="BaseFrege.textGen.ConstructorReference_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393464329">
+    <file name="DataConstructor_TextGen.java">
+      <node id="1299309654393464329" at="16,54,17,55" concept="5" />
+      <node id="1299309654393464351" at="17,55,18,200" concept="1" />
+      <node id="2210819511196455806" at="19,229,20,22" concept="1" />
+      <node id="1299309654393465939" at="21,7,22,220" concept="5" />
+      <node id="1299309654393465939" at="22,220,23,72" concept="5" />
+      <node id="1299309654393465939" at="24,39,25,31" concept="1" />
+      <node id="1299309654393465939" at="26,33,27,28" concept="1" />
+      <node id="1299309654393465939" at="25,31,28,11" concept="3" />
+      <node id="1299309654393465939" at="23,72,29,9" concept="2" />
+      <node id="1299309654393465939" at="20,22,30,7" concept="0" />
+      <node id="4491238300286594794" at="18,200,31,5" concept="3" />
+      <node id="1299309654393464329" at="15,0,33,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393465939" at="26,33,27,28" />
+      <scope id="1299309654393465939" at="24,39,28,11" />
+      <scope id="1299309654393465939" at="23,72,29,9">
+        <var name="item" id="1299309654393465939" />
+      </scope>
+      <scope id="1299309654393465939" at="21,7,29,9">
+        <var name="collection" id="1299309654393465939" />
+        <var name="lastItem" id="1299309654393465939" />
+      </scope>
+      <scope id="4491238300286594796" at="19,229,30,7" />
+      <scope id="1299309654393464329" at="16,54,31,5">
+        <var name="tgs" id="1299309654393464329" />
+      </scope>
+      <scope id="1299309654393464329" at="15,0,33,0">
+        <var name="ctx" id="1299309654393464329" />
+      </scope>
+      <unit id="1299309654393464329" at="14,0,34,0" name="BaseFrege.textGen.DataConstructor_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393491746">
+    <file name="IITCLAll_TextGen.java">
+      <node id="1299309654393491746" at="11,54,12,55" concept="5" />
+      <node id="1299309654393491768" at="12,55,13,21" concept="1" />
+      <node id="1299309654393491746" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393491746" at="11,54,13,21">
+        <var name="tgs" id="1299309654393491746" />
+      </scope>
+      <scope id="1299309654393491746" at="10,0,15,0">
+        <var name="ctx" id="1299309654393491746" />
+      </scope>
+      <unit id="1299309654393491746" at="9,0,16,0" name="BaseFrege.textGen.IITCLAll_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393491851">
+    <file name="OperatorReference_TextGen.java">
+      <node id="1299309654393491851" at="13,54,14,55" concept="5" />
+      <node id="1299309654393491873" at="14,55,15,197" concept="1" />
+      <node id="1299309654393491851" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393491851" at="13,54,15,197">
+        <var name="tgs" id="1299309654393491851" />
+      </scope>
+      <scope id="1299309654393491851" at="12,0,17,0">
+        <var name="ctx" id="1299309654393491851" />
+      </scope>
+      <unit id="1299309654393491851" at="11,0,18,0" name="BaseFrege.textGen.OperatorReference_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393493470">
+    <file name="NodeOperator_TextGen.java">
+      <node id="1299309654393493470" at="13,54,14,55" concept="5" />
+      <node id="1299309654393493492" at="14,55,15,194" concept="1" />
+      <node id="1299309654393493470" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393493470" at="13,54,15,194">
+        <var name="tgs" id="1299309654393493470" />
+      </scope>
+      <scope id="1299309654393493470" at="12,0,17,0">
+        <var name="ctx" id="1299309654393493470" />
+      </scope>
+      <unit id="1299309654393493470" at="11,0,18,0" name="BaseFrege.textGen.NodeOperator_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393495022">
+    <file name="IIOperator_TextGen.java">
+      <node id="1299309654393495022" at="13,54,14,55" concept="5" />
+      <node id="1299309654393495044" at="14,55,15,204" concept="1" />
+      <node id="1299309654393495022" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393495022" at="13,54,15,204">
+        <var name="tgs" id="1299309654393495022" />
+      </scope>
+      <scope id="1299309654393495022" at="12,0,17,0">
+        <var name="ctx" id="1299309654393495022" />
+      </scope>
+      <unit id="1299309654393495022" at="11,0,18,0" name="BaseFrege.textGen.IIOperator_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393496801">
+    <file name="IIConstructor_TextGen.java">
+      <node id="1299309654393496801" at="13,54,14,55" concept="5" />
+      <node id="1299309654393496823" at="14,55,15,205" concept="1" />
+      <node id="1299309654393496801" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393496801" at="13,54,15,205">
+        <var name="tgs" id="1299309654393496801" />
+      </scope>
+      <scope id="1299309654393496801" at="12,0,17,0">
+        <var name="ctx" id="1299309654393496801" />
+      </scope>
+      <unit id="1299309654393496801" at="11,0,18,0" name="BaseFrege.textGen.IIConstructor_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393504859">
+    <file name="TypeTuple_TextGen.java">
+      <node id="1299309654393504859" at="15,54,16,55" concept="5" />
+      <node id="1299309654393504881" at="16,55,17,20" concept="1" />
+      <node id="1299309654393505057" at="18,5,19,218" concept="5" />
+      <node id="1299309654393505057" at="19,218,20,70" concept="5" />
+      <node id="1299309654393505057" at="21,37,22,29" concept="1" />
+      <node id="1299309654393505057" at="23,31,24,26" concept="1" />
+      <node id="1299309654393504958" at="27,5,28,20" concept="1" />
+      <node id="1299309654393505057" at="22,29,25,9" concept="3" />
+      <node id="1299309654393505057" at="20,70,26,7" concept="2" />
+      <node id="1299309654393505057" at="17,20,27,5" concept="0" />
+      <node id="1299309654393504859" at="14,0,30,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393505057" at="23,31,24,26" />
+      <scope id="1299309654393505057" at="21,37,25,9" />
+      <scope id="1299309654393505057" at="20,70,26,7">
+        <var name="item" id="1299309654393505057" />
+      </scope>
+      <scope id="1299309654393505057" at="18,5,26,7">
+        <var name="collection" id="1299309654393505057" />
+        <var name="lastItem" id="1299309654393505057" />
+      </scope>
+      <scope id="1299309654393504859" at="15,54,28,20">
+        <var name="tgs" id="1299309654393504859" />
+      </scope>
+      <scope id="1299309654393504859" at="14,0,30,0">
+        <var name="ctx" id="1299309654393504859" />
+      </scope>
+      <unit id="1299309654393504859" at="13,0,31,0" name="BaseFrege.textGen.TypeTuple_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393507255">
+    <file name="TypeList_TextGen.java">
+      <node id="1299309654393507255" at="13,54,14,55" concept="5" />
+      <node id="1299309654393507277" at="14,55,15,20" concept="1" />
+      <node id="1299309654393507440" at="15,20,16,200" concept="1" />
+      <node id="1299309654393507354" at="16,200,17,20" concept="1" />
+      <node id="1299309654393507255" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393507255" at="13,54,17,20">
+        <var name="tgs" id="1299309654393507255" />
+      </scope>
+      <scope id="1299309654393507255" at="12,0,19,0">
+        <var name="ctx" id="1299309654393507255" />
+      </scope>
+      <unit id="1299309654393507255" at="11,0,20,0" name="BaseFrege.textGen.TypeList_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393509874">
+    <file name="TypeB_TextGen.java">
+      <node id="1299309654393509874" at="13,54,14,55" concept="5" />
+      <node id="1299309654393509896" at="14,55,15,208" concept="1" />
+      <node id="1299309654393509874" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393509874" at="13,54,15,208">
+        <var name="tgs" id="1299309654393509874" />
+      </scope>
+      <scope id="1299309654393509874" at="12,0,17,0">
+        <var name="ctx" id="1299309654393509874" />
+      </scope>
+      <unit id="1299309654393509874" at="11,0,18,0" name="BaseFrege.textGen.TypeB_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393511650">
+    <file name="TypeVariable_TextGen.java">
+      <node id="1299309654393511650" at="13,54,14,55" concept="5" />
+      <node id="1299309654393511672" at="14,55,15,201" concept="1" />
+      <node id="1299309654393511650" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393511650" at="13,54,15,201">
+        <var name="tgs" id="1299309654393511650" />
+      </scope>
+      <scope id="1299309654393511650" at="12,0,17,0">
+        <var name="ctx" id="1299309654393511650" />
+      </scope>
+      <unit id="1299309654393511650" at="11,0,18,0" name="BaseFrege.textGen.TypeVariable_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393513377">
+    <file name="TypeA_TextGen.java">
+      <node id="1299309654393513377" at="13,54,14,55" concept="5" />
+      <node id="1299309654393513402" at="14,55,15,208" concept="1" />
+      <node id="1299309654393513377" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393513377" at="13,54,15,208">
+        <var name="tgs" id="1299309654393513377" />
+      </scope>
+      <scope id="1299309654393513377" at="12,0,17,0">
+        <var name="ctx" id="1299309654393513377" />
+      </scope>
+      <unit id="1299309654393513377" at="11,0,18,0" name="BaseFrege.textGen.TypeA_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393515219">
+    <file name="CoreBoolType_TextGen.java">
+      <node id="1299309654393515219" at="11,54,12,55" concept="5" />
+      <node id="1299309654393515241" at="12,55,13,23" concept="1" />
+      <node id="1299309654393515219" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393515219" at="11,54,13,23">
+        <var name="tgs" id="1299309654393515219" />
+      </scope>
+      <scope id="1299309654393515219" at="10,0,15,0">
+        <var name="ctx" id="1299309654393515219" />
+      </scope>
+      <unit id="1299309654393515219" at="9,0,16,0" name="BaseFrege.textGen.CoreBoolType_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393515327">
+    <file name="CoreCharType_TextGen.java">
+      <node id="1299309654393515327" at="11,54,12,55" concept="5" />
+      <node id="1299309654393515352" at="12,55,13,23" concept="1" />
+      <node id="1299309654393515327" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393515327" at="11,54,13,23">
+        <var name="tgs" id="1299309654393515327" />
+      </scope>
+      <scope id="1299309654393515327" at="10,0,15,0">
+        <var name="ctx" id="1299309654393515327" />
+      </scope>
+      <unit id="1299309654393515327" at="9,0,16,0" name="BaseFrege.textGen.CoreCharType_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393515466">
+    <file name="CoreIntType_TextGen.java">
+      <node id="1299309654393515466" at="11,54,12,55" concept="5" />
+      <node id="1299309654393515491" at="12,55,13,22" concept="1" />
+      <node id="1299309654393515466" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393515466" at="11,54,13,22">
+        <var name="tgs" id="1299309654393515466" />
+      </scope>
+      <scope id="1299309654393515466" at="10,0,15,0">
+        <var name="ctx" id="1299309654393515466" />
+      </scope>
+      <unit id="1299309654393515466" at="9,0,16,0" name="BaseFrege.textGen.CoreIntType_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393515862">
+    <file name="TypeVariableReference_TextGen.java">
+      <node id="1299309654393515862" at="13,54,14,55" concept="5" />
+      <node id="1299309654393516274" at="14,55,15,197" concept="1" />
+      <node id="1299309654393515862" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393515862" at="13,54,15,197">
+        <var name="tgs" id="1299309654393515862" />
+      </scope>
+      <scope id="1299309654393515862" at="12,0,17,0">
+        <var name="ctx" id="1299309654393515862" />
+      </scope>
+      <unit id="1299309654393515862" at="11,0,18,0" name="BaseFrege.textGen.TypeVariableReference_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393526594">
+    <file name="TypeFunction_TextGen.java">
+      <node id="1299309654393526594" at="15,54,16,55" concept="5" />
+      <node id="1299309654393526619" at="17,5,18,222" concept="5" />
+      <node id="1299309654393526619" at="18,222,19,70" concept="5" />
+      <node id="1299309654393526619" at="20,37,21,29" concept="1" />
+      <node id="1299309654393526619" at="22,31,23,29" concept="1" />
+      <node id="1299309654393526619" at="21,29,24,9" concept="3" />
+      <node id="1299309654393526619" at="19,70,25,7" concept="2" />
+      <node id="1299309654393526619" at="16,55,26,5" concept="0" />
+      <node id="1299309654393526594" at="14,0,28,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393526619" at="22,31,23,29" />
+      <scope id="1299309654393526619" at="20,37,24,9" />
+      <scope id="1299309654393526619" at="19,70,25,7">
+        <var name="item" id="1299309654393526619" />
+      </scope>
+      <scope id="1299309654393526619" at="17,5,25,7">
+        <var name="collection" id="1299309654393526619" />
+        <var name="lastItem" id="1299309654393526619" />
+      </scope>
+      <scope id="1299309654393526594" at="15,54,26,5">
+        <var name="tgs" id="1299309654393526594" />
+      </scope>
+      <scope id="1299309654393526594" at="14,0,28,0">
+        <var name="ctx" id="1299309654393526594" />
+      </scope>
+      <unit id="1299309654393526594" at="13,0,29,0" name="BaseFrege.textGen.TypeFunction_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393529447">
+    <file name="LocalTypeReferenceUsage_TextGen.java">
+      <node id="1299309654393529447" at="16,54,17,55" concept="5" />
+      <node id="1299309654393552054" at="17,55,18,37" concept="7" />
+      <node id="1299309654393552063" at="18,37,19,202" concept="1" />
+      <node id="1299309654393552068" at="19,202,20,0" concept="8" />
+      <node id="1299309654393552069" at="20,0,21,41" concept="7" />
+      <node id="4491238300286628556" at="22,233,23,22" concept="1" />
+      <node id="1299309654393552071" at="24,7,25,224" concept="5" />
+      <node id="1299309654393552071" at="25,224,26,72" concept="5" />
+      <node id="1299309654393552071" at="27,39,28,31" concept="1" />
+      <node id="1299309654393552071" at="29,33,30,28" concept="1" />
+      <node id="1299309654393552071" at="28,31,31,11" concept="3" />
+      <node id="1299309654393552071" at="26,72,32,9" concept="2" />
+      <node id="1299309654393552071" at="23,22,33,7" concept="0" />
+      <node id="4491238300286611160" at="21,41,34,5" concept="3" />
+      <node id="1299309654393529447" at="15,0,36,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393552071" at="29,33,30,28" />
+      <scope id="1299309654393552071" at="27,39,31,11" />
+      <scope id="1299309654393552071" at="26,72,32,9">
+        <var name="item" id="1299309654393552071" />
+      </scope>
+      <scope id="1299309654393552071" at="24,7,32,9">
+        <var name="collection" id="1299309654393552071" />
+        <var name="lastItem" id="1299309654393552071" />
+      </scope>
+      <scope id="4491238300286611162" at="22,233,33,7" />
+      <scope id="1299309654393529447" at="16,54,34,5">
+        <var name="tgs" id="1299309654393529447" />
+      </scope>
+      <scope id="1299309654393529447" at="15,0,36,0">
+        <var name="ctx" id="1299309654393529447" />
+      </scope>
+      <unit id="1299309654393529447" at="14,0,37,0" name="BaseFrege.textGen.LocalTypeReferenceUsage_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393529494">
+    <file name="ImportedTypeReferenceUsage_TextGen.java">
+      <node id="1299309654393529494" at="15,54,16,55" concept="5" />
+      <node id="1299309654393529528" at="16,55,17,43" concept="7" />
+      <node id="1299309654393532903" at="17,43,18,200" concept="1" />
+      <node id="1299309654393535434" at="18,200,19,20" concept="1" />
+      <node id="1299309654393536107" at="19,20,20,202" concept="1" />
+      <node id="1299309654393544553" at="20,202,21,0" concept="8" />
+      <node id="1299309654393545034" at="21,0,22,47" concept="7" />
+      <node id="1299309654393546032" at="23,5,24,222" concept="5" />
+      <node id="1299309654393546032" at="24,222,25,70" concept="5" />
+      <node id="1299309654393546032" at="26,37,27,29" concept="1" />
+      <node id="1299309654393546032" at="28,31,29,26" concept="1" />
+      <node id="1299309654393546032" at="27,29,30,9" concept="3" />
+      <node id="1299309654393546032" at="25,70,31,7" concept="2" />
+      <node id="1299309654393546032" at="22,47,32,5" concept="0" />
+      <node id="1299309654393529494" at="14,0,34,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393546032" at="28,31,29,26" />
+      <scope id="1299309654393546032" at="26,37,30,9" />
+      <scope id="1299309654393546032" at="25,70,31,7">
+        <var name="item" id="1299309654393546032" />
+      </scope>
+      <scope id="1299309654393546032" at="23,5,31,7">
+        <var name="collection" id="1299309654393546032" />
+        <var name="lastItem" id="1299309654393546032" />
+      </scope>
+      <scope id="1299309654393529494" at="15,54,32,5">
+        <var name="tgs" id="1299309654393529494" />
+      </scope>
+      <scope id="1299309654393529494" at="14,0,34,0">
+        <var name="ctx" id="1299309654393529494" />
+      </scope>
+      <unit id="1299309654393529494" at="13,0,35,0" name="BaseFrege.textGen.ImportedTypeReferenceUsage_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/1299309654393553174">
+    <file name="Type_TextGen.java">
+      <node id="1299309654393553174" at="15,54,16,55" concept="5" />
+      <node id="1299309654393553196" at="16,55,17,23" concept="1" />
+      <node id="2210819511196507151" at="17,23,18,20" concept="1" />
+      <node id="2210819511196507244" at="18,20,19,200" concept="1" />
+      <node id="2210819511196509623" at="19,200,20,20" concept="1" />
+      <node id="2210819511196510260" at="21,5,22,226" concept="5" />
+      <node id="2210819511196510260" at="22,226,23,70" concept="5" />
+      <node id="2210819511196510260" at="24,37,25,29" concept="1" />
+      <node id="2210819511196510260" at="26,31,27,26" concept="1" />
+      <node id="2210819511196513494" at="30,5,31,22" concept="1" />
+      <node id="2210819511196514189" at="31,22,32,203" concept="1" />
+      <node id="2210819511196510260" at="25,29,28,9" concept="3" />
+      <node id="2210819511196510260" at="23,70,29,7" concept="2" />
+      <node id="2210819511196510260" at="20,20,30,5" concept="0" />
+      <node id="1299309654393553174" at="14,0,34,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196510260" at="26,31,27,26" />
+      <scope id="2210819511196510260" at="24,37,28,9" />
+      <scope id="2210819511196510260" at="23,70,29,7">
+        <var name="item" id="2210819511196510260" />
+      </scope>
+      <scope id="2210819511196510260" at="21,5,29,7">
+        <var name="collection" id="2210819511196510260" />
+        <var name="lastItem" id="2210819511196510260" />
+      </scope>
+      <scope id="1299309654393553174" at="15,54,32,203">
+        <var name="tgs" id="1299309654393553174" />
+      </scope>
+      <scope id="1299309654393553174" at="14,0,34,0">
+        <var name="ctx" id="1299309654393553174" />
+      </scope>
+      <unit id="1299309654393553174" at="13,0,35,0" name="BaseFrege.textGen.Type_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196164870">
+    <file name="Annotation_TextGen.java">
+      <node id="2210819511196164870" at="15,54,16,55" concept="5" />
+      <node id="2210819511196177248" at="17,5,18,217" concept="5" />
+      <node id="2210819511196177248" at="18,217,19,70" concept="5" />
+      <node id="2210819511196177248" at="20,37,21,29" concept="1" />
+      <node id="2210819511196177248" at="22,31,23,26" concept="1" />
+      <node id="2210819511196181311" at="26,5,27,23" concept="1" />
+      <node id="2210819511196181700" at="27,23,28,199" concept="1" />
+      <node id="2210819511196177248" at="21,29,24,9" concept="3" />
+      <node id="2210819511196177248" at="19,70,25,7" concept="2" />
+      <node id="2210819511196177248" at="16,55,26,5" concept="0" />
+      <node id="2210819511196164870" at="14,0,30,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196177248" at="22,31,23,26" />
+      <scope id="2210819511196177248" at="20,37,24,9" />
+      <scope id="2210819511196177248" at="19,70,25,7">
+        <var name="item" id="2210819511196177248" />
+      </scope>
+      <scope id="2210819511196177248" at="17,5,25,7">
+        <var name="collection" id="2210819511196177248" />
+        <var name="lastItem" id="2210819511196177248" />
+      </scope>
+      <scope id="2210819511196164870" at="15,54,28,199">
+        <var name="tgs" id="2210819511196164870" />
+      </scope>
+      <scope id="2210819511196164870" at="14,0,30,0">
+        <var name="ctx" id="2210819511196164870" />
+      </scope>
+      <unit id="2210819511196164870" at="13,0,31,0" name="BaseFrege.textGen.Annotation_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196184284">
+    <file name="FullType_TextGen.java">
+      <node id="2210819511196184284" at="13,54,14,55" concept="5" />
+      <node id="2210819511196184306" at="14,55,15,200" concept="1" />
+      <node id="2210819511196184284" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196184284" at="13,54,15,200">
+        <var name="tgs" id="2210819511196184284" />
+      </scope>
+      <scope id="2210819511196184284" at="12,0,17,0">
+        <var name="ctx" id="2210819511196184284" />
+      </scope>
+      <unit id="2210819511196184284" at="11,0,18,0" name="BaseFrege.textGen.FullType_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196186526">
+    <file name="AIOperator_TextGen.java">
+      <node id="2210819511196186526" at="13,54,14,55" concept="5" />
+      <node id="2210819511196186551" at="14,55,15,20" concept="1" />
+      <node id="2210819511196186709" at="15,20,16,201" concept="1" />
+      <node id="2210819511196186620" at="16,201,17,20" concept="1" />
+      <node id="2210819511196186526" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196186526" at="13,54,17,20">
+        <var name="tgs" id="2210819511196186526" />
+      </scope>
+      <scope id="2210819511196186526" at="12,0,19,0">
+        <var name="ctx" id="2210819511196186526" />
+      </scope>
+      <unit id="2210819511196186526" at="11,0,20,0" name="BaseFrege.textGen.AIOperator_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196188480">
+    <file name="AIVariable_TextGen.java">
+      <node id="2210819511196188480" at="13,54,14,55" concept="5" />
+      <node id="2210819511196188505" at="14,55,15,201" concept="1" />
+      <node id="2210819511196188480" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196188480" at="13,54,15,201">
+        <var name="tgs" id="2210819511196188480" />
+      </scope>
+      <scope id="2210819511196188480" at="12,0,17,0">
+        <var name="ctx" id="2210819511196188480" />
+      </scope>
+      <unit id="2210819511196188480" at="11,0,18,0" name="BaseFrege.textGen.AIVariable_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196190361">
+    <file name="LineComment_TextGen.java">
+      <node id="2210819511196190361" at="13,54,14,55" concept="5" />
+      <node id="2210819511196190383" at="14,55,15,21" concept="1" />
+      <node id="2210819511196190500" at="15,21,16,20" concept="1" />
+      <node id="2210819511196190541" at="16,20,17,193" concept="1" />
+      <node id="2210819511196190361" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196190361" at="13,54,17,193">
+        <var name="tgs" id="2210819511196190361" />
+      </scope>
+      <scope id="2210819511196190361" at="12,0,19,0">
+        <var name="ctx" id="2210819511196190361" />
+      </scope>
+      <unit id="2210819511196190361" at="11,0,20,0" name="BaseFrege.textGen.LineComment_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196192340">
+    <file name="BlockComment_TextGen.java">
+      <node id="2210819511196192340" at="15,54,16,55" concept="5" />
+      <node id="2210819511196192371" at="16,55,17,21" concept="1" />
+      <node id="2210819511196322889" at="17,21,18,0" concept="8" />
+      <node id="2210819511196192340" at="18,0,19,44" concept="1" />
+      <node id="2210819511196192648" at="19,44,20,18" concept="1" />
+      <node id="2210819511196347583" at="21,230,22,19" concept="1" />
+      <node id="2210819511196201008" at="22,19,23,27" concept="1" />
+      <node id="2210819511196201259" at="23,27,24,20" concept="1" />
+      <node id="2210819511196192340" at="25,5,26,44" concept="1" />
+      <node id="2210819511196323217" at="26,44,27,0" concept="8" />
+      <node id="2210819511196415421" at="27,0,28,17" concept="1" />
+      <node id="2210819511196192467" at="28,17,29,21" concept="1" />
+      <node id="2210819511196199137" at="20,18,25,5" concept="2" />
+      <node id="2210819511196192340" at="14,0,31,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196199143" at="21,230,24,20" />
+      <scope id="2210819511196199137" at="20,18,25,5">
+        <var name="part" id="2210819511196199139" />
+      </scope>
+      <scope id="2210819511196192340" at="15,54,29,21">
+        <var name="tgs" id="2210819511196192340" />
+      </scope>
+      <scope id="2210819511196192340" at="14,0,31,0">
+        <var name="ctx" id="2210819511196192340" />
+      </scope>
+      <unit id="2210819511196192340" at="13,0,32,0" name="BaseFrege.textGen.BlockComment_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196234524">
+    <file name="BCLine_TextGen.java">
+      <node id="2210819511196234524" at="13,54,14,55" concept="5" />
+      <node id="2210819511196234546" at="14,55,15,193" concept="1" />
+      <node id="2210819511196234524" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196234524" at="13,54,15,193">
+        <var name="tgs" id="2210819511196234524" />
+      </scope>
+      <scope id="2210819511196234524" at="12,0,17,0">
+        <var name="ctx" id="2210819511196234524" />
+      </scope>
+      <unit id="2210819511196234524" at="11,0,18,0" name="BaseFrege.textGen.BCLine_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196236218">
+    <file name="BCNestedComment_TextGen.java">
+      <node id="2210819511196236218" at="13,54,14,55" concept="5" />
+      <node id="2210819511196236240" at="14,55,15,203" concept="1" />
+      <node id="2210819511196236218" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196236218" at="13,54,15,203">
+        <var name="tgs" id="2210819511196236218" />
+      </scope>
+      <scope id="2210819511196236218" at="12,0,17,0">
+        <var name="ctx" id="2210819511196236218" />
+      </scope>
+      <unit id="2210819511196236218" at="11,0,18,0" name="BaseFrege.textGen.BCNestedComment_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196456150">
+    <file name="EmptyLine_TextGen.java">
+      <node id="2210819511196456150" at="11,54,12,55" concept="5" />
+      <node id="4491238300282680266" at="12,55,13,26" concept="7" />
+      <node id="2210819511196456150" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196456150" at="11,54,13,26">
+        <var name="tgs" id="2210819511196456150" />
+      </scope>
+      <scope id="2210819511196456150" at="10,0,15,0">
+        <var name="ctx" id="2210819511196456150" />
+      </scope>
+      <unit id="2210819511196456150" at="9,0,16,0" name="BaseFrege.textGen.EmptyLine_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196456490">
+    <file name="FDA_TextGen.java">
+      <node id="2210819511196456490" at="11,54,12,55" concept="5" />
+      <node id="2210819511196456512" at="12,55,13,49" concept="1" />
+      <node id="2210819511196456490" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196456490" at="11,54,13,49">
+        <var name="tgs" id="2210819511196456490" />
+      </scope>
+      <scope id="2210819511196456490" at="10,0,15,0">
+        <var name="ctx" id="2210819511196456490" />
+      </scope>
+      <unit id="2210819511196456490" at="9,0,16,0" name="BaseFrege.textGen.FDA_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196479827">
+    <file name="Fixity_TextGen.java">
+      <node id="2210819511196479827" at="14,54,15,55" concept="5" />
+      <node id="2210819511196479852" at="15,55,16,200" concept="1" />
+      <node id="2210819511196482322" at="16,200,17,20" concept="1" />
+      <node id="2210819511196482973" at="17,20,18,215" concept="1" />
+      <node id="2210819511196498159" at="18,215,19,20" concept="1" />
+      <node id="2210819511196499171" at="19,20,20,203" concept="1" />
+      <node id="2210819511196479827" at="13,0,22,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196479827" at="14,54,20,203">
+        <var name="tgs" id="2210819511196479827" />
+      </scope>
+      <scope id="2210819511196479827" at="13,0,22,0">
+        <var name="ctx" id="2210819511196479827" />
+      </scope>
+      <unit id="2210819511196479827" at="12,0,23,0" name="BaseFrege.textGen.Fixity_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196502053">
+    <file name="Infix_TextGen.java">
+      <node id="2210819511196502053" at="11,54,12,55" concept="5" />
+      <node id="2210819511196502075" at="12,55,13,24" concept="1" />
+      <node id="2210819511196502053" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196502053" at="11,54,13,24">
+        <var name="tgs" id="2210819511196502053" />
+      </scope>
+      <scope id="2210819511196502053" at="10,0,15,0">
+        <var name="ctx" id="2210819511196502053" />
+      </scope>
+      <unit id="2210819511196502053" at="9,0,16,0" name="BaseFrege.textGen.Infix_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196502158">
+    <file name="Infixl_TextGen.java">
+      <node id="2210819511196502158" at="11,54,12,55" concept="5" />
+      <node id="2210819511196502180" at="12,55,13,25" concept="1" />
+      <node id="2210819511196502158" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196502158" at="11,54,13,25">
+        <var name="tgs" id="2210819511196502158" />
+      </scope>
+      <scope id="2210819511196502158" at="10,0,15,0">
+        <var name="ctx" id="2210819511196502158" />
+      </scope>
+      <unit id="2210819511196502158" at="9,0,16,0" name="BaseFrege.textGen.Infixl_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196502266">
+    <file name="Infixr_TextGen.java">
+      <node id="2210819511196502266" at="11,54,12,55" concept="5" />
+      <node id="2210819511196502291" at="12,55,13,25" concept="1" />
+      <node id="2210819511196502266" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196502266" at="11,54,13,25">
+        <var name="tgs" id="2210819511196502266" />
+      </scope>
+      <scope id="2210819511196502266" at="10,0,15,0">
+        <var name="ctx" id="2210819511196502266" />
+      </scope>
+      <unit id="2210819511196502266" at="9,0,16,0" name="BaseFrege.textGen.Infixr_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196502580">
+    <file name="FunctionDefinition_TextGen.java">
+      <node id="2210819511196502580" at="11,54,12,55" concept="5" />
+      <node id="2210819511196502617" at="12,55,13,49" concept="1" />
+      <node id="2210819511196502580" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196502580" at="11,54,13,49">
+        <var name="tgs" id="2210819511196502580" />
+      </scope>
+      <scope id="2210819511196502580" at="10,0,15,0">
+        <var name="ctx" id="2210819511196502580" />
+      </scope>
+      <unit id="2210819511196502580" at="9,0,16,0" name="BaseFrege.textGen.FunctionDefinition_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196502712">
+    <file name="LetDefinitions_TextGen.java">
+      <node id="2210819511196502712" at="15,54,16,55" concept="5" />
+      <node id="2210819511196589108" at="17,238,18,20" concept="1" />
+      <node id="4491238300287205686" at="18,20,19,19" concept="1" />
+      <node id="2210819511196502875" at="19,19,20,33" concept="1" />
+      <node id="2210819511196502868" at="16,55,21,5" concept="2" />
+      <node id="2210819511196502712" at="14,0,23,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196502873" at="17,238,20,33" />
+      <scope id="2210819511196502868" at="16,55,21,5">
+        <var name="definition" id="2210819511196502869" />
+      </scope>
+      <scope id="2210819511196502712" at="15,54,21,5">
+        <var name="tgs" id="2210819511196502712" />
+      </scope>
+      <scope id="2210819511196502712" at="14,0,23,0">
+        <var name="ctx" id="2210819511196502712" />
+      </scope>
+      <unit id="2210819511196502712" at="13,0,24,0" name="BaseFrege.textGen.LetDefinitions_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196517266">
+    <file name="FDGrouped_TextGen.java">
+      <node id="2210819511196517266" at="15,54,16,55" concept="5" />
+      <node id="4491238300287382268" at="16,55,17,31" concept="5" />
+      <node id="2210819511196520141" at="19,23,20,22" concept="1" />
+      <node id="9041766481411154956" at="20,22,21,21" concept="1" />
+      <node id="4491238300287383097" at="22,7,23,24" concept="1" />
+      <node id="2210819511196519625" at="23,24,24,30" concept="1" />
+      <node id="4491238300287382763" at="18,236,22,7" concept="3" />
+      <node id="2210819511196517291" at="17,31,25,5" concept="2" />
+      <node id="2210819511196517266" at="14,0,27,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4491238300287382765" at="19,23,21,21" />
+      <scope id="2210819511196517294" at="18,236,24,30" />
+      <scope id="2210819511196517291" at="17,31,25,5">
+        <var name="matcher" id="2210819511196517292" />
+      </scope>
+      <scope id="2210819511196517266" at="15,54,25,5">
+        <var name="afterFirst" id="4491238300287382271" />
+        <var name="tgs" id="2210819511196517266" />
+      </scope>
+      <scope id="2210819511196517266" at="14,0,27,0">
+        <var name="ctx" id="2210819511196517266" />
+      </scope>
+      <unit id="2210819511196517266" at="13,0,28,0" name="BaseFrege.textGen.FDGrouped_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196520273">
+    <file name="FDAssignment_TextGen.java">
+      <node id="2210819511196520273" at="13,54,14,55" concept="5" />
+      <node id="2210819511196543677" at="14,55,15,19" concept="7" />
+      <node id="2210819511196520301" at="15,19,16,203" concept="1" />
+      <node id="2210819511196522858" at="16,203,17,22" concept="1" />
+      <node id="2210819511196523565" at="17,22,18,204" concept="1" />
+      <node id="2210819511196542061" at="18,204,19,0" concept="8" />
+      <node id="2210819511196545165" at="19,0,20,13" concept="7" />
+      <node id="2210819511196534320" at="21,201,22,46" concept="1" />
+      <node id="2210819511196527266" at="22,46,23,20" concept="1" />
+      <node id="2210819511196588099" at="23,20,24,19" concept="1" />
+      <node id="2210819511196530844" at="24,19,25,203" concept="1" />
+      <node id="2210819511196534320" at="25,203,26,46" concept="1" />
+      <node id="2210819511196534318" at="20,13,27,5" concept="3" />
+      <node id="2210819511196520273" at="12,0,29,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196534320" at="21,201,26,46" />
+      <scope id="2210819511196520273" at="13,54,27,5">
+        <var name="tgs" id="2210819511196520273" />
+      </scope>
+      <scope id="2210819511196520273" at="12,0,29,0">
+        <var name="ctx" id="2210819511196520273" />
+      </scope>
+      <unit id="2210819511196520273" at="11,0,30,0" name="BaseFrege.textGen.FDAssignment_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196546767">
+    <file name="FDGuards_TextGen.java">
+      <node id="2210819511196546767" at="13,54,14,55" concept="5" />
+      <node id="2210819511196548408" at="14,55,15,203" concept="1" />
+      <node id="2210819511196583151" at="15,203,16,0" concept="8" />
+      <node id="2210819511196546767" at="16,0,17,44" concept="1" />
+      <node id="2210819511196551105" at="17,44,18,18" concept="1" />
+      <node id="2210819511196552119" at="18,18,19,202" concept="1" />
+      <node id="2210819511196583798" at="19,202,20,0" concept="8" />
+      <node id="4491238300282949083" at="21,201,22,46" concept="1" />
+      <node id="2210819511196556302" at="22,46,23,20" concept="1" />
+      <node id="2210819511196585615" at="23,20,24,19" concept="1" />
+      <node id="2210819511196558301" at="24,19,25,203" concept="1" />
+      <node id="4491238300282949083" at="25,203,26,46" concept="1" />
+      <node id="2210819511196546767" at="27,5,28,44" concept="1" />
+      <node id="4491238300282949081" at="20,0,27,5" concept="3" />
+      <node id="2210819511196546767" at="12,0,30,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4491238300282949083" at="21,201,26,46" />
+      <scope id="2210819511196546767" at="13,54,28,44">
+        <var name="tgs" id="2210819511196546767" />
+      </scope>
+      <scope id="2210819511196546767" at="12,0,30,0">
+        <var name="ctx" id="2210819511196546767" />
+      </scope>
+      <unit id="2210819511196546767" at="11,0,31,0" name="BaseFrege.textGen.FDGuards_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196562081">
+    <file name="Guard_TextGen.java">
+      <node id="2210819511196562081" at="13,54,14,55" concept="5" />
+      <node id="2210819511196562103" at="14,55,15,20" concept="1" />
+      <node id="2210819511196562180" at="15,20,16,20" concept="1" />
+      <node id="2210819511196562248" at="16,20,17,204" concept="1" />
+      <node id="2210819511196563843" at="17,204,18,22" concept="1" />
+      <node id="2210819511196564195" at="18,22,19,205" concept="1" />
+      <node id="2210819511196562081" at="12,0,21,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196562081" at="13,54,19,205">
+        <var name="tgs" id="2210819511196562081" />
+      </scope>
+      <scope id="2210819511196562081" at="12,0,21,0">
+        <var name="ctx" id="2210819511196562081" />
+      </scope>
+      <unit id="2210819511196562081" at="11,0,22,0" name="BaseFrege.textGen.Guard_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196566078">
+    <file name="FDGGuards_TextGen.java">
+      <node id="2210819511196566078" at="15,54,16,55" concept="5" />
+      <node id="4491238300283177550" at="17,232,18,19" concept="1" />
+      <node id="2210819511196570329" at="18,19,19,28" concept="1" />
+      <node id="2210819511196574311" at="19,28,20,20" concept="1" />
+      <node id="2210819511196566100" at="16,55,21,5" concept="2" />
+      <node id="2210819511196566078" at="14,0,23,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196566103" at="17,232,20,20" />
+      <scope id="2210819511196566100" at="16,55,21,5">
+        <var name="guard" id="2210819511196566101" />
+      </scope>
+      <scope id="2210819511196566078" at="15,54,21,5">
+        <var name="tgs" id="2210819511196566078" />
+      </scope>
+      <scope id="2210819511196566078" at="14,0,23,0">
+        <var name="ctx" id="2210819511196566078" />
+      </scope>
+      <unit id="2210819511196566078" at="13,0,24,0" name="BaseFrege.textGen.FDGGuards_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196588914">
+    <file name="WherePart_TextGen.java">
+      <node id="2210819511196588914" at="13,54,14,55" concept="5" />
+      <node id="2210819511196588939" at="14,55,15,24" concept="1" />
+      <node id="2210819511196588914" at="15,24,16,44" concept="1" />
+      <node id="2210819511196589187" at="16,44,17,202" concept="1" />
+      <node id="2210819511196588914" at="17,202,18,44" concept="1" />
+      <node id="2210819511196588914" at="12,0,20,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196588914" at="13,54,18,44">
+        <var name="tgs" id="2210819511196588914" />
+      </scope>
+      <scope id="2210819511196588914" at="12,0,20,0">
+        <var name="ctx" id="2210819511196588914" />
+      </scope>
+      <unit id="2210819511196588914" at="11,0,21,0" name="BaseFrege.textGen.WherePart_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196592448">
+    <file name="PatternWrapper_TextGen.java">
+      <node id="2210819511196592448" at="13,54,14,55" concept="5" />
+      <node id="2210819511196592473" at="14,55,15,203" concept="1" />
+      <node id="2210819511196592448" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196592448" at="13,54,15,203">
+        <var name="tgs" id="2210819511196592448" />
+      </scope>
+      <scope id="2210819511196592448" at="12,0,17,0">
+        <var name="ctx" id="2210819511196592448" />
+      </scope>
+      <unit id="2210819511196592448" at="11,0,18,0" name="BaseFrege.textGen.PatternWrapper_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196594453">
+    <file name="PatternOperator_TextGen.java">
+      <node id="2210819511196594453" at="13,54,14,55" concept="5" />
+      <node id="2210819511196594478" at="14,55,15,208" concept="1" />
+      <node id="2210819511196597030" at="15,208,16,20" concept="1" />
+      <node id="2210819511196597720" at="16,20,17,204" concept="1" />
+      <node id="2210819511196600726" at="17,204,18,20" concept="1" />
+      <node id="2210819511196601728" at="18,20,19,209" concept="1" />
+      <node id="2210819511196594453" at="12,0,21,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196594453" at="13,54,19,209">
+        <var name="tgs" id="2210819511196594453" />
+      </scope>
+      <scope id="2210819511196594453" at="12,0,21,0">
+        <var name="ctx" id="2210819511196594453" />
+      </scope>
+      <unit id="2210819511196594453" at="11,0,22,0" name="BaseFrege.textGen.PatternOperator_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196604444">
+    <file name="PVarOperator_TextGen.java">
+      <node id="2210819511196604444" at="13,54,14,55" concept="5" />
+      <node id="2210819511196604475" at="14,55,15,204" concept="1" />
+      <node id="2210819511196604444" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196604444" at="13,54,15,204">
+        <var name="tgs" id="2210819511196604444" />
+      </scope>
+      <scope id="2210819511196604444" at="12,0,17,0">
+        <var name="ctx" id="2210819511196604444" />
+      </scope>
+      <unit id="2210819511196604444" at="11,0,18,0" name="BaseFrege.textGen.PVarOperator_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196606383">
+    <file name="PatternOperatorInGroup_TextGen.java">
+      <node id="2210819511196606383" at="14,54,15,55" concept="5" />
+      <node id="2210819511196606408" at="15,55,16,208" concept="1" />
+      <node id="2210819511196606413" at="16,208,17,20" concept="1" />
+      <node id="2210819511196606415" at="17,20,18,115" concept="1" />
+      <node id="2210819511196606420" at="18,115,19,20" concept="1" />
+      <node id="2210819511196606422" at="19,20,20,209" concept="1" />
+      <node id="2210819511196606383" at="13,0,22,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196606383" at="14,54,20,209">
+        <var name="tgs" id="2210819511196606383" />
+      </scope>
+      <scope id="2210819511196606383" at="13,0,22,0">
+        <var name="ctx" id="2210819511196606383" />
+      </scope>
+      <unit id="2210819511196606383" at="12,0,23,0" name="BaseFrege.textGen.PatternOperatorInGroup_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196615435">
+    <file name="PatternFunction_TextGen.java">
+      <node id="2210819511196615435" at="15,54,16,55" concept="5" />
+      <node id="2210819511196615463" at="16,55,17,200" concept="1" />
+      <node id="2210819511196617726" at="17,200,18,20" concept="1" />
+      <node id="2210819511196618128" at="19,5,20,222" concept="5" />
+      <node id="2210819511196618128" at="20,222,21,70" concept="5" />
+      <node id="2210819511196618128" at="22,37,23,29" concept="1" />
+      <node id="2210819511196618128" at="24,31,25,26" concept="1" />
+      <node id="2210819511196618128" at="23,29,26,9" concept="3" />
+      <node id="2210819511196618128" at="21,70,27,7" concept="2" />
+      <node id="2210819511196618128" at="18,20,28,5" concept="0" />
+      <node id="2210819511196615435" at="14,0,30,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196618128" at="24,31,25,26" />
+      <scope id="2210819511196618128" at="22,37,26,9" />
+      <scope id="2210819511196618128" at="21,70,27,7">
+        <var name="item" id="2210819511196618128" />
+      </scope>
+      <scope id="2210819511196618128" at="19,5,27,7">
+        <var name="collection" id="2210819511196618128" />
+        <var name="lastItem" id="2210819511196618128" />
+      </scope>
+      <scope id="2210819511196615435" at="15,54,28,5">
+        <var name="tgs" id="2210819511196615435" />
+      </scope>
+      <scope id="2210819511196615435" at="14,0,30,0">
+        <var name="ctx" id="2210819511196615435" />
+      </scope>
+      <unit id="2210819511196615435" at="13,0,31,0" name="BaseFrege.textGen.PatternFunction_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196622056">
+    <file name="PatternFunctionInGroup_TextGen.java">
+      <node id="2210819511196622056" at="16,54,17,55" concept="5" />
+      <node id="2210819511196622093" at="17,55,18,111" concept="1" />
+      <node id="2210819511196622098" at="18,111,19,20" concept="1" />
+      <node id="2210819511196622100" at="20,5,21,222" concept="5" />
+      <node id="2210819511196622100" at="21,222,22,70" concept="5" />
+      <node id="2210819511196622100" at="23,37,24,29" concept="1" />
+      <node id="2210819511196622100" at="25,31,26,26" concept="1" />
+      <node id="2210819511196622100" at="24,29,27,9" concept="3" />
+      <node id="2210819511196622100" at="22,70,28,7" concept="2" />
+      <node id="2210819511196622100" at="19,20,29,5" concept="0" />
+      <node id="2210819511196622056" at="15,0,31,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196622100" at="25,31,26,26" />
+      <scope id="2210819511196622100" at="23,37,27,9" />
+      <scope id="2210819511196622100" at="22,70,28,7">
+        <var name="item" id="2210819511196622100" />
+      </scope>
+      <scope id="2210819511196622100" at="20,5,28,7">
+        <var name="collection" id="2210819511196622100" />
+        <var name="lastItem" id="2210819511196622100" />
+      </scope>
+      <scope id="2210819511196622056" at="16,54,29,5">
+        <var name="tgs" id="2210819511196622056" />
+      </scope>
+      <scope id="2210819511196622056" at="15,0,31,0">
+        <var name="ctx" id="2210819511196622056" />
+      </scope>
+      <unit id="2210819511196622056" at="14,0,32,0" name="BaseFrege.textGen.PatternFunctionInGroup_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196624445">
+    <file name="PLiteral_TextGen.java">
+      <node id="2210819511196624445" at="13,54,14,55" concept="5" />
+      <node id="2210819511196624467" at="14,55,15,201" concept="1" />
+      <node id="2210819511196624445" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196624445" at="13,54,15,201">
+        <var name="tgs" id="2210819511196624445" />
+      </scope>
+      <scope id="2210819511196624445" at="12,0,17,0">
+        <var name="ctx" id="2210819511196624445" />
+      </scope>
+      <unit id="2210819511196624445" at="11,0,18,0" name="BaseFrege.textGen.PLiteral_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196626764">
+    <file name="DoubleValue_TextGen.java">
+      <node id="2210819511196626764" at="13,54,14,55" concept="5" />
+      <node id="2210819511196626789" at="14,55,15,193" concept="1" />
+      <node id="2210819511196626764" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196626764" at="13,54,15,193">
+        <var name="tgs" id="2210819511196626764" />
+      </scope>
+      <scope id="2210819511196626764" at="12,0,17,0">
+        <var name="ctx" id="2210819511196626764" />
+      </scope>
+      <unit id="2210819511196626764" at="11,0,18,0" name="BaseFrege.textGen.DoubleValue_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196629053">
+    <file name="CharValue_TextGen.java">
+      <node id="2210819511196629053" at="13,54,14,55" concept="5" />
+      <node id="4491238300286087020" at="14,55,15,21" concept="1" />
+      <node id="2210819511196629075" at="15,21,16,193" concept="1" />
+      <node id="4491238300286087473" at="16,193,17,21" concept="1" />
+      <node id="2210819511196629053" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196629053" at="13,54,17,21">
+        <var name="tgs" id="2210819511196629053" />
+      </scope>
+      <scope id="2210819511196629053" at="12,0,19,0">
+        <var name="ctx" id="2210819511196629053" />
+      </scope>
+      <unit id="2210819511196629053" at="11,0,20,0" name="BaseFrege.textGen.CharValue_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196631178">
+    <file name="IntegerValue_TextGen.java">
+      <node id="2210819511196631178" at="13,54,14,55" concept="5" />
+      <node id="2210819511196631200" at="14,55,15,193" concept="1" />
+      <node id="2210819511196631178" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196631178" at="13,54,15,193">
+        <var name="tgs" id="2210819511196631178" />
+      </scope>
+      <scope id="2210819511196631178" at="12,0,17,0">
+        <var name="ctx" id="2210819511196631178" />
+      </scope>
+      <unit id="2210819511196631178" at="11,0,18,0" name="BaseFrege.textGen.IntegerValue_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196633460">
+    <file name="StringValue_TextGen.java">
+      <node id="2210819511196633460" at="13,54,14,55" concept="5" />
+      <node id="2210819511196633482" at="14,55,15,21" concept="1" />
+      <node id="2210819511196633603" at="15,21,16,193" concept="1" />
+      <node id="2210819511196633547" at="16,193,17,21" concept="1" />
+      <node id="2210819511196633460" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196633460" at="13,54,17,21">
+        <var name="tgs" id="2210819511196633460" />
+      </scope>
+      <scope id="2210819511196633460" at="12,0,19,0">
+        <var name="ctx" id="2210819511196633460" />
+      </scope>
+      <unit id="2210819511196633460" at="11,0,20,0" name="BaseFrege.textGen.StringValue_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196635773">
+    <file name="TrueValue_TextGen.java">
+      <node id="2210819511196635773" at="11,54,12,55" concept="5" />
+      <node id="2210819511196635795" at="12,55,13,23" concept="1" />
+      <node id="2210819511196635773" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196635773" at="11,54,13,23">
+        <var name="tgs" id="2210819511196635773" />
+      </scope>
+      <scope id="2210819511196635773" at="10,0,15,0">
+        <var name="ctx" id="2210819511196635773" />
+      </scope>
+      <unit id="2210819511196635773" at="9,0,16,0" name="BaseFrege.textGen.TrueValue_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196635878">
+    <file name="FalseValue_TextGen.java">
+      <node id="2210819511196635878" at="11,54,12,55" concept="5" />
+      <node id="2210819511196635903" at="12,55,13,24" concept="1" />
+      <node id="2210819511196635878" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196635878" at="11,54,13,24">
+        <var name="tgs" id="2210819511196635878" />
+      </scope>
+      <scope id="2210819511196635878" at="10,0,15,0">
+        <var name="ctx" id="2210819511196635878" />
+      </scope>
+      <unit id="2210819511196635878" at="9,0,16,0" name="BaseFrege.textGen.FalseValue_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196636077">
+    <file name="PVarWildcard_TextGen.java">
+      <node id="2210819511196636077" at="11,54,12,55" concept="5" />
+      <node id="2210819511196636099" at="12,55,13,20" concept="1" />
+      <node id="2210819511196636077" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196636077" at="11,54,13,20">
+        <var name="tgs" id="2210819511196636077" />
+      </scope>
+      <scope id="2210819511196636077" at="10,0,15,0">
+        <var name="ctx" id="2210819511196636077" />
+      </scope>
+      <unit id="2210819511196636077" at="9,0,16,0" name="BaseFrege.textGen.PVarWildcard_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196636210">
+    <file name="PListVar_TextGen.java">
+      <node id="2210819511196636210" at="13,54,14,55" concept="5" />
+      <node id="2210819511196636330" at="14,55,15,204" concept="1" />
+      <node id="2210819511196636210" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196636210" at="13,54,15,204">
+        <var name="tgs" id="2210819511196636210" />
+      </scope>
+      <scope id="2210819511196636210" at="12,0,17,0">
+        <var name="ctx" id="2210819511196636210" />
+      </scope>
+      <unit id="2210819511196636210" at="11,0,18,0" name="BaseFrege.textGen.PListVar_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196638944">
+    <file name="PTuple_TextGen.java">
+      <node id="2210819511196638944" at="15,54,16,55" concept="5" />
+      <node id="2210819511196638966" at="16,55,17,20" concept="1" />
+      <node id="2210819511196639117" at="17,20,18,205" concept="1" />
+      <node id="2210819511196641848" at="18,205,19,20" concept="1" />
+      <node id="2210819511196643337" at="20,5,21,228" concept="5" />
+      <node id="2210819511196643337" at="21,228,22,70" concept="5" />
+      <node id="2210819511196643337" at="23,37,24,29" concept="1" />
+      <node id="2210819511196643337" at="25,31,26,26" concept="1" />
+      <node id="2210819511196639031" at="29,5,30,20" concept="1" />
+      <node id="2210819511196643337" at="24,29,27,9" concept="3" />
+      <node id="2210819511196643337" at="22,70,28,7" concept="2" />
+      <node id="2210819511196643337" at="19,20,29,5" concept="0" />
+      <node id="2210819511196638944" at="14,0,32,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196643337" at="25,31,26,26" />
+      <scope id="2210819511196643337" at="23,37,27,9" />
+      <scope id="2210819511196643337" at="22,70,28,7">
+        <var name="item" id="2210819511196643337" />
+      </scope>
+      <scope id="2210819511196643337" at="20,5,28,7">
+        <var name="collection" id="2210819511196643337" />
+        <var name="lastItem" id="2210819511196643337" />
+      </scope>
+      <scope id="2210819511196638944" at="15,54,30,20">
+        <var name="tgs" id="2210819511196638944" />
+      </scope>
+      <scope id="2210819511196638944" at="14,0,32,0">
+        <var name="ctx" id="2210819511196638944" />
+      </scope>
+      <unit id="2210819511196638944" at="13,0,33,0" name="BaseFrege.textGen.PTuple_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196646875">
+    <file name="PListColon_TextGen.java">
+      <node id="2210819511196646875" at="15,54,16,55" concept="5" />
+      <node id="2210819511196646900" at="16,55,17,20" concept="1" />
+      <node id="2210819511196647040" at="18,5,19,218" concept="5" />
+      <node id="2210819511196647040" at="19,218,20,70" concept="5" />
+      <node id="2210819511196647040" at="21,37,22,29" concept="1" />
+      <node id="2210819511196647040" at="23,31,24,26" concept="1" />
+      <node id="2210819511196650262" at="27,5,28,20" concept="1" />
+      <node id="2210819511196650703" at="28,20,29,200" concept="1" />
+      <node id="2210819511196646954" at="29,200,30,20" concept="1" />
+      <node id="2210819511196647040" at="22,29,25,9" concept="3" />
+      <node id="2210819511196647040" at="20,70,26,7" concept="2" />
+      <node id="2210819511196647040" at="17,20,27,5" concept="0" />
+      <node id="2210819511196646875" at="14,0,32,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196647040" at="23,31,24,26" />
+      <scope id="2210819511196647040" at="21,37,25,9" />
+      <scope id="2210819511196647040" at="20,70,26,7">
+        <var name="item" id="2210819511196647040" />
+      </scope>
+      <scope id="2210819511196647040" at="18,5,26,7">
+        <var name="collection" id="2210819511196647040" />
+        <var name="lastItem" id="2210819511196647040" />
+      </scope>
+      <scope id="2210819511196646875" at="15,54,30,20">
+        <var name="tgs" id="2210819511196646875" />
+      </scope>
+      <scope id="2210819511196646875" at="14,0,32,0">
+        <var name="ctx" id="2210819511196646875" />
+      </scope>
+      <unit id="2210819511196646875" at="13,0,33,0" name="BaseFrege.textGen.PListColon_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196653500">
+    <file name="PListBracket_TextGen.java">
+      <node id="2210819511196653500" at="15,54,16,55" concept="5" />
+      <node id="2210819511196653525" at="16,55,17,20" concept="1" />
+      <node id="2210819511196653817" at="18,5,19,218" concept="5" />
+      <node id="2210819511196653817" at="19,218,20,70" concept="5" />
+      <node id="2210819511196653817" at="21,37,22,29" concept="1" />
+      <node id="2210819511196653817" at="23,31,24,26" concept="1" />
+      <node id="2210819511196653594" at="27,5,28,20" concept="1" />
+      <node id="2210819511196653817" at="22,29,25,9" concept="3" />
+      <node id="2210819511196653817" at="20,70,26,7" concept="2" />
+      <node id="2210819511196653817" at="17,20,27,5" concept="0" />
+      <node id="2210819511196653500" at="14,0,30,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196653817" at="23,31,24,26" />
+      <scope id="2210819511196653817" at="21,37,25,9" />
+      <scope id="2210819511196653817" at="20,70,26,7">
+        <var name="item" id="2210819511196653817" />
+      </scope>
+      <scope id="2210819511196653817" at="18,5,26,7">
+        <var name="collection" id="2210819511196653817" />
+        <var name="lastItem" id="2210819511196653817" />
+      </scope>
+      <scope id="2210819511196653500" at="15,54,28,20">
+        <var name="tgs" id="2210819511196653500" />
+      </scope>
+      <scope id="2210819511196653500" at="14,0,30,0">
+        <var name="ctx" id="2210819511196653500" />
+      </scope>
+      <unit id="2210819511196653500" at="13,0,31,0" name="BaseFrege.textGen.PListBracket_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196656838">
+    <file name="PLEBPlaceholder_TextGen.java">
+      <node id="2210819511196656838" at="11,54,12,55" concept="5" />
+      <node id="2210819511196656954" at="12,55,13,26" concept="7" />
+      <node id="2210819511196656838" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196656838" at="11,54,13,26">
+        <var name="tgs" id="2210819511196656838" />
+      </scope>
+      <scope id="2210819511196656838" at="10,0,15,0">
+        <var name="ctx" id="2210819511196656838" />
+      </scope>
+      <unit id="2210819511196656838" at="9,0,16,0" name="BaseFrege.textGen.PLEBPlaceholder_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196657055">
+    <file name="PLEBPatternArgument_TextGen.java">
+      <node id="2210819511196657055" at="13,54,14,55" concept="5" />
+      <node id="2210819511196657077" at="14,55,15,199" concept="1" />
+      <node id="2210819511196657055" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196657055" at="13,54,15,199">
+        <var name="tgs" id="2210819511196657055" />
+      </scope>
+      <scope id="2210819511196657055" at="12,0,17,0">
+        <var name="ctx" id="2210819511196657055" />
+      </scope>
+      <unit id="2210819511196657055" at="11,0,18,0" name="BaseFrege.textGen.PLEBPatternArgument_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196660337">
+    <file name="PConstructor_TextGen.java">
+      <node id="2210819511196660337" at="17,54,18,55" concept="5" />
+      <node id="2210819511196660362" at="19,113,20,22" concept="1" />
+      <node id="2210819511196660619" at="21,5,22,207" concept="1" />
+      <node id="2210819511196686001" at="23,233,24,22" concept="1" />
+      <node id="2210819511196686053" at="25,7,26,224" concept="5" />
+      <node id="2210819511196686053" at="26,224,27,72" concept="5" />
+      <node id="2210819511196686053" at="28,39,29,31" concept="1" />
+      <node id="2210819511196686053" at="30,33,31,28" concept="1" />
+      <node id="2210819511196660431" at="36,113,37,22" concept="1" />
+      <node id="5105858644694530292" at="18,55,21,5" concept="3" />
+      <node id="2210819511196686053" at="29,31,32,11" concept="3" />
+      <node id="5105858644694535157" at="35,5,38,5" concept="3" />
+      <node id="2210819511196686053" at="27,72,33,9" concept="2" />
+      <node id="2210819511196686053" at="24,22,34,7" concept="0" />
+      <node id="2210819511196663158" at="22,207,35,5" concept="3" />
+      <node id="2210819511196660337" at="16,0,40,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5105858644694530294" at="19,113,20,22" />
+      <scope id="2210819511196686053" at="30,33,31,28" />
+      <scope id="5105858644694535158" at="36,113,37,22" />
+      <scope id="2210819511196686053" at="28,39,32,11" />
+      <scope id="2210819511196686053" at="27,72,33,9">
+        <var name="item" id="2210819511196686053" />
+      </scope>
+      <scope id="2210819511196686053" at="25,7,33,9">
+        <var name="collection" id="2210819511196686053" />
+        <var name="lastItem" id="2210819511196686053" />
+      </scope>
+      <scope id="2210819511196663160" at="23,233,34,7" />
+      <scope id="2210819511196660337" at="17,54,38,5">
+        <var name="tgs" id="2210819511196660337" />
+      </scope>
+      <scope id="2210819511196660337" at="16,0,40,0">
+        <var name="ctx" id="2210819511196660337" />
+      </scope>
+      <unit id="2210819511196660337" at="15,0,41,0" name="BaseFrege.textGen.PConstructor_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196688923">
+    <file name="PBracket_TextGen.java">
+      <node id="2210819511196688923" at="13,54,14,55" concept="5" />
+      <node id="2210819511196688948" at="14,55,15,20" concept="1" />
+      <node id="2210819511196689043" at="15,20,16,204" concept="1" />
+      <node id="2210819511196689002" at="16,204,17,20" concept="1" />
+      <node id="2210819511196688923" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196688923" at="13,54,17,20">
+        <var name="tgs" id="2210819511196688923" />
+      </scope>
+      <scope id="2210819511196688923" at="12,0,19,0">
+        <var name="ctx" id="2210819511196688923" />
+      </scope>
+      <unit id="2210819511196688923" at="11,0,20,0" name="BaseFrege.textGen.PBracket_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196691486">
+    <file name="Expression_TextGen.java">
+      <node id="2210819511196691486" at="13,54,14,55" concept="5" />
+      <node id="2210819511196691514" at="14,55,15,205" concept="1" />
+      <node id="2210819511196697842" at="16,199,17,25" concept="1" />
+      <node id="2210819511196697951" at="17,25,18,201" concept="1" />
+      <node id="2210819511196693377" at="15,205,19,5" concept="3" />
+      <node id="2210819511196691486" at="12,0,21,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196693379" at="16,199,18,201" />
+      <scope id="2210819511196691486" at="13,54,19,5">
+        <var name="tgs" id="2210819511196691486" />
+      </scope>
+      <scope id="2210819511196691486" at="12,0,21,0">
+        <var name="ctx" id="2210819511196691486" />
+      </scope>
+      <unit id="2210819511196691486" at="11,0,22,0" name="BaseFrege.textGen.Expression_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196699947">
+    <file name="BinaryExpressions_TextGen.java">
+      <node id="2210819511196699947" at="16,54,17,55" concept="5" />
+      <node id="2210819511196699975" at="17,55,18,214" concept="1" />
+      <node id="2210819511196716974" at="19,239,20,22" concept="1" />
+      <node id="2210819511196717011" at="21,7,22,230" concept="5" />
+      <node id="2210819511196717011" at="22,230,23,72" concept="5" />
+      <node id="2210819511196717011" at="24,39,25,31" concept="1" />
+      <node id="2210819511196717011" at="26,33,27,28" concept="1" />
+      <node id="2210819511196717011" at="25,31,28,11" concept="3" />
+      <node id="2210819511196717011" at="23,72,29,9" concept="2" />
+      <node id="2210819511196717011" at="20,22,30,7" concept="0" />
+      <node id="2210819511196701838" at="18,214,31,5" concept="3" />
+      <node id="2210819511196699947" at="15,0,33,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196717011" at="26,33,27,28" />
+      <scope id="2210819511196717011" at="24,39,28,11" />
+      <scope id="2210819511196717011" at="23,72,29,9">
+        <var name="item" id="2210819511196717011" />
+      </scope>
+      <scope id="2210819511196717011" at="21,7,29,9">
+        <var name="collection" id="2210819511196717011" />
+        <var name="lastItem" id="2210819511196717011" />
+      </scope>
+      <scope id="2210819511196701840" at="19,239,30,7" />
+      <scope id="2210819511196699947" at="16,54,31,5">
+        <var name="tgs" id="2210819511196699947" />
+      </scope>
+      <scope id="2210819511196699947" at="15,0,33,0">
+        <var name="ctx" id="2210819511196699947" />
+      </scope>
+      <unit id="2210819511196699947" at="14,0,34,0" name="BaseFrege.textGen.BinaryExpressions_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196719005">
+    <file name="BinExPart_TextGen.java">
+      <node id="2210819511196719005" at="13,54,14,55" concept="5" />
+      <node id="2210819511196719030" at="14,55,15,204" concept="1" />
+      <node id="2210819511196720879" at="15,204,16,20" concept="1" />
+      <node id="2210819511196721455" at="16,20,17,209" concept="1" />
+      <node id="2210819511196719005" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196719005" at="13,54,17,209">
+        <var name="tgs" id="2210819511196719005" />
+      </scope>
+      <scope id="2210819511196719005" at="12,0,19,0">
+        <var name="ctx" id="2210819511196719005" />
+      </scope>
+      <unit id="2210819511196719005" at="11,0,20,0" name="BaseFrege.textGen.BinExPart_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196723368">
+    <file name="Case_TextGen.java">
+      <node id="2210819511196723368" at="15,54,16,55" concept="5" />
+      <node id="2210819511196726134" at="16,55,17,17" concept="7" />
+      <node id="2210819511196723393" at="17,17,18,23" concept="1" />
+      <node id="2210819511196723462" at="18,23,19,20" concept="1" />
+      <node id="2210819511196723530" at="19,20,20,205" concept="1" />
+      <node id="2210819511196725427" at="20,205,21,20" concept="1" />
+      <node id="2210819511196725771" at="21,20,22,21" concept="1" />
+      <node id="2210819511196726456" at="22,21,23,0" concept="8" />
+      <node id="2210819511196726771" at="23,0,24,25" concept="7" />
+      <node id="2210819511196723368" at="24,25,25,44" concept="1" />
+      <node id="2210819511196732555" at="26,229,27,20" concept="1" />
+      <node id="2210819511196732863" at="27,20,28,19" concept="1" />
+      <node id="2210819511196730848" at="28,19,29,27" concept="1" />
+      <node id="2210819511196723368" at="30,5,31,44" concept="1" />
+      <node id="2210819511196727460" at="25,44,30,5" concept="2" />
+      <node id="2210819511196723368" at="14,0,33,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196727466" at="26,229,29,27" />
+      <scope id="2210819511196727460" at="25,44,30,5">
+        <var name="part" id="2210819511196727462" />
+      </scope>
+      <scope id="2210819511196723368" at="15,54,31,44">
+        <var name="tgs" id="2210819511196723368" />
+      </scope>
+      <scope id="2210819511196723368" at="14,0,33,0">
+        <var name="ctx" id="2210819511196723368" />
+      </scope>
+      <unit id="2210819511196723368" at="13,0,34,0" name="BaseFrege.textGen.Case_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196734413">
+    <file name="CPExprToGuards_TextGen.java">
+      <node id="2210819511196734413" at="15,54,16,55" concept="5" />
+      <node id="2210819511196753922" at="16,55,17,23" concept="7" />
+      <node id="2210819511196753924" at="17,23,18,203" concept="1" />
+      <node id="2210819511196734413" at="18,203,19,44" concept="1" />
+      <node id="2210819511196759850" at="20,232,21,20" concept="1" />
+      <node id="2210819511196760688" at="21,20,22,19" concept="1" />
+      <node id="2210819511196760731" at="22,19,23,28" concept="1" />
+      <node id="2210819511196761632" at="24,5,25,0" concept="8" />
+      <node id="2210819511196753937" at="25,0,26,13" concept="7" />
+      <node id="2210819511196753940" at="27,201,28,46" concept="1" />
+      <node id="2210819511196753943" at="28,46,29,19" concept="1" />
+      <node id="2210819511196753944" at="29,19,30,203" concept="1" />
+      <node id="2210819511196753940" at="30,203,31,46" concept="1" />
+      <node id="2210819511196734413" at="32,5,33,44" concept="1" />
+      <node id="2210819511196758313" at="19,44,24,5" concept="2" />
+      <node id="2210819511196753939" at="26,13,32,5" concept="3" />
+      <node id="2210819511196734413" at="14,0,35,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196758316" at="20,232,23,28" />
+      <scope id="2210819511196753940" at="27,201,31,46" />
+      <scope id="2210819511196758313" at="19,44,24,5">
+        <var name="guard" id="2210819511196758314" />
+      </scope>
+      <scope id="2210819511196734413" at="15,54,33,44">
+        <var name="tgs" id="2210819511196734413" />
+      </scope>
+      <scope id="2210819511196734413" at="14,0,35,0">
+        <var name="ctx" id="2210819511196734413" />
+      </scope>
+      <unit id="2210819511196734413" at="13,0,36,0" name="BaseFrege.textGen.CPExprToGuards_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196734460">
+    <file name="CPExprToExpr_TextGen.java">
+      <node id="2210819511196734460" at="13,54,14,55" concept="5" />
+      <node id="2210819511196740063" at="14,55,15,29" concept="7" />
+      <node id="2210819511196734488" at="15,29,16,203" concept="1" />
+      <node id="2210819511196736256" at="16,203,17,23" concept="1" />
+      <node id="2210819511196736608" at="17,23,18,206" concept="1" />
+      <node id="2210819511196740581" at="18,206,19,0" concept="8" />
+      <node id="2210819511196741055" at="19,0,20,13" concept="7" />
+      <node id="2210819511196741565" at="21,201,22,46" concept="1" />
+      <node id="2210819511196750084" at="22,46,23,19" concept="1" />
+      <node id="2210819511196747571" at="23,19,24,203" concept="1" />
+      <node id="2210819511196741565" at="24,203,25,46" concept="1" />
+      <node id="2210819511196741563" at="20,13,26,5" concept="3" />
+      <node id="2210819511196734460" at="12,0,28,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196741565" at="21,201,25,46" />
+      <scope id="2210819511196734460" at="13,54,26,5">
+        <var name="tgs" id="2210819511196734460" />
+      </scope>
+      <scope id="2210819511196734460" at="12,0,28,0">
+        <var name="ctx" id="2210819511196734460" />
+      </scope>
+      <unit id="2210819511196734460" at="11,0,29,0" name="BaseFrege.textGen.CPExprToExpr_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196766418">
+    <file name="GenericApplication_TextGen.java">
+      <node id="2210819511196766418" at="16,54,17,55" concept="5" />
+      <node id="2210819511196766443" at="17,55,18,203" concept="1" />
+      <node id="4491238300282737173" at="19,233,20,22" concept="1" />
+      <node id="2210819511196794943" at="21,7,22,224" concept="5" />
+      <node id="2210819511196794943" at="22,224,23,72" concept="5" />
+      <node id="2210819511196794943" at="24,39,25,31" concept="1" />
+      <node id="2210819511196794943" at="26,33,27,28" concept="1" />
+      <node id="2210819511196794943" at="25,31,28,11" concept="3" />
+      <node id="2210819511196794943" at="23,72,29,9" concept="2" />
+      <node id="2210819511196794943" at="20,22,30,7" concept="0" />
+      <node id="2210819511196768501" at="18,203,31,5" concept="3" />
+      <node id="2210819511196766418" at="15,0,33,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196794943" at="26,33,27,28" />
+      <scope id="2210819511196794943" at="24,39,28,11" />
+      <scope id="2210819511196794943" at="23,72,29,9">
+        <var name="item" id="2210819511196794943" />
+      </scope>
+      <scope id="2210819511196794943" at="21,7,29,9">
+        <var name="collection" id="2210819511196794943" />
+        <var name="lastItem" id="2210819511196794943" />
+      </scope>
+      <scope id="2210819511196768503" at="19,233,30,7" />
+      <scope id="2210819511196766418" at="16,54,31,5">
+        <var name="tgs" id="2210819511196766418" />
+      </scope>
+      <scope id="2210819511196766418" at="15,0,33,0">
+        <var name="ctx" id="2210819511196766418" />
+      </scope>
+      <unit id="2210819511196766418" at="14,0,34,0" name="BaseFrege.textGen.GenericApplication_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196797205">
+    <file name="BracketsApplication_TextGen.java">
+      <node id="2210819511196797205" at="13,54,14,55" concept="5" />
+      <node id="2210819511196797248" at="14,55,15,20" concept="1" />
+      <node id="2210819511196797373" at="15,20,16,206" concept="1" />
+      <node id="2210819511196797317" at="16,206,17,20" concept="1" />
+      <node id="2210819511196797205" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196797205" at="13,54,17,20">
+        <var name="tgs" id="2210819511196797205" />
+      </scope>
+      <scope id="2210819511196797205" at="12,0,19,0">
+        <var name="ctx" id="2210819511196797205" />
+      </scope>
+      <unit id="2210819511196797205" at="11,0,20,0" name="BaseFrege.textGen.BracketsApplication_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196799462">
+    <file name="ConstructorApplication_TextGen.java">
+      <node id="2210819511196799462" at="13,54,14,55" concept="5" />
+      <node id="2210819511196799484" at="14,55,15,207" concept="1" />
+      <node id="2210819511196799462" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196799462" at="13,54,15,207">
+        <var name="tgs" id="2210819511196799462" />
+      </scope>
+      <scope id="2210819511196799462" at="12,0,17,0">
+        <var name="ctx" id="2210819511196799462" />
+      </scope>
+      <unit id="2210819511196799462" at="11,0,18,0" name="BaseFrege.textGen.ConstructorApplication_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196801555">
+    <file name="FunctionApplication_TextGen.java">
+      <node id="2210819511196801555" at="13,54,14,55" concept="5" />
+      <node id="2210819511196801580" at="14,55,15,204" concept="1" />
+      <node id="2210819511196801555" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196801555" at="13,54,15,204">
+        <var name="tgs" id="2210819511196801555" />
+      </scope>
+      <scope id="2210819511196801555" at="12,0,17,0">
+        <var name="ctx" id="2210819511196801555" />
+      </scope>
+      <unit id="2210819511196801555" at="11,0,18,0" name="BaseFrege.textGen.FunctionApplication_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196803658">
+    <file name="ImportedEntityApplication_TextGen.java">
+      <node id="2210819511196803658" at="14,54,15,55" concept="5" />
+      <node id="9041766481411471185" at="15,55,16,377" concept="5" />
+      <node id="9041766481411434767" at="17,24,18,22" concept="1" />
+      <node id="2210819511196803683" at="19,5,20,202" concept="1" />
+      <node id="2210819511196806049" at="20,202,21,20" concept="1" />
+      <node id="2210819511196806410" at="21,20,22,202" concept="1" />
+      <node id="9041766481411434862" at="23,24,24,22" concept="1" />
+      <node id="9041766481411424906" at="16,377,19,5" concept="3" />
+      <node id="9041766481411434858" at="22,202,25,5" concept="3" />
+      <node id="2210819511196803658" at="13,0,27,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="9041766481411424908" at="17,24,18,22" />
+      <scope id="9041766481411434859" at="23,24,24,22" />
+      <scope id="2210819511196803658" at="14,54,25,5">
+        <var name="putToBrackets" id="9041766481411471188" />
+        <var name="tgs" id="2210819511196803658" />
+      </scope>
+      <scope id="2210819511196803658" at="13,0,27,0">
+        <var name="ctx" id="2210819511196803658" />
+      </scope>
+      <unit id="2210819511196803658" at="12,0,28,0" name="BaseFrege.textGen.ImportedEntityApplication_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196809110">
+    <file name="ImportReference_TextGen.java">
+      <node id="2210819511196809110" at="14,54,15,55" concept="5" />
+      <node id="2210819511196816501" at="16,197,17,254" concept="1" />
+      <node id="2210819511196810017" at="15,55,18,5" concept="3" />
+      <node id="2210819511196809110" at="13,0,20,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196810019" at="16,197,17,254" />
+      <scope id="2210819511196809110" at="14,54,18,5">
+        <var name="tgs" id="2210819511196809110" />
+      </scope>
+      <scope id="2210819511196809110" at="13,0,20,0">
+        <var name="ctx" id="2210819511196809110" />
+      </scope>
+      <unit id="2210819511196809110" at="12,0,21,0" name="BaseFrege.textGen.ImportReference_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196821756">
+    <file name="OperatorApplication_TextGen.java">
+      <node id="2210819511196821756" at="15,54,16,55" concept="5" />
+      <node id="3277479710290852051" at="16,55,17,537" concept="5" />
+      <node id="2210819511196821778" at="18,24,19,22" concept="1" />
+      <node id="2210819511196821899" at="20,5,21,204" concept="1" />
+      <node id="3277479710290861294" at="22,24,23,22" concept="1" />
+      <node id="3277479710290858046" at="17,537,20,5" concept="3" />
+      <node id="3277479710290861292" at="21,204,24,5" concept="3" />
+      <node id="2210819511196821756" at="14,0,26,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="3277479710290858048" at="18,24,19,22" />
+      <scope id="3277479710290861293" at="22,24,23,22" />
+      <scope id="2210819511196821756" at="15,54,24,5">
+        <var name="putToBrackets" id="3277479710290852054" />
+        <var name="tgs" id="2210819511196821756" />
+      </scope>
+      <scope id="2210819511196821756" at="14,0,26,0">
+        <var name="ctx" id="2210819511196821756" />
+      </scope>
+      <unit id="2210819511196821756" at="13,0,27,0" name="BaseFrege.textGen.OperatorApplication_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196824097">
+    <file name="Tuple_TextGen.java">
+      <node id="2210819511196824097" at="15,54,16,55" concept="5" />
+      <node id="2210819511196824125" at="16,55,17,20" concept="1" />
+      <node id="2210819511196824322" at="17,20,18,200" concept="1" />
+      <node id="2210819511196826536" at="18,200,19,20" concept="1" />
+      <node id="2210819511196827186" at="20,5,21,216" concept="5" />
+      <node id="2210819511196827186" at="21,216,22,70" concept="5" />
+      <node id="2210819511196827186" at="23,37,24,29" concept="1" />
+      <node id="2210819511196827186" at="25,31,26,26" concept="1" />
+      <node id="2210819511196824179" at="29,5,30,20" concept="1" />
+      <node id="2210819511196827186" at="24,29,27,9" concept="3" />
+      <node id="2210819511196827186" at="22,70,28,7" concept="2" />
+      <node id="2210819511196827186" at="19,20,29,5" concept="0" />
+      <node id="2210819511196824097" at="14,0,32,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196827186" at="25,31,26,26" />
+      <scope id="2210819511196827186" at="23,37,27,9" />
+      <scope id="2210819511196827186" at="22,70,28,7">
+        <var name="item" id="2210819511196827186" />
+      </scope>
+      <scope id="2210819511196827186" at="20,5,28,7">
+        <var name="collection" id="2210819511196827186" />
+        <var name="lastItem" id="2210819511196827186" />
+      </scope>
+      <scope id="2210819511196824097" at="15,54,30,20">
+        <var name="tgs" id="2210819511196824097" />
+      </scope>
+      <scope id="2210819511196824097" at="14,0,32,0">
+        <var name="ctx" id="2210819511196824097" />
+      </scope>
+      <unit id="2210819511196824097" at="13,0,33,0" name="BaseFrege.textGen.Tuple_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196830543">
+    <file name="ListEnumeration_TextGen.java">
+      <node id="2210819511196830543" at="15,54,16,55" concept="5" />
+      <node id="2210819511196830568" at="16,55,17,20" concept="1" />
+      <node id="2210819511196830738" at="18,5,19,218" concept="5" />
+      <node id="2210819511196830738" at="19,218,20,70" concept="5" />
+      <node id="2210819511196830738" at="21,37,22,29" concept="1" />
+      <node id="2210819511196830738" at="23,31,24,26" concept="1" />
+      <node id="2210819511196830649" at="27,5,28,20" concept="1" />
+      <node id="2210819511196830738" at="22,29,25,9" concept="3" />
+      <node id="2210819511196830738" at="20,70,26,7" concept="2" />
+      <node id="2210819511196830738" at="17,20,27,5" concept="0" />
+      <node id="2210819511196830543" at="14,0,30,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196830738" at="23,31,24,26" />
+      <scope id="2210819511196830738" at="21,37,25,9" />
+      <scope id="2210819511196830738" at="20,70,26,7">
+        <var name="item" id="2210819511196830738" />
+      </scope>
+      <scope id="2210819511196830738" at="18,5,26,7">
+        <var name="collection" id="2210819511196830738" />
+        <var name="lastItem" id="2210819511196830738" />
+      </scope>
+      <scope id="2210819511196830543" at="15,54,28,20">
+        <var name="tgs" id="2210819511196830543" />
+      </scope>
+      <scope id="2210819511196830543" at="14,0,30,0">
+        <var name="ctx" id="2210819511196830543" />
+      </scope>
+      <unit id="2210819511196830543" at="13,0,31,0" name="BaseFrege.textGen.ListEnumeration_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196833564">
+    <file name="ListRange_TextGen.java">
+      <node id="2210819511196833564" at="15,54,16,55" concept="5" />
+      <node id="2210819511196833779" at="16,55,17,20" concept="1" />
+      <node id="2210819511196833781" at="18,5,19,218" concept="5" />
+      <node id="2210819511196833781" at="19,218,20,70" concept="5" />
+      <node id="2210819511196833781" at="21,37,22,29" concept="1" />
+      <node id="2210819511196833781" at="23,31,24,26" concept="1" />
+      <node id="2210819511196834193" at="27,5,28,21" concept="1" />
+      <node id="2210819511196839511" at="29,200,30,202" concept="1" />
+      <node id="2210819511196833786" at="31,5,32,20" concept="1" />
+      <node id="2210819511196833781" at="22,29,25,9" concept="3" />
+      <node id="2210819511196834615" at="28,21,31,5" concept="3" />
+      <node id="2210819511196833781" at="20,70,26,7" concept="2" />
+      <node id="2210819511196833781" at="17,20,27,5" concept="0" />
+      <node id="2210819511196833564" at="14,0,34,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196833781" at="23,31,24,26" />
+      <scope id="2210819511196834617" at="29,200,30,202" />
+      <scope id="2210819511196833781" at="21,37,25,9" />
+      <scope id="2210819511196833781" at="20,70,26,7">
+        <var name="item" id="2210819511196833781" />
+      </scope>
+      <scope id="2210819511196833781" at="18,5,26,7">
+        <var name="collection" id="2210819511196833781" />
+        <var name="lastItem" id="2210819511196833781" />
+      </scope>
+      <scope id="2210819511196833564" at="15,54,32,20">
+        <var name="tgs" id="2210819511196833564" />
+      </scope>
+      <scope id="2210819511196833564" at="14,0,34,0">
+        <var name="ctx" id="2210819511196833564" />
+      </scope>
+      <unit id="2210819511196833564" at="13,0,35,0" name="BaseFrege.textGen.ListRange_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196842384">
+    <file name="ListComprehension_TextGen.java">
+      <node id="2210819511196842384" at="15,54,16,55" concept="5" />
+      <node id="2210819511196842916" at="16,55,17,20" concept="1" />
+      <node id="2210819511196846279" at="17,20,18,206" concept="1" />
+      <node id="2210819511196844847" at="18,206,19,20" concept="1" />
+      <node id="2210819511196849602" at="20,5,21,223" concept="5" />
+      <node id="2210819511196849602" at="21,223,22,70" concept="5" />
+      <node id="2210819511196849602" at="23,37,24,29" concept="1" />
+      <node id="2210819511196849602" at="25,31,26,26" concept="1" />
+      <node id="2210819511196842937" at="29,5,30,20" concept="1" />
+      <node id="2210819511196849602" at="24,29,27,9" concept="3" />
+      <node id="2210819511196849602" at="22,70,28,7" concept="2" />
+      <node id="2210819511196849602" at="19,20,29,5" concept="0" />
+      <node id="2210819511196842384" at="14,0,32,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196849602" at="25,31,26,26" />
+      <scope id="2210819511196849602" at="23,37,27,9" />
+      <scope id="2210819511196849602" at="22,70,28,7">
+        <var name="item" id="2210819511196849602" />
+      </scope>
+      <scope id="2210819511196849602" at="20,5,28,7">
+        <var name="collection" id="2210819511196849602" />
+        <var name="lastItem" id="2210819511196849602" />
+      </scope>
+      <scope id="2210819511196842384" at="15,54,30,20">
+        <var name="tgs" id="2210819511196842384" />
+      </scope>
+      <scope id="2210819511196842384" at="14,0,32,0">
+        <var name="ctx" id="2210819511196842384" />
+      </scope>
+      <unit id="2210819511196842384" at="13,0,33,0" name="BaseFrege.textGen.ListComprehension_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196854695">
+    <file name="LCQArrowAssignment_TextGen.java">
+      <node id="2210819511196854695" at="13,54,14,55" concept="5" />
+      <node id="2210819511196854717" at="14,55,15,203" concept="1" />
+      <node id="2210819511196858520" at="15,203,16,23" concept="1" />
+      <node id="2210819511196856481" at="16,23,17,206" concept="1" />
+      <node id="2210819511196854695" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196854695" at="13,54,17,206">
+        <var name="tgs" id="2210819511196854695" />
+      </scope>
+      <scope id="2210819511196854695" at="12,0,19,0">
+        <var name="ctx" id="2210819511196854695" />
+      </scope>
+      <unit id="2210819511196854695" at="11,0,20,0" name="BaseFrege.textGen.LCQArrowAssignment_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196859077">
+    <file name="LCQGuard_TextGen.java">
+      <node id="2210819511196859077" at="13,54,14,55" concept="5" />
+      <node id="2210819511196859176" at="14,55,15,205" concept="1" />
+      <node id="2210819511196859077" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196859077" at="13,54,15,205">
+        <var name="tgs" id="2210819511196859077" />
+      </scope>
+      <scope id="2210819511196859077" at="12,0,17,0">
+        <var name="ctx" id="2210819511196859077" />
+      </scope>
+      <unit id="2210819511196859077" at="11,0,18,0" name="BaseFrege.textGen.LCQGuard_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196859124">
+    <file name="LCQLet_TextGen.java">
+      <node id="2210819511196859124" at="13,54,14,55" concept="5" />
+      <node id="2210819511196860919" at="14,55,15,22" concept="1" />
+      <node id="2210819511196860991" at="15,22,16,20" concept="1" />
+      <node id="2210819511196861054" at="16,20,17,202" concept="1" />
+      <node id="2210819511196859124" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196859124" at="13,54,17,202">
+        <var name="tgs" id="2210819511196859124" />
+      </scope>
+      <scope id="2210819511196859124" at="12,0,19,0">
+        <var name="ctx" id="2210819511196859124" />
+      </scope>
+      <unit id="2210819511196859124" at="11,0,20,0" name="BaseFrege.textGen.LCQLet_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196863880">
+    <file name="IfThenElse_TextGen.java">
+      <node id="2210819511196863880" at="13,54,14,55" concept="5" />
+      <node id="2210819511196863905" at="14,55,15,21" concept="1" />
+      <node id="2210819511196863974" at="15,21,16,20" concept="1" />
+      <node id="2210819511196864027" at="16,20,17,204" concept="1" />
+      <node id="2210819511196865774" at="17,204,18,25" concept="1" />
+      <node id="2210819511196866707" at="18,25,19,199" concept="1" />
+      <node id="2210819511196868729" at="19,199,20,25" concept="1" />
+      <node id="2210819511196869073" at="20,25,21,199" concept="1" />
+      <node id="2210819511196863880" at="12,0,23,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196863880" at="13,54,21,199">
+        <var name="tgs" id="2210819511196863880" />
+      </scope>
+      <scope id="2210819511196863880" at="12,0,23,0">
+        <var name="ctx" id="2210819511196863880" />
+      </scope>
+      <unit id="2210819511196863880" at="11,0,24,0" name="BaseFrege.textGen.IfThenElse_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196871133">
+    <file name="Lambda_TextGen.java">
+      <node id="2210819511196871133" at="13,54,14,55" concept="5" />
+      <node id="2210819511196871161" at="14,55,15,21" concept="1" />
+      <node id="2210819511196871257" at="15,21,16,203" concept="1" />
+      <node id="2210819511196876087" at="16,203,17,20" concept="1" />
+      <node id="2210819511196873392" at="17,20,18,199" concept="1" />
+      <node id="2210819511196871133" at="12,0,20,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196871133" at="13,54,18,199">
+        <var name="tgs" id="2210819511196871133" />
+      </scope>
+      <scope id="2210819511196871133" at="12,0,20,0">
+        <var name="ctx" id="2210819511196871133" />
+      </scope>
+      <unit id="2210819511196871133" at="11,0,21,0" name="BaseFrege.textGen.Lambda_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196876664">
+    <file name="LPExpression_TextGen.java">
+      <node id="2210819511196876664" at="13,54,14,55" concept="5" />
+      <node id="2210819511196876689" at="14,55,15,21" concept="1" />
+      <node id="2210819511196876770" at="15,21,16,20" concept="1" />
+      <node id="2210819511196876826" at="16,20,17,206" concept="1" />
+      <node id="2210819511196876664" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196876664" at="13,54,17,206">
+        <var name="tgs" id="2210819511196876664" />
+      </scope>
+      <scope id="2210819511196876664" at="12,0,19,0">
+        <var name="ctx" id="2210819511196876664" />
+      </scope>
+      <unit id="2210819511196876664" at="11,0,20,0" name="BaseFrege.textGen.LPExpression_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196878969">
+    <file name="LPLambda_TextGen.java">
+      <node id="2210819511196878969" at="13,54,14,55" concept="5" />
+      <node id="2210819511196879000" at="14,55,15,202" concept="1" />
+      <node id="2210819511196878969" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196878969" at="13,54,15,202">
+        <var name="tgs" id="2210819511196878969" />
+      </scope>
+      <scope id="2210819511196878969" at="12,0,17,0">
+        <var name="ctx" id="2210819511196878969" />
+      </scope>
+      <unit id="2210819511196878969" at="11,0,18,0" name="BaseFrege.textGen.LPLambda_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/2210819511196881147">
+    <file name="Let_TextGen.java">
+      <node id="2210819511196881147" at="13,54,14,55" concept="5" />
+      <node id="2210819511196881172" at="14,55,15,22" concept="1" />
+      <node id="2210819511196881147" at="15,22,16,44" concept="1" />
+      <node id="2210819511196883764" at="16,44,17,202" concept="1" />
+      <node id="3156705872693316680" at="17,202,18,18" concept="1" />
+      <node id="3156705872693419438" at="18,18,19,17" concept="1" />
+      <node id="2210819511196884341" at="19,17,20,21" concept="1" />
+      <node id="2210819511196885042" at="20,21,21,20" concept="1" />
+      <node id="2210819511196885778" at="21,20,22,197" concept="1" />
+      <node id="2210819511196881147" at="22,197,23,44" concept="1" />
+      <node id="2210819511196881147" at="12,0,25,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196881147" at="13,54,23,44">
+        <var name="tgs" id="2210819511196881147" />
+      </scope>
+      <scope id="2210819511196881147" at="12,0,25,0">
+        <var name="ctx" id="2210819511196881147" />
+      </scope>
+      <unit id="2210819511196881147" at="11,0,26,0" name="BaseFrege.textGen.Let_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/4491238300282793376">
+    <file name="EmptyExpression_TextGen.java">
+      <node id="4491238300282793376" at="11,54,12,55" concept="5" />
+      <node id="4491238300282793416" at="12,55,13,26" concept="7" />
+      <node id="4491238300282793376" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4491238300282793376" at="11,54,13,26">
+        <var name="tgs" id="4491238300282793376" />
+      </scope>
+      <scope id="4491238300282793376" at="10,0,15,0">
+        <var name="ctx" id="4491238300282793376" />
+      </scope>
+      <unit id="4491238300282793376" at="9,0,16,0" name="BaseFrege.textGen.EmptyExpression_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/5105858644692489643">
+    <file name="CoreDoubleType_TextGen.java">
+      <node id="5105858644692489643" at="11,54,12,55" concept="5" />
+      <node id="5105858644692489699" at="12,55,13,25" concept="1" />
+      <node id="5105858644692489643" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5105858644692489643" at="11,54,13,25">
+        <var name="tgs" id="5105858644692489643" />
+      </scope>
+      <scope id="5105858644692489643" at="10,0,15,0">
+        <var name="ctx" id="5105858644692489643" />
+      </scope>
+      <unit id="5105858644692489643" at="9,0,16,0" name="BaseFrege.textGen.CoreDoubleType_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/5105858644698123033">
+    <file name="NegativeExpression_TextGen.java">
+      <node id="5105858644698123033" at="15,54,16,55" concept="5" />
+      <node id="5105858644698123827" at="16,55,17,309" concept="5" />
+      <node id="5105858644698123837" at="18,24,19,22" concept="1" />
+      <node id="5105858644698123840" at="20,5,21,204" concept="1" />
+      <node id="5105858644698125421" at="21,204,22,206" concept="1" />
+      <node id="5105858644698123847" at="23,24,24,22" concept="1" />
+      <node id="5105858644698123835" at="17,309,20,5" concept="3" />
+      <node id="5105858644698123845" at="22,206,25,5" concept="3" />
+      <node id="5105858644698123033" at="14,0,27,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5105858644698123836" at="18,24,19,22" />
+      <scope id="5105858644698123846" at="23,24,24,22" />
+      <scope id="5105858644698123033" at="15,54,25,5">
+        <var name="putToBrackets" id="5105858644698123828" />
+        <var name="tgs" id="5105858644698123033" />
+      </scope>
+      <scope id="5105858644698123033" at="14,0,27,0">
+        <var name="ctx" id="5105858644698123033" />
+      </scope>
+      <unit id="5105858644698123033" at="13,0,28,0" name="BaseFrege.textGen.NegativeExpression_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/7490587407195674745">
+    <file name="Data_TextGen.java">
+      <node id="7490587407195674745" at="16,54,17,55" concept="5" />
+      <node id="2210819511196438061" at="17,55,18,23" concept="1" />
+      <node id="2210819511196438145" at="18,23,19,20" concept="1" />
+      <node id="2210819511196438223" at="19,20,20,199" concept="1" />
+      <node id="2210819511196440589" at="21,236,22,22" concept="1" />
+      <node id="2210819511196441215" at="23,7,24,227" concept="5" />
+      <node id="2210819511196441215" at="24,227,25,72" concept="5" />
+      <node id="2210819511196441215" at="26,39,27,31" concept="1" />
+      <node id="2210819511196441215" at="28,33,29,28" concept="1" />
+      <node id="2210819511196451045" at="33,5,34,22" concept="1" />
+      <node id="2210819511196451779" at="35,5,36,217" concept="5" />
+      <node id="2210819511196451779" at="36,217,37,70" concept="5" />
+      <node id="2210819511196451779" at="38,37,39,29" concept="1" />
+      <node id="2210819511196451779" at="40,31,41,28" concept="1" />
+      <node id="2210819511196441215" at="27,31,30,11" concept="3" />
+      <node id="2210819511196451779" at="39,29,42,9" concept="3" />
+      <node id="2210819511196441215" at="25,72,31,9" concept="2" />
+      <node id="2210819511196451779" at="37,70,43,7" concept="2" />
+      <node id="2210819511196441215" at="22,22,32,7" concept="0" />
+      <node id="2210819511196451779" at="34,22,44,5" concept="0" />
+      <node id="4491238300286685515" at="20,199,33,5" concept="3" />
+      <node id="7490587407195674745" at="15,0,46,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2210819511196441215" at="28,33,29,28" />
+      <scope id="2210819511196451779" at="40,31,41,28" />
+      <scope id="2210819511196441215" at="26,39,30,11" />
+      <scope id="2210819511196451779" at="38,37,42,9" />
+      <scope id="2210819511196441215" at="25,72,31,9">
+        <var name="item" id="2210819511196441215" />
+      </scope>
+      <scope id="2210819511196451779" at="37,70,43,7">
+        <var name="item" id="2210819511196451779" />
+      </scope>
+      <scope id="2210819511196441215" at="23,7,31,9">
+        <var name="collection" id="2210819511196441215" />
+        <var name="lastItem" id="2210819511196441215" />
+      </scope>
+      <scope id="2210819511196451779" at="35,5,43,7">
+        <var name="collection" id="2210819511196451779" />
+        <var name="lastItem" id="2210819511196451779" />
+      </scope>
+      <scope id="4491238300286685517" at="21,236,32,7" />
+      <scope id="7490587407195674745" at="16,54,44,5">
+        <var name="tgs" id="7490587407195674745" />
+      </scope>
+      <scope id="7490587407195674745" at="15,0,46,0">
+        <var name="ctx" id="7490587407195674745" />
+      </scope>
+      <unit id="7490587407195674745" at="14,0,47,0" name="BaseFrege.textGen.Data_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/7490587407195832929">
+    <file name="Import_TextGen.java">
+      <node id="7490587407195832929" at="15,54,16,55" concept="5" />
+      <node id="7490587407195871250" at="16,55,17,72" concept="7" />
+      <node id="7490587407195870042" at="18,190,19,13" concept="6" />
+      <node id="7490587407195865635" at="20,5,21,0" concept="8" />
+      <node id="7490587407195833000" at="21,0,22,52" concept="7" />
+      <node id="7490587407195834280" at="22,52,23,25" concept="1" />
+      <node id="7490587407195834378" at="23,25,24,20" concept="1" />
+      <node id="7490587407195834465" at="24,20,25,417" concept="1" />
+      <node id="7490587407195842793" at="25,417,26,20" concept="1" />
+      <node id="7490587407195852386" at="26,20,27,0" concept="8" />
+      <node id="7490587407195853267" at="27,0,28,19" concept="7" />
+      <node id="7490587407195850405" at="29,197,30,199" concept="1" />
+      <node id="7490587407195864478" at="30,199,31,22" concept="1" />
+      <node id="7490587407195854159" at="32,5,33,0" concept="8" />
+      <node id="7490587407195855074" at="33,0,34,29" concept="7" />
+      <node id="7490587407195862488" at="35,200,36,202" concept="1" />
+      <node id="7490587407195866849" at="17,72,20,5" concept="3" />
+      <node id="7490587407195856843" at="34,29,37,5" concept="3" />
+      <node id="7490587407195845065" at="28,19,32,5" concept="3" />
+      <node id="7490587407195832929" at="14,0,39,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7490587407195866851" at="18,190,19,13" />
+      <scope id="7490587407195856845" at="35,200,36,202" />
+      <scope id="7490587407195845067" at="29,197,31,22" />
+      <scope id="7490587407195832929" at="15,54,37,5">
+        <var name="tgs" id="7490587407195832929" />
+      </scope>
+      <scope id="7490587407195832929" at="14,0,39,0">
+        <var name="ctx" id="7490587407195832929" />
+      </scope>
+      <unit id="7490587407195832929" at="13,0,40,0" name="BaseFrege.textGen.Import_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/7490587407195872810">
+    <file name="ImportAs_TextGen.java">
+      <node id="7490587407195872810" at="13,54,14,55" concept="5" />
+      <node id="7490587407195872841" at="14,55,15,21" concept="1" />
+      <node id="7490587407195872933" at="15,21,16,20" concept="1" />
+      <node id="7490587407195872989" at="16,20,17,193" concept="1" />
+      <node id="7490587407195872810" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7490587407195872810" at="13,54,17,193">
+        <var name="tgs" id="7490587407195872810" />
+      </scope>
+      <scope id="7490587407195872810" at="12,0,19,0">
+        <var name="ctx" id="7490587407195872810" />
+      </scope>
+      <unit id="7490587407195872810" at="11,0,20,0" name="BaseFrege.textGen.ImportAs_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/7490587407195874694">
+    <file name="ImportHiding_TextGen.java">
+      <node id="7490587407195874694" at="11,54,12,55" concept="5" />
+      <node id="7490587407195874908" at="12,55,13,25" concept="1" />
+      <node id="7490587407195874694" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7490587407195874694" at="11,54,13,25">
+        <var name="tgs" id="7490587407195874694" />
+      </scope>
+      <scope id="7490587407195874694" at="10,0,15,0">
+        <var name="ctx" id="7490587407195874694" />
+      </scope>
+      <unit id="7490587407195874694" at="9,0,16,0" name="BaseFrege.textGen.ImportHiding_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/7490587407195875178">
+    <file name="ImportItems_TextGen.java">
+      <node id="7490587407195875178" at="15,54,16,55" concept="5" />
+      <node id="7490587407195875286" at="16,55,17,29" concept="7" />
+      <node id="7490587407195875209" at="17,29,18,20" concept="1" />
+      <node id="7490587407195888702" at="19,5,20,218" concept="5" />
+      <node id="7490587407195888702" at="20,218,21,70" concept="5" />
+      <node id="7490587407195888702" at="22,37,23,29" concept="1" />
+      <node id="7490587407195888702" at="24,31,25,26" concept="1" />
+      <node id="7490587407195875353" at="28,5,29,20" concept="1" />
+      <node id="7490587407195888702" at="23,29,26,9" concept="3" />
+      <node id="7490587407195888702" at="21,70,27,7" concept="2" />
+      <node id="7490587407195888702" at="18,20,28,5" concept="0" />
+      <node id="7490587407195875178" at="14,0,31,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7490587407195888702" at="24,31,25,26" />
+      <scope id="7490587407195888702" at="22,37,26,9" />
+      <scope id="7490587407195888702" at="21,70,27,7">
+        <var name="item" id="7490587407195888702" />
+      </scope>
+      <scope id="7490587407195888702" at="19,5,27,7">
+        <var name="collection" id="7490587407195888702" />
+        <var name="lastItem" id="7490587407195888702" />
+      </scope>
+      <scope id="7490587407195875178" at="15,54,29,20">
+        <var name="tgs" id="7490587407195875178" />
+      </scope>
+      <scope id="7490587407195875178" at="14,0,31,0">
+        <var name="ctx" id="7490587407195875178" />
+      </scope>
+      <unit id="7490587407195875178" at="13,0,32,0" name="BaseFrege.textGen.ImportItems_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/7490587407195902456">
+    <file name="IIFunction_TextGen.java">
+      <node id="7490587407195902456" at="13,54,14,55" concept="5" />
+      <node id="7490587407195902487" at="14,55,15,204" concept="1" />
+      <node id="7490587407195902456" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7490587407195902456" at="13,54,15,204">
+        <var name="tgs" id="7490587407195902456" />
+      </scope>
+      <scope id="7490587407195902456" at="12,0,17,0">
+        <var name="ctx" id="7490587407195902456" />
+      </scope>
+      <unit id="7490587407195902456" at="11,0,18,0" name="BaseFrege.textGen.IIFunction_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/7490587407195904718">
+    <file name="VariableReference_TextGen.java">
+      <node id="7490587407195904718" at="13,54,14,55" concept="5" />
+      <node id="7490587407195904749" at="14,55,15,197" concept="1" />
+      <node id="7490587407195904718" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7490587407195904718" at="13,54,15,197">
+        <var name="tgs" id="7490587407195904718" />
+      </scope>
+      <scope id="7490587407195904718" at="12,0,17,0">
+        <var name="ctx" id="7490587407195904718" />
+      </scope>
+      <unit id="7490587407195904718" at="11,0,18,0" name="BaseFrege.textGen.VariableReference_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/7490587407195906503">
+    <file name="PVarName_TextGen.java">
+      <node id="7490587407195906503" at="13,54,14,55" concept="5" />
+      <node id="7490587407195906534" at="14,55,15,200" concept="1" />
+      <node id="7490587407195906503" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7490587407195906503" at="13,54,15,200">
+        <var name="tgs" id="7490587407195906503" />
+      </scope>
+      <scope id="7490587407195906503" at="12,0,17,0">
+        <var name="ctx" id="7490587407195906503" />
+      </scope>
+      <unit id="7490587407195906503" at="11,0,18,0" name="BaseFrege.textGen.PVarName_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/7490587407195913345">
+    <file name="NodeVARID_TextGen.java">
+      <node id="7490587407195913345" at="13,54,14,55" concept="5" />
+      <node id="7490587407195913376" at="14,55,15,194" concept="1" />
+      <node id="7490587407195913345" at="12,0,17,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7490587407195913345" at="13,54,15,194">
+        <var name="tgs" id="7490587407195913345" />
+      </scope>
+      <scope id="7490587407195913345" at="12,0,17,0">
+        <var name="ctx" id="7490587407195913345" />
+      </scope>
+      <unit id="7490587407195913345" at="11,0,18,0" name="BaseFrege.textGen.NodeVARID_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/7490587407195970398">
+    <file name="IIType_TextGen.java">
+      <node id="7490587407195970398" at="13,54,14,55" concept="5" />
+      <node id="1299309654393426563" at="14,55,15,200" concept="1" />
+      <node id="1299309654393446492" at="16,211,17,213" concept="1" />
+      <node id="1299309654393430474" at="15,200,18,5" concept="3" />
+      <node id="7490587407195970398" at="12,0,20,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1299309654393430476" at="16,211,17,213" />
+      <scope id="7490587407195970398" at="13,54,18,5">
+        <var name="tgs" id="7490587407195970398" />
+      </scope>
+      <scope id="7490587407195970398" at="12,0,20,0">
+        <var name="ctx" id="7490587407195970398" />
+      </scope>
+      <unit id="7490587407195970398" at="11,0,21,0" name="BaseFrege.textGen.IIType_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:c5f0ccf7-4fc5-497d-905d-c7b468925b56(BaseFrege.textGen)/8695387976346506085">
+    <file name="CoreStringType_TextGen.java">
+      <node id="8695387976346506085" at="11,54,12,55" concept="5" />
+      <node id="8695387976346506110" at="12,55,13,25" concept="1" />
+      <node id="8695387976346506085" at="10,0,15,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8695387976346506085" at="11,54,13,25">
+        <var name="tgs" id="8695387976346506085" />
+      </scope>
+      <scope id="8695387976346506085" at="10,0,15,0">
+        <var name="ctx" id="8695387976346506085" />
+      </scope>
+      <unit id="8695387976346506085" at="9,0,16,0" name="BaseFrege.textGen.CoreStringType_TextGen" />
+    </file>
+  </root>
+</debug-info>
+

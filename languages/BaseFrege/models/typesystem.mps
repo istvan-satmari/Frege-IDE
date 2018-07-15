@@ -2,7 +2,7 @@
 <model ref="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
     <use id="90eaf9a4-a968-473c-8aed-fef10c04a5df" name="BaseFrege" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -188,7 +188,7 @@
       </concept>
     </language>
     <language id="90eaf9a4-a968-473c-8aed-fef10c04a5df" name="BaseFrege">
-      <concept id="5711148124304868435" name="BaseFrege.structure.UndecidableTypeNode" flags="ig" index="27_DqA" />
+      <concept id="5711148124304868435" name="BaseFrege.structure.UnknownTypeNode" flags="ig" index="27_DqA" />
       <concept id="8695387976345195252" name="BaseFrege.structure.StringTypeNode" flags="ig" index="yVyIZ" />
       <concept id="6000650770353823728" name="BaseFrege.structure.BoolTypeNode" flags="ig" index="1BmSv_" />
       <concept id="6000650770353826789" name="BaseFrege.structure.IntTypeNode" flags="ig" index="1BmVfK" />
