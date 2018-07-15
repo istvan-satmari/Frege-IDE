@@ -62,8 +62,8 @@
     <classNode dependClassName="BaseFrege.typesystem.Int_subtypeOf_Double_SubtypingRule" />
     <classNode dependClassName="BaseFrege.typesystem.List_subtypeOf_List_InequationReplacementRule" />
     <classNode dependClassName="BaseFrege.typesystem.Tuple_subtypeOf_Tuple_InequationReplacementRule" />
-    <classNode dependClassName="BaseFrege.typesystem.Undecidable_subtypeOf_AllTypes_InequationReplacementRule" />
     <classNode dependClassName="BaseFrege.typesystem.Undecidable_supertypeOf_AllTypes_InequationReplacementRule" />
+    <classNode dependClassName="BaseFrege.typesystem.Unknown_subtypeOf_AllTypes_InequationReplacementRule" />
     <classNode dependClassName="BaseFrege.typesystem.check_Annotation_NonTypesystemRule" />
     <classNode dependClassName="BaseFrege.typesystem.check_BCLine_NonTypesystemRule" />
     <classNode dependClassName="BaseFrege.typesystem.check_Data_NonTypesystemRule" />
@@ -139,7 +139,7 @@
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.SubtypingRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.BaseHelginsDescriptor" />
   </dependency>
-  <dependency className="BaseFrege.typesystem.Undecidable_subtypeOf_AllTypes_InequationReplacementRule" file="Undecidable_subtypeOf_AllTypes_InequationReplacementRule.java">
+  <dependency className="BaseFrege.typesystem.Undecidable_supertypeOf_AllTypes_InequationReplacementRule" file="Undecidable_supertypeOf_AllTypes_InequationReplacementRule.java">
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicable2Status" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
@@ -149,7 +149,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInequationReplacementRule_Runtime" />
   </dependency>
-  <dependency className="BaseFrege.typesystem.Undecidable_supertypeOf_AllTypes_InequationReplacementRule" file="Undecidable_supertypeOf_AllTypes_InequationReplacementRule.java">
+  <dependency className="BaseFrege.typesystem.Unknown_subtypeOf_AllTypes_InequationReplacementRule" file="Unknown_subtypeOf_AllTypes_InequationReplacementRule.java">
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicable2Status" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />

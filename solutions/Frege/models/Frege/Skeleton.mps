@@ -12927,7 +12927,6 @@
       <node concept="1EnsGK" id="7yGekHqnCtO" role="1EnsGu" />
     </node>
     <node concept="14659P" id="7yGekHqnCtP" role="1kelZ8" />
-    <node concept="14659P" id="7yGekHqnBo4" role="1kelZ8" />
     <node concept="14659P" id="7yGekHqnBuc" role="1kelZ8" />
     <node concept="1VHZ1X" id="3TFGrrKGyB3" role="1kelZ8">
       <property role="1VHZej" value="Simple functions" />

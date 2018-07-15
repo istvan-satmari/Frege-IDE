@@ -1389,7 +1389,7 @@
     <classNode dependClassName="BaseFrege.editor.TypeVariable_Editor" />
     <classNode dependClassName="BaseFrege.editor.TypeVariable_TransformationMenu" />
     <classNode dependClassName="BaseFrege.editor.Type_Editor" />
-    <classNode dependClassName="BaseFrege.editor.UndecidableTypeNode_Editor" />
+    <classNode dependClassName="BaseFrege.editor.UnknownTypeNode_Editor" />
     <classNode dependClassName="BaseFrege.editor.VariableReference_Editor" />
     <classNode dependClassName="BaseFrege.editor.VariableReference_TransformationMenu" />
     <classNode dependClassName="BaseFrege.editor.WherePart_Editor" />
@@ -6891,14 +6891,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="BaseFrege.editor.UndecidableTypeNode_Editor" file="UndecidableTypeNode_Editor.java">
-    <classNode dependClassName="BaseFrege.editor.UndecidableTypeNode_EditorBuilder_a" />
+  <dependency className="BaseFrege.editor.UnknownTypeNode_Editor" file="UnknownTypeNode_Editor.java">
+    <classNode dependClassName="BaseFrege.editor.UnknownTypeNode_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="BaseFrege.editor.UndecidableTypeNode_EditorBuilder_a" file="UndecidableTypeNode_EditorBuilder_a.java">
+  <dependency className="BaseFrege.editor.UnknownTypeNode_EditorBuilder_a" file="UnknownTypeNode_EditorBuilder_a.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />

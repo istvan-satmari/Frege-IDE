@@ -273,7 +273,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 124:
         return Collections.<ConceptEditor>singletonList(new TypeVariableReference_Editor());
       case 125:
-        return Collections.<ConceptEditor>singletonList(new UndecidableTypeNode_Editor());
+        return Collections.<ConceptEditor>singletonList(new UnknownTypeNode_Editor());
       case 126:
         return Collections.<ConceptEditor>singletonList(new VariableReference_Editor());
       case 127:

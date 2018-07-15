@@ -16677,23 +16677,23 @@
     </file>
   </root>
   <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/5711148124304868461">
-    <file name="UndecidableTypeNode_Editor.java">
-      <node id="5711148124304868461" at="11,79,12,85" concept="9" />
+    <file name="UnknownTypeNode_Editor.java">
+      <node id="5711148124304868461" at="11,79,12,81" concept="9" />
       <node id="5711148124304868461" at="11,0,14,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5711148124304868461" at="11,79,12,85" />
+      <scope id="5711148124304868461" at="11,79,12,81" />
       <scope id="5711148124304868461" at="11,0,14,0">
         <var name="editorContext" id="5711148124304868461" />
         <var name="node" id="5711148124304868461" />
       </scope>
-      <unit id="5711148124304868461" at="10,0,15,0" name="BaseFrege.editor.UndecidableTypeNode_Editor" />
+      <unit id="5711148124304868461" at="10,0,15,0" name="BaseFrege.editor.UnknownTypeNode_Editor" />
     </file>
-    <file name="UndecidableTypeNode_EditorBuilder_a.java">
-      <node id="5711148124304868461" at="21,99,22,19" concept="13" />
+    <file name="UnknownTypeNode_EditorBuilder_a.java">
+      <node id="5711148124304868461" at="21,95,22,19" concept="13" />
       <node id="5711148124304868461" at="22,19,23,18" concept="3" />
       <node id="5711148124304868461" at="28,26,29,18" concept="9" />
       <node id="5711148124304868461" at="32,39,33,37" concept="9" />
-      <node id="5711148124304868463" at="36,48,37,104" concept="8" />
-      <node id="5711148124304868463" at="37,104,38,46" concept="3" />
+      <node id="5711148124304868463" at="36,48,37,100" concept="8" />
+      <node id="5711148124304868463" at="37,100,38,46" concept="3" />
       <node id="5711148124304868463" at="38,46,39,28" concept="3" />
       <node id="5711148124304868463" at="39,28,40,65" concept="3" />
       <node id="5711148124304868463" at="40,65,41,34" concept="8" />
@@ -16703,12 +16703,12 @@
       <node id="5711148124304868463" at="44,34,45,22" concept="9" />
       <node id="5711148124304868461" at="18,0,20,0" concept="4" trace="myNode" />
       <node id="5711148124304868461" at="32,0,35,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="5711148124304868461" at="21,0,25,0" concept="2" trace="UndecidableTypeNode_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5711148124304868461" at="21,0,25,0" concept="2" trace="UnknownTypeNode_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5711148124304868461" at="26,0,31,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="5711148124304868463" at="36,0,47,0" concept="7" trace="createConstant_wtllhl_a#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="5711148124304868463" at="36,0,47,0" concept="7" trace="createConstant_tz792b_a#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="5711148124304868461" at="28,26,29,18" />
       <scope id="5711148124304868461" at="32,39,33,37" />
-      <scope id="5711148124304868461" at="21,99,23,18" />
+      <scope id="5711148124304868461" at="21,95,23,18" />
       <scope id="5711148124304868461" at="32,0,35,0" />
       <scope id="5711148124304868461" at="21,0,25,0">
         <var name="context" id="5711148124304868461" />
@@ -16720,7 +16720,7 @@
         <var name="style" id="5711148124304868463" />
       </scope>
       <scope id="5711148124304868463" at="36,0,47,0" />
-      <unit id="5711148124304868461" at="17,0,48,0" name="BaseFrege.editor.UndecidableTypeNode_EditorBuilder_a" />
+      <unit id="5711148124304868461" at="17,0,48,0" name="BaseFrege.editor.UnknownTypeNode_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:84e23219-22ae-4e16-8214-2cceb05a1b8c(BaseFrege.editor)/574920793184786505">

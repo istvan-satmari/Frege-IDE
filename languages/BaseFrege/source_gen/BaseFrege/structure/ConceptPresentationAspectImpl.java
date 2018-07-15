@@ -184,7 +184,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private final ConceptPresentation props_TypeVariable = new ConceptPresentationBuilder().shortDesc("Type variable.").create();
   private final ConceptPresentation props_TypeVariableReference = new ConceptPresentationBuilder().shortDesc("References a type variable.").create();
   private final ConceptPresentation props_TypeWrapper = new ConceptPresentationBuilder().shortDesc("Wrapper around a given type.").create();
-  private final ConceptPresentation props_UndecidableTypeNode = new ConceptPresentationBuilder().shortDesc("Represents a placeholder type (mostly) for variables when the type is not simply decidable.").create();
+  private final ConceptPresentation props_UnknownTypeNode = new ConceptPresentationBuilder().shortDesc("Represents a placeholder type (mostly) for variables when the type is not simply decidable.").create();
   private final ConceptPresentation props_VariableReference = new ConceptPresentationBuilder().shortDesc("References either a function name or a variable.").create();
   private final ConceptPresentation props_WherePart = new ConceptPresentationBuilder().create();
 
@@ -543,8 +543,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_TypeVariableReference;
       case LanguageConceptSwitch.TypeWrapper:
         return props_TypeWrapper;
-      case LanguageConceptSwitch.UndecidableTypeNode:
-        return props_UndecidableTypeNode;
+      case LanguageConceptSwitch.UnknownTypeNode:
+        return props_UnknownTypeNode;
       case LanguageConceptSwitch.VariableReference:
         return props_VariableReference;
       case LanguageConceptSwitch.WherePart:

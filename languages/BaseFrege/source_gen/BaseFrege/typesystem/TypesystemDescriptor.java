@@ -303,11 +303,11 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myInequationReplacementRules.add(eliminationRule);
     }
     {
-      InequationReplacementRule_Runtime eliminationRule = new Undecidable_subtypeOf_AllTypes_InequationReplacementRule();
+      InequationReplacementRule_Runtime eliminationRule = new Undecidable_supertypeOf_AllTypes_InequationReplacementRule();
       this.myInequationReplacementRules.add(eliminationRule);
     }
     {
-      InequationReplacementRule_Runtime eliminationRule = new Undecidable_supertypeOf_AllTypes_InequationReplacementRule();
+      InequationReplacementRule_Runtime eliminationRule = new Unknown_subtypeOf_AllTypes_InequationReplacementRule();
       this.myInequationReplacementRules.add(eliminationRule);
     }
   }

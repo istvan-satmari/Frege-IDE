@@ -2686,8 +2686,8 @@
   <node concept="1TIwiD" id="4X24Jn8P8hj">
     <property role="EcuMT" value="5711148124304868435" />
     <property role="3GE5qa" value="TypeNodes" />
-    <property role="TrG5h" value="UndecidableTypeNode" />
-    <property role="34LRSv" value="Undecidable" />
+    <property role="TrG5h" value="UnknownTypeNode" />
+    <property role="34LRSv" value="Unknown" />
     <property role="R4oN_" value="Represents a placeholder type (mostly) for variables when the type is not simply decidable." />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
   </node>

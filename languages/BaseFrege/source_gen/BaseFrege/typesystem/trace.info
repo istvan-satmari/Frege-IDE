@@ -416,7 +416,7 @@
       <node id="1882624101476830934" at="28,71,29,105" concept="8" />
       <node id="1882624101476830934" at="31,73,32,107" concept="8" />
       <node id="1882624101476830934" at="35,57,36,148" concept="8" />
-      <node id="1882624101476830934" at="38,59,39,147" concept="8" />
+      <node id="1882624101476830934" at="38,59,39,143" concept="8" />
       <node id="1882624101476830934" at="15,0,17,0" concept="1" trace="Undecidable_supertypeOf_AllTypes_InequationReplacementRule#()V" />
       <node id="1882624101476830934" at="17,0,20,0" concept="6" trace="processInequation#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/EquationInfo;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicable2Status;ZZ)V" />
       <node id="1882624101476830934" at="25,0,28,0" concept="6" trace="isWeak#()Z" />
@@ -431,7 +431,7 @@
       <scope id="1882624101476830934" at="28,71,29,105" />
       <scope id="1882624101476830934" at="31,73,32,107" />
       <scope id="1882624101476830934" at="35,57,36,148" />
-      <scope id="1882624101476830934" at="38,59,39,147" />
+      <scope id="1882624101476830934" at="38,59,39,143" />
       <scope id="1882624101476830934" at="15,0,17,0" />
       <scope id="1882624101476830934" at="17,0,20,0">
         <var name="equationInfo" id="1882624101476830934" />
@@ -2526,7 +2526,7 @@
       <node id="2675082928408211786" at="43,0,44,0" concept="10" />
       <node id="2675082928408211251" at="44,0,45,86" concept="9" />
       <node id="9205825421179399739" at="46,5,47,336" concept="7" />
-      <node id="9205825421179399750" at="50,235,51,59" concept="9" />
+      <node id="9205825421179399750" at="50,231,51,59" concept="9" />
       <node id="9205825421179438587" at="52,13,53,392" concept="7" />
       <node id="9205825421179438587" at="53,392,54,194" concept="7" />
       <node id="9205825421179438587" at="54,194,55,275" concept="2" />
@@ -2651,7 +2651,7 @@
       <scope id="9205825421179487476" at="84,13,91,13">
         <var name="i" id="9205825421179487479" />
       </scope>
-      <scope id="9205825421179399749" at="50,235,64,0" />
+      <scope id="9205825421179399749" at="50,231,64,0" />
       <scope id="9205825421179399764" at="65,236,92,0">
         <var name="declaredItemsCount" id="1231066225857818409" />
         <var name="ttn" id="9205825421179399768" />
@@ -2793,9 +2793,9 @@
       <node id="1231066225851665238" at="58,0,59,100" concept="9" />
       <node id="9205825421178966444" at="60,5,61,342" concept="7" />
       <node id="9205825421179024833" at="63,27,64,37" concept="7" />
-      <node id="9205825421178969207" at="65,235,66,59" concept="9" />
-      <node id="9205825421179028610" at="66,59,67,257" concept="2" />
-      <node id="2675082928420361552" at="67,257,68,0" concept="10" />
+      <node id="9205825421178969207" at="65,231,66,59" concept="9" />
+      <node id="9205825421179028610" at="66,59,67,253" concept="2" />
+      <node id="2675082928420361552" at="67,253,68,0" concept="10" />
       <node id="2675082928420361575" at="68,0,69,56" concept="9" />
       <node id="2675082928420371008" at="71,15,72,64" concept="7" />
       <node id="2675082928420371008" at="72,64,73,196" concept="7" />
@@ -2928,7 +2928,7 @@
       <scope id="2675082928408461774" at="123,0,134,0">
         <var name="parameter_1" id="2675082928408461774" />
       </scope>
-      <scope id="9205825421178967276" at="65,235,77,0" />
+      <scope id="9205825421178967276" at="65,231,77,0" />
       <scope id="9205825421178996432" at="78,235,92,0">
         <var name="ltn" id="9205825421179016695" />
         <var name="supposedItemType" id="9205825421179023822" />
@@ -2961,7 +2961,7 @@
       <node id="1231066225852761285" at="25,46,26,55" concept="7" />
       <node id="1231066225852797484" at="27,505,28,13" concept="9" />
       <node id="9205825421179289045" at="29,7,30,340" concept="7" />
-      <node id="9205825421179289056" at="33,237,34,61" concept="9" />
+      <node id="9205825421179289056" at="33,233,34,61" concept="9" />
       <node id="9205825421179314484" at="35,15,36,395" concept="7" />
       <node id="9205825421179314484" at="36,395,37,196" concept="7" />
       <node id="9205825421179314484" at="37,196,38,279" concept="2" />
@@ -3045,7 +3045,7 @@
       <scope id="4227033475010773521" at="83,0,86,0" />
       <scope id="9205825421179289091" at="49,20,55,21" />
       <scope id="1231066225852797569" at="68,12,74,7" />
-      <scope id="9205825421179289055" at="33,237,40,0" />
+      <scope id="9205825421179289055" at="33,233,40,0" />
       <scope id="9205825421179289070" at="41,237,48,0" />
       <scope id="9205825421179314924" at="86,67,93,24">
         <var name="facade" id="9205825421179314924" />
@@ -3417,17 +3417,17 @@
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/5229219098493104564">
-    <file name="Undecidable_subtypeOf_AllTypes_InequationReplacementRule.java">
-      <node id="5229219098493108076" at="17,253,18,91" concept="9" />
+    <file name="Unknown_subtypeOf_AllTypes_InequationReplacementRule.java">
+      <node id="5229219098493108076" at="17,253,18,83" concept="9" />
       <node id="5229219098493104564" at="20,207,21,35" concept="7" />
-      <node id="5229219098493108076" at="21,35,22,91" concept="9" />
-      <node id="5229219098493104564" at="22,91,23,27" concept="8" />
+      <node id="5229219098493108076" at="21,35,22,83" concept="9" />
+      <node id="5229219098493104564" at="22,83,23,27" concept="8" />
       <node id="5229219098493104564" at="25,27,26,16" concept="8" />
       <node id="5229219098493104564" at="28,71,29,105" concept="8" />
       <node id="5229219098493104564" at="31,73,32,107" concept="8" />
-      <node id="5229219098493104564" at="35,57,36,147" concept="8" />
+      <node id="5229219098493104564" at="35,57,36,143" concept="8" />
       <node id="5229219098493104564" at="38,59,39,148" concept="8" />
-      <node id="5229219098493104564" at="15,0,17,0" concept="1" trace="Undecidable_subtypeOf_AllTypes_InequationReplacementRule#()V" />
+      <node id="5229219098493104564" at="15,0,17,0" concept="1" trace="Unknown_subtypeOf_AllTypes_InequationReplacementRule#()V" />
       <node id="5229219098493104564" at="17,0,20,0" concept="6" trace="processInequation#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/EquationInfo;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicable2Status;ZZ)V" />
       <node id="5229219098493104564" at="25,0,28,0" concept="6" trace="isWeak#()Z" />
       <node id="5229219098493104564" at="28,0,31,0" concept="6" trace="isApplicableSubtypeAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
@@ -3435,12 +3435,12 @@
       <node id="5229219098493104564" at="35,0,38,0" concept="6" trace="getApplicableSubtypeConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="5229219098493104564" at="38,0,41,0" concept="6" trace="getApplicableSupertypeConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="5229219098493104564" at="20,0,25,0" concept="6" trace="checkInequation#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/EquationInfo;Ljetbrains/mps/lang/typesystem/runtime/IsApplicable2Status;ZZ)Z" />
-      <scope id="5229219098493104564" at="15,69,15,69" />
-      <scope id="5229219098493104566" at="17,253,18,91" />
+      <scope id="5229219098493104564" at="15,65,15,65" />
+      <scope id="5229219098493104566" at="17,253,18,83" />
       <scope id="5229219098493104564" at="25,27,26,16" />
       <scope id="5229219098493104564" at="28,71,29,105" />
       <scope id="5229219098493104564" at="31,73,32,107" />
-      <scope id="5229219098493104564" at="35,57,36,147" />
+      <scope id="5229219098493104564" at="35,57,36,143" />
       <scope id="5229219098493104564" at="38,59,39,148" />
       <scope id="5229219098493104564" at="15,0,17,0" />
       <scope id="5229219098493104564" at="17,0,20,0">
@@ -3472,7 +3472,7 @@
         <var name="subtype" id="5229219098493104564" />
         <var name="supertype" id="5229219098493104564" />
       </scope>
-      <unit id="5229219098493104564" at="14,0,42,0" name="BaseFrege.typesystem.Undecidable_subtypeOf_AllTypes_InequationReplacementRule" />
+      <unit id="5229219098493104564" at="14,0,42,0" name="BaseFrege.typesystem.Unknown_subtypeOf_AllTypes_InequationReplacementRule" />
     </file>
   </root>
   <root nodeRef="r:505d399a-118b-43d5-a757-1b10b70dd06b(BaseFrege.typesystem)/5711148124302796685">
@@ -3565,7 +3565,7 @@
       <node id="2675082928416636446" at="43,0,44,0" concept="10" />
       <node id="2675082928416731792" at="44,0,45,67" concept="9" />
       <node id="9205825421179153131" at="46,5,47,340" concept="7" />
-      <node id="9205825421179153142" at="50,235,51,59" concept="9" />
+      <node id="9205825421179153142" at="50,231,51,59" concept="9" />
       <node id="9205825421179171059" at="52,13,53,391" concept="7" />
       <node id="9205825421179171059" at="53,391,54,194" concept="7" />
       <node id="9205825421179171059" at="54,194,55,275" concept="2" />
@@ -3701,7 +3701,7 @@
       <scope id="2675082928416637810" at="101,0,112,0">
         <var name="parameter_1" id="2675082928416637810" />
       </scope>
-      <scope id="9205825421179153141" at="50,235,64,0" />
+      <scope id="9205825421179153141" at="50,231,64,0" />
       <scope id="9205825421179153156" at="65,235,80,0">
         <var name="ltn" id="9205825421179153160" />
       </scope>
@@ -5298,7 +5298,7 @@
       <node id="5229219098491008447" at="77,78,82,11" concept="0" />
       <node id="5229219098490964993" at="51,239,57,11" concept="5" />
       <node id="5229219098491090912" at="60,108,66,13" concept="5" />
-      <node id="1231066225851058988" at="85,198,91,13" concept="5" />
+      <node id="1231066225851058988" at="85,194,91,13" concept="5" />
       <node id="5229219098490923233" at="31,52,39,9" concept="0" />
       <node id="5229219098491055658" at="59,51,67,11" concept="3" />
       <node id="4497884052145557114" at="84,60,92,11" concept="5" />
@@ -5347,7 +5347,7 @@
         <var name="nodeType" id="5229219098490923233" />
       </scope>
       <scope id="5229219098491055659" at="60,108,66,13" />
-      <scope id="4497884052145557116" at="85,198,91,13" />
+      <scope id="4497884052145557116" at="85,194,91,13" />
       <scope id="5229219098490923232" at="31,52,39,9" />
       <scope id="5229219098491055658" at="59,51,67,11">
         <var name="i" id="5229219098491055676" />

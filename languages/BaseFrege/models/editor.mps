@@ -17817,9 +17817,9 @@
   </node>
   <node concept="24kQdi" id="4X24Jn8P8hH">
     <property role="3GE5qa" value="TypeNodes" />
-    <ref role="1XX52x" to="sc0n:4X24Jn8P8hj" resolve="UndecidableTypeNode" />
+    <ref role="1XX52x" to="sc0n:4X24Jn8P8hj" resolve="UnknownTypeNode" />
     <node concept="3F0ifn" id="4X24Jn8P8hJ" role="2wV5jI">
-      <property role="3F0ifm" value="undecidable" />
+      <property role="3F0ifm" value="Unknown" />
       <node concept="VechU" id="4X24Jn8P8hM" role="3F10Kt">
         <property role="Vb096" value="DARK_MAGENTA" />
       </node>
@@ -18248,7 +18248,7 @@
   </node>
   <node concept="24kQdi" id="7yGekHqgp9$">
     <property role="3GE5qa" value="Definitions.Types.CoreTypes" />
-    <ref role="1XX52x" to="sc0n:7yGekHqgp8L" resolve="CoreString" />
+    <ref role="1XX52x" to="sc0n:7yGekHqgp8L" resolve="CoreStringType" />
     <node concept="3F0ifn" id="7yGekHqgp9A" role="2wV5jI">
       <property role="3F0ifm" value="String" />
       <ref role="1k5W1q" node="4VDn71FCWtC" resolve="Plain" />

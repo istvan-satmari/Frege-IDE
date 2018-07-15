@@ -3068,7 +3068,7 @@
                                 </node>
                                 <node concept="1mIQ4w" id="3TFGrrL1Y37" role="2OqNvi">
                                   <node concept="chp4Y" id="3TFGrrL1Y38" role="cj9EA">
-                                    <ref role="cht4Q" to="sc0n:4X24Jn8P8hj" resolve="UndecidableTypeNode" />
+                                    <ref role="cht4Q" to="sc0n:4X24Jn8P8hj" resolve="UnknownTypeNode" />
                                   </node>
                                 </node>
                               </node>
@@ -7186,7 +7186,7 @@
               </node>
               <node concept="1mIQ4w" id="7Z1En8HEaT3" role="2OqNvi">
                 <node concept="chp4Y" id="7Z1En8HEaT4" role="cj9EA">
-                  <ref role="cht4Q" to="sc0n:4X24Jn8P8hj" resolve="UndecidableTypeNode" />
+                  <ref role="cht4Q" to="sc0n:4X24Jn8P8hj" resolve="UnknownTypeNode" />
                 </node>
               </node>
             </node>
@@ -7634,7 +7634,7 @@
                 </node>
                 <node concept="1mIQ4w" id="7Z1En8HE4NA" role="2OqNvi">
                   <node concept="chp4Y" id="7Z1En8HE4NB" role="cj9EA">
-                    <ref role="cht4Q" to="sc0n:4X24Jn8P8hj" resolve="UndecidableTypeNode" />
+                    <ref role="cht4Q" to="sc0n:4X24Jn8P8hj" resolve="UnknownTypeNode" />
                   </node>
                 </node>
               </node>
@@ -7949,7 +7949,7 @@
               </node>
               <node concept="1mIQ4w" id="7Z1En8HCxFM" role="2OqNvi">
                 <node concept="chp4Y" id="7Z1En8HCxH_" role="cj9EA">
-                  <ref role="cht4Q" to="sc0n:4X24Jn8P8hj" resolve="UndecidableTypeNode" />
+                  <ref role="cht4Q" to="sc0n:4X24Jn8P8hj" resolve="UnknownTypeNode" />
                 </node>
               </node>
             </node>
@@ -7964,7 +7964,7 @@
                   <node concept="2ShNRf" id="7Z1En8HCKqA" role="37vLTx">
                     <node concept="2fJWfE" id="7Z1En8HCKvO" role="2ShVmc">
                       <node concept="3Tqbb2" id="7Z1En8HCKvQ" role="3zrR0E">
-                        <ref role="ehGHo" to="sc0n:4X24Jn8P8hj" resolve="UndecidableTypeNode" />
+                        <ref role="ehGHo" to="sc0n:4X24Jn8P8hj" resolve="UnknownTypeNode" />
                       </node>
                     </node>
                   </node>
@@ -8227,7 +8227,7 @@
                   </node>
                   <node concept="1mIQ4w" id="7Z1En8HDJRt" role="2OqNvi">
                     <node concept="chp4Y" id="7Z1En8HDJRu" role="cj9EA">
-                      <ref role="cht4Q" to="sc0n:4X24Jn8P8hj" resolve="UndecidableTypeNode" />
+                      <ref role="cht4Q" to="sc0n:4X24Jn8P8hj" resolve="UnknownTypeNode" />
                     </node>
                   </node>
                 </node>
@@ -9824,7 +9824,7 @@
               </node>
               <node concept="1mIQ4w" id="7Z1En8HDeFN" role="2OqNvi">
                 <node concept="chp4Y" id="7Z1En8HDeFO" role="cj9EA">
-                  <ref role="cht4Q" to="sc0n:4X24Jn8P8hj" resolve="UndecidableTypeNode" />
+                  <ref role="cht4Q" to="sc0n:4X24Jn8P8hj" resolve="UnknownTypeNode" />
                 </node>
               </node>
             </node>
@@ -10357,7 +10357,7 @@
   </node>
   <node concept="35pCF_" id="4yhUL22nF6O">
     <property role="3GE5qa" value="TypeNodes" />
-    <property role="TrG5h" value="Undecidable_subtypeOf_AllTypes" />
+    <property role="TrG5h" value="Unknown_subtypeOf_AllTypes" />
     <node concept="1YaCAy" id="4yhUL22nF6P" role="35pZ6h">
       <property role="TrG5h" value="baseConcept" />
       <ref role="1YaFvo" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -10365,13 +10365,13 @@
     <node concept="3clFbS" id="4yhUL22nF6Q" role="2sgrp5">
       <node concept="3SKdUt" id="4yhUL22nFXG" role="3cqZAp">
         <node concept="3SKdUq" id="4yhUL22nFXI" role="3SKWNk">
-          <property role="3SKdUp" value="Undecidable is a subtype of all types, i.e. undecidable can be assigned to anything" />
+          <property role="3SKdUp" value="Unknown is a subtype of all types, i.e. unknown can be assigned to anything" />
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="4yhUL22nF7h" role="1YuTPh">
-      <property role="TrG5h" value="undecidableTypeNode" />
-      <ref role="1YaFvo" to="sc0n:4X24Jn8P8hj" resolve="UndecidableTypeNode" />
+      <property role="TrG5h" value="unknownTypeNode" />
+      <ref role="1YaFvo" to="sc0n:4X24Jn8P8hj" resolve="UnknownTypeNode" />
     </node>
   </node>
   <node concept="1YbPZF" id="6J9KjlvTRMF">
@@ -10675,7 +10675,7 @@
     <property role="TrG5h" value="Undecidable_supertypeOf_AllTypes" />
     <node concept="1YaCAy" id="1Cwrale7oVn" role="35pZ6h">
       <property role="TrG5h" value="undecidableTypeNode" />
-      <ref role="1YaFvo" to="sc0n:4X24Jn8P8hj" resolve="UndecidableTypeNode" />
+      <ref role="1YaFvo" to="sc0n:4X24Jn8P8hj" resolve="UnknownTypeNode" />
     </node>
     <node concept="3clFbS" id="1Cwrale7oVo" role="2sgrp5">
       <node concept="3SKdUt" id="1Cwrale7oVp" role="3cqZAp">
